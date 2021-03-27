@@ -1,4 +1,4 @@
-django:
+djangoapp:
   build: .
   environment:
     ENV: DEV 
