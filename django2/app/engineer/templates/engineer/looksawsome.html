@@ -2,6 +2,15 @@
 {% extends 'parts/base.html' %}
 
 {% block mainblock %}
+
+
+<head>
+    <title>
+        awesome
+    </title>
+</head>
+
+
 <section class="bg-primary">
     <span class="background dark" style="background-image:url('https://source.unsplash.com/oHrodCLNnU8/')"></span>
     <div class="wrap aligncenter">
@@ -19,6 +28,23 @@
     <div class="wrap aligncenter">
         <p class="text-subtitle">すごそうなスライド</p>
         <h2>すごい感じのタイトル</h2>
+    </div>
+    <!-- .end .wrap -->
+</section>
+
+<section class="bg-apple slide-bottom">
+    <!-- Overlay/Opacity: [class*="bg-"] > .background.dark or .light -->
+    <span class="background" style="background-image:url('https://source.unsplash.com/Y5Tjb62cxl8/')"></span>
+    <div class="wrap">
+        <div class="content-left">
+            <p>
+                <svg class="large fa-tree">
+                    <use xlink:href="#fa-tree"></use>
+                </svg>
+            </p>
+            <h2>めちゃくちゃ大きい数字</h2>
+            <h3>環境問題に対する関心をものすごく高めるような文章</h3>
+        </div>
     </div>
     <!-- .end .wrap -->
 </section>
@@ -851,6 +877,7 @@
                     </figure>
                 </a>
             </li>
+            
         </ul>
     </div>
     <!-- .end .wrap -->
