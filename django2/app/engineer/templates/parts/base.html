@@ -66,8 +66,11 @@
     <meta name="theme-color" content="#333333">
   </head>
   <body>
-
-    {% include "parts/header/header.html" %}
+    {% if htmlpage == "index.html" %}
+      {% include "parts/header/topheader.html" %}
+    {% else %}
+      {% include "parts/header/header.html" %}
+    {% endif %}
 
 
 

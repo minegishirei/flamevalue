@@ -1,12 +1,12 @@
 import os
 
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 # Create your views here.
 
 
 def index(request):
-    return render(request, "engineer/index.html")
+    return redirect("index.html")
 
 def page(request, htmlpage):
     lilist = []
@@ -25,6 +25,7 @@ def page(request, htmlpage):
                 pass
 
     params = {
+        "htmlpage" : htmlpage,
         "lilist" : lilist
     }
 
