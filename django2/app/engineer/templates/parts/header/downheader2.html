@@ -3,7 +3,8 @@
     <ul class="horizontal-list">
 
         {% for litag in lilist %}
-        <li class="thumbnail item">
+        <li class="thumbnail item down_shadow">
+
             <a rel="external" href="./{{ litag.href }}" title="Github">
                 <img src="https://thumbnail-gallery.net/wp-content/uploads/2021/03/maxresdefault-67.jpg">
             </a>
@@ -49,6 +50,21 @@
   display: inline-block;
   width: 200px;
 
+}
+
+
+.down_shadow {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) ;
+    /*アニメーションの設定*/
+    opacity: 0.2;
+    transition: all .3s;
+}
+
+/*hoverをしたらボックスの影が拡がり色が濃くなる*/
+.down_shadow:hover {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5), 0 0 50px rgba(128, 128, 128, 0.1) ;
+    opacity: 0.8;
+    border-color: transparent;
 }
 
 </style>
