@@ -1,0 +1,37 @@
+<footer role="banner">
+
+
+    <nav role="navigation">
+        <ul>
+
+            {% for litag in lilist %}
+            <li class="thumbnail">
+
+                <a rel="external" href="./{{ litag.href }}" title="Github">
+                    {{litag.title}}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+</footer>
+
+<style>
+    footer{
+        opacity: 0;
+    }
+
+    .thumbnail {
+        padding-top: 20%;
+    }
+
+    footer[role='banner'] {
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 0;
+    }
+    footer[role='banner']:hover {
+        opacity: 1;
+        background: rgba(70, 69, 69, 0);
+    }
+</style>
