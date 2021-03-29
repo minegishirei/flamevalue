@@ -71,7 +71,7 @@
   <!-- Android -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#333333">
-  {% block haederblock %}
+  {% block headblock %}
   {% endblock %}
 </head>
 
@@ -82,12 +82,13 @@
       <section class="bg-apple">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap">
-            <div class="grid">
-      {% block mainblock %}
-      {% endblock %}
-
-      {% include "parts/header/downheader2.html" %}
-            </div>
+          <div class="grid">
+            {% block mainblock %}
+            {% endblock %}
+            <hr>
+            {% include "parts/header/downheader2.html" %}
+            <hr>
+          </div>
         </div>
       </section>
     </article>

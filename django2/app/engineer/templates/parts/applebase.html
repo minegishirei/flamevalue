@@ -1,0 +1,28 @@
+
+{% extends 'parts/base.html' %}
+
+{% block headblock %}
+<title>
+    {{ title }}
+</title>
+{% endblock %}
+
+
+
+{% block mainblock %}
+<div class="column">
+    <h1>{{ title }}</h1>
+    <p>
+        {{ description }}
+    </p>
+</div>
+<!-- .end .column -->
+<div class="column">
+    <pre>
+    {{ sidecolumn }}
+    </pre>
+</div>
+{% endblock %}
+
+
+
