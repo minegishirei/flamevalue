@@ -1,37 +1,45 @@
-<footer role="banner">
-
-
-    <nav>
-        <ul>
+<div class="footnav">
+        <ul class="horizontal-list">
 
             {% for litag in lilist %}
-            <li class="thumbnail">
-
+            <li class="thumbnail item">
                 <a rel="external" href="./{{ litag.href }}" title="Github">
-                    {{litag.title}}
+                    <img src="https://thumbnail-gallery.net/wp-content/uploads/2021/03/maxresdefault-67.jpg">
                 </a>
             </li>
             {% endfor %}
         </ul>
-    </nav>
 
-</footer>
+</div>
 
 <style>
-    footer{
+    .footnav{
+        padding-top: 20px;
+        z-index:999;
         opacity: 0;
     }
 
-    .thumbnail {
-        padding-top: 20%;
-    }
 
-    footer[role='banner'] {
+    .footnav {
+        display: flex;
         background-color: rgba(0, 0, 0, 0);
         opacity: 0;
     }
-    footer[role='banner']:hover {
+    .footnav:hover {
         opacity: 1;
         background: rgba(70, 69, 69, 0);
     }
-</style>
+    .horizontal-list {
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .item {
+      /* 横スクロール用 */
+      display: inline-block;
+      width: 300px;
+
+    }
+
+  </style>

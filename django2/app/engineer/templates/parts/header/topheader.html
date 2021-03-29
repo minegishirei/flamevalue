@@ -1,70 +1,29 @@
-<header role="topbanner">
-
-    <a href="#" class="sixdirect japanese-font topu topl">
-        表現技術
-    </a>
+<header role="banner">
 
 
-    <a href="#" class="sixdirect japanese-font topu topr">
-        情報技術
-    </a>
-    <!--
-    <a href="#" class="sixdirect topm topl">
-        
-    </a>
+    <nav role="navigation">
+        <p class="logo"><a href="https://webslides.tv/" title="WebSlides">WebSlides</a></p>
+        <ul>
 
-    <a href="#" class="sixdirect topm topr">
-        
-    </a>
---> 
-
-    <a href="#" class="sixdirect japanese-font topd topl">
-        信頼構築
-    </a>
-
-    <a href="#" class="sixdirect  japanese-font topd topr">
-        基盤技術
-    </a>
+            {% for litag in lilist %}
+            <li class="github">
+                <a rel="external" href="./{{ litag.href }}" title="Github">
+                    {{litag.title}}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
 
 </header>
 
-
-
-
 <style>
-    .japanese-font {
-        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+    header[role='banner'] {
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 0;
     }
-    .sixdirect {
-        width: 150px;
-        height:150px;
-        line-height: 100px;
-        background: rgba(70, 69, 69, 0.35);
-        position: absolute;
-        padding: 20px;
-        font-size: 25px;
-        color: white;
-        margin: 0 auto;
+    header[role='banner']:hover {
+        opacity: 1;
+        background: rgba(70, 69, 69, 0);
     }
-
-
-    .topu {
-        top:0vh;
-    }
-    .topm {
-        top: 40vh;
-    }
-    .topd {
-        top:80vh;
-    }
-
-    .topr{
-        right: 0vw;
-    }
-    .topl {
-        left: 0vw;
-    }
-
-
-
 </style>
