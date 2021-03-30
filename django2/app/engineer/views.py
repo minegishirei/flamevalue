@@ -29,6 +29,7 @@ def page(request, htmlpage):
     htmlInfo.asign_to_dict("description")
     htmlInfo.asign_to_dict("title")
     htmlInfo.asign_to_dict("sidecolumn")
+    htmlInfo.asign_to_dict("ans")
     params = {
         "htmlpage" : htmlpage,
         "lilist" : lilist
