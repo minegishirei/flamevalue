@@ -107,10 +107,17 @@
 
   
   <script>
+    function isSmartPhone() {
+  if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+    return true;
+  } else {
+    return false;
+  }
+}
     var height = window.innerHeight;
     var width  = window.innerWidth;
 
-    if(height > width){
+    if(isSmartPhone()){
       window.ws = new WebSlides();
     }else {
 
