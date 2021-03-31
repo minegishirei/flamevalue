@@ -1,53 +1,18 @@
-{% extends 'parts/base.html' %}
-
-
-{% block mainblock %}
-
-
-
-<head>
-    <title>
-        webSlideの垂直なスクロール
-    </title>
-</head>
+<title>
+    webSlideの垂直なスクロール
+</title>
 
 
 
-<section class="bg-apple">
-    <!--.wrap = container (width: 90%) -->
-    <div class="wrap">
-        <div class="grid">
-            <div class="column">
-                <h1><strong>
-                        webSlideの<br>垂直なスクロール
-                    </strong></h1>
-                <p>
-                    articleタグにclass="vertical"を指定する。
-                </p>
-            </div>
-            <!-- .end .column -->
-            <div class="column">
-                <pre>
-    <xmp>
-<main role="main">
-    <article id="webslides" class="vertical">
-    中身
-    </article>
-</main>
+<ans>
+    articleタグにclass="vertical"を指定する。
+</ans>
+
+
+<xmp>
+    <main role="main">
+        <article id="webslides" class="vertical">
+            中身
+        </article>
+    </main>
 </xmp>
-                    </pre>
-            </div>
-
-            <!-- .end .column -->
-        </div>
-
-        <!-- .end .wrap -->
-
-        <!-- .end .grid -->
-    </div>
-
-</section>
-
-
-
-{% endblock %}

@@ -17,10 +17,14 @@ def page(request, htmlpage):
         if os.path.isfile(filepath):
             try:
                 htmlInfo = HtmlInfo(filepath)
-                lilist.append({
+                htmlInfo.asign_to_dict("img")
+                elements = {
                     "title": htmlInfo.title,
-                    "href" : htmlInfo.filename
-                })
+                    "href" : htmlInfo.filename,
+                    "img" : "https://i.ytimg.com/vi/84f8ItPV1Mg/maxresdefault.jpg"
+                }
+                elements.update(htmlInfo.elements)
+                lilist.append(elements)
             except:
                 pass
     print("uooooooooooo")
@@ -30,6 +34,8 @@ def page(request, htmlpage):
     htmlInfo.asign_to_dict("title")
     htmlInfo.asign_to_dict("sidecolumn")
     htmlInfo.asign_to_dict("ans")
+    htmlInfo.asign_to_dict("img")
+    htmlInfo.asign_to_dict("xmp")
     params = {
         "htmlpage" : htmlpage,
         "lilist" : lilist
@@ -59,9 +65,22 @@ class HtmlInfo():
         self.title = self.bsObj.find("title").get_text()
     
     def asign_to_dict(self, tag):
-        self.elements.update({
-            tag : self.__simple_grep__(tag).get_text()
-        }) 
+        tagobj = self.__simple_grep__(tag)
+        if tagobj is None:
+            return
+        
+        if tag=="img":
+            self.elements.update({
+                tag : tagobj["src"]
+            })
+        elif tag=="xmp":
+            self.elements.update({
+                tag : str(tagobj)
+            }) 
+        else:
+            self.elements.update({
+                tag : tagobj.get_text()
+            }) 
 
     def __simple_grep__(self, tag):
         return self.bsObj.find(tag)
