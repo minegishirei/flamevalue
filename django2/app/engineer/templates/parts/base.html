@@ -104,6 +104,19 @@
   <!-- Required -->
   <script src="/static/engineer/js/webslides.js"></script>
 
+
+  
+  <script>
+    var height = window.outerHeight;
+    var width  = window.outerWidth;
+    if(height > width){
+      //スマホ
+      window.ws = new WebSlides();
+    }else{
+      
+    }
+  </script>
+
   <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
   <script defer src="/static/engineer/js/svg-icons.js"></script>
 
