@@ -17,8 +17,7 @@
 
   <!-- SEO -->
   <title>{{ title }}</title>
-  <meta name="description"
-    content="{{ description }}">
+  <meta name="description" content="{{ description }}">
 
   <!-- URL CANONICAL -->
   <link rel="canonical" href="https://webslides.tv/demos/keynote">
@@ -93,9 +92,9 @@
           </div>
         </div>
       </section>
-      
+
     </article>
-    
+
   </main>
 
 
@@ -105,24 +104,22 @@
   <script src="/static/engineer/js/webslides.js"></script>
 
 
-  
+
   <script>
     function isSmartPhone() {
-  if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
-    return true;
-  } else {
-    return false;
-  }
-}
-    var height = window.innerHeight;
-    var width  = window.innerWidth;
-
-    if(isSmartPhone()){
-      window.ws = new WebSlides();
-    }else {
-
+      if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+        return true;
+      } else {
+        return false;
+      }
     }
-    
+    if (isSmartPhone()) {
+      window.ws = new WebSlides();
+      console.log("smart phone")
+    }else {
+      console.log("pc")
+    }
+
   </script>
 
   <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
