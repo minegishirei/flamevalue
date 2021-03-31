@@ -107,13 +107,15 @@
 
   
   <script>
-    var height = window.outerHeight;
-    var width  = window.outerWidth;
+    var height = window.innerHeight;
+    var width  = window.innerWidth;
+
     if(height > width){
-      //スマホ
-    }else{
+      window.ws = new WebSlides();
+    }else {
 
     }
+    
   </script>
 
   <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
