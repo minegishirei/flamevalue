@@ -8,32 +8,58 @@ import pprint
 import redis
 cache = redis.StrictRedis(host='redis', port=6379, db=0)
 
+import sys
+import sys
+sys.path.append('/God')
+import SpreadSheet
+import json
+import random
+import threading
+
 def index(request):
     return redirect("index.html")
 
 
 def page(request, category, htmlpage):
+    listinfo = SpreadSheet.main()
+    pageinfo = {}
+    for info in listinfo:
+        print(info["title"])
+        if info["title"] == htmlpage:
+            pageinfo = info
+            break
+    print(htmlpage)
+
+    params = {
+        "pageinfo" : pageinfo,
+        "lilist" : listinfo
+    }
+    params.update(pageinfo)
+
+    """
     headerlist = []
     folder = "/app/engineer/templates/"
     directoryInfo = DirectoryInfo(folder)
     directoryInfo.seach()
-    
 
+    listinfo = SpreadSheet.main()
+    
     lilist = []
     folder = "/app/engineer/templates/" + category
     directoryInfo = DirectoryInfo(folder)
     directoryInfo.seach()
     for compose in directoryInfo.nextComposeList:
         lilist.append(compose.elements)
-
-
+    
     htmlInfo = HtmlInfo(os.path.join(folder, htmlpage))
     htmlInfo.seach()
     params = {
         "htmlpage" : htmlpage,
-        "lilist" : lilist
+        "lilist" : listinfo
     }
     params.update(htmlInfo.elements)
+    """
+    
     return render(request, 'parts/applebase.html', params)
 
 

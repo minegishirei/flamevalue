@@ -6,6 +6,7 @@ djangoapp:
    - "80:5000"
   volumes:
     - ./app:/app
+    - ./God:/God
   command: ./cmd.sh
   #command: python3 manage.py runserver 0.0.0.0:5000 
   links:
