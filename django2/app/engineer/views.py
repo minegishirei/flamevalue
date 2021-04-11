@@ -5,15 +5,16 @@ from django.http import HttpResponse
 # Create your views here.
 import pprint
 
+
 def index(request):
     return redirect("index.html")
 
-def page(request, htmlpage):
+
+def page(request, category, htmlpage):
     lilist = []
-    folder = "/app/engineer/templates/engineer/"
+    folder = "/app/engineer/templates/" + category
     for filename in os.listdir(folder):
         filepath = os.path.join(folder ,filename)
-        print(filepath)
         if os.path.isfile(filepath):
             try:
                 htmlInfo = HtmlInfo(filepath)
@@ -26,9 +27,10 @@ def page(request, htmlpage):
                 elements.update(htmlInfo.elements)
                 lilist.append(elements)
             except:
+                import traceback
+                traceback.print_exc()
                 pass
-    print("uooooooooooo")
-    
+
     htmlInfo = HtmlInfo(os.path.join(folder, htmlpage))
     htmlInfo.asign_to_dict("description")
     htmlInfo.asign_to_dict("title")
@@ -36,13 +38,18 @@ def page(request, htmlpage):
     htmlInfo.asign_to_dict("ans")
     htmlInfo.asign_to_dict("img")
     htmlInfo.asign_to_dict("xmp")
+
+    headerlist = [
+        "engineer/",
+        "design/",
+        "shortcuts/"
+    ]
     params = {
         "htmlpage" : htmlpage,
-        "lilist" : lilist
+        "lilist" : lilist,
+        "headerlist" : headerlist
     }
     params.update(htmlInfo.elements)
-
-    print(params)
     return render(request, 'parts/applebase.html', params)
 
 
@@ -60,7 +67,6 @@ class HtmlInfo():
         self.bsObj = BeautifulSoup(self.html)
         self.__grep_title__()
 
-    
     def __grep_title__(self):
         self.title = self.bsObj.find("title").get_text()
     
@@ -68,7 +74,6 @@ class HtmlInfo():
         tagobj = self.__simple_grep__(tag)
         if tagobj is None:
             return
-        
         if tag=="img":
             self.elements.update({
                 tag : tagobj["src"]
