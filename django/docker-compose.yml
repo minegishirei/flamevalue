@@ -1,7 +1,0 @@
-django:
-  build: .
-  ports:
-   - "80:5000"
-  volumes:
-    - ./app:/app
-  command: python3 manage.py runserver 0.0.0.0:5000 # 7
