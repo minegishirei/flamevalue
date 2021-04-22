@@ -1,0 +1,35 @@
+
+{% extends 'parts/base.html' %}
+
+{% block headblock %}
+<title>
+    {{ title }}
+</title>
+{% endblock %}
+
+
+
+{% block mainblock %}
+<div class="column">
+
+    <h3>index</h3>
+
+    <ul>
+    {% for litag in lilist %}
+<li class="down_shadow thumbnail item ">
+    <a rel="external" href="./{{ litag.title }}" title="Github">
+        <img src="{{ litag.img }}">
+        <div class="titlecentor">{{ litag.title }}</div>
+    </a>
+</li>
+{% endfor %}
+</ul>
+
+</div>
+
+
+
+{% endblock %}
+
+
+
