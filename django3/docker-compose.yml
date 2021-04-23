@@ -1,7 +1,7 @@
 djangoapp:
   build: .
   environment:
-    ENV: DEV 
+    ENV: DEV
   ports:
    - "80:5000"
   volumes:

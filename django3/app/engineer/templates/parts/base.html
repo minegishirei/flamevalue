@@ -75,23 +75,41 @@
 </head>
 
 <body>
-  {% include "parts/header/header.html" %}
+
+
   <main role="main">
     <article id="webslides">
       <section class="bg-apple">
+
+        <header>
+          {% block headerblock %}
+          {% endblock %}
+        </header>
+
+        <hr>
+
         <!--.wrap = container (width: 90%) -->
         <div class="wrap">
           <div class="grid">
+          
             {% block mainblock %}
             {% endblock %}
 
 
           </div>
         </div>
+        <style>
+        .grid {
+          border: solid;
+        }
+        </style>
 
-        {% include 'parts/header/downheader2.html' %}
+
+
+        {% block downheaderblock %}
+        {% endblock %}
         <hr>
-        
+
         <hr>
       </section>
 
@@ -109,24 +127,7 @@
 
   <script>
 
-window.ws = new WebSlides();
-
-/*
-    function isSmartPhone() {
-      if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-    if (isSmartPhone()) {
-
-      window.ws = new WebSlides();
-      console.log("smart phone")
-    }else {
-      console.log("pc")
-    }
-    */
+    window.ws = new WebSlides();
 
   </script>
 

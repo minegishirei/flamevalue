@@ -8,8 +8,14 @@
 {% endblock %}
 
 
+{% block headerblock %}
+{% include "parts/header/header.html" %}
+{% endblock %}
+
 
 {% block mainblock %}
+
+
 <div class="column">
     <h3>{{ ans }}</h3>
     <p>
@@ -25,3 +31,6 @@
 
 
 
+{% block downheaderblock %}
+{% include "parts/header/downheader2.html" %}
+{% endblock %}
