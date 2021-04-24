@@ -37,8 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "ShortCutKey",
-    "Design",
+    "short_tips",
     'django_hosts',    # ←追加する
 ]
 
