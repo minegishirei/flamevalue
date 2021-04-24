@@ -5,28 +5,41 @@ from django.http import HttpResponse
 # Create your views here.
 import pprint
 
-import redis
-cache = redis.StrictRedis(host='redis', port=6379, db=0)
 
 import sys
 import sys
 sys.path.append('/God')
 import SpreadSheet
+import RediusManeger
 import json
 import random
 import threading
+
+
+category = "Design"
+
+category_dict = {
+    "Design" :SpreadSheet.main("Design"),
+    "ShortCutKey" : SpreadSheet.main("ShortCutKey")
+}
+#rediusManeger = RediusManeger.RediusManeger()
+#rediusManeger.set_pageinfo_list(listinfo)
+
+
+
 
 def index(request):
     return redirect("index.html")
 
 
-def page(request, category, htmlpage):
+def page(request, htmlpage):
     if category == "dog":
         row = registar(htmlpage)
         SpreadSheet.registar(row)
         return render(request, '404NotFound.html')
+    
+    listinfo = category_dict[category]
 
-    listinfo = SpreadSheet.main(category)
     pageinfo = {}
     for info in listinfo:
         print(info["title"])
@@ -36,14 +49,12 @@ def page(request, category, htmlpage):
     print(htmlpage)
 
     params = {
-        "pageinfo" : pageinfo,
         "lilist" : listinfo
     }
     params.update(pageinfo)
     if htmlpage == "index.html":
         return render(request, 'index.html', params)
     return render(request, 'parts/applebase.html', params)
-
 
 
 

@@ -5,13 +5,12 @@
         {% for litag in lilist %}
         <li class="down_shadow thumbnail item ">
             <a rel="external" href="./{{ litag.title }}" title="Github">
-                <img src="{{ litag.img }}">
+                <img class="thumbnail" src="{{ litag.img }}">
                 <div class="titlecentor">{{ litag.title }}</div>
             </a>
         </li>
         {% endfor %}
     </ul>
-
 </div>
 
  <style>
@@ -48,7 +47,11 @@
   width: 200px;
 
 }
-
+.thumbnail {
+    width: 200px;
+    height: 130px;
+object-fit: cover; /* この一行を追加するだけ！ */
+}
 
 
 .down_shadow {

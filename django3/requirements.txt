@@ -4,3 +4,4 @@ beautifulsoup4
 redis
 oauth2client
 gspread
+django-hosts

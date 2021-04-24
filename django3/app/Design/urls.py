@@ -3,7 +3,7 @@ from . import views
 
 urlpatterns = [
     path('', views.index , name="index"),
-    path("<category>/<htmlpage>" , views.page , name='')
+    path("<htmlpage>" , views.page , name='')
 ]
 
 

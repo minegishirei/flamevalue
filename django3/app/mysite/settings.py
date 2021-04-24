@@ -37,10 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "engineer"
+    "ShortCutKey",
+    "Design",
+    'django_hosts',    # ←追加する
 ]
 
 MIDDLEWARE = [
+    'django_hosts.middleware.HostsRequestMiddleware',#subdomain
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -48,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_hosts.middleware.HostsResponseMiddleware', 
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -69,7 +73,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
@@ -125,3 +128,11 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
     
 )
+
+
+
+ROOT_URLCONF = 'mysite.urls'
+PARENT_HOST = 'example .com:8000' # ←追加(本来はポートなしで設定する)
+ROOT_HOSTCONF = 'domain_project.hosts' # ←追加(hosts設定は後ほど):プロジェクト名は変更してください
+DEFAULT_HOST = 'www' # ←追加(デフォルトとなるサブドメイン)
+
