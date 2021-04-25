@@ -7,7 +7,8 @@
             <a rel="external" href="./{{ litag.title }}">
                 <img class="thumbnail" src="{{ litag.img }}">
                 <div class="thumbnailtitle">
-                    <p>{{ litag.title }}
+                    <p classs = "hidetitle">
+                        {{ litag.title }}
                     </p>
                 </div>
             </a>
@@ -15,6 +16,10 @@
         {% endfor %}
     </ul>
 </div>
+
+
+
+
 
  <style>
 
@@ -43,6 +48,7 @@
     background: rgba(70, 69, 69, 0);
 }
 .horizontal-list {
+    height: 200px;
     scroll-behavior: smooth;
   overflow-x: auto;
   white-space: nowrap;
@@ -74,6 +80,14 @@ object-fit: cover; /* この一行を追加するだけ！ */
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5), 0 0 50px rgba(128, 128, 128, 0.1) ;
     opacity: 1.0;
     border-color: transparent;
+}
+
+
+.hidetitle{
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) ;
+    /*アニメーションの設定*/
+    opacity: 0.0;
+    transition: all .3s;
 }
 
  
