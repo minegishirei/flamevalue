@@ -59,12 +59,16 @@ def page(request, category, htmlpage):
     }
     pageinfo = get_pageinfo(htmlpage, listinfo)
     params.update(pageinfo)
+
     if htmlpage == "index.html":
         params.update({
             "title" : category_info["indextitle"],
             "description" : category_info["description"]
         })
         return render(request, 'index.html', params)
+    params.update({
+        "title" :  pageinfo["title"] + " "+category_info["indextitle"]
+    })
     return render(request, 'parts/applebase.html', params)
 
 
