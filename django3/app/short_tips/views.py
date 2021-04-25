@@ -20,11 +20,13 @@ import threading
 category_dict = {
     "Design" : { 
         "listinfo" : SpreadSheet.main("Design"),
-        "indextitle" : "1分で分かる デザイン逆引き集"
+        "indextitle" : "1分で分かる デザイン逆引き集",
+        "subtitle" : " 1分で分かるデザイン逆引き集"
     },
     "ShortCutKey" : { 
         "listinfo" : SpreadSheet.main("ShortCutKey"),
-        "indextitle" : "1分で分かる ショートカットキー集"
+        "indextitle" : "1分で分かる ショートカットキー集",
+        "subtitle" : " 1分で分かるショートカットキー集"
     },
 }
 
@@ -53,8 +55,12 @@ def page(request, category, htmlpage):
         "lilist" : listinfo,
         "title" : category_info["indextitle"]
     }
-    params.update(get_pageinfo(htmlpage, listinfo))
+    pageinfo = get_pageinfo(htmlpage, listinfo)
+    params.update(pageinfo)
     if htmlpage == "index.html":
+        params.update({
+            "description" : category["subtitle"]
+        })
         return render(request, 'index.html', params)
     return render(request, 'parts/applebase.html', params)
 
