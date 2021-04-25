@@ -66,7 +66,9 @@ def registar(request ,context):
 
 
 def get_pageinfo(title, listinfo):
+
     for info in listinfo:
         print(info["title"])
         if info["title"] ==title:
             return info
+    return {}
