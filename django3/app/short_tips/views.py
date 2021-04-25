@@ -59,7 +59,7 @@ def page(request, category, htmlpage):
     params.update(pageinfo)
     if htmlpage == "index.html":
         params.update({
-            "description" : category_dict["subtitle"]
+            "description" : category_info["subtitle"]
         })
         return render(request, 'index.html', params)
     return render(request, 'parts/applebase.html', params)
