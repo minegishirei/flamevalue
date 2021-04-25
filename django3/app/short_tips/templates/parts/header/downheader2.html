@@ -1,6 +1,5 @@
 <div class="footnav">
     <ul class="horizontal-list">
-
         {% for litag in lilist %}
         <li class="down_shadow thumbnail item ">
             <a href="./{{ litag.title }}">
@@ -45,13 +44,17 @@
     }
 
     .horizontal-list {
-        height: 200px;
+        height: 240px;
         scroll-behavior: smooth;
         overflow-x: auto;
         white-space: nowrap;
         display: inline-block;
+        -ms-overflow-style: none;    /* IE, Edge 対応 */
+        scrollbar-width: none;       /* Firefox 対応 */
     }
-
+    .horizontal-list::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+        display:none;
+    }
     .item {
         /* 横スクロール用 */
         display: inline-block;
@@ -81,10 +84,6 @@
         border-color: transparent;
     }
 
-
-
-
-
     .hidetitle {
         width: 200px;
         text-overflow: initial;
@@ -94,9 +93,6 @@
 
 
 <script>
-    function nsplit(target, n, str) {
-
-    }
 window.onload = function() {
     splittaglist= document.getElementsByName("splittitle")
     console.log(splittaglist)
@@ -104,13 +100,12 @@ window.onload = function() {
         splittag = splittaglist[splittag]
         console.log(splittag)
         const text = splittag.textContent
-        if(text.length < 11){
+        if(text.length <= 11){
+            splittag.innerHTML = text + "<br>."
             continue
         }
         strlist = text.match(/.{11}/g); 
         splittag.innerHTML = strlist[0] + "<br>" + text.slice(11) 
     }
-} 
-
-
+}
 </script>
