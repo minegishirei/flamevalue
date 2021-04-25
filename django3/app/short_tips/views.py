@@ -21,12 +21,12 @@ category_dict = {
     "Design" : { 
         "listinfo" : SpreadSheet.main("Design"),
         "indextitle" : "1分で分かる デザイン逆引き集",
-        "subtitle" : " 1分で分かるデザイン逆引き集"
+        "description" : "すぐに使えるデザインテクニックを厳選！"
     },
     "ShortCutKey" : { 
         "listinfo" : SpreadSheet.main("ShortCutKey"),
         "indextitle" : "1分で分かる ショートカットキー集",
-        "subtitle" : " 1分で分かるショートカットキー集"
+        "description" : "すぐに使えるショートカットキーを厳選！"
     },
 }
 
@@ -59,7 +59,8 @@ def page(request, category, htmlpage):
     params.update(pageinfo)
     if htmlpage == "index.html":
         params.update({
-            "description" : category_info["subtitle"]
+            "title" : category_info["indextitle"],
+            "description" : category_info["description"]
         })
         return render(request, 'index.html', params)
     return render(request, 'parts/applebase.html', params)
