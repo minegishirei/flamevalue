@@ -48,7 +48,7 @@ def design_page(request, htmlpage):
 
 
 def page(request, category, htmlpage):
-    if category == "dog":
+    if "--" in htmlpage:
         return registar(request,htmlpage)
     
     category_info = category_dict[category]
