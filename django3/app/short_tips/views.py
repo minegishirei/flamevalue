@@ -34,6 +34,8 @@ category_dict = {
 def index(request):
     return redirect("index.html")
 
+def sitemap(request):
+    return render(request, 'meta/sitemap.xml') 
 
 def shortcutkey_page(request, htmlpage):
     category = "ShortCutKey"
