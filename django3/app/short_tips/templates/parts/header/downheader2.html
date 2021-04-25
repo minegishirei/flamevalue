@@ -4,9 +4,12 @@
 
         {% for litag in lilist %}
         <li class="down_shadow thumbnail item ">
-            <a rel="external" href="./{{ litag.title }}" title="Github">
+            <a rel="external" href="./{{ litag.title }}">
                 <img class="thumbnail" src="{{ litag.img }}">
-                <div class="titlecentor">{{ litag.title }}</div>
+                <div class="thumbnailtitle">
+                    <p>{{ litag.title }}
+                    </p>
+                </div>
             </a>
         </li>
         {% endfor %}
@@ -15,6 +18,10 @@
 
  <style>
 
+.thumbnailtitle {
+    width: 200px;
+    overflow-wrap:  break-word;
+}
 .footnav{
     padding-top: 20px;
     opacity: 0;
@@ -36,6 +43,7 @@
     background: rgba(70, 69, 69, 0);
 }
 .horizontal-list {
+    scroll-behavior: smooth;
   overflow-x: auto;
   white-space: nowrap;
   display: inline-block;
@@ -57,16 +65,18 @@ object-fit: cover; /* この一行を追加するだけ！ */
 .down_shadow {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) ;
     /*アニメーションの設定*/
-    opacity: 0.8;
+    opacity: 0.6;
     transition: all .3s;
 }
 
 /*hoverをしたらボックスの影が拡がり色が濃くなる*/
 .down_shadow:hover {
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5), 0 0 50px rgba(128, 128, 128, 0.1) ;
-    opacity: 0.8;
+    opacity: 1.0;
     border-color: transparent;
 }
 
  
  </style>
+
+
