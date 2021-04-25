@@ -1,16 +1,11 @@
-
 <div class="footnav">
     <ul class="horizontal-list">
 
         {% for litag in lilist %}
         <li class="down_shadow thumbnail item ">
-            <a rel="external" href="./{{ litag.title }}">
+            <a href="./{{ litag.title }}">
                 <img class="thumbnail" src="{{ litag.img }}">
-                <div class="thumbnailtitle">
-                    <p class = "hidetitle">
-                        {{ litag.title }}
-                    </p>
-                </div>
+                <div name="splittitle" class="hidetitle">{{ litag.title }}</div>
             </a>
         </li>
         {% endfor %}
@@ -21,84 +16,101 @@
 
 
 
- <style>
+<style>
+    .thumbnailtitle {
+        width: 200px;
+        overflow-wrap: break-word;
+    }
 
-.thumbnailtitle {
-    width: 200px;
-    overflow-wrap:  break-word;
-}
-.footnav{
-    padding-top: 20px;
-    opacity: 0;
-}
-
-
-.footnav {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0);
-    opacity: 1;
-}
-.footnav:hover {
-    z-index: 5;
-	-webkit-transition: 0.5s ease-in-out;
-	-moz-transition: 0.5s ease-in-out;
-	-o-transition: 0.5s ease-in-out;
-	transition: 0.5s ease-in-out;
-    opacity: 1;
-    background: rgba(70, 69, 69, 0);
-}
-.horizontal-list {
-    height: 200px;
-    scroll-behavior: smooth;
-  overflow-x: auto;
-  white-space: nowrap;
-  display: inline-block;
-}
-
-.item {
-  /* 横スクロール用 */
-  display: inline-block;
-  width: 200px;
-
-}
-.thumbnail {
-    width: 200px;
-    height: 130px;
-object-fit: cover; /* この一行を追加するだけ！ */
-}
+    .footnav {
+        padding-top: 20px;
+        opacity: 0;
+    }
 
 
-.down_shadow {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) ;
-    /*アニメーションの設定*/
-    opacity: 0.6;
-    transition: all .3s;
-}
+    .footnav {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 1;
+    }
 
-/*hoverをしたらボックスの影が拡がり色が濃くなる*/
-.down_shadow:active {
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5), 0 0 50px rgba(128, 128, 128, 0.1) ;
-    opacity: 1.0;
-    border-color: transparent;
-}
+    .footnav:hover {
+        z-index: 5;
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+        opacity: 1;
+        background: rgba(70, 69, 69, 0);
+    }
+
+    .horizontal-list {
+        height: 200px;
+        scroll-behavior: smooth;
+        overflow-x: auto;
+        white-space: nowrap;
+        display: inline-block;
+    }
+
+    .item {
+        /* 横スクロール用 */
+        display: inline-block;
+        width: 200px;
+
+    }
+
+    .thumbnail {
+        width: 200px;
+        height: 130px;
+        object-fit: cover;
+        /* この一行を追加するだけ！ */
+    }
 
 
-.hidetitle {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) ;
-    /*アニメーションの設定*/
-    opacity: 0.0;
-    transition: all .3s;
-}
+    .down_shadow {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1);
+        /*アニメーションの設定*/
+        opacity: 0.6;
+        transition: all .3s;
+    }
+
+    /*hoverをしたらボックスの影が拡がり色が濃くなる*/
+    .down_shadow:hover {
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5), 0 0 50px rgba(128, 128, 128, 0.1);
+        opacity: 1.0;
+        border-color: transparent;
+    }
 
 
 
-.down_shadow:active .hidetitle{
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) ;
-    /*アニメーションの設定*/
-    opacity: 1.0;
-    transition: all .3s;
-}
- 
- </style>
 
 
+    .hidetitle {
+        width: 200px;
+        text-overflow: initial;
+    }
+</style>
+
+
+
+<script>
+    function nsplit(target, n, str) {
+
+    }
+window.onload = function() {
+    splittaglist= document.getElementsByName("splittitle")
+    console.log(splittaglist)
+    for(var splittag in splittaglist){
+        splittag = splittaglist[splittag]
+        console.log(splittag)
+        const text = splittag.textContent
+        if(text.length < 11){
+            continue
+        }
+        strlist = text.match(/.{11}/g); 
+        splittag.innerHTML = strlist[0] + "<br>" + text.slice(11) 
+    }
+} 
+
+
+</script>
