@@ -37,6 +37,9 @@ def index(request):
 def sitemap(request):
     return render(request, 'meta/sitemap.xml') 
 
+def robots(request):
+    return render(request, 'meta/robots.txt') 
+
 def shortcutkey_page(request, htmlpage):
     category = "ShortCutKey"
     return page(request, category, htmlpage)
