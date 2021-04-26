@@ -53,22 +53,25 @@ def page(request, category, htmlpage):
     
     category_info = category_dict[category]
     listinfo = category_info["listinfo"]
+    #params処理
     params = {
         "lilist" : listinfo,
         "title" : category_info["indextitle"]
     }
     pageinfo = get_pageinfo(htmlpage, listinfo)
     params.update(pageinfo)
-
     if htmlpage == "index.html":
         params.update({
+            "seo_title" : category_info["indextitle"],
             "title" : category_info["indextitle"],
             "description" : category_info["description"]
         })
         return render(request, 'index.html', params)
-    params.update({
-        "title" :  pageinfo["title"] + " "+category_info["indextitle"]
-    })
+    else:
+        params.update({
+            "seo_title" :  pageinfo["title"] + " - "+category_info["indextitle"],
+            "title" : pageinfo["title"],
+        })
     return render(request, 'parts/applebase.html', params)
 
 

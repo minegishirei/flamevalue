@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- SEO -->
-  <title>{{ title }}</title>
+  <title>{{ seo_title }}</title>
   <meta name="description" content="{{ description }}">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -73,10 +73,10 @@
     <article id="webslides">
       <section class="bg-apple">
 
-        <header>
+        <div>
           {% block headerblock %}
           {% endblock %}
-        </header>
+        </div>
 
         <!--.wrap = container (width: 90%) -->
         <div class="wrap">
