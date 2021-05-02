@@ -3,7 +3,8 @@ from . import views
 
 urlpatterns = [
     path('', views.index , name="index"),
-    path("<htmlpage>" , views.page , name='')
+    path("dialog_uml.html", views.dialog_uml, name=''),
+    path("<htmlpage>" , views.dialogue_page , name=''),
 ]
 
 
