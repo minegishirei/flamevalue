@@ -16,28 +16,47 @@ import threading
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 category_dict = {
-    "Design" : { 
+    "design" : { 
         "listinfo" : SpreadSheet.main("Design"),
         "indextitle" : "1分で分かる デザイン逆引き集",
         "description" : "すぐに使えるデザインテクニックを厳選！"
     },
-    "ShortCutKey" : { 
+    "shortcutkey" : { 
         "listinfo" : SpreadSheet.main("ShortCutKey"),
         "indextitle" : "1分で分かる ショートカットキー集",
         "description" : "すぐに使えるショートカットキーを厳選！"
     },
-    "Dialogue" : {
+    "dialogue" : {
         "listinfo" : SpreadSheet.main("Dialogue"),
         "indextitle" : "対話と音声学",
         "description" : "「あはいより大きいーー」音声学を元にした言葉と印象の記録"
     },
-    "WordEffect" : {
+    "wordeffect" : {
         "listinfo" : SpreadSheet.main("WordEffect"),
         "indextitle" : "言葉の道具箱",
         "description" : "操作可能な範囲の限界ギリギリを攻める道具達"
     },
 }
+
+def get_category_info(host_name):
+    for key in category_dict.keys():
+        if host_name.startswith(key):
+            return category_dict[key]
+    return None
+
+
 
 
 
@@ -54,12 +73,12 @@ def robots(request):
 
 
 def shortcutkey_page(request, htmlpage):
-    category = "ShortCutKey"
+    category = "shortcutkey"
     return page(request, category, htmlpage)
 
 
 def design_page(request, htmlpage):
-    category = "Design"
+    category = "design"
     return page(request, category, htmlpage)
 
 
@@ -71,6 +90,18 @@ def dialogue_page(request, htmlpage):
 def wordeffect_page(request, htmlpage):
     category = "WordEffect"
     return page(request, category, htmlpage)
+
+
+
+def table_index(request):
+    host = request.get_host()
+    category_info = get_category_info(host)
+    print(category_info)
+    params = category_info
+    return render(request, 'table_index.html', params)
+
+
+
 
 
 def page(request, category, htmlpage):
