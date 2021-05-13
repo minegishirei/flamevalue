@@ -26,15 +26,16 @@
         <tbody>
             {% for litag in listinfo %}
             <tr>
+                <td style="width: 50px;">
+                    {{ litag.ans }}
+                </td>
                 <td class="down_shadow thumbnail item ">
                     <img class="thumbnail" src="{{ litag.img }}">
                     <a rel="external" href="./{{ litag.title }}" title="Github">
                         {{ litag.title }}
                     </a>
                 </td>
-                <td>
-                    {{ litag.ans }}
-                </td>
+
                 <td>{{ litag.description }}</td>
             </tr>
             {% endfor %}
