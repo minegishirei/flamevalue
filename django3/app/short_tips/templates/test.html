@@ -1,104 +1,85 @@
+JavaScriptソース
+/***** ドラッグ要素がドロップ要素に重なっている間の処理 *****/
+function f_dragover(event){
+  //dragoverイベントをキャンセルして、ドロップ先の要素がドロップを受け付けるようにする
+  event.preventDefault();
+}
 
-<html>
-    <head>
-    <link rel="stylesheet" href="https://unpkg.com/mermaid/dist/mermaid.min.css">
-    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-    
-    </head>
-    <body>
-    <div class="mermaid">
-    </div>
-    </body>
-    </html>
-    
-    
-    <script>mermaid.initialize({startOnLoad:true});</script>
-    <script>
-      var mermaidAPI = mermaid.mermaidAPI;
-    
-    mermaidAPI.initialize({
-      startOnLoad:false
-    });
-    
-    var element = document.getElementsByClassName("mermaid")[0];
-    var insertSvg = function(svgCode, bindFunctions) {
-      element.innerHTML = svgCode;
-    };
-    var graphDefinition = `classDiagram
-    
-    class キングクリムゾン{
-        -ans 都合の悪い話が出てくる。
-        -description 
-        これから絶対嫌な話が出ると感じた時に、
-    相手のセリフが喉を出る時かつ
-    キャンセルできない瞬間がポイント。
-    頭の中のフランクを操作するイメージ
-    
-            }
-    
-    class アポロロビンス{
-        -ans 都合の悪い話その２
-        -description 
-        記憶を操作できるような話題を振り、
-    注目をそらす
-    具体例
-    「そういえばOOの権はどうなりましたか？」
-    「財布は持ちました？盗まれたら反省書ですよ」
-            }
-    
-    class 忍野流{
-        -ans 言えない時
-        -description 
-        「言えないこと以外のことを教えておくれよ。」
-            }
-    
-    class 希少性の付与{
-        -ans 価値を高めたい
-        -description 
-        「今しかできないですよ」
-            }
-    
-    class 楽しいを考える{
-        -ans 場の空気を回復させたい
-        -description 
-        「楽ではなく、楽しい」
-    「どうなったら楽しいか考えて」
-    「どうせやるなら楽しい方がよくないですか？」
-            }
-    
-    class あら{
-        -ans 高級感を出したい
-        -description 
-        「あ」は高く、
-    「ら」は低くがオススメ
-            }
-    
-    class 退屈そのもの{
-        -ans 世界一傷つける言葉
-        -description 
-        「お前といるのは退屈だ」は、
-    世界一傷付く
-            }
-    
-    
-    
-    キングクリムゾン --アポロロビンス:黄金の組み合わせ
-    アポロロビンス -- 忍野流
-    
-    アポロロビンス -->　楽しいを考える:信頼の回復
-    
-    楽しいを考える -- 希少性の付与:黄金の組み合わせ
-    希少性の付与 --> あら
-    楽しいを考える --> あら
-    退屈そのもの`;
-    
-    var graph = mermaidAPI.render("mermaid", graphDefinition, insertSvg);
-      target = document.getElementById("classid-楽しいを考える-4")
-      target2 = target.getElementsByClassName("classText")[0]
-      target.innerHTML = (target.innerHTML + `
-      <image y="22" xlink:href='https://iconscout.com/ms-icon-310x310.png' width="40px" height="40px">
+/***** ドロップ時の処理 *****/
+function f_drop(event){
+  //ドラッグされたデータのid名をDataTransferオブジェクトから取得
+  var id_name = event.dataTransfer.getData("text");
+  //id名からドラッグされた要素を取得
+  var drag_elm =document.getElementById(id_name);
+  //ドロップ先にドラッグされた要素を追加
+  event.currentTarget.appendChild(drag_elm);
+  //エラー回避のため、ドロップ処理の最後にdropイベントをキャンセルしておく
+  event.preventDefault();
+}
+■webkit系ブラウザでドラッグ＆ドロップを動かす
+Google Chrome・Safariなどのwebkit系ブラウザでは、CSSに以下の指定を追加してやると、 ドラッグ＆ドロップを動かすことができます。
 
-      `);
-      
-      </script>
-    
+CSSソース
+ドロップ先の要素 {-khtml-user-drag: element;}
+■ドラッグ＆ドロップのサンプル　ソース全文
+以下のサンプルはFirefox・Google Chrome・Safariで動作します。
+
+HTML + JavaScriptソース
+<!DOCTYPE html> 
+<html lang="ja"> 
+<head> 
+<meta charset=utf-8>
+<title>ドラッグ＆ドロップ　サンプル</title>
+<style>
+#fruits {
+  /*単なるスタイリング*/
+  width:500px; height:100px; margin:20px; background-color:#FF9966; border:1px solid #cc3333;
+}
+#dropbox {
+  /*単なるスタイリング*/
+  width:500px; height:100px; margin:20px; background-color:#CCFF66; border:1px solid #00cc00;
+  /*以下はwebkit系ブラウザでドラッグ＆ドロップを動かすための指定（ブラウザのサポートが進めば、必要なくなると思われます）*/
+  -khtml-user-drag: element;
+}
+</style>
+<script>
+/***** ドラッグ開始時の処理 *****/
+function f_dragstart(event){
+  //ドラッグするデータのid名をDataTransferオブジェクトにセット
+  event.dataTransfer.setData("text", event.target.id);
+}
+
+/***** ドラッグ要素がドロップ要素に重なっている間の処理 *****/
+function f_dragover(event){
+  //dragoverイベントをキャンセルして、ドロップ先の要素がドロップを受け付けるようにする
+  event.preventDefault();
+}
+
+/***** ドロップ時の処理 *****/
+function f_drop(event){
+  //ドラッグされたデータのid名をDataTransferオブジェクトから取得
+  var id_name = event.dataTransfer.getData("text");
+  //id名からドラッグされた要素を取得
+  var drag_elm =document.getElementById(id_name);
+  //ドロップ先にドラッグされた要素を追加
+  event.currentTarget.appendChild(drag_elm);
+  //エラー回避のため、ドロップ処理の最後にdropイベントをキャンセルしておく
+  event.preventDefault();
+}
+</script>
+</head>
+<body>
+
+<p>好きな果物は何ですか？</p>
+<div id="fruits" ondragover="f_dragover(event)" ondrop="f_drop(event)">
+<img src="images/apple.gif" id="apple" alt="りんご" draggable="true" ondragstart="f_dragstart(event)">
+<img src="images/orange.gif" id="orange" alt="みかん" draggable="true" ondragstart="f_dragstart(event)">
+<img src="images/grape.gif" id="grape" alt="ぶどう" draggable="true" ondragstart="f_dragstart(event)">
+</div>
+
+<p>下のボックスに入れてください。</p>
+<div id="dropbox" ondragover="f_dragover(event)" ondrop="f_drop(event)">
+</div>
+
+</body>
+</html>

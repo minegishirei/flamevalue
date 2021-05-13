@@ -32,8 +32,8 @@ category_dict = {
         "indextitle" : "対話と音声学",
         "description" : "「あはいより大きいーー」音声学を元にした言葉と印象の記録"
     },
-    "WordDesign" : {
-        "listinfo" : SpreadSheet.main("WordDesign"),
+    "WordEffect" : {
+        "listinfo" : SpreadSheet.main("WordEffect"),
         "indextitle" : "言葉の道具箱",
         "description" : "操作可能な範囲の限界ギリギリを攻める道具達"
     },
@@ -43,6 +43,8 @@ category_dict = {
 
 def index(request):
     return redirect("index.html")
+
+
 
 def sitemap(request):
     return render(request, 'meta/sitemap.xml') 
@@ -64,6 +66,12 @@ def design_page(request, htmlpage):
 def dialogue_page(request, htmlpage):
     category = "Dialogue"
     return page(request, category, htmlpage)
+
+
+def wordeffect_page(request, htmlpage):
+    category = "WordEffect"
+    return page(request, category, htmlpage)
+
 
 def page(request, category, htmlpage):
     if "--" in htmlpage:
@@ -93,6 +101,26 @@ def page(request, category, htmlpage):
     return render(request, 'parts/applebase.html', params)
 
 
+def buildable_index(request):
+    category = "WordEffect"
+    category_info = category_dict[category]
+    listinfo = category_info["listinfo"]
+    #params処理
+    params = {
+        "lilist" : listinfo,
+        "title" : category_info["indextitle"]
+    }
+    pageinfo = {}
+    params.update(pageinfo)
+    params.update({
+        "seo_title" : category_info["indextitle"],
+        "title" : category_info["indextitle"],
+        "description" : category_info["description"]
+    })
+    return render(request, 'buildable_index.html', params)
+
+
+
 def dialog_uml(request):
     lilist = []
     """
@@ -100,7 +128,7 @@ def dialog_uml(request):
     category_info = category_dict[category]
     lilist.extend(category_info["listinfo"])
     """
-    category = "WordDesign"
+    category = "WordEffect"
     category_info = category_dict[category]
     lilist.extend(category_info["listinfo"])
 
@@ -171,15 +199,6 @@ class ClassComposit(Composit):
         self.code = f"""
 class {infoDict["title"]}"""+ "{"
         self.code += f"""
-.
-.
-.
-.
-.
-.
-.
-.
-----------------------------------
 -ans {infoDict["ans"]}
     -description 
     {infoDict["description"]}

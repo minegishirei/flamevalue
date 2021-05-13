@@ -7,8 +7,15 @@
 <body>
 <div class="mermaid">
 </div>
+
 </body>
 </html>
+
+
+<pre>
+  {{ umlcode }}
+</pre>
+
 
 
 <script>mermaid.initialize({startOnLoad:true});</script>
@@ -34,8 +41,8 @@ var graphDefinition = `{{ umlcode }}
 今しかできないですよ --> あら
 どうせやるなら楽しい方がよくないですか --> あら
 
-相変わらずー -->　石川くん
-石川くん --> 退屈そのもの
+相変わらずー -->OOくん
+OOくん --> 退屈そのもの
 `;
 
 var graph = mermaidAPI.render("mermaid", graphDefinition, insertSvg);
@@ -44,12 +51,12 @@ var graph = mermaidAPI.render("mermaid", graphDefinition, insertSvg);
 {% for li in lilist %}
       target = document.querySelector("[id^=classid-{{li.title}}]")
       target2 = target.getElementsByClassName("classText")[0]
-      target.innerHTML = (target.innerHTML + `
-      <image y="22" x="2" xlink:href='{{li.img}}' height="90px">
+      /*
+            target.innerHTML = (target.innerHTML + `
+      <image y="22" x="2" xlink:href='1{{li.img}}' height="150px" width="150px">
       `);
+      */
       {% endfor %}
-
-
 </script>
 
 
@@ -58,11 +65,3 @@ var graph = mermaidAPI.render("mermaid", graphDefinition, insertSvg);
 {% endfor %}
 
 
-<script>
-  pelement = document.createAttribute("p");
-  pelement.innerHTML = "aaaaa"
-
-  
-  target = document.getElementById("classid-楽しいを考える-4")
-  target.appendChild(pelement);
-</script>
