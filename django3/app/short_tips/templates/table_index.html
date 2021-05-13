@@ -18,8 +18,7 @@
     <table>
         <thead>
             <tr>
-                <th>Plans</th>
-                <th>Good</th>
+                <th>Title</th>
                 <th>Better</th>
                 <th>Awesome</th>
             </tr>
@@ -27,13 +26,11 @@
         <tbody>
             {% for litag in listinfo %}
             <tr>
-                <td>
+                <td class="down_shadow thumbnail item ">
+                    <img class="thumbnail" src="{{ litag.img }}">
                     <a rel="external" href="./{{ litag.title }}" title="Github">
                         {{ litag.title }}
                     </a>
-                </td>
-                <td class="down_shadow thumbnail item ">
-                    <img class="thumbnail" src="{{ litag.img }}">
                 </td>
                 <td>
                     {{ litag.ans }}
