@@ -1,4 +1,3 @@
-
 {% extends 'parts/base.html' %}
 
 {% block headblock %}
@@ -15,7 +14,11 @@
 
 {% block mainblock %}
 <div class="column">
-    <table>
+    <input type="text" id="search"> 
+    <input type="button" value="絞り込む" id="button"> 
+    <input type="button" value="すべて表示" id="button2">
+
+    <table id="result">
         <thead>
             <tr>
                 <th>Title</th>
@@ -26,15 +29,20 @@
         <tbody>
             {% for litag in listinfo %}
             <tr>
-                <td style="width: 50px;">
+                <td style="width: 200px;">
                     {{ litag.ans }}
                 </td>
+
                 <td class="down_shadow thumbnail item ">
-                    <img class="thumbnail" src="{{ litag.img }}">
+
                     <a rel="external" href="./{{ litag.title }}" title="Github">
+                        <img class="thumbnail" src="{{ litag.img }}">
+
+
                         {{ litag.title }}
                     </a>
                 </td>
+
 
                 <td>{{ litag.description }}</td>
             </tr>
@@ -44,66 +52,90 @@
 </div>
 
 <style>
-    
     .row2 {
         height: 2em;
     }
-.footnav{
-    padding-top: 20px;
-    opacity: 0;
-}
+
+    .footnav {
+        padding-top: 20px;
+        opacity: 0;
+    }
 
 
-.footnav {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0);
-    opacity: 1;
-}
-.footnav:hover {
-    z-index: 5;
-	-webkit-transition: 0.5s ease-in-out;
-	-moz-transition: 0.5s ease-in-out;
-	-o-transition: 0.5s ease-in-out;
-	transition: 0.5s ease-in-out;
-    opacity: 1;
-    background: rgba(70, 69, 69, 0);
-}
-.horizontal-list {
-  overflow-x: auto;
-  white-space: nowrap;
-  display: inline-block;
-}
+    .footnav {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 1;
+    }
 
-.item {
-    vertical-align: top;
-  /* 横スクロール用 */
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-}
-img.thumbnail {
-    padding-left: 3px;
-    padding-right: 3px;
-    width: 200px;
-    height: 130px;
-object-fit: cover; /* この一行を追加するだけ！ */
-}
+    .footnav:hover {
+        z-index: 5;
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+        opacity: 1;
+        background: rgba(70, 69, 69, 0);
+    }
+
+    .horizontal-list {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: inline-block;
+    }
+
+    .item {
+        vertical-align: top;
+        /* 横スクロール用 */
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+    }
+
+    img.thumbnail {
+        padding-left: 3px;
+        padding-right: 3px;
+        width: 200px;
+        height: 130px;
+        object-fit: cover;
+        /* この一行を追加するだけ！ */
+    }
 
 
-.down_shadow {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) ;
-    /*アニメーションの設定*/
-    opacity: 0.8;
-    transition: all .3s;
-}
+    .down_shadow {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1);
+        /*アニメーションの設定*/
+        opacity: 0.8;
+        transition: all .3s;
+    }
 
-/*hoverをしたらボックスの影が拡がり色が濃くなる*/
-.down_shadow:hover {
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5), 0 0 50px rgba(128, 128, 128, 0.1) ;
-    opacity: 0.8;
-    border-color: transparent;
-}
+    /*hoverをしたらボックスの影が拡がり色が濃くなる*/
+    .down_shadow:hover {
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5), 0 0 50px rgba(128, 128, 128, 0.1);
+        opacity: 0.8;
+        border-color: transparent;
+    }
+</style>
 
- 
-     </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+    $(function(){
+	$('#button').bind("click",function(){
+		var re = new RegExp($('#search').val());
+		$('#result tbody tr').each(function(){
+			var txt = $(this).find("td:eq(2)").html();
+			if(txt.match(re) != null){
+				$(this).show();
+			}else{
+				$(this).hide();
+			}
+		});
+	});
+
+	$('#button2').bind("click",function(){
+		$('#search').val('');
+		$('#result tr').show();
+	});
+});
+</script>
 {% endblock %}
