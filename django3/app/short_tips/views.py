@@ -103,7 +103,6 @@ def table_index(request):
 
 
 
-
 def page(request, category, htmlpage):
     if "--" in htmlpage:
         return registar(request,htmlpage)
