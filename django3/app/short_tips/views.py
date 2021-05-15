@@ -19,21 +19,25 @@ import json
 
 category_dict = {
     "design": {
+        "category" : "design",
         "listinfo": SpreadSheet.main("Design"),
         "indextitle": "1分で分かる デザイン逆引き集",
         "description": "すぐに使えるデザインテクニックを厳選！"
     },
     "shortcutkey": {
+        "category":"shortcutkey",
         "listinfo": SpreadSheet.main("ShortCutKey"),
         "indextitle": "1分で分かる ショートカットキー集",
         "description": "すぐに使えるショートカットキーを厳選！"
     },
     "dialogue": {
+        "category":"dialogue",
         "listinfo": SpreadSheet.main("Dialogue"),
         "indextitle": "対話と音声学",
         "description": "「あはいより大きいーー」音声学を元にした言葉と印象の記録"
     },
     "wordeffect": {
+        "category" : "wordeffect",
         "listinfo": SpreadSheet.main("WordEffect"),
         "indextitle": "言葉の道具箱",
         "description": "操作可能な範囲の限界ギリギリを攻める道具達"
@@ -91,8 +95,8 @@ class SwitchPage():
         return render(request, 'meta/robots.txt')
 
     def sitemap(self, request):
-        category_info = get_category_info(request.get_host())
-        return render(request, 'meta/sitemap.xml')
+        paramBuilder = IndexParamBuilder(request, "index.html")
+        return render(request, f'meta/{paramBuilder.}.xml')
 
     def table_index(self, request):
         paramBuilder = IndexParamBuilder(request, "table_index.html")
