@@ -80,6 +80,8 @@ class SwitchPage():
             return self.index(request)
         elif "robots.txt" == htmlpage:
             return self.robots(request)
+        elif htmlpage.endswith(".xml"):
+            return self.sitemap(request, htmlpage)
         else:
             return self.elsepage(request, htmlpage)
 
@@ -94,9 +96,8 @@ class SwitchPage():
     def robots(self, request):
         return render(request, 'meta/robots.txt')
 
-    def sitemap(self, request):
-        paramBuilder = IndexParamBuilder(request, "index.html")
-        return render(request, f'meta/{paramBuilder.}.xml')
+    def sitemap(self, request, htmlpage):
+        return render(request, f'meta/{htmlpage}')
 
     def table_index(self, request):
         paramBuilder = IndexParamBuilder(request, "table_index.html")
@@ -117,6 +118,7 @@ class ParamBuilder():
     def __init__(self, request, htmlpage):
         host = request.get_host()
         self.category_info = get_category_info(host)
+        self.category = self.category_info["category"]
         self.lilist = self.category_info["listinfo"]
         self.page_info = get_pageinfo(htmlpage, self.lilist)
         self.request = request
@@ -160,83 +162,6 @@ class IndexParamBuilder(ParamBuilder):
 
 
 
-
-"""
-def shortcutkey_page(request, htmlpage):
-    category = "shortcutkey"
-    return page(request, category, htmlpage)
-
-
-def design_page(request, htmlpage):
-    category = "design"
-    return page(request, category, htmlpage)
-
-
-def dialogue_page(request, htmlpage):
-    category = "Dialogue"
-    return page(request, category, htmlpage)
-
-
-def wordeffect_page(request, htmlpage):
-    category = "WordEffect"
-    return page(request, category, htmlpage)
-
-
-def table_index(request):
-    host = request.get_host()
-    category_info = get_category_info(host)
-    print(category_info)
-    params = category_info
-    return render(request, 'table_index.html', params)
-
-
-def page(request, category, htmlpage):
-
-    if "--" in htmlpage:
-        return registar(request, htmlpage)
-
-    category_info = category_dict[category]
-    listinfo = category_info["listinfo"]
-    #params処理
-    params = {
-        "lilist": listinfo,
-        "title": category_info["indextitle"]
-    }
-    pageinfo = get_pageinfo(htmlpage, listinfo)
-    params.update(pageinfo)
-    if htmlpage == "index.html":
-        params.update({
-            "seo_title": category_info["indextitle"],
-            "title": category_info["indextitle"],
-            "description": category_info["description"]
-        })
-        return render(request, 'index.html', params)
-    else:
-        params.update({
-            "seo_title":  pageinfo["title"] + " - "+category_info["indextitle"],
-            "title": pageinfo["title"],
-        })
-    return render(request, 'parts/applebase.html', params)
-
-
-def buildable_index(request):
-    category = "WordEffect"
-    category_info = category_dict[category]
-    listinfo = category_info["listinfo"]
-    #params処理
-    params = {
-        "lilist": listinfo,
-        "title": category_info["indextitle"]
-    }
-    pageinfo = {}
-    params.update(pageinfo)
-    params.update({
-        "seo_title": category_info["indextitle"],
-        "title": category_info["indextitle"],
-        "description": category_info["description"]
-    })
-    return render(request, 'buildable_index.html', params)
-"""
 
 def dialog_uml(request):
     lilist = []
