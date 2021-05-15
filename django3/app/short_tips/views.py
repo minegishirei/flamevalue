@@ -95,9 +95,10 @@ class SwitchPage():
         return render(request, 'meta/sitemap.xml')
 
     def table_index(self, request):
-        host = request.get_host()
-        category_info = get_category_info(host)
-        return render(request, category_info, 'table_index.html')
+        paramBuilder = IndexParamBuilder(request, "table_index.html")
+        paramBuilder.set_lilist()
+        paramBuilder.page()
+        return render(request,  'table_index.html', paramBuilder.params)
 
     def elsepage(self, request, htmlpage):
         paramBuilder = ParamBuilder(request, htmlpage)
