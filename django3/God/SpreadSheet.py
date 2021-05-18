@@ -66,7 +66,7 @@ def registar(row ):
     queue = deque(row)
     ds= worksheet.range("A1:C100")
     for i, cell in enumerate(ds):
-        column = (i+1)%6-1
+        column = (i+1)%3-1
         if cell.value != "":
             continue
 
