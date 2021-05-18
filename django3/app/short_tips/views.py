@@ -42,6 +42,12 @@ category_dict = {
         "indextitle": "言葉の道具箱",
         "description": "操作可能な範囲の限界ギリギリを攻める道具達"
     },
+    "stock": {
+        "category" : "stock",
+        "listinfo": SpreadSheet.main("stock"),
+        "indextitle": "SEメモ",
+        "description": "SEメモ"
+    },
 }
 
 def get_category_info(host_name):

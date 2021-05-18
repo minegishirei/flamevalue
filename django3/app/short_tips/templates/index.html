@@ -23,7 +23,9 @@
         {% for litag in lilist %}
         <li class="down_shadow thumbnail item ">
             <a rel="external" href="./{{ litag.title }}" title="Github">
+                {% if litag.img != "" %}
                 <img class="thumbnail" src="{{ litag.img }}">
+                {% endif %}
                 <div class="titlecentor row2">
                     
                         {{ litag.title }}
