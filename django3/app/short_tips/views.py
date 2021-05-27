@@ -20,25 +20,25 @@ import json
 category_dict = {
     "design": {
         "category" : "design",
-        "listinfo": SpreadSheet.main("Design"),
+        "listinfo": SpreadSheet.main("design"),
         "indextitle": "1分で分かる デザイン逆引き集",
         "description": "すぐに使えるデザインテクニックを厳選！"
     },
     "shortcutkey": {
         "category":"shortcutkey",
-        "listinfo": SpreadSheet.main("ShortCutKey"),
+        "listinfo": SpreadSheet.main("shortcutkey"),
         "indextitle": "1分で分かる ショートカットキー集",
         "description": "すぐに使えるショートカットキーを厳選！"
     },
     "dialogue": {
         "category":"dialogue",
-        "listinfo": SpreadSheet.main("Dialogue"),
+        "listinfo": SpreadSheet.main("dialog"),
         "indextitle": "対話と音声学",
         "description": "「あはいより大きいーー」音声学を元にした言葉と印象の記録"
     },
     "wordeffect": {
         "category" : "wordeffect",
-        "listinfo": SpreadSheet.main("WordEffect"),
+        "listinfo": SpreadSheet.main("wordeffect"),
         "indextitle": "言葉の道具箱",
         "description": "操作可能な範囲の限界ギリギリを攻める道具達"
     },
@@ -84,12 +84,22 @@ class SwitchPage():
             return registar(request, htmlpage)
         elif "index.html" == htmlpage:
             return self.index(request)
+        elif "buildable_index.html" == htmlpage:
+            return self.buildable_index(request)
         elif "robots.txt" == htmlpage:
             return self.robots(request)
         elif htmlpage.endswith(".xml"):
             return self.sitemap(request, htmlpage)
         else:
             return self.elsepage(request, htmlpage)
+
+    def buildable_index(self, request):
+        paramBuilder = IndexParamBuilder(request, "index.html")
+        paramBuilder.set_title()
+        paramBuilder.set_lilist()
+        paramBuilder.page()
+        params = paramBuilder.params
+        return render(request, "buildable_index.html", params )
 
     def index(self, request):
         paramBuilder = IndexParamBuilder(request, "index.html")

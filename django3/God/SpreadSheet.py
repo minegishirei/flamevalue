@@ -25,13 +25,13 @@ def main(sheetname):
     worksheet = gc.open_by_key(SPREADSHEET_KEY).worksheet(sheetname)
 
     taglist = []
-    for i, cell in enumerate(worksheet.range("A1:H1")):
+    for i, cell in enumerate(worksheet.range("A1:J1")):
         taglist.append(cell.value)
     
     infolist = []
     row = {}
-    for i, cell in enumerate(worksheet.range("A2:H100")):
-        column = (i+1)%8
+    for i, cell in enumerate(worksheet.range("A2:J100")):
+        column = (i+1)%10
         tag = taglist[column-1]
         row.update({
             tag : cell.value

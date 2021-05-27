@@ -12,13 +12,58 @@
 {% endblock %}
 
 
+
 {% block mainblock %}
 <div class="column">
-    <input type="text" id="search"> 
-    <input type="button" value="絞り込む" id="button"> 
-    <input type="button" value="すべて表示" id="button2">
+    <div id="form5">
+        <input type="text" id="search">
+        <input type="button" value="Q" id="button">
+    </div>
 
-    <table id="result">
+    <style>
+        #form5 {
+            position: relative;
+            margin: 30px;
+        }
+
+        #search {
+            outline: 0;
+            height: 50px;
+            padding: 0 10px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            max-width: 270px;
+            border-radius: 2px;
+            background: #eee;
+        }
+
+        #button {
+            width: 70px;
+            height: 50px;
+            position: absolute;
+            left: 280px;
+            top: 0;
+            border-radius: 2px;
+            background: #7fbfff;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            border: none;
+        }
+
+        #button:hover {
+            background: #eee;
+            color: #77b2ec;
+        }
+    </style>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.1/js/jquery.tablesorter.min.js"></script>
+
+
+
+    <table class="tablesorter" id="myTable">
         <thead>
             <tr>
                 <th>Title</th>
@@ -29,17 +74,17 @@
         <tbody>
             {% for litag in lilist %}
             <tr>
+                <td>
+                    {{ litag.effect }}
+                </td>
+
                 <td style="width: 200px;">
                     {{ litag.ans }}
                 </td>
 
-                <td class="down_shadow thumbnail item ">
+                <td style="width: 200px;">
 
                     <a rel="external" href="./{{ litag.title }}" title="Github">
-                        {% if litag.img != "" %}
-                        <img class="thumbnail" src="{{ litag.img }}">
-                        {% endif %}
-
 
                         {{ litag.title }}
                     </a>
@@ -52,6 +97,21 @@
         </tbody>
     </table>
 </div>
+
+
+<style>
+    #myTable .tablesorter-header {
+        cursor: pointer;
+        outline: none;
+    }
+
+    #myTable .tablesorter-header-inner::after {
+        content: '▼';
+        font-size: 12px;
+        margin-left: 5px;
+    }
+</style>
+
 
 <style>
     .row2 {
@@ -121,23 +181,23 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
-    $(function(){
-	$('#button').bind("click",function(){
-		var re = new RegExp($('#search').val());
-		$('#result tbody tr').each(function(){
-			var txt = $(this).find("td:eq(2)").html();
-			if(txt.match(re) != null){
-				$(this).show();
-			}else{
-				$(this).hide();
-			}
-		});
-	});
+    $(function () {
+        $('#button').bind("click", function () {
+            var re = new RegExp($('#search').val());
+            $('#result tbody tr').each(function () {
+                var txt = $(this).find("td:eq(2)").html();
+                if (txt.match(re) != null) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
 
-	$('#button2').bind("click",function(){
-		$('#search').val('');
-		$('#result tr').show();
-	});
-});
+        $('#button2').bind("click", function () {
+            $('#search').val('');
+            $('#result tr').show();
+        });
+    });
 </script>
 {% endblock %}
