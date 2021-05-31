@@ -9,4 +9,5 @@ host_patterns = patterns(
     host(r'dialogue', 'short_tips.urls', name='dialogue'),
     host(r'wordeffect', 'short_tips.urls', name='wordeffect'),
     host(r'stock', 'short_tips.urls', name='stock'),
+    host(r'shogi', 'short_tips.urls', name='shogi'),
 )

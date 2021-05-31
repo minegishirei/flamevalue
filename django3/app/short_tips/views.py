@@ -48,6 +48,12 @@ category_dict = {
         "indextitle": "SEメモ",
         "description": "SEメモ"
     },
+    "shogi": {
+        "category" : "shogi",
+        "listinfo": SpreadSheet.main("shogi"),
+        "indextitle": "将棋のケアレスミスメモ",
+        "description": "将棋にケアレスミスはつきもの。だがそれも魅力の一つ。"
+    },
 }
 
 def get_category_info(host_name):
@@ -65,14 +71,6 @@ def get_pageinfo(title, listinfo):
 
 
 
-def index( request):
-    paramBuilder = IndexParamBuilder(request, "index.html")
-    paramBuilder.set_title()
-    paramBuilder.set_lilist()
-    paramBuilder.page()
-    params = paramBuilder.params
-    print(params)
-    return render(request, "index.html", params )
 
 
 class SwitchPage():
@@ -100,6 +98,15 @@ class SwitchPage():
         paramBuilder.page()
         params = paramBuilder.params
         return render(request, "buildable_index.html", params )
+
+    def sortindex(self, request):
+        paramBuilder = IndexSortParamBuilder(request, "index.html")
+        paramBuilder.set_sortlilist()
+        paramBuilder.set_title()
+        paramBuilder.set_lilist()
+        paramBuilder.page()
+        params = paramBuilder.params
+        return render(request, "index.html", params )
 
     def index(self, request):
         paramBuilder = IndexParamBuilder(request, "index.html")
@@ -175,6 +182,14 @@ class IndexParamBuilder(ParamBuilder):
             "title": self.category_info["indextitle"],
             "description": self.category_info["description"]
         })
+
+
+class IndexSortParamBuilder(IndexParamBuilder):
+    def __init__(self):
+        super().__init__()
+    
+    def set_sortlilist(self):
+        sorted_lilist = sorted(self.lilist , key=lambda x:x['effect'])
 
 
 
