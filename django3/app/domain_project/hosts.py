@@ -10,4 +10,5 @@ host_patterns = patterns(
     host(r'wordeffect', 'short_tips.urls', name='wordeffect'),
     host(r'stock', 'short_tips.urls', name='stock'),
     host(r'shogi', 'short_tips.urls', name='shogi'),
+    host(r'psy', 'short_tips.urls', name='psy'),
 )

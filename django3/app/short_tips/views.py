@@ -54,6 +54,12 @@ category_dict = {
         "indextitle": "将棋のケアレスミスメモ",
         "description": "将棋にケアレスミスはつきもの。だがそれも魅力の一つ。"
     },
+        "psy": {
+        "category" : "psy",
+        "listinfo": SpreadSheet.main("psy"),
+        "indextitle": "将棋のケアレスミスメモ",
+        "description": "将棋にケアレスミスはつきもの。だがそれも魅力の一つ。"
+    }
 }
 
 def get_category_info(host_name):
