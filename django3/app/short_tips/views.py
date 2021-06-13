@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
@@ -6,7 +8,8 @@ import pprint
 
 import sys
 import sys
-sys.path.append('/God')
+if '/God' not in sys.path:
+    sys.path.append('/God')
 
 import SpreadSheet
 import os
@@ -14,6 +17,7 @@ import threading
 import random
 import json
 
+from DAO import DAO, InsertableDAO, TableCreatableDAO, CmdDAO, create_newTable
 
 
 
@@ -32,52 +36,52 @@ category_dict = {
     },
     "dialogue": {
         "category":"dialogue",
-        "listinfo": SpreadSheet.main("dialog"),
         "indextitle": "対話と音声学",
         "description": "「あはいより大きいーー」音声学を元にした言葉と印象の記録"
     },
     "wordeffect": {
         "category" : "wordeffect",
-        "listinfo": SpreadSheet.main("wordeffect"),
         "indextitle": "言葉の道具箱",
         "description": "操作可能な範囲の限界ギリギリを攻める道具達"
     },
     "stock": {
         "category" : "stock",
-        "listinfo": SpreadSheet.main("stock"),
         "indextitle": "SEメモ",
         "description": "SEメモ"
     },
     "shogi": {
         "category" : "shogi",
-        "listinfo": SpreadSheet.main("shogi"),
         "indextitle": "将棋のケアレスミスメモ",
         "description": "将棋にケアレスミスはつきもの。だがそれも魅力の一つ。"
     },
         "psy": {
         "category" : "psy",
-        "listinfo": SpreadSheet.main("psy"),
         "indextitle": "将棋のケアレスミスメモ",
         "description": "将棋にケアレスミスはつきもの。だがそれも魅力の一つ。"
     }
 }
 
-def get_category_info(host_name):
-    for key in category_dict.keys():
-        if host_name.startswith(key):
-            return category_dict[key]
-    return None
-
-def get_pageinfo(title, listinfo):
-    for info in listinfo:
-        print(info["title"])
-        if info["title"] == title:
-            return info
-    return {}
 
 
+def init_sql(category):
+    tagzip,list_info  = SpreadSheet.main(category)
+    column = " ,".join([ str(tag) + " " + str(type_) for  tag, type_ in tagzip])
+    with InsertableDAO(category, column) as dao:
+        for li in list_info:
+            try:
+                statement = 'insert into ' + category + ' VALUES (' + ', '.join(['"'+str(v) + '"' for v in li.values()]) + ')'
+                dao.run(statement)
+            except:
+                import traceback
+                traceback.print_exc()
 
+init_sql("psy")
+init_sql("localtheorem")
+init_sql("design")
+init_sql("furniture")
+init_sql("individuality")
 
+init_sql("shortcutkey")
 
 class SwitchPage():
     def __init__(self):
@@ -97,30 +101,11 @@ class SwitchPage():
         else:
             return self.elsepage(request, htmlpage)
 
-    def buildable_index(self, request):
-        paramBuilder = IndexParamBuilder(request, "index.html")
-        paramBuilder.set_title()
-        paramBuilder.set_lilist()
-        paramBuilder.page()
-        params = paramBuilder.params
-        return render(request, "buildable_index.html", params )
-
-    def sortindex(self, request):
-        paramBuilder = IndexSortParamBuilder(request, "index.html")
-        paramBuilder.set_sortlilist()
-        paramBuilder.set_title()
-        paramBuilder.set_lilist()
-        paramBuilder.page()
-        params = paramBuilder.params
-        return render(request, "index.html", params )
-
     def index(self, request):
-        paramBuilder = IndexParamBuilder(request, "index.html")
-        paramBuilder.set_title()
-        paramBuilder.set_lilist()
-        paramBuilder.page()
-        params = paramBuilder.params
-        return render(request, "index.html", params )
+        category_name = request.get_host().split(".")[0]
+        indexParamFactory  = IndexParamFactory()
+        params = indexParamFactory.build(category_name)
+        return render(request, "index.html", params)
 
     def robots(self, request):
         return render(request, 'meta/robots.txt')
@@ -129,155 +114,126 @@ class SwitchPage():
         return render(request, f'meta/{htmlpage}')
 
     def table_index(self, request):
-        paramBuilder = IndexParamBuilder(request, "table_index.html")
-        paramBuilder.set_lilist()
-        paramBuilder.page()
-        return render(request,  'table_index.html', paramBuilder.params)
+        ParamFactory = ParamFactory(request, "table_index.html")
+        ParamFactory.set_lilist()
+        ParamFactory.page()
+        return render(request,  'table_index.html', ParamFactory.params)
 
-    def elsepage(self, request, htmlpage):
-        paramBuilder = ParamBuilder(request, htmlpage)
-        paramBuilder.set_title()
-        paramBuilder.set_lilist()
-        paramBuilder.page()
-        return render(request, "parts/applebase.html",paramBuilder.params)
-
-
-
-class ParamBuilder():
-    def __init__(self, request, htmlpage):
-        host = request.get_host()
-        self.category_info = get_category_info(host)
-        self.category = self.category_info["category"]
-        self.lilist = self.category_info["listinfo"]
-        self.page_info = get_pageinfo(htmlpage, self.lilist)
-        self.request = request
-        self.htmlpage = htmlpage
-        self.params = {}
-
-    def set_title(self):
-        self.params.update({
-            "title": self.category_info["indextitle"]
-        })
-
-    def set_description(self):
-        self.params.update({
-            "description": self.category_info["description"]
-        })
-
-    def set_lilist(self):
-        self.params.update({
-            "lilist": self.lilist
-        })
-
-    def page(self):
-        self.params.update(self.page_info)
-        self.params.update({
-            "seo_title":  self.page_info["title"] + " - "+self.category_info["indextitle"],
-            "title": self.page_info["title"],
-        })
-        
-
-
-class IndexParamBuilder(ParamBuilder):
-    def __init__(self, request, htmlpage):
-        super().__init__(request, htmlpage)
+    def page(self, request, htmlpage):
+        category_name = request.get_host().split(".")[0]
+        paramFactory = PageParamFactory()
+        params = paramFactory.build(category_name, htmlpage)
+        return render(request, "parts/applebase.html",params)
     
-    def page(self):
-        self.params.update({
-            "seo_title": self.category_info["indextitle"],
-            "title": self.category_info["indextitle"],
-            "description": self.category_info["description"]
+    def sql(self, request):
+        category_name = request.get_host().split(".")[0]
+        paramFactory = SQLParamFactory()
+        sentence = request.POST.get("sql")
+        if sentence is None:
+            sentence = f"select * from {category_name}"
+        params = paramFactory.build(category_name, sentence)
+        return render(request, "sql.html", params)
+
+
+
+
+class ParamComponent():
+    def __init__(self):
+        self.comdict ={}
+        super().__init__()
+    
+    def getComdict(self):
+        return self.comdict
+
+
+class TitleComponent(ParamComponent):
+    def __init__(self, title):
+        super().__init__()
+        self.comdict.update({
+            "title" : title
         })
 
+class RelationComponent(ParamComponent):
+    def __init__(self, category_name, page_name):
+        super().__init__()
+    
+class AllRelationComponent(ParamComponent):
+    def __init__(self, category_name):
+        super().__init__()
+        with DAO(category_name) as dao:
+            result = dao.select_all()
+            self.comdict.update({"all_relation": result})
 
-class IndexSortParamBuilder(IndexParamBuilder):
+class PageComponent(ParamComponent):
+    def __init__(self, category_name, page_name):
+        super().__init__()
+        with DAO(category_name) as dao:
+            result_list = dao.run(f'select * from {category_name} where title = "{page_name}"')
+            result = result_list[0]
+            self.comdict.update(result)
+
+class SQLComponent(ParamComponent):
+    def __init__(self, category_name, cmd):
+        super().__init__()
+        with DAO(category_name) as dao:
+            result = dao.run(cmd)
+            self.comdict.update({"all_relation": result})
+            self.comdict.update({"sql" : cmd})
+
+
+###############################
+
+class ParamFactory():
+    def __init__(self):
+        self.params = {}
+        self.category_name = ""
+        super().__init__()
+    
+    def getFactory(self, factoryType):
+        pass
+
+class IndexParamFactory(ParamFactory):
+    def __init__(self):
+        self.factoryType = "index"
+        super().__init__()
+    
+    def build(self, category_name):
+        self.category_name = category_name
+        componentList = [
+            TitleComponent(category_name),
+            AllRelationComponent(category_name)
+        ]
+        for component in componentList:
+            self.params.update(component.getComdict())
+        return self.params
+
+class PageParamFactory(ParamFactory):
     def __init__(self):
         super().__init__()
     
-    def set_sortlilist(self):
-        sorted_lilist = sorted(self.lilist , key=lambda x:x['effect'])
+    def build(self, category_name, page_name):
+        self.category_name = category_name
+        componentList = [
+            TitleComponent(page_name),
+            PageComponent(category_name, page_name),
+            AllRelationComponent(category_name)
+        ]
+        for component in componentList:
+            self.params.update(component.getComdict())
+        return self.params
 
-
-
-
-def dialog_uml(request):
-    lilist = []
-    """
-    category = "Dialogue"
-    category_info = category_dict[category]
-    lilist.extend(category_info["listinfo"])
-    """
-    category = "WordEffect"
-    category_info = category_dict[category]
-    lilist.extend(category_info["listinfo"])
-
-    umlBuilder = UmlBuilder()
-    for page in lilist:
-        classComposit = ClassComposit(page)
-        umlBuilder.add(classComposit)
-    umlBuilder.build()
-    umlcode = umlBuilder.dump()
-    param = {
-        "lilist": lilist,
-        "umlcode": umlcode
-    }
-    return render(request, "umlpage.html",  param)
-
-
-def registar(request, context):
-    SpreadSheet.registar(context.split("--"))
-    return render(request, '404NotFound.html')
-
-
-def get_pageinfo(title, listinfo):
-    for info in listinfo:
-        print(info["title"])
-        if info["title"] == title:
-            return info
-    return {}
-
-
-class Composit():
-    def add(self):
-        pass
-
-    def dump(self):
-        pass
-
-
-class UmlBuilder():
+class SQLParamFactory(ParamFactory):
     def __init__(self):
-        self.code = """classDiagram
-{}
-"""
-        self.classDefCode = ""
-        self.classDefList = []
-
-    def add(self, classComposit):
-        self.classDefList.append(classComposit)
-
-    def build(self):
-        for classDef in self.classDefList:
-            classDef.build()
-            self.classDefCode += (classDef.dump() + "\n")
-
-    def dump(self):
-        return self.code.format(self.classDefCode)
+        super().__init__()
+    
+    def build(self, category_name, cmd):
+        self.category_name = category_name
+        componentList = [
+            TitleComponent(category_name),
+            SQLComponent(category_name,cmd)
+        ]
+        for component in componentList:
+            self.params.update(component.getComdict())
+        return self.params
 
 
-class ClassComposit(Composit):
-    def __init__(self, infoDict):
-        self.code = f"""
-class {infoDict["title"]}""" + "{"
-        self.code += f"""
--ans {infoDict["ans"]}
-    -description 
-    {infoDict["description"]}
-        """
-        self.code += "}"
-
-    def build(self):
-        pass
-
-    def dump(self):
-        return self.code

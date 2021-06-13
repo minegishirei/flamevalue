@@ -5,3 +5,5 @@ redis
 oauth2client
 gspread
 django-hosts
+mysqlclient
+mysql-connector-python
