@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "short_tips",
     'django_hosts',    # ←追加する
+    "apologagent",
+    "examengcloud"
 ]
 
 MIDDLEWARE = [
