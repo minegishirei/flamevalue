@@ -12,7 +12,7 @@ def index(request):
 
 
 def sitemap(request):
-    return render(request,"apologagent/sitemap.html")
+    return render(request,"apologagent/sitemap.xml")
 
 class ActionFactory():
     def __init__(self):
