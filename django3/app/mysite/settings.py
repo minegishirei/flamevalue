@@ -137,3 +137,5 @@ PARENT_HOST = 'example .com:8000' # ←追加(本来はポートなしで設定�
 ROOT_HOSTCONF = 'domain_project.hosts' # ←追加(hosts設定は後ほど):プロジェクト名は変更してください
 DEFAULT_HOST = 'www' # ←追加(デフォルトとなるサブドメイン)
 
+
+SESSION_ENGINE = "django.contrib.sessions.backends.file" #ファイルで保存
