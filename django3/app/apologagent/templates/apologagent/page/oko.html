@@ -1,34 +1,166 @@
-
 {% extends 'parts/normalflame.html' %}
 
 {% block bodyblock %}
 
 
 
+<body>
 
-<section>
-    <div class="wrap">
-        <div class="content-left">
-            <h3>
-            Q1<small>/3</small>
-            </h3>
-            <p>あなたは一体何をしでかしたのでしょうか？</p>
-            <pre>
+    <main role="main">
+        <article id="webslides">
 
+            <section>
+                <div class="wrap">
+                    <div class="content-center">
+                        <p>サンプル反省書🙇‍♂️</p>
+                        <small>()以外のパーツも取り換え可能です。</small>
+                        <pre>
+この度は（一時間以上も遅刻）してしまい、大変申し訳ございませんでした。
+皆様に多大なご迷惑をおかけしたことを申し上げます。
+直接の原因は（アラームを設定し忘れた）ことが原因です。
+今後はこのようなことが２度と起きぬよう 、再発防止に努めます。
             </pre>
-            
-        </div>
-        <!-- end .content-left -->
-        <div class="content-left">
-            <!-- <div class="embed"> = Responsive -->
-                <textarea></textarea>
-            <!-- end .embed -->
-        </div>
-        <!-- end .content-left -->
-    </div>
-    <!-- .end .wrap -->
-</section>
+            <br>
+                        <p>
+                            <a href="#slide=2">謝罪文を作る</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
 
+
+            {% for item in pageContentList %}
+            <section>
+                <div class="wrap">
+                    <div class="content-center">
+                        <h3>
+                            Q{{ item.number }}<small>/3</small>
+                        </h3>
+                        <p>{{ item.title }}</p>
+
+                        <pre>{{ item.preface }}<form method="POST" action="{{ item.next }}">{% csrf_token %}<input name="{{ item.name }}" type="text" placeholder="{{ item.example }}" value="{{ item.value }}" ></input></form>{{ item.afterword }}</pre>
+                    </div>
+                    <!-- end .content-left -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+            {% endfor %}
+
+
+
+
+
+            <section>
+                <div class="wrap">
+                    <div class="content-center">
+                        <h3>
+                            Q1<small>/3</small>
+                            結論
+                        </h3>
+                        <p>あなたは一体何をしでかしたのでしょうか？</p>
+                        <small>ex)定例会議に30分以上も遅刻してしまい</small>
+
+                        <pre>この度は、<input type="text" ></input>、大変申し訳ございませんでした。</pre>
+                    </div>
+                    <!-- end .content-left -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <section>
+                <div class="wrap">
+                    <div class="content-center">
+                        <h3>
+                            Q2<small>/3</small>
+                            影響
+                        </h3>
+                        <p>その結果、どのような影響が出たのでしょうか</p>
+                        <small></small>
+                        <pre>その結果、<textarea>皆様に多大なご迷惑をおかけした</textarea>
+ことを、お詫び申し上げます</pre>
+                    </div>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="wrap">
+                    <div class="content-center">
+                        <h3>
+                            Q3<small>/3</small>
+                            原因
+                        </h3>
+                        <p>その結果、どのような影響が出たのでしょうか</p>
+                        <small>ex)</small>
+                        <pre>原因は<textarea></textarea>
+ことによります。</pre>
+                    </div>
+                    <!-- end .content-left -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+
+            <section>
+                <div class="wrap">
+                    <div class="content-center">
+                        <h3>
+                            調節
+                        </h3>
+                        <p>　文章を綺麗に整えましょう</p>
+                        <small>ex)</small>
+                        <pre>
+
+                        </pre>
+                        <p>
+                            <a href="#slide=6">完成</a>
+                        </p>
+                    </div>
+                    <!-- end .content-left -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+
+            　
+            <section>
+                <div class="wrap">
+                    <div class="content-center">
+                        <p>反省書🙇‍♂️</p>
+                        <small></small>
+                        <pre>
+この度は一時間以上も遅刻してしまい、大変申し訳ございませんでした。
+皆様に多大なご迷惑をおかけしたことを申し上げます。
+直接の原因はアラームを設定し忘れたことが原因です。
+今後はこのようなことが２度と起きぬよう 、再発防止に努めます。
+            </pre>
+            <br>
+            ２度と来る出ないぞ
+                    </div>
+                </div>
+            </section>
+
+        </article>
+    </main>
+    <!--main-->
+
+    <script>
+
+
+    </script>
+
+    <style>
+        input {
+            box-shadow: none;
+            border: none;
+        }
+    </style>
+
+
+
+
+    {% include 'parts/js/slide.html' %}
+</body>
 
 
 {% endblock %}
