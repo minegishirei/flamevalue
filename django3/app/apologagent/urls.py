@@ -4,6 +4,7 @@ urlpatterns = [
     path('', views.index , name="index"), 
     path('index.html', views.index , name="index"),
     path("sitemap.xml", views.sitemap, name="sitemap"),
+    path("robots.txt", views.robots, name="robots"),
     path("page/<htmlname>", views.page , name="page")
 ]
 

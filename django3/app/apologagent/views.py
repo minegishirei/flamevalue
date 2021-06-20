@@ -14,6 +14,9 @@ def index(request):
 def sitemap(request):
     return render(request,"apologagent/sitemap.xml")
 
+def robots(request):
+    return render(request, "apologagent/robots.txt")
+
 class ActionFactory():
     def __init__(self):
         super().__init__()
