@@ -1,14 +1,39 @@
 {% extends 'parts/normalflame.html' %}
 
+{% block headerblock %}
+{% endblock %}
+
+
+
 {% block bodyblock %}
 
 
 
 <body>
-
+    <header role="banner">
+        <nav role="navigation">
+            <p class="logo"><a href="https://webslides.tv/" title="WebSlides">WebSlides</a></p>
+            <ul>
+                <li class="github">
+                    <a rel="external" href="https://github.com/webslides/webslides" title="Github">
+                        <svg class="fa-github">
+                            <use xlink:href="#fa-github"></use>
+                        </svg>
+                        <em>WebSlides</em>
+                    </a>
+                </li>
+                <li class="twitter">
+                    <form method="POST" action="">
+                        {% csrf_token %}
+                        <input type="submit" name="deleteAll" value="clear">
+                    </form>
+                </li>
+                <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+            </ul>
+        </nav>
+    </header>
     <main role="main">
         <article id="webslides">
-
             <section>
                 <div class="wrap">
                     <div class="content-center">
@@ -34,11 +59,18 @@
                 <div class="wrap">
                     <div class="content-center">
                         <h3>
-                            Q{{ item.number }}<small>/3</small>
+                            Q{{ item.process }}<small>/3</small>
                         </h3>
                         <p>{{ item.title }}</p>
-
-                        <pre>{{ item.preface }}<form method="POST" action="{{ item.next }}">{% csrf_token %}<input name="{{ item.name }}" type="text" placeholder="{{ item.example }}" value="{{ item.value }}" ></input></form>{{ item.afterword }}</pre>
+                        <small>{{ item.supp }}</small>
+                        <pre>{{ item.preface }}<form method="POST" action="{{ item.next }}">{% csrf_token %}<input name="{{ item.name }}-u" type="text" placeholder="{{ item.example }}" value="{{ item.value }}" ></input></form>{{ item.afterword }}</pre>
+                        <br>
+                        <!--
+                        <form method="POST" action="{{ item.next }}">
+                            {% csrf_token %}
+                            <input type="submit" name="{{ item.name }}-d" value="clear">
+                        </form>
+                    -->
                     </div>
                     <!-- end .content-left -->
                 </div>
@@ -47,95 +79,16 @@
             {% endfor %}
 
 
-
-
-
-            <section>
-                <div class="wrap">
-                    <div class="content-center">
-                        <h3>
-                            Q1<small>/3</small>
-                            結論
-                        </h3>
-                        <p>あなたは一体何をしでかしたのでしょうか？</p>
-                        <small>ex)定例会議に30分以上も遅刻してしまい</small>
-
-                        <pre>この度は、<input type="text" ></input>、大変申し訳ございませんでした。</pre>
-                    </div>
-                    <!-- end .content-left -->
-                </div>
-                <!-- .end .wrap -->
-            </section>
-
-            <section>
-                <div class="wrap">
-                    <div class="content-center">
-                        <h3>
-                            Q2<small>/3</small>
-                            影響
-                        </h3>
-                        <p>その結果、どのような影響が出たのでしょうか</p>
-                        <small></small>
-                        <pre>その結果、<textarea>皆様に多大なご迷惑をおかけした</textarea>
-ことを、お詫び申し上げます</pre>
-                    </div>
-                </div>
-            </section>
-
-
-            <section>
-                <div class="wrap">
-                    <div class="content-center">
-                        <h3>
-                            Q3<small>/3</small>
-                            原因
-                        </h3>
-                        <p>その結果、どのような影響が出たのでしょうか</p>
-                        <small>ex)</small>
-                        <pre>原因は<textarea></textarea>
-ことによります。</pre>
-                    </div>
-                    <!-- end .content-left -->
-                </div>
-                <!-- .end .wrap -->
-            </section>
-
-
-            <section>
-                <div class="wrap">
-                    <div class="content-center">
-                        <h3>
-                            調節
-                        </h3>
-                        <p>　文章を綺麗に整えましょう</p>
-                        <small>ex)</small>
-                        <pre>
-
-                        </pre>
-                        <p>
-                            <a href="#slide=6">完成</a>
-                        </p>
-                    </div>
-                    <!-- end .content-left -->
-                </div>
-                <!-- .end .wrap -->
-            </section>
-
-
             　
             <section>
                 <div class="wrap">
                     <div class="content-center">
                         <p>反省書🙇‍♂️</p>
                         <small></small>
-                        <pre>
-この度は一時間以上も遅刻してしまい、大変申し訳ございませんでした。
-皆様に多大なご迷惑をおかけしたことを申し上げます。
-直接の原因はアラームを設定し忘れたことが原因です。
-今後はこのようなことが２度と起きぬよう 、再発防止に努めます。
+                        <pre>{{ sentense }}
             </pre>
             <br>
-            ２度と来る出ないぞ
+            健闘を祈ります👍
                     </div>
                 </div>
             </section>
