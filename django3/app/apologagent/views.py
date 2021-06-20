@@ -6,7 +6,8 @@ def index(request):
     params = {
         "title" : "反省書自動作成ツール🙇‍♂️",
         "description" : "面倒な反省文をあなたの代わりに作ります。遅刻した時、寝坊した時、居眠りしてしまった時に、どうぞ。",
-        "favicon" : "/static/チャット.png"
+        "favicon" : "/static/チャット.png",
+        "img": "thumbnail.png"
     }
     return render(request,"apologagent/index.html",params)
 
@@ -35,7 +36,8 @@ def page(request, htmlname):
     params = {
         "title" : "反省書エディター🙇‍♂️",
         "description" : "面倒な反省文をあなたの代わりに作ります。遅刻した時、寝坊した時、居眠りしてしまった時に、どうぞ。",
-        "favicon" : "/static/チャット.png"
+        "favicon" : "/static/チャット.png",
+        "img": "thumbnail.png"
     }
     value = getSessionValue(request, "deleteAll")
     if len(value) > 1 and ("transition" in session):
