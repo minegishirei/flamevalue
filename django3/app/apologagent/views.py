@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from .sentense_class import InputText, Choice
 
-
 # Create your views here.
 def index(request):
     params = {
@@ -12,6 +11,8 @@ def index(request):
     return render(request,"apologagent/index.html",params)
 
 
+def sitemap(request):
+    return render(request,"apologagent/sitemap.html")
 
 class ActionFactory():
     def __init__(self):
@@ -55,7 +56,7 @@ def page(request, htmlname):
                 "supp":"何がよくなかったでしょう？",
                 "preface":"直接の原因は",
                 "example":"昨日タイマーを設定し忘れたこと",
-                "afterword":"が原因です。",
+                "afterword":"にあります。",
                 "next":"./oko.html#slide=4"
             }
         ]
