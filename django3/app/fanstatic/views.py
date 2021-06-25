@@ -8,7 +8,7 @@ import Github
 
 repo = "twitter_json"
 # Create your views here.
-def page(request, htmlname):
+def page(request, htmlname, pagetype):
     params = {
         "title" : htmlname + " - ファン統計",
         "description" : "アニメ、オタク、サブカルを惹きつけるものは何か。データから推察するためのウェブサイトです。",
@@ -24,5 +24,5 @@ def page(request, htmlname):
         tweet_list = myTwitterAction.search_tweet_list(htmlname, amount=50)
         text= json.dumps(tweet_list, ensure_ascii=False, indent=4)
         Github.upload("twitter_json", htmlname, text)
-    return render(request,"fanstatic/dashboard/charts.html",params)
+    return render(request,f"fanstatic/dashboard/{pagetype}",params)
 
