@@ -28,24 +28,15 @@ class ActionFactory():
         elif char=="d":
             return DeleteAction(target)
 
-                
-                
-actionFactory = ActionFactory()
-def page(request, htmlname):
-    session = request.session
-    params = {
-        "title" : "反省書エディター🙇‍♂️",
-        "description" : "面倒な反省文をあなたの代わりに作ります。遅刻した時、寝坊した時、居眠りしてしまった時に、どうぞ。",
-        "favicon" : "/static/チャット.png",
-        "img": "http://apologagent.short-tips.info/static/thumbnail.png"
-    }
-    value = getSessionValue(request, "deleteAll")
-    if len(value) > 1 and ("transition" in session):
-        del session["transition"]
 
-    #新規作成
-    if 'transition' not in session:
-        transition = [{
+pageInfoDict = {
+    "oko.html" :{
+        "params" :  {
+            "title" : "反省書エディター🙇‍♂️",
+            "description" : "面倒な反省文をあなたの代わりに作ります。遅刻した時、寝坊した時、居眠りしてしまった時に、どうぞ。",
+            "favicon" : "/static/チャット.png",
+            "img": "http://apologagent.short-tips.info/static/thumbnail.png"
+        },"transition" : [{
                 "process":"1",
                 "name": "input1",
                 "title": "結論",
@@ -65,6 +56,96 @@ def page(request, htmlname):
                 "next":"./oko.html#slide=4"
             }
         ]
+    },
+    "gekioko.html" :{
+        "params" :  {
+            "title" : "反省書自動作成システム",
+            "description" : "面倒な反省文をあなたの代わりに作ります。遅刻した時、寝坊した時、居眠りしてしまった時に、どうぞ。",
+            "favicon" : "/static/チャット.png",
+            "img": "http://apologagent.short-tips.info/static/thumbnail.png",
+            "volume":"5"
+        },"transition" : [
+            {
+                "inputtype" : "date",
+                "process":"1",
+                "name": "input1",
+                "title": "時間",
+                "supp":"いつ",
+                "preface":"私は、",
+                "example":"2021年1月10日12時30分",
+                "afterword":"頃、",
+                "next":"./gekioko.html#slide=1"
+            },
+            {
+                "inputtype" : "text",
+                "process":"2",
+                "name": "input2",
+                "title": "業務",
+                "supp":"何をしている時",
+                "preface":"",
+                "example":"社有車の運転中に、",
+                "afterword":"",
+                "next":"./gekioko.html#slide=2"
+            },
+            {
+                "inputtype" : "text",
+                "process":"3",
+                "name": "input3",
+                "title": "結論",
+                "supp":"あなたは何をやらかしました？",
+                "preface":"",
+                "example":"前方不注意により車を壁に追突させ破損させてしまいました。",
+                "afterword":"",
+                "next":"./gekioko.html#slide=3"
+            },
+            {
+                "inputtype" : "text",
+                "process":"4",
+                "name": "input4",
+                "title": "影響",
+                "supp":"誰に迷惑がかかった？",
+                "preface":"この不始末のため",
+                "example":"直接の上長、チームメンバー、ひいては会社全体に",
+                "afterword":"迷惑をおかけしたことを深くお詫び申し上げます。",
+                "next":"./gekioko.html#slide=4"
+            },{
+                "inputtype" : "text",
+                "process":"5",
+                "name": "input5",
+                "title": "改善",
+                "supp":"どのようにすれば改善できるでしょうか",
+                "preface":"今後は",
+                "example":"運転に細心の注意を払い、２度とこのような事故を起こさないよう",
+                "afterword":"注意いたします。大変申し訳ございませんでした。",
+                "next":"./gekioko.html#slide=4"
+            }
+        ]
+    }
+
+}
+
+
+
+
+
+
+
+
+                
+actionFactory = ActionFactory()
+def page(request, htmlname):
+    session = request.session
+
+    pageInfo = pageInfoDict[htmlname]
+    params = pageInfo["params"]
+    value = getSessionValue(request, "deleteAll")
+    if len(value) > 1 and ("transition" in session):
+        del session["transition"]
+
+    #新規作成
+    if 'transition' not in session:
+        #2
+        transition = pageInfo["transition"]
         request.session["transition"] = transition
     
     transition = request.session["transition"]
@@ -82,6 +163,11 @@ def page(request, htmlname):
         "sentense" : buildSentense.build()
     })
     return render(request, f"apologagent/page/{htmlname}",params)
+
+
+
+
+
 
 
 

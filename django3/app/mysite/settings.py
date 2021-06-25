@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     "short_tips",
     'django_hosts',    # ←追加する
     "apologagent",
-    "examengcloud"
+    "examengcloud",
+    "fanstatic"
 ]
 
 MIDDLEWARE = [

@@ -7,3 +7,4 @@ gspread
 django-hosts
 mysqlclient
 mysql-connector-python
+PyGithub

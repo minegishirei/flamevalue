@@ -13,6 +13,7 @@ host_patterns = patterns(
     host(r'psy', 'short_tips.urls', name='psy'),
     host(r'examengcloud', "examengcloud.urls", name="examengcloud"),
     host(r'apologagent', "apologagent.urls", name="apologagent"),
+    host(r'fanstatic', "fanstatic.urls", name="fanstatic"),
     host(r'.*', 'short_tips.urls', name='else'),
 )
 
