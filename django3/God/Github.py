@@ -5,8 +5,14 @@ import urllib
 from bs4 import BeautifulSoup
 import os
 
+
+credit_key = ""
+if credit_key=="":
+    with open("/God/github.key") as f:
+        credit_key = f.read()
+
 def upload(repo, filename, context):
-    g = Github("42e7445e61c1ca1fdcdaaf4564895514f114e1b6")
+    g = Github(credit_key)
     repo = g.get_user().get_repo(repo)
     repo.create_file(filename, 'commitmessage', context) 
 
@@ -30,7 +36,7 @@ def seach_page_list(repo):
 
 
 def has_already_created(repo, filename):
-    g = Github("42e7445e61c1ca1fdcdaaf4564895514f114e1b6")
+    g = Github(credit_key)
     repo = g.get_user().get_repo(repo)
     obj = []
     try:
@@ -47,7 +53,7 @@ def has_already_created(repo, filename):
 
 def get_page_list(path="",):
     #g = Github("kawadasatoshi", "Withyou0114")
-    g = Github("42e7445e61c1ca1fdcdaaf4564895514f114e1b6")
+    g = Github(credit_key)
     repo = g.get_user().get_repo('memo')
     
     dir_list = []
@@ -78,7 +84,7 @@ def get_page_list(path="",):
 class MemoTreeGenerator():
     def __init__(self):
         #g = Github("kawadasatoshi", "Withyou0114")
-        g = Github("42e7445e61c1ca1fdcdaaf4564895514f114e1b6")
+        g = Github(credit_key)
         self.repo = g.get_user().get_repo('memo')
         self.log_tree = {}
         self.get_path(path="", tree = self.log_tree)
