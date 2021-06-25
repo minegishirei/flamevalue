@@ -8,7 +8,7 @@ import os
 
 credit_key = ""
 if credit_key=="":
-    with open("/God/github.key") as f:
+    with open("/God/Keys/github.key") as f:
         credit_key = f.read()
 
 def upload(repo, filename, context):
