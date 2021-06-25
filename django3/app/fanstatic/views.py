@@ -10,8 +10,8 @@ repo = "twitter_json"
 # Create your views here.
 def page(request, htmlname):
     params = {
-        "title" : "反省書自動作成ツール🙇‍♂️",
-        "description" : "面倒な反省文をあなたの代わりに作ります。遅刻した時、寝坊した時、居眠りしてしまった時に、どうぞ。",
+        "title" : htmlname + " - ファン統計",
+        "description" : "アニメ、オタク、サブカルを惹きつけるものは何か。データから推察するためのウェブサイトです。",
         "favicon" : "/static/チャット.png",
         "img": "http://apologagent.short-tips.info/static/thumbnail.png",
         "repo":repo,
@@ -21,7 +21,7 @@ def page(request, htmlname):
         pass
     else:
         myTwitterAction = Twitter.MyTwitterAction()
-        tweet_list = myTwitterAction.search_tweet_list(htmlname)
+        tweet_list = myTwitterAction.search_tweet_list(htmlname, amount=50)
         text= json.dumps(tweet_list, ensure_ascii=False, indent=4)
         Github.upload("twitter_json", htmlname, text)
     return render(request,"fanstatic/dashboard/charts.html",params)
