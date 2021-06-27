@@ -11,6 +11,17 @@
 
     <title>{{ title }}</title>
 
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@se_maintain">
+    <meta name="twitter:creator" content="@se_maintain">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:image" content="{{ img }}">
+
+
+
     <!-- Custom fonts for this template-->
     <link href="/static/dashboard/css/all.min.css" rel="stylesheet" type="text/css">
     <link
@@ -19,7 +30,18 @@
 
     <!-- Custom styles for this template-->
     <link href="/static/dashboard/css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{favicon}}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ favicon }}">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6Y7NSQNF5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B6Y7NSQNF5');
+    </script>
+
 </head>
 
 <body id="page-top">
@@ -31,8 +53,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center"
-             href="/index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/index.html">
                 <div class="sidebar-brand-icon">
                     Home
                 </div>
@@ -69,7 +90,7 @@
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle">
-                    
+
                 </button>
             </div>
 

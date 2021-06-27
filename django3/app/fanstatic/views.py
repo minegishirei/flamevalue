@@ -13,6 +13,8 @@ dt_now = datetime.datetime.now()
 repo = "twitter_json"
 filename = "access_ranking" + dt_now.strftime('%Y%m%d')
 
+favicon = "http'//fanstatic/static/dashboard/img2/static.png"
+img = "http://fanstatic.short-tips.info/static/dashboard/img2/thumbnail2.png",
 site_explain = "アニメ、漫画のコミュニティをtwitterの検索結果から分析します。"
 ranking_list = []#Niconico.niconicoRanking()
 
@@ -30,8 +32,8 @@ def index(request):
     params = {
         "title" : "コミュニティ分析サイト",
         "description" : "アニメ、漫画のコミュニティをtwitterの検索結果から分析します。",
-        "favicon" : "/static/dashboard/img/static.png",
-        "img": "http://apologagent.short-tips.info/static/thumbnail.png",
+        "favicon" : favicon,
+        "img": img,
         "repo":repo,
         "htmlname" : htmlname,
     }
@@ -51,8 +53,8 @@ def pop_page(request):
     params = {
         "title" : "人気ランキング | コミュニティ分析サイト",
         "description" : "アニメ、漫画のコミュニティをtwitterの検索結果から分析します。",
-        "favicon" : "/static/dashboard/img/static.png",
-        "img": "http://apologagent.short-tips.info/static/thumbnail.png",
+        "favicon" : favicon,
+        "img": img,
         "repo":repo,
         "htmlname" : htmlname,
     }
@@ -74,8 +76,8 @@ def all_page(request):
     params = {
         "title" : "ページ一覧 | コミュニティ分析サイト",
         "description" : "アニメ、漫画のコミュニティをtwitterの検索結果から分析します。",
-        "favicon" : "/static/dashboard/img/static.png",
-        "img": "http://apologagent.short-tips.info/static/thumbnail.png",
+        "favicon" : favicon,
+        "img": img,
         "repo":repo,
         "htmlname" : htmlname,
     }
@@ -103,8 +105,8 @@ def page(request, htmlname, pagetype):
     params = {
         "title" : htmlname + " | コミュニティ分析",
         "description" : explain,
-        "favicon" : "/static/dashboard/img/static.png",
-        "img": "http://apologagent.short-tips.info/static/thumbnail.png",
+        "favicon" : favicon,
+        "img": img,
         "repo":repo,
         "htmlname" : htmlname,
         "explain": explain
@@ -122,8 +124,8 @@ def creation_page(request, htmlname, pagetype):
     params = {
         "title" : htmlname + " | コミュニティ分析",
         "description" : "アニメ、漫画のコミュニティをtwitterの検索結果から分析します。",
-        "favicon" : "/static/dashboard/img/static.png",
-        "img": "http://apologagent.short-tips.info/static/thumbnail.png",
+        "favicon" : favicon,
+        "img": img,
         "repo":repo,
         "htmlname" : htmlname,
     }
@@ -136,8 +138,8 @@ def data_loading(request, htmlname):
     params = {
         "title" : "コミュニティ分析サイト",
         "description" : "アニメ、漫画のコミュニティをtwitterの検索結果から分析します。",
-        "favicon" : "/static/dashboard/img/static.png",
-        "img": "http://apologagent.short-tips.info/static/thumbnail.png",
+        "favicon" : favicon,
+        "img": img,
         "repo":repo,
         "htmlname" : htmlname,
     }
