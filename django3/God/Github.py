@@ -25,12 +25,19 @@ def load(repo,filename):
 
 
 def seach_page_list(repo):
-    url = "https://github.com/kawadasatoshi/" + repo
+    url = "https://github.com/kawadasatoshi/" + repo 
     html = urlopen(url)
     bsObj = BeautifulSoup(html)
     file_list = []
-    for a_tag in  bsObj.findAll("a", {"class", "js-navigation-open link-gray-dark"}):
-        yield a_tag.get_text()
+    for a_tag in  bsObj.findAll("a"):
+        text = a_tag.get_text()
+        if "commitmessage" == text :
+            continue
+        if "Terms" == text or "Releases" in text:
+            break
+        if "aaaaa" in file_list  or text=="aaaaa":
+            file_list.append(text)
+    return file_list
 
     #<a class="js-navigation-open link-gray-dark" title="2進数.json" href="/kawadasatoshi/six_dim_wikipedia/blob/main/2%E9%80%B2%E6%95%B0.json">2進数.json</a>
 

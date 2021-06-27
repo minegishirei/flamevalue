@@ -1,4 +1,4 @@
-{% extends "fanstatic/dashboard/base/base.html" %}
+{% extends "fanstatic/dashboard/top/base/base.html" %}
 
 
 {% block mainblock %}
@@ -210,9 +210,8 @@
     <div class="container-fluid">
 
         <!-- Page Heading -->
-        <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-        <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
-            For more information about DataTables, please visit the <a target="_blank"
+        <h1 class="h3 mb-2 text-gray-800">人気ランキング</h1>
+        <p class="mb-4">ニコニコ大百科のランキングページをもとに、流行のキーワードを並べています。<a target="_blank"
                 href="https://datatables.net">official DataTables documentation</a>.</p>
 
         <!-- DataTales Example -->
@@ -225,18 +224,18 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
-                                <th>tweet</th>
+                                <th>Name</th>
                             </tr>
                         </thead>
-                        <tfoot>
+                            {% for page_name in ranking_list %}
                             <tr>
-                                <th>tweet</th>
+                                <td>
+                                <a href="/page/{{ page_name }}/dashboard.html">
+                                    {{ page_name }}
+                                </a>
+                                </td>
                             </tr>
-                        </tfoot>
-
-                        <tbody id="motherdata">
-                        </tbody>
-
+                            {% endfor %}
                     </table>
                 </div>
             </div>
@@ -246,49 +245,6 @@
 </div>
 <!-- /.container-fluid -->
 
-
-{% endblock %}
-
-{% block scriptblock %}
-
-
-
-<script>
-    url = "https://raw.githubusercontent.com/kawadasatoshi/{{ repo }}/main/{{ htmlname }}"
-
-    htmlname = "{{ htmlname }}"
-    console.log("here")
-    var jsonDate = []
-    $.getJSON(url, (data) => {
-        jsonDate = data
-        userData = []
-        retweetData = []
-        console.log("here2")
-        name_list = []
-        friends_count_list = new Array();
-        followers_count_list = new Array();
-        damy_list = []
-
-        create_year_list = []
-
-        mother_num = 0
-        interest_fun_num = 0
-
-        motherdataElement = document.getElementById("motherdata")
-        for (var row in jsonDate) {
-            row = jsonDate[row]
-            mother_num++;
-            trElement = document.createElement("tr")
-            tdElement = document.createElement("td")
-            tdElement.innerHTML = row["text"]
-            trElement.appendChild(tdElement)
-
-            motherdataElement.appendChild(trElement)
-        }
-
-
-    })
-
-</script>
+</div>
 
 {% endblock %}
