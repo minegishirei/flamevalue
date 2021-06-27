@@ -6,9 +6,12 @@ if '/God' not in sys.path:
 import Twitter
 import Github
 import Niconico
+import datetime
+
+dt_now = datetime.datetime.now()
 
 repo = "twitter_json"
-filename = "access_ranking"
+filename = "access_ranking" + dt_now.strftime('%Y%m%d')
 
 site_explain = "アニメ、漫画のコミュニティをtwitterの検索結果から分析します。"
 ranking_list = []#Niconico.niconicoRanking()
