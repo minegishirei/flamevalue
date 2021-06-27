@@ -13,8 +13,8 @@ dt_now = datetime.datetime.now()
 repo = "twitter_json"
 filename = "access_ranking" + dt_now.strftime('%Y%m%d')
 
-favicon = "http'//fanstatic/static/dashboard/img2/static.png"
-img = "http://fanstatic.short-tips.info/static/dashboard/img2/thumbnail2.png",
+favicon = "http://fanstatic.short-tips.info/static/dashboard/img2/static.png"
+img =     "http://fanstatic.short-tips.info/static/dashboard/img2/thumbnail2.png",
 site_explain = "アニメ、漫画のコミュニティをtwitterの検索結果から分析します。"
 ranking_list = []#Niconico.niconicoRanking()
 
