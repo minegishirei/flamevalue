@@ -17,6 +17,9 @@ site_explain = "アニメ、漫画のコミュニティをtwitterの検索結果
 ranking_list = []#Niconico.niconicoRanking()
 
 
+def sitemap(request):
+    return render(request,f"fanstatic/sitemap.xml")
+
 def index(request):
     writeNicoRank(filename)
     ranking_list = readNicoRank(filename)
@@ -46,7 +49,7 @@ def pop_page(request):
         return result
     htmlname = "pop_page.html"
     params = {
-        "title" : "コミュニティ分析サイト",
+        "title" : "人気ランキング | コミュニティ分析サイト",
         "description" : "アニメ、漫画のコミュニティをtwitterの検索結果から分析します。",
         "favicon" : "/static/dashboard/img/static.png",
         "img": "http://apologagent.short-tips.info/static/thumbnail.png",
