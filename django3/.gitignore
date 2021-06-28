@@ -1,3 +1,5 @@
 key.json
 db/
 github.key
+mysql-data/
+mysql-init/
