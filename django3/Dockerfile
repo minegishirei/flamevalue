@@ -13,7 +13,7 @@ RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 RUN pip install -r requirements.txt
 
-USER uwsgi
+USER root
 
 CMD ["./cmd.sh"]
 
