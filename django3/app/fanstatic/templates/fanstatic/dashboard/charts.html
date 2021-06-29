@@ -65,10 +65,13 @@
                 </div>
                 <!-- Donut Chart -->
                 <div class="col-xl-4 col-lg-5">
-                        {% include 'fanstatic/dashboard/parts/pie-fanrate.html' %}
+                    {% include 'fanstatic/dashboard/parts/pie-fanrate.html' %}
                 </div>
 
-
+                <!-- Donut Chart -->
+                <div class="col-xl-4 col-lg-5">
+                    {% include 'fanstatic/dashboard/parts/pie-want.html' %}
+                </div>
 
             </div>
 
@@ -107,6 +110,7 @@
 
             mother_num = 0
             interest_fun_num = 0
+            want_num = 0
             for (var row in jsonDate) {
                 mother_num++;
                 damy_list.push(".")
@@ -119,6 +123,9 @@
 
                 if (user.description.match(htmlname)) {
                     interest_fun_num++;
+                }
+                if (jsonDate[row].text.match("欲")){
+                    want_num++;
                 }
                 create_year_list.push(user.created_at.substring(25, 30))
             }
@@ -171,6 +178,7 @@
             console.log("frends_count_list", friends_count_list)
 
             applyPieChart("myInterestPieChart", ["熱狂的", "普通"], [interest_fun_num, mother_num - interest_fun_num], ['#4e73df', '#1cc88a'], ['#2e59d9', '#17a673'])
+            applyPieChart("myWantPieChart", ["「欲」が入っている", "入ってない"], [want_num, mother_num - want_num], ['#4e73df', '#1cc88a'], ['#2e59d9', '#17a673'])
             applyBarChart("myFollowerBarChart", damy_list, followers_count_list, "人", "フォロワー数")
             applyBarChart("myBarChart", damy_list, friends_count_list, "人", "フォロー数")
             applyAreaChart("myAcountYearAreaChart", non_dub_year_list, year_count_list, "アカウント誕生年", "人")
