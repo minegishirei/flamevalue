@@ -32,7 +32,7 @@ class ActionFactory():
 pageInfoDict = {
     "oko.html" :{
         "params" :  {
-            "title" : "反省書エディター🙇‍♂️",
+            "title" : "反省書自動作成システム",
             "description" : "面倒な反省文をあなたの代わりに作ります。遅刻した時、寝坊した時、居眠りしてしまった時に、どうぞ。",
             "favicon" : "/static/チャット.png",
             "img": "http://apologagent.short-tips.info/static/thumbnail.png"
