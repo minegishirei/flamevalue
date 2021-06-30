@@ -81,7 +81,6 @@ init_sql("localtheorem")
 init_sql("furniture")
 init_sql("individuality")
 
-init_sql("shogi")
 init_sql("design")
 init_sql("shortcutkey")
 
