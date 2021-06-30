@@ -21,16 +21,14 @@ from DAO import DAO, InsertableDAO, TableCreatableDAO, CmdDAO, create_newTable
 
 
 
-category_dict = {
+meta_info = {
     "design": {
         "category" : "design",
-        "listinfo": SpreadSheet.main("design"),
         "indextitle": "1分で分かる デザイン逆引き集",
         "description": "すぐに使えるデザインテクニックを厳選！"
     },
     "shortcutkey": {
         "category":"shortcutkey",
-        "listinfo": SpreadSheet.main("shortcutkey"),
         "indextitle": "1分で分かる ショートカットキー集",
         "description": "すぐに使えるショートカットキーを厳選！"
     },
@@ -75,12 +73,16 @@ def init_sql(category):
                 import traceback
                 traceback.print_exc()
 
+
+
 init_sql("psy")
 init_sql("localtheorem")
-init_sql("design")
+
 init_sql("furniture")
 init_sql("individuality")
 
+init_sql("shogi")
+init_sql("design")
 init_sql("shortcutkey")
 
 class SwitchPage():
@@ -150,7 +152,14 @@ class TitleComponent(ParamComponent):
     def __init__(self, title):
         super().__init__()
         self.comdict.update({
-            "title" : title
+            "title" : title 
+        })
+
+class MetaTitleComponent(ParamComponent):
+    def __init__(self, category_name,  title):
+        super().__init__()
+        self.comdict.update({
+            "title" : title + " | " +meta_info[category_name]["indextitle"]
         })
 
 class RelationComponent(ParamComponent):
@@ -214,7 +223,7 @@ class PageParamFactory(ParamFactory):
     def build(self, category_name, page_name):
         self.category_name = category_name
         componentList = [
-            TitleComponent(page_name),
+            MetaTitleComponent(category_name, page_name),
             PageComponent(category_name, page_name),
             AllRelationComponent(category_name)
         ]
@@ -229,7 +238,7 @@ class SQLParamFactory(ParamFactory):
     def build(self, category_name, cmd):
         self.category_name = category_name
         componentList = [
-            TitleComponent(category_name),
+            MetaTitleComponent(category_name, category_name),
             SQLComponent(category_name,cmd)
         ]
         for component in componentList:

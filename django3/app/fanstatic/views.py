@@ -146,7 +146,15 @@ def data_loading(request, htmlname):
     if not Github.has_already_created(repo, htmlname):
         myTwitterAction = Twitter.MyTwitterAction()
         tweet_list = myTwitterAction.search_tweet_list(htmlname, amount=50)
-        text= json.dumps(tweet_list, ensure_ascii=False, indent=4)
+        try:
+            nicoScrapy = Niconico.NicoScrapy(htmlname)
+        except Niconico.NotFoundUrl:
+            nicoScrapy = {}
+        text= json.dumps({
+            "tweet_list" : tweet_list,
+            "nico_info" : nicoScrapy.getPageInfo(),
+            "nico_word_cloud" : nicoScrapy.getWordCloud()
+        }, ensure_ascii=False, indent=4)
         Github.upload("twitter_json", htmlname, text)
     return render(request,f"fanstatic/dashboard/dashboard.html",params)
 

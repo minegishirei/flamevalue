@@ -96,8 +96,12 @@
         htmlname = "{{ htmlname }}"
         console.log("here")
         var jsonDate = []
+
+        var nico_word_cloud = []
         $.getJSON(url, (data) => {
-            jsonDate = data
+            jsonDate = data.tweet_list
+            nico_word_cloud = data.nico_word_cloud
+            console.log(data)
             userData = []
             retweetData = []
             console.log("here2")
@@ -182,7 +186,13 @@
             applyBarChart("myFollowerBarChart", damy_list, followers_count_list, "人", "フォロワー数")
             applyBarChart("myBarChart", damy_list, friends_count_list, "人", "フォロー数")
             applyAreaChart("myAcountYearAreaChart", non_dub_year_list, year_count_list, "アカウント誕生年", "人")
+
+            
         })
     </script>
+
+
+
+
 
     {% endblock %}
