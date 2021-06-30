@@ -19,6 +19,17 @@ site_explain = "アニメ、漫画のコミュニティをtwitterの検索結果
 ranking_list = []#Niconico.niconicoRanking()
 
 
+def get_pagetype_title(key):
+    pagetype_title_dict = {
+        "dashboard.html" : " | コミュニティ分析",
+        "charts.html" : " | 市場調査ツール",
+        "word_cloud.html" : "が一目で分かる！"
+    }
+    if key in pagetype_title_dict:
+        return pagetype_title_dict[key]
+    return " | コミュニティ分析"
+
+
 def sitemap(request):
     return render(request,f"fanstatic/sitemap.xml")
 
@@ -103,7 +114,7 @@ def page(request, htmlname, pagetype):
     if result:
         return result
     params = {
-        "title" : htmlname + " | コミュニティ分析",
+        "title" : htmlname + get_pagetype_title(pagetype),
         "description" : explain,
         "favicon" : favicon,
         "img": img,
