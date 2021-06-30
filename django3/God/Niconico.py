@@ -17,6 +17,7 @@ def niconicoRanking():
             continue
         try:
             nicoScrapy = NicoScrapy(column)
+            nicoScrapy.run()
             description = nicoScrapy.getPageInfo()
         except :
             description = ""
@@ -44,7 +45,8 @@ class Scrapy():
             self.html = urlopen(self.url)
             self.bsObj = BeautifulSoup(self.html)
         except:
-            raise NotFoundUrl("url not found error" +self.url)
+            return True
+
     
 
 
@@ -54,8 +56,7 @@ class NicoScrapy(Scrapy):
     def __init__(self,  htmlname):
         super().__init__()
         self.url = f"https://dic.nicovideo.jp/a/{ quote(htmlname)}"
-        self.run()
-    
+
     def getPageInfo(self):
         time.sleep(1)
         try:
