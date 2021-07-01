@@ -111,8 +111,9 @@ class SwitchPage():
     def robots(self, request):
         return render(request, 'meta/robots.txt')
 
-    def sitemap(self, request, htmlpage):
-        return render(request, f'meta/{htmlpage}')
+    def sitemap(self, request):
+        category_name = request.get_host().split(".")[0]
+        return render(request, f'meta/{category_name}.xml')
 
     def table_index(self, request):
         ParamFactory = ParamFactory(request, "table_index.html")
