@@ -8,3 +8,4 @@ django-hosts
 mysqlclient
 mysql-connector-python
 PyGithub
+google-ads
