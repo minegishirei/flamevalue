@@ -34,3 +34,20 @@ class MyTwitterAction():
             import traceback
             raise MyTwitterException(traceback.print_exc())
         return search_timeline['statuses']
+
+    def search_tweet_list_param(self, param, amount):
+        params = {
+            "q" : q,
+            #'q' : "仕事" + " since:20{}-{}-{}_00:00:00_JST min_faves:1000".format(year,month,day),  #検索文字列
+            #'q' : "あけ since:2018-12-31_23:59:59_JST until:2019-01-01_00:00:00_JST",
+            'count': amount
+        }
+        url = "https://api.twitter.com/1.1/search/tweets.json"
+        req = self.twitter.get(url, params = params)
+        if req.status_code == 200:
+            tweet = json.loads(req.text)
+            search_timeline = json.loads(req.text)
+        else:
+            import traceback
+            raise MyTwitterException(traceback.print_exc())
+        return search_timeline['statuses']

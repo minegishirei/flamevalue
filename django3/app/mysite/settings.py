@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django_hosts',    # ←追加する
     "apologagent",
     "examengcloud",
-    "fanstatic"
+    "fanstatic",
+    "engineer_rank"
 ]
 
 MIDDLEWARE = [

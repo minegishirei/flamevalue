@@ -156,7 +156,7 @@ def data_loading(request, htmlname):
     }
     if not Github.has_already_created(repo, htmlname):
         myTwitterAction = Twitter.MyTwitterAction()
-        tweet_list = myTwitterAction.search_tweet_list(htmlname, amount=50)
+        tweet_list = myTwitterAction.search_tweet_list("min_faves:1000 " +htmlname, amount=50)
         
         git_json = {}
         git_json.update({
