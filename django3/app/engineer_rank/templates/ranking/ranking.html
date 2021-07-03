@@ -26,6 +26,9 @@
   <link href="/static/ranking/css/style.css" rel="stylesheet">
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+  
+  <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
   <!-- =======================================================
     Template Name: Stanley
     Template URL: https://templatemag.com/stanley-bootstrap-freelancer-template/
@@ -36,35 +39,15 @@
 
 <body>
 
-  <!-- Static navbar -->
-  <div class="navbar navbar-inverse navbar-static-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">tech tweet<br>ranking</a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="work.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-  </div>
+
+          {% include "ranking/parts/link.html" %}
+
 
   <div id="ranking_list">
 
   </div>
 
 
-  <!-- +++++ Footer Section +++++ -->
 
 
 
@@ -172,7 +155,7 @@
       "JavaScript",
       "プログラミング",
       "駆け出しエンジニア",
-      "エンジニア"
+      "エンジニア",
     ]
 
     url = "https://raw.githubusercontent.com/kawadasatoshi/{{ repo }}/main/{{ htmlname }}"
@@ -219,7 +202,7 @@
         tagHtml = ""
         for (i in match_tag_list) {
           tag = match_tag_list[i]
-          tagHtml += `<a class="tag">` + tag + "</a><br>"
+          tagHtml += `<a href="/page/`+ tag +`/ranking.html" class="tag">` + tag + "</a><br>"
         }
 
         console.log(tweet.user.screen_name)
@@ -274,7 +257,7 @@
     })
   </script>
 
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
   <style>
 
@@ -284,7 +267,10 @@
 #white{
   padding-bottom: 0;
 }
-
+.tag {
+  color: #ec929e;
+  margin: 10px;
+}
     pre {
       background-color: white;
       border: none;

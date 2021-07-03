@@ -1,6 +1,6 @@
 
 from github import Github
-from urllib.request import urlopen
+from urllib.request import urlopen, quote
 import urllib
 from bs4 import BeautifulSoup
 import os
@@ -18,7 +18,7 @@ def upload(repo, filename, context):
 
 
 def load(repo,filename):
-    url = "https://raw.githubusercontent.com/kawadasatoshi/" + repo +"/master/" + filename
+    url = "https://raw.githubusercontent.com/kawadasatoshi/" + quote(repo) +"/master/" + filename
     response = urlopen(url).read()
     output = response.decode('utf-8')
     return output
@@ -29,14 +29,22 @@ def seach_page_list(repo):
     html = urlopen(url)
     bsObj = BeautifulSoup(html)
     file_list = []
+    flag = False
     for a_tag in  bsObj.findAll("a"):
         text = a_tag.get_text()
         if "commitmessage" == text :
             continue
         if "Terms" == text or "Releases" in text:
             break
-        if "aaaaa" in file_list  or text=="aaaaa":
+        if text=="Create aaaaa":
+            continue
+        if text=="README.md":
+            flag = False
+        if flag:
             file_list.append(text)
+        
+        if text=="aaaaa":
+            flag = True
     return file_list
 
     #<a class="js-navigation-open link-gray-dark" title="2進数.json" href="/kawadasatoshi/six_dim_wikipedia/blob/main/2%E9%80%B2%E6%95%B0.json">2進数.json</a>
