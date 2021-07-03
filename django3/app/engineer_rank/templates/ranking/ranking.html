@@ -24,6 +24,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="/static/ranking/css/style.css" rel="stylesheet">
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
   <!-- =======================================================
     Template Name: Stanley
@@ -44,7 +45,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">tech<br>tweet<br>rank</a>
+        <a class="navbar-brand" href="index.html">tech tweet<br>ranking</a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -171,6 +172,7 @@
       "JavaScript",
       "プログラミング",
       "駆け出しエンジニア",
+      "エンジニア"
     ]
 
     url = "https://raw.githubusercontent.com/kawadasatoshi/{{ repo }}/main/{{ htmlname }}"
@@ -219,96 +221,39 @@
           tag = match_tag_list[i]
           tagHtml += `<a class="tag">` + tag + "</a><br>"
         }
-        /*
-                innnerBase = `
-        
-                <div class="col-lg-8 col-lg-offset-2">
-                  <div class="order_profile">
-                  <img class="profile_img" src="`+ tweet.user.profile_image_url_https + `" width="80px" height="80px">
-                  </div>  
-                  <div class="padding20">
-                    <h3>`+ 　ordercount + `位</h3>
-                    <strong>`+ tweet.retweet_count + `</strong>リツイート
-                    <h3>`+ tweet.user.name + `</h3>
-                  </div>
-                  
-                  
-                  <div>
-                    <pre class="bq">`+ tweet.text +
-                    `</pre>
-                    <p>`+ tweet.retweet_count + `リツイート　`+ tweet.favorite_count + `リツイート</p>
-                    <bd>` + tweet.created_at + `</bd>
-                    ` + tweet.source +`
-                  </div>
-                </div>
-        
-              </div>
-              <!-- /row -->
-            </div>
-            <!-- /container -->
-          </div>
-          `
-        */
 
         console.log(tweet.user.screen_name)
         innnerRealTweet = `
-                <blockquote class="twitter-tweet">
+          <blockquote class="twitter-tweet">
             <a href="https://twitter.com/`+ tweet.user.screen_name + `/status/` + tweet.id_str + `"></a>
-      </blockquote>
-        `
+          </blockquote>`
+        background_color =  ["gray", "white"][ordercount%2-1]
 
-
-
-
-
-        innnerBase = `
-  <div id="white">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="order_profile">
-            <img class="profile_img" src="`+ tweet.user.profile_image_url_https + `" width="80px" height="80px">
-          </div>  
-          <div class="padding20">
-            <h3>`+ ordercount + `位</h3>
-            <strong>`+ tweet.retweet_count + `</strong>リツイート
-            <h3>`+ tweet.user.name + `</h3>
-          </div>
-
-          <div>
-            <pre class="bq">`+ tweet.text +
-          `</pre>
-            <p>`+ tweet.retweet_count + `リツイート　` + tweet.favorite_count + `リツイート</p>
-            <bd>` + tweet.created_at + `</bd>
-            ` + tweet.source + `
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-`
-
-
-        outerBase = `<div id="white">
+        if(ordercount==1){
+          rank = `<t style="color:gold;">` + ordercount + `位</t>`
+        }else if(ordercount==2){
+          rank = `<t style="color:silver;">` + ordercount + `位</t>`
+        }else if(ordercount==3){
+          rank = `<t style="color:brown;">` + ordercount + `位</t>`
+        }else{
+          rank = `<t>` + ordercount + `位</t>`
+        }
+        outerBase = `
+  <div id="`+ "gray" +`">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="padding20">
             <div class="box">
-              <h2>`+ ordercount + `位</h2>
+              <h2>`+ rank + `</h2>
               <strong>`+ tweet.retweet_count + `</strong>リツイート
             </div>
             <div class="box">`
               +tagHtml+
             `</div>
-          </div>
-
-          `
+          </div>`
           + innnerRealTweet +
-          `
-
-
-        </div>
+        `</div>
       <!-- /row -->
     </div>
     <!-- /container -->
@@ -332,6 +277,14 @@
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
   <style>
+
+    #gray{
+      padding-bottom: 0;
+    }
+#white{
+  padding-bottom: 0;
+}
+
     pre {
       background-color: white;
       border: none;
@@ -354,6 +307,10 @@
 
     .padding20 {
       padding: 10px;
+    }
+
+    .container{
+      padding-bottom: 10px;
     }
 
     .centorblock {
