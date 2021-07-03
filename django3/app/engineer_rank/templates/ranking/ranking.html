@@ -44,7 +44,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">テックツイランク</a>
+        <a class="navbar-brand" href="index.html">tech<br>tweet<br>rank</a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -63,87 +63,9 @@
   </div>
 
 
-
-  <!-- +++++ Posts Lists +++++ -->
-  <!-- +++++ First Post +++++ -->
-  <div id="grey">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <p><img src="/static/ranking/img/user.png" width="50px" height="50px">
-            <ba>Stanley Stinson</ba>
-          </p>
-          <p>
-            <bd>January 18, 2014</bd>
-          </p>
-          <h4>The Amazing Spiderman</h4>
-          <p><b>Spider-Man</b> is a fictional character, a comic book superhero that appears in comic books published by
-            Marvel Comics. Created by writer-editor Stan Lee and writer-artist Steve Ditko, he first appeared in Amazing
-            Fantasy #15 (cover-dated
-            Aug. 1962). </p>
-          <p>Lee and Ditko conceived the character as an orphan being raised by his Aunt May and Uncle Ben, and as a
-            teenager, having to deal with the normal struggles of adolescence in addition to those of a costumed
-            crimefighter.</p>
-          <p><a href="blog01.html">Continue Reading...</a></p>
-        </div>
-
-      </div>
-      <!-- /row -->
-    </div>
-    <!-- /container -->
-  </div>
-  <!-- /grey -->
-
-  <!-- +++++ Second Post +++++ -->
-  <div id="white">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <p><img src="/static/ranking/img/user.png" width="50px" height="50px">
-            <ba>Stanley Stinson</ba>
-          </p>
-          <p>
-            <bd>January 3, 2014</bd>
-          </p>
-          <h4>An Image Post</h4>
-          <p><img class="img-responsive" src="img/blog01.jpg" alt=""></p>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book.</p>
-          <p><a href="blog01.html">Continue Reading...</a></p>
-        </div>
-
-      </div>
-      <!-- /row -->
-    </div>
-    <!-- /container -->
-  </div>
-  <!-- /white -->
-
-  <!-- +++++ Third Post +++++ -->
-  <div id="grey">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <p><img src="/static/ranking/img/user.png" width="50px" height="50px">
-            <ba>Stanley Stinson</ba>
-          </p>
-          <p>
-            <bd>January 01, 2014</bd>
-          </p>
-          <h4>Believe In Yourself</h4>
-          <p class="bq">"A bird sitting on a tree is never afraid of the branch breaking, because her trust is not in
-            the branch, but in her own wings."</p>
-        </div>
-
-      </div>
-      <!-- /row -->
-    </div>
-    <!-- /container -->
-  </div>
-  <!-- /grey -->
-
   <!-- +++++ Footer Section +++++ -->
+
+
 
   <div id="footer">
     <div class="container">
@@ -202,7 +124,55 @@
   <!-- Template Main Javascript File -->
   <script src="/static/ranking/js/main.js"></script>
 
+
   <script>
+    // setIntervalを使う方法
+    function sleep(waitSec, callbackFunc) {
+
+      // 経過時間（秒）
+      var spanedSec = 0;
+
+      // 1秒間隔で無名関数を実行
+      var id = setInterval(function () {
+
+        spanedSec++;
+
+        // 経過時間 >= 待機時間の場合、待機終了。
+        if (spanedSec >= waitSec) {
+
+          // タイマー停止
+          clearInterval(id);
+
+          // 完了時、コールバック関数を実行
+          if (callbackFunc) callbackFunc();
+        }
+      }, 1000);
+
+    }
+
+    function doesInclude(text, tag_list) {
+      match_tag_list = []
+      for (var i in tag_list) {
+        tag = tag_list[i]
+        if (text.match(tag)) {
+          match_tag_list.push(tag)
+        }
+      }
+      return match_tag_list
+    }
+
+
+  </script>
+  <script>
+    var tag_list = [
+      "プログラミング言語",
+      "python",
+      "Python",
+      "JavaScript",
+      "プログラミング",
+      "駆け出しエンジニア",
+    ]
+
     url = "https://raw.githubusercontent.com/kawadasatoshi/{{ repo }}/main/{{ htmlname }}"
 
     htmlname = "{{ htmlname }}"
@@ -236,69 +206,160 @@
 
       /* imp
       */
-     　ordercount  =  0
-      for (var count in jsonDate) {
+      ordercount = 0
+      for (var count in jsonDate.slice(0, 10)) {
         ordercount++;
         tweet = jsonDate[count]
         console.log(tweet)
-        id = tweet.id
-        console.log("id", id)
-        screen_name = tweet.user.screen_name
-        console.log("screen_name", screen_name)
+
+        match_tag_list = doesInclude(tweet.text, tag_list)
+
+        tagHtml = ""
+        for (i in match_tag_list) {
+          tag = match_tag_list[i]
+          tagHtml += `<a class="tag">` + tag + "</a><br>"
+        }
+        /*
+                innnerBase = `
+        
+                <div class="col-lg-8 col-lg-offset-2">
+                  <div class="order_profile">
+                  <img class="profile_img" src="`+ tweet.user.profile_image_url_https + `" width="80px" height="80px">
+                  </div>  
+                  <div class="padding20">
+                    <h3>`+ 　ordercount + `位</h3>
+                    <strong>`+ tweet.retweet_count + `</strong>リツイート
+                    <h3>`+ tweet.user.name + `</h3>
+                  </div>
+                  
+                  
+                  <div>
+                    <pre class="bq">`+ tweet.text +
+                    `</pre>
+                    <p>`+ tweet.retweet_count + `リツイート　`+ tweet.favorite_count + `リツイート</p>
+                    <bd>` + tweet.created_at + `</bd>
+                    ` + tweet.source +`
+                  </div>
+                </div>
+        
+              </div>
+              <!-- /row -->
+            </div>
+            <!-- /container -->
+          </div>
+          `
+        */
+
+        console.log(tweet.user.screen_name)
+        innnerRealTweet = `
+                <blockquote class="twitter-tweet">
+            <a href="https://twitter.com/`+ tweet.user.screen_name + `/status/` + tweet.id_str + `"></a>
+      </blockquote>
+        `
+
+
+
 
 
         innnerBase = `
-    <div id="white">
+  <div id="white">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="order_profile">
-          <img class="profile_img" src="`+ tweet.user.profile_image_url_https + `" width="80px" height="80px">
+            <img class="profile_img" src="`+ tweet.user.profile_image_url_https + `" width="80px" height="80px">
           </div>  
           <div class="padding20">
-            <h3>`+ 　ordercount + `位</h3>
+            <h3>`+ ordercount + `位</h3>
             <strong>`+ tweet.retweet_count + `</strong>リツイート
             <h3>`+ tweet.user.name + `</h3>
           </div>
-          
-          
+
           <div>
-          <pre class="bq">`+ tweet.text +
+            <pre class="bq">`+ tweet.text +
           `</pre>
-          
-          <bd>` + tweet.created_at + `</bd>
+            <p>`+ tweet.retweet_count + `リツイート　` + tweet.favorite_count + `リツイート</p>
+            <bd>` + tweet.created_at + `</bd>
+            ` + tweet.source + `
           </div>
         </div>
-
       </div>
+    </div>
+  </div>
+`
+
+
+        outerBase = `<div id="white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="padding20">
+            <div class="box">
+              <h2>`+ ordercount + `位</h2>
+              <strong>`+ tweet.retweet_count + `</strong>リツイート
+            </div>
+            <div class="box">`
+              +tagHtml+
+            `</div>
+          </div>
+
+          `
+          + innnerRealTweet +
+          `
+
+
+        </div>
       <!-- /row -->
     </div>
     <!-- /container -->
   </div>
   `
 
+
         ranking_list_tag = document.getElementById("ranking_list")
-        ranking_list_tag.innerHTML += innnerBase
+        ranking_list_tag.innerHTML += outerBase
+
+        sleep(1000, function () {
+          console.log("tich")
+        })
+
+        console.log("test")
+
       }
     })
   </script>
 
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
   <style>
     pre {
-	border: 1px solid #000 ;
-	white-space: pre-wrap ;
-}
+      background-color: white;
+      border: none;
+      white-space: pre-wrap;
+    }
+
     .profile_img {
       border-radius: 50%;
     }
 
-    .order_profile {
-      padding-right: 30px;
-      float: left;
+    .box {
+      display: inline-block;
+      font-size: 16px;
+    }
+
+
+    .boxContainer {
+      font-size: 0;
     }
 
     .padding20 {
       padding: 10px;
+    }
+
+    .centorblock {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 

@@ -18,6 +18,8 @@ img =     "http://fanstatic.short-tips.info/static/dashboard/img2/thumbnail2.png
 site_explain = "エンジニアのためのツイートランキングサイト"
 site_name = "テック・ツイ・ランク"
 
+tag_list = Github.seach_page_list(repo)
+
 
 def sitemap(request):
     return render(request,f"fanstatic/sitemap.xml")
@@ -45,7 +47,8 @@ def page(request, htmlname, pagetype):
         "img": img,
         "repo":repo,
         "htmlname" : htmlname,
-        "explain": site_explain
+        "explain": site_explain,
+        "tag_list" : tag_list
     }
     if Github.has_already_created(repo, htmlname):
         return render(request,f"ranking/{pagetype}",params)
@@ -55,6 +58,7 @@ def page(request, htmlname, pagetype):
 
 
 def data_loading(request, htmlname):
+    
     params = {
         "title" : htmlname + " | " + site_name,
         "description" : site_explain,
@@ -62,11 +66,14 @@ def data_loading(request, htmlname):
         "img": img,
         "repo":repo,
         "htmlname" : htmlname,
-        "explain": site_explain
+        "explain": site_explain,
+        "tag_list" : tag_list
     }
+    
+
     if not Github.has_already_created(repo, htmlname):
         myTwitterAction = Twitter.MyTwitterAction()
-        tweet_list = myTwitterAction.search_tweet_list(htmlname, amount=50)
+        tweet_list = myTwitterAction.search_tweet_list('"'+ htmlname+ '"' + " lang:ja min_faves:100", amount=50)
         
         git_json = {}
         git_json.update({
@@ -75,7 +82,7 @@ def data_loading(request, htmlname):
 
         text = json.dumps(git_json, ensure_ascii=False, indent=4)
         Github.upload(repo, htmlname, text)
-    return render(request,f"engineer_rank/dashboard/dashboard.html",params)
+    return render(request,f"ranking/ranking.html",params)
 
 
 
