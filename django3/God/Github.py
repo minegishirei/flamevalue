@@ -18,7 +18,7 @@ def upload(repo, filename, context):
 
 
 def load(repo,filename):
-    url = "https://raw.githubusercontent.com/kawadasatoshi/" + quote(repo) +"/master/" + filename
+    url = "https://raw.githubusercontent.com/kawadasatoshi/" + quote(repo) +"/master/" + quote(filename)
     response = urlopen(url).read()
     output = response.decode('utf-8')
     return output
@@ -93,6 +93,11 @@ def get_page_list(path="",):
 
     return dir_list
 
+def delete_page(repo, filename):
+    g = Github(credit_key)
+    repo = g.get_user().get_repo(repo)
+    contents = repo.get_contents(filename ) #,  ref="test")
+    repo.delete_file(contents.path, "commitmessage" , contents.sha)
 
 
 

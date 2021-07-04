@@ -24,11 +24,6 @@
 
   <!-- Main Stylesheet File -->
   <link href="/static/ranking/css/style.css" rel="stylesheet">
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-  
-  <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
   <!-- =======================================================
     Template Name: Stanley
     Template URL: https://templatemag.com/stanley-bootstrap-freelancer-template/
@@ -40,7 +35,25 @@
 <body>
 
 
-          {% include "ranking/parts/link.html" %}
+  {% include "ranking/parts/link.html" %}
+
+  <!-- +++++ Welcome Section +++++ -->
+  <div id="white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 centered">
+          <h2>リツイートランキング</h2>
+          <h3>{{ htmlname }}部門</h3>
+          <img class="logo" src="{{ img }}" width="100px" height="100px" >
+          <br>
+        </div>
+        <!-- /col-lg-8 -->
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /ww -->
 
 
   <div id="ranking_list">
@@ -202,7 +215,7 @@
         tagHtml = ""
         for (i in match_tag_list) {
           tag = match_tag_list[i]
-          tagHtml += `<a href="/page/`+ tag +`/ranking.html" class="tag">` + tag + "</a><br>"
+          tagHtml += `<a href="/page/` + tag + `/ranking.html" class="tag">` + tag + "</a><br>"
         }
 
         console.log(tweet.user.screen_name)
@@ -210,19 +223,19 @@
           <blockquote class="twitter-tweet">
             <a href="https://twitter.com/`+ tweet.user.screen_name + `/status/` + tweet.id_str + `"></a>
           </blockquote>`
-        background_color =  ["gray", "white"][ordercount%2-1]
+        background_color = ["gray", "white"][ordercount % 2 - 1]
 
-        if(ordercount==1){
+        if (ordercount == 1) {
           rank = `<t style="color:gold;">` + ordercount + `位</t>`
-        }else if(ordercount==2){
+        } else if (ordercount == 2) {
           rank = `<t style="color:silver;">` + ordercount + `位</t>`
-        }else if(ordercount==3){
+        } else if (ordercount == 3) {
           rank = `<t style="color:brown;">` + ordercount + `位</t>`
-        }else{
+        } else {
           rank = `<t>` + ordercount + `位</t>`
         }
         outerBase = `
-  <div id="`+ "gray" +`">
+  <div id="`+ "gray" + `">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
@@ -232,11 +245,11 @@
               <strong>`+ tweet.retweet_count + `</strong>リツイート
             </div>
             <div class="box">`
-              +tagHtml+
-            `</div>
+          + tagHtml +
+          `</div>
           </div>`
           + innnerRealTweet +
-        `</div>
+          `</div>
       <!-- /row -->
     </div>
     <!-- /container -->
@@ -254,23 +267,35 @@
         console.log("test")
 
       }
+
+      // SCRIPTタグの生成
+      var el = document.createElement("script");
+
+      // SCRIPTタグのSRC属性に読み込みたいファイルを指定
+      el.src = "https://platform.twitter.com/widgets.js";
+      el.charset = "utf-8"
+
+      // BODY要素の最後に追加
+      document.body.appendChild(el);
     })
+
   </script>
 
-  <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
   <style>
-
-    #gray{
+    #gray {
       padding-bottom: 0;
     }
-#white{
-  padding-bottom: 0;
-}
-.tag {
-  color: #ec929e;
-  margin: 10px;
-}
+
+    #white {
+      padding-bottom: 0;
+    }
+
+    .tag {
+      color: #ec929e;
+      margin: 10px;
+    }
+
     pre {
       background-color: white;
       border: none;
@@ -295,7 +320,7 @@
       padding: 10px;
     }
 
-    .container{
+    .container {
       padding-bottom: 10px;
     }
 

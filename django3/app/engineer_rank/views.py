@@ -12,12 +12,12 @@ dt_now = datetime.datetime.now()
 
 all_ranking_static = "/static/engineer/data/"
 all_ranking_folder = "/app/static/engineer/data/"
-all_ranking_filename = "access_ranking" + dt_now.strftime('%Y%m%d') +".json"
+all_ranking_filename = "access_ranking" + dt_now.strftime('%Y%m%d%H') +".json"
 
 repo = "engineer_rank"
 
-favicon = "http://fanstatic.short-tips.info/static/dashboard/img2/static.png"
-img =     "http://fanstatic.short-tips.info/static/dashboard/img2/thumbnail2.png"
+favicon = "/static/engineer/img/twitter_profile_image.png"
+img =     "/static/engineer/img/twitter_profile_image.png"
 site_explain = "エンジニアのためのツイートランキングサイト"
 site_name = "テック・ツイ・ランク"
 
@@ -50,10 +50,7 @@ def index(request,):
         min_retweet = 300
         pop_list = []
         for tag in tag_list:
-            try:
-                json_string = Github.load(repo, tag)
-            except:
-                continue
+            json_string = Github.load(repo, tag)
             tweet_list = json.loads( json_string)["tweet_list"]
             for tweet in tweet_list:
                 if tweet["retweet_count"] > min_retweet:
