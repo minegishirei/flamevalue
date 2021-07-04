@@ -17,7 +17,7 @@ all_ranking_filename = "access_ranking" + dt_now.strftime('%Y%m%d%H') +".json"
 repo = "engineer_rank"
 
 favicon = "/static/engineer/img/twitter_profile_image.png"
-img =     "/static/engineer/img/twitter_profile_image.png"
+img =     "http://techtweetrank.short-tips.info/static/engineer/img/twitter_profile_image.png"
 site_explain = "エンジニアのためのツイートランキングサイト"
 site_name = "テック・ツイ・ランク"
 tag_list = Github.seach_page_list(repo)
