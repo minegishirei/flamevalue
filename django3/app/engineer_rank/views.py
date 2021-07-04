@@ -41,7 +41,7 @@ def about(request):
     return render(request,f"ranking/{htmlname}",params)
 
 
-def index(request,):
+def index(request):
     htmlname = "index.html"
     tag_list = Github.seach_page_list(repo)
     if not Statichub.does_exists(all_ranking_folder + all_ranking_filename):
