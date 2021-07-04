@@ -24,7 +24,7 @@ tag_list = Github.seach_page_list(repo)
 
 
 def sitemap(request):
-    return render(request,f"fanstatic/sitemap.xml")
+    return render(request,f"ranking/sitemap.xml")
 
 
 def about(request):
