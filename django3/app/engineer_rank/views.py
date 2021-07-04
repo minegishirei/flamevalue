@@ -19,7 +19,7 @@ repo = "engineer_rank"
 favicon = "/static/engineer/img/twitter_profile_image.png"
 img =     "http://techtweetrank.short-tips.info/static/engineer/img/twitter_profile_image.png"
 site_explain = "エンジニアのためのツイートランキングサイト"
-site_name = "テック・ツイ・ランク"
+site_name = "テック・ツイ・ランキング"
 tag_list = Github.seach_page_list(repo)
 
 
