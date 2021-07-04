@@ -20,20 +20,18 @@ favicon = "/static/engineer/img/twitter_profile_image.png"
 img =     "/static/engineer/img/twitter_profile_image.png"
 site_explain = "エンジニアのためのツイートランキングサイト"
 site_name = "テック・ツイ・ランク"
-
-
-
 tag_list = Github.seach_page_list(repo)
 
 
 def sitemap(request):
     return render(request,f"fanstatic/sitemap.xml")
 
+
 def about(request):
     htmlname = "about.html"
     params = {
         "title" : "エンジニア・ツイッターランキング | " + site_name,
-        "description" : site_explain,
+        "description" : "ツイートランキングサイトについての説明です。",
         "favicon" : favicon,
         "img": img,
         "repo":repo,
@@ -57,9 +55,8 @@ def index(request,):
                     pop_list.append(tweet)
         text = json.dumps(pop_list, ensure_ascii=False, indent=4)
         Statichub.write(all_ranking_folder + all_ranking_filename, text)
-        
     params = {
-        "title" : "エンジニア・ツイッターランキング | " + site_name,
+        "title" : site_name,
         "description" : site_explain,
         "favicon" : favicon,
         "img": img,
@@ -83,6 +80,7 @@ def all_page(request, htmlname, pagetype):
         "tag_list" : tag_list
     }
     return render(request, f'engineer_rank/top/', params)
+
 
 # Create your views here.
 def page(request, htmlname, pagetype):
