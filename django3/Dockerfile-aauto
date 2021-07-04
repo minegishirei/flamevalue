@@ -3,9 +3,8 @@ FROM python
 
 RUN groupadd -r uwsgi && useradd -r -g uwsgi uwsgi
 
-EXPOSE 5000
-WORKDIR /app
-COPY app /app
+WORKDIR /aauto
+COPY aauto /aauto
 COPY requirements.txt ./
 COPY God /God
 

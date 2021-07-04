@@ -1,6 +1,7 @@
 djangoapp:
   user: root
   build: .
+  dockerfile: "Dockerfile"
   environment:
     ENV: DEV
   ports:
@@ -12,6 +13,19 @@ djangoapp:
   #command: python3 manage.py runserver 0.0.0.0:5000 
   links:
     - redis
+    - db
+
+
+aauto:
+  user: root
+  build: .
+  dockerfile: "Dockerfile-aauto"
+  volumes:
+    - ./aauto:/aauto
+    - ./God:/God
+  command: ./cmd.sh
+  #command: python3 manage.py runserver 0.0.0.0:5000 
+  links:
     - db
 
 redis:

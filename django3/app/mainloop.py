@@ -31,5 +31,8 @@ def main():
 
 
 while True:
-    time.sleep(60*60*2)
-    main()
+    try:
+        main()
+    except:
+        pass
+    time.sleep(60*60*1)
