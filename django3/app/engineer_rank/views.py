@@ -8,11 +8,11 @@ import Twitter
 import Github
 import Statichub
 import datetime
-dt_now = datetime.datetime.now()
+
 
 all_ranking_static = "/static/engineer/data/"
 all_ranking_folder = "/app/static/engineer/data/"
-all_ranking_filename = "access_ranking" + dt_now.strftime('%Y%m%d%H') +".json"
+
 
 repo = "engineer_rank"
 
@@ -42,6 +42,8 @@ def about(request):
 
 
 def index(request):
+    dt_now = datetime.datetime.now()
+    all_ranking_filename = "access_ranking" + dt_now.strftime('%Y%m%d%H') +".json"
     htmlname = "index.html"
     tag_list = Github.seach_page_list(repo)
     if not Statichub.does_exists(all_ranking_folder + all_ranking_filename):
