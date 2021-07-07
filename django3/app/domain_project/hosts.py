@@ -15,6 +15,7 @@ host_patterns = patterns(
     host(r'apologagent', "apologagent.urls", name="apologagent"),
     host(r'fanstatic', "fanstatic.urls", name="fanstatic"),
     host(r"techtweetrank", "engineer_rank.urls", name="engineer_rank"),
+    host(r"techblog", "techblog.urls", name="techblog"),
     host(r'.*', 'short_tips.urls', name='else'),
 )
 

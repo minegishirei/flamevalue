@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     "apologagent",
     "examengcloud",
     "fanstatic",
-    "engineer_rank"
+    "engineer_rank",
+    "techblog"
 ]
 
 MIDDLEWARE = [
