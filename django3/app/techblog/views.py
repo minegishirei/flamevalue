@@ -60,7 +60,7 @@ page_dict = genPageDict()
 
 
 def sitemap(request):
-    return render(request,f"ranking/sitemap.xml")
+    return render(request,f"blog/techblog/page/sitemap.xml")
 
 
 def index(request):
