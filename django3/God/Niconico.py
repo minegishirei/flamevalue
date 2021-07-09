@@ -77,3 +77,5 @@ class NicoScrapy(Scrapy):
         for data in article_bsObj.findAll('a'):
             my_list.append(data.text)
         return my_list
+
+

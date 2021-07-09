@@ -24,8 +24,12 @@ def load(repo,filename):
     return output
 
 
-def seach_page_list(repo):
+def seach_page_list(repo, folder = None):
     url = "https://github.com/kawadasatoshi/" + repo 
+    if folder is None:
+        url = "https://github.com/kawadasatoshi/" + repo 
+    else:
+        url = f"https://github.com/kawadasatoshi/{repo}/tree/main/{folder}"
     html = urlopen(url)
     bsObj = BeautifulSoup(html)
     file_list = []
@@ -48,6 +52,13 @@ def seach_page_list(repo):
     return file_list
 
     #<a class="js-navigation-open link-gray-dark" title="2進数.json" href="/kawadasatoshi/six_dim_wikipedia/blob/main/2%E9%80%B2%E6%95%B0.json">2進数.json</a>
+
+
+def dive_folder():
+    url = f"https://github.com/kawadasatoshi/{repo}/tree/main/{folder}"
+    
+
+
 
 
 def has_already_created(repo, filename):
