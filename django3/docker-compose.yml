@@ -6,6 +6,7 @@ djangoapp:
     ENV: DEV
   ports:
    - "80:5000"
+   - "443:5000"
   volumes:
     - ./app:/app
     - ./God:/God
@@ -14,7 +15,6 @@ djangoapp:
   links:
     - redis
     - db
-
 
 aauto:
   user: root

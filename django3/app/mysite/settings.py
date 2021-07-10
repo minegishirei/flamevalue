@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #'sslserver',
+    'django_extensions',
     "short_tips",
     'django_hosts',    # ←追加する
     "apologagent",
@@ -45,6 +47,11 @@ INSTALLED_APPS = [
     "engineer_rank",
     "techblog"
 ]
+
+#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = False
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 MIDDLEWARE = [
     'django_hosts.middleware.HostsRequestMiddleware',#subdomain
