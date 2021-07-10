@@ -26,6 +26,8 @@ tag_list = Github.seach_page_list(repo)
 def sitemap(request):
     return render(request,f"ranking/sitemap.xml")
 
+def robots(request):
+    return render(request, f"robots.txt")
 
 def about(request):
     htmlname = "about.html"

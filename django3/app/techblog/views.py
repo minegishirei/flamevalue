@@ -25,6 +25,9 @@ site_name = "社内SE雑記ブログ"
 repo = "techblog"
 
 
+def robots(request):
+    return render(request, f"robots.txt")
+    
 def grep_param(mk, taglist):
     params = {}
     for tag in taglist:
