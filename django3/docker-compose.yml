@@ -1,20 +1,23 @@
 
-https-portal:
-  image: steveltn/https-portal:1
-  ports:
-    - 80:80
-    - 443:443
-  links:
-    - djangoapp
-  restart: always
-  environment:
-    DOMAINS: 
-       'short-tips.info -> http://djangoapp:5000, techblog.short-tips.info -> http://techblog.djangoapp:5000'
-    STAGE: production # Don't use production until staging works
-    #FORCE_RENEW: 'true'
-  container_name: https-portal
-  volumes:
-    - ./ssl_certs:/var/lib/https-portal
+
+#https-portal:
+#  image: steveltn/https-portal:1
+#  ports:
+#    - 80:80
+#    - 443:443
+#  links:
+#    - djangoapp
+#  restart: always
+#  environment:
+#    DOMAINS: 
+#       'short-tips.info -> http://djangoapp:5000, techblog.short-tips.info -> http://techblog.djangoapp:5000'
+#    STAGE: production # Don't use production until staging works
+#    #FORCE_RENEW: 'true'
+#  container_name: https-portal
+#  volumes:
+#    - ./ssl_certs:/var/lib/https-portal
+
+
 
 djangoapp:
   user: root
@@ -23,7 +26,7 @@ djangoapp:
   environment:
     ENV: DEV
   ports:
-   - "5000:5000"
+   - "80:5000"
   volumes:
     - ./app:/app
     - ./God:/God

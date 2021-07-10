@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 
-#python3 mainloop.py
+python3 mainloop.py
