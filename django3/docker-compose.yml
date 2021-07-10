@@ -1,3 +1,21 @@
+
+https-portal:
+  image: steveltn/https-portal:1
+  ports:
+    - 80:80
+    - 443:443
+  links:
+    - djangoapp
+  restart: always
+  environment:
+    DOMAINS: 
+       'short-tips.info -> http://djangoapp:5000, techblog.short-tips.info -> http://techblog.djangoapp:5000'
+    STAGE: production # Don't use production until staging works
+    #FORCE_RENEW: 'true'
+  container_name: https-portal
+  volumes:
+    - ./ssl_certs:/var/lib/https-portal
+
 djangoapp:
   user: root
   build: .
@@ -5,16 +23,17 @@ djangoapp:
   environment:
     ENV: DEV
   ports:
-   - "80:5000"
-   - "443:5000"
+   - "5000:5000"
   volumes:
     - ./app:/app
     - ./God:/God
   command: ./cmd.sh
+  container_name: djangoapp
   #command: python3 manage.py runserver 0.0.0.0:5000 
   links:
-    - redis
     - db
+
+
 
 aauto:
   user: root
@@ -28,9 +47,6 @@ aauto:
   links:
     - db
 
-redis:
-  user: root
-  image: redis
 
 db:
   user: root
@@ -48,4 +64,3 @@ db:
     - ./db/mysql-init:/docker-entrypoint-initdb.d
     # 永続化するときにマウントするdir
     - ./db/mysql-data:/var/lib/mysql
-

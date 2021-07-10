@@ -150,4 +150,3 @@ DEFAULT_HOST = 'www' # ←追加(デフォルトとなるサブドメイン)
 
 SESSION_ENGINE = "django.contrib.sessions.backends.file" #ファイルで保存
 
-
