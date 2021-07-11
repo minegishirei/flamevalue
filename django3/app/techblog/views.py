@@ -58,7 +58,19 @@ def genPageDict():
         page_dict[category] = category_dict
     return page_dict
 
+clock = 0
 page_dict = genPageDict()
+
+def checkandrenew():
+    global clock
+    global page_dict
+    dt_now = datetime.datetime.now()
+    now = dt_now.strftime('%Y%m%d%H')
+    if clock != now:
+        clock = now
+        page_dict = genPageDict()
+        return True
+    return False
 
 
 
@@ -67,11 +79,14 @@ def sitemap(request):
 
 
 def index(request):
+    global page_dict
+    if "renew" in request.GET:
+        page_dict = genPageDict()
+    checkandrenew()
     page_list = []
     for category, category_list in page_dict.items():
         for page in category_list.values():
             page_list.append(page)
-    
     params = {
         "page_list" : page_list,
         "title" : site_name,
@@ -80,7 +95,6 @@ def index(request):
         "img": img,
         "site_name" : site_name
     }
-
     return render(request,f"blog/techblog/page/index.html",params)
 
 
