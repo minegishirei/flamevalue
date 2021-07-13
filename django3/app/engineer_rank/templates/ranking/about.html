@@ -53,7 +53,24 @@
             エンジニアリング関連のツイートにランキングをつけることで有益な情報へ素早くアクセスできます</p>
 
         タグ一覧<br>
-        {% include "ranking/parts/all_tag.html" %}
+        {% for tag in tag_list %}
+        <a href="/page/{{ tag }}/ranking.html" class="type01">
+            {{ tag }}
+        </a>
+        {% endfor %}
+        
+        <style>
+            a.type01 {
+                border-radius: 5%;
+                padding: 10px;
+                margin: 5px;
+                display: inline-block;
+                text-align: center;
+                letter-spacing: 0.1em;
+                color: #fff;
+                background-color: #ed576c;
+            }
+        </style>
 
         </div>
         <!-- /col-lg-8 -->
