@@ -161,15 +161,11 @@
   </script>
   <script>
     var tag_list = [
-      "プログラミング言語",
-      "python",
-      "Python",
-      "JavaScript",
-      "プログラミング",
-      "駆け出しエンジニア",
-      "エンジニア",
-    ]
-
+            {% for tag in tag_list %}
+        "{{ tag }}",
+            {% endfor %}
+        ]
+      
     url = "https://raw.githubusercontent.com/kawadasatoshi/{{ repo }}/main/{{ htmlname }}"
 
     htmlname = "{{ htmlname }}"
@@ -214,7 +210,7 @@
         tagHtml = ""
         for (i in match_tag_list) {
           tag = match_tag_list[i]
-          tagHtml += `<a href="/page/` + tag + `/ranking.html" class="tag">` + tag + "</a><br>"
+          tagHtml += `<a href="/{{ content_type }}/` + tag + `/ranking.html" class="tag">` + tag + "</a><br>"
         }
 
         console.log(tweet.user.screen_name)
@@ -233,7 +229,7 @@
         } else {
           rank = `<t>` + ordercount + `位</t>`
         }
-        outerBase = `
+          outerBase = `
   <div id="`+ "gray" + `">
     <div class="container">
       <div class="row">
@@ -244,11 +240,16 @@
               <strong>`+ tweet.retweet_count + `</strong>リツイート
             </div>
             <div class="box">`
-          + tagHtml +
-          `</div>
-          </div>`
-          + innnerRealTweet +
-          `</div>
+                + "<h3>" + tweet.user.name +"</h3>"
+                + tagHtml +
+            `</div>
+           </div>`
+           +"<pre>"
+                +tweet.text
+            +"</pre>"
+
+            + innnerRealTweet +
+                    `</div>
       <!-- /row -->
     </div>
     <!-- /container -->

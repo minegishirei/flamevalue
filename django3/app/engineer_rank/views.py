@@ -14,13 +14,47 @@ all_ranking_static = "/static/engineer/data/"
 all_ranking_folder = "/app/static/engineer/data/"
 
 
-repo = "engineer_rank"
-
 favicon = "/static/engineer/img/twitter_profile_image.png"
 img =     "http://techtweetrank.short-tips.info/static/engineer/img/twitter_profile_image.png"
-site_explain = "エンジニアのためのツイートランキングサイト"
 site_name = "テック・ツイ・ランキング"
-tag_list = Github.seach_page_list(repo)
+
+content_type_dict = {
+    "page" : {
+        "content_type" : "page",
+        "title" : "ITトレンドをキャッチアップー " + site_name,
+        "description" : "エンジニアのためのツイートランキングサイト",
+        "favicon" : favicon,
+        "img": img,
+        "repo":"engineer_rank",
+        "tag_list" : Github.seach_page_list("engineer_rank"),
+        "query" : '"{}"' + " lang:ja min_faves:100"
+    },"overseas":{
+        "content_type" : "overseas",
+        "title" : "海外のITトレンドをキャッチアップー " + site_name,
+        "description" : "エンジニアのためのツイートランキングサイト",
+        "favicon" : favicon,
+        "img": img,
+        "repo":"overseas",
+        "tag_list" : Github.seach_page_list("overseas"),
+        "query" : '"{}"' + " lang:en min_faves:100"
+    },"legends" : {
+        "content_type" : "legends",
+        "title" : "伝説級のエンジニア編ー " + site_name,
+        "description" : "エンジニアのためのツイートランキングサイト",
+        "favicon" : favicon,
+        "img": img,
+        "repo":"legends",
+        "tag_list" : Github.seach_page_list("legends"),
+        "query" : '"{}"' + " since:2009-1-1 until:2021-4-1"
+    }
+}
+
+
+
+
+def allforall_ranking():
+    repo = "content_type"
+
 
 
 def sitemap(request):
@@ -31,73 +65,46 @@ def robots(request):
 
 def about(request):
     htmlname = "about.html"
-    params = {
-        "title" : "エンジニア・ツイッターランキング | " + site_name,
-        "description" : "ツイートランキングサイトについての説明です。",
-        "favicon" : favicon,
-        "img": img,
-        "repo":repo,
-        "htmlname" : htmlname,
-        "tag_list" : tag_list
-    }
+    params = content_type_dict["page"].copy()
+    params.update({
+        "htmlname" : htmlname
+    })
     return render(request,f"ranking/{htmlname}",params)
-
 
 def index(request):
+    return redirect("/about.html")
+
+def content_index(request, content_type):
     dt_now = datetime.datetime.now()
-    all_ranking_filename = "access_ranking" + dt_now.strftime('%Y%m%d%H') +".json"
-    htmlname = "index.html"
+    all_ranking_filename = content_type + dt_now.strftime('%Y%m%d%H') +".json"
+    params = (content_type_dict[content_type]).copy()
+    repo = params["repo"]
     tag_list = Github.seach_page_list(repo)
-    if not Statichub.does_exists(all_ranking_folder + all_ranking_filename):
-        min_retweet = 300
-        pop_list = []
+    tweet_list = []
+    if not Github.has_already_created("content_type", all_ranking_filename):
         for tag in tag_list:
             json_string = Github.load(repo, tag)
-            tweet_list = json.loads( json_string)["tweet_list"]
-            for tweet in tweet_list:
-                if tweet["retweet_count"] > min_retweet:
-                    pop_list.append(tweet)
-        text = json.dumps(pop_list, ensure_ascii=False, indent=4)
-        Statichub.write(all_ranking_folder + all_ranking_filename, text)
-    params = {
-        "title" : site_name,
-        "description" : site_explain,
-        "favicon" : favicon,
-        "img": img,
-        "repo":repo,
-        "htmlname" : htmlname,
-        "tag_list" : tag_list,
-        "all_ranking_file" : all_ranking_static + all_ranking_filename
-    }
-    return render(request,f"ranking/{htmlname}",params)
-
-
-def all_page(request, htmlname, pagetype):
-    params = {
-        "title" : htmlname + " | "+site_name,
-        "description" : site_explain,
-        "favicon" : favicon,
-        "img": img,
-        "repo":repo,
-        "htmlname" : htmlname,
-        "explain": site_explain,
-        "tag_list" : tag_list
-    }
-    return render(request, f'engineer_rank/top/', params)
+            if len(json_string) < 10:
+                continue
+            tweet_list = json.loads(json_string)["tweet_list"]
+            tweet_list = sort_tweet_list(tweet_list)
+            tweet_list = tweet_list[:50]
+        text = json.dumps(tweet_list, ensure_ascii=False, indent=4)
+        Github.upload("content_type", all_ranking_filename, text )
+    params.update({
+        "all_ranking_file" : all_ranking_filename,
+        "tweet_list":tweet_list
+    })
+    return render(request,f"ranking/index.html",params)
 
 
 # Create your views here.
-def page(request, htmlname, pagetype):
-    params = {
-        "title" : htmlname + " | "+site_name,
-        "description" : site_explain,
-        "favicon" : favicon,
-        "img": img,
-        "repo":repo,
-        "htmlname" : htmlname,
-        "explain": site_explain,
-        "tag_list" : tag_list
-    }
+def page(request,content_type, htmlname, pagetype):
+    params = content_type_dict[content_type].copy()
+    repo = params["repo"]
+    params.update({
+        "htmlname" : htmlname
+    })
     if Github.has_already_created(repo, htmlname):
         return render(request,f"ranking/{pagetype}",params)
     else:
@@ -105,32 +112,32 @@ def page(request, htmlname, pagetype):
         return render(request,f"ranking/data_loading.html",params)
 
 
-def data_loading(request, htmlname):
-    
-    params = {
-        "title" : htmlname + " | " + site_name,
-        "description" : site_explain,
-        "favicon" : favicon,
-        "img": img,
-        "repo":repo,
-        "htmlname" : htmlname,
-        "explain": site_explain,
-        "tag_list" : tag_list
-    }
-    
-
+def data_loading(request,content_type, htmlname):
+    params = content_type_dict[content_type].copy()
+    repo = params["repo"]
+    query = params["query"].format(htmlname)
     if not Github.has_already_created(repo, htmlname):
+        tweet_list = []
         myTwitterAction = Twitter.MyTwitterAction()
-        tweet_list = myTwitterAction.search_tweet_list('"'+ htmlname+ '"' + " lang:ja min_faves:100", amount=50)
-        
+        if content_type == "legends":
+            tweet_list = myTwitterAction.search_tweet_list_universal(
+            query,
+            amount=50)
+            0/0
+        else:
+            tweet_list = myTwitterAction.search_tweet_list(
+                query,
+                amount=50)
         git_json = {}
         git_json.update({
             "tweet_list" : tweet_list
         })
-
         text = json.dumps(git_json, ensure_ascii=False, indent=4)
         Github.upload(repo, htmlname, text)
     return render(request,f"ranking/ranking.html",params)
 
 
 
+def sort_tweet_list(tweet_list):
+    tweet_list = sorted(tweet_list, key=lambda x:x["retweet_count"], reverse=True)
+    return tweet_list

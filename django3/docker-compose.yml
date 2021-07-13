@@ -17,8 +17,6 @@
 #  volumes:
 #    - ./ssl_certs:/var/lib/https-portal
 
-
-
 djangoapp:
   user: root
   build: .

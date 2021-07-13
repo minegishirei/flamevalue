@@ -60,6 +60,35 @@
 
                 </div>
 
+                <!--
+                <div class="col-lg-8 col-lg-offset-2 centered">
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+
+$('.lang-select').click(function() {
+  var lang = $(this).attr('data-lang');
+  window.location = $(this).attr('href');
+  location.reload();
+});
+    function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'ja', 
+    layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT
+  }, 'google_translate_element');
+}
+</script>
+                    <div class="text-center mb-3">
+                      <a href="#googtrans(ja|en)" class="lang-select" data-lang="en"><img src="https://www.solodev.com/assets/google-translate/flag-usa.png" alt="USA"></a> 
+                      <a href="#googtrans(ja|zh-CN)" class="lang-select" data-lang="zh-CN"><img src="https://www.solodev.com/assets/google-translate/flag-china.png" alt="China"></a> 
+                      <a href="#googtrans(ja|es)" class="lang-select" data-lang="es"><img src="https://www.solodev.com/assets/google-translate/flag-mexico.png" alt="MEXICO"></a>
+                      <a href="#googtrans(ja|fr)" class="lang-select" data-lang="fr"><img src="https://www.solodev.com/assets/google-translate/flag-france.png" alt="France"></a>
+                      <a href="#googtrans(ja|ja)" class="lang-select" data-lang="ja"><img src="https://www.solodev.com/assets/google-translate/flag-japan.png" alt="JAPAN"></a>
+                    </div>
+                </div>
+            -->
+                
+
 
 
                 <!-- /col-lg-8 -->
@@ -190,18 +219,19 @@
 
     <script>
 
-        url = "{{ all_ranking_file }}"
+        url = "https://raw.githubusercontent.com/kawadasatoshi/content_type/main/{{ all_ranking_file }}"
 
         htmlname = "{{ htmlname }}"
         console.log("here")
         var jsonDate = []
 
         var nico_word_cloud = []
+        console.log(url)
         $.ajaxSetup({ async: false });
         $.getJSON(url, (data) => {
             console.log(data)
             jsonDate = data
-
+            console.log("jsondata",jsonDate)
             // ソートの優先するキーと順序のリスト
             // age, name, idの順にソート
             const order = [
@@ -266,10 +296,15 @@
               <strong>`+ tweet.retweet_count + `</strong>リツイート
             </div>
             <div class="box">`
-                    + tagHtml +
-                    `</div>
-          </div>`
-                    + innnerRealTweet +
+                + "<h3>" + tweet.user.name +"</h3>"
+                + tagHtml +
+            `</div>
+           </div>`
+           +"<pre>"
+                +tweet.text
+            +"</pre>"
+
+            + innnerRealTweet +
                     `</div>
       <!-- /row -->
     </div>
@@ -315,6 +350,7 @@
         }
 
         .box {
+            max-width: 70%;
             display: inline-block;
             font-size: 16px;
         }
@@ -336,6 +372,10 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        h3 {
+            margin-bottom: 10px;
         }
     </style>
 
