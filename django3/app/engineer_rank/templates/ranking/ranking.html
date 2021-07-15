@@ -43,7 +43,7 @@
         <div class="col-lg-8 col-lg-offset-2 centered">
           <h2>リツイートランキング</h2>
           <h3>{{ htmlname }}部門</h3>
-          <img class="logo" src="{{ img }}" width="100px" height="100px" >
+          <img class="logo" src="{{ img }}" width="100px" height="100px">
           <br>
         </div>
         <!-- /col-lg-8 -->
@@ -156,16 +156,15 @@
       }
       return match_tag_list
     }
-
-
   </script>
+
   <script>
     var tag_list = [
-            {% for tag in tag_list %}
-        "{{ tag }}",
-            {% endfor %}
+      {% for tag in tag_list %}
+    "{{ tag }}",
+      {% endfor %}
         ]
-      
+
     url = "https://raw.githubusercontent.com/kawadasatoshi/{{ repo }}/main/{{ htmlname }}"
 
     htmlname = "{{ htmlname }}"
@@ -205,12 +204,14 @@
         tweet = jsonDate[count]
         console.log(tweet)
 
-        match_tag_list = doesInclude(tweet.text, tag_list)
-
         tagHtml = ""
-        for (i in match_tag_list) {
-          tag = match_tag_list[i]
-          tagHtml += `<a href="/{{ content_type }}/` + tag + `/ranking.html" class="tag">` + tag + "</a><br>"
+        try {
+          match_tag_list = doesInclude(tweet.text, tag_list)
+          for (i in match_tag_list) {
+            tag = match_tag_list[i]
+            tagHtml += `<a href="/{{ content_type }}/` + tag + `/ranking.html" class="tag">` + tag + "</a><br>"
+          }
+        } catch (error) {
         }
 
         console.log(tweet.user.screen_name)
@@ -229,7 +230,8 @@
         } else {
           rank = `<t>` + ordercount + `位</t>`
         }
-          outerBase = `
+
+        outerBase = `
   <div id="`+ "gray" + `">
     <div class="container">
       <div class="row">
@@ -240,16 +242,19 @@
               <strong>`+ tweet.retweet_count + `</strong>リツイート
             </div>
             <div class="box">`
-                + "<h3>" + tweet.user.name +"</h3>"
-                + tagHtml +
-            `</div>
-           </div>`
-           +"<pre>"
-                +tweet.text
-            +"</pre>"
-
-            + innnerRealTweet +
-                    `</div>
+            + "<h3>" + tweet.user.name + "</h3>"
+            + tagHtml +
+          `</div>
+            </div>`
+            +`<pre>
+               <div class="tweet_context">`
+                  + tweet.text
+            + `</div>
+            </pre>`
+            +`<div class="centorblock">`
+             + innnerRealTweet
+            +"</div>"
+         +`</div>
       <!-- /row -->
     </div>
     <!-- /container -->
@@ -297,7 +302,6 @@
     }
 
     pre {
-      background-color: white;
       border: none;
       white-space: pre-wrap;
     }
@@ -325,9 +329,12 @@
     }
 
     .centorblock {
-      display: block;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    .tweet_context {
+      font-size: medium;
     }
   </style>
 

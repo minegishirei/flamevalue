@@ -8,6 +8,7 @@ import Twitter
 import Github
 import Statichub
 import datetime
+import GoogleTrans
 
 
 all_ranking_static = "/static/engineer/data/"
@@ -50,6 +51,24 @@ content_type_dict = {
 }
 
 
+routine_time = 0
+def routine_update():
+    global routine_time
+    dt_now = datetime.datetime.now()
+    now = dt_now.strftime('%Y%m%d%H')
+    if routine_time != now:
+        routine_time = now
+        content_type_dict["page"].update({
+            "tag_list" : Github.seach_page_list("engineer_rank"),
+        })
+        content_type_dict["overseas"].update({
+            "tag_list" : Github.seach_page_list("overseas"),
+        })
+        content_type_dict["legends"].update({
+            "tag_list" : Github.seach_page_list("legends"),
+        })
+    
+routine_update()
 
 
 def allforall_ranking():
@@ -79,10 +98,9 @@ def content_index(request, content_type):
     all_ranking_filename = content_type + dt_now.strftime('%Y%m%d%H') +".json"
     params = (content_type_dict[content_type]).copy()
     repo = params["repo"]
-    tag_list = Github.seach_page_list(repo)
     tweet_list = []
     if not Github.has_already_created("content_type", all_ranking_filename):
-        for tag in tag_list:
+        for tag in params["tag_list"]:
             json_string = Github.load(repo, tag)
             if len(json_string) < 10:
                 continue
@@ -116,6 +134,9 @@ def data_loading(request,content_type, htmlname):
     params = content_type_dict[content_type].copy()
     repo = params["repo"]
     query = params["query"].format(htmlname)
+    params.update({
+        "htmlname" : htmlname
+    })
     if not Github.has_already_created(repo, htmlname):
         tweet_list = []
         myTwitterAction = Twitter.MyTwitterAction()
@@ -123,11 +144,16 @@ def data_loading(request,content_type, htmlname):
             tweet_list = myTwitterAction.search_tweet_list_universal(
             query,
             amount=50)
-            0/0
+        elif content_type == "overseas":
+            tweet_list = myTwitterAction.search_tweet_list(
+                query,
+                amount=50)
+            tweet_list = translate_tweet_list(tweet_list)
         else:
             tweet_list = myTwitterAction.search_tweet_list(
                 query,
                 amount=50)
+            
         git_json = {}
         git_json.update({
             "tweet_list" : tweet_list
@@ -141,3 +167,17 @@ def data_loading(request,content_type, htmlname):
 def sort_tweet_list(tweet_list):
     tweet_list = sorted(tweet_list, key=lambda x:x["retweet_count"], reverse=True)
     return tweet_list
+
+
+def translate_tweet_list(tweet_list):
+    new_tweet_list = []
+    for tweet in tweet_list:
+        text = str(tweet["text"])
+        new_text = GoogleTrans.en_to_ja(text)
+        tweet.update({
+            "text" : new_text
+        })
+        new_tweet_list.append(tweet)
+    return new_tweet_list
+
+
