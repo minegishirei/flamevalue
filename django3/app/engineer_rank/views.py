@@ -17,13 +17,14 @@ all_ranking_folder = "/app/static/engineer/data/"
 
 favicon = "/static/engineer/img/twitter_profile_image.png"
 img =     "http://techtweetrank.short-tips.info/static/engineer/img/twitter_profile_image.png"
-site_name = "テック・ツイ・ランキング"
+site_name = "ITトレンド"
+description = "厳選されたIT業界の最新の情報をお届けします。最新のITトレンド情報を入手しましょう。"
 
 content_type_dict = {
     "page" : {
         "content_type" : "page",
-        "title" : "ITトレンドをキャッチアップー " + site_name,
-        "description" : "エンジニアのためのツイートランキングサイト",
+        "title" :  site_name,
+        "description" : description,
         "favicon" : favicon,
         "img": img,
         "repo":"engineer_rank",
@@ -31,8 +32,8 @@ content_type_dict = {
         "query" : '"{}"' + " lang:ja min_faves:100"
     },"overseas":{
         "content_type" : "overseas",
-        "title" : "海外のITトレンドをキャッチアップー " + site_name,
-        "description" : "エンジニアのためのツイートランキングサイト",
+        "title" : site_name+" 海外版",
+        "description" : description,
         "favicon" : favicon,
         "img": img,
         "repo":"overseas",
@@ -40,8 +41,8 @@ content_type_dict = {
         "query" : '"{}"' + " lang:en min_faves:100"
     },"legends" : {
         "content_type" : "legends",
-        "title" : "伝説級のエンジニア編ー " + site_name,
-        "description" : "エンジニアのためのツイートランキングサイト",
+        "title" : site_name + " 殿堂入り",
+        "description" : description,
         "favicon" : favicon,
         "img": img,
         "repo":"legends",
