@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     "examengcloud",
     "fanstatic",
     "engineer_rank",
-    "techblog"
+    "techblog",
+    "oversea_it"
 ]
 
 #SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
