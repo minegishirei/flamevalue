@@ -19,14 +19,12 @@ site_explain = "海外兄貴のITニュースをお届けします。"
 site_name = "海外エンジニアまとめ"
 
 
-
 param_tag_list = [
     "title", 
     "description", 
     "sub_title", 
     "img"
     ]
-
 
 
 base_template = "oversea_it/base/page.html"
@@ -85,6 +83,7 @@ def getMetaInfo():
         pop_page_list.append(pop_page_info)
     return pop_page_list
 pop_page_list = getMetaInfo()
+
 
 def index(request):
     global page_dict
