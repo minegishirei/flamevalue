@@ -71,7 +71,7 @@ def genPageDict():
     return page_dict
 page_dict = genPageDict()
 
-meta_dict = {}
+
 def getMetaInfo():
     global meta_info
     json_string = Github.load(repo, "pop_page_list.json")
@@ -84,7 +84,6 @@ def getMetaInfo():
         pop_page_info = page_dict[category][htmlname]
         pop_page_list.append(pop_page_info)
     return pop_page_list
-meta_dict = getMetaInfo()
 pop_page_list = getMetaInfo()
 
 def index(request):
@@ -131,7 +130,10 @@ def page(request, category, htmlname):
 
 
 
-
+def reload(request):
+    pop_page_list = getMetaInfo()
+    page_dict = genPageDict()
+    return redirect("/index.html")
 
 
 

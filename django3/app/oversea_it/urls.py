@@ -7,6 +7,7 @@ urlpatterns = [
     path("sitemap.xml", views.sitemap, name="sitemap"),
     path("about.html", views.about, name="about"),
     path("<category>/<htmlname>", views.page, name="page"),
-    path("<category_name>/", views.category_page, name="page")
+    path("<category_name>/", views.category_page, name="page"),
+    path("reload.html", views.reload, name="reload")
 ]
 
