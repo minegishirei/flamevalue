@@ -122,8 +122,7 @@ def page(request, category, htmlname):
     params.update({
         "category_list" : category_list,
         "pop_page_list" : getMetaInfo(),
-        "favicon" : favicon,
-        "img": img
+        "favicon" : favicon
     })
 
     return render(request,base_template, params)
