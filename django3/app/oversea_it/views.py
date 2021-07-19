@@ -85,14 +85,14 @@ def getMetaInfo():
         pop_page_list.append(pop_page_info)
     return pop_page_list
 meta_dict = getMetaInfo()
-
+pop_page_list = getMetaInfo()
 
 def index(request):
     global page_dict
     params = {
         "category_list" : category_list,
         "page_dict" : page_dict,
-        "pop_page_list" : getMetaInfo(),
+        "pop_page_list" : pop_page_list,
         "title" : site_name,
         "description" : site_explain,
         "favicon" : favicon,
@@ -121,7 +121,7 @@ def page(request, category, htmlname):
     params = (category_dict[htmlname]).copy()
     params.update({
         "category_list" : category_list,
-        "pop_page_list" : getMetaInfo(),
+        "pop_page_list" : pop_page_list,
         "favicon" : favicon
     })
 
