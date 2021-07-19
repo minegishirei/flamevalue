@@ -155,7 +155,7 @@ def checkandrenew():
 
 
 def sitemap(request):
-    return render(request,f"blog/techblog/page/sitemap.xml")
+    return render(request,f"oversea_it/sitemap.xml")
 
 
 
@@ -167,7 +167,7 @@ def about(request):
         "img": img,
         "site_name" : site_name
     }
-    return render(request,f"blog/techblog/page/about.html",params)
+    return render(request,f"oversea_it/sitemap.xml",params)
 
 
 
