@@ -13,12 +13,16 @@ import GoogleTrans
 
 def translate_tweet_list(tweet_list):
     new_tweet_list = []
+    
+    count = 0
     for tweet in tweet_list:
-        text = str(tweet["text"])
-        new_text = GoogleTrans.en_to_ja(text)
-        tweet.update({
-            "text" : new_text
-        })
+        count += 1
+        if count <= 3:
+            text = str(tweet["text"])
+            new_text = GoogleTrans.en_to_ja(text)
+            tweet.update({
+                "text" : new_text
+            })
         new_tweet_list.append(tweet)
     return new_tweet_list
 

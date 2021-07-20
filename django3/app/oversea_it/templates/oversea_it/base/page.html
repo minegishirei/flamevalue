@@ -47,7 +47,26 @@
                 </table>
                 <!--△テーブル-->
 
+                <h2>人気記事一覧</h2>
+                {% for page in pop_page_list %}
+
+                <!--▼動画一覧BOX----------------------------->
+                <div class="MOV_thumb_box">
+                  <div class="mov_thumb MOV_BOX_res">
+                    <a width="100%" href="/{{ page.category }}/{{ page.htmlname }}">
+                      <img src="{{ page.img }}">
+                    </a>
+                    <!--△動画コード-->
+                  </div>
+                  <div class="mov_title"><a href="/{{ page.category }}/{{ page.htmlname }}">{{ page.title }}</a></div>
+                  <!--◀ タイトル&リンク-->
+                  <br>
+                </div>
+          
+                {% endfor %}
+
                 <br>
+                <!---
                 <h2>人気記事一覧</h2>
                 <div class="grid">
                     {% for page in pop_page_list %}
@@ -67,6 +86,9 @@
                     }
                 </style>
                 <br><br>
+            -->
+
+                
                 <!--▲コンテンツ-->
             </div>
 

@@ -9,43 +9,12 @@
 
     <!--▽バナー-->
     <div class="side_menu_box" align="center">
-        <a class="twitter-timeline" data-height="400" data-theme="dark"
-            href="https://twitter.com/se_maintain?ref_src=twsrc%5Etfw">Tweets by se_maintain</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter-timeline" data-height="400" data-theme="dark" href="https://twitter.com/se_maintain?ref_src=twsrc%5Etfw">Tweets by se_maintain</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
     <!--△バナー-->
 
 
-    <!--▽リード-->
-    <div class="read_L">
-        <div class="read_TXT">人気記事</div>
-    </div>
-    <!--△リード-->
-
-
-    <!--▼動画リスト-->
-    <div class="contents_sec_1 cont_sections">
-
-
-        {% for page in pop_page_list %}
-
-        <!--▼動画一覧BOX----------------------------->
-        <div class="MOV_thumb_box">
-            <div class="mov_thumb MOV_BOX_res">
-                <a width="100%" href="/{{ page.category }}/{{ page.htmlname }}">
-                    <img src="{{ page.img }}">
-                </a>
-                <!--△動画コード-->
-            </div>
-            <div class="mov_title"><a href="/{{ page.category }}/{{ page.htmlname }}">{{ page.title }}</a></div>
-            <!--◀ タイトル&リンク-->
-            <br>
-        </div>
-
-        {% endfor %}
-
-
-        <!--▽サイドバーリード
+    <!--▽サイドバーリード-->
     <div class="read_S">
         <div class="read_TXT">人気記事ランキング</div>
     </div>
@@ -54,36 +23,35 @@
         <li class="side_menu_List"><a href="/{{ page.category }}/{{ page.htmlname }}">{{ page.title }}</a></li>
         {% endfor %}
     </div>
--->
 
 
 
-        <!--▽サイドバーリード-->
-        <div class="read_S">
-            <div class="read_TXT">カテゴリー一覧</div>
-        </div>
-        <!--△サイドバーリード-->
-
-        <div class="side_menu_box_border">
-            {% for category in category_list %}
-            <li class="side_menu_List"><a href="/index.html">{{ category }}</a></li>
-            {% endfor %}
-        </div>
-
-
-
-        <!--▽サイドバーリード-->
-        <div class="read_S">
-            <div class="read_TXT">アクセス</div>
-        </div>
-        <!--△サイドバーリード-->
-
-        <div class="side_menu_box_border">
-            <li class="side_menu_List"><a href="#">サイトマップ</a></li>
-            <li class="side_menu_List"><a href="#">お問い合わせ</a></li>
-            <li class="side_menu_List"><a href="#">運営者情報</a></li>
-        </div>
-
-
+    <!--▽サイドバーリード-->
+    <div class="read_S">
+        <div class="read_TXT">カテゴリー一覧</div>
     </div>
-    <!--▲サイドメニュー-->
+    <!--△サイドバーリード-->
+
+    <div class="side_menu_box_border">
+        {% for category in category_list %}
+        <li class="side_menu_List"><a href="/index.html">{{ category }}</a></li>
+        {% endfor %}
+    </div>
+
+
+
+    <!--▽サイドバーリード-->
+    <div class="read_S">
+        <div class="read_TXT">アクセス</div>
+    </div>
+    <!--△サイドバーリード-->
+
+    <div class="side_menu_box_border">
+        <li class="side_menu_List"><a href="#">サイトマップ</a></li>
+        <li class="side_menu_List"><a href="#">お問い合わせ</a></li>
+        <li class="side_menu_List"><a href="#">運営者情報</a></li>
+    </div>
+
+
+</div>
+<!--▲サイドメニュー-->
