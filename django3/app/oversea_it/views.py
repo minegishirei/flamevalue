@@ -34,7 +34,8 @@ repo = "oversea_it"
 category_list = [
     "os",
     "programming",
-    "design"
+    "design",
+    "developper"
 ]
 
 
