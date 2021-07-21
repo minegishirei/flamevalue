@@ -52,17 +52,17 @@
 
                 <!--▼動画一覧BOX----------------------------->
                 <div class="MOV_thumb_box">
-                  <div class="mov_thumb MOV_BOX_res">
-                    <a width="100%" href="/{{ page.category }}/{{ page.htmlname }}">
-                      <img src="{{ page.img }}">
-                    </a>
-                    <!--△動画コード-->
-                  </div>
-                  <div class="mov_title"><a href="/{{ page.category }}/{{ page.htmlname }}">{{ page.title }}</a></div>
-                  <!--◀ タイトル&リンク-->
-                  <br>
+                    <div class="mov_thumb MOV_BOX_res">
+                        <a width="100%" href="/{{ page.category }}/{{ page.htmlname }}">
+                            <img src="{{ page.img }}">
+                        </a>
+                        <!--△動画コード-->
+                    </div>
+                    <div class="mov_title"><a href="/{{ page.category }}/{{ page.htmlname }}">{{ page.title }}</a></div>
+                    <!--◀ タイトル&リンク-->
+                    <br>
                 </div>
-          
+
                 {% endfor %}
 
                 <br>
@@ -87,19 +87,20 @@
                 </style>
                 <br><br>
             -->
-
-                
-                <!--▲コンテンツ-->
             </div>
 
 
+            <!--▲コンテンツ-->
         </div>
+
+
     </div>
-    <!--▲メインセクション-->
+</div>
+<!--▲メインセクション-->
 
-    {% include "oversea_it/base/parts/side_menue.html" %}
+{% include "oversea_it/base/parts/side_menue.html" %}
 
-    <div class="clear" style="height:50px;"></div>
+<div class="clear" style="height:50px;"></div>
 </div>
 
 <!--▲ヘッダー下-->
