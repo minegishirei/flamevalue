@@ -15,7 +15,7 @@ import markdown
 
 favicon = "/static/oversea_it/img/favicon.png"
 img =     "http://techtweetrank.short-tips.info/static/oversea_it/img/header.png"
-site_explain = "海外兄貴のITニュースをお届けします。"
+site_explain = "海外のITニュースをお届けします。"
 site_name = "海外エンジニアまとめ"
 
 
