@@ -149,7 +149,10 @@ def data_loading(request,content_type, htmlname):
             tweet_list = myTwitterAction.search_tweet_list(
                 query,
                 amount=50)
-            tweet_list = translate_tweet_list(tweet_list)
+            try:
+                tweet_list = translate_tweet_list(tweet_list)
+            except:
+                pass
         else:
             tweet_list = myTwitterAction.search_tweet_list(
                 query,
