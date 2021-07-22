@@ -82,7 +82,6 @@ def index(request):
     global page_dict
     if "renew" in request.GET:
         page_dict = genPageDict()
-    checkandrenew()
     page_list = []
     for category, category_list in page_dict.items():
         for page in category_list.values():
