@@ -1,3 +1,133 @@
+<!doctype html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO -->
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6Y7NSQNF5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-B6Y7NSQNF5');
+    </script>
 
 
-{{ htmltext|safe }}
+    <!-- URL CANONICAL -->
+    <link rel="canonical" href="https://webslides.tv/demos/keynote">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+        rel="stylesheet">
+
+    <!-- CSS Base + Colors -->
+
+    <link rel="stylesheet" type="text/css" media="all" href="/static/engineer/css/downheader.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/static/engineer/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="/static/engineer/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS -->
+
+    <!-- FACEBOOK -->
+    <meta property="fb:app_id" content="293222087723772">
+    <meta property="og:url" content="https://webslides.tv/demos/keynote">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Make a Keynote presentation using HTML">
+    <meta property="og:description"
+        content="WebSlides is the easiest way to make HTML presentations. 120+ free slides ready to use.">
+    <meta property="og:updated_time" content="2017-01-04T17:32:14">
+    <meta property="og:image" content="https://webslides.tv/static/engineer/images/share-keynote.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="429">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@se_maintain">
+    <meta name="twitter:creator" content="@se_maintain">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:image" content="{{ img }}">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+    {% block headblock %}
+    {% endblock %}
+</head>
+
+
+
+
+<body>
+    <header role="banner">
+        <nav role="navigation">
+            <p class="logo"><a href="https://webslides.tv/" title="WebSlides">WebSlides</a></p>
+            <ul>
+                <li>
+                    <a href="/about.html">
+                        サイトについて
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        ページ一覧
+                    </a>
+                </li>
+                <li>
+                    <a href="/inhouse_se/">
+                        エンジニア
+                    </a>
+                </li>
+                <li>
+                    <a href="/python/">
+                        python
+                    </a>
+                </li>
+                <li>
+                    <a href="/slides/">
+                        スライド
+                    </a>
+                </li>
+                <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+            </ul>
+        </nav>
+    </header>
+    {{ htmltext|safe }}
+
+</body>
+
+
+
+<!-- Required -->
+<script src="/static/js/webslides.js"></script>
+<script>
+    window.ws = new WebSlides();
+</script>
+
+
+<style>
+    input {
+        box-shadow: none;
+        border: none;
+    }
+</style>
+
+
+</html>
+
+
+<style>
+    .thumbnailtitle {
+        width: 200px;
+        overflow-wrap: break-word;
+    }
+</style>

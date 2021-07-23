@@ -110,8 +110,6 @@ def about(request):
 
 # Create your views here.
 def page(request, category, htmlname):
-    if category=="slides":
-        return render(request, "blog/non_base.html")
     mk = Github.load(repo, category + "/" +htmlname)
     md = markdown.Markdown()
     htmltext = md.convert(mk)
@@ -123,6 +121,9 @@ def page(request, category, htmlname):
         "favicon" : favicon
     }
     params.update(grep_param(mk, ["title", "description"]))
+    if category=="slides":
+        return render(request, "blog/non_base.html",params)
+
     return render(request,f"blog/techblog/page/mkpage.html", params)
 
 
