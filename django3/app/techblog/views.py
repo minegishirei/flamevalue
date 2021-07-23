@@ -41,7 +41,7 @@ def grep_param(mk, taglist):
 
 def genPageDict():
     page_dict = {}
-    for category in ["python", "inhouse_se"]:
+    for category in ["python", "inhouse_se", "slides"]:
         category_dict = {}
         for htmlname in Github.seach_page_list(repo, category):
             mk = Github.load(repo, category + "/" +htmlname)
@@ -109,7 +109,9 @@ def about(request):
 
 
 # Create your views here.
-def page(request, category,htmlname):
+def page(request, category, htmlname):
+    if category=="slides":
+        return render(request, "blog/non_base.html")
     mk = Github.load(repo, category + "/" +htmlname)
     md = markdown.Markdown()
     htmltext = md.convert(mk)
