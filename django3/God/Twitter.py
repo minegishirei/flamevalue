@@ -72,3 +72,39 @@ class MyTwitterAction():
             import traceback
             raise MyTwitterException(traceback.print_exc())
         return search_timeline['statuses']
+    
+
+def search_reply(user_id, tweet_id, count, range):
+    # 文字列設定
+    user_id += ' exclude:retweets' # RTは除く
+    user_id = urllib.parse.quote_plus(user_id)
+    # リクエスト
+    url = "https://api.twitter.com/1.1/search/tweets.json?lang=ja&q="+user_id+"&count="+str(count)
+    auth = OAuth1(CK, CKS, AT, ATS)
+    response = requests.get(url, auth=auth)
+    data = response.json()['statuses']
+    # ２回目以降のリクエスト
+    cnt = 0
+    reply_cnt = 0
+    tweets = []
+    while True:
+        if len(data) == 0:
+            break
+        cnt += 1
+        if cnt > range:
+            break
+        for tweet in data:
+            if tweet['in_reply_to_status_id_str'] == tweet_id: # ツイートIDに一致するものを抽出
+                tweets.append(tweet['text'])  # ツイート内容
+                reply_cnt += 1
+            maxid = int(tweet["id"]) - 1
+        url = "https://api.twitter.com/1.1/search/tweets.json?lang=ja&q="+user_id+"&count="+str(count)+"&max_id="+str(maxid)
+        response = requests.get(url, auth=auth)
+        try:
+            data = response.json()['statuses']
+        except KeyError: # リクエスト回数が上限に達した場合のデータのエラー処理
+            print('上限まで検索しました')
+            break
+    print('検索回数 :', cnt)
+    print('リプライ数 :', reply_cnt)
+    return tweets

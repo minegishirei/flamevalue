@@ -56,7 +56,7 @@ routine_time = 0
 def routine_update():
     global routine_time
     dt_now = datetime.datetime.now()
-    now = dt_now.strftime('%Y%m%d%H')
+    now = dt_now.strftime('%Y%m%d')
     if routine_time != now:
         routine_time = now
         content_type_dict["page"].update({
@@ -176,12 +176,63 @@ def sort_tweet_list(tweet_list):
 def translate_tweet_list(tweet_list):
     new_tweet_list = []
     for tweet in tweet_list:
-        text = str(tweet["text"])
-        new_text = GoogleTrans.en_to_ja(text)
-        tweet.update({
-            "text" : new_text
-        })
-        new_tweet_list.append(tweet)
+        try:
+            text = str(tweet["text"])
+            new_text = GoogleTrans.en_to_ja(text)
+            tweet.update({
+                "text" : new_text
+            })
+        except:
+            pass
+        finally:
+            new_tweet_list.append(tweet)
     return new_tweet_list
 
 
+
+TWEET_LIST = "tweet_list"
+TWEET_ID = ""
+def edit_page(request, tweet_id):
+    global TWEET_ID
+    params = {}
+
+    #新規作成
+    if tweet_id != TWEET_ID:
+        TWEET_ID = tweet_id
+        tweet_list = load_tweet_list(tweet_id)
+        tweet_list = translate_tweet_list(tweet_list)
+        tweet_list = editable_tweet_list(tweet_list)
+        tweet_list.session["tweet_list"] = tweet_list
+    
+    #更新(tweet_list)
+    for tweet in tweet_list:
+        getSessionValue()
+
+    #buildが押されたのか?
+
+    
+    return render(request, "", params)
+
+    
+
+    
+def editable_tweet_list(tweet_list):
+    new_tweet_list = []
+    for tweet in tweet_list:
+        tweet.update({
+            "title" : "",
+            "comment" : "",
+            "does_use" : "False"
+        })
+        new_tweet_list.append()
+    return new_tweet_list
+
+
+def load_tweet_list(tweet_id):
+    pass
+
+def getSessionValue(request, key):
+    ans = request.POST.get(key)
+    if ans is None:
+        return ""
+    return ans
