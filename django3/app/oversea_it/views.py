@@ -71,6 +71,7 @@ def genPageDict():
 page_dict = genPageDict()
 
 
+
 def getMetaInfo():
     global meta_info
     json_string = Github.load(repo, "pop_page_list.json")
@@ -88,6 +89,11 @@ pop_page_list = getMetaInfo()
 
 def index(request):
     global page_dict
+    global pop_page_list
+    if request.GET.get("reload"):
+        pop_page_list = getMetaInfo()
+        page_dict = genPageDict()
+
     params = {
         "category_list" : category_list,
         "page_dict" : page_dict,
@@ -157,7 +163,10 @@ def checkandrenew():
 
 
 def sitemap(request):
-    return render(request,f"oversea_it/sitemap.xml")
+    params = {
+        "pop_page_list" : pop_page_list
+    }
+    return render(request,f"oversea_it/sitemap.xml", params)
 
 
 
