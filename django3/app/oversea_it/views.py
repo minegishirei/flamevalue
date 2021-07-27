@@ -91,9 +91,9 @@ def index(request):
     global page_dict
     global pop_page_list
     if request.GET.get("reload"):
-        pop_page_list = getMetaInfo()
         page_dict = genPageDict()
-
+        pop_page_list = getMetaInfo()
+        
     params = {
         "category_list" : category_list,
         "page_dict" : page_dict,
@@ -145,9 +145,6 @@ def reload(request):
 
 
 
-
-clock = 0
-page_dict = genPageDict()
 
 def checkandrenew():
     global clock
