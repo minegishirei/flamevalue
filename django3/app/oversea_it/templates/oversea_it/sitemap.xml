@@ -4,6 +4,7 @@
 {% for page in pop_page_list %}
 <url>
 <loc>http://oversea-it.short-tips.info/{{ page.category }}/{{ page.htmlname }}</loc>
+<lastmod>{{ page.lastmod }}</lastmod>
 <priority>0.95</priority>
 </url>
 {% endfor %}
@@ -13,5 +14,6 @@
 <loc>http://oversea-it.short-tips.info/index.html</loc>
 <priority>1.00</priority>
 </url>
+
 
 </urlset>
