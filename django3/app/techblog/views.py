@@ -80,7 +80,7 @@ def sitemap(request):
 
 def index(request):
     global page_dict
-    if "renew" in request.GET:
+    if request.GET.get("reload"):
         page_dict = genPageDict()
     page_list = []
     for category, category_list in page_dict.items():
