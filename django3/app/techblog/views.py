@@ -77,6 +77,26 @@ def checkandrenew():
 def sitemap(request):
     return render(request,f"blog/techblog/page/sitemap.xml")
 
+def sitemap(request):
+    pop_page_list = []
+    for category_key in page_dict.keys():
+        category_dict = page_dict[category_key]
+        for html_key in category_dict.keys():
+            pop_page_list.append({
+                "category" : category_key,
+                "htmlname" : html_key
+            })
+
+    dt_now = datetime.datetime.now()
+    now = dt_now.strftime('%Y%m%d%H')
+    pop_page_list_copy = pop_page_list.copy()
+    for page in pop_page_list_copy:
+        page["lastmod"] = f"{dt_now.strftime('%Y')}-{dt_now.strftime('%m')}-{dt_now.strftime('%d')}T00:00:00+00:00" #"2021-07-30T13:25:37+00:00"
+    params = {
+        "pop_page_list" : pop_page_list_copy
+    }
+    return render(request,f"blog/techblog/page/sitemap.xml", params)
+
 
 def index(request):
     global page_dict
