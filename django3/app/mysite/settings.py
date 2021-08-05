@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     "fanstatic",
     "engineer_rank",
     "techblog",
-    "oversea_it"
+    "oversea_it",
+    "question"
 ]
 
 #SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

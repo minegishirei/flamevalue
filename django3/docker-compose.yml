@@ -1,21 +1,17 @@
 
 
-#https-portal:
-#  image: steveltn/https-portal:1
-#  ports:
-#    - 80:80
-#    - 443:443
-#  links:
-#    - djangoapp
-#  restart: always
-#  environment:
-#    DOMAINS: 
-#       'short-tips.info -> http://djangoapp:5000, techblog.short-tips.info -> http://techblog.djangoapp:5000'
-#    STAGE: production # Don't use production until staging works
-#    #FORCE_RENEW: 'true'
-#  container_name: https-portal
-#  volumes:
-#    - ./ssl_certs:/var/lib/https-portal
+yahoo:
+  user: root
+  build: .
+  dockerfile: "Dockerfile-yahoo"
+  volumes:
+    - ./yahoo:/yahoo
+    - ./God:/God
+  command: ./cmd.sh
+  #command: python3 manage.py runserver 0.0.0.0:5000 
+
+
+
 
 djangoapp:
   user: root
@@ -34,8 +30,6 @@ djangoapp:
   links:
     - db
 
-
-
 aauto:
   user: root
   build: .
@@ -47,6 +41,10 @@ aauto:
   #command: python3 manage.py runserver 0.0.0.0:5000 
   links:
     - db
+
+
+
+
 
 
 db:

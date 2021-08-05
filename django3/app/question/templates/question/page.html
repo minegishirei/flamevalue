@@ -1,0 +1,34 @@
+{% extends "question/base.html" %}
+
+{% block mainblock %}
+<strong>
+yahoo知恵袋でこんな質問を見かけた
+</strong>
+<br>
+<a href="{{ page_dict.content.url }}">
+    元ネタ
+</a>
+            <pre>
+{{ page_dict.content.title }}
+</pre>
+
+
+{% if page_dict.content.answer_list %}
+<strong>
+それに対する答えは
+</strong>
+<pre>
+{% for answer in page_dict.content.answer_list %}
+{{ answer }}<br>
+{% endfor %}
+</pre>
+というものであった。
+{% else %}
+<strong>
+それに対する答えは未だ存在していない。
+</strong>
+{% endif %}
+
+
+{% endblock %}
+

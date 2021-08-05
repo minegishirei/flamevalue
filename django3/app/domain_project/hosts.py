@@ -17,6 +17,7 @@ host_patterns = patterns(
     host(r"techtweetrank", "engineer_rank.urls", name="engineer_rank"),
     host(r"techblog", "techblog.urls", name="techblog"),
     host(r"oversea-it", "oversea_it.urls", name="oversea-it"),
+    host(r"question", "question.urls", name="question"),
     host(r'.*', 'short_tips.urls', name='else'),
 )
 
