@@ -85,7 +85,7 @@ def sitemap(request):
     for category_name, category_dict in the_json.items():
         for page_dict in category_dict["page_list"]:
             yahoo_id = page_dict["yahoo_id"]
-            url = f"http://question.localhost/{category_name}/{yahoo_id}"
+            url = f"http://question.short-tips.info/{category_name}/{yahoo_id}"
             page_list.append(url)
     
     dt_now = datetime.datetime.now()
