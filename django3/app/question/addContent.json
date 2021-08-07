@@ -24,43 +24,6 @@
             }
         ]
     },
-    "media": {
-        "url": "https://chiebukuro.yahoo.co.jp/category/2080401283/question/list?page={}",
-        "page_list": [
-            {
-                "yahoo_id": "12247209942",
-                "content": {
-                    "title": "iPhone8でパラレルを起動出来ないのですが詳しい方教えていただけると嬉しいです。\n",
-                    "answer_list": [],
-                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12247209942",
-                    "id": "12247209942"
-                }
-            }
-        ]
-    },
-    "device": {
-        "url": "https://chiebukuro.yahoo.co.jp/category/2080401469/question/list?page={}",
-        "page_list": [
-            {
-                "yahoo_id": "11247210351",
-                "content": {
-                    "title": "違法ダウンロードが取り締まられる基準のようなものはあるのですか？例えばYouTubeに上がってる違法アップロードされた動画を見るだけでも取り締まろうと思えば取り締まれるんですか？\n",
-                    "answer_list": [],
-                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11247210351",
-                    "id": "11247210351"
-                }
-            },
-            {
-                "yahoo_id": "11246866116",
-                "content": {
-                    "title": "エクセルについて質問です。\n現在添付のようなエクセルでプロジェクトの期限を管理しています。\n\nより簡単でシンプルな管理方法があれば教えてください。\n",
-                    "answer_list": [],
-                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11246866116",
-                    "id": "11246866116"
-                }
-            }
-        ]
-    },
     "programming": {
         "url": "https://chiebukuro.yahoo.co.jp/category/2078297616/question/list?page={}",
         "page_list": [
@@ -86,5 +49,13 @@
                 }
             }
         ]
+    },
+    "code" : {
+        "url": "https://chiebukuro.yahoo.co.jp/category/2078297622/question/list?page={}",
+        "page_list" : []
+    },
+    "net":{
+        "url" : "https://chiebukuro.yahoo.co.jp/category/2078297628/question/list?page={}",
+        "page_list" : []
     }
 }

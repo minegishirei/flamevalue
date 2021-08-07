@@ -12,9 +12,9 @@ import datetime
 
 all_category = {
     "mental"    : "https://chiebukuro.yahoo.co.jp/category/2078297858/question/list?page={}",
-    "media"     : "https://chiebukuro.yahoo.co.jp/category/2080401283/question/list?page={}",
-    "device"    : "https://chiebukuro.yahoo.co.jp/category/2080401469/question/list?page={}",
-    "programming": "https://chiebukuro.yahoo.co.jp/category/2078297616/question/list?page={}"
+    "it"        : "https://chiebukuro.yahoo.co.jp/category/2078297616/question/list?page={}",
+    "code"      : "https://chiebukuro.yahoo.co.jp/category/2078297622/question/list?page={}",
+    "net"       : "https://chiebukuro.yahoo.co.jp/category/2078297628/question/list?page={}"
 }
 
 
