@@ -77,6 +77,8 @@ def index(request):
     })
     return render(request,"question/index.html",params)
 
+def robots(request):
+    return render(request, f"robots.txt")
 
 
 def sitemap(request):
