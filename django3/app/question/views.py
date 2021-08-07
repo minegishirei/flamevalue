@@ -5,6 +5,8 @@ if '/God' not in sys.path:
     sys.path.append('/God')
 import Yahoo
 import MyJson
+import NatureLang
+import datetime
 # Create your views here.
 
 
@@ -17,6 +19,10 @@ all_category = {
 
 
 ####################
+
+
+
+
 class AddContentManager():
     def __init__(self):
         """
@@ -45,6 +51,12 @@ class AddContentManager():
     
     def loadCategory(self, category):
         return self.myJson.read()[category]
+    
+    def preProcessing(self):
+        pass
+    
+    def update_JsonTable(self):
+        pass
 ####################
 
 
@@ -60,12 +72,38 @@ global_params = {
 def index(request):
     global global_params
     params = global_params.copy()
+    params.update({
+        "title" : "こんな質問を見つけた"
+    })
     return render(request,"question/index.html",params)
+
+
+
+def sitemap(request):
+    the_json = addContentManager.myJson.jsondict
+    page_list = []
+    for category_name, category_dict in the_json.items():
+        for page_dict in category_dict["page_list"]:
+            yahoo_id = page_dict["yahoo_id"]
+            url = f"http://question.localhost/{category_name}/{yahoo_id}"
+            page_list.append(url)
+    
+    dt_now = datetime.datetime.now()
+    params = {}
+    params.update({
+        "page_list" : page_list,
+        "last_mod"  :f"{dt_now.strftime('%Y')}-{dt_now.strftime('%m')}-{dt_now.strftime('%d')}T00:00:00+00:00" #"2021-07-30T13:25:37+00:00"
+    })
+    return render(request, "question/sitemap.xml", params)
+
 
 
 def category_list(request, category):
     global global_params
     params = global_params.copy()
+    params.update({
+        "title" : "こんな質問を見つけた | " + category
+    })
     if request.GET.get("edit"):
         page_info_list = Yahoo.main(all_category[category])
         params.update({
@@ -89,13 +127,14 @@ def page(request, category, yahoo_id):
         addContentManager.addContent(category, yahoo_id)
     page_dict = addContentManager.loadContent(category, yahoo_id)
     params = global_params.copy()
+    title = page_dict["content"]["title"]
     params.update({
-        "page_dict" : page_dict
+        "page_dict" : page_dict,
+        "title" : title,
+        "description" : title,
+        "api_responce" : list(NatureLang.get_wordlist(title).keys())[:3]
     })
     return render(request,"question/page.html",params)
-
-
-
 
 
 

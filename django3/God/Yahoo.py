@@ -82,9 +82,9 @@ class YahooQuestionPage():
 
 def main(url):
     yahooCategoryPage = YahooCategoryPage(url)
-    link_list = yahooCategoryPage.collect(1)
+    link_list = yahooCategoryPage.collect(2)
     page_info_list = []
-    for url in link_list[:10]:
+    for url in link_list[:20]:
         yahooQuestionPage = YahooQuestionPage(url)
         page_info_list.append( yahooQuestionPage.collect() )
     return page_info_list

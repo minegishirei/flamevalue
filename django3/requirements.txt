@@ -14,3 +14,4 @@ PyGithub
 google-ads
 markdown
 googletrans
+goolabs

@@ -15,6 +15,7 @@ def en_to_ja(text):
     return r.json()["text"]
 
 
+
 """
 def en_to_ja(text):
     translated = translator.translate(text, dest="ja")
