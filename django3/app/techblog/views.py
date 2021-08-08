@@ -140,7 +140,7 @@ def page(request, category, htmlname):
         "category" : category,
         "favicon" : favicon
     }
-    params.update(grep_param(mk, ["title", "description"]))
+    params.update(grep_param(mk, ["title", "description", "img"]))
     if category=="slides":
         return render(request, "blog/non_base.html",params)
 
