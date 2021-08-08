@@ -47,15 +47,178 @@
                     "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11247281711",
                     "id": "11247281711"
                 }
+            },
+            {
+                "yahoo_id": "12247357947",
+                "content": {
+                    "title": "許可とかなんも与えないでサイトを開いただけで大まかな住所がわかるって本当ですか？\n",
+                    "answer_list": [],
+                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12247357947",
+                    "id": "12247357947"
+                }
+            },
+            {
+                "yahoo_id": "13247358293",
+                "content": {
+                    "title": "SQLサーバーを使ったテスト\nサンプルデータがTable_Aに1件入っている状態。\nこれを基に、テスト用に増幅させたい。(10万件)\n・カラム1は、被らないように1ずつインクリメントしたい\n・カラム2は、Table_BからTOP10万件もってきたい\nどうやってSQL組めば可能でしょうか？至急お願いしたいです。",
+                    "answer_list": [],
+                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13247358293",
+                    "id": "13247358293"
+                }
             }
         ]
     },
-    "code" : {
+    "code": {
         "url": "https://chiebukuro.yahoo.co.jp/category/2078297622/question/list?page={}",
-        "page_list" : []
+        "page_list": [
+            {
+                "yahoo_id": "12247357872",
+                "content": {
+                    "title": "インタプリタ言語とコンパイラ言語とスクリプト言語の違いはなんですか？\n",
+                    "answer_list": [],
+                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12247357872",
+                    "id": "12247357872"
+                }
+            },
+            {
+                "yahoo_id": "12247356412",
+                "content": {
+                    "title": "visual stdioについての質問です。\nC#でのゲーム作成をしたいと思い、visual stdioをダウンロードしました。\n基本となる「HelloWorld」を表示させるコードを打ち込んだので、デバッグなしで開始をしたいのですが、グレーアウトしており実行できません。\n詳しい方いらっしゃいましたらご教授お願い致します。",
+                    "answer_list": [],
+                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12247356412",
+                    "id": "12247356412"
+                }
+            },
+            {
+                "yahoo_id": "14247356169",
+                "content": {
+                    "title": "WEBサイトを制作していて、最後の仕上げにレスポンシブ対応させていっているところなのです。\r\nwidthだけじゃなくて、heightも設定していきたいのですが\nその効率的な方法ってまずwidthをcssで書いてから、heightを書くのが妥当な進め方なんですかね？",
+                    "answer_list": [],
+                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14247356169",
+                    "id": "14247356169"
+                }
+            },
+            {
+                "yahoo_id": "13247356028",
+                "content": {
+                    "title": "プログラミングの初心者の人はなんのエディタを使えばいいですか？\n",
+                    "answer_list": [],
+                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13247356028",
+                    "id": "13247356028"
+                }
+            },
+            {
+                "yahoo_id": "14247355184",
+                "content": {
+                    "title": "プログラマはモテない？容姿普通とする。\n",
+                    "answer_list": [
+                        "モテないのを仕事のせいにしたらアカン"
+                    ],
+                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14247355184",
+                    "id": "14247355184"
+                }
+            },
+            {
+                "yahoo_id": "11247355111",
+                "content": {
+                    "title": "PythonのrequestsとBeautifulSoupで、yahooの検索結果のサイト数の数字を取得したいのですが、上手くいきません。\n<div class=\"Hits__item\">約<!-- -->178,000,000<!-- -->件<span class=\"util-Margin--Left8\">1<!-- -->ページ目</span></div>\n\nこちらの「178,000,000」だけ取得したいのです。\n\nsoup.find_all('div',class_='Hits__item')\n\n上記を試したのですが[]が表示されただけでした。\n\n分かる方いましたら教えていただきたいです。m(_ _)m",
+                    "answer_list": [],
+                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11247355111",
+                    "id": "11247355111"
+                }
+            }
+        ]
     },
-    "net":{
-        "url" : "https://chiebukuro.yahoo.co.jp/category/2078297628/question/list?page={}",
-        "page_list" : []
+    "net": {
+        "url": "https://chiebukuro.yahoo.co.jp/category/2078297628/question/list?page={}",
+        "page_list": [
+            {
+                "yahoo_id": "12247348622",
+                "content": {
+                    "title": "IPsecと比較したときに、PPTPが選ばれるシチュエーションを教えてください。\n暗号鍵のbit数がIPsecは256bitで、PPTPは128bitなので、\nIPsecの方がセキュリティが強固で、PPTPの方が軽い、という認識で大丈夫ですか？\n\n※上記bit数は下記サイト参考\nhttps://www.buffalo.jp/support/faq/detail/15272.html",
+                    "answer_list": [],
+                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12247348622",
+                    "id": "12247348622"
+                }
+            },
+            {
+                "yahoo_id": "10247338355",
+                "content": {
+                    "title": "データベースやネットワークの勉強してみたいのですが、accessやインターネット検定は勉強になりますか？\n",
+                    "answer_list": [
+                        "ゼロではないでしょ？"
+                    ],
+                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10247338355",
+                    "id": "10247338355"
+                }
+            },
+            {
+                "yahoo_id": "10247337905",
+                "content": {
+                    "title": "メッシュwi-fiについて教えて下さい。\n自宅のwifiが弱く、届かない部屋があるためwifiを新調しようと考えています。\n\nメッシュWiFiというものにしたいのですが\nasusのxt8を2台購入しようと思っています。\n\nしかしxt8にはlanポートが3つしかありません\n\nこのような場合、\n例えばですが、asus RT-AX88U→xt8と繋げばメッシュWiFiとして使用可能な認識で良かったでしょうか",
+                    "answer_list": [
+                        "https://www.asus.com/microsite/aimesh/jp/\nhttps://www.asus.com/jp/Networking-IoT-Servers/Whole-Home-Mesh-WiFi-System/ZenWiFi-WiFi-Systems/ASUS-ZenWiFi-XD6/\n\nメーカーサイトにxt8もAiMeshと繋がるように書いてあるので繋がるのでは？",
+                        "同じメーカーですから一応可能なはずですね。\n\n有線LANに関しては、スイッチングハブを使えば分配して増やせます。"
+                    ],
+                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10247337905",
+                    "id": "10247337905"
+                }
+            },
+            {
+                "yahoo_id": "10247334340",
+                "content": {
+                    "title": "Aの場所で、パソコンで売上確認、\nBの場所でも、パソコンで売上確認、\nこういったシステム作れますか？",
+                    "answer_list": [
+                        "作れます。\nというか、今時のシステムはほとんどがそういう作りですね。"
+                    ],
+                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10247334340",
+                    "id": "10247334340"
+                }
+            },
+            {
+                "yahoo_id": "12246964962",
+                "content": {
+                    "title": "awsについて質問です。\nサーバーが香港リージョンにある場合日本国内のリージョンを経由したほうが応答速度は速いでしょうか？それとも直接リージョンに接続したほうが良いのでしょうか？\nまた、中国でawsを利用す場合海外のリージョンには接続でないでしょうか？\n簡単な質問ですいません。",
+                    "answer_list": [],
+                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12246964962",
+                    "id": "12246964962"
+                }
+            },
+            {
+                "yahoo_id": "12247321387",
+                "content": {
+                    "title": "下記接続です\n\n「LANコンセント」\n↓\nlanケーブル\n↓\n無線ルーター\n↓\nlanケーブル\n↓\nノートｐｃ\n有線接続時 インターネット〇\n ネットワーク 社内他のｐｃ〇\n 社内共有フォルダ〇\n\n\n無線接続時 インターネット〇\n ネットワーク 社内他のｐｃ☓(自分のｐｃのみ表示）\n 社内共有フォルダ☓\n\n無線接続時もネットワーク情報を利用できるようにする方法を教えてください。\n\n補足情報\n社内に飛んでいる無線LANは全部で４つある。\nうち二つはネットワーク情報利用可能。後の２つはネットワーク情報利用不可。\n前者は前任の方が無線lanでもネットワーク情報を利用できるように設定したとの事。\n前任の方が退職されたため設定方法を教えて頂きたく投稿しました。",
+                    "answer_list": [
+                        "次のページを参考にネットワークの場所を「プライベート」に変えてください。\n\n[Windows 10] ネットワークの場所を後から変更する方法を教えてください。\nhttps://www.fmworld.net/cs/azbyclub/qanavi/jsp/qacontents.jsp?PID=1811-0354",
+                        "多分ルーター機能を停止したブリッジモード又はアクセスポイントモードにスイッチを切り替えていると推測します。"
+                    ],
+                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12247321387",
+                    "id": "12247321387"
+                }
+            },
+            {
+                "yahoo_id": "10247321155",
+                "content": {
+                    "title": "メールサーバー、webサーバー\n各用意？\n\nそれともダウンロードし一つのサーバにダウンロード？",
+                    "answer_list": [
+                        "大規模でない会社のサーバーなどでしたら1台で全部入れても余裕です\n共有サーバーで何社かまとめて1台で行うのが普通です"
+                    ],
+                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10247321155",
+                    "id": "10247321155"
+                }
+            },
+            {
+                "yahoo_id": "11247319056",
+                "content": {
+                    "title": "本日デスクトップのパソコンを新調し、無線ＬＡＮ子機を使ってwifiを使用しようと思ったのですがうまくいきません。\n子機は性能として悪いわけではなく（と思っていて）、433DMS 11ac 433+150Mbps USB2.0、親機は866+300Mbpsで11acです。\n\nこの子機がついているデスクトップPCだけ、aとgのgしか使えず、aはこのネットワークに接続できませんと出て一向につながりませんし、つながるgも8.4Mbpsしか出ません。\n\n一階と二階の無線という問題もあるかとは思いましたが、他の端末やノートパソコンではしっかり使えるので恐らく子機の問題だと思っています。\n\n子機・親機をどうすれば改善されるのか、またどちらをどう変えればいいのかアドバイスお願いします。",
+                    "answer_list": [
+                        "無線LAN子機は、BUFFALO WI-U2-433DMS ですかね？\nデスクトップPCは金属の箱なので、電波強度が十分でない場所では、USB子機を挿す位置や方向によって、無線の受信レベルが大きく変わります。\nデスクトップPCを、角度や位置を少し動かしてみて電波強度を画面で確認したり、可動式アンテナ付きのUSB子機に変更するかです！。",
+                        "ルーターのそばでやってみてうまくいくようだったら場所が悪い\r\nそのぐらいの確認もできないのかな"
+                    ],
+                    "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11247319056",
+                    "id": "11247319056"
+                }
+            }
+        ]
     }
 }
