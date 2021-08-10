@@ -113,6 +113,16 @@ def category_list(request, category):
             "page_info_list" : page_info_list
         })
         return render(request,"question/category_list_edit.html",params)
+    elif request.GET.get("alladd"):
+        page_info_list = Yahoo.main(all_category[category])
+        for page_dict in page_info_list:
+            yahoo_id = page_dict["id"]
+            addContentManager.addContent(category, yahoo_id)
+        params.update({
+            "category" : category,
+            "page_info_list" : page_info_list
+        })
+        return render(request,"question/category_list_edit.html",params)
     else:
         category_dict = addContentManager.loadCategory(category)
         params.update({
