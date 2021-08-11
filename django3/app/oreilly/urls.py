@@ -6,7 +6,7 @@ urlpatterns = [
     path("index.html" , switchPage.index , name=''),
     path("robots.txt", switchPage.robots, name="robots"),
     path("sitemap.xml", switchPage.sitemap , name= ""),
-    path("<htmlpage>" , page , name=''),
+    path("<htmlpage>" , views.page , name=''),
 ]
 
 
