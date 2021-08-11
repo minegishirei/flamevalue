@@ -1,4 +1,2 @@
 User-agent: *
 Allow: /
-
-Sitemap: http://shortcutkey.short-tips.info/sitemap.xml
