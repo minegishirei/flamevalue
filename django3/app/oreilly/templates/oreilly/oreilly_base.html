@@ -1,0 +1,131 @@
+{% extends 'oreilly/base.html' %}
+
+{% block headblock %}
+<title>
+
+</title>
+{% endblock %}
+
+
+{% block headerblock %}
+{% include "parts/header/header.html" %}
+{% endblock %}
+
+
+{% block mainblock %}
+
+<!--.wrap = container (width: 90%) -->
+<div class="wrap">
+    <div class="grid">
+
+        <!-- .end .column -->
+        <div class="column">
+            <img src="{{ img }}">
+            <pre>{{ sidecolumn }}{{ xmp }}</pre>
+        </div>
+
+        <div class="column">
+            <h3>{{ ans }}</h3>
+            <p>
+                {{ description }}
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<!--.wrap = container (width: 90%) -->
+<div class="wrap">
+    <div class="grid">
+
+        <div class="column">
+            <strong>
+                コメント一覧
+            </strong>
+            <br>
+            <br>
+            {% for comment in comment_list %}
+                <h4>{{ comment.title }}</h4>
+<pre>
+{{ comment.comment }}
+</pre>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!--.wrap = container (width: 90%) -->
+<div class="wrap">
+    <div class="grid">
+
+        <div class="column">
+            <h4>
+                コメント送信
+            </h4>
+            <br>
+            <br>
+
+            <form method="POST" action="">
+                {% csrf_token %}
+                <div class="cp_iptxt">
+                    <label class="ef">
+                        <input type="text" name="title" class="name" placeholder="名前orタイトル">
+                        <textarea type="textarea" name="comment" class="comment" rows="4" cols="40"
+                            placeholder="コメント"></textarea>
+                        <input type="submit" name="submit">
+                    </label>
+                </div>
+
+            </form>
+            <style>
+                .cp_iptxt {
+                    position: relative;
+                    width: 80%;
+                    margin: 40px 3%;
+                }
+
+                .cp_iptxt input[type='text'] {
+                    font: 15px/24px sans-serif;
+                    box-sizing: border-box;
+                    width: 100%;
+                    padding: 0.3em;
+                    transition: 0.3s;
+                    letter-spacing: 1px;
+                    color: #aaaaaa;
+                    border: 1px solid #1b2538;
+                    border-radius: 4px;
+                }
+
+                .ef input[type='text']:focus {
+                    border: 1px solid #da3c41;
+                    outline: none;
+                    box-shadow: 0 0 5px 1px rgba(218, 60, 65, .5);
+                }
+
+                .comment {
+                    width: 100%;
+                    height: 200px;
+                }
+            </style>
+        </div>
+
+        <br>
+    </div>
+</div>
+
+
+
+
+<style>
+    .new_title {
+        width: 70%;
+    }
+</style>
+
+{% endblock %}
+
+
+
+{% block downheaderblock %}
+{% include "parts/header/downheader2.html" %}
+{% endblock %}

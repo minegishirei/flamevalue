@@ -47,7 +47,7 @@ def seach_page_list(repo, folder = None):
         if flag:
             file_list.append(text)
         
-        if text=="aaaaa":
+        if text=="aaaaa"or text=="0":
             flag = True
     return file_list
 

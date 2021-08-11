@@ -17,4 +17,15 @@ class MyLocalJson():
         with open(self.filepath, "w") as f:
             f.write(text)
 
+class MyJson():
+    def __init__(self):
+        pass
 
+    def read(self, jsonstr):
+        self.jsonstr = jsonstr
+        self.jsondict = json.loads(self.jsonstr)
+        return self.jsondict
+    
+    def write(self, new_jsondict):
+        text = json.dumps(new_jsondict, ensure_ascii=False, indent=4)
+        return text

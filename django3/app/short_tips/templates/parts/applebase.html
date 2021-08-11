@@ -15,6 +15,11 @@
 
 {% block mainblock %}
 
+<!-- .end .column -->
+<div class="column">
+    <img src="{{ img }}">
+    <pre>{{ sidecolumn }}{{ xmp }}</pre>
+</div>
 
 <div class="column">
     <h3>{{ ans }}</h3>
@@ -22,11 +27,7 @@
         {{ description }}
     </p>
 </div>
-<!-- .end .column -->
-<div class="column">
-    <img src="{{ img }}">
-    <pre>{{ sidecolumn }}{{ xmp }}</pre>
-</div>
+
 {% endblock %}
 
 
