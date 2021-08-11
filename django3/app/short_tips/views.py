@@ -24,7 +24,7 @@ from DAO import DAO, InsertableDAO, TableCreatableDAO, CmdDAO, create_newTable
 meta_info = {
     "design": {
         "category" : "design",
-        "indextitle": "1分で分かる デザイン逆引き集",
+        "indextitle": "デザイン逆引き集",
         "description": "すぐに使えるデザインテクニックを厳選！"
     },
     "shortcutkey": {
@@ -39,7 +39,7 @@ meta_info = {
     },
     "wordeffect": {
         "category" : "wordeffect",
-        "indextitle": "言葉の道具箱",
+        "indextitle": "言葉の心理学図鑑",
         "description": "操作可能な範囲の限界ギリギリを攻める道具達"
     },
     "stock": {
@@ -223,9 +223,9 @@ class PageParamFactory(ParamFactory):
     def build(self, category_name, page_name):
         self.category_name = category_name
         componentList = [
-            MetaTitleComponent(category_name, page_name),
             PageComponent(category_name, page_name),
-            AllRelationComponent(category_name)
+            AllRelationComponent(category_name),
+            MetaTitleComponent(category_name, page_name)
         ]
         for component in componentList:
             self.params.update(component.getComdict())
