@@ -72,6 +72,7 @@
             <form method="POST" action="">{% csrf_token %}
                 <div class="cp_iptxt">
                     <label class="ef">
+                        {% csrf_token %}
                         <input type="text" name="title" class="name" placeholder="名前orタイトル">
                         <textarea type="textarea" name="comment" class="comment" rows="4" cols="40"
                             placeholder="コメント"></textarea>
