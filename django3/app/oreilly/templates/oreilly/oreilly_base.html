@@ -20,9 +20,13 @@
 
         <!-- .end .column -->
         <div class="column">
-            <img src="{{ img }}">
-            <pre>{{ sidecolumn }}{{ xmp }}</pre>
+            <img class="img_size" src="{{ img }}">
         </div>
+        <style>
+            .img_size {
+                width: 300px;
+            }
+        </style>
 
         <div class="column">
             <h3>{{ ans }}</h3>
