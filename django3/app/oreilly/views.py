@@ -26,11 +26,7 @@ repo = "oreilly"
 repo_com = "oreilly_com"
 
 
-switchPage = SwitchPage()
 
-@csrf_exempt
-def page( request, htmlpage):
-    return switchPage.page(request, htmlpage)
 
 class SwitchPage():
     def __init__(self):
@@ -105,7 +101,12 @@ class SwitchPage():
         params = paramFactory.build(category_name, sentence)
         return render(request, "sql.html", params)
 
+switchPage = SwitchPage()
 
+@csrf_exempt
+def page( request, htmlpage):
+    return switchPage.page(request, htmlpage)
+    
 
 
 class ParamComponent():
