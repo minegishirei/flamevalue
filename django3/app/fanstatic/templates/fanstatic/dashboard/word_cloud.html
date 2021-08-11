@@ -568,8 +568,8 @@
         var nico_word_cloud = []
         $.getJSON(url, (data) => {
             jsonDate = data.tweet_list
-            nico_word_cloud = data.nico_word_cloud
-            console.log(nico_word_cloud)
+            nico_word_cloud = data.wordcloud
+            console.log("nico_word_cloud",nico_word_cloud)
             userData = []
             retweetData = []
             console.log("here2")
@@ -646,23 +646,14 @@
                 year_count_list.push(count);
             }
 
-        non_dub_word_cloud = Array.from(new Set(nico_word_cloud))
-        console.log("nico_word_cloud", nico_word_cloud)
         word_cloud_count_list = []
-        for (var i in non_dub_word_cloud) {
-            word1 = non_dub_word_cloud[i]
-            count = 0
-            for (var j in nico_word_cloud) {
-                word2 = nico_word_cloud[j]
-                if (word1 == word2) {
-                    count++;
-                }
-            }
+        for (var key in nico_word_cloud) {
             word_cloud_count_list.push({
-                "word" : word1,
-                "count" :count
+                "word" : key,
+                "count" :nico_word_cloud[key]
             })
         }
+        console.log("word_cloud_count_list", word_cloud_count_list)
 
         console.log("here")
         function applyWordCloud(TARGET_ELEMENT_ID, data) { // v5
@@ -731,3 +722,4 @@
 
 
     {% endblock %}
+

@@ -5,8 +5,8 @@ if '/God' not in sys.path:
     sys.path.append('/God')
 import Twitter
 import Github
-import Niconico
 import datetime
+import NatureLang
 
 dt_now = datetime.datetime.now()
 
@@ -15,8 +15,8 @@ filename = "access_ranking" + dt_now.strftime('%Y%m%d')
 
 favicon = "http://fanstatic.short-tips.info/static/dashboard/img2/static.png"
 img =     "http://fanstatic.short-tips.info/static/dashboard/img2/thumbnail2.png"
-site_explain = "アニメ、漫画のコミュニティをtwitterの検索結果から分析します。"
-ranking_list = []#Niconico.niconicoRanking()
+site_explain = "あなたのアカウントを可能な限り分析します"
+ranking_list = []
 
 
 def get_pagetype_title(key):
@@ -34,8 +34,6 @@ def sitemap(request):
     return render(request,f"fanstatic/sitemap.xml")
 
 def index(request):
-    writeNicoRank(filename)
-    ranking_list = readNicoRank(filename)
     result = seach(request)
     if result:
         return result
@@ -55,8 +53,6 @@ def index(request):
 
 
 def pop_page(request):
-    writeNicoRank(filename)
-    ranking_list = readNicoRank(filename)
     result = seach(request)
     if result:
         return result
@@ -80,8 +76,6 @@ def all_page(request):
     result = seach(request)
     if result:
         return result
-    writeNicoRank(filename)
-    #ranking_list = readNicoRank(filename)
     page_list = Github.seach_page_list(repo)
     htmlname = "all_page.html"
     params = {
@@ -100,8 +94,6 @@ def all_page(request):
 
 # Create your views here.
 def page(request, htmlname, pagetype):
-    writeNicoRank(filename)
-    ranking_list = readNicoRank(filename)
     explain = ""
     metadata = {}
     for content in ranking_list:
@@ -134,7 +126,7 @@ def creation_page(request, htmlname, pagetype):
         return result
     params = {
         "title" : htmlname + " | コミュニティ分析",
-        "description" : "アニメ、漫画のコミュニティをtwitterの検索結果から分析します。",
+        "description" : site_explain,
         "favicon" : favicon,
         "img": img,
         "repo":repo,
@@ -148,7 +140,7 @@ def data_loading(request, htmlname):
         return result
     params = {
         "title" : "コミュニティ分析サイト",
-        "description" : "アニメ、漫画のコミュニティをtwitterの検索結果から分析します。",
+        "description" : site_explain,
         "favicon" : favicon,
         "img": img,
         "repo":repo,
@@ -156,25 +148,16 @@ def data_loading(request, htmlname):
     }
     if not Github.has_already_created(repo, htmlname):
         myTwitterAction = Twitter.MyTwitterAction()
-        tweet_list = myTwitterAction.search_tweet_list("min_faves:1000 " +htmlname, amount=50)
+        tweet_list = myTwitterAction.search_tweet_list(htmlname, amount=50)
         
         git_json = {}
         git_json.update({
             "tweet_list" : tweet_list
         })
 
-        nicoScrapy = Niconico.NicoScrapy(htmlname)
-        try:
-            nicoScrapy.run()
-            git_json.update({
-                "nico_info"          : nicoScrapy.getPageInfo(),
-                "nico_word_cloud"    : nicoScrapy.getWordCloud()
-            })
-        except:
-            git_json.update({
-                "nico_info"          : "",
-                "nico_word_cloud"    : ""
-            })
+        git_json.update({
+            "wordcloud" : genWordList(tweet_list)
+        })
 
         text = json.dumps(git_json, ensure_ascii=False, indent=4)
         Github.upload("twitter_json", htmlname, text)
@@ -187,17 +170,18 @@ def seach(request):
         return redirect(f"/page/{request_word}/dashboard.html")
     return False
 
-import os
-def writeNicoRank(filename):
-    filepath = f"/app/static/dashboard/database/{filename}"
-    if not os.path.exists(filepath):
-        ranking_list = Niconico.niconicoRanking()
-        text = json.dumps(ranking_list, ensure_ascii=False, indent=4)
-        with open(filepath, "w") as f:
-            f.write(text)
 
 
-def readNicoRank(filename):
-    filepath = f"/app/static/dashboard/database/{filename}"
-    with open(filepath, "r") as f:
-        return json.load(f)
+def genWordList(tweet_list):
+    all_text = ""
+    for tweet in tweet_list:
+        text = tweet["text"]
+        all_text += text
+    
+    return_list = []
+    for text in all_text[: :400]:
+        return_list.extend( NatureLang.get_wordlist(text) )
+    0/0
+    return return_list
+
+

@@ -84,15 +84,29 @@
             mother_num++;
             trElement = document.createElement("tr")
             tdElement = document.createElement("td")
-            tdElement.innerHTML = row["text"]
-            trElement.appendChild(tdElement)
 
+
+            innnerRealTweet = `
+          <blockquote class="twitter-tweet">
+            <a href="https://twitter.com/`+ row.user.screen_name + `/status/` + row.id_str + `">`+ row["text"] +`</a>
+          </blockquote>`
+          tdElement.innerHTML = innnerRealTweet//row["text"]
+            trElement.appendChild(tdElement)
             motherdataElement.appendChild(trElement)
         }
 
+      // SCRIPTタグの生成
+      var el = document.createElement("script");
 
+      // SCRIPTタグのSRC属性に読み込みたいファイルを指定
+      el.src = "https://platform.twitter.com/widgets.js";
+      el.charset = "utf-8"
+
+      // BODY要素の最後に追加
+      document.body.appendChild(el);
     })
 
 </script>
+
 
 {% endblock %}
