@@ -17,6 +17,7 @@ import threading
 import random
 import json
 import Oreilly
+from django.views.decorators.csrf import csrf_exempt
 
 
 site_title = "オライリー大図鑑"
@@ -70,7 +71,8 @@ class SwitchPage():
         ParamFactory.set_lilist()
         ParamFactory.page()
         return render(request,  'table_index.html', ParamFactory.params)
-
+    
+    @csrf_exempt 
     def page(self, request, htmlpage):
         if not Github.has_already_created(repo, htmlpage):
             add_to_github(htmlpage)

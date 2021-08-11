@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .sentense_class import InputText, Choice
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 def index(request):
@@ -133,6 +134,7 @@ pageInfoDict = {
 
                 
 actionFactory = ActionFactory()
+@csrf_exempt
 def page(request, htmlname):
     session = request.session
 
