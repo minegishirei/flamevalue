@@ -69,8 +69,7 @@
             <br>
             <br>
 
-            <form method="POST" action="">
-                {% csrf_token %}
+            <form method="POST" action="">{% csrf_token %}
                 <div class="cp_iptxt">
                     <label class="ef">
                         <input type="text" name="title" class="name" placeholder="名前orタイトル">
@@ -79,7 +78,6 @@
                         <input type="submit" name="submit">
                     </label>
                 </div>
-
             </form>
             <style>
                 .cp_iptxt {
