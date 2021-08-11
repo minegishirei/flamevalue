@@ -26,6 +26,12 @@ repo = "oreilly"
 repo_com = "oreilly_com"
 
 
+switchPage = SwitchPage()
+
+@csrf_exempt
+def page( request, htmlpage):
+    return switchPage.page(request, htmlpage)
+
 class SwitchPage():
     def __init__(self):
         pass
@@ -72,7 +78,7 @@ class SwitchPage():
         ParamFactory.page()
         return render(request,  'table_index.html', ParamFactory.params)
     
-    @csrf_exempt
+    
     def page(self, request, htmlpage):
         if not Github.has_already_created(repo, htmlpage):
             add_to_github(htmlpage)
