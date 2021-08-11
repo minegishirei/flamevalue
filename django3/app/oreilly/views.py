@@ -72,7 +72,7 @@ class SwitchPage():
         ParamFactory.page()
         return render(request,  'table_index.html', ParamFactory.params)
     
-    @csrf_exempt 
+    @csrf_exempt
     def page(self, request, htmlpage):
         if not Github.has_already_created(repo, htmlpage):
             add_to_github(htmlpage)
