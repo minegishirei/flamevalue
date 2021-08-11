@@ -49,8 +49,8 @@
             <br>
             <br>
             {% for comment in comment_list %}
-                <h4>{{ comment.title }}</h4>
-<pre>
+            <h4>{{ comment.title }}</h4>
+            <pre>
 {{ comment.comment }}
 </pre>
             {% endfor %}
@@ -68,18 +68,19 @@
             </h4>
             <br>
             <br>
+            <div class="cp_iptxt">
+                <label class="ef">
+                    <form method="POST" action="">{% csrf_token %}
 
-            <form method="POST" action="">{% csrf_token %}
-                <div class="cp_iptxt">
-                    <label class="ef">
                         {% csrf_token %}
                         <input type="text" name="title" class="name" placeholder="名前orタイトル">
                         <textarea type="textarea" name="comment" class="comment" rows="4" cols="40"
                             placeholder="コメント"></textarea>
                         <input type="submit" name="submit">
-                    </label>
-                </div>
-            </form>
+
+                    </form>
+                </label>
+            </div>
             <style>
                 .cp_iptxt {
                     position: relative;
