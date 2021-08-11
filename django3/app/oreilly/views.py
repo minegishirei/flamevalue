@@ -104,10 +104,21 @@ class SwitchPage():
 switchPage = SwitchPage()
 
 @csrf_exempt
-def page( request, htmlpage):
-    return switchPage.page(request, htmlpage)
+def page(request, htmlpage):
+    if not Github.has_already_created(repo, htmlpage):
+        add_to_github(htmlpage)
+    paramFactory = PageParamFactory()
+    if request.POST.get("title"):
+        context = {
+            'title': request.POST['title'],
+            'comment': request.POST['comment'],
+            'good' : 0
+        }
+        params = paramFactory.build( htmlpage, context)
+    else:
+        params = paramFactory.build( htmlpage)
     
-
+    return render(request, "oreilly/oreilly_base.html",params)
 
 class ParamComponent():
     def __init__(self):
