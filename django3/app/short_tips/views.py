@@ -209,7 +209,7 @@ class IndexParamFactory(ParamFactory):
     def build(self, category_name):
         self.category_name = category_name
         componentList = [
-            TitleComponent(category_name),
+            TitleComponent(category_name +meta_info[category_name]["indextitle"] ),
             AllRelationComponent(category_name)
         ]
         for component in componentList:
