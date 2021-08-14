@@ -64,6 +64,7 @@ meta_info = {
 def init_sql(category):
     tagzip,list_info  = SpreadSheet.main(category)
     column = " ,".join([ str(tag) + " " + str(type_) for  tag, type_ in tagzip])
+
     with InsertableDAO(category, column) as dao:
         for li in list_info:
             try:
@@ -77,6 +78,7 @@ def init_sql(category):
 
 init_sql("psy")
 init_sql("localtheorem")
+init_sql("wordeffect")
 
 init_sql("furniture")
 init_sql("individuality")
