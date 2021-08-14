@@ -150,8 +150,7 @@ class RelationComponent(ParamComponent):
 class AllRelationComponent(ParamComponent):
     def __init__(self, ):
         super().__init__()
-        page_dict_list = list(PAGE_DICT_LIST.reversed())
-        self.comdict.update({"all_relation": page_dict_list})
+        self.comdict.update({"all_relation": PAGE_DICT_LIST})
 
 class PageComponent(ParamComponent):
     def __init__(self,  page_name):
@@ -267,4 +266,5 @@ def gen_page_dict_list():
             "book_id" : page_dict["book_id"],
             "img" : page_dict["img"]
         })
+    PAGE_DICT_LIST.reverse()
 gen_page_dict_list()
