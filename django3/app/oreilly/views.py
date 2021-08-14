@@ -87,6 +87,8 @@ class SwitchPage():
                 'good' : 0
             }
             params = paramFactory.build( htmlpage, context)
+            del request.POST["title"]
+            del request.POST["comment"]
         else:
             params = paramFactory.build( htmlpage)
         
@@ -268,3 +270,5 @@ def gen_page_dict_list():
         })
     PAGE_DICT_LIST.reverse()
 gen_page_dict_list()
+
+
