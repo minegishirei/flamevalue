@@ -117,8 +117,6 @@ def page(request, htmlpage):
             'good' : 0
         }
         params = paramFactory.build( htmlpage, context)
-        request.POST["title"] = False
-        request.POST["comment"] = False
     else:
         params = paramFactory.build( htmlpage)
     
@@ -166,12 +164,18 @@ class PageComponent(ParamComponent):
 class CommentComponent(ParamComponent):
     def __init__(self,  page_name, new_dict=False):
         super().__init__()
+        def dub_check(comment_list, new_dict):
+            for old_dict in comment_list:
+                if old_dict["title"] == new_dict["title"]:
+                    return True
+            return False
+
         comment_list = []
         if Github.has_already_created(repo_com, page_name):
             myJson = MyJson.MyJson()
             json_str = Github.load(repo_com, page_name)
             comment_list = myJson.read(json_str)
-            if new_dict:
+            if new_dict and (not dub_check(comment_list, new_dict)):
                 Github.delete_page(repo_com, page_name)
                 comment_list.append(new_dict)
                 json_str = myJson.write(comment_list)
@@ -272,5 +276,7 @@ def gen_page_dict_list():
         })
     PAGE_DICT_LIST.reverse()
 gen_page_dict_list()
+
+
 
 
