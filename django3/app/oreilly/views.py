@@ -117,8 +117,8 @@ def page(request, htmlpage):
             'good' : 0
         }
         params = paramFactory.build( htmlpage, context)
-        del request.POST["title"]
-        del request.POST["comment"]
+        request.POST["title"] = False
+        request.POST["comment"] = False
     else:
         params = paramFactory.build( htmlpage)
     
