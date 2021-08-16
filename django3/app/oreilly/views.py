@@ -117,10 +117,12 @@ def page(request, htmlpage):
             'good' : 0
         }
         params = paramFactory.build( htmlpage, context)
+        context = False
     else:
         params = paramFactory.build( htmlpage)
     
     return render(request, "oreilly/oreilly_base.html",params)
+
 
 class ParamComponent():
     def __init__(self):
@@ -146,8 +148,18 @@ class MetaTitleComponent(ParamComponent):
         })
 
 class RelationComponent(ParamComponent):
-    def __init__(self, category_name, page_name):
+    def __init__(self, page_name):
         super().__init__()
+        target_index = 0
+        rate = 5
+        for i, page_dict in enumerate(PAGE_DICT_LIST):
+            if page_dict["book_id"] == page_name:
+                target_index = i
+                break
+        target_index_start  = max(target_index-rate,0)
+        target_index_end    = min(target_index+rate+1, len(PAGE_DICT_LIST))
+        core_relation = PAGE_DICT_LIST[target_index_start: target_index_end]
+        self.comdict.update({"all_relation": core_relation})
     
 class AllRelationComponent(ParamComponent):
     def __init__(self, ):
@@ -172,8 +184,8 @@ class CommentComponent(ParamComponent):
 
         comment_list = []
         if Github.has_already_created(repo_com, page_name):
-            myJson = MyJson.MyJson()
             json_str = Github.load(repo_com, page_name)
+            myJson = MyJson.MyJson()
             comment_list = myJson.read(json_str)
             if new_dict and (not dub_check(comment_list, new_dict)):
                 Github.delete_page(repo_com, page_name)
@@ -230,7 +242,8 @@ class PageParamFactory(ParamFactory):
     def build(self,  page_name, new_dict=False):
         componentList = [
             PageComponent(page_name),
-            CommentComponent(page_name, new_dict)
+            CommentComponent(page_name, new_dict),
+            RelationComponent(page_name)
         ]
         for component in componentList:
             self.params.update(component.getComdict())
