@@ -93,7 +93,7 @@
                     {% for litag in all_relation %}
                     <li class="down_shadow thumbnail item ">
                         <a href="./{{ litag.book_id }}">
-                            <img class="thumbnail" src="{{ litag.img }}">
+                            <img class="thumbnail" src="{{ litag.img }}" alt="{{ litag.title }}">
                         </a>
                     </li>
                     {% endfor %}
