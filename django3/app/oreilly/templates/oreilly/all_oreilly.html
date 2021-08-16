@@ -7,26 +7,24 @@
 {% endblock %}
 
 
-
-
 {% block headerblock %}
 <!--.wrap o <nav> = container 1200px -->
 <div class="wrap">
 
     <div class="content-left header_oneline">
         <a class="header_oneline" href="./index.html">
-            <p> - {{ title }} -  </p>
+            <p> - {{ title }} - </p>
         </a>
         <a class="header_oneline" href="./all_oreilly.html">
-            <p>  - 画像のみ -  </p>
+            <p> - 画像のみ - </p>
         </a>
-        <p><small>
-            <a href="https://www.oreilly.co.jp/catalog/">
-                引用:オライリー・ジャパン発行書籍一覧
-            </a>
+        <p>
+            <small>
+                <a href="https://www.oreilly.co.jp/catalog/">
+                    引用:オライリー・ジャパン発行書籍一覧
+                </a>
             </small>
-            </p>
-        
+        </p>
     </div>
 
 </div>
@@ -37,8 +35,6 @@
     }
 </style>
 {% endblock %}
-
-
 
 
 
@@ -54,11 +50,6 @@
                 {% if litag.img != "" %}
                 <img class="thumbnail" src="{{ litag.img }}">
                 {% endif %}
-                <div class="titlecentor row2">
-
-                    {{ litag.title }}
-
-                </div>
             </a>
         </li>
         {% endfor %}
@@ -103,12 +94,12 @@
         /* 横スクロール用 */
         display: inline-block;
         width: 150px;
-        height: 400px;
+        height: 200px;
     }
 
     img.thumbnail {
-        padding-left: 3px;
-        padding-right: 3px;
+        padding-left: 0px;
+        padding-right: 0px;
         object-fit: cover;
         /* この一行を追加するだけ！ */
     }

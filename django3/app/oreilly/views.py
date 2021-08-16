@@ -26,6 +26,8 @@ repo = "oreilly"
 repo_com = "oreilly_com"
 
 
+all_oreilly_title = "オライリー 一覧"
+all_oreilly_description = "I love oreilly books very much."
 
 
 class SwitchPage():
@@ -53,6 +55,11 @@ class SwitchPage():
         params = indexParamFactory.build()
         return render(request, "oreilly/index.html", params)
 
+    def all_oreilly(self, request):
+        indexParamFactory  = AllPageParamFactory()
+        params = indexParamFactory.build()
+        return render(request, "oreilly/all_oreilly.html", params)
+
     def robots(self, request):
         return render(request, 'meta/robots.txt')
 
@@ -61,6 +68,7 @@ class SwitchPage():
         for page in PAGE_DICT_LIST:
             page_list.append("http://oreilly.short-tips.info/"+page["book_id"])
         page_list.append("http://oreilly.short-tips.info/index.html")
+        page_list.append("http://oreilly.short-tips.info/all_oreilly.html")
         dt_now = datetime.datetime.now()
         params = {
             "page_list" : page_list,
@@ -145,6 +153,14 @@ class MetaTitleComponent(ParamComponent):
         super().__init__()
         self.comdict.update({
             "title" : title 
+        })
+
+
+class DescriptionComponent(ParamComponent):
+    def __init__(self, description):
+        super().__init__()
+        self.comdict.update({
+            "description" : description 
         })
 
 class RelationComponent(ParamComponent):
@@ -234,6 +250,23 @@ class IndexParamFactory(ParamFactory):
         for component in componentList:
             self.params.update(component.getComdict())
         return self.params
+
+
+class AllPageParamFactory(ParamFactory):
+    def __init__(self):
+        self.factoryType = "index"
+        super().__init__()
+    
+    def build(self):
+        componentList = [
+            TitleComponent( all_oreilly_title ),
+            AllRelationComponent(),
+            DescriptionComponent( all_oreilly_description )
+        ]
+        for component in componentList:
+            self.params.update(component.getComdict())
+        return self.params
+
 
 class PageParamFactory(ParamFactory):
     def __init__(self):
