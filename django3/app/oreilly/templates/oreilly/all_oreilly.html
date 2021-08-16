@@ -46,7 +46,7 @@
     <ul>
         {% for litag in all_relation %}
         <li class="down_shadow thumbnail item ">
-            <a rel="external" href="./{{ litag.book_id }}" title="Github">
+            <a rel="external" href="./{{ litag.book_id }}" title="Github" alt="{{ litag.title }}">
                 {% if litag.img != "" %}
                 <img class="thumbnail" src="{{ litag.img }}">
                 {% endif %}
