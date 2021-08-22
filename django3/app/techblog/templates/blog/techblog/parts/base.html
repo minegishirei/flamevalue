@@ -50,6 +50,9 @@
         <div class="col-lg-8 col-lg-offset-2 centered">
             {% block headerblock %}
             {% endblock %}
+            {% if "img" %}
+            <img width="80%" src="{{ img }}" alt="{{ title }}">
+          {% endif %}
         </div>
         <!-- /col-lg-8 -->
       </div>

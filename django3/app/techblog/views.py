@@ -17,7 +17,7 @@ all_ranking_folder = "/app/static/engineer/data/"
 
 
 favicon = "/static/techblog/img/feature.png"
-img =     "http://techtweetrank.short-tips.info/static/engineer/img/twitter_profile_image.png"
+img =     ""#"http://techtweetrank.short-tips.info/static/engineer/img/twitter_profile_image.png"
 site_explain = "社内SEの業務内容を可能な限りリアルに記しました。これから目指す人も、そうでないエンジニアも楽しめるように書きます！"
 site_name = "社内SE雑記ブログ"
 
