@@ -48,10 +48,15 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 centered">
+          <p>
+            カテゴリー：<a href="./">
+            {{ category}}
+            </a>
+          </p>
             {% block headerblock %}
             {% endblock %}
             {% if "img" %}
-            <img width="80%" src="{{ img }}" alt="{{ title }}">
+            <img height="300px" src="{{ img }}" alt="{{ title }}">
           {% endif %}
         </div>
         <!-- /col-lg-8 -->
