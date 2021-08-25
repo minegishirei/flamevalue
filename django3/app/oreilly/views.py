@@ -20,13 +20,13 @@ import Oreilly
 from django.views.decorators.csrf import csrf_exempt
 
 
-site_title = "オライリー大図鑑"
+site_title = "オライリー書籍一覧"
 site_description = "sample description"
 repo = "oreilly"
 repo_com = "oreilly_com"
 
 
-all_oreilly_title = "オライリー 一覧"
+all_oreilly_title = "オライリー大図鑑"
 all_oreilly_description = "I love oreilly books very much."
 
 
@@ -189,6 +189,18 @@ class PageComponent(ParamComponent):
         myJson = MyJson.MyJson()
         self.comdict.update(myJson.read(json_str))
 
+
+class PageComponentCHTitle(PageComponent):
+    def __init__(self,  page_name):
+        super().__init__()
+        json_str = Github.load(repo, page_name)
+        myJson = MyJson.MyJson()
+        params = myJson.read(json_str)
+        params["title"] = "書籍まとめ | " + params["title"]
+        self.comdict.update()
+
+
+
 class CommentComponent(ParamComponent):
     def __init__(self,  page_name, new_dict=False):
         super().__init__()
@@ -274,7 +286,7 @@ class PageParamFactory(ParamFactory):
     
     def build(self,  page_name, new_dict=False):
         componentList = [
-            PageComponent(page_name),
+            PageComponentCHTitle(page_name),
             CommentComponent(page_name, new_dict),
             RelationComponent(page_name)
         ]

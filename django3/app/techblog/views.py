@@ -45,13 +45,10 @@ def genPageDict():
         category_dict = {}
         for htmlname in Github.seach_page_list(repo, category):
             mk = Github.load(repo, category + "/" +htmlname)
-            md = markdown.Markdown()
-            htmltext = md.convert(mk)
             params =  grep_param(mk, ["title", "description", "img"])
             params.update({
                 "category" : category,
-                "htmlname" : htmlname,
-                "htmltext" : htmltext
+                "htmlname" : htmlname
             })
             category_dict[htmlname] = params
 
