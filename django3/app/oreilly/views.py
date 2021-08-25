@@ -197,7 +197,7 @@ class PageComponentCHTitle(ParamComponent):
         myJson = MyJson.MyJson()
         params = myJson.read(json_str)
         params["title"] = "書籍まとめ | " + params["title"]
-        self.comdict.update()
+        self.comdict.update(params)
 
 
 
