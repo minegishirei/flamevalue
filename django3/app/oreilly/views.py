@@ -190,7 +190,7 @@ class PageComponent(ParamComponent):
         self.comdict.update(myJson.read(json_str))
 
 
-class PageComponentCHTitle(PageComponent):
+class PageComponentCHTitle(ParamComponent):
     def __init__(self,  page_name):
         super().__init__()
         json_str = Github.load(repo, page_name)
