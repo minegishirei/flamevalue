@@ -40,8 +40,17 @@ def grep_param(mk, taglist):
 
 
 def genPageDict():
+    category_list = [
+        "python", 
+        "inhouse_se", 
+        #"design", 
+        #"developper", 
+        #"os", 
+        #"programming",
+        "powershell", 
+        "else"]
     page_dict = {}
-    for category in ["python", "inhouse_se", "design", "developper", "os", "programming","powershell", "else"]:
+    for category in :
         category_dict = {}
         for htmlname in Github.seach_page_list(repo, category):
             mk = Github.load(repo, category + "/" +htmlname)
