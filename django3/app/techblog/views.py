@@ -50,7 +50,7 @@ def genPageDict():
         "powershell", 
         "else"]
     page_dict = {}
-    for category in :
+    for category in category_list:
         category_dict = {}
         for htmlname in Github.seach_page_list(repo, category):
             mk = Github.load(repo, category + "/" +htmlname)
