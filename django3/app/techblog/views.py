@@ -158,9 +158,15 @@ def category_page(request, category_name):
     category_dict = page_dict[category_name]
     for category in category_dict.values():
         page_list.append(category)
+    
+    title_dict = {
+        "inhouse_se" : "社内SE雑記ブログ",
+        "python" : "python学習サイト",
+        "powershell": "powershell学習サイト"
+    }
     params = {
         "page_list" : page_list,
-        "title" : site_name,
+        "title" : title_dict[category_name],
         "description" : site_explain,
         "favicon" : favicon,
         "img": img,
