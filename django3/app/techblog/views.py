@@ -146,10 +146,21 @@ def page(request, category, htmlname):
         "category" : category,
         "favicon" : favicon
     }
-    params.update(grep_param(mk, ["title", "description", "img"]))
+    params.update(grep_param(mk, ["title", "description", "img", "category_script"]))
     if category=="slides":
         return render(request, "blog/non_base.html",params)
-
+    
+    relation_list = []
+    category_script = params["category_script"]
+    if category_script:
+        category_dict = page_dict[category]
+        for page_name, category_dict in category_dict.items():
+            if eval(category_script):
+                relation_list.append(category_dict)
+    
+    params.update({
+        "relation_list" : relation_list
+    })
     return render(request,f"blog/techblog/page/mkpage.html", params)
 
 

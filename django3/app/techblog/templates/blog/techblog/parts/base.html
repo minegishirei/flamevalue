@@ -72,8 +72,19 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2">
+            
               {% block mainblock %}
               {% endblock %}
+
+             {% for page_dict in relation_list %}
+             <p>
+               <strong>
+                  <a href="./{{ page_dict.htmlname }}">
+                    {{ page_dict.title }}
+                  </a>
+                </strong>
+             </p>
+             {% endfor %}
           </div>
           <!-- /col-lg-8 -->
         </div>
@@ -115,6 +126,7 @@
       </div>
     </div>
   </div>
+
 
   <div id="copyrights">
     <div class="container">
