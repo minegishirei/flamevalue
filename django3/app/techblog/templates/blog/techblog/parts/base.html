@@ -17,6 +17,13 @@
 
   <!-- Bootstrap CSS File -->
   <link href="/static/ranking/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    pre {
+      border: none;
+      background-color: #282a36;
+
+    }
+  </style>
   {% include "parts/seo.html" %}
   {% include "parts/favicon.html" %}
   {% include "parts/analytics.html" %}
@@ -37,6 +44,9 @@
     License: https://templatemag.com/license/
   ======================================================= -->
 </head>
+
+
+
 
 <body>
 
@@ -241,3 +251,13 @@ h2 {
   margin-top: 75px;
 }
 </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css">
+<style>
+  code {
+    border: black;
+    border-radius: 10px;
+  }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
