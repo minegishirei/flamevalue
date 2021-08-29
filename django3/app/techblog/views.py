@@ -33,9 +33,12 @@ def grep_param(mk, taglist):
     for tag in taglist:
         for line in mk.split("\n"):
             if line.startswith(tag+":"):
-                params.update({
-                    tag : line.replace(tag + ":", "" )
-                })
+                try:
+                    params.update({
+                        tag : line.replace(tag + ":", "" )
+                    })
+                except:
+                    pass
     return params
 
 
@@ -151,8 +154,8 @@ def page(request, category, htmlname):
         return render(request, "blog/non_base.html",params)
     
     relation_list = []
-    category_script = params["category_script"]
-    if category_script:
+    if "category_script" in params:
+        category_script = params["category_script"]
         category_dict = page_dict[category]
         for page_name, category_dict in category_dict.items():
             if eval(category_script):
