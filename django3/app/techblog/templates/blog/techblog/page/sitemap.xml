@@ -3,7 +3,7 @@
 
 {% for page in pop_page_list %}
 <url>
-<loc>http://oversea-it.short-tips.info/{{ page.category }}/{{ page.htmlname }}</loc>
+<loc>http://techblog.short-tips.info/{{ page.category }}/{{ page.htmlname }}</loc>
 <lastmod>{{ page.lastmod }}</lastmod>
 <priority>0.95</priority>
 </url>
