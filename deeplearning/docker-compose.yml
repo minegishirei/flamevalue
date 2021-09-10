@@ -1,0 +1,19 @@
+
+
+
+deeplearning:
+  user: root
+  build: .
+  dockerfile: "Dockerfile"
+  environment:
+    ENV: DEV
+  volumes:
+    - ./app:/app
+  command: ./cmd.sh
+  ports:
+    - "8888:8888"
+  container_name: deeplearning
+  #command: python3 manage.py runserver 0.0.0.0:5000 
+
+
+

@@ -50,6 +50,7 @@ def genPageDict():
         #"developper", 
         #"os", 
         #"programming",
+        "deeplearning",
         "powershell", 
         "else"]
     page_dict = {}
@@ -176,7 +177,8 @@ def category_page(request, category_name):
     title_dict = {
         "inhouse_se" : "社内SE雑記ブログ",
         "python" : "python学習サイト",
-        "powershell": "powershell学習サイト"
+        "powershell": "powershell学習サイト",
+        "deeplearning" : "機械学習入門サイト"
     }
     params = {
         "page_list" : page_list,
