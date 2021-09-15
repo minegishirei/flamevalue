@@ -21,13 +21,13 @@ ranking_list = []
 
 def get_pagetype_title(key):
     pagetype_title_dict = {
-        "dashboard.html" : " | コミュニティ分析",
+        "dashboard.html" : " | twitterアカウント分析サイト",
         "charts.html" : " | 市場調査ツール",
         "word_cloud.html" : "が一目で分かる！"
     }
     if key in pagetype_title_dict:
         return pagetype_title_dict[key]
-    return " | コミュニティ分析"
+    return " | twitterアカウント分析サイト"
 
 
 def sitemap(request):
@@ -39,8 +39,8 @@ def index(request):
         return result
     htmlname = "index.html"
     params = {
-        "title" : "コミュニティ分析サイト",
-        "description" : "アニメ、漫画のコミュニティをtwitterの検索結果から分析します。",
+        "title" : "twitterアカウント分析サイト",
+        "description" : "あなたのtwitterアカウントのアカウントをフォロワー数や年齢層からツイートコンテンツの内容までの観点で分析します。",
         "favicon" : favicon,
         "img": img,
         "repo":repo,
@@ -58,8 +58,8 @@ def pop_page(request):
         return result
     htmlname = "pop_page.html"
     params = {
-        "title" : "人気ランキング | コミュニティ分析サイト",
-        "description" : "アニメ、漫画のコミュニティをtwitterの検索結果から分析します。",
+        "title" : "人気ランキング | twitterアカウント分析サイト",
+        "description" : "あなたのtwitterアカウントのアカウントをフォロワー数や年齢層からツイートコンテンツの内容までの観点で分析します。",
         "favicon" : favicon,
         "img": img,
         "repo":repo,
@@ -79,8 +79,8 @@ def all_page(request):
     page_list = Github.seach_page_list(repo)
     htmlname = "all_page.html"
     params = {
-        "title" : "ページ一覧 | コミュニティ分析サイト",
-        "description" : "アニメ、漫画のコミュニティをtwitterの検索結果から分析します。",
+        "title" : "twitterアカウント分析サイト",
+        "description" : "あなたのtwitterアカウントのアカウントをフォロワー数や年齢層からツイートコンテンツの内容までの観点で分析します。",
         "favicon" : favicon,
         "img": img,
         "repo":repo,
@@ -125,7 +125,7 @@ def creation_page(request, htmlname, pagetype):
     if result:
         return result
     params = {
-        "title" : htmlname + " | コミュニティ分析",
+        "title" : htmlname + " | twitterアカウント分析",
         "description" : site_explain,
         "favicon" : favicon,
         "img": img,
@@ -139,7 +139,7 @@ def data_loading(request, htmlname):
     if result:
         return result
     params = {
-        "title" : "コミュニティ分析サイト",
+        "title" : "twitterアカウント分析サイト",
         "description" : site_explain,
         "favicon" : favicon,
         "img": img,
@@ -178,10 +178,29 @@ def genWordList(tweet_list):
         text = tweet["text"]
         all_text += text
     
+    def yield_text(all_text):
+        split_text = list(all_text.split("。"))
+        return_text = ""
+        for text in split_text:
+            tmp_text = return_text
+            return_text += text
+            if len(return_text) > 400:
+                yield tmp_text
+                return_text = ""
+                tmp_text = ""
+
+    count = 0
     return_list = []
-    for text in all_text[: :400]:
-        return_list.extend( NatureLang.get_wordlist(text) )
-    0/0
+    for text in yield_text(all_text):
+        if count> 10:
+            break
+        count+=1
+        try:
+            return_list.extend( NatureLang.get_wordlist(text) )
+        except:
+            pass
     return return_list
+
+
 
 
