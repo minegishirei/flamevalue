@@ -22,7 +22,7 @@ ranking_list = []
 def get_pagetype_title(key):
     pagetype_title_dict = {
         "dashboard.html" : " | twitterアカウント分析サイト",
-        "charts.html" : " | 市場調査ツール",
+        "charts.html" : " | twitterアカウント分析サイト",
         "word_cloud.html" : "が一目で分かる！"
     }
     if key in pagetype_title_dict:
