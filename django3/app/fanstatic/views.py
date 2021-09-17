@@ -7,6 +7,7 @@ import Twitter
 import Github
 import datetime
 import NatureLang
+import Sitemap
 
 dt_now = datetime.datetime.now()
 
@@ -31,7 +32,19 @@ def get_pagetype_title(key):
 
 
 def sitemap(request):
-    return render(request,f"fanstatic/sitemap.xml")
+    acount_list = Github.seach_page_list(repo)
+    page_list = []
+    url_template_list = [
+        "http://fanstatic.short-tips.info/page/{}/dashboard.html",
+        "http://fanstatic.short-tips.info/page/{}/charts.html",
+        "http://fanstatic.short-tips.info/page/{}/word_cloud.html",
+        "http://fanstatic.short-tips.info/page/{}/tables.html"
+    ]
+    for acount in acount_list:
+        for url_base in url_template_list:
+            page_list.append(url_base.format(acount))
+    return Sitemap.sitemap(request, page_list)
+    #return render(request,f"fanstatic/sitemap.xml")
 
 def index(request):
     result = seach(request)

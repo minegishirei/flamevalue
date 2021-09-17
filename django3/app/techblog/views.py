@@ -6,6 +6,7 @@ if '/God' not in sys.path:
     sys.path.append('/God')
 import Twitter
 import Github
+import Sitemap
 import Statichub
 import datetime
 import markdown
@@ -83,9 +84,6 @@ def checkandrenew():
     return False
 
 
-
-def sitemap(request):
-    return render(request,f"blog/techblog/page/sitemap.xml")
 
 def sitemap(request):
     pop_page_list = []
