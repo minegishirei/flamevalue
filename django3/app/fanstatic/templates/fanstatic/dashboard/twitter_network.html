@@ -38,10 +38,11 @@
 </head>
 
 
+
 <body>
     <header>
         <h1 id="title_id">
-            <a id="twitter_link" href="https://twitter.com/{{ acount_name }}">
+            <a id="twitter_link" target="_blank" href="./{{ acount_name }}">
                 {{ acount_name }}
             </a>
         </h1>
@@ -51,8 +52,8 @@
             }
         </style>
         <h2 id="description_id">
-            <a id="twitter_link" href="./{{ acount_name }}">
-                make {{ acount_name }} network
+            <a id="twitter_link" target="_blank" href="https://twitter.com/{{ acount_name }}">
+                goto  {{ acount_name }} twitter
             </a>
         </h2>
 
@@ -273,21 +274,21 @@
             d.fy = null;
         }
 
-        function change_description(description){
-            description_element = document.getElementById("description_id");
+        function change_title(description){
+            description_element = document.getElementById("title_id");
             description_element.innerHTML = `
-            <a id="twitter_link" href="./`+ description +`"> click and make `
+            <a id="twitter_link" target=”_blank”  href="./`+ description +`">`
             +description+
             `network</a>`
 
         }
     
-        function change_title(new_title){
-            title_element = document.getElementById("title_id");
+        function change_description(new_title){
+            title_element = document.getElementById("description_id");
             title_element.innerHTML = `
-            <a target=”_blank” id="twitter_link" href="https://twitter.com/`+ new_title +`"> `
+            <a target=”_blank” id="twitter_link" href="https://twitter.com/`+ new_title +`">goto `
             +new_title+
-            `</a>`
+            ` twitter</a>`
         }
     </script>
 

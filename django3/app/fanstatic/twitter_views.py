@@ -17,6 +17,11 @@ repo = "twitter_network"
 information_page_link = "about.html"
 title = "twitter network analytics"
 
+description = "twitter上でアカウント同士の人脈ネットワークを可視化するツールです。"
+
+
+favicon = "/static/fanstatic/network.png"
+
 
 def index(request):
     page_list = Github.seach_page_list(repo)
@@ -25,7 +30,9 @@ def index(request):
         "information_page_link" :information_page_link,
         "title" : title,
         "repo":repo,
-        "page_list":page_list
+        "page_list":page_list,
+        "favicon" : favicon,
+        "description" : description
     }
     return render(request, "fanstatic/dashboard/twitter_network_index.html", params)
 
@@ -41,7 +48,9 @@ def page(request, htmlname):
         "information_page_link" :information_page_link,
         "acount_name" : htmlname,
         "title" : htmlname + " " +title,
-        "repo":repo
+        "repo":repo,
+        "favicon" : favicon,
+        "description" : description
     }
     return render(request, "fanstatic/dashboard/twitter_network.html", params)
 
@@ -50,6 +59,7 @@ def page(request, htmlname):
 def about(request):
     params = {
         "title" : "twitter network analytics Q&A",
+        "favicon" : favicon,
         "description" : "twitterアカウントの人脈可視化ツール「twitter network analytics」についてのQ&Aページです。"
     }
     return render(request, "fanstatic/dashboard/twitter_network_about.html", params)
