@@ -51,8 +51,8 @@ def sitemap(request):
     for acount in acount_list:
         for url_base in url_template_list:
             page_list.append(url_base.format(acount))
-    page_list.append("http://fanstatic.localhost/twitter_network/")
-    page_list.append("http://fanstatic.localhost/twitter_network/about.html")
+    page_list.append("http://fanstatic.short-tips.info/twitter_network/")
+    page_list.append("http://fanstatic.short-tips.info/twitter_network/about.html")
     return Sitemap.sitemap(request, page_list)
     #return render(request,f"fanstatic/sitemap.xml")
 
