@@ -14,7 +14,7 @@ import Sitemap
 
 
 repo = "twitter_network"
-information_page_link = ""
+information_page_link = "about.html"
 title = "twitter network analytics"
 
 
@@ -32,16 +32,27 @@ def index(request):
 
 
 def page(request, htmlname):
+    if htmlname=="about.html":
+        return about(request)
     if "reload" in request.GET:
         Github.delete_page(repo, htmlname)
     upload_network_json(htmlname)
     params = {
         "information_page_link" :information_page_link,
         "acount_name" : htmlname,
-        "title" : title,
+        "title" : htmlname + " " +title,
         "repo":repo
     }
     return render(request, "fanstatic/dashboard/twitter_network.html", params)
+
+
+
+def about(request):
+    params = {
+        "title" : "twitter network analytics Q&A",
+        "description" : "twitterアカウントの人脈可視化ツール「twitter network analytics」についてのQ&Aページです。"
+    }
+    return render(request, "fanstatic/dashboard/twitter_network_about.html", params)
 
 
 def upload_network_json(htmlname):

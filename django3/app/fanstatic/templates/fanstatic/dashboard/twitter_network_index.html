@@ -43,8 +43,8 @@
     <h1>{{ title }}</h1>
 
     <form>
-        <input type="text" id="new_acount_name_id">
-        <input type="submit" onclick="new_page()">
+        <input type="text" id="new_acount_name_id" placeholder="@acount_name">
+        <input type="submit" onclick="new_page()" value="send">
     </form>
     <div class="links">
         {% for page in page_list %}
@@ -71,6 +71,10 @@
     bottom:2%; 
     right:2%;
 }
+
+body {
+            background-color: #001c33;
+        }
 </style>
 <canvas></canvas>
 
@@ -205,7 +209,7 @@ h1 {
   color: white;
   font-family: 'Merriweather', serif;
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 0;
   right: 0;
   text-align: center;
