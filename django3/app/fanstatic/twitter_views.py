@@ -14,18 +14,32 @@ import Sitemap
 
 
 repo = "twitter_network"
+information_page_link = ""
+title = "twitter network analytics"
 
 
+def index(request):
+    page_list = Github.seach_page_list(repo)
+    htmlname = "all_page.html"
+    params = {
+        "information_page_link" :information_page_link,
+        "title" : title,
+        "repo":repo,
+        "page_list":page_list
+    }
+    return render(request, "fanstatic/dashboard/twitter_network_index.html", params)
 
-def index(request, htmlname):
-    return page()
+
 
 def page(request, htmlname):
     if "reload" in request.GET:
         Github.delete_page(repo, htmlname)
     upload_network_json(htmlname)
     params = {
-        "acount_name" : htmlname
+        "information_page_link" :information_page_link,
+        "acount_name" : htmlname,
+        "title" : title,
+        "repo":repo
     }
     return render(request, "fanstatic/dashboard/twitter_network.html", params)
 
