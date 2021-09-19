@@ -1,4 +1,3 @@
-
 <head>
 
     <meta charset="utf-8">
@@ -19,11 +18,11 @@
     <link href="/static/dashboard/css/sb-admin-2.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ favicon }}">
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6Y7NSQNF5"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-B6Y7NSQNF5');
     </script>
@@ -53,7 +52,7 @@
         </style>
         <h2 id="description_id">
             <a id="twitter_link" target="_blank" href="https://twitter.com/{{ acount_name }}">
-                goto  {{ acount_name }} twitter
+                goto {{ acount_name }} twitter
             </a>
         </h2>
 
@@ -66,50 +65,72 @@
             width: 100%;
             height: 10000px;
         }
+
         body {
             background-color: #001c33;
         }
-        h1 { font-size: 30px; margin: 10px 0; text-transform: uppercase; font-weight: normal;}
-      h2, h3 { font-size: 18px; margin: 5px 0 ; font-weight: normal;}
-      header {padding: 20px; position: absolute; top: 0; left: 0; z-index: 555;
-      color: white;
-      }
+
+        h1 {
+            font-size: 30px;
+            margin: 10px 0;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+
+        h2,
+        h3 {
+            font-size: 18px;
+            margin: 5px 0;
+            font-weight: normal;
+        }
+
+        header {
+            padding: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 555;
+            color: white;
+        }
     </style>
     <div class="right_up_buttons">
         <a href="./">
             <img width="75px" src="/static/fanstatic/home.png">
-        </a>    
+        </a>
     </div>
 
     <div class="right_down_buttons">
         <a href="{{ information_page_link }}">
             <img width="75px" src="/static/fanstatic/question.png">
-        </a>    
+        </a>
     </div>
     <style>
         .right_up_buttons {
             z-index: 999;
             position: absolute;
-            top:2%; 
-            right:2%;
+            top: 2%;
+            right: 2%;
         }
+
         .right_down_buttons {
             z-index: 555;
             position: absolute;
-            bottom:2%; 
-            right:2%;
+            bottom: 2%;
+            right: 2%;
         }
     </style>
 
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="/static/dashboard/vendor/jquery/jquery.min.js"></script>
+
 
     <script>
         var R = 25
         var svg = d3.select("svg"),
             width = +svg.attr("width"),
             height = +svg.attr("height");
-        
-            
+
+
         var color = d3.scaleOrdinal()
             .range(["#f7d147", "#03a6a6", "#fe736c", "#ec5a31", "#d8345f", "#a7d129", "#f8eeb4", "#fe736c", "#616f39", "#ff6363", "#a7d129", "#d8345f", "#db2ae2"]);
 
@@ -123,7 +144,7 @@
             .force('positioningX', d3.forceX()) //詳細設定は後で
             .force('positioningY', d3.forceY()) //詳細設定は後で
             .force('center', d3.forceCenter(width / 2, height / 2)); //重力の中心
-        
+
         //"svg"にZoomイベントを設定
         var zoom = d3.zoom()
             .scaleExtent([1 / 4, 4])
@@ -144,7 +165,8 @@
             d3.select(this).attr('cx', d.x = d3.event.x).attr('cy', d.y = d3.event.y);
         };
 
-        d3.json("https://raw.githubusercontent.com/kawadasatoshi/twitter_network/main/{{ acount_name }}", function (error, graph) {
+        url = "https://raw.githubusercontent.com/kawadasatoshi/twitter_network/main/{{ acount_name }}"
+        d3.json(url, function (error, graph) {
             if (error) throw error;
 
 
@@ -155,7 +177,7 @@
                 .enter().append("line")
                 .attr("stroke", "#666666") //輪郭線の色指定追加
                 .attr("stroke-width", function (d) {
-                    return Math.sqrt(d.value*10);
+                    return Math.sqrt(d.value * 10);
                 });
 
             // nodeの定義
@@ -172,16 +194,16 @@
 
             node.append("svg:image")
                 .attr("xlink:href", function (d) { return d.img; })
-                .attr("height", R*2)
-                .attr("width", R*2)
+                .attr("height", R * 2)
+                .attr("width", R * 2)
                 .attr('clip-path', 'url(#clip)')
                 .attr("x", function (d) { return -R; })
                 .attr("y", function (d) { return -R; })
-            
-            node.on('click', function(d){
-                    change_description(d.name)
-                    change_title(d.name)
-                });
+
+            node.on('click', function (d) {
+                change_description(d.name)
+                change_title(d.name)
+            });
 
             //図形判定
             function nodeTypeID(d) {
@@ -198,7 +220,7 @@
             }
 
             var Defs = svg.append("defs");
-            
+
             var circles = Defs
                 .append('circle')
                 .attr('id', 'circle')
@@ -274,24 +296,43 @@
             d.fy = null;
         }
 
-        function change_title(description){
+        function change_title(description) {
             description_element = document.getElementById("title_id");
             description_element.innerHTML = `
-            <a id="twitter_link" target=”_blank”  href="./`+ description +`">`
-            +description+
-            `network</a>`
+            <a id="twitter_link" target=”_blank”  href="./`+ description + `">`
+                + description +
+                `network</a>`
 
         }
-    
-        function change_description(new_title){
+
+        function change_description(new_title) {
             title_element = document.getElementById("description_id");
             title_element.innerHTML = `
-            <a target=”_blank” id="twitter_link" href="https://twitter.com/`+ new_title +`">goto `
-            +new_title+
-            ` twitter</a>`
+            <a target=”_blank” id="twitter_link" href="https://twitter.com/`+ new_title + `">goto `
+                + new_title +
+                ` twitter</a>`
         }
+
+
     </script>
 
+    <div id="text_area">
+
+    </div>
+
+    <script>
+        $.getJSON(url, (data) => {
+            console.log(data)
+            text_area_element = document.getElementById("text_area")
+            innertext = ""
+            for(i in data.nodes){
+                row = data.nodes[i]
+                innertext += `<p>`+row.text+`</p>`
+            }
+            text_area_element.innerHTML = innertext
+            console.log(innertext)
+        })
+    </script>
 
 
 </body>
