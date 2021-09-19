@@ -8,7 +8,13 @@
     <!--    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.1.1/d3.js"></script>-->
 </head>
 
+
 <body>
+    <header>
+        <h1>{{ acount_name }}</h1>
+        <h2>Click to view their identity</h2>
+        <h3>And link to their web page!</h3>
+    </header>
     <svg style="background-color:#231f20">
     </svg>
     <style>
@@ -19,6 +25,11 @@
         body {
             background-color: #231f20;
         }
+        h1 { font-size: 36px; margin: 10px 0; text-transform: uppercase; font-weight: normal;}
+      h2, h3 { font-size: 18px; margin: 5px 0 ; font-weight: normal;}
+      header {padding: 20px; position: absolute; top: 0; left: 0; z-index: 555;
+      color: white;
+      }
     </style>
     <script src="https://d3js.org/d3.v4.min.js"></script>
 
