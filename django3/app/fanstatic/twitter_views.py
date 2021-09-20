@@ -43,7 +43,10 @@ def page(request, htmlname):
         return about(request)
     if "reload" in request.GET:
         Github.delete_page(repo, htmlname)
-    upload_network_json(htmlname)
+    try:
+        upload_network_json(htmlname)
+    except Twitter.MyTwitterException:
+        return render(request, "fanstatic/dashboard/twitter_network_busy.html", params)
     params = {
         "information_page_link" :information_page_link,
         "acount_name" : htmlname,
