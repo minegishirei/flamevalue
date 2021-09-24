@@ -35,10 +35,10 @@ def sitemap(request):
     acount_list = Github.seach_page_list(repo)
     page_list = []
     url_template_list = [
-        "http://fanstatic.short-tips.info/page/{}/dashboard.html",
-        "http://fanstatic.short-tips.info/page/{}/charts.html",
-        "http://fanstatic.short-tips.info/page/{}/word_cloud.html",
-        "http://fanstatic.short-tips.info/page/{}/tables.html"
+        #"http://fanstatic.short-tips.info/page/{}/dashboard.html",
+        #"http://fanstatic.short-tips.info/page/{}/charts.html",
+        "http://fanstatic.short-tips.info/page/{}/word_cloud.html"
+        #"http://fanstatic.short-tips.info/page/{}/tables.html"
     ]
     for acount in acount_list:
         for url_base in url_template_list:
