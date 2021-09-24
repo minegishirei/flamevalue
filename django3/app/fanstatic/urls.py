@@ -4,6 +4,7 @@ from . import twitter_views
 urlpatterns = [
     path('', views.index , name="index"), 
     path("index.html", views.index ,name="pop_page"),
+    path("robots.txt", views.robots ,name="robots"),
     path("sitemap.xml", views.sitemap, name="sitemap"),
     path("pop_page.html", views.pop_page ,name="pop_page"),
     path("all_page.html", views.all_page ,name="all_page"),

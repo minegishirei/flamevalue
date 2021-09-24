@@ -193,6 +193,8 @@ def seach(request):
         return redirect(f"/page/{request_word}/dashboard.html")
     return False
 
+def robots( request):
+    return render(request, 'meta/robots.txt')
 
 
 def genWordList(tweet_list):
