@@ -18,7 +18,7 @@ information_page_link = "about.html"
 title = "twitter network analytics"
 
 description = "twitter上でアカウント同士の人脈ネットワークを可視化するツールです。"
-img = "/static/fanstatic/sample.png"
+img = "http://fanstatic.short-tips.info/static/fanstatic/sample.png"
 
 favicon = "/static/fanstatic/network.png"
 
