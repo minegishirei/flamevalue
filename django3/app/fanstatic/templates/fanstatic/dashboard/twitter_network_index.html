@@ -47,10 +47,11 @@
   </form>
   <div class="links">
     {% for page in page_list %}
+    <p>
     <a class="page" href="./{{ page }}">
       {{ page }}
-    </a><br>
-    <br>
+    </a>
+  </p>
     {% endfor %}
   </div>
 
@@ -94,7 +95,7 @@
 <script>
   var canvas = document.querySelector("canvas");
   canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.height = window.innerHeight*3;
   var ctx = canvas.getContext("2d");
 
   var TAU = 2 * Math.PI;
