@@ -19,7 +19,8 @@ host_patterns = patterns(
     host(r"oversea-it", "oversea_it.urls", name="oversea-it"),
     host(r"question", "question.urls", name="question"),
     host(r"oreilly", "oreilly.urls", name="oreilly"),
-    host(r'.*', 'short_tips.urls', name='else'),
-
+    host(r'yourshogi', "yourshogi.urls", name="yourshogi"),
+    host(r'd3js', "d3js.urls", name="d3js"),
+    host(r'.*', 'short_tips.urls', name='else')
 )
 
