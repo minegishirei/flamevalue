@@ -1,6 +1,6 @@
 FROM nginx:latest
 
-ENV LETSENCRYPT_HOSTS localhost short-tips.info
+ENV LETSENCRYPT_HOSTS short-tips.info
 #【ドメイン名 スペース区切りで複数指定可】
 
 ENV LETSENCRYPT_MAIL minegishirei@gmail.com
