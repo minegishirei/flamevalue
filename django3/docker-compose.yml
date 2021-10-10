@@ -5,7 +5,7 @@ nginx:
   ports:
     - "80:8000"
   volumes:
-    - ./nginx/:/etc/nginx/
+    #- ./nginx/:/etc/nginx/
     - ./nginx/uwsgi_params:/etc/nginx/uwsgi_params
     - ./nginx/conf:/etc/nginx/conf.d
     - ./app/static:/static
@@ -32,8 +32,8 @@ djangoapp:
   dockerfile: "Dockerfile"
   environment:
     ENV: DEV
-  ports:
-   - "80:5000"
+  expose:
+    - "5000"
   volumes:
     - ./app:/app
     - ./God:/God
