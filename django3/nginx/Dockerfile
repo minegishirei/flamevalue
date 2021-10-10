@@ -1,0 +1,22 @@
+FROM nginx:latest
+
+ENV LETSENCRYPT_HOSTS localhost short-tips.info
+#【ドメイン名 スペース区切りで複数指定可】
+
+ENV LETSENCRYPT_MAIL minegishirei@gmail.com
+#【窓口メールアドレス】
+
+ENV LETSENCRYPT_SUBJECT "/C=JP/ST=Tokyo/L=Shinagawa/CN=default"
+#←仮証明書用の記載内容】
+
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt-get update \
+    && apt-get install --yes --no-install-recommends \
+      openssl \
+      certbot \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+CMD /start.sh

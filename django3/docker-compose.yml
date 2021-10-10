@@ -1,9 +1,10 @@
 nginx:
-  image: nginx
-  #build:
-  #  ./nginx
+  #image: nginx
+  build:
+    ./nginx
   ports:
-    - "80:8000"
+    - "80:80"
+    - "443:443"
   volumes:
     #- ./nginx/:/etc/nginx/
     - ./nginx/uwsgi_params:/etc/nginx/uwsgi_params
