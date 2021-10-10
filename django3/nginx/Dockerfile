@@ -17,7 +17,7 @@ RUN apt-get update \
       certbot \
     && rm -rf /var/lib/apt/lists/*
 
-COPY .well-known/acme-challenge 
+COPY .well-known/acme-challenge /.well-known/acme-challenge/
 
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
