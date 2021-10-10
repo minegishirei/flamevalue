@@ -1,3 +1,18 @@
+nginx:
+  image: nginx
+  #build:
+  #  ./nginx
+  ports:
+    - "80:8000"
+  volumes:
+    - ./nginx/:/etc/nginx/
+    - ./nginx/uwsgi_params:/etc/nginx/uwsgi_params
+    - ./nginx/conf:/etc/nginx/conf.d
+    - ./app/static:/static
+  tty:
+    true
+  links:
+    - djangoapp
 
 
 yahoo:
@@ -9,8 +24,6 @@ yahoo:
     - ./God:/God
   command: ./cmd.sh
   #command: python3 manage.py runserver 0.0.0.0:5000 
-
-
 
 
 djangoapp:
@@ -41,11 +54,6 @@ aauto:
   #command: python3 manage.py runserver 0.0.0.0:5000 
   links:
     - db
-
-
-
-
-
 
 db:
   user: root
