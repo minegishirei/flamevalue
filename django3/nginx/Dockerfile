@@ -1,12 +1,12 @@
 FROM nginx:latest
 
-ENV LETSENCRYPT_HOSTS short-tips.info
+ENV LETSENCRYPT_HOSTS techblog.short-tips.info
 #【ドメイン名 スペース区切りで複数指定可】
 
 ENV LETSENCRYPT_MAIL minegishirei@gmail.com
 #【窓口メールアドレス】
 
-ENV LETSENCRYPT_SUBJECT "/C=JP/ST=Tokyo/L=Shinagawa/CN=default"
+ENV LETSENCRYPT_SUBJECT "/C=JP/ST=Tokyo/L=Shinagawa/CN=r3"
 #←仮証明書用の記載内容】
 
 ENV DEBIAN_FRONTEND noninteractive
