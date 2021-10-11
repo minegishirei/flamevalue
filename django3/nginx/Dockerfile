@@ -19,6 +19,8 @@ RUN apt-get update \
 
 COPY .well-known/acme-challenge /.well-known/acme-challenge/
 
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
-CMD /start.sh
+COPY entry.sh /entry.sh
+RUN chmod +x /entry.sh
+CMD /entry.sh
+
+
