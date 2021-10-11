@@ -1,5 +1,7 @@
 FROM nginx:latest
 
+USER root
+
 ENV LETSENCRYPT_HOSTS techblog.short-tips.info
 #【ドメイン名 スペース区切りで複数指定可】
 
