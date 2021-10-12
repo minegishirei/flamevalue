@@ -84,6 +84,9 @@ def checkandrenew():
     return False
 
 
+def ssl(request, page):
+    "YSIVy60h0ybmhPylYUW4yQETqdU_s-kRXSX1K4Hc0b0"
+
 
 def sitemap(request):
     pop_page_list = []

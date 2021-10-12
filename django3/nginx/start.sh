@@ -25,7 +25,7 @@ for HOST in ${LETSENCRYPT_HOSTS}
 do
   if [ ! -e "/etc/letsencrypt/initialize" ]; then
     rm -rf /etc/letsencrypt/live/${HOST}
-    certbot certonly --nginx -n --keep-until-expiring --agree-tos \
+    certbot certonly -n --keep-until-expiring --agree-tos \
       --webroot --webroot-path /var/lib/letsencrypt \
       -m ${LETSENCRYPT_MAIL} -d ${HOST}
   fi
