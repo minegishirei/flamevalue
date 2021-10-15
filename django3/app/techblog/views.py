@@ -51,7 +51,7 @@ def genPageDict():
         #"developper", 
         #"os", 
         #"programming",
-        "deeplearning",
+        #"deeplearning",
         "powershell", 
         "else"]
     page_dict = {}
@@ -60,6 +60,8 @@ def genPageDict():
         for htmlname in Github.seach_page_list(repo, category):
             mk = Github.load(repo, category + "/" +htmlname)
             params =  grep_param(mk, ["title", "description", "img"])
+            if "escape" in params:
+                continue
             params.update({
                 "category" : category,
                 "htmlname" : htmlname
@@ -83,9 +85,6 @@ def checkandrenew():
         return True
     return False
 
-
-def ssl(request, page):
-    "YSIVy60h0ybmhPylYUW4yQETqdU_s-kRXSX1K4Hc0b0"
 
 
 def sitemap(request):
@@ -125,7 +124,7 @@ def index(request):
         "img": img,
         "site_name" : site_name
     }
-    return render(request,f"blog/techblog/page/index.html",params)
+    return render(request,f"blog/techblog_ver2/page/index.html",params)
 
 
 def about(request):
@@ -166,7 +165,7 @@ def page(request, category, htmlname):
     params.update({
         "relation_list" : relation_list
     })
-    return render(request,f"blog/techblog/page/mkpage.html", params)
+    return render(request,f"blog/techblog_ver2/page/mkpage.html", params)
 
 
 def category_page(request, category_name):
@@ -192,6 +191,6 @@ def category_page(request, category_name):
         "category" : category_name
     }
     
-    return render(request,f"blog/techblog/page/category.html", params)
+    return render(request,f"blog/techblog_ver2/page/category.html", params)
 
 
