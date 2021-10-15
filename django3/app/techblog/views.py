@@ -148,7 +148,8 @@ def page(request, category, htmlname):
         "htmltext" : htmltext,
         "site_name" : site_name,
         "category" : category,
-        "favicon" : favicon
+        "favicon" : favicon,
+        "htmlname" : htmlname
     }
     params.update(grep_param(mk, ["title", "description", "img", "category_script"]))
     if category=="slides":
