@@ -52,6 +52,7 @@ def genPageDict():
         #"os", 
         #"programming",
         #"deeplearning",
+        "career",
         "powershell", 
         "else"]
     page_dict = {}
