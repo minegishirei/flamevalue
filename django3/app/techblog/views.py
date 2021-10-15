@@ -181,7 +181,8 @@ def category_page(request, category_name):
         "python" : "python学習サイト",
         "powershell": "powershell学習サイト",
         "deeplearning" : "機械学習入門サイト",
-        "else" : "社内SE雑記ブログ その他記事"
+        "else" : "社内SE雑記ブログ その他記事",
+        "career" : "キャリアメモ"
     }
     params = {
         "page_list" : page_list,
