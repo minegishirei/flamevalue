@@ -52,6 +52,7 @@ def genPageDict():
         #"os", 
         #"programming",
         #"deeplearning",
+        "sql",
         "career",
         "powershell", 
         "else"]
@@ -180,6 +181,15 @@ def category_page(request, category_name):
         "inhouse_se" : "社内SE雑記ブログ",
         "python" : "python学習サイト",
         "powershell": "powershell学習サイト",
+        "deeplearning" : "機械学習入門サイト",
+        "else" : "社内SE雑記ブログ その他記事",
+        "sql" : "SQL学習サイト",
+        "career" : "キャリアメモ"
+    }
+    description_dict = {
+        "inhouse_se" : site_explain,
+        "python" : "python",
+        "powershell": "windows10の自動化の鍵となるパワーシェルについて変数の扱いからfor文までまとめました。",
         "deeplearning" : "機械学習入門サイト",
         "else" : "社内SE雑記ブログ その他記事",
         "career" : "キャリアメモ"
