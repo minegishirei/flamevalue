@@ -37,6 +37,7 @@
 
 
 		{% for page in page_list %}
+		
 		<!-- begin post -->
 		<div class="card">
 			<a href="/{{ page.category }}/{{ page.htmlname }}">
@@ -64,23 +65,6 @@
 		<!-- end post -->
 		{% endfor %}
 
-		<div>
-			<hr>
-			<small>{{ page.date }}</small>
-
-			<h2>
-				<a href="./{{page.category}}/{{ page.htmlname}}">
-
-					{{ page.title }}
-				</a>
-			</h2>
-			<a href="{{ page.category }}" class="tag">
-				<p>{{ page.category }}</p>
-			</a>
-			<p>{{ page.description }}</p>
-			<br>
-			<br>
-		</div>
 
 
 	</div>

@@ -184,7 +184,10 @@ def category_page(request, category_name):
         "deeplearning" : "機械学習入門サイト",
         "else" : "社内SE雑記ブログ その他記事",
         "sql" : "SQL学習サイト",
-        "career" : "キャリアメモ"
+        "career" : "キャリアメモ",
+        "javascript" : "Javascriptメモ",
+        "html_css" : "html/CSSメモ",
+        "management" : "マネジメントメモ"
     }
     description_dict = {
         "inhouse_se" : site_explain,
