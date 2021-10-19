@@ -46,9 +46,21 @@
 
 			</div>
 
+			<ol>
+				{% for key, value in index_table.items %}
+				<li>
+					<a href="#{{ key }}">
+						{{ value }}
+					</a>
+				</li>
+				{% endfor %}
+			</ol>
+
 			<!-- Begin Featured Image -->
-			<img class="featured-image img-fluid" src="assets/img/demopic/10.jpg" alt="">
+			<img class="featured-image img-fluid" src="{{ img }}" alt="">
 			<!-- End Featured Image -->
+
+
 
 			<!-- Begin Post Content -->
 			<div class="article-post">

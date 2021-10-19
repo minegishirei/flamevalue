@@ -146,6 +146,8 @@ def about(request):
 # Create your views here.
 def page(request, category, htmlname):
     mk = Github.load(repo, category + "/" +htmlname)
+    tableIndex = TableIndex(mk)
+    mk = tableIndex.rebuild_mk()
     md = markdown.Markdown()
     htmltext = md.convert(mk)
     params = {
@@ -168,6 +170,10 @@ def page(request, category, htmlname):
             if eval(category_script):
                 relation_list.append(category_dict)
     
+    params.update({
+        "index_table" : tableIndex.index_table
+    })
+
     params.update({
         "relation_list" : relation_list
     })
@@ -213,3 +219,29 @@ def category_page(request, category_name):
     return render(request,f"blog/techblog_ver2/page/category.html", params)
 
 
+
+
+class TableIndex():
+    def __init__(self, mk):
+        self.mk = mk
+        self.index_table = {}
+
+    def rebuild_mk(self):
+        in_pre_flag = False
+        h2_count = 0
+        new_mk = ""
+        for row in self.mk.split('\n'):
+            if "<pre>" in row:
+                in_pre_flag = True
+            if "</pre>" in row:
+                in_pre_flag = False
+            
+            if (not in_pre_flag) and row.startswith("##"):
+                h2_count += 1
+                self.index_table[h2_count] = row.replace("##", "")
+                new_mk += (f'<div id="{h2_count}">' + "\n")
+                new_mk += ("</div>\n")
+            new_mk += (row + "\n")
+        return new_mk
+
+    
