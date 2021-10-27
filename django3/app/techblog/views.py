@@ -45,6 +45,8 @@ def grep_param(mk, taglist):
 
 def genPageDict():
     category_list = [
+        "ctf",
+        "sql",
         "python", 
         "inhouse_se", 
         #"design", 
@@ -55,7 +57,7 @@ def genPageDict():
         "html_css",
         "javascript",
         "management",
-        "sql",
+        "vb6",
         "career",
         "powershell", 
         "else"]
@@ -196,7 +198,9 @@ def category_page(request, category_name):
         "career" : "キャリアメモ",
         "javascript" : "Javascriptメモ",
         "html_css" : "html/CSSメモ",
-        "management" : "マネジメントメモ"
+        "management" : "マネジメントメモ",
+        "vb6" : "vb6学習サイト",
+        "ctf" : "CTFチャレンジサイト"
     }
     description_dict = {
         "inhouse_se" : site_explain,
