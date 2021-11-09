@@ -14,17 +14,8 @@ nginx:
     true
   links:
     - djangoapp
+    - knowledgeapp
 
-
-yahoo:
-  user: root
-  build: .
-  dockerfile: "Dockerfile-yahoo"
-  volumes:
-    - ./yahoo:/yahoo
-    - ./God:/God
-  command: ./cmd.sh
-  #command: python3 manage.py runserver 0.0.0.0:5000 
 
 
 djangoapp:
@@ -44,17 +35,6 @@ djangoapp:
   links:
     - db
 
-aauto:
-  user: root
-  build: .
-  dockerfile: "Dockerfile-aauto"
-  volumes:
-    - ./aauto:/aauto
-    - ./God:/God
-  command: ./cmd.sh
-  #command: python3 manage.py runserver 0.0.0.0:5000 
-  links:
-    - db
 
 db:
   user: root
@@ -72,3 +52,32 @@ db:
     - ./db/mysql-init:/docker-entrypoint-initdb.d
     # 永続化するときにマウントするdir
     - ./db/mysql-data:/var/lib/mysql
+
+
+knowledgeapp:
+  image: koda/docker-knowledge
+  environment:
+    ENV: DEV
+  #build: .
+  volumes:
+    - ./volumes/knowledge:/root/.knowledge
+  expose:
+    - "8080"
+  container_name: knowledgeapp
+  restart: always
+  links:
+    - "knowdlegedb"
+
+
+
+knowdlegedb:
+  image: postgres:9
+  environment:
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=admin123
+    - POSTGRES_DB=knowledge_production
+  volumes:
+    #- ./volumes/initdb:/docker-entrypoint-initdb.d
+    - ./volumes/postgres/data:/var/lib/postgresql/data
+  restart: always
+
