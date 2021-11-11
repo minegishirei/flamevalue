@@ -21,13 +21,13 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 site_title = "オライリー書籍一覧"
-site_description = "sample description"
+site_description = "オライリー書籍のファンサイトです。おしゃれでシンプルでなおかつ美しい表紙を取り揃えました。オライリージャパンはPythonから始まりゼロトラストネットワーク,プロジェクトマネジメントの手法まで高レベルな範囲までをカバーしてます。"
 repo = "oreilly"
 repo_com = "oreilly_com"
 
 
 all_oreilly_title = "オライリー大図鑑"
-all_oreilly_description = "I love oreilly books very much."
+all_oreilly_description = "オライリー書籍のファンサイトです。おしゃれでシンプルでなおかつ美しい表紙を取り揃えました。オライリージャパンはPythonから始まりゼロトラストネットワーク,プロジェクトマネジメントの手法まで高レベルな範囲までをカバーしてます。"
 
 
 class SwitchPage():
@@ -66,9 +66,9 @@ class SwitchPage():
     def sitemap(self, request):
         page_list = []
         for page in PAGE_DICT_LIST:
-            page_list.append("http://oreilly.short-tips.info/"+page["book_id"])
-        page_list.append("http://oreilly.short-tips.info/index.html")
-        page_list.append("http://oreilly.short-tips.info/all_oreilly.html")
+            page_list.append("https://oreilly.short-tips.info/"+page["book_id"])
+        page_list.append("https://oreilly.short-tips.info/index.html")
+        page_list.append("https://oreilly.short-tips.info/all_oreilly.html")
         dt_now = datetime.datetime.now()
         params = {
             "page_list" : page_list,
@@ -257,7 +257,8 @@ class IndexParamFactory(ParamFactory):
     def build(self):
         componentList = [
             TitleComponent( site_title ),
-            AllRelationComponent()
+            AllRelationComponent(),
+            DescriptionComponent( site_description)
         ]
         for component in componentList:
             self.params.update(component.getComdict())
