@@ -25,6 +25,8 @@ site_description = "オライリー書籍のファンサイトです。おしゃ
 repo = "oreilly"
 repo_com = "oreilly_com"
 
+oreilly_favicon = "/static/oreilly/owl.png"
+
 
 all_oreilly_title = "オライリー大図鑑"
 all_oreilly_description = "オライリー書籍のファンサイトです。おしゃれでシンプルでなおかつ美しい表紙を取り揃えました。オライリージャパンはPythonから始まりゼロトラストネットワーク,プロジェクトマネジメントの手法まで高レベルな範囲までをカバーしてます。"
@@ -163,6 +165,13 @@ class DescriptionComponent(ParamComponent):
             "description" : description 
         })
 
+class FaviconComponent(ParamComponent):
+    def __init__(self, favicon):
+        super().__init__()
+        self.comdict.update({
+            "favicon" : favicon 
+        })
+
 class RelationComponent(ParamComponent):
     def __init__(self, page_name):
         super().__init__()
@@ -258,7 +267,8 @@ class IndexParamFactory(ParamFactory):
         componentList = [
             TitleComponent( site_title ),
             AllRelationComponent(),
-            DescriptionComponent( site_description)
+            DescriptionComponent( site_description),
+            FaviconComponent( oreilly_favicon )
         ]
         for component in componentList:
             self.params.update(component.getComdict())
@@ -274,7 +284,8 @@ class AllPageParamFactory(ParamFactory):
         componentList = [
             TitleComponent( all_oreilly_title ),
             AllRelationComponent(),
-            DescriptionComponent( all_oreilly_description )
+            DescriptionComponent( all_oreilly_description ),
+            FaviconComponent( oreilly_favicon )
         ]
         for component in componentList:
             self.params.update(component.getComdict())
@@ -289,7 +300,8 @@ class PageParamFactory(ParamFactory):
         componentList = [
             PageComponentCHTitle(page_name),
             CommentComponent(page_name, new_dict),
-            RelationComponent(page_name)
+            RelationComponent(page_name),
+            FaviconComponent( oreilly_favicon )
         ]
         for component in componentList:
             self.params.update(component.getComdict())
@@ -304,7 +316,8 @@ class SQLParamFactory(ParamFactory):
         self.category_name = category_name
         componentList = [
             MetaTitleComponent(category_name, category_name),
-            SQLComponent(category_name,cmd)
+            SQLComponent(category_name,cmd),
+            FaviconComponent( oreilly_favicon )
         ]
         for component in componentList:
             self.params.update(component.getComdict())
