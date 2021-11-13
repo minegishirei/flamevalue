@@ -25,7 +25,7 @@ site_description = "オライリー書籍のファンサイトです。おしゃ
 repo = "oreilly"
 repo_com = "oreilly_com"
 
-oreilly_favicon = "/static/oreilly/owl.png"
+oreilly_favicon = "/static/oreilly/saru.png"
 
 
 all_oreilly_title = "オライリー大図鑑"
