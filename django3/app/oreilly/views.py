@@ -492,17 +492,17 @@ def gen_tag_list():
             tag_page_list.append( tag_dict["TAG_NAME"] )
     return tag_page_list
 
+
+def init_dao():
+    with TableCreatableDAO("TAG_PAGE_LIST", " TAG_NAME varchar(30), BOOK_ID varchar(20) ,PRIMARY KEY( TAG_NAME, BOOK_ID ) ") as dao:
+        pass
+
 def reload_page():
     init_dao()
     gen_page_dict_list()
 
 
-
-
-def init_dao():
-    with TableCreatableDAO("TAG_PAGE_LIST", " TAG_NAME varchar(30), BOOK_ID varchar(20) ,PRIMARY KEY( TAG_NAME, BOOK_ID ) ") as dao:
-        pass
-reload_page()
+eload_page()
 
 
 
