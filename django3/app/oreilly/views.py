@@ -299,21 +299,18 @@ class TagPageListComponent(ParamComponent):
 
 class SearchPageComponent(ParamComponent):
     def __init__(self, keyword_str):
-        keyword_list = keyword_str.split(' ')
+        keyword = keyword_str
         super().__init__()
         search_result = []
         for page_dict in PAGE_DICT_LIST:
             ##TODO:keywordによる条件分岐
-            contain_flag = True
-            for keyword in keyword_list:
-                if keyword not in page_dict["title"]:
-                    contain_flag =False
-                with InsertableDAO("TAG_PAGE_LIST") as dao:
-                    try:
-                        result = dao.insert(f"('{keyword}', 'xxxxxxxxxx')")
-                    except:
-                        pass
-            if contain_flag:
+            condition = ( 
+                    (keyword in page_dict["description"]) 
+                    or (keyword in page_dict["description"])
+                    or (keyword in page_dict["description"])
+                    or (keyword in page_dict["title"])
+                )
+            if condition:
                 search_result.append(page_dict)
         self.comdict.update({
             "search_result": search_result
