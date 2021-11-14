@@ -502,7 +502,7 @@ def reload_page():
     gen_page_dict_list()
 
 
-eload_page()
+reload_page()
 
 
 
