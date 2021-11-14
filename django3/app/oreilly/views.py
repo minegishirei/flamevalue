@@ -305,10 +305,9 @@ class SearchPageComponent(ParamComponent):
         for page_dict in PAGE_DICT_LIST:
             ##TODO:keywordによる条件分岐
             condition = ( 
-                    (keyword in page_dict["description"]) 
-                    or (keyword in page_dict["description"])
-                    or (keyword in page_dict["description"])
-                    or (keyword in page_dict["title"])
+                    (keyword.upper() in page_dict["title"]) 
+                    or (keyword.lower() in page_dict["title"])
+                    or (keyword.capitalize() in page_dict["title"])
                 )
             if condition:
                 search_result.append(page_dict)
