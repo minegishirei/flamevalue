@@ -305,14 +305,16 @@ class SearchPageComponent(ParamComponent):
         for page_dict in PAGE_DICT_LIST:
             ##TODO:keywordによる条件分岐
             condition = ( 
-                    (keyword.upper() in page_dict["title"]) 
+                    1!=1
+                    or (keyword in page_dict["title"])
+                    or (keyword.upper() in page_dict["title"])
                     or (keyword.lower() in page_dict["title"])
                     or (keyword.capitalize() in page_dict["title"])
                 )
             if condition:
                 search_result.append(page_dict)
         self.comdict.update({
-            "search_result": search_result
+            "all_relation": search_result
         })
 
 
