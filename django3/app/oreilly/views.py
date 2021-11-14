@@ -461,7 +461,7 @@ PAGE_DICT_LIST = []
 def gen_page_dict_list():
     global PAGE_DICT_LIST
     PAGE_DICT_LIST = []
-    for book_id in Github.seach_page_list(repo)[:10]:
+    for book_id in Github.seach_page_list(repo):
         json_str = Github.load(repo, book_id)
         myJson = MyJson.MyJson()
         page_dict = myJson.read(json_str)
