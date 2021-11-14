@@ -45,6 +45,18 @@ class DAO():
         self.cursor.close()
         self.conn.close()
 
+class DatabaseCreatableDAO(DAO):
+    def __init__(self, database_name):
+        self.database_name = database_name
+        super().__init__("")
+    
+    def __enter__(self):
+        self = super().__enter__()
+        # Drop previous table of same name if one exists
+        #self.cursor.execute("DROP TABLE IF EXISTS inventory;")
+        #print("Finished dropping table (if existed).")
+        self.cursor.execute(f"CREATE DATABASE IF NOT EXISTS {self.database_name}")
+        return self
 
 
 class TableCreatableDAO(DAO):
@@ -61,10 +73,17 @@ class TableCreatableDAO(DAO):
         return self
 
 
-class InsertableDAO(TableCreatableDAO):
-    def insert(self,values):
+##コマンド実行系
+
+class InsertableDAO(DAO):
+    def __init__(self, table):
+        super().__init__(table)
+    
+    def insert(self, values):
+        self = super().__enter__()
         sql = f"INSERT INTO {self.config['table']} VALUES {values};"
         self.cursor.execute(sql)
+        return self
 
 
 class CmdDAO(DAO):

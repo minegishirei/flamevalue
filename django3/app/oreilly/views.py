@@ -20,6 +20,10 @@ import Oreilly
 from django.views.decorators.csrf import csrf_exempt
 
 
+from DAO import DAO, InsertableDAO, TableCreatableDAO, CmdDAO, create_newTable, DatabaseCreatableDAO
+
+
+
 site_title = "オライリー書籍一覧"
 site_description = "オライリー書籍のファンサイトです。おしゃれでシンプルでなおかつ美しい表紙を取り揃えました。オライリージャパンはPythonから始まりゼロトラストネットワーク,プロジェクトマネジメントの手法まで高レベルな範囲までをカバーしてます。"
 repo = "oreilly"
@@ -31,6 +35,8 @@ oreilly_favicon = "/static/oreilly/saru.png"
 all_oreilly_title = "オライリー大図鑑"
 all_oreilly_description = "オライリー書籍のファンサイトです。おしゃれでシンプルでなおかつ美しい表紙を取り揃えました。オライリージャパンはPythonから始まりゼロトラストネットワーク,プロジェクトマネジメントの手法まで高レベルな範囲までをカバーしてます。"
 
+
+tag_list_file_path = "./taglist.json"
 
 class SwitchPage():
     def __init__(self):
@@ -52,7 +58,7 @@ class SwitchPage():
 
     def index(self, request):
         if request.GET.get("reload"):
-            gen_page_dict_list()
+            reload_page()
         indexParamFactory  = IndexParamFactory()
         params = indexParamFactory.build()
         return render(request, "oreilly/index.html", params)
@@ -112,6 +118,28 @@ class SwitchPage():
             sentence = f"select * from {category_name}"
         params = paramFactory.build(category_name, sentence)
         return render(request, "sql.html", params)
+
+    def get_tag_page_list(self, request, tag_name):
+        factory = TagPageListFactory()
+        params = factory.build(tag_name)
+        return render(request, "oreilly/tag_page_list.html", params)
+    
+    def search_page(self, request):
+        factory = SearchPageFactory()
+        keyword_query = request.GET.get("keyword")
+        if keyword_query and len(keyword_query) > 1:
+            params = factory.build(keyword_query)
+            return render(request, "oreilly/tag_page_list.html", params)
+        else:
+            return redirect("/")
+
+    def get_tag_list(self, request):
+        factory = SearchPageFactory()
+        params = factory.build(keyword)
+
+        return render(request, "oreilly/tag_page_list.html", params)
+    
+
 
 switchPage = SwitchPage()
 
@@ -186,6 +214,7 @@ class RelationComponent(ParamComponent):
         core_relation = PAGE_DICT_LIST[target_index_start: target_index_end]
         self.comdict.update({"all_relation": core_relation})
     
+
 class AllRelationComponent(ParamComponent):
     def __init__(self, ):
         super().__init__()
@@ -245,6 +274,54 @@ class SQLComponent(ParamComponent):
             self.comdict.update({"sql" : cmd})
 
 
+class TagListComponent(ParamComponent):
+    def __init__(self):
+        super().__init__()
+        self.comdict.update({
+            "tag_list": gen_tag_list()
+        })
+
+class TagPageListComponent(ParamComponent):
+    def __init__(self, tag_name):
+        super().__init__()
+        tag_page_list = []
+        with DAO("TAG_PAGE_LIST") as dao:
+            result = dao.run(f'select * from TAG_PAGE_LIST where TAG_NAME = "{tag_name}"')
+            for row in result:
+                for page_dict in PAGE_DICT_LIST:
+                    if row["BOOK_ID"] == page_dict["book_id"]:
+                        tag_page_list.append(page_dict)
+
+        self.comdict.update({
+            "all_relation": tag_page_list
+        })
+
+
+class SearchPageComponent(ParamComponent):
+    def __init__(self, keyword_str):
+        keyword_list = keyword_str.split(' ')
+        super().__init__()
+        search_result = []
+        for page_dict in PAGE_DICT_LIST:
+            ##TODO:keywordによる条件分岐
+            contain_flag = True
+            for keyword in keyword_list:
+                if keyword not in page_dict["title"]:
+                    contain_flag =False
+                with InsertableDAO("TAG_PAGE_LIST") as dao:
+                    try:
+                        result = dao.insert(f"('{keyword}', 'xxxxxxxxxx')")
+                    except:
+                        pass
+            if contain_flag:
+                search_result.append(page_dict)
+        self.comdict.update({
+            "search_result": search_result
+        })
+
+
+
+
 
 
 ###############################
@@ -268,7 +345,8 @@ class IndexParamFactory(ParamFactory):
             TitleComponent( site_title ),
             AllRelationComponent(),
             DescriptionComponent( site_description),
-            FaviconComponent( oreilly_favicon )
+            FaviconComponent( oreilly_favicon ),
+            TagListComponent()
         ]
         for component in componentList:
             self.params.update(component.getComdict())
@@ -324,6 +402,52 @@ class SQLParamFactory(ParamFactory):
         return self.params
 
 
+class TagPageFactory(ParamFactory):
+    def __init__(self):
+        super().__init__()
+    
+    def build(self, tag_name):
+        self.tag_name = tag_name
+        componentList = [
+            MetaTitleComponent(tag_name),
+            TagListComponent(),
+            FaviconComponent( oreilly_favicon )
+        ]
+        for component in componentList:
+            self.params.update(component.getComdict())
+        return self.params
+
+
+class TagPageListFactory(ParamFactory):
+    def __init__(self):
+        super().__init__()
+
+    def build(self, tag_name):
+        self.tag_name = tag_name
+        componentList = [
+            MetaTitleComponent(tag_name),
+            TagPageListComponent(tag_name),
+            FaviconComponent( oreilly_favicon )
+        ]
+        for component in componentList:
+            self.params.update(component.getComdict())
+        return self.params
+        
+
+class SearchPageFactory(ParamFactory):
+    def __init__(self):
+        super().__init__()
+
+    def build(self, keyword):
+        self.keyword = keyword
+        componentList = [
+            MetaTitleComponent(keyword),
+            SearchPageComponent(keyword),
+            FaviconComponent( oreilly_favicon )
+        ]
+        for component in componentList:
+            self.params.update(component.getComdict())
+        return self.params
 
 
 def add_to_github(book_id):
@@ -337,17 +461,56 @@ PAGE_DICT_LIST = []
 def gen_page_dict_list():
     global PAGE_DICT_LIST
     PAGE_DICT_LIST = []
-    for book_id in Github.seach_page_list(repo):
+    for book_id in Github.seach_page_list(repo)[:10]:
         json_str = Github.load(repo, book_id)
         myJson = MyJson.MyJson()
         page_dict = myJson.read(json_str)
+        with InsertableDAO("TAG_PAGE_LIST") as dao:
+            for tag_name in gen_tag_list():
+                condition = ( 
+                    (tag_name.capitalize() in page_dict["description"]) 
+                    or (tag_name.upper() in page_dict["description"])
+                    or (tag_name.lower() in page_dict["description"])
+                )
+                if condition:
+                    try:
+                        dao.insert(f"('{tag_name}', '{book_id}')")
+                    except:
+                        pass
+
         PAGE_DICT_LIST.append({
             "title" : page_dict["title"],
             "book_id" : page_dict["book_id"],
             "img" : page_dict["img"]
         })
+        
     PAGE_DICT_LIST.reverse()
-gen_page_dict_list()
+
+
+def gen_tag_list():
+    tag_page_list = []
+    with DAO("TAG_PAGE_LIST") as dao:
+        for tag_dict in dao.run(f'select DISTINCT TAG_NAME from TAG_PAGE_LIST'):
+            tag_page_list.append( tag_dict["TAG_NAME"] )
+    return tag_page_list
+
+def reload_page():
+    init_dao()
+    gen_page_dict_list()
+
+
+
+
+def init_dao():
+    with TableCreatableDAO("TAG_PAGE_LIST", " TAG_NAME varchar(30), BOOK_ID varchar(20) ,PRIMARY KEY( TAG_NAME, BOOK_ID ) ") as dao:
+        pass
+reload_page()
+
+
+
+
+
+
 
 
 
