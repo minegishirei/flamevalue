@@ -418,7 +418,7 @@ class TagPageFactory(ParamFactory):
     def build(self, tag_name):
         self.tag_name = tag_name
         componentList = [
-            MetaTitleComponent("オライリーまとめ "+tag_name+"編"),
+            MetaTitleComponent("オライリー "+tag_name+"まとめ"),
             AllRelationComponent(),
             TagListComponent(),
             FaviconComponent( oreilly_favicon )
@@ -435,7 +435,7 @@ class TagPageListFactory(ParamFactory):
     def build(self, tag_name):
         self.tag_name = tag_name
         componentList = [
-            MetaTitleComponent("オライリーまとめ "+tag_name+"編"),
+            MetaTitleComponent("オライリー "+tag_name+"まとめ"),
             AllRelationComponent(),
             TagPageListComponent(tag_name),
             FaviconComponent( oreilly_favicon )
