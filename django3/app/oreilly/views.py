@@ -77,6 +77,8 @@ class SwitchPage():
             page_list.append("https://oreilly.short-tips.info/"+page["book_id"])
         page_list.append("https://oreilly.short-tips.info/index.html")
         page_list.append("https://oreilly.short-tips.info/all_oreilly.html")
+        for page in gen_tag_list():
+            page_list.append(f"https://oreilly.short-tips.info/tag_page_list/{page}")
         dt_now = datetime.datetime.now()
         params = {
             "page_list" : page_list,
