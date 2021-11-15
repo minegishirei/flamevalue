@@ -383,6 +383,7 @@ class PageParamFactory(ParamFactory):
     def build(self,  page_name, new_dict=False):
         componentList = [
             PageComponentCHTitle(page_name),
+            AllRelationComponent(),
             CommentComponent(page_name, new_dict),
             RelationComponent(page_name),
             FaviconComponent( oreilly_favicon )
@@ -416,6 +417,7 @@ class TagPageFactory(ParamFactory):
         self.tag_name = tag_name
         componentList = [
             MetaTitleComponent("オライリーまとめ "+tag_name+"編"),
+            AllRelationComponent(),
             TagListComponent(),
             FaviconComponent( oreilly_favicon )
         ]
@@ -432,6 +434,7 @@ class TagPageListFactory(ParamFactory):
         self.tag_name = tag_name
         componentList = [
             MetaTitleComponent("オライリーまとめ "+tag_name+"編"),
+            AllRelationComponent(),
             TagPageListComponent(tag_name),
             FaviconComponent( oreilly_favicon )
         ]
@@ -448,6 +451,7 @@ class SearchPageFactory(ParamFactory):
         self.keyword = keyword
         componentList = [
             MetaTitleComponent(keyword),
+            AllRelationComponent(),
             SearchPageComponent(keyword),
             FaviconComponent( oreilly_favicon )
         ]
