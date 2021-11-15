@@ -370,6 +370,7 @@ class AllPageParamFactory(ParamFactory):
         componentList = [
             TitleComponent( all_oreilly_title ),
             AllRelationComponent(),
+            TagListComponent(),
             DescriptionComponent( all_oreilly_description ),
             FaviconComponent( oreilly_favicon )
         ]
@@ -386,6 +387,7 @@ class PageParamFactory(ParamFactory):
         componentList = [
             PageComponentCHTitle(page_name),
             AllRelationComponent(),
+            TagListComponent(),
             CommentComponent(page_name, new_dict),
             RelationComponent(page_name),
             FaviconComponent( oreilly_favicon )
@@ -437,6 +439,7 @@ class TagPageListFactory(ParamFactory):
         componentList = [
             MetaTitleComponent("オライリー "+tag_name+"まとめ"),
             AllRelationComponent(),
+            TagListComponent(),
             TagPageListComponent(tag_name),
             FaviconComponent( oreilly_favicon )
         ]
