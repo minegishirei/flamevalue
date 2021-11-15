@@ -302,6 +302,7 @@ class SearchPageComponent(ParamComponent):
         keyword = keyword_str
         super().__init__()
         search_result = []
+        hit_count = 0
         for page_dict in PAGE_DICT_LIST:
             ##TODO:keywordによる条件分岐
             condition = ( 
@@ -312,7 +313,14 @@ class SearchPageComponent(ParamComponent):
                     or (keyword.capitalize() in page_dict["title"])
                 )
             if condition:
+                hit_count += 1
                 search_result.append(page_dict)
+        if hit_count >= 2:
+            with InsertableDAO("TAG_PAGE_LIST") as dao:
+                try:
+                    dao.insert(f"('{keyword}', 'xxxxxxxxxx')")
+                except:
+                    pass
         self.comdict.update({
             "all_relation": search_result
         })
@@ -459,7 +467,7 @@ PAGE_DICT_LIST = []
 def gen_page_dict_list():
     global PAGE_DICT_LIST
     PAGE_DICT_LIST = []
-    for book_id in Github.seach_page_list(repo):
+    for book_id in Github.seach_page_list(repo)[:10]:
         json_str = Github.load(repo, book_id)
         myJson = MyJson.MyJson()
         page_dict = myJson.read(json_str)
