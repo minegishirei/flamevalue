@@ -486,6 +486,10 @@ def gen_page_dict_list():
                     (tag_name.capitalize() in page_dict["description"]) 
                     or (tag_name.upper() in page_dict["description"])
                     or (tag_name.lower() in page_dict["description"])
+                    or (tag_name in page_dict["title"])
+                    or (tag_name.upper() in page_dict["title"])
+                    or (tag_name.lower() in page_dict["title"])
+                    or (tag_name.capitalize() in page_dict["title"])
                 )
                 if condition:
                     try:
