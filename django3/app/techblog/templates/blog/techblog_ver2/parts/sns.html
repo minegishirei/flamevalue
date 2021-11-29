@@ -25,9 +25,28 @@
                 </a>
             </li>
         </ul>
-
+        <p>
+            -
+        </p>
+        <p>
+            link
+        </p>
+        {% for page_dict in relation_list %}
+        <p>
+            <a href="./{{ page_dict.htmlname }}">
+                {{ page_dict.title }}
+            </a>
+        </p>
+        {% endfor %}
     </div>
 </div>
+
+<style>
+    .share {
+        max-width: 200px;
+    }
+</style>
+
 <!--
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 -->
