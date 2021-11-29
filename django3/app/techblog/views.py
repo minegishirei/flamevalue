@@ -181,7 +181,7 @@ def page(request, category, htmlname):
     })
     if request.GET.get("raw"):
         return render(request,f"blog/raw.html", params)
-    return render(request,f"blog/techblog_ver2/page/mkpage.html", params)
+    return render(request,f"blog/techblog_ver2/page/page.html", params)
 
 
 def category_page(request, category_name):

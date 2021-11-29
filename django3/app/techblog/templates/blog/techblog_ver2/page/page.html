@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+
+{% include 'blog/techblog_ver2/parts/head.html' %}
+
+
+<body>
+    <header role="banner">
+        <nav role="navigation">
+            <p class="logo"><a href="https://webslides.tv/" title="WebSlides">WebSlides</a></p>
+            <ul>
+                <li>
+                    <a href="/about.html">
+                        サイトについて
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        ページ一覧
+                    </a>
+                </li>
+                <li>
+                    <a href="/inhouse_se/">
+                        エンジニア
+                    </a>
+                </li>
+                <li>
+                    <a href="/python/">
+                        python
+                    </a>
+                </li>
+                <li>
+                    <a href="/slides/">
+                        スライド
+                    </a>
+                </li>
+                <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+            </ul>
+        </nav>
+    </header>
+    {{ htmltext|safe }}
+
+</body>
+
+
+
+<!-- Required -->
+<script src="/static/js/webslides.js"></script>
+<script>
+    window.ws = new WebSlides();
+</script>
+
+
+<style>
+    input {
+        box-shadow: none;
+        border: none;
+    }
+</style>
+
+
+</html>
+
+
+<style>
+    .thumbnailtitle {
+        width: 200px;
+        overflow-wrap: break-word;
+    }
+</style>
