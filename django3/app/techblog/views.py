@@ -179,6 +179,8 @@ def page(request, category, htmlname):
     params.update({
         "relation_list" : relation_list
     })
+    if request.GET.get("raw"):
+        return render(request,f"blog/raw.html", params)
     return render(request,f"blog/techblog_ver2/page/mkpage.html", params)
 
 
