@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     "techblog",
     "oversea_it",
     "question",
-    "oreilly",
+    #"oreilly",
     "yourshogi",
     "d3js"
 ]
