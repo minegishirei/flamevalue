@@ -40,6 +40,8 @@ def seach_page_list(repo, folder = None):
             continue
         if "Terms" == text or "Releases" in text:
             break
+        if "\n\n\n" in text:
+            continue
         if text=="Create aaaaa" or text=="test":
             continue
         if text=="README.md":
