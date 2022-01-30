@@ -124,7 +124,7 @@ def index(request):
         "site_name" : site_name,
         "category_list" : category_list,
     }
-    return render(request,f"blog/techblog_ver2/page/index.html",params)
+    return render(request,f"blog/techblog_ver3/page/index.html",params)
 
 
 def about(request):
@@ -176,7 +176,7 @@ def page(request, category, htmlname):
     })
     if request.GET.get("raw"):
         return render(request,f"blog/raw.html", params)
-    return render(request,f"blog/techblog_ver2/page/page.html", params)
+    return render(request,f"blog/techblog_ver3/page/page.html", params)
 
 
 def category_page(request, category_name):
@@ -196,7 +196,7 @@ def category_page(request, category_name):
         "category" : category_name
     }
     
-    return render(request,f"blog/techblog_ver2/page/category.html", params)
+    return render(request,f"blog/techblog_ver3/page/category.html", params)
 
 
 
