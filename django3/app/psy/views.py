@@ -40,22 +40,9 @@ def grep_param(mk, taglist):
 
 def genPageDict():
     category_list = [
-        "sql",
-        "powershell", 
-        "python", 
-        "inhouse_se", 
-        #"design", 
-        #"developper", 
-        #"os", 
-        #"programming",
-        #"deeplearning",
-        "html_css",
-        "javascript",
-        "management",
-        "vb6",
-        "career",
-        "ctf",
-        "else"]
+        "design",
+        "baum"
+    ]
     page_dict = {}
     for category in category_list:
         category_dict = {}
