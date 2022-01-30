@@ -121,7 +121,7 @@ def index(request):
         "description" : site_explain,
         "favicon" : favicon,
         "img": img,
-        "site_name" : site_name
+        "site_name" : site_name,
         "category_list" : category_list,
     }
     return render(request,f"blog/techblog_ver2/page/index.html",params)
