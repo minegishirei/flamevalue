@@ -7,43 +7,11 @@
 	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 		<!-- Begin Menu -->
 		<ul class="navbar-nav ml-auto">
-
-
+			{% for category in category_list %}
 			<li class="nav-item">
-				<a class="nav-link" href="/html_css/">html/css </a>
+				<a class="nav-link" href="/{{ category }}/">{{ category }}</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/javascript">Javascirpt </a>
-			</li>
-			<li class="nav-item">
-                <a class="nav-link" href="/python/">Python<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/sql/">SQL<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/ctf/">CTF<span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="/powershell/">Powershell<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/vb6/">VB6<span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="/management/">Management<span class="sr-only">(current)</span></a>
-            </li>
-			<li class="nav-item">
-				<a class="nav-link" href="/inhouse_se/">In-house SE<span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-                <a class="nav-link" href="/career/">Career<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/else/">Else<span class="sr-only">(current)</span></a>
-            </li>
+			{% endfor %}
 		</ul>
 		<!-- End Menu -->
 		<!-- Begin Search 

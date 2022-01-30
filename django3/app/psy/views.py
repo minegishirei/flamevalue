@@ -15,7 +15,7 @@ import markdown
 favicon = "/static/techblog/img/feature.png"
 img =     "https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/4/2019/10/How-much-does-a-foreign-engineer-make-in-Japan-in-2019.jpg"#"/static/techblog/img/feature.png"#"http://techtweetrank.short-tips.info/static/engineer/img/twitter_profile_image.png"
 site_explain = "社内SEの業務内容を可能な限りリアルに記しました。これから目指す人も、そうでないエンジニアも楽しめるように書きます！"
-site_name = "社内SE雑記ブログ"
+site_name = "心理学ガチまとめ"
 
 
 repo = "psy"
@@ -38,11 +38,21 @@ def grep_param(mk, taglist):
     return params
 
 
+category_list = [
+    "design",
+    "baum"
+]
+category_title_dict = {
+    "design" : "デザインまとめ",
+    "baum" : "バウムテスト活用マニュアル"
+}
+category_description_dict = {
+    "design" : "デザインまとめ",
+    "baum" : "バウムテスト活用マニュアル"
+}
+
 def genPageDict():
-    category_list = [
-        "design",
-        "baum"
-    ]
+    global category_list
     page_dict = {}
     for category in category_list:
         category_dict = {}
@@ -102,8 +112,8 @@ def index(request):
     if request.GET.get("reload"):
         page_dict = genPageDict()
     page_list = []
-    for category, category_list in page_dict.items():
-        for page in category_list.values():
+    for category, category_list2 in page_dict.items():
+        for page in category_list2.values():
             page_list.append(page)
     params = {
         "page_list" : page_list,
@@ -112,12 +122,14 @@ def index(request):
         "favicon" : favicon,
         "img": img,
         "site_name" : site_name
+        "category_list" : category_list,
     }
     return render(request,f"blog/techblog_ver2/page/index.html",params)
 
 
 def about(request):
     params = {
+        "category_"
         "title" : site_name,
         "description" : site_explain,
         "favicon" : favicon,
@@ -140,7 +152,8 @@ def page(request, category, htmlname):
         "site_name" : site_name,
         "category" : category,
         "favicon" : favicon,
-        "htmlname" : htmlname
+        "htmlname" : htmlname,
+        "category_list" : category_list,
     }
     params.update(grep_param(mk, ["title", "description", "img", "category_script"]))
     if category=="slides":
@@ -172,18 +185,11 @@ def category_page(request, category_name):
     for category in category_dict.values():
         page_list.append(category)
     
-    title_dict = {
-        "design" : "デザインまとめ",
-        "baum" : "バウムテスト活用マニュアル"
-    }
-    description_dict = {
-        "design" : "デザインまとめ",
-        "baum" : "バウムテスト活用マニュアル"
-    }
     params = {
+        "category_list" : category_list,
         "page_list" : page_list,
-        "title" : title_dict[category_name],
-        "description" : site_explain,
+        "title" : category_title_dict[category_name],
+        "description" : category_description_dict[category_name],
         "favicon" : favicon,
         "img": img,
         "site_name" : site_name,
