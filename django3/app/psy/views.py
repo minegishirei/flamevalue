@@ -65,7 +65,6 @@ def genPageDict():
                 "category" : category,
                 "htmlname" : htmlname
             })
-            0/0
             category_dict[htmlname] = params
 
         page_dict[category] = category_dict
