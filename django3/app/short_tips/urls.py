@@ -9,6 +9,7 @@ urlpatterns = [
     path("sql.html", switchPage.sql , name=""),
     path("sitemap.xml", switchPage.sitemap , name= ""),
     path("<htmlpage>" , switchPage.page , name=''),
+    
 ]
 
 

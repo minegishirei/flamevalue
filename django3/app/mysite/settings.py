@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     "question",
     "oreilly",
     "yourshogi",
-    "d3js"
+    "d3js",
+    "psy"
 ]
 
 #SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

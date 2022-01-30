@@ -21,6 +21,7 @@ host_patterns = patterns(
     host(r"oreilly", "oreilly.urls", name="oreilly"),
     host(r'yourshogi', "yourshogi.urls", name="yourshogi"),
     host(r'd3js', "d3js.urls", name="d3js"),
+    host(r'psy', "psy.urls", name="psy"),
     host(r'.*', 'short_tips.urls', name='else')
 )
 
