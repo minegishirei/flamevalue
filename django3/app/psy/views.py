@@ -40,15 +40,21 @@ def grep_param(mk, taglist):
 
 category_list = [
     "design",
-    "baum"
+    "baum",
+    "color",
+    "furniture"
 ]
 category_title_dict = {
-    "design" : "デザインまとめ",
-    "baum" : "バウムテスト活用マニュアル"
+    "design" : "デザインまとめブログ",
+    "baum" : "バウムテスト総まとめブログ",
+    "color" : "色にまつわる心理学まとめ",
+    "furniture" : "家具にまつわる心理学まとめ"
 }
 category_description_dict = {
     "design" : "デザインまとめ",
-    "baum" : "バウムテスト活用マニュアル"
+    "baum" : "バウムテストの知識と活用方法を実際の絵を元に解説します。基本的な知識から応用的な知識まで",
+    "color" : "色にまつわる心理学まとめ",
+    "furniture" : "家具にまつわる心理学まとめ"
 }
 
 def genPageDict():
