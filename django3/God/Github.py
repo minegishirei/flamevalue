@@ -4,7 +4,7 @@ from urllib.request import urlopen, quote
 import urllib
 from bs4 import BeautifulSoup
 import os
-
+import time
 
 credit_key = ""
 if credit_key=="":
@@ -19,6 +19,7 @@ def upload(repo, filename, context):
 
 def load(repo,filename):
     url = "https://raw.githubusercontent.com/kawadasatoshi/" + quote(repo) +"/master/" + quote(filename)
+    time.sleep(1)
     response = urlopen(url).read()
     output = response.decode('utf-8')
     return output
@@ -30,6 +31,7 @@ def seach_page_list(repo, folder = None):
         url = "https://github.com/kawadasatoshi/" + repo 
     else:
         url = f"https://github.com/kawadasatoshi/{repo}/tree/main/{folder}"
+    time.sleep(1)
     html = urlopen(url)
     bsObj = BeautifulSoup(html)
     file_list = []
