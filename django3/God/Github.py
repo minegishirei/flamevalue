@@ -19,7 +19,6 @@ def upload(repo, filename, context):
 
 def load(repo,filename):
     url = "https://raw.githubusercontent.com/kawadasatoshi/" + quote(repo) +"/master/" + quote(filename)
-    time.sleep(1)
     response = urlopen(url).read()
     output = response.decode('utf-8')
     return output
