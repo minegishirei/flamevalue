@@ -208,7 +208,7 @@ def category_page(request, category_name):
     }
     description_dict = {
         "inhouse_se" : site_explain,
-        "kotlin" : "kotlinの環境構築から基本的な文法をまとめました。"
+        "kotlin" : "kotlinの環境構築から基本的な文法をまとめました。",
         "python" : "python",
         "powershell": "windows10の自動化の鍵となるパワーシェルについて変数の扱いからfor文までまとめました。",
         "deeplearning" : "機械学習入門サイト",
