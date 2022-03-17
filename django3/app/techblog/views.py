@@ -192,7 +192,7 @@ def category_page(request, category_name):
         page_list.append(category)
     
     title_dict = {
-        "kotlin" : "Kotlin学習サイト"
+        "kotlin" : "Kotlin学習サイト",
         "inhouse_se" : "社内SE雑記ブログ",
         "python" : "python学習サイト",
         "powershell": "powershell学習サイト",
