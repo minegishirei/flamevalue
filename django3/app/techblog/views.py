@@ -45,9 +45,10 @@ def grep_param(mk, taglist):
 
 def genPageDict():
     category_list = [
-        "sql",
-        "powershell", 
         "python", 
+        "powershell", 
+        "kotlin",
+        "sql",
         "inhouse_se", 
         #"design", 
         #"developper", 
