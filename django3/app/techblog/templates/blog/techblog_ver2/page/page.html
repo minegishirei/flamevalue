@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="ja">
-
+    <head>
+        <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/vs2015.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
 <head>
     <meta charset="utf-8">
     <title>{{ title }}</title>
@@ -238,10 +243,12 @@ End AlertBar
     pre {
         background-color: black;
         color: white;
+        border-radius: 5px;
     }
     code {
         white-space: pre-wrap;
     }
+
 </style>
 
 
