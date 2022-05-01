@@ -209,11 +209,17 @@ def category_page(request, category_name):
     description_dict = {
         "inhouse_se" : site_explain,
         "kotlin" : "kotlinの環境構築から基本的な文法をまとめました。",
-        "python" : "python",
+        "python" : "pythonの中級者向けの備忘録サイトです。機械学習やオートメーションを解説します。",
         "powershell": "windows10の自動化の鍵となるパワーシェルについて変数の扱いからfor文までまとめました。",
         "deeplearning" : "機械学習入門サイト",
-        "else" : "社内SE雑記ブログ その他記事",
-        "career" : "キャリアメモ"
+        "else" : site_explain,
+        "career" : "キャリアに関するメモです。転職に関する内容や転職ドラフトでの記載内容についての備忘録です。",
+        "sql" : "SQLの基本的な文法やOracleのブロンズの資格試験対策、実際のコードのサンプル集など。",
+        "javascript" : "Javascriptに関するメモを備忘録として収録しております。D3.jsやBackbone.js,Reactなどについて。",
+        "html_css" : "html/CSSメモ",
+        "management" : "マネジメントメモ",
+        "vb6" : "vb6学習サイト",
+        "ctf" : "CTFチャレンジサイト"
     }
     params = {
         "page_list" : page_list,
