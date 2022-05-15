@@ -32,40 +32,32 @@
                     <div class="col-lg-8 mb-5 mb-lg-0">
                         <div class="blog_left_sidebar">
                             
-                            <article class="blog_item">
-                                <div class="blog_details">
-                                    <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
-                                    </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                    he earth it first without heaven in place seed it second morning saying.</p>
-                                    <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                    </ul>
-                                </div>
-                            </article>
 
+                            {% for question in question_list %}
                             <article class="blog_item">
                                 <div class="blog_item_img">
-                                    <img class="card-img rounded-0" src="/static/question_v2/assets/img/blog/single_blog_2.png" alt="">
-                                    <a href="#" class="blog_item_date">
-                                        <h3>15</h3>
-                                        <p>Jan</p>
+                                    <pre><code style="border-radius: 5px;">
+{{ question.code }}
+                                    </code></pre>
+                                    <a href="{{ question.question_id }}" class="blog_item_date">
+                                        <h3>GO</h3>
                                     </a>
                                 </div>
                                 <div class="blog_details">
-                                    <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                    <a class="d-inline-block" href="{{ question.question_id }}">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">
+                                        {{ question.error_message }}</h2>
                                     </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                    he earth it first without heaven in place seed it second morning saying.</p>
+                                    <p>
+                                        {{ question.supplemente }}
+                                    </p>
                                     <ul class="blog-info-link">
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
                                 </div>
                             </article>
+                            {% endfor %}
                             <article class="blog_item">
                                 <div class="blog_item_img">
                                     <img class="card-img rounded-0" src="/static/question_v2/assets/img/blog/single_blog_3.png" alt="">

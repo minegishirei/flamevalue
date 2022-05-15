@@ -10,39 +10,44 @@ import datetime
 import Github
 import UniqueAPI
 
-
+REPO_ANSWERS = "answers"
+REPO_QUESTIONS = "questions"
 global_params = {
     "site_name": "エラー解決！",
-    "site_description" : "本サイトはあなたのエラーメッセージを解決に導きます。"
+    "site_description" : "本サイトはあなたのエラーメッセージを解決に導きます。",
+    "question_list" : []
 }
+def rebuild_question_list():
+    question_id_list = Github.seach_page_list_v2(REPO_QUESTIONS)
+    page_info_list = []
+    for question_id in question_id_list:
+        page_info = Github.load(REPO_QUESTIONS, question_id)
+        page_info_list.append(json.loads(page_info))
+    global_params["question_list"] = page_info_list
+rebuild_question_list()
 
-
-# double page app
-
-# first page: QA page
-## Search Bar ( simple like google )
-## 広告
-## Main Content
-### *Error Message
-### Code
-### Supplement
-## Main Content2 (if exsists)
-### Answer Code
-### Supplement
-
-# second page: Build QA page
-### *Error Message
-### Code
-### Supplement
 
 
 def html_page(request, html_name):
+    if "reload" in request.GET:
+        rebuild_question_list()
     params = {}
     params.update({
         "title" : global_params["site_name"],
         "description" : global_params["site_description"]
     })
     return render(request, f"question_v2/{html_name}", params)
+
+
+def questions(request):
+    params = {}
+    params.update({
+        "question_list" : global_params["question_list"],
+        "title" : global_params["site_name"],
+        "description" : global_params["site_description"]
+    })
+    return render(request, f"question_v2/blog.html", params)
+
 
 
 def main(request, page_id):
@@ -75,6 +80,7 @@ def main(request, page_id):
     ## 2nd. build params from page info
     params.update({
             "title" : error_message_param["title"],
+            "description" : error_message_param["description"],
             "error_message_param" : error_message_param,
             "answer_code_param" : answer_code_param
         })
@@ -99,7 +105,7 @@ def sitemap(request):
 
 
 
-REPO_QUESTIONS = "questions"
+
 def post_questions(request):
     max_question_id = str(UniqueAPI.get_unique_id()["value"])
     error_message = ""
@@ -126,7 +132,7 @@ def get_questions(question_id):
     return json.loads(page_info)
 
 
-REPO_ANSWERS = "answers"
+
 def post_answers(request, question_id):
     answer_id = question_id + "/" +str(UniqueAPI.get_unique_id()["value"])
     title = ""

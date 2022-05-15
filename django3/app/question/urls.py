@@ -4,9 +4,8 @@ urlpatterns = [
     path("", views.index ,name="index"),
     path("site", views_v2.sitemap, name="pop_page"),
     path("<html_name>", views_v2.html_page, name="main"),
-    path("questions/", views_v2.main, name="main"),
+    path("questions/", views_v2.questions, name="main"),
     path("questions/<page_id>", views_v2.main, name="main"),
-
 
     path("post_question/", views_v2.main, name="main"),
 
