@@ -110,11 +110,15 @@ def main(request, page_id):
 def sitemap(request):
     page_list = []
     for question_id in Github.seach_page_list_v2(REPO_QUESTIONS):
-        url = f"http://question.short-tips.info/questions/{question_id}"
+        url = f"https://question.short-tips.info/questions/{question_id}"
         page_list.append(url)
     for keyword in global_params["keyword_list"]:
-        url = f"http://question.short-tips.info/questions/?search={keyword}"
+        url = f"https://question.short-tips.info/questions/?search={keyword}"
         page_list.append(url)
+    page_list.append("https://question.short-tips.info/index.html")
+    page_list.append("https://question.short-tips.info/questions/")
+    page_list.append("https://question.short-tips.info/help.html")
+    page_list.append("https://question.short-tips.info/post.html")
     dt_now = datetime.datetime.now()
     params = {}
     params.update({
