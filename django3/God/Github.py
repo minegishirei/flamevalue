@@ -49,20 +49,28 @@ def seach_page_list(repo, folder = None):
             flag = False
         if flag:
             file_list.append(text)
-        
         if text=="aaaaa"or text=="0":
             flag = True
     return file_list
 
     #<a class="js-navigation-open link-gray-dark" title="2進数.json" href="/kawadasatoshi/six_dim_wikipedia/blob/main/2%E9%80%B2%E6%95%B0.json">2進数.json</a>
 
-
-def dive_folder():
-    url = f"https://github.com/kawadasatoshi/{repo}/tree/main/{folder}"
-    
-
-
-
+def seach_page_list_v2(repo, folder = None):
+    url = "https://github.com/kawadasatoshi/" + repo 
+    if folder is None:
+        url = "https://github.com/kawadasatoshi/" + repo 
+    else:
+        url = f"https://github.com/kawadasatoshi/{repo}/tree/main/{folder}"
+    time.sleep(1)
+    html = urlopen(url)
+    bsObj = BeautifulSoup(html)
+    file_list = []
+    flag = False
+    for row in bsObj.findAll("div", attrs={"role": "rowheader"}):
+        for a_tag in row.findAll( "a",attrs={"data-pjax": "#repo-content-pjax-container"}):
+            if a_tag.has_key('title'):
+                file_list.append(a_tag.get_text())
+    return file_list
 
 def has_already_created(repo, filename):
     g = Github(credit_key)

@@ -1,0 +1,114 @@
+{% extends 'question_v2/base.html' %}
+
+{% block "main_block" %}
+{% include "question_v2/header.html" %}
+
+<main>
+
+    <!-- ask questions -->
+    <section class=" section-bg1 section-padding" style="padding: 30px">
+        <div class="container">
+        </div>
+    </section>
+    <!-- End ask questions -->
+    <!--? Testimonial Area Start -->
+    <section class="testimonial-area section-bg1">
+        <div class="container">
+            <div class="testimonial-wrapper">
+                <div class="row align-items-center justify-content-center">
+                    <div class=" col-lg-10 col-md-12 col-sm-11">
+                        <!-- Testimonial Start -->
+                        <div class="h1-testimonial-active">
+                            <!-- Single Testimonial -->
+                            <div class="single-testimonial text-center mt-55">
+                                <br>
+                                <form method="post" action="/questions/new_page">
+                                    {% csrf_token %}
+                                    <div class="testimonial-caption">
+                                        <img src="/static/question_v2/assets/img/icon/quotes-sign.png" alt=""
+                                            class="quotes-sign">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control w-100" name="error_message" id="error_message" cols="30" rows="10" onfocus="this.placeholder = ''" onblur="this.placeholder = '*Past Error Message'" placeholder=" *Past Error Message"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control w-100" name="code" id="code" cols="30" rows="10" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Code '" placeholder=" Your Code"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control w-100" name="supplement" id="supplement" cols="30" rows="3" onfocus="this.placeholder = ''" onblur="this.placeholder = 'comment '" placeholder=" Comment"></textarea>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <button type="submit" class="button button-contactForm boxed-btn" >Send</button>
+                                    </div>
+                                    <input name="create_new_page" id="create_new_page" value="True" type="hidden">
+                                    
+                                </form>
+                            </div>
+                            <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+                            <script>
+                                function submit_form(){
+                                    var url = "https://question.localhost/api/post_questions/"
+
+
+                                    // サーバへ送りたいデータ
+                                    const putParam = {
+                                        "error_message": "error_message",
+                                        "code" : "code",
+                                        "supplement" : "supplement"
+                                    }
+                                    
+
+                                    const parameter = {
+                                        method: 'POST',
+                                        headers: {
+                                            'Accept': 'application/json',
+                                            'Content-Type': 'application/json'
+                                        },
+                                        body: putParam
+                                    }
+                                    console.log(parameter)
+
+                                    fetch(url, parameter).then((response) => {
+                                        return response.json();
+                                    }).then( (json) =>{
+                                        console.log(json)
+                                    })
+                                    var data = { param1: 'abc', param2: 100 }; // POSTメソッドで送信するデータ
+
+           
+                                    /*
+                                    // FetchAPIのオプション準備
+                                    const param  = {
+                                        method: "POST",
+                                        'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
+                                        csrfmiddlewaretoken: "{{ csrf_token }}",
+                                        // リクエストボディ
+                                        POST: {
+                                            "error_message" : "this is error"
+                                        }
+                                    };
+                                    console.log(param)
+                                    // paramを付ける以外はGETと同じ
+                                    fetch(url, param)
+                                        .then((res)=>{
+                                            return( res.json() );
+                                        })
+                                        .then((json)=>{
+                                            console.log(json)
+                                            // ここに何らかの処理
+                                        });
+                                        */
+                                }
+                            </script>
+                        </div>
+                    </div>
+                    <!-- Testimonial End -->
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--? Testimonial Area End -->
+</main>
+
+{% endblock %}
