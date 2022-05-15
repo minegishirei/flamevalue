@@ -15,7 +15,8 @@ REPO_QUESTIONS = "questions"
 global_params = {
     "site_name": "エラー解決！",
     "site_description" : "本サイトはあなたのエラーメッセージを解決に導きます。",
-    "question_list" : []
+    "question_list" : [],
+    "keyword_list" : set()
 }
 def rebuild_question_list():
     question_id_list = Github.seach_page_list_v2(REPO_QUESTIONS)
@@ -41,11 +42,27 @@ def html_page(request, html_name):
 
 def questions(request):
     params = {}
-    params.update({
-        "question_list" : global_params["question_list"],
-        "title" : global_params["site_name"],
-        "description" : global_params["site_description"]
-    })
+    if ("search" in request.GET) and ( len(request.GET["search"]) >= 3):
+        search = request.GET["search"]
+        search_result_list = []
+        for question in global_params["question_list"]:
+            is_target = ( (" " + search) in str(question) ) or ( ( search + " " ) in str(question) )
+            global_params["keyword_list"].add(search)
+            if is_target:
+                search_result_list.append(question)
+        params.update({
+            "question_list" : search_result_list,
+            "title" : global_params["site_name"],
+            "description" : global_params["site_description"],
+            "keyword_list" : global_params["keyword_list"]
+        })
+    else:
+        params.update({
+            "question_list" : global_params["question_list"],
+            "title" : global_params["site_name"],
+            "description" : global_params["site_description"],
+            "keyword_list" : global_params["keyword_list"]
+        })
     return render(request, f"question_v2/blog.html", params)
 
 
@@ -82,7 +99,8 @@ def main(request, page_id):
             "title" : error_message_param["title"],
             "description" : error_message_param["description"],
             "error_message_param" : error_message_param,
-            "answer_code_param" : answer_code_param
+            "answer_code_param" : answer_code_param,
+            "keyword_list" : global_params["keyword_list"]
         })
     return render(request, f"question_v2/blog_details.html", params)
 
@@ -93,6 +111,9 @@ def sitemap(request):
     page_list = []
     for question_id in Github.seach_page_list_v2(REPO_QUESTIONS):
         url = f"http://question.short-tips.info/questions/{question_id}"
+        page_list.append(url)
+    for keyword in global_params["keyword_list"]:
+        url = f"http://question.short-tips.info/questions/?search={keyword}"
         page_list.append(url)
     dt_now = datetime.datetime.now()
     params = {}
@@ -167,3 +188,23 @@ def get_answers(question_id):
 # Beautiful Soup urlopen python
 
 
+# IncompleteRead(128834 bytes read)
+
+"""
+
+   url = "https://github.com/kawadasatoshi/" + repo 
+    if folder is None:
+        url = "https://github.com/kawadasatoshi/" + repo 
+    else:
+        url = f"https://github.com/kawadasatoshi/{repo}/tree/main/{folder}"
+    time.sleep(1)
+    html = urlopen(url)
+    bsObj = BeautifulSoup(html) …
+    file_list = []
+    flag = False
+    for row in bsObj.findAll("div", attrs={"role": "rowheader"}):
+        for a_tag in row.findAll( "a",attrs={"data-pjax": "#repo-content-pjax-container"}):
+            if a_tag.has_key('title'):
+                file_list.append(a_tag.get_text())
+
+"""
