@@ -62,7 +62,7 @@ def make_ogp(text):
     # テキストを必要に応じて折り返す
     text = insert_return(text)
     
-    im = Image.open('/app/question/console.png')
+    im = Image.open('/app/question/console2.png')
     # イメージデータを初期化
     #im2 = Image.new("RGB", (STRIP_WIDTH, STRIP_HEIGHT), "black")
     #im2.paste(im, (0, 0))
