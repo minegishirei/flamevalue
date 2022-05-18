@@ -54,8 +54,8 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 from io import BytesIO
 
-STRIP_WIDTH = 1500
-STRIP_HEIGHT = 1200
+STRIP_WIDTH = 500
+STRIP_HEIGHT = 300
 FILE_FONT = '/app/question/NotoSansJP-Light.otf'
 
 def make_ogp(text):
@@ -69,14 +69,14 @@ def make_ogp(text):
     draw = ImageDraw.Draw(im)
 
     # フォントを読み込む
-    font = ImageFont.truetype(FILE_FONT, 90)
+    font = ImageFont.truetype(FILE_FONT, 45)
     #font = ImageFont.load_default()
     # フォントの高さを計算する
     #text_width, text_height = draw.textsize(text, font)
-    text_width =350
+    text_width =0
     text_height=0
     # フォントの出力位置（画像の概ね真ん中）を計算する
-    position = ((STRIP_WIDTH - text_width) / 2, (STRIP_HEIGHT - text_height) / 2 - 50)
+    position = ((100) / 2, (STRIP_HEIGHT - text_height) / 2 - 50)
     # 元画像にテキストを合成
     draw.text(position, text, (255,255,255), font=font)
 
