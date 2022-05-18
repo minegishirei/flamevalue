@@ -12,6 +12,7 @@ urlpatterns = [
 
     path("api/get_questions/<question_id>", views_api.get_questions, name="main"),
     path("api/post_questions/", views_api.post_questions, name="main"),
+    path("api/ogp/", views_api.ogp, name="text"),
 
     path("index.html", views.sitemap ,name="pop_page"),
     path("site", views.sitemap, name="pop_page"),

@@ -12,7 +12,7 @@ COPY God /God
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 RUN pip install -r requirements.txt
-
+RUN pip3 install Pillow
 USER root
 
 
