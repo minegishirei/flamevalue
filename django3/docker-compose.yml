@@ -17,7 +17,6 @@ services:
       true
     links:
       - djangoapp
-      - knowledgeapp
   djangoapp:
     user: root
     build: .
