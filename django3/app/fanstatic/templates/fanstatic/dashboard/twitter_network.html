@@ -129,7 +129,10 @@
         var svg = d3.select("svg"),
             width = +svg.attr("width"),
             height = +svg.attr("height");
-
+        
+        //var body_element = document.getElementsByTagName("body")[0]
+        var display_width = window.parent.screen.width
+        var display_heigth = window.parent.screen.height
 
         var color = d3.scaleOrdinal()
             .range(["#f7d147", "#03a6a6", "#fe736c", "#ec5a31", "#d8345f", "#a7d129", "#f8eeb4", "#fe736c", "#616f39", "#ff6363", "#a7d129", "#d8345f", "#db2ae2"]);
@@ -197,27 +200,13 @@
                 .attr("height", R * 2)
                 .attr("width", R * 2)
                 .attr('clip-path', 'url(#clip)')
-                .attr("x", function (d) { return -R; })
+                .attr("x", function (d) { return -R ; })
                 .attr("y", function (d) { return -R; })
 
             node.on('click', function (d) {
                 change_description(d.name)
                 change_title(d.name)
             });
-
-            //図形判定
-            function nodeTypeID(d) {
-                var nodetype
-                var arrRect = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 0]
-
-                if (arrRect.indexOf(d) >= 0) {
-                    //Rect
-                    return "rect"
-                } else {
-                    //Circle
-                    return "circle"
-                }
-            }
 
             var Defs = svg.append("defs");
 
@@ -254,18 +243,17 @@
             function ticked() {
                 link
                     .attr("x1", function (d) {
-                        return d.source.x;
+                        return d.source.x + display_width/2;
                     })
                     .attr("y1", function (d) {
-                        return d.source.y;
+                        return d.source.y + display_heigth/2;
                     })
                     .attr("x2", function (d) {
-                        return d.target.x;
+                        return d.target.x + display_width/2;
                     })
                     .attr("y2", function (d) {
-                        return d.target.y;
+                        return d.target.y + display_heigth/2;
                     });
-
                 node
                     .attr("cx", function (d) {
                         return d.x;
@@ -274,7 +262,7 @@
                         return d.y;
                     })
                     .attr('transform', function (d) {
-                        return 'translate(' + d.x + ',' + d.y + ')'
+                        return 'translate(' + Number(d.x + display_width/2)  + ',' + Number(d.y + display_heigth/2) + ')'
                     }); //nodesの要素が連動して動くように設定
             }
         });
