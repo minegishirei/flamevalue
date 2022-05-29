@@ -21,7 +21,7 @@ global_params = {
 def rebuild_question_list():
     question_id_list = Github.seach_page_list_v2(REPO)
     page_info_list = []
-    for question_id in question_id_list[:1]:
+    for question_id in question_id_list:
         raw_json = Github.load(REPO, question_id)
         page_info = json.loads(raw_json)[0]
         page_info_list.append(page_info)
