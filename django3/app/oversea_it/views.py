@@ -10,7 +10,7 @@ import datetime
 import markdown
 # Create your views here.
 
-
+from .creator import selector, editor
 
 
 favicon = "/static/oversea_it/img/favicon.png"
@@ -55,7 +55,7 @@ def genPageDict():
     global page_dict
     for category in category_list:
         category_dict = {}
-        for htmlname in Github.seach_page_list(repo, category):
+        for htmlname in Github.seach_page_list(repo, category)[:3]:
             mk = Github.load(repo, category + "/" +htmlname)
             md = markdown.Markdown()
             htmltext = md.convert(mk)
@@ -68,7 +68,7 @@ def genPageDict():
             category_dict[htmlname] = params
         page_dict[category] = category_dict
     return page_dict
-page_dict = genPageDict()
+#page_dict = genPageDict()
 
 
 
@@ -84,12 +84,18 @@ def getMetaInfo():
         pop_page_info = page_dict[category][htmlname]
         pop_page_list.append(pop_page_info)
     return pop_page_list
-pop_page_list = getMetaInfo()
-
+#pop_page_list = getMetaInfo()
+pop_page_list = []
 
 def index(request):
     global page_dict
     global pop_page_list
+    if request.GET.get("selector"):
+        params = selector(request)
+        return render(request,"oversea_it/base/index.html")
+    if request.GET.get("editor"):
+        params = editor(request)
+        return render(request,"oversea_it/base/index.html", params)
     if request.GET.get("reload"):
         page_dict = genPageDict()
         pop_page_list = getMetaInfo()
