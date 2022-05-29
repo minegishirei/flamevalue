@@ -61,6 +61,8 @@ def page_list(request):
     if request.GET.get("editor"):
         params = editor(request)
         return render(request,"oversea_it/base/index_v2.html", params)
+    if request.GET.get("reload"):
+        rebuild_question_list()
     params = global_params
     return render(request, f"oversea_it/base/index_v2.html", params)
 
