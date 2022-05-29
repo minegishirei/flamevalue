@@ -9,6 +9,7 @@ import NatureLang
 import datetime
 import Github
 import UniqueAPI
+from .creator import selector, editor
 
 REPO = "oversea_v2_it"
 
@@ -57,6 +58,9 @@ def sitemap(request):
 
 
 def page_list(request):
+    if request.GET.get("editor"):
+        params = editor(request)
+        return render(request,"oversea_it/base/index_v2.html", params)
     params = global_params
     return render(request, f"oversea_it/base/index_v2.html", params)
 
