@@ -35,7 +35,7 @@ def editor(request):
     until = request.GET["until"]
     user  = request.GET["user"]
     tweet_id = request.GET["tweet_id"]
-    q = f"to:{user} until:{until} since:{since}"
+    q = f"to:{user} until:{until} since:{since} min_faves:20"
     #to:d_feldman until:2018-08-08 since:2018-08-06 
     FEATUHER = {
         'access_token' : '968269222525587456-nTufoFnhYpNIY1sLQwB9WYGiDlAIEMM',

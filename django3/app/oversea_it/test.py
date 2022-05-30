@@ -25,11 +25,22 @@ FEATUHER = {
     'consumer_secret' : 'QAY2CnNGt2onuun6QckyYniZeh753q6X4dEXw9mS3pjTecPk9Y'
 }
 
+FEATUHER = {
+    'access_token' : '968269222525587456-nTufoFnhYpNIY1sLQwB9WYGiDlAIEMM',
+    'access_secret' : 'rhoqnAXt3VHz9dnNv8DlyDUd9V1fijfw2Of091UkjVUTV',
+    'consumer_key' : 'nAllJpqiUKtnUG4aHrk2G6T9v',
+    'consumer_secret' : 'QAY2CnNGt2onuun6QckyYniZeh753q6X4dEXw9mS3pjTecPk9Y'
+}
+
 KEY = "AAAAAAAAAAAAAAAAAAAAAANLdAEAAAAA5KC6e%2F5Cp5dnphqQc03R5p3GcjE%3DBHTDd7pxR5kcedwzzTkMy74ojkaccqq3FLsuPG4KJfUeD5J0Th"
 
-myTwitterAction = Twitter.MyTwitterAction(FEATUHER)
+#user = 
 
-tweet_list = myTwitterAction.search_retweet("1026294188634042368", 100)
+#q = f"to:{user} until:{until} since:{since}"
+q = "to:xtremepentest until:2022-05-29 since:2022-05-28 min_faves:20"
+
+myTwitterAction = Twitter.MyTwitterAction(FEATUHER)
+tweet_list = myTwitterAction.search_tweet_list(q, 100)
 
 
 ## this is answer 
@@ -38,28 +49,4 @@ tweet_list = myTwitterAction.search_retweet("1026294188634042368", 100)
 json_tweets = json.dumps(tweet_list, ensure_ascii=False, indent=4)
 
 print(json_tweets)
-
-"""
-import tweepy
-
-API_Key     = SE_MAINTAIN_KEYS["consumer_key"]
-API_Sec     = SE_MAINTAIN_KEYS["consumer_secret"]
-Token       = SE_MAINTAIN_KEYS["access_token"]
-Token_Sec   = SE_MAINTAIN_KEYS["access_secret"]
-
-# Twitterオブジェクトの生成
-auth = tweepy.OAuthHandler(API_Key, API_Sec)
-auth.set_access_token(Token, Token_Sec)
-api = tweepy.API(auth)
-#日本のWOEID
-woeid = 23424856
-#トレンド一覧取得
-trends = api.get_place_trends(woeid)
-print(trends)
-
-"""
-
-
-
-
 

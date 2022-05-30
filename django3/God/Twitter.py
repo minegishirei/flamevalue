@@ -48,7 +48,23 @@ class MyTwitterAction():
         else:
             raise MyTwitterException(req)
         return search_timeline['statuses']
-    
+
+    def search_popular_tweet_list(self, q, amount):
+        params = {
+            "q" : q,
+            "result_type" : "popular",
+            'count': amount
+        }
+        url = "https://api.twitter.com/1.1/search/tweets.json"
+        req = self.twitter.get(url, params = params)
+        print(req)
+        if req.status_code == 200:
+            tweet = json.loads(req.text)
+            search_timeline = json.loads(req.text)
+        else:
+            raise MyTwitterException(req)
+        return search_timeline['statuses']
+
     def search_retweet(self, tweet_id, count):
         params = {
             "id" : tweet_id,
