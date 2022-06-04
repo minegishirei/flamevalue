@@ -78,7 +78,6 @@ def sitemap(request):
 def page_list(request):
     if request.GET.get("editor"):
         params = editor(request)
-        rebuild_question_list()
     if request.GET.get("reload"):
         rebuild_question_list()
     params = global_params.copy()

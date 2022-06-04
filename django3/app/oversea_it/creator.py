@@ -50,6 +50,7 @@ def editor(request):
     user  = request.GET["user"]
     tweet_id = request.GET["tweet_id"]
     q = f"to:{user} until:{until} since:{since} min_faves:10"
+    0/0
     #to:d_feldman until:2018-08-08 since:2018-08-06 
     FEATUHER = {
         'access_token' : '968269222525587456-nTufoFnhYpNIY1sLQwB9WYGiDlAIEMM',
@@ -67,10 +68,10 @@ def editor(request):
     tweetListParser.cutoff(50)
     tweetListParser.lang_trans()
     new_tweet_list = tweetListParser.get()
+    if len(new_tweet_list) < 2:
+        return {}
     json_info = json.dumps(new_tweet_list, ensure_ascii=False, indent=4)
     Github.upload(REPO,  tweet_id+".json", json_info)
-    if len(new_tweet_list) < 3:
-        return {}
     params = {
         "tweet_list" : tweet_list
     }
