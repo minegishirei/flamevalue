@@ -80,6 +80,7 @@ def page_list(request):
         params = editor(request)
     if request.GET.get("reload"):
         rebuild_question_list()
+        rebuild_candidate_keyword_list()
     params = global_params.copy()
     return render(request, f"oversea_it/techblog_ver2/page/index.html", params)
 
