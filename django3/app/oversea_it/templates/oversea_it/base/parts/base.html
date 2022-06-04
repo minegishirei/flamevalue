@@ -89,8 +89,8 @@
             <!--▼ボタン（PC表示時のナビボタン）-->
             <div class="navi_button_set">
                 <div class="navi_button"><a href="/index.html">HOME</a></div>
-                {% for category in category_list %}
-                <div class="navi_button"><a href="/index.html">{{ category }}</a></div>
+                {% for candidate_keyword_dict in candidate_keyword_list %}
+                <div class="navi_button"><a href="/search/{{ candidate_keyword_dict.keyword }}">{{ candidate_keyword_dict.keyword }}</a></div>
                 {% endfor %}
                 <style>
                     .navi_button {

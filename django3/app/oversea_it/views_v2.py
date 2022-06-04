@@ -12,11 +12,13 @@ import UniqueAPI
 from .creator import selector, editor
 
 REPO = "oversea_v2_it"
+REPO_META = "meta"
 
 global_params = {
     "site_name": "エラー解決！",
     "site_description" : "本サイトはあなたのエラーメッセージを解決に導きます。",
     "page_list" : [],
+    "candidate_keyword_list" : [],
     "keyword_list" : set()
 }
 def rebuild_question_list():
@@ -24,18 +26,34 @@ def rebuild_question_list():
     page_info_list = []
     for question_id in question_id_list:
         raw_json = Github.load(REPO, question_id)
-        page_info = json.loads(raw_json)[0]
-        page_info_list.append(page_info)
+        try:
+            page_info = json.loads(raw_json)[0]
+            page_info_list.append(page_info)
+        except:
+            pass
     global_params["page_list"] = page_info_list
 rebuild_question_list()
 
+
+def rebuild_candidate_keyword_list():
+    raw_json = Github.load(REPO_META, "oversea_it/candidate_keyword_list.json")
+    global_params["candidate_keyword_list"] = json.loads(raw_json)
+rebuild_candidate_keyword_list()
+
+
 def page(request, page_id):
-    params = {}
+    params = global_params.copy()
     ## 2st. find page
-    params = {
+    params.update({
         "tweet_list": get_questions(page_id + ".json")
-    }
-    return render(request, "oversea_it/base/page_v2.html", params)
+    })
+    params.update(params["tweet_list"][0])
+    return render(request, "oversea_it/techblog_ver2/page/mkpage.html", params)
+
+def search(request, keyword):
+    params = global_params.copy()
+    params.update(selector(keyword))
+    return render(request,"oversea_it/techblog_ver2/page/category.html", params)
 
 def sitemap(request):
     page_list = []
@@ -60,11 +78,12 @@ def sitemap(request):
 def page_list(request):
     if request.GET.get("editor"):
         params = editor(request)
-        return render(request,"oversea_it/base/index_v2.html", params)
+        rebuild_question_list()
     if request.GET.get("reload"):
         rebuild_question_list()
-    params = global_params
-    return render(request, f"oversea_it/base/index_v2.html", params)
+    params = global_params.copy()
+    return render(request, f"oversea_it/techblog_ver2/page/index.html", params)
+
 
 
 

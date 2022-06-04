@@ -1,6 +1,9 @@
 from django.shortcuts import render, redirect
 import json
 import sys
+from datetime import datetime
+from datetime import datetime
+import time
 
 if '/God' not in sys.path:
     sys.path.append('/God')
@@ -21,21 +24,32 @@ FEATUHER = {
 
 REPO = "oversea_v2_it"
 
-def selector(request):
-    #myTwitterAction = Twitter.MyTwitterAction(FEATUHER)
-    #tweet_list = myTwitterAction.search_tweet_list("1026294188634042368", 100)
-
+def selector(keyword):
+    q = f"lang:en min_faves:300 {keyword}"
+    myTwitterAction = Twitter.MyTwitterAction(FEATUHER)
+    tweet_list = myTwitterAction.search_tweet_list(q, 100)
+    #tweet_list = test_list
+    tweetListParser = TweetListParser(tweet_list)
+    tweetListParser.diet()
+    tweetListParser.date()
+    tweetListParser.add_column("title", "t")
+    tweetListParser.add_column("supplement", "")
+    tweetListParser.add_column("ja_text", "")
+    tweetListParser.sort("favorite_count")
+    tweetListParser.cutoff(100)
+    #tweetListParser.lang_trans()
+    new_tweet_list = tweetListParser.get()
     params = {
-        "tweet_list" : tweet_list
+        "tweet_list" : new_tweet_list
     }
-
+    return params
 
 def editor(request):
     since = request.GET["since"]
     until = request.GET["until"]
     user  = request.GET["user"]
     tweet_id = request.GET["tweet_id"]
-    q = f"to:{user} until:{until} since:{since} min_faves:20"
+    q = f"to:{user} until:{until} since:{since} min_faves:10"
     #to:d_feldman until:2018-08-08 since:2018-08-06 
     FEATUHER = {
         'access_token' : '968269222525587456-nTufoFnhYpNIY1sLQwB9WYGiDlAIEMM',
@@ -43,24 +57,20 @@ def editor(request):
         'consumer_key' : 'nAllJpqiUKtnUG4aHrk2G6T9v',
         'consumer_secret' : 'QAY2CnNGt2onuun6QckyYniZeh753q6X4dEXw9mS3pjTecPk9Y'
     }
-    print(q)
     myTwitterAction = Twitter.MyTwitterAction(FEATUHER)
     tweet_list = myTwitterAction.search_tweet_list(q, 100)
-    #tweet_list = test_list
     tweetListParser = TweetListParser(tweet_list)
     tweetListParser.diet()
-    tweetListParser.add_column("title", "")
+    tweetListParser.add_column("title", "t")
     tweetListParser.add_column("supplement", "")
     tweetListParser.sort("favorite_count")
     tweetListParser.cutoff(50)
     tweetListParser.lang_trans()
-
-    #tweetListParser.filter("id", tweet_id)
     new_tweet_list = tweetListParser.get()
     json_info = json.dumps(new_tweet_list, ensure_ascii=False, indent=4)
     Github.upload(REPO,  tweet_id+".json", json_info)
-
-    print(new_tweet_list)
+    if len(new_tweet_list) < 3:
+        return {}
     params = {
         "tweet_list" : tweet_list
     }
@@ -83,7 +93,7 @@ class TweetListParser():
         return self.trans_tweet_list
     
     def cut(self, tweet):
-        new_tags = ["id", "text", "retweet_count", "favorite_count", "in_reply_to_status_id"]
+        new_tags = ["id", "text", "retweet_count", "favorite_count", "in_reply_to_status_id", "created_at"]
         new_tweet = {}
         for tag in new_tags:
             new_tweet[tag] = tweet[tag]
@@ -132,6 +142,19 @@ class TweetListParser():
     
     def get(self):
         return self.trans_tweet_list
+    
+    def date(self):
+        new_tweet_list = []
+        for tweet in self.trans_tweet_list:
+            ts = time.strftime('%Y-%m-%d', time.strptime(tweet['created_at'],'%a %b %d %H:%M:%S +0000 %Y'))
+            tweet["date"] = ts
+            date2 = time.strftime('%d', time.strptime(tweet['created_at'],'%a %b %d %H:%M:%S +0000 %Y'))
+            date2 = '{0:02}'.format(int(date2)+1)
+            month = time.strftime('%m', time.strptime(tweet['created_at'],'%a %b %d %H:%M:%S +0000 %Y'))
+            year  = time.strftime('%Y', time.strptime(tweet['created_at'],'%a %b %d %H:%M:%S +0000 %Y'))
+            tweet["date2"] = year + "-" + month + "-" + date2
+            new_tweet_list.append(tweet)
+        self.trans_tweet_list = new_tweet_list
     
 
 class TwitterUserParser():
