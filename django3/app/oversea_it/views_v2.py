@@ -15,12 +15,13 @@ REPO = "oversea_v2_it"
 REPO_META = "meta"
 
 global_params = {
-    "site_name": "エラー解決！",
-    "site_description" : "本サイトはあなたのエラーメッセージを解決に導きます。",
+    "title": "エラー解決！",
+    "description" : "本サイトはあなたのエラーメッセージを解決に導きます。",
     "page_list" : [],
     "candidate_keyword_list" : [],
     "keyword_list" : set()
 }
+
 def rebuild_question_list():
     question_id_list = Github.seach_page_list_v2(REPO)
     page_info_list = []
