@@ -15,8 +15,8 @@ REPO = "oversea_v2_it"
 REPO_META = "meta"
 
 global_params = {
-    "title": "エラー解決！",
-    "description" : "本サイトはあなたのエラーメッセージを解決に導きます。",
+    "title": "海外エンジニア速報",
+    "description" : "海外エンジニアのニュースをいち早くお届け！",
     "page_list" : [],
     "candidate_keyword_list" : [],
     "keyword_list" : set()
@@ -79,6 +79,7 @@ def sitemap(request):
 def page_list(request):
     if request.GET.get("editor"):
         params = editor(request)
+        return redirect("/" + str(params["tweet_list"][0]["id"]))
     if request.GET.get("reload"):
         rebuild_question_list()
         rebuild_candidate_keyword_list()

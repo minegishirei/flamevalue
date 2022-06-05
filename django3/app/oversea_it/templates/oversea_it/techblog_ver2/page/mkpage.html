@@ -67,7 +67,7 @@
 				<div class="main_contents" style="max-width: 550px;">
 
 					{% for tweet in tweet_list %}
-					<div>
+					<div id="{{ tweet.title }}">
 						{% if tweet.title %}
 						<h2>
 							{{ tweet.title }}
@@ -123,7 +123,12 @@
 			<!-- End Tags -->
 
 		</div>
-		<!-- End Post -->
+
+
+		<!-- Begin Fixed Left Share -->
+		{% include 'oversea_it/techblog_ver2/parts/right_sidebar.html' %}
+		<!-- End Fixed Left Share -->
+		
 
 	</div>
 </div>
