@@ -9,7 +9,7 @@ import NatureLang
 import datetime
 import Github
 import UniqueAPI
-from .creator import selector, editor
+from .creator import selector, editor, save_edit, update_tweet_list
 
 REPO = "oversea_v2_it"
 REPO_META = "meta"
@@ -19,7 +19,8 @@ global_params = {
     "description" : "海外エンジニアのニュースをいち早くお届け！",
     "page_list" : [],
     "candidate_keyword_list" : [],
-    "keyword_list" : set()
+    "keyword_list" : set(),
+    "edit_list" : list()
 }
 
 def rebuild_question_list():
@@ -33,7 +34,7 @@ def rebuild_question_list():
         except:
             pass
     global_params["page_list"] = page_info_list
-rebuild_question_list()
+#rebuild_question_list()
 
 
 def rebuild_candidate_keyword_list():
@@ -49,6 +50,24 @@ def page(request, page_id):
         "tweet_list": get_questions(page_id + ".json")
     })
     params.update(params["tweet_list"][0])
+    if request.GET.get("edit"):
+        if request.POST.get("edit_submit"):
+            id          = request.POST.get("id")
+            title       = request.POST.get("title")
+            ja_text     = request.POST.get("ja_text")
+            supplement  = request.POST.get("supplement")
+            global_params["edit_list"].append({
+                "id"            : request.POST.get("id"),
+                "title"         : request.POST.get("title"),
+                "ja_text"       : request.POST.get("ja_text"),
+                "supplement"    : request.POST.get("supplement")
+            })
+            global_params["tweet_list"] = update_tweet_list(params["tweet_list"], global_params["edit_list"])
+            
+        if request.POST.get("save_edit"):
+            global_params["tweet_list"] = update_tweet_list(params["tweet_list"], global_params["edit_list"])
+            save_edit(page_id, global_params["tweet_list"])
+        return render(request, "oversea_it/techblog_ver2/page/editpage.html", params)
     return render(request, "oversea_it/techblog_ver2/page/mkpage.html", params)
 
 def search(request, keyword):

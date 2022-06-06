@@ -60,9 +60,10 @@ def editor(request):
     tweet_list = myTwitterAction.search_tweet_list(q, 100)
     tweetListParser = TweetListParser(tweet_list)
     tweetListParser.diet()
+    tweetListParser.date()
     tweetListParser.add_column("title", "t")
     tweetListParser.add_column("supplement", "")
-    tweetListParser.sort("favorite_count")
+    tweetListParser.sort("date")
     tweetListParser.cutoff(50)
     tweetListParser.lang_trans()
     new_tweet_list = tweetListParser.get()
@@ -79,6 +80,18 @@ def editor(request):
     }
     return params
 
+def save_edit(id, tweet_list):
+    Github.delete_page(REPO, id + ".json")
+    json_info = json.dumps(tweet_list, ensure_ascii=False, indent=4)
+    Github.upload(REPO,  id+".json", json_info)
+
+def update_tweet_list(tweet_list, edit_list):
+    tweet_list = tweet_list.copy()
+    for tweet_dict in tweet_list:
+        for edit_tweet_dict in edit_list:
+            if str(tweet_dict["id"]) == str(edit_tweet_dict["id"]):
+                tweet_dict.update(edit_tweet_dict)
+    return tweet_list
 
 class TweetListParser():
     def __init__(self, tweet_list):
