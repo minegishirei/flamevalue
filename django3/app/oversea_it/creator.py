@@ -80,10 +80,12 @@ def editor(request):
     }
     return params
 
+
 def save_edit(id, tweet_list):
     Github.delete_page(REPO, id + ".json")
     json_info = json.dumps(tweet_list, ensure_ascii=False, indent=4)
     Github.upload(REPO,  id+".json", json_info)
+
 
 def update_tweet_list(tweet_list, edit_list):
     tweet_list = tweet_list.copy()
@@ -137,6 +139,7 @@ class TweetListParser():
     
     def sort(self, tag):
         self.trans_tweet_list = sorted(self.trans_tweet_list, key=lambda x: x[tag])
+        self.trans_tweet_list.reverse()
         return self.trans_tweet_list
     
     def cutoff(self, num):

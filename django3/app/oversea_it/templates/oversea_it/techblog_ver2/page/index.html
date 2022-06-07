@@ -39,14 +39,6 @@
 		<div class="card">
 			<div class="card-block">
 				<h2 class="card-title"><a href="/{{ tweet.id }}">{{ tweet.title }}</a></h2>
-			</div>
-			<a href="/{{ tweet.id }}">
-				<blockquote class="twitter-tweet" width="100%">
-					<a href="https://twitter.com/WealthNation__/status/{{ tweet.id }}/"></a>
-				</blockquote>
-			</a>
-			<div class="card-block">
-				<h2 class="card-title"><a href="/{{ tweet.id }}">{{ tweet.title }}</a></h2>
 				<h4 class="card-text">{{ tweet.description }}</h4>
 				<div class="metafooter">
 					<div class="wrapfooter">
@@ -54,6 +46,12 @@
 					</div>
 				</div>
 			</div>
+			<a href="/{{ tweet.id }}">
+				<blockquote class="twitter-tweet" width="100%">
+					<a href="https://twitter.com/WealthNation__/status/{{ tweet.id }}/"></a>
+				</blockquote>
+			</a>
+
 		</div>
 		<!-- end post -->
 		{% endfor %}

@@ -34,7 +34,6 @@ def rebuild_question_list():
         except:
             pass
     global_params["page_list"] = page_info_list
-#rebuild_question_list()
 
 
 def rebuild_candidate_keyword_list():
@@ -63,17 +62,18 @@ def page(request, page_id):
                 "supplement"    : request.POST.get("supplement")
             })
             global_params["tweet_list"] = update_tweet_list(params["tweet_list"], global_params["edit_list"])
-            
         if request.POST.get("save_edit"):
             global_params["tweet_list"] = update_tweet_list(params["tweet_list"], global_params["edit_list"])
             save_edit(page_id, global_params["tweet_list"])
         return render(request, "oversea_it/techblog_ver2/page/editpage.html", params)
     return render(request, "oversea_it/techblog_ver2/page/mkpage.html", params)
 
+
 def search(request, keyword):
     params = global_params.copy()
     params.update(selector(keyword))
     return render(request,"oversea_it/techblog_ver2/page/category.html", params)
+
 
 def sitemap(request):
     page_list = []
