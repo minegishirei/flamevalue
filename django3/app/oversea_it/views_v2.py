@@ -98,7 +98,7 @@ def sitemap(request):
 def page_list(request):
     if request.GET.get("editor"):
         params = editor(request)
-        return redirect("/" + str(params["tweet_list"][0]["id"]))
+        return redirect("/" + str(params["tweet_list"][len(params["tweet_list"])-1]["id"]))
     if request.GET.get("reload"):
         rebuild_question_list()
         rebuild_candidate_keyword_list()
