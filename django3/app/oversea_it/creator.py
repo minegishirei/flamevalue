@@ -76,7 +76,7 @@ def editor(request):
     json_info = json.dumps(new_tweet_list, ensure_ascii=False, indent=4)
     Github.upload(REPO,  tweet_id+".json", json_info)
     params = {
-        "tweet_list" : tweet_list
+        "tweet_list" : new_tweet_list
     }
     return params
 
