@@ -45,8 +45,9 @@ def grep_param(mk, taglist):
 
 def genPageDict():
     category_list = [
-        "python", 
         "powershell", 
+        "career",
+        "python", 
         "kotlin",
         "sql",
         "inhouse_se", 
@@ -59,13 +60,12 @@ def genPageDict():
         "javascript",
         "management",
         "vb6",
-        "career",
         "ctf",
         "else"]
     page_dict = {}
-    for category in category_list:
+    for category in category_list[:1]:
         category_dict = {}
-        for htmlname in Github.seach_page_list(repo, category):
+        for htmlname in Github.seach_page_list(repo, category)[:3]:
             mk = Github.load(repo, category + "/" +htmlname)
             params =  grep_param(mk, ["title", "description", "img"])
             if "escape" in params:

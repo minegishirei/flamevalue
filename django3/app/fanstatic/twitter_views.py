@@ -1,4 +1,6 @@
 from django.shortcuts import render, redirect
+from django.views.decorators.clickjacking import xframe_options_exempt
+
 import json
 import sys
 if '/God' not in sys.path:
@@ -39,6 +41,7 @@ def index(request):
 
 
 
+@xframe_options_exempt
 def page(request, htmlname):
     if htmlname=="about.html":
         return about(request)

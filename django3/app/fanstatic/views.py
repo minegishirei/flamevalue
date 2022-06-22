@@ -1,4 +1,6 @@
 from django.shortcuts import render, redirect
+from django.views.decorators.clickjacking import xframe_options_exempt
+
 import json
 import sys
 if '/God' not in sys.path:
@@ -116,6 +118,8 @@ def all_page(request):
 
 
 # Create your views here.
+
+@xframe_options_exempt
 def page(request, htmlname, pagetype):
     explain = ""
     metadata = {}
