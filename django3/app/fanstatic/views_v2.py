@@ -35,7 +35,7 @@ def sitemap(request):
     acount_list = Github.seach_page_list(repo)
     page_list = []
     url_template_list = [
-        "https://fanstatic.short-tips.info/index.html?screen_name={}"
+        "https://fanstatic.short-tips.info/index.html?screen_name={}",
         #"http://fanstatic.short-tips.info/page/{}/dashboard.html",
         #"http://fanstatic.short-tips.info/page/{}/charts.html",
         "https://fanstatic.short-tips.info/page/{}/word_cloud.html"
