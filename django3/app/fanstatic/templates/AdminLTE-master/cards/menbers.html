@@ -1,4 +1,4 @@
-<div class="col-md-6">
+<div class="col-md-6" id="members">
     <!-- USERS LIST -->
     <div class="card">
         <div class="card-header">
@@ -16,7 +16,7 @@
         </div>
         <!-- /.card-header -->
         <div class="card-body p-0">
-            <ul class="users-list clearfix">
+            <ul class="users-list clearfix" id="list">
                 <li>
                     <img src="/static/fanstatic/admin-LTE/dist/img/user1-128x128.jpg" alt="User Image">
                     <a class="users-list-name" href="#">Alexander Pierce</a>
@@ -69,3 +69,28 @@
     </div>
     <!--/.card -->
 </div>
+
+<script>
+    class MembersView {
+        constructor(data){
+            this.data = data
+            this.el = $("#members")
+        }
+        apply(){
+            var list_el = this.el.find("#list")
+            var innerHTML = ""
+            this.data.forEach(function(row){
+                innerHTML += `
+                <li>
+                    <img src="${row.img}" alt="User Image">
+                    <a class="users-list-name" href="?screen_name=${row.title}">${row.title}</a>
+                    <span class="users-list-date">frend</span>
+                </li>
+                `
+            })
+            console.log(innerHTML)
+            console.log(list_el)
+            list_el.html(innerHTML)
+        }
+    }
+</script>
