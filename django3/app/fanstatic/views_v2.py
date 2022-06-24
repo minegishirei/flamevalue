@@ -60,15 +60,15 @@ def sitemap(request):
 
 def index(request):
     htmlname = "index2.html"
+    screen_name = request.GET.get("screen_name")
     params = {
-        "title" : "twitterアカウント分析サイト",
+        "title" : screen_name + "で検索したあなたへ",
         "description" : "あなたのtwitterアカウントのアカウントをフォロワー数や年齢層からツイートコンテンツの内容までの観点で分析します。",
         "favicon" : favicon,
         "img": img,
         "repo":repo,
         "htmlname" : htmlname,
     }
-    screen_name = request.GET.get("screen_name")
     params.update({
         "screen_name" : screen_name,
         "screen_name_raw" : screen_name.replace("@", "").replace(" ", "") ,
