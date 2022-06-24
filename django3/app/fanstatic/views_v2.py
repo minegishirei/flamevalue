@@ -38,7 +38,7 @@ def sitemap(request):
         "https://fanstatic.short-tips.info/index.html?screen_name={}"
         #"http://fanstatic.short-tips.info/page/{}/dashboard.html",
         #"http://fanstatic.short-tips.info/page/{}/charts.html",
-        "http://fanstatic.short-tips.info/page/{}/word_cloud.html"
+        "https://fanstatic.short-tips.info/page/{}/word_cloud.html"
         #"http://fanstatic.short-tips.info/page/{}/tables.html"
     ]
     for acount in acount_list:
@@ -47,13 +47,13 @@ def sitemap(request):
     
     acount_list = Github.seach_page_list("twitter_network")
     url_template_list = [
-        "http://fanstatic.short-tips.info/twitter_network/{}"
+        "https://fanstatic.short-tips.info/twitter_network/{}"
     ]
     for acount in acount_list:
         for url_base in url_template_list:
             page_list.append(url_base.format(acount))
-    page_list.append("http://fanstatic.short-tips.info/twitter_network/")
-    page_list.append("http://fanstatic.short-tips.info/twitter_network/about.html")
+    page_list.append("https://fanstatic.short-tips.info/twitter_network/")
+    page_list.append("https://fanstatic.short-tips.info/twitter_network/about.html")
     return Sitemap.sitemap(request, page_list)
     #return render(request,f"fanstatic/sitemap.xml")
 
