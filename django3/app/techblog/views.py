@@ -45,8 +45,9 @@ def grep_param(mk, taglist):
 
 def genPageDict():
     category_list = [
+        "docker",
         "powershell", 
-        "career",
+        #"career",
         "python", 
         "kotlin",
         "sql",
@@ -58,9 +59,9 @@ def genPageDict():
         #"deeplearning",
         "html_css",
         "javascript",
-        "management",
+        #"management",
         "vb6",
-        "ctf",
+        #"ctf",
         "else"]
     page_dict = {}
     for category in category_list:
@@ -192,6 +193,7 @@ def category_page(request, category_name):
         page_list.append(category)
     
     title_dict = {
+        "docker" : "Docker学習サイト",
         "kotlin" : "Kotlin学習サイト",
         "inhouse_se" : "社内SE雑記ブログ",
         "python" : "python学習サイト",
@@ -207,6 +209,7 @@ def category_page(request, category_name):
         "ctf" : "CTFチャレンジサイト"
     }
     description_dict = {
+        "docker" : "dockerの環境構築からdockerのhelloworld,dockerでサーバーを立てる方法までを解説します。",
         "inhouse_se" : site_explain,
         "kotlin" : "kotlinの環境構築から基本的な文法をまとめました。",
         "python" : "pythonの中級者向けの備忘録サイトです。機械学習やオートメーションを解説します。",
