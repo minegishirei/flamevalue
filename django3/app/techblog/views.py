@@ -47,7 +47,7 @@ def genPageDict():
     category_list = [
         "docker",
         "powershell", 
-        #"career",
+        "career",
         "python", 
         "kotlin",
         "sql",
