@@ -64,9 +64,9 @@ def genPageDict():
         #"ctf",
         "else"]
     page_dict = {}
-    for category in category_list:
+    for category in category_list[:1]:
         category_dict = {}
-        for htmlname in Github.seach_page_list(repo, category):
+        for htmlname in Github.seach_page_list(repo, category)[:3]:
             mk = Github.load(repo, category + "/" +htmlname)
             params =  grep_param(mk, ["title", "description", "img"])
             if "escape" in params:
@@ -76,7 +76,6 @@ def genPageDict():
                 "htmlname" : htmlname
             })
             category_dict[htmlname] = params
-
         page_dict[category] = category_dict
     return page_dict
 
@@ -95,7 +94,6 @@ def checkandrenew():
     return False
 
 
-
 def sitemap(request):
     pop_page_list = []
     for category_key in page_dict.keys():
@@ -105,7 +103,6 @@ def sitemap(request):
                 "category" : category_key,
                 "htmlname" : html_key
             })
-
     dt_now = datetime.datetime.now()
     now = dt_now.strftime('%Y%m%d%H')
     pop_page_list_copy = pop_page_list.copy()
