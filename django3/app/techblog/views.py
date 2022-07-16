@@ -64,9 +64,9 @@ def genPageDict():
         #"ctf",
         "else"]
     page_dict = {}
-    for category in category_list[:1]:
+    for category in category_list:
         category_dict = {}
-        for htmlname in Github.seach_page_list(repo, category)[:3]:
+        for htmlname in Github.seach_page_list(repo, category):
             mk = Github.load(repo, category + "/" +htmlname)
             params =  grep_param(mk, ["title", "description", "img"])
             if "escape" in params:
