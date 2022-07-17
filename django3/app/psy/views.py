@@ -68,7 +68,7 @@ category_title_dict = {
 category_description_dict = {
     "baum" : "バウムテスト総まとめブログ",
     "color" : "色にまつわる心理学まとめ",
-    "copywriting" : "コピーライティング実践編"
+    "copywriting" : "コピーライティング実践編",
     "design" : "デザインまとめブログ",
     "face" : "顔の心理学",
     "furniture" : "家具にまつわる心理学まとめ",
