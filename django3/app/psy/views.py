@@ -132,7 +132,7 @@ def sitemap(request):
     params = {
         "pop_page_list" : pop_page_list_copy
     }
-    return render(request,f"/blog/techblog_ver3/sitemap.xml", params)
+    return render(request,f"blog/techblog_ver3/sitemap.xml", params)
 
 
 def index(request):
