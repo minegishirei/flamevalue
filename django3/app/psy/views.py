@@ -39,22 +39,44 @@ def grep_param(mk, taglist):
 
 
 category_list = [
-    "design",
     "baum",
     "color",
-    "furniture"
+    "copywriting",
+    "design",
+    "face",
+    "furniture",
+    "material",
+    "methods_features",
+    "methods_union",
+    "phrase",
+    "soundsymbol",
+    "the_war"
 ]
 category_title_dict = {
-    "design" : "デザインまとめブログ",
     "baum" : "バウムテスト総まとめブログ",
     "color" : "色にまつわる心理学まとめ",
-    "furniture" : "家具にまつわる心理学まとめ"
+    "copywriting" : "コピーライティング実践編"
+    "design" : "デザインまとめブログ",
+    "face" : "顔の心理学",
+    "furniture" : "家具にまつわる心理学まとめ",
+    "material" : "家具にまつわる心理学まとめ",
+    "methods_union" : "人を動かす心理学",
+    "phrase" : "人を動かせる言葉",
+    "soundsymbol" :"音象徴について",
+    "the_war" : "戦争の心理学"
 }
 category_description_dict = {
-    "design" : "デザインまとめ",
-    "baum" : "バウムテストの知識と活用方法を実際の絵を元に解説します。基本的な知識から応用的な知識まで",
+    "baum" : "バウムテスト総まとめブログ",
     "color" : "色にまつわる心理学まとめ",
-    "furniture" : "家具にまつわる心理学まとめ"
+    "copywriting" : "コピーライティング実践編"
+    "design" : "デザインまとめブログ",
+    "face" : "顔の心理学",
+    "furniture" : "家具にまつわる心理学まとめ",
+    "material" : "家具にまつわる心理学まとめ",
+    "methods_union" : "人を動かす心理学",
+    "phrase" : "人を動かせる言葉",
+    "soundsymbol" :"音象徴について",
+    "the_war" : "戦争の心理学"
 }
 
 def genPageDict():
