@@ -53,7 +53,7 @@ services:
     image: koda/docker-knowledge
     environment:
       ENV: DEV
-    build: ./knowdledge
+    build: ./knowdlege
     volumes:
       - ./volumes/knowledge:/root/.knowledge
     expose:
