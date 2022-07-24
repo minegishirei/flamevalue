@@ -23,6 +23,8 @@ site_explain = "社内SEの業務内容を可能な限りリアルに記しま�
 site_name = "社内SE雑記ブログ"
 
 
+repo = "techblog"
+
 
 def robots(request):
     return render(request, f"robots.txt")
@@ -41,11 +43,26 @@ def grep_param(mk, taglist):
     return params
 
 
-def genPageDict(repo):
+def genPageDict():
     category_list = [
-        "Chair",
-        "light"
-    ]
+        "docker",
+        "powershell", 
+        "career",
+        "python", 
+        "kotlin",
+        "sql",
+        "inhouse_se", 
+        #"design", 
+        #"developper", 
+        #"os", 
+        #"programming",
+        #"deeplearning",
+        "html_css",
+        "javascript",
+        #"management",
+        "vb6",
+        #"ctf",
+        "else"]
     page_dict = {}
     for category in category_list:
         category_dict = {}
@@ -63,18 +80,24 @@ def genPageDict(repo):
     return page_dict
 
 clock = 0
-repo_page_dict = {
-    "furniture" :[]
-}
-for key, value in repo_page_dict.items():
-    repo_page_dict[key] = genPageDict(key)
+page_dict = genPageDict()
+
+def checkandrenew():
+    global clock
+    global page_dict
+    dt_now = datetime.datetime.now()
+    now = dt_now.strftime('%Y%m%d%H')
+    if clock != now:
+        clock = now
+        page_dict = genPageDict()
+        return True
+    return False
 
 
 def sitemap(request):
-    repo = request.get_host().split(".")[0]
     pop_page_list = []
-    for category_key in repo_page_dict[repo].keys():
-        category_dict = repo_page_dict[repo][category_key]
+    for category_key in page_dict.keys():
+        category_dict = page_dict[category_key]
         for html_key in category_dict.keys():
             pop_page_list.append({
                 "category" : category_key,
@@ -88,14 +111,15 @@ def sitemap(request):
     params = {
         "pop_page_list" : pop_page_list_copy
     }
-    return render(request,f"sitemap.xml", params)
-
+    return render(request,f"blog/techblog/page/sitemap.xml", params)
 
 
 def index(request):
-    repo = request.get_host().split(".")[0]
+    global page_dict
+    if request.GET.get("reload"):
+        page_dict = genPageDict()
     page_list = []
-    for category, category_list in repo_page_dict[repo].items():
+    for category, category_list in page_dict.items():
         for page in category_list.values():
             page_list.append(page)
     params = {
@@ -104,10 +128,9 @@ def index(request):
         "description" : site_explain,
         "favicon" : favicon,
         "img": img,
-        "site_name" : site_name,
-        "category_list" : repo_page_dict[repo]
+        "site_name" : site_name
     }
-    return render(request,f"blog_ver2/techblog_ver2/page/index.html",params)
+    return render(request,f"blog/techblog_ver2/page/index.html",params)
 
 
 def about(request):
@@ -118,12 +141,11 @@ def about(request):
         "img": img,
         "site_name" : site_name
     }
-    return render(request,f"blog_ver2/techblog_ver2/page/about.html",params)
+    return render(request,f"blog/techblog/page/about.html",params)
 
 
-
+# Create your views here.
 def page(request, category, htmlname):
-    repo = request.get_host().split(".")[0]
     mk = Github.load(repo, category + "/" +htmlname)
     tableIndex = TableIndex(mk)
     mk = tableIndex.rebuild_mk()
@@ -135,40 +157,69 @@ def page(request, category, htmlname):
         "site_name" : site_name,
         "category" : category,
         "favicon" : favicon,
-        "htmlname" : htmlname,
-        "category_list" : repo_page_dict[repo]
+        "htmlname" : htmlname
     }
     params.update(grep_param(mk, ["title", "description", "img", "category_script"]))
     if category=="slides":
         return render(request, "blog/non_base.html",params)
+    
     relation_list = []
     if "category_script" in params:
         category_script = params["category_script"]
-        category_dict = repo_page_dict[repo][category]
+        category_dict = page_dict[category]
         for page_name, category_dict in category_dict.items():
             if eval(category_script):
                 relation_list.append(category_dict)
+    
     params.update({
-        "relation_list" : relation_list,
         "index_table" : tableIndex.index_table
+    })
+
+    params.update({
+        "relation_list" : relation_list
     })
     if request.GET.get("raw"):
         return render(request,f"blog/raw.html", params)
-    return render(request,f"blog_ver2/techblog_ver2/page/page.html", params)
+    return render(request,f"blog/techblog_ver2/page/page.html", params)
 
 
 def category_page(request, category_name):
     page_list=[]
-    category_dict = repo_page_dict[repo][category_name]
+    category_dict = page_dict[category_name]
     for category in category_dict.values():
         page_list.append(category)
+    
     title_dict = {
-        "chair" : "椅子",
-        "light" : "証明"
+        "docker" : "Docker学習サイト",
+        "kotlin" : "Kotlin学習サイト",
+        "inhouse_se" : "社内SE雑記ブログ",
+        "python" : "python学習サイト",
+        "powershell": "powershell学習サイト",
+        "deeplearning" : "機械学習入門サイト",
+        "else" : "社内SE雑記ブログ その他記事",
+        "sql" : "SQL学習サイト",
+        "career" : "キャリアメモ",
+        "javascript" : "Javascriptメモ",
+        "html_css" : "html/CSSメモ",
+        "management" : "マネジメントメモ",
+        "vb6" : "vb6学習サイト",
+        "ctf" : "CTFチャレンジサイト"
     }
     description_dict = {
-        "chair" : "椅子",
-        "light" : "証明"
+        "docker" : "dockerの環境構築からdockerのhelloworld,dockerでサーバーを立てる方法までを解説します。",
+        "inhouse_se" : site_explain,
+        "kotlin" : "kotlinの環境構築から基本的な文法をまとめました。",
+        "python" : "pythonの中級者向けの備忘録サイトです。機械学習やオートメーションを解説します。",
+        "powershell": "windows10の自動化の鍵となるパワーシェルについて変数の扱いからfor文までまとめました。",
+        "deeplearning" : "機械学習入門サイト",
+        "else" : site_explain,
+        "career" : "キャリアに関するメモです。転職に関する内容や転職ドラフトでの記載内容についての備忘録です。",
+        "sql" : "SQLの基本的な文法やOracleのブロンズの資格試験対策、実際のコードのサンプル集など。",
+        "javascript" : "Javascriptに関するメモを備忘録として収録しております。D3.jsやBackbone.js,Reactなどについて。",
+        "html_css" : "html/CSSメモ",
+        "management" : "マネジメントメモ",
+        "vb6" : "vb6学習サイト",
+        "ctf" : "CTFチャレンジサイト"
     }
     params = {
         "page_list" : page_list,
@@ -177,10 +228,10 @@ def category_page(request, category_name):
         "favicon" : favicon,
         "img": img,
         "site_name" : site_name,
-        "category" : category_name,
-        "category_list" : repo_page_dict[repo]
+        "category" : category_name
     }
-    return render(request,f"blog_ver2/techblog_ver2/page/category.html", params)
+    
+    return render(request,f"blog/techblog_ver2/page/category.html", params)
 
 
 

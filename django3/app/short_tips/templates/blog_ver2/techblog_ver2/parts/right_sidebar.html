@@ -1,0 +1,58 @@
+<!-- End Post -->
+
+<style>
+	.right_sidebar{
+		height: 100%;
+		overflow-y: scroll;
+	}
+</style>
+<div class="col-md-2 col-xs-12 max_width">
+	<div class="share right_sidebar" style="text-align: left;" >
+		<div height="">
+
+		</div>
+		<div class="col-md-11">
+			<h4>
+				Index
+			</h4>
+			<hr>
+
+			{% for key, value in index_table.items %}
+			<li>
+				<a href="#{{ key }}">
+					{{ value }}
+				</a>
+			</li>
+			{% endfor %}
+			<div height="">
+				<br>
+			</div>
+		</div>
+
+		<h4>
+			Relation
+		</h4>
+		<hr>
+
+
+		{% for page_dict in relation_list %}
+		<!-- begin post -->
+		<div class="col-md-11">
+			<div class="card">
+				<a href="/{{ page_dict.category }}/{{ page_dict.htmlname }}">
+				<img class="img-fluid img-thumb" src="{{ page_dict.img }}" alt="">
+				</a>
+				<div class="card-block">
+					<p class="card-title"><a href="/{{ page_dict.category }}/{{ page_dict.htmlname }}">
+					{{ page_dict.title }}</a></p>
+
+				</div>
+			</div>
+		</div>
+		<!-- end post -->
+		{% endfor %}
+
+
+	</div>
+
+</div>
