@@ -86,7 +86,8 @@ def sitemap(request):
     for page in pop_page_list_copy:
         page["lastmod"] = f"{dt_now.strftime('%Y')}-{dt_now.strftime('%m')}-{dt_now.strftime('%d')}T00:00:00+00:00" #"2021-07-30T13:25:37+00:00"
     params = {
-        "pop_page_list" : pop_page_list_copy
+        "pop_page_list" : pop_page_list_copy,
+        "host_name" : repo
     }
     return render(request,f"sitemap.xml", params)
 
