@@ -7,8 +7,8 @@ urlpatterns = [
     path("robots.txt", views.robots, name="robots"),
     path("sample.html", views_v2.sample, name="html_sample"),
     path("html_sample/<htmlname>", views.html_sample, name="html_sample"),
-    path("page/<htmlname>", views.page , name="page"),
-    path("page_v2/<htmlname>", views_v2.page , name="page")
+    path("page/<htmlname>", views_v2.page , name="page")
+    #path("page_v2/<htmlname>", views_v2.page , name="page")
 ]
 
 
