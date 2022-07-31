@@ -152,6 +152,8 @@ page_dict = genPageDict(repo)
 
 # Create your views here.
 def index(request):
+    if request.GET.get("reload"):
+        page_dict = genPageDict(repo)
     params = {
         "title" : "反省書自動作成システム",
         "description" : "面倒な反省文をあなたの代わりに作ります。遅刻した時、寝坊した時、居眠りしてしまった時に、どうぞ。",
@@ -172,7 +174,7 @@ def sample(request):
         "description" : "面倒な反省文をあなたの代わりに作ります。遅刻した時、寝坊した時、居眠りしてしまった時に、どうぞ。",
         "favicon" : "/static/チャット.png",
         "img": "http://apologagent.short-tips.info/static/thumbnail.png",
-        "page_dict" : page_dict["gekioko.html"]
+        "page_dict" : page_dict
     }
     return render(request, "apologagent/sample.html",params)
 
@@ -185,7 +187,6 @@ def page(request, htmlname):
         del request.session["transition"]
     controlSessionTransition = ControlSessionTransition(request, htmlname)
     controlSessionTransition.setTransition()
-
     params = {}
     params.update({
         "transition": controlSessionTransition.getTransition(),

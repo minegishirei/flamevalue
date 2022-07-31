@@ -42,20 +42,23 @@
         </ul>
 
         <ul class="flexblock steps">
-            {% for key, value in page_dict.items %}
-            <li>
-                <a href="./page/oko.html">
-                    <span>
-                        <svg class="fa-heartbeat">
-                            <use xlink:href="#fa-heartbeat"></use>
-                        </svg>
-                    </span>
-                    <h2>{{ value.title }}</h2>
-                    <p>
-                        {{ value.sentense }}
-                    </p>
-                </a>
-            </li>
+
+            {% for key, groupname in page_dict.items %}
+                {% for key, value in groupname.items %}
+                <li>
+                    <a href="./page/oko.html">
+                        <span>
+                            <svg class="fa-heartbeat">
+                                <use xlink:href="#fa-heartbeat"></use>
+                            </svg>
+                        </span>
+                        <h2>{{ value.title }}</h2>
+                        <p>
+                            {{ value.sentense }}
+                        </p>
+                    </a>
+                </li>
+                {% endfor %}
             {% endfor %}
         </ul>
     </div>
