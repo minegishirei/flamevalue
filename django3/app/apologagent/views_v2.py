@@ -62,7 +62,7 @@ pageInfoDict = {
     "gekioko.html" :{
         "params" :  {
             "title" : "始末書自動作成システム",
-            "description" : "面倒な反省文をあなたの代わりに作ります。遅刻した時、寝坊した時、居眠りしてしまった時に、どうぞ。",
+            "description" : "真面目に始末書を書かなければならないとき、面倒な始末書をあなたの代わりに作ります。遅刻した時、寝坊した時、居眠りしてしまった時に、どうぞ。",
             "favicon" : "/static/チャット.png",
             "img": "http://apologagent.short-tips.info/static/thumbnail.png",
             "sample" : """この度は（一時間以上も遅刻）してしまい、大変申し訳ございませんでした。
