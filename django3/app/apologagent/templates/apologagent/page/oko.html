@@ -10,28 +10,7 @@
 
 
 <body>
-    <header role="banner">
-        <nav role="navigation">
-            <p class="logo"><a href="https://webslides.tv/" title="WebSlides">WebSlides</a></p>
-            <ul>
-                <li class="github">
-                    <a rel="external" href="https://github.com/webslides/webslides" title="Github">
-                        <svg class="fa-github">
-                            <use xlink:href="#fa-github"></use>
-                        </svg>
-                        <em>WebSlides</em>
-                    </a>
-                </li>
-                <li class="twitter">
-                    <form method="POST" action="">
-                        {% csrf_token %}
-                        <input type="submit" name="deleteAll" value="clear">
-                    </form>
-                </li>
-                <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
-            </ul>
-        </nav>
-    </header>
+    {% include 'apologagent/header.html' %} 
     <main role="main">
         <article id="webslides">
             <section>
@@ -40,12 +19,9 @@
                         <p>サンプル反省書🙇‍♂️</p>
                         <small>()以外のパーツも取り換え可能です。</small>
                         <pre>
-この度は（一時間以上も遅刻）してしまい、大変申し訳ございませんでした。
-皆様に多大なご迷惑をおかけしたことを申し上げます。
-直接の原因は（アラームを設定し忘れた）ことが原因です。
-今後はこのようなことが２度と起きぬよう 、再発防止に努めます。
+{{ sample }}
             </pre>
-            <br>
+                        <br>
                         <p>
                             <a href="#slide=2">謝罪文を作る</a>
                         </p>
@@ -54,23 +30,28 @@
             </section>
 
 
-            {% for item in pageContentList %}
+            {% for item in transition %}
             <section>
                 <div class="wrap">
                     <div class="content-center">
                         <h3>
-                            Q{{ item.process }}<small>/3</small>
+                            Q{{ item.process }}<small>/{{ volume }}</small>
                         </h3>
                         <p>{{ item.title }}</p>
                         <small>{{ item.supp }}</small>
-                        <pre>{{ item.preface }}<form method="POST" action="{{ item.next }}">{% csrf_token %}<input name="{{ item.name }}-u" type="text" placeholder="{{ item.example }}" value="{{ item.value }}" ></input></form>{{ item.afterword }}</pre>
-                        <br>
-                        <!--
+
                         <form method="POST" action="{{ item.next }}">
                             {% csrf_token %}
-                            <input type="submit" name="{{ item.name }}-d" value="clear">
+                            {{ item.preface }}
+                            <pre><input name="value" type="text" placeholder="{{ item.example }}" value="{{ item.value }}" ></input></pre>
+                            <br>
+                            {{ item.afterword }}
+                            <br>
+                            <br>
+                            <input type="hidden" name="process" value="{{ item.process }}">
+                            <input type="submit" name="{{ item.name }}" style="margin-left: 40%; width: 20%;" value="次へ">
                         </form>
-                    -->
+                        <br>
                     </div>
                     <!-- end .content-left -->
                 </div>
@@ -87,8 +68,8 @@
                         <small></small>
                         <pre>{{ sentense }}
             </pre>
-            <br>
-            健闘を祈ります👍
+                        <br>
+                        健闘を祈ります👍
                     </div>
                 </div>
             </section>

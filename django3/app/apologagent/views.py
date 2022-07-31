@@ -12,12 +12,13 @@ def index(request):
     }
     return render(request,"apologagent/index.html",params)
 
-
 def sitemap(request):
     return render(request,"apologagent/sitemap.xml")
 
 def robots(request):
     return render(request, "apologagent/robots.txt")
+
+
 
 class ActionFactory():
     def __init__(self):
@@ -122,7 +123,6 @@ pageInfoDict = {
             }
         ]
     }
-
 }
 
 
@@ -168,6 +168,8 @@ def page(request, htmlname):
 
 
 
+def html_sample(request, htmlname):
+    return render(request, f"apologagent/sample/{htmlname}")
 
 
 
