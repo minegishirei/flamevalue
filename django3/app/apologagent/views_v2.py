@@ -161,7 +161,7 @@ def index(request):
         "favicon" : "/static/チャット.png",
         "img": "http://apologagent.short-tips.info/static/thumbnail.png"
     }
-    return render(request," /index.html",params)
+    return render(request,"apologagent/index.html",params)
 
 def sitemap(request):
     return render(request,"apologagent/sitemap.xml")
