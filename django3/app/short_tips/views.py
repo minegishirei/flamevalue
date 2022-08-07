@@ -42,10 +42,7 @@ def grep_param(mk, taglist):
 
 
 def genPageDict(repo):
-    category_list = [
-        "Chair",
-        "light"
-    ]
+    category_list = Github.seach_page_list(repo, "/")
     page_dict = {}
     for category in category_list:
         category_dict = {}
@@ -63,9 +60,10 @@ def genPageDict(repo):
     return page_dict
 
 clock = 0
-repo_page_dict = {
-    "furniture" :[]
-}
+
+
+repo_page_dict = json.loads( Github.load("meta", "/blogs/hosts.json") )
+
 for key, value in repo_page_dict.items():
     repo_page_dict[key] = genPageDict(key)
 
@@ -95,6 +93,9 @@ def sitemap(request):
 
 def index(request):
     repo = request.get_host().split(".")[0]
+    if request.GET.get("reload"):
+        for key, value in repo_page_dict.items():
+            repo_page_dict[key] = genPageDict(key)
     page_list = []
     for category, category_list in repo_page_dict[repo].items():
         for page in category_list.values():
@@ -159,22 +160,15 @@ def page(request, category, htmlname):
 
 
 def category_page(request, category_name):
+    repo = request.get_host().split(".")[0]
     page_list=[]
     category_dict = repo_page_dict[repo][category_name]
     for category in category_dict.values():
         page_list.append(category)
-    title_dict = {
-        "chair" : "椅子",
-        "light" : "証明"
-    }
-    description_dict = {
-        "chair" : "椅子",
-        "light" : "証明"
-    }
     params = {
         "page_list" : page_list,
-        "title" : title_dict[category_name],
-        "description" : site_explain,
+        "title" : repo,
+        "description" : "",
         "favicon" : favicon,
         "img": img,
         "site_name" : site_name,

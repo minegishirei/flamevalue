@@ -1,18 +1,12 @@
-INFO  2022-08-03 10:25:34,873 AbstractBat(31) MailReadBat is start.
-INFO  2022-08-03 10:25:35,897 MailhookLogic(168) Mail hook config is undefined.
-INFO  2022-08-03 10:25:35,905 AbstractBat(43) Finished
-INFO  2022-08-03 10:25:48,270 AbstractBat(31) MailReadBat is start.
-INFO  2022-08-03 10:25:49,165 MailhookLogic(168) Mail hook config is undefined.
-INFO  2022-08-03 10:25:49,170 AbstractBat(43) Finished
-INFO  2022-08-03 11:17:28,326 AbstractBat(31) MailReadBat is start.
-INFO  2022-08-03 11:17:29,352 MailhookLogic(168) Mail hook config is undefined.
-INFO  2022-08-03 11:17:29,358 AbstractBat(43) Finished
-INFO  2022-08-03 11:17:45,536 AbstractBat(31) MailReadBat is start.
-INFO  2022-08-03 11:17:46,590 MailhookLogic(168) Mail hook config is undefined.
-INFO  2022-08-03 11:17:46,596 AbstractBat(43) Finished
-INFO  2022-08-03 11:17:59,250 AbstractBat(31) MailReadBat is start.
-INFO  2022-08-03 11:18:00,207 MailhookLogic(168) Mail hook config is undefined.
-INFO  2022-08-03 11:18:00,212 AbstractBat(43) Finished
-INFO  2022-08-03 11:18:16,486 AbstractBat(31) MailReadBat is start.
-INFO  2022-08-03 11:18:17,405 MailhookLogic(168) Mail hook config is undefined.
-INFO  2022-08-03 11:18:17,409 AbstractBat(43) Finished
+INFO  2022-08-07 11:34:11,450 AbstractBat(31) MailReadBat is start.
+INFO  2022-08-07 11:34:12,384 MailhookLogic(168) Mail hook config is undefined.
+INFO  2022-08-07 11:34:12,389 AbstractBat(43) Finished
+INFO  2022-08-07 22:31:33,509 AbstractBat(31) MailReadBat is start.
+INFO  2022-08-07 22:31:34,435 MailhookLogic(168) Mail hook config is undefined.
+INFO  2022-08-07 22:31:34,440 AbstractBat(43) Finished
+INFO  2022-08-07 22:31:49,957 AbstractBat(31) MailReadBat is start.
+INFO  2022-08-07 22:31:50,857 MailhookLogic(168) Mail hook config is undefined.
+INFO  2022-08-07 22:31:50,861 AbstractBat(43) Finished
+INFO  2022-08-07 22:32:03,055 AbstractBat(31) MailReadBat is start.
+INFO  2022-08-07 22:32:03,951 MailhookLogic(168) Mail hook config is undefined.
+INFO  2022-08-07 22:32:03,956 AbstractBat(43) Finished
