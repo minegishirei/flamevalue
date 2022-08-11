@@ -237,7 +237,7 @@ End AlertBar
 </html>
 
 
-
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 <script>
 	$(window).bind('keydown', function (e) {
@@ -247,8 +247,6 @@ End AlertBar
 					e.preventDefault();
 					const edit_text = $("#edit_text").val()
 					commit(edit_text)
-					const edit_text = $("#edit_text").val()
-					$("#markdown_check").text(edit_text)
 					break;
 			}
 		}
