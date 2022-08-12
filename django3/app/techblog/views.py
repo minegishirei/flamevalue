@@ -45,6 +45,7 @@ def grep_param(mk, taglist):
 
 def genPageDict():
     category_list = [
+        "javascript",
         "docker",
         "powershell", 
         "career",
@@ -58,15 +59,15 @@ def genPageDict():
         #"programming",
         #"deeplearning",
         "html_css",
-        "javascript",
+        
         #"management",
         "vb6",
         #"ctf",
         "else"]
     page_dict = {}
-    for category in category_list:
+    for category in category_list[1:]:
         category_dict = {}
-        for htmlname in Github.seach_page_list(repo, category):
+        for htmlname in Github.seach_page_list(repo, category)[:1]:
             mk = Github.load(repo, category + "/" +htmlname)
             params =  grep_param(mk, ["title", "description", "img"])
             if "escape" in params:
@@ -143,17 +144,29 @@ def about(request):
     }
     return render(request,f"blog/techblog/page/about.html",params)
 
+extensions = [
+    'admonition',
+    'codehilite',
+    'legacy_attrs',
+    'legacy_em',
+    'nl2br',
+    'sane_lists',
+    'toc',
+    'wikilinks',
+    'meta',
+    'smarty',        
+]
 
 # Create your views here.
 def page(request, category, htmlname):
     mk = Github.load(repo, category + "/" +htmlname)
     tableIndex = TableIndex(mk)
     mk = tableIndex.rebuild_mk()
-    md = markdown.Markdown()
+    md = markdown.Markdown(extensions = extensions)
     htmltext = md.convert(mk)
     params = {
         "mk" : mk,
-        "htmltext" : htmltext,
+        #"htmltext" : htmltext,
         "site_name" : site_name,
         "category" : category,
         "favicon" : favicon,
@@ -255,9 +268,9 @@ class TableIndex():
                 h2_count += 1
                 self.index_table[h2_count] = row.replace("##", "")
                 new_mk += (f'<div id="{h2_count}">' + "\n")
-                new_mk += ("</div>\n")
+                new_mk += ("</div>\n\n")
                 new_mk += (row + "\n")
-                new_mk += "<hr>\n"
+                new_mk += "\n<hr>\n"
             else:
                 new_mk += (row + "\n")
         return new_mk
