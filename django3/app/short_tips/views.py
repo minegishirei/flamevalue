@@ -92,6 +92,7 @@ def sitemap(request):
 
 
 def index(request):
+    global repo_page_dict
     repo = request.get_host().split(".")[0]
     if request.GET.get("reload"):
         repo_page_dict = json.loads( Github.load("meta", "/blogs/hosts.json") )
