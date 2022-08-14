@@ -1,15 +1,18 @@
-INFO  2022-08-11 11:51:46,940 AbstractBat(31) FileParseBat is start.
-INFO  2022-08-11 11:51:48,054 FileParseBat(186) file target count: 0
-INFO  2022-08-11 11:51:48,124 AbstractBat(43) Finished
-INFO  2022-08-11 11:52:11,646 AbstractBat(31) FileParseBat is start.
-INFO  2022-08-11 11:52:12,842 FileParseBat(186) file target count: 0
-INFO  2022-08-11 11:52:12,912 AbstractBat(43) Finished
-INFO  2022-08-11 11:52:40,831 AbstractBat(31) FileParseBat is start.
-INFO  2022-08-11 11:52:41,950 FileParseBat(186) file target count: 0
-INFO  2022-08-11 11:52:42,016 AbstractBat(43) Finished
-INFO  2022-08-11 22:50:59,227 AbstractBat(31) FileParseBat is start.
-INFO  2022-08-11 22:51:00,291 FileParseBat(186) file target count: 0
-INFO  2022-08-11 22:51:00,356 AbstractBat(43) Finished
-INFO  2022-08-11 22:51:23,035 AbstractBat(31) FileParseBat is start.
-INFO  2022-08-11 22:51:24,072 FileParseBat(186) file target count: 0
-INFO  2022-08-11 22:51:24,130 AbstractBat(43) Finished
+INFO  2022-08-14 01:27:06,459 AbstractBat(31) FileParseBat is start.
+INFO  2022-08-14 01:27:07,486 FileParseBat(186) file target count: 0
+INFO  2022-08-14 01:27:07,573 AbstractBat(43) Finished
+INFO  2022-08-14 03:26:35,865 AbstractBat(31) FileParseBat is start.
+INFO  2022-08-14 03:26:37,080 FileParseBat(186) file target count: 0
+INFO  2022-08-14 03:26:37,143 AbstractBat(43) Finished
+INFO  2022-08-14 08:38:27,596 AbstractBat(31) FileParseBat is start.
+INFO  2022-08-14 08:38:28,618 FileParseBat(186) file target count: 0
+INFO  2022-08-14 08:38:28,673 AbstractBat(43) Finished
+INFO  2022-08-14 09:47:24,460 AbstractBat(31) FileParseBat is start.
+INFO  2022-08-14 09:47:25,568 FileParseBat(186) file target count: 0
+INFO  2022-08-14 09:47:25,643 AbstractBat(43) Finished
+INFO  2022-08-14 09:47:47,880 AbstractBat(31) FileParseBat is start.
+INFO  2022-08-14 09:47:48,959 FileParseBat(186) file target count: 0
+INFO  2022-08-14 09:47:49,026 AbstractBat(43) Finished
+INFO  2022-08-14 09:48:14,282 AbstractBat(31) FileParseBat is start.
+INFO  2022-08-14 09:48:15,272 FileParseBat(186) file target count: 0
+INFO  2022-08-14 09:48:15,329 AbstractBat(43) Finished

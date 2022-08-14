@@ -94,6 +94,7 @@ def sitemap(request):
 def index(request):
     repo = request.get_host().split(".")[0]
     if request.GET.get("reload"):
+        repo_page_dict = json.loads( Github.load("meta", "/blogs/hosts.json") )
         for key, value in repo_page_dict.items():
             repo_page_dict[key] = genPageDict(key)
     page_list = []
