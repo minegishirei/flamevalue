@@ -48,7 +48,7 @@ def genPageDict():
         "javascript",
         "docker",
         "powershell", 
-        "career",
+        #"career",
         "python", 
         "kotlin",
         "sql",
