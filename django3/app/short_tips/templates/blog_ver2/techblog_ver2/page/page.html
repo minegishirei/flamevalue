@@ -13,9 +13,16 @@
     <meta name="description" content="{{ description }}">
     <meta name="author" content="kawadasatoshi">
     <link rel="icon" href="assets/img/favicon.ico">
-    <!-- Bootstrap core CSS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!--
     <link href="/static/techblog_ver2/assets/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Fonts -->
+    -->
+
+    <link rel="preload" href="/static/techblog_ver2/assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/static/techblog_ver2/assets/css/bootstrap.min.css"></noscript>
+
     <!-- Custom styles for this template -->
     <link href="/static/techblog_ver2/assets/css/mediumish.css" rel="stylesheet">
     {% include "parts/seo.html" %}
