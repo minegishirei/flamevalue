@@ -214,7 +214,7 @@ class TableIndex():
                 new_mk += (f'<div id="{h2_count}">' + "\n")
                 new_mk += ("</div>\n")
                 new_mk += (row + "\n")
-                new_mk += "<hr>\n"
+                new_mk += "\n<hr>\n"
             else:
                 new_mk += (row + "\n")
         return new_mk
