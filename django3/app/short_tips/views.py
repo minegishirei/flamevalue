@@ -124,7 +124,18 @@ def about(request):
     }
     return render(request,f"blog_ver2/techblog_ver2/page/about.html",params)
 
-
+extensions = [
+    'admonition',
+    'codehilite',
+    'legacy_attrs',
+    'legacy_em',
+    'nl2br',
+    'sane_lists',
+    'toc',
+    'wikilinks',
+    'meta',
+    'smarty',        
+]
 
 def page(request, category, htmlname):
     repo = request.get_host().split(".")[0]
