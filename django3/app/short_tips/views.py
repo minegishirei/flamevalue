@@ -212,7 +212,7 @@ class TableIndex():
                 h2_count += 1
                 self.index_table[h2_count] = row.replace("##", "")
                 new_mk += (f'<div id="{h2_count}">' + "\n")
-                new_mk += ("</div>\n")
+                new_mk += ("</div>\n\n")
                 new_mk += (row + "\n")
                 new_mk += "\n<hr>\n"
             else:
