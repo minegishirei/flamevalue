@@ -131,11 +131,11 @@ def page(request, category, htmlname):
     mk = Github.load(repo, category + "/" +htmlname)
     tableIndex = TableIndex(mk)
     mk = tableIndex.rebuild_mk()
-    md = markdown.Markdown()
+    md = markdown.Markdown(extensions = extensions)
     htmltext = md.convert(mk)
     params = {
         "mk" : mk,
-        "htmltext" : htmltext,
+        #"htmltext" : htmltext,
         "site_name" : site_name,
         "category" : category,
         "favicon" : favicon,
