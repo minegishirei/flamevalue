@@ -2979,6 +2979,7 @@ function init_echarts() {
 
     //echart Line
 
+    /*
     if ($('#echart_line').length) {
 
         var echartLine = echarts.init(document.getElementById('echart_line'), theme);
@@ -3069,6 +3070,7 @@ function init_echarts() {
 
     }
 
+    */
     //echart Scatter
 
     if ($('#echart_scatter').length) {
