@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #'sslserver',
+    "jobstatic",
     'django_extensions',
     "short_tips",
     'django_hosts',    # ←追加する
@@ -51,7 +52,7 @@ INSTALLED_APPS = [
     "oreilly",
     "yourshogi",
     "d3js",
-    "psy"
+    "psy",
 ]
 
 #SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

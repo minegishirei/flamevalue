@@ -1,0 +1,33 @@
+{% extends "jobstatic_parts/template.html" %}
+
+
+{% block content %}
+<!-- page content -->
+<div role="main" style="background-color: #f8f9fa; padding-left: 10%; padding-right: 10%;">
+  <!-- top tiles -->
+  <div class="row" style="display: inline-block;">
+    {% include 'jobstatic_parts/top_num.html' %}
+  </div>
+  <!-- /top tiles -->
+
+  <div class="row">
+    {% include 'jobstatic_parts/scores.html' %}
+    {% include 'jobstatic_parts/comments.html' %}
+  </div>
+  <br />
+
+  <div class="row">
+    {% include "jobstatic_parts/line_graph.html" %}
+    {% include "jobstatic_parts/companys.html" %}
+  </div>
+
+  <div class="row">
+    {% include "jobstatic_parts/jobs.html" %}
+    {% include "jobstatic_parts/others.html" %}
+  </div>
+
+
+</div>
+<!-- /page content -->
+
+{% endblock %}
