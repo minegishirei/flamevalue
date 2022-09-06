@@ -3,7 +3,7 @@ import json
 import sys
 if '/God' not in sys.path:
     sys.path.append('/God')
-from shogi_lib import shogi
+
 
 
 
