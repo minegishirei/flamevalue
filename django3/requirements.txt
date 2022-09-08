@@ -16,3 +16,4 @@ markdown
 googletrans
 goolabs
 wikipedia
+careerjet_api
