@@ -1,4 +1,5 @@
 from .careerJet import clear_jnet,mock_getCareerJet, row_converter, getCareerJet
+from .wikipedia_list import get_wikipedia_list
 from django.shortcuts import render, redirect
 import json
 import sys
@@ -142,13 +143,15 @@ def TEST_scoring():
 
 def split_timetable(origin):
     sorted_origin = sorted(origin, key=lambda row:datetime.datetime.strptime(row["日付"], '%Y-%m-%d'))
-    date_list = [datetime.datetime.now() + datetime.timedelta(days=i) for i in range(0,-60,-7)]
+    date_list = [datetime.datetime.now() + datetime.timedelta(days=i) for i in range(0,-30,-3)]
     return_timetable = [{ "date": i.strftime("%Y-%m-%d"), "origin":[]} for i in date_list]
     for i_job in sorted_origin:
         for i, i_date in enumerate(date_list):
-            if i_date < datetime.datetime.strptime(i_job["日付"], '%Y-%m-%d'):
+            date1 = datetime.datetime.strptime(i_job["日付"], '%Y-%m-%d')
+            date2 = datetime.datetime.strptime(i_job["日付"], '%Y-%m-%d') - datetime.timedelta(days=7)
+            if  date2 < i_date and i_date < date1:
                 return_timetable[i]["origin"].append(i_job)
-                break
+    return_timetable = list(reversed(return_timetable))
     return return_timetable
 def TEST_split_timetable():
     timetable = split_timetable(origin)
@@ -191,6 +194,7 @@ def index(request, htmlname):
         "score_100" : scoring_100(basic_info),
         "basic_graph" : [ {row["date"]: basic(row["origin"])} for row in split_timetable(origin) ],
         "score_graph" : [ {row["date"]: scoring(basic(row["origin"]))} for row in split_timetable(origin) ],
+        "score_graph_json" : json.dumps([ {"date": row["date"], "values" : scoring(basic(row["origin"]))} for row in split_timetable(origin) ]),
         "money_sorted" : sorted(origin, key=lambda row:row["年収"]),
         "jobs" : clear_jnet(jobs)
     })
@@ -213,11 +217,13 @@ def index(request, htmlname):
         "description" : "~~~~~"
     }
     wikipedia_param = get_wiki_explain(name)
+
     
     param = {}
     param.update(data_param)
     param.update(html_param)
     param.update(wikipedia_param)
+    #param.update(wikipedia_related)
     pprint.pprint(param)
     return render(request, f"jobstatic/index.html", param)
 

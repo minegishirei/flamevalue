@@ -200,6 +200,8 @@
 
 </html>
 
+{{ wikipedia_list }}
+
 <script>
   var theme = {
     color: [
@@ -418,6 +420,27 @@
   //TODO: 場所移動
   if ($('#echart_line').length) {
 
+    json_data = JSON.parse(`
+    {{ score_graph_json | safe }}
+    `)
+    date_list = []
+    money_list = []
+    overtime_list = []
+    count_list = []
+    age_list = []
+    for(k in json_data){
+      row = json_data[k]
+      date_list.push(row.date)
+      money_list.push(row.values.money)
+      overtime_list.push(row.values.overtime)
+      count_list.push(row.values.count)
+      age_list.push(row.values.age)
+    }
+    console.log(date_list)
+    console.log(money_list)
+    console.log(count_list)
+    console.log(age_list)
+
     var echartLine = echarts.init(document.getElementById('echart_line'), theme);
 
     echartLine.setOption({
@@ -431,7 +454,7 @@
       legend: {
         x: 220,
         y: 40,
-        data: ['年収', '残業時間', '求人数']
+        data: ['最低年収', '最大年収', '求人数']
       },
       toolbox: {
         show: true,
@@ -460,12 +483,36 @@
       xAxis: [{
         type: 'category',
         boundaryGap: false,
-        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+        data: date_list
       }],
       yAxis: [{
         type: 'value'
       }],
       series: [{
+        name: '最低年収',
+        type: 'line',
+        smooth: true,
+        itemStyle: {
+          normal: {
+            areaStyle: {
+              type: 'default'
+            }
+          }
+        },
+        data: money_list
+      }, {
+        name: '最大年収',
+        type: 'line',
+        smooth: true,
+        itemStyle: {
+          normal: {
+            areaStyle: {
+              type: 'default'
+            }
+          }
+        },
+        data: overtime_list
+      }, {
         name: '求人数',
         type: 'line',
         smooth: true,
@@ -476,31 +523,7 @@
             }
           }
         },
-        data: [10, 12, 21, 54, 260, 830, 710]
-      }, {
-        name: '残業時間',
-        type: 'line',
-        smooth: true,
-        itemStyle: {
-          normal: {
-            areaStyle: {
-              type: 'default'
-            }
-          }
-        },
-        data: [30, 182, 434, 791, 390, 400, 300]
-      }, {
-        name: '年収',
-        type: 'line',
-        smooth: true,
-        itemStyle: {
-          normal: {
-            areaStyle: {
-              type: 'default'
-            }
-          }
-        },
-        data: [1320, 1132, 601, 234, 120, 120, 110]
+        data: count_list
       }]
     });
 
