@@ -1,3 +1,4 @@
+from .careerJet import clear_jnet,mock_getCareerJet, row_converter, getCareerJet
 from django.shortcuts import render, redirect
 import json
 import sys
@@ -60,15 +61,6 @@ origin = [
     },
 ]
 
-def row_converter(row):
-    """
-    一列の辞書→指定の配列
-    """
-    return {
-        "money" : row["年収"],
-        "overtime" : row["残業時間"],
-        "age" : row["年齢"]
-    }
 
 
 def grep(column):
@@ -90,10 +82,10 @@ def basic(origin):
             "size" : 0
         }
     return {
-        "money" : average_data(origin, "年収"),
-        "overtime" : average_data(origin, "残業時間"),
-        "age" : average_data(origin, "年齢"),
-        "size" : average_data(origin, "規模"),
+        "money" : round(average_data(origin, "年収")),
+        "overtime" : round(average_data(origin, "残業時間")),
+        "age" : round(average_data(origin, "年齢")),
+        "size" : round(average_data(origin, "規模")),
         "count" : len(origin)
     }
 def TEST_average_data():
@@ -101,45 +93,43 @@ def TEST_average_data():
     actual = basic(origin)["money"]
     assert expect == actual , f"error : test_average_data expected : {expect}, actual: {actual}" 
 
-"""
-def scoring(basic_dict):
-    def score(key,value):
-        # TODO:外に出してもいい
-        max_values = {
-            "money" : 800,
-            "overtime" : 50,
-            "age" : 65,
-            "count" : 10,
-            "size" : 400
-        }
-        return (value/max_values[key])*5
-    return {key: score(key, value) for key, value in basic_dict.items()}
-"""
+
 def scoring_cuury(score):
     def inside_cuury(basic_dict):
         return {key: score(key, value) for key, value in basic_dict.items()}
     return inside_cuury
 
 def score(key,value):
+    max_score = 5
     # TODO:外に出してもいい
     max_values = {
-        "money" : 800,
-        "overtime" : 50,
-        "age" : 65,
-        "count" : 10,
-        "size" : 400
+        "money" : 700,
+        "overtime" : 1000,
+        "age" : 30,
+        "count" : 10000,
+        "size" : 1000
     }
-    return (value/max_values[key])*5
+    result =  (value/max_values[key])*max_score 
+    if result > max_score:
+        return max_score
+    else:
+        return result
+
 def score_100(key,value):
+    max_score = 100
     # TODO:外に出してもいい
     max_values = {
-        "money" : 800,
-        "overtime" : 50,
-        "age" : 65,
-        "count" : 10,
-        "size" : 400
+        "money" : 700,
+        "overtime" : 1000,
+        "age" : 30,
+        "count" : 10000,
+        "size" : 1000
     }
-    return int((value/max_values[key])*100)
+    result =  (value/max_values[key])*max_score 
+    if result > max_score:
+        return max_score
+    else:
+        return result
 
 scoring = scoring_cuury(score)
 scoring_100 = scoring_cuury(score_100)
@@ -170,27 +160,39 @@ TEST_average_data()
 TEST_scoring()
 TEST_split_timetable()
 
+def TEST_mock_getCareerJnet():
+    pprint.pprint( row_converter(clear_jnet(mock_getCareerJet()["jobs"])) )
+
+TEST_mock_getCareerJnet()
 
 
 def index(request, htmlname):
     name = htmlname
+    origin = getCareerJet(name.replace("(プログラミング言語)", ""))
+    jobs = origin["jobs"]
+    hits = origin["hits"]
+    origin = row_converter(clear_jnet(jobs))
     total_score = round( sum(scoring(basic(origin)).values())/len(scoring(basic(origin))), 2)
     total_score_int = int(total_score)
     data_param = {
         "name" : name,
         "explain" : "Django（ジャンゴ）は、Pythonで実装されたWebアプリケーションフレームワーク"
     }
+    basic_info = basic(origin)
+    basic_info.update({
+        "count" : hits
+    })
     data_param.update({
         "total_score" :  total_score,
         "stars" : "★"*total_score_int + "☆"*(5-total_score_int),
         "icons" : "...png",
-        "basic" : basic(origin),
-        "score" : scoring(basic(origin)),
-        "score_100" : scoring_100(basic(origin)),
+        "basic" : basic_info,
+        "score" : scoring(basic_info),
+        "score_100" : scoring_100(basic_info),
         "basic_graph" : [ {row["date"]: basic(row["origin"])} for row in split_timetable(origin) ],
         "score_graph" : [ {row["date"]: scoring(basic(row["origin"]))} for row in split_timetable(origin) ],
         "money_sorted" : sorted(origin, key=lambda row:row["年収"]),
-        "raw" : origin
+        "jobs" : clear_jnet(jobs)
     })
     data_param.update({
         "comments" : [
@@ -207,7 +209,7 @@ def index(request, htmlname):
         ]
     })
     html_param = {
-        "title" : "Djangoの年収はいくら！？",
+        "title" : f"{name}の年収はいくら！？",
         "description" : "~~~~~"
     }
     wikipedia_param = get_wiki_explain(name)
