@@ -130,7 +130,7 @@ def TEST_scoring():
 
 def split_timetable(origin):
     sorted_origin = sorted(origin, key=lambda row:datetime.datetime.strptime(row["日付"], '%Y-%m-%d'))
-    date_list = [datetime.datetime.now() + datetime.timedelta(days=i) for i in range(-3,-33,-3)]
+    date_list = [datetime.datetime.now() + datetime.timedelta(days=i) for i in range(-3,-60,-3)]
     return_timetable = [{ "date": i.strftime("%Y-%m-%d"), "origin":[]} for i in date_list]
     for i_job in sorted_origin:
         for i, i_date in enumerate(date_list):
@@ -188,7 +188,7 @@ def index(request, htmlname):
         "wordcloud_json" : json.dumps( getMeishiList("。".join([row["description"] for row in jobs])), ensure_ascii=False )
     })
     html_param = {
-        "title" : f"{name}の年収はいくら！？",
+        "title" : f"{name} 「年収/採用企業」 転職のフレームワーク評価 FlameValue",
         "description" : f"{name}はすごいです。"
     }
     wikipedia_param = get_wiki_explain(name)
