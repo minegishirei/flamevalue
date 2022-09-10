@@ -82,3 +82,9 @@ INFO  2022-09-10 07:45:51,102 NotifyMailBat(70) Notify process finished. count: 
 INFO  2022-09-10 07:45:51,105 NotifyMailBat(72) Notify event started.
 INFO  2022-09-10 07:45:51,402 NotifyMailBat(74) Notify event finished.
 INFO  2022-09-10 07:45:51,404 AbstractBat(43) Finished
+INFO  2022-09-10 10:05:26,332 AbstractBat(31) NotifyMailBat is start.
+INFO  2022-09-10 10:05:26,484 NotifyMailBat(52) Notify process started.
+INFO  2022-09-10 10:05:27,332 NotifyMailBat(70) Notify process finished. count: 0
+INFO  2022-09-10 10:05:27,335 NotifyMailBat(72) Notify event started.
+INFO  2022-09-10 10:05:27,662 NotifyMailBat(74) Notify event finished.
+INFO  2022-09-10 10:05:27,664 AbstractBat(43) Finished

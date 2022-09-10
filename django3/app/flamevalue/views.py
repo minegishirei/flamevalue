@@ -231,3 +231,6 @@ def sitemap(request):
         "pop_page_list" : jsonDictionalyManager.generate_all_flameworkdict()
     }
     return render(request, f"jobstatic/sitemap.xml", param)
+
+def robots(request):
+    return render(request, f"robots.txt")
