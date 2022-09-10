@@ -202,7 +202,7 @@ def build_param(name):
     })
     html_param = {
         "title" : f"{name} 「年収/採用企業」 フレームワークの転職評価 FlameValue",
-        "description" : f"{name}はすごいです。"
+        "description" : f"{name}の「年収/採用企業情報」。就職・転職前に{name}の働く環境、年収・求人数などをリサーチ。就職・転職のための「{name}」の価値分析チャート、求人情報、フレームワークランキングを掲載。"
     }
     wikipedia_param = get_wiki_explain(name)
     related_word = [ row_v2["word"] for row_v2 in wordcount_list]
