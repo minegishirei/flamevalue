@@ -22,7 +22,7 @@ host_patterns = patterns(
     host(r'yourshogi', "yourshogi.urls", name="yourshogi"),
     host(r'd3js', "d3js.urls", name="d3js"),
     host(r'psy', "psy.urls", name="psy"),
-    host(r'jobstatic', "jobstatic.urls", name="jobstatic"),
+    host(r'flamevalue', "flamevalue.urls", name="flamevalue"),
     host(r'.*', 'short_tips.urls', name='else')
 )
 

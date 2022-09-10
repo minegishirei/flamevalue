@@ -1,0 +1,2424 @@
+{
+  "name": "TypeScript",
+  "explain": "TypeScript はマイクロソフトによって開発され、メンテナンスされているフリーでオープンソースのプログラミング言語である。TypeScriptはJavaScriptに対して、省略も可能な静的型付けとクラスベースオブジェクト指向を加えた厳密なスーパーセットとなっている。C#のリードアーキテクトであり、DelphiとTurbo Pascalの開発者でもあるアンダース・ヘルスバーグがTypeScriptの開発に関わっている。TypeScriptはクライアントサイド、あるいはサーバサイド (Node.js) で実行されるJavaScriptアプリケーションの開発に利用できる",
+  "total_score": 3.36,
+  "stars": "★★★☆☆",
+  "icons": "...png",
+  "basic": {
+    "money": 607,
+    "overtime": 745,
+    "age": 30,
+    "size": 745,
+    "count": 14555
+  },
+  "score": {
+    "money": 4.335714285714285,
+    "overtime": 3.725,
+    "age": 5.0,
+    "size": 3.725,
+    "count": 5
+  },
+  "score_100": {
+    "money": 86.71428571428571,
+    "overtime": 74.5,
+    "age": 100.0,
+    "size": 74.5,
+    "count": 100
+  },
+  "basic_graph": [
+    {
+      "2022-07-15": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-18": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-21": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-24": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-27": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-30": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-02": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-05": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-08": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-11": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-14": {
+        "money": 166,
+        "overtime": 166,
+        "age": 30,
+        "size": 166,
+        "count": 1
+      }
+    },
+    {
+      "2022-08-17": {
+        "money": 166,
+        "overtime": 166,
+        "age": 30,
+        "size": 166,
+        "count": 1
+      }
+    },
+    {
+      "2022-08-20": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-23": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-26": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-29": {
+        "money": 668,
+        "overtime": 827,
+        "age": 30,
+        "size": 827,
+        "count": 18
+      }
+    },
+    {
+      "2022-09-01": {
+        "money": 632,
+        "overtime": 780,
+        "age": 30,
+        "size": 780,
+        "count": 52
+      }
+    },
+    {
+      "2022-09-04": {
+        "money": 590,
+        "overtime": 720,
+        "age": 30,
+        "size": 720,
+        "count": 37
+      }
+    },
+    {
+      "2022-09-07": {
+        "money": 333,
+        "overtime": 333,
+        "age": 30,
+        "size": 333,
+        "count": 3
+      }
+    }
+  ],
+  "score_graph": [
+    {
+      "2022-07-15": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-18": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-21": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-24": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-27": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-30": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-02": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-05": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-08": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-11": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-14": {
+        "money": 1.1857142857142857,
+        "overtime": 0.8300000000000001,
+        "age": 5.0,
+        "size": 0.8300000000000001,
+        "count": 0.0005
+      }
+    },
+    {
+      "2022-08-17": {
+        "money": 1.1857142857142857,
+        "overtime": 0.8300000000000001,
+        "age": 5.0,
+        "size": 0.8300000000000001,
+        "count": 0.0005
+      }
+    },
+    {
+      "2022-08-20": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-23": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-26": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-29": {
+        "money": 4.771428571428571,
+        "overtime": 4.135,
+        "age": 5.0,
+        "size": 4.135,
+        "count": 0.009
+      }
+    },
+    {
+      "2022-09-01": {
+        "money": 4.514285714285714,
+        "overtime": 3.9000000000000004,
+        "age": 5.0,
+        "size": 3.9000000000000004,
+        "count": 0.026
+      }
+    },
+    {
+      "2022-09-04": {
+        "money": 4.214285714285714,
+        "overtime": 3.5999999999999996,
+        "age": 5.0,
+        "size": 3.5999999999999996,
+        "count": 0.018500000000000003
+      }
+    },
+    {
+      "2022-09-07": {
+        "money": 2.3785714285714286,
+        "overtime": 1.665,
+        "age": 5.0,
+        "size": 1.665,
+        "count": 0.0014999999999999998
+      }
+    }
+  ],
+  "score_graph_json": "[{\"date\": \"2022-07-15\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-18\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-21\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-24\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-27\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-30\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-02\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-05\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-08\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-11\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-14\", \"values\": {\"money\": 1.1857142857142857, \"overtime\": 0.8300000000000001, \"age\": 5.0, \"size\": 0.8300000000000001, \"count\": 0.0005}}, {\"date\": \"2022-08-17\", \"values\": {\"money\": 1.1857142857142857, \"overtime\": 0.8300000000000001, \"age\": 5.0, \"size\": 0.8300000000000001, \"count\": 0.0005}}, {\"date\": \"2022-08-20\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-23\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-26\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-29\", \"values\": {\"money\": 4.771428571428571, \"overtime\": 4.135, \"age\": 5.0, \"size\": 4.135, \"count\": 0.009}}, {\"date\": \"2022-09-01\", \"values\": {\"money\": 4.514285714285714, \"overtime\": 3.9000000000000004, \"age\": 5.0, \"size\": 3.9000000000000004, \"count\": 0.026}}, {\"date\": \"2022-09-04\", \"values\": {\"money\": 4.214285714285714, \"overtime\": 3.5999999999999996, \"age\": 5.0, \"size\": 3.5999999999999996, \"count\": 0.018500000000000003}}, {\"date\": \"2022-09-07\", \"values\": {\"money\": 2.3785714285714286, \"overtime\": 1.665, \"age\": 5.0, \"size\": 1.665, \"count\": 0.0014999999999999998}}]",
+  "money_sorted": [
+    {
+      "会社名": "株式会社スタッフサービス エンジニアリング事業本部",
+      "規模": 166,
+      "年収": 166,
+      "残業時間": 166,
+      "年齢": 30,
+      "日付": "2022-08-19"
+    },
+    {
+      "会社名": "",
+      "規模": 240,
+      "年収": 240,
+      "残業時間": 240,
+      "年齢": 30,
+      "日付": "2022-09-06"
+    },
+    {
+      "会社名": "株式会社デルタエンジニアリング",
+      "規模": 480,
+      "年収": 240,
+      "残業時間": 480,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "パーソルテクノロジースタッフ株式会社",
+      "規模": 294,
+      "年収": 294,
+      "残業時間": 294,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "パーソルテクノロジースタッフ株式会社",
+      "規模": 333,
+      "年収": 333,
+      "残業時間": 333,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "",
+      "規模": 333,
+      "年収": 333,
+      "残業時間": 333,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "",
+      "規模": 333,
+      "年収": 333,
+      "残業時間": 333,
+      "年齢": 30,
+      "日付": "2022-09-09"
+    },
+    {
+      "会社名": "パーソルテクノロジースタッフ株式会社",
+      "規模": 333,
+      "年収": 333,
+      "残業時間": 333,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 450,
+      "年収": 400,
+      "残業時間": 450,
+      "年齢": 30,
+      "日付": "2022-09-04"
+    },
+    {
+      "会社名": "",
+      "規模": 450,
+      "年収": 400,
+      "残業時間": 450,
+      "年齢": 30,
+      "日付": "2022-09-04"
+    },
+    {
+      "会社名": "バヅクリ株式会社",
+      "規模": 949,
+      "年収": 450,
+      "残業時間": 949,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 700,
+      "年収": 450,
+      "残業時間": 700,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 700,
+      "年収": 450,
+      "残業時間": 700,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 720,
+      "年収": 480,
+      "残業時間": 720,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社アイスリーデザイン",
+      "規模": 800,
+      "年収": 500,
+      "残業時間": 800,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "株式会社ネットオン",
+      "規模": 730,
+      "年収": 518,
+      "残業時間": 730,
+      "年齢": 30,
+      "日付": "2022-09-04"
+    },
+    {
+      "会社名": "",
+      "規模": 720,
+      "年収": 600,
+      "残業時間": 720,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 720,
+      "年収": 600,
+      "残業時間": 720,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 720,
+      "年収": 600,
+      "残業時間": 720,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 720,
+      "年収": 600,
+      "残業時間": 720,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 720,
+      "年収": 600,
+      "残業時間": 720,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 720,
+      "年収": 600,
+      "残業時間": 720,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 720,
+      "年収": 600,
+      "残業時間": 720,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 600,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 720,
+      "年収": 600,
+      "残業時間": 720,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 768,
+      "年収": 648,
+      "残業時間": 768,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 768,
+      "年収": 648,
+      "残業時間": 768,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 780,
+      "年収": 660,
+      "残業時間": 780,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 750,
+      "年収": 700,
+      "残業時間": 750,
+      "年齢": 30,
+      "日付": "2022-09-04"
+    },
+    {
+      "会社名": "",
+      "規模": 750,
+      "年収": 700,
+      "残業時間": 750,
+      "年齢": 30,
+      "日付": "2022-09-04"
+    },
+    {
+      "会社名": "",
+      "規模": 750,
+      "年収": 700,
+      "残業時間": 750,
+      "年齢": 30,
+      "日付": "2022-09-04"
+    },
+    {
+      "会社名": "",
+      "規模": 750,
+      "年収": 700,
+      "残業時間": 750,
+      "年齢": 30,
+      "日付": "2022-09-04"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 780,
+      "年収": 720,
+      "残業時間": 780,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 960,
+      "年収": 720,
+      "残業時間": 960,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 960,
+      "年収": 720,
+      "残業時間": 960,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 960,
+      "年収": 720,
+      "残業時間": 960,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 960,
+      "年収": 780,
+      "残業時間": 960,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 1020,
+      "年収": 780,
+      "残業時間": 1020,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 1020,
+      "年収": 780,
+      "残業時間": 1020,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 1080,
+      "年収": 840,
+      "残業時間": 1080,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 1140,
+      "年収": 900,
+      "残業時間": 1140,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 1140,
+      "年収": 900,
+      "残業時間": 1140,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    }
+  ],
+  "jobs": [
+    {
+      "salary_min": "3000",
+      "locations": "東京都千代田区",
+      "salary_type": "H",
+      "date": "Sat, 10 Sep 2022 07:20:06 GMT",
+      "description": "都千代田区 東京メトロ丸ノ内線 大手町駅 徒歩5分 仕事内容： グループ会社向け基幹システムをご担当いただきます。 【工程】 基本設計～開発、テスト、運用保守 【環境】 <b>TypeScript</b>、React 【体制】 10名程度 【出社頻度】 月1～5日... 休日： 日曜日、土曜日、祝日 週休2日制(土日祝休み) 対象となる方： 実務経験1年以上/ブランク相談可/開始時期についてはご相談ください。 【活かせる経験・スキル】 開発エンジニア <b>TypeScript</b> React ※3年前...",
+      "salary_currency_code": "JPY",
+      "salary": "3000 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e4841c8b1cc8ac0a254c9f5e386f7dd67c5e8c08cddaf0bdeae8787ecccc4f79c80ebe96c82f98891c6ec53c9a897ceaec68ced9b97a3eb8be2c184e69c97eac671cfb795c883e16d8da4e1c3e0c582edd486a3fc695b4b1f1d0418/f5133c73d8758b742d32a1e2331de8cb.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【在宅リモートワーク可TypeScript】フロントエンド開発",
+      "salary_max": "3000",
+      "company": "パーソルテクノロジースタッフ株式会社"
+    },
+    {
+      "salary_min": "2650",
+      "locations": "東京都千代田区",
+      "salary_type": "H",
+      "date": "Sat, 03 Sep 2022 07:01:34 GMT",
+      "description": "中で改善や要望意見もいただきながら、効率よく開発をします。 【工程】 基本設計、詳細設計、実装、テスト 【環境】 Windows、Linux、React Native、<b>TypeScript</b>、Terraform、Slack、Google Workspace、PostgreSQL...エンジニア <b>TypeScript</b> React ※3年前後ブランクのある方も、まずはご応募いただき、ご相談ください 応募先： パーソルテクノロジースタッフ株式会社(IT) 新宿本社 東京都新宿区西新宿2-1-1 新宿三井ビル51F 派遣許認可番号:（派）13070483...",
+      "salary_currency_code": "JPY",
+      "salary": "2650 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c4d41ceafc68cedb097a3c94888f8ec82b9ce6a8cef82ce93a80d81e3d5c0eda2618dedd580fca25481fff8cdb2872fc8f8c78b89f1008afeea89fedf2291f4c19684ae1dceaece8ced8597a3df8be2e6665718415e5046/44b698aa6c2679813ea59eb16da0e872.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【在宅リモートワーク可TypeScript】医療関連アプリ開発",
+      "salary_max": "2650",
+      "company": "パーソルテクノロジースタッフ株式会社"
+    },
+    {
+      "salary_min": "1500",
+      "locations": "愛媛県松山市",
+      "salary_type": "H",
+      "date": "Fri, 19 Aug 2022 07:07:39 GMT",
+      "description": "トウェア会社でのお仕事です。 【WEBサービスの開発】 ・お客様からの意見等をAI分析して情報を抽出、提供するWEBサービス開発 使用ツール・スキル：<b>TypeScript</b>、Python 【スタッフサービスで働くメリット】 「プライベートを大切にしながら働きたい」 「本当...",
+      "salary_currency_code": "JPY",
+      "salary": "1500 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-191a417a48064f87b1ffc7fad2633e1e11481b06499abca0dab497663f17531c4f0d48360b056777110a6b9abca0dab49765575d134718/9cedfbe01cb7ae52d914775faeb9de40.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【WEB登録OK】【TypeScript・Python】WEBサービスの開発松山市",
+      "salary_max": "1500",
+      "company": "株式会社スタッフサービス エンジニアリング事業本部"
+    },
+    {
+      "salary_min": "200000",
+      "locations": "愛知県刈谷市",
+      "salary_type": "M",
+      "date": "Tue, 06 Sep 2022 07:24:38 GMT",
+      "description": "【仕事内容】＃<b>TypeScript</b> ＃javascript ＃フロントエンド開発 ＃リモート,■業務内容  物流向けの配送計画、実績管理及びリアルタイム監視を行う  システムのフロントエンド開発業務   ■業務詳細  対象...システムのフロントエンド機能追加、不具合修正を担当  ※担当範囲  詳細設計～単体・結合・機能検査  OS：Windows  言語：<b>TypeScript</b>/SCSS  ツール：Visual Studio Code/SourceTree  フレームワーク：Vue.js   【この...",
+      "salary_currency_code": "JPY",
+      "salary": "200000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1a4d41ceaef18ced8a97a3d08be2e6478284ca8dfad228cc9993c8f7ce4ecee2ab84f1db6c81d19e9de9ca53c3bdb6cab4de6d24460241300b13071711009dfee294b3913fcb99da86ef84751850595657/9fb3962dd266a6a4fd0f1895bf555b00.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "＃TypeScript ＃javascript ＃フロントエンド開発 ＃リモート【派遣社員】",
+      "salary_max": "200000",
+      "company": ""
+    },
+    {
+      "salary_min": "200000",
+      "locations": "愛知県刈谷市",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 07:15:25 GMT",
+      "description": "SE・PG 掲載期間：09/05（月）〜09/11（日）   株式会社デルタエンジニアリング 大阪営業所   ＃<b>TypeScript</b> ＃javascript ＃フロントエンド開発 ＃リモート   雇用形態  派遣   給与  月給...スキル  ・WebAPIを使用したWebアプリ(フロントエンド側)の開発経験(2年以上)  <b>typescript</b>またはjavascriptを用いた開発経験  ▼ヒューマンスキル  ・能動的にコミュニケーション(報告、相談)を取れる方   【尚良】  ▼開発...",
+      "salary_currency_code": "JPY",
+      "salary": "200000 - 400000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1a1d41674c120e3d440649131c4187f1eec7edd26b90a9bedeae8087ecddc4f7a86181f7e580fc9a762208054b785e5f44141b6cc4f7b580ebcc8de4d6c3f7e08af182c8be9ecee7e66f1f47115451/3df09745dd121c368a84a64d40737a65.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "＃TypeScript ＃javascript ＃フロントエンド開発 ＃リモート",
+      "salary_max": "400000",
+      "company": "株式会社デルタエンジニアリング"
+    },
+    {
+      "salary_min": "3000",
+      "locations": "東京都千代田区",
+      "salary_type": "H",
+      "date": "Sat, 10 Sep 2022 01:57:51 GMT",
+      "description": "【職種】SE(ビジネスアプリケーション系)   グループ会社向け基幹システムをご担当いただきます。   【工程】  基本設計〜開発、テスト、運用保守   【環境】  <b>TypeScript</b>、React   【体制】  10名程度   【出社...ンク相談可/開始時期についてはご相談ください。【活かせる経験・スキル】■開発エンジニア  ■<b>TypeScript</b>  ■React  ※3年前後ブランクのある方も、まずはご応募いただき、ご相談ください...",
+      "salary_currency_code": "JPY",
+      "salary": "3000 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e4d41ceafc68cedb097a3c94888f8ec82b9ce6a8af188c8bebacee7c58da5c5c3e0d482ecd086a3d38beac00ac2aba6cafdd56cc4f7b580ebcc8de4d6c3f7e06b9abca0dab497663c2b264618565e585b/64eb6ac1a73eb870f658f72500ae58f2.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "SE(ビジネスアプリケーション系) [派]【リモートワーク可＊TypeScript】フロントエンド開発",
+      "salary_max": "3000",
+      "company": ""
+    },
+    {
+      "salary_min": "3000",
+      "locations": "東京都杉並区荻窪 - 東京都豊島区池袋",
+      "salary_type": "H",
+      "date": "Fri, 09 Sep 2022 07:21:16 GMT",
+      "description": "グラマー  内容 グループ会社向け基幹システムをご担当いただきます。  【工程】基本設計～開発、テスト、運用保守  【環境】<b>TypeScript</b>、React  【体制】10名程度  【出社頻度】月1～5日  E220957481  募集人数 1名...   必要な経験・スキル 実務経験 実務経験1年以上/ブランク相談可/開始時期についてはご相談ください。  【活かせる経験・スキル】■開発エンジニア  ■<b>TypeScript</b>  ■React  ※3年前後ブランクのある方も、まず...",
+      "salary_currency_code": "JPY",
+      "salary": "3000 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c1241ceaef18ced8a97a3d08be2e6658cb6ff8ff0c928c8beb8cee7c28da4c7c3e0e082eccf86a3c78beafa28c8be87cee7cd8da4c8c3e0e0638de4cfc3f7ca8af096c8bea5cee7c08da4c8c3e1c7605d575713415b6b401a190e151d/b26b453b99d12a3027ceb10a99b969ad.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【リモートワーク可＊TypeScript】フロントエンド開発",
+      "salary_max": "3000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:57:04 GMT",
+      "description": "単価/月   60～70万円   勤務地   東京都,品川区   案件概要   <b>TypeScript</b>, Reactでのフロント開発、一部サーバーサイド開発をご担当いただく案件となります。   ＜業務の流れ＞  基本...   ・開発経験5年以上  ・JavaScript  ・アジャイル開発の経験   歓迎するスキル・経験   ・<b>TypeScript</b>  ・React.js  ・SPA開発経験  ・サーバーサイドの開発経験  ・スクラム開発の経験   稼動日数   週5...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c4841c5aace88ca9954c9f5e386f7dd67c8f3c28ed7940bdeaf9887edcac4f7a86181e1f483da815481fff8cdb2872fc4e4f58a98d5008ae8fb8ad8c4229dfee294b3913c1f1551585d13/88b38a256d468690ac5348380e224c3b.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "React / TypeScript 大手通信会社の自社サービスサイト開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:55:35 GMT",
+      "description": " ～ 2022/12/31   言語   必須スキル・経験   ・HTML, CSS, <b>TypeScript</b>の経験  ・React.jsを使用したフロント開発経験(バージョン17系以上であれば尚歓迎)   歓迎するスキル・経験   ・React...リのフロントエンド開発をお任せする案件になります。原則ご出社頂き、ご対応頂く想定です。HTML/CSS, <b>TypeScript</b>のご経験とReactを仕様してのフロント開発経験をお持ちの方をお待ちしています。...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-191d417a48064f8da5d6c3e0ff82edcd45c9e2e38eea9029757960284f2d742700340d036c84e78297ebfe90a9811dc4bbef88f79d766837252d4e243673763f0c110a63696061655d5612431251/4021c14cc346a13a045d3701005d5106.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "HTML/CSS / TypeScript / React.js Webアプリ開発",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "3000",
+      "locations": "東京都千代田区",
+      "salary_type": "H",
+      "date": "Wed, 07 Sep 2022 22:54:53 GMT",
+      "description": "ープ会社向け基幹システムをご担当いただきます。   【工程】  基本設計～開発、テスト、運用保守   【環境】  <b>TypeScript</b>、React   【体制】  10名程度   【出社頻度】  月1～5日  活かせるスキル・資格 開発エンジニア  <b>TypeScript</b>  React  勤務...",
+      "salary_currency_code": "JPY",
+      "salary": "3000 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b1e41ceaef18ced8a97a3d08be2e6658cb6ff8ff0c928c8beb8cee7c28da4c7c3e0e082eccf86a3c78beafa28c8be87cee7cd8da4c8c3e0e0638de4cfc3f7ca8af096c8bea5cee7c08da4c8c3e1c7605c5f50164d5d/180c9390b7b9329be0935c7f318b822a.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【リモートワーク可＊TypeScript】フロントエンド開発",
+      "salary_max": "3000",
+      "company": "パーソルテクノロジースタッフ株式会社"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:54:23 GMT",
+      "description": "ースまで一貫して対応  ・運用保守(作業依頼対応、障害対応など)も並行して実施   ＜カウンセリング台帳＞  ・iPad上で動作  ・サーバー上で動作するAPIはNode.js, <b>TypeScript</b>, DBはMySQL   ＜備考＞  フルリモート可能   期間...   即日 ～ 2022/06/30   言語   必須スキル・経験   ・Node上でのWebサーバー/DBサーバー構築経験  ・Node上での<b>TypeScript</b>開発経験1年以上  ・上記開発環境でのAPI/バッチ開発経験  ・要件定義～リリ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b48416342000a4e6d272285fcd88ad8cb223a070d1628616e2c1f5c5a591546/634f6c04fd06960dbd166a7957aa24e6.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Node.js / TypeScript APIの改修",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:54:23 GMT",
+      "description": "/07/31   言語   必須スキル・経験   ・開発経験5年程度  以下のいずれかひとつでも該当すること  ・<b>TypeScript</b>やJavaScriptなどでのSPA(Single Page Application)開発経験(Reactや...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-121a41ceafc68cedb097a3c94888f8ec82b9ce6a2a536929d4bba683f6d40797a2cb8be2dd84e79897ebe290a8893fc4bbef88f79d5463618be3cc84e6b797ebc390a89adeae9187edd9c4f78780ebd24e84e78897ebda90a893deaea687edcc264618565f525a/cbfa2d4d981cbe65ba25b8f432c24feb.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "C# /TypeScript/JavaScript アプリケーション開発エンジニア",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:53:42 GMT",
+      "description": "リケーションフロントエンド開発経験  ・JavaScriptまたは<b>TypeScript</b>による開発経験  ・Vue.jsを使用したSPAのフロントエンド開発経験  ・Yarn, Webpackなどを使用したビルド環境の構築経験  ・Web, HTTP知識を前提としたパフォーマンスへの造詣   歓迎...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-191f417b58014f247476c3e1c082edd486a2cc8beac00ac2aba6cafdd56cc4f7b580ebcc8de4d6c3f7e06b9abca0dab497668cec8f97a3d08be3d684e693755a51461d180e/13e00b120328f0275bf125ecca5ce6be.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Vue.js / TypeScript など 求人検索エンジンのフロントエンド開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都千代田区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:52:06 GMT",
+      "description": "ース会社の社員様や他パートナー様に概要設計まで実施頂き、その内容を基に開発チームで各種開発を行っております。今回は特にバックエンド開発を中心に実施して頂きます。   ＜システム環境＞  言語：PHP/Vue.js/<b>TypeScript</b>  FW：Laravel  DB：MySQL  管理... ～ 2022/05/31   言語   必須スキル・経験   ・PHP(Laravel)/Vue.js/<b>Typescript</b>/Dockerで開発経験2年以上  ・SaaS開発経験  ・システム保守運用経験1年以上  ・AWS上の開発経験1年以...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c4d417d65344f87b1ffc7fad2633e2f350092c9e197919d3fc4bbef88f79d76702b386388f3cac6fbdc6841121e0b1418/d23893365ae46116ae1ae629f08b3fa9.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "PHP / TypeScript リユース会社様向け チャットボット開発支援案件",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "540000",
+      "locations": "東京都港区六本木",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:51:59 GMT",
+      "description": "   ・JavaScript, <b>TypeScript</b>等を用いたWebフロントエンドの開発経験  ・Reactを用いたWebフロントエンドの開発経験  ・Web標準に則ったマークアップの実務経験  ・CSSを用いたレイアウトやUI実装の実務経験  ・ユニ...",
+      "salary_currency_code": "JPY",
+      "salary": "540000 - 640000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-491c41ceaef18ced8a97a3d08be2e66586a2dc8beac0c9a985ceaeef8cec8576c3e0fd82edca86a3c78beafbc9a995ceaed78cedae76c3e0fd82edca86a3c78beafbc9a995ceaed78cedae97a2cb8be2dd84e79897ebe290a8893f7f48050c1a2647105159595d/51bf614d6cf1309fda3b956843ed3cad.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "TypeScript / React フロントエンドエンジニア募集",
+      "salary_max": "640000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都目黒区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:51:08 GMT",
+      "description": "る開発経験  ・JavaScriptおよび<b>TypeScript</b>を使用したフロントエンドの開発経験  ・APIとの通信の実装経験, Axiosなどのライブラリの利用経験  ・Pinia, Vuexなどの状態管理ライブラリの利用経験  ・Jestを利...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 650000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f4e41ceafd18ced9b97a3f08be3d74786a2dc8beac0c9a985ceaeef8cec8576c7c5e786cbee45c6e0c78ffc9e29deaf9887ecd2c4f7b380ead84e84e6b597ebc490a998deaea566250f511573001a081e1345c3f6c08af099c8bf95cee7e48da5d62284ceee89c2ec2146505c44181a/a563e90396240331d8fa8ef86c60d3d7.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "JavaScript / TypeScript フロントエンドエンジニア/福祉支援サービス",
+      "salary_max": "650000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都目黒区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:49:02 GMT",
+      "description": "   ・Node.jsのご経験  ・<b>TypeScript</b>のご経験   稼動日数   週5日   商談回数   1回   案件の詳細   商談1回   精算条件   140h-180h   支払サイト   月末締めの翌月末日払い   案件...担当のおすすめポイント   Node.jsの経験者を募集している案件になります。オンサイトでご対応頂く想定です。Node.jsと<b>TypeScript</b>のご経験のある方をお待ちしています。...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1b416342000a4e6d272284dded87cff6c8f4ed6b949fa7d485be662101431122293b605c5f50174659/66d5030fe5ad7665d5ac568c2b0354e2.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Node.js / TypeScript 経験者募集",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:48:27 GMT",
+      "description": "ントエンドはSPAで構成されており、言語は<b>TypeScript</b>, フレームワークはReact.jsを利用しています。  開発はアジャイルスタイルでスプリントを回しながら開発を行っています。  スキルや経験により、基本設計・詳細設計・実装・テス...   ・JavaScriptによるWebフロントエンドの開発経験3年程度  ・MV*フレームワーク (Vue.js, Angular.js, React.js+αなど)を使用した開発経験1年程度  ・<b>TypeScript</b>を使用した経験   歓迎するスキル・経験...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-481e41686e448cec9297a2c78be2e6653745150b1d5360783fc4bbef88f79d7665208be3db84e78497ebe1716f683c1f1551585c15/2c5bed99ac091cc2acebb47fa295ac48.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "TypeScript / React.js ECサイトのフロンドエンド開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:46:08 GMT",
+      "description": "が整い次第リモート   ＜基本時間＞  9：00～17：30   ＜服装＞  ビジネスカジュアル   期間   即日 ～ 2023/01/31   言語   必須スキル・経験   以下の経験  ・React.js, React Hooks  ・<b>TypeScript</b>...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e48417a48064f8da5d6c3e0ff82edcd45c9e2e38eea9029deaf8f87ecf9c4f78a4381f7e580fc9a763f0c110ac2aba6cafdd56ccee2ab84f1db4e82eda692f6f971c3bdb6cab4de4f39421621515054595451/7009e28ecec77cc599d72503799c10e4.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "React.js / TypeScript 顧客満足度分析 Webアプリケーション開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都豊島区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:45:36 GMT",
+      "description": "時間＞  9：00～18：00   期間   即日 ～ 2022/07/31   言語   必須スキル・経験   ・Reactの開発経験  ・<b>TypeScript</b>の開発   歓迎するスキル・経験   ・Linuxでの開発経験・コミ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b1d41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c928c8be8ccee7d38da5dfc3e0d44187f1eec7edd26b969aa4d88e9f448cec9097a2da8be2e884e680768beae6c9a890ceaed78cedaf76c9f5e386f7dd64124c5d5e471b/8eaad119519901b63f3e72d527fcf1a9.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "React / TypeScript 小売・メーカー・卸向け基幹システムのフロント開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都台東区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:42:27 GMT",
+      "description": "発した経験半年以上 ※プロジェクトではVueを採用  ・<b>TypeScript</b>(もしくは静的型付け言語、実務ではなくプライベートでも可)  ・要件定義の経験半年以上  ・アジャイルの経験   歓迎するスキル・経験   ・Jest   稼動日数   週5日   商談...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-481b41ceafd38cec9e97a3e58be2ce47828ed58ff9f528cc938ccaf4e96cc4f69780ead88de4e3c3f7c86b255f4e3fcb84fb87ed9a75125b5d565d5e/b19302c2121b52aa99341c668df635a5.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "TypeScript / Vue 申込管理システムの機能追加",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:40:12 GMT",
+      "description": "開発経験3年以上  ・JavaScriptもしくは<b>TypeScript</b>の開発経験  ・Gitでのチーム開発経験   歓迎するスキル・経験   ・Hibernateの利用経験  ・レビュー経験  ・AWS環境での開発経験  ・Jenkinsの利...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-494f41c4bbef88f79d546a021e006c2d0456153b0a01435b490dc4f2e489bece228afeea89fedf223e091f1228c8bebccee7ec8da5c5c3e0d482ecdf64124c5d5e4118/efd3c1a9c75dff2d0ec5aee547a49c58.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Java / JavaScript / TypeScript 為替BtoBパッケージ開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:37:25 GMT",
+      "description": "の開発対象にはなりません。   ＜開発環境＞  フロントエンド：<b>TypeScript</b>, React  バックエンド：PHP(FW：Laravel)  データベース：Amazon Aurora(MySQL)  インフラ関連：AWS   ＜備考＞  フルリモート  希望...があれば出社可能   期間   即日 ～ 2022/12/31   言語   必須スキル・経験   ・<b>TypeScript</b>もしくはJavaScript(React)の開発経験3年以上  ・アジャイル開発プロジェクト参画経験  ・チー...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1a1241ca8df088c79154c9f5e386f7dd67c3f6df8af193c8beabcee7cf4ecee2ab84f1db6c80c5b493c1df53ccbf92cba2d06d8da5c3c3e1d182ede186a3d44880f4bbc3a3a02f8de8ffcfeaad438ec8f18ef382755a51461d190f/8bffc73a1dd530b7bc1d2cc2a88a498e.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "TypeScript / JavaScript 金融系研究機関における新規Webシステム開発支援",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都豊島区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:32:46 GMT",
+      "description": "   即日 ～ 2022/09/30   言語   必須スキル・経験   ・Vue.js, <b>TypeScript</b>を用いた開発経験  ・HTML/CSS, JavaScriptの経験   歓迎するスキル・経験   ・Linux周りの知識、サー...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e1c41657929234e642773618be3d984e79997ebef90a98b1dc4bbef88f79d766a021e003d041749041c499abca0dab49766250f511573001a081e13456820252571c3bdb6cab4de6e5c1f41175759/71e623c1ba3c9893def2e554912dd559.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "HTML/CSS / JavaScript / TypeScript など プライシングシステム開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "540000",
+      "locations": "東京都港区六本木",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:28:35 GMT",
+      "description": "   ・JavaScript実務経験1年以上  ・<b>TypeScript</b> (strict:true)実務経験1年以上  ・コーデック 配信方式 hls dash 等のキーワードの理解   歓迎するスキル・経験   ・Netflix等、何ら...",
+      "salary_currency_code": "JPY",
+      "salary": "540000 - 640000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b1b41c8a6f188fa9c54c9e6e585d1c667c5fffd8ee79129d997a682cac3253e411509320d150c50006a8cf8bfcca996c4e1e28a98d5215058535f5f56/13d721d249ce5b7a556350de2d9ef315.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "JavaScript / TypeScript 動画配信事業部のWebプレイヤーチーム",
+      "salary_max": "640000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都中央区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:24:47 GMT",
+      "description": "ト   ＜環境＞  言語：JavaScript/<b>TypeScript</b>(Node.js, Babel)  主要技術：React/Redux, React Native, Express, GraphQL  その他技術：Jest, ESLint...ィスカジュアル   期間   即日 ～ 2022/12/31   言語   必須スキル・経験   ・<b>TypeScript</b>の1人称での開発経験  ・JavaScriptの開発経験(詳細設計以降)   歓迎するスキル・経験   ・ReactNativeの開...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-131b41c8a1df88f7a554c8c0d588eec767c3f6ca8af0bdc8be870d87ece8c4f69980ebe96c8fc69d9de8c971cfa786cab4e66d8da4f2c3e1d182edef64124c5d5f4a1d/00514ad3bf4fc4bf631de26404e6198a.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "TypeScript / JavaScript 医療アプリの製造・テスト",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:21:46 GMT",
+      "description": "システム構築メンバーの一員として、設計・実装・テストの一連の工程を担当していただきます。  Node.js, <b>TypeScript</b>, Express等を使用したバックエンド開発を中心に実施いただきます。   ＜備考＞  火曜、木曜は出社  残りはリモート   期間   即日... ～ 2022/07/31   言語   必須スキル・経験   ・Node.js, <b>TypeScript</b>による開発のご経験  ・バックエンド開発のご経験  ・Gitを用いたチーム開発のご経験(プルリク)   歓迎するスキル・経験   ・AWSサー...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c4941ceafc68cedb097a3c94888f8ec82b9ce6a8af0bfc8be91cee7e64ec4f69580ebdd8de4f6c3f6d16b90a9bedeae9187ece7079db6e88ff8d4652b4f100d49397929d4bba683f6d4264618565f525d/33ed6031ab05c270809f4b8af54bebfd.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Node.js / TypeScript / Git フードデリバリサービスアプリ開発案件",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:17:22 GMT",
+      "description": "/ElastiCache for Redis/Auth0  Java：SpringBoot  JavaScript/<b>TypeScript</b>/Vue.js   ＜備考＞  基本リモートワーク可能   期間   即日 ～ 2022/12/31   言語   必須...スキル・経験   以下、フロントエンド/サーバーサイドいずれかのスキル、両方あれば尚可   フロントエンド  ・JavaScriptもしくは<b>TypeScript</b>  ・フレームワーク経験(Vue.js, React, Angularなど)   サー...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c4a417a48064f8da5d6c3e0ff82edcd45c9e2e38eea9029deaf8f87ecf9c4f78a4381f7e580fc9a542208054b29deaf8f87ecf9c4f78a4381f7e580fc9a763f0c110ac2aba6cafdd56ccee2ab84f1db4e2d045615695b4b1f1c0f1f/2dd17b5bd8884d08750eb0ae4b30ce88.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "JavaScript / TypeScript / Java Webアプリケーション開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:09:01 GMT",
+      "description": "＞  基本リモート   期間   即日 ～ 2022/09/30   言語   必須スキル・経験   ・業務系Webシステムのバック・フロントエンドの開発経験5年程度(Java, Python, React, Vue, <b>TypeScript</b>等...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b1941c59fcd8acd9591b3c24889dcce8083c66a8ee7b5ceac90c9dbf287bece0080ead68de5dcc3f7ee8af08a29d59f8481ccdc0797a2d48be3d784e6a697ebc971c9a98aceafdd8ceda197a3c3482b0f11042290d7f49ab3911dc991fe88ca9975125b5d565d53/8d15f0301150ebd290e91c186d5085bb.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Java / Python / TypeScript など 生命保険会社向け販売員育成システム",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "550000",
+      "locations": "東京都新宿区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:05:22 GMT",
+      "description": "単価/月   55～65万円   勤務地   東京都,新宿区   案件概要   JavaScript, <b>Typescript</b>を用いて利用者画面、運用者画面、内部処理等の開発   ＜関連スキル＞  ・JavaScript..., <b>TypeScript</b>, Node.js, Angular.js, Nest.js  ・MySQL, DynamoDB, APISprout  ・AWS, Backlog, Slack, Gitlab, Swagger など   ＜備考＞  初回1週間...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 650000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f13417a48064f87b1ffc7fad26389f0e0c9edca499abca0dab4976688f9a29db9c148360b0567c9e2e38eea900b6a484f66250f511573001a081e1345c9e2e38eea902a0f1518535c5b/3e10c63dcc4162b0d053ef33b0facfcf.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "JavaScript / TypeScript 病院業界向け Web開発",
+      "salary_max": "650000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都千代田区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:05:15 GMT",
+      "description": "/Misoca  基幹システム：基幹システム/CRM/データレイク   ＜開発環境＞  クラウド(バックエンド)：C#(ASP.NET MVC) Java(Spring Boot) Python Go  クラウド(フロントエンド)：<b>TypeScript</b>...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-484f41c5aace88ca9954c9f5e386f7dd456a151e0871c2ac97ca89da4f87b1ffc7fad26387f1eec7edd249394b5d5c2f7d1d1b06481a008afeea89fedf223e091f120ac3ba87cac0d16f154c15555154/a18fbf0fb67048e5c548d88de6514d0e.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Java / Python / TypeScript 自社サービス開発要員募集",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都日野市 - 東京都八王子市",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:04:15 GMT",
+      "description": "での開発経験  ・<b>TypeScript</b>での開発経験   歓迎するスキル・経験   ・C#での開発経験  ・React Hookでの開発経験  ・React.jsでの開発経験1年以上  ・<b>TypeScript</b>での開発経験1年以上  ・パフ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-184a41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c90aceb196cafded6cc1f7a586c8d04e84e79797ead090a9addeae8d448ae29c93b9e16a84e2dc82b9f6488af19dc8bf94cee7e98da4d42280ead68de5dcc3f7ee8af08a0bd4bba683f6d42592a3e68dc1df4786a2c38bebcac9a8bbceaec46e5c1f4117535e635c5f50174459/525b823b479ee6bff5c64f33be89ccdf.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "React.js / TypeScript 医療系情報連携システム開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "神奈川県川崎市川崎区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:03:30 GMT",
+      "description": "単価/月   60～70万円   勤務地   川崎市,川崎区   案件概要   現在開発中の大手音楽レーベルの売上予測システム開発プロジェクトにおける、フロントエンド(React/<b>TypeScript</b>)開発者を募集します。弊社...はその他SPAによる業務システムフロントエンド開発の経験1年以上  ・<b>TypeScript</b>によるフロント開発経験  ・業務系Webシステムのフロントエンド開発経験1年以上  ・バックエンドサービスAPI連携についての技術理解があること  ・コミ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c4941ceaee38ced9b97a2dc4884e6e183bee46a8af19dc8bf94cee7e98da4d40080eac98de4d6c3f6d08af0a1c8bf8f2f87edd9c4f69980ebe78de4c5009dfee294b3913fc4b2d789cb9a54c3e0ef82eddb86a2cb6a80e5a1cca4970d87edc6c4f79380ead98de4eec3f6ca68411d1d0f1a1c/69ef58ac5b4bbfb8a87971f1891538de.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "React / TypeScript 大手音楽レーベルデータ分析システム開発エンジニア募集",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区六本木",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:03:20 GMT",
+      "description": "  ・<b>TypeScript</b>(strict:true) 1年程度  ・React.js or Next 2年程度  ・CSS in JS 1年程度  ・ESLint & Prettierを用いた開発経験 1年程度   歓迎するスキル・経験   ・コン...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f4d41c882da8ad1bb76720609021a66561046595140/8accd6e1ef5585eaa0cd7c02452bebb4.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "TypeScript / React ブラウザ向けレスポンシブ対応",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "5000000",
+      "locations": "東京都渋谷区",
+      "salary_type": "Y",
+      "date": "Wed, 07 Sep 2022 22:01:35 GMT",
+      "description": "える成長を実現 募集要項 ポジション エンジニア（チームリーダー） 提示年収 500万 〜 800万円 求めるスキル Bランク以上（※ランクについてはhttps://paiza.jp/guide/career#rank） 言語 <b>TypeScript</b>、PHP...のやりがい ・新設の重要ポジション候補！組織全体のマネジメントを担うキャリアパスも描ける ・フロントエンドではReact,<b>TypeScript</b>、バックエンドではAWSサーバレスやコンテナの特性を活かしたモダンアプリケーションの開発が得意 ・設立...",
+      "salary_currency_code": "JPY",
+      "salary": "5000000 - 8000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1a1341cabfd48acca454c9f5e386f7dd67c9e2e38eea900bdeaf8587ecddc4f69880ebea8de5c72297eac190a998deaf9587ece5c4f682438be2c484e68297ebd590a9a33fceafcc8ced9497a2db8be2e584e7827681fff8cdb2872c1f5c5a591447/c7982030456799aff05b5960ae8a0e51.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【フルリモート/エンジニアリーダー】Go,TypeScriptなどモダンな開発環境/最先端の組織を構築",
+      "salary_max": "8000000",
+      "company": "株式会社アイスリーデザイン"
+    },
+    {
+      "salary_min": "4500000",
+      "locations": "日本",
+      "salary_type": "Y",
+      "date": "Wed, 07 Sep 2022 22:01:27 GMT",
+      "description": "ラインでヒトとヒトのつながり（＝関係構築）をDXするWebサービスをつくりませんか？ 】  関係構築DXをするフロントエンドエンジニアの募集です！   ・バヅクリ（Web機能）の拡充   「バヅクリ」はNext.js(React)、<b>TypeScript</b>をベ...を行っていただきます。    #社会課題に挑む企業  #チャレンジできる環境  #ユニコーンを⽬指す企業  #DX推進   求められるスキルは   必須 ◆必須要件  ・チームのパフォーマンスを念頭に開発できる方  ・React/<b>TypeScript</b>でのWebサー...",
+      "salary_currency_code": "JPY",
+      "salary": "4500000 - 9490000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1a4941ceafcc8ced9497a2db8be2e584e782768ecef8cd84b42f67376e5614441250/28b2d9737fbeb395434b1347e1987e01.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【TypeScript,Next.js】関係構築をDXしたいエンジニア募集！",
+      "salary_max": "9490000",
+      "company": "バヅクリ株式会社"
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都港区六本木",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:00:29 GMT",
+      "description": "は<b>TypeScript</b>の開発経験   歓迎するスキル・経験   ・CI/CDの導入もしくは改善の経験  ・その他AWSクラウドの経験  ・Node.jsでの開発経験   稼動日数   週5日   商談回数   1回   最寄駅   東京メトロ南北線 六本...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e1d41ceafd18ced9b97a3f08be3d76583b4db8ee6c728c8bf89cee7dc8da4e1c3e0c16324061341270b1b1a5a5f3f6c7a376e5d1746115b5b/a7c318fd7125bc55803f5bd9cc899365.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "AWS / JavaScript / TypeScript 既存サービスのインフラ基盤支援",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "4500000",
+      "locations": "東京都",
+      "salary_type": "Y",
+      "date": "Wed, 07 Sep 2022 07:49:56 GMT",
+      "description": "チームで完走できるようなチーム構成をとっており、フロントからインフラまで携わります。  ■技術スタック：  ・言語…<b>TypeScript</b>、JavaScript、Ruby、Scala  ・フレームワーク…React、React Native、Redux、Gatsby.js、Node.js...休暇  ［応募資格］  学歴不問  ＜応募資格/応募条件＞  ■必須条件：  ・当社のVision／Mission／Valueに共感いただける方  ・コンポーネント指向フレームワーク・ライブラリを用いたSPA開発経験2年以上  ・<b>TypeScript</b>...",
+      "salary_currency_code": "JPY",
+      "salary": "4500000 - 7000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b1e41c8b1fb89f9829385fe4885d2f686a1cb4881c888ceb689cee5c58da6e30085c5c289c3dbc5e7c94995bc9bd8a0bf668af2b892b7c64885d2f686a1cb488dcba7ceb6b8caf0cc4ec1d98384ccdf8bf4c40091cdda95aa8c3fc8b1fb89f98254c4dff982efd845c4cce58cf8bfcca98e0d82c2cdc0d09e86fbc06c82f9bf92ffcc948fb61dc991f58cef9854c8d8ca84e5c386a1de8be8e40acd908ecac0d18bb4d52286f4fe88f0c00090d4f890ab941dcbbbd48ae3b554c6cecb86cad980b3d569514018130b/574bdf00b9ac63576bae3b5977d995ee.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【自社開発】【フロントエンドエンジニア】【 React / Redux / TypeScript】【エージェントサービス求人】【正社員】【不動産】【第二新卒・既卒者可】【学歴不問】【転勤なし】【フレックスタイム制】【年間休日120日以上】【土日祝日休み】【完全週休2日制】【女性活躍中】【東京都】",
+      "salary_max": "7000000",
+      "company": ""
+    },
+    {
+      "salary_min": "4500000",
+      "locations": "東京都渋谷区代官山町 - 東京都渋谷区恵比寿",
+      "salary_type": "Y",
+      "date": "Wed, 07 Sep 2022 07:43:33 GMT",
+      "description": "Web、インターネット、ゲーム系   掲載予定期間：2022/9/5(月)〜2022/11/27(日)   【自社開発】【フロントエンドエンジニア】【 React / Redux / <b>TypeScript</b>】   ◆◇人と...…<b>TypeScript</b>、JavaScript、Ruby、Scala  ・フレームワーク…React、React Native、Redux、Gatsby.js、Node.js、Tailwind、Ruby on Rails、Play Framework...",
+      "salary_currency_code": "JPY",
+      "salary": "4500000 - 7000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1d4f41c5aace88ca9954c9f5e386f7dd45c3f6c08af099c8bf95cee7e48da5d62280ead48de4d9c3f7fb8af1930bdeaf8587ecddc4f69880ebea8de5c7229cefc3948e951dc4bbef88f79d76c3e1dd82eddb86a3e78bebca0ac8beb8cee7c28da4c7c3e0e06387f1eec7edd24990a883deae9e87edd6c4f7ab80eac36f54551246505971191b0f1f1a56/565bf428bee46da55682402d5e6116a7.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【自社開発】【フロントエンドエンジニア】【 React / Redux / TypeScript】【転職支援サービス求人】",
+      "salary_max": "7000000",
+      "company": ""
+    },
+    {
+      "salary_min": "7000000",
+      "locations": "東京都渋谷区神泉町 - 東京都渋谷区道玄坂",
+      "salary_type": "Y",
+      "date": "Sun, 04 Sep 2022 07:53:26 GMT",
+      "description": "クエンドシステムのカスタマイズ開発作業を担当して頂きます。  新規立ち上げサイト、または既存サービス拡大に向けて増員のため募集します。   ■具体的な業務■  ・HTML/CSS/JavaScript/node.js/<b>Typescript</b>による、フロントサイドのSPA/SSRWEBサイト開発  ・詳細...設計/製造/単体テスト。プロジェクトによっては保守・運用までを含む  ・スキルとプロジェクトによって基本設計、技術担当として顧客MTG同席の可能性あり   ■開発環境・使用技術など■  ・JavaScript、<b>Typescript</b>、Node.js...",
+      "salary_currency_code": "JPY",
+      "salary": "7000000 - 7500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f1d41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c928ceb6b8caf0d44ecef1ad87d7c06c290a441148232028c2aba6cafdd56cc4f69780ead88de4e3c3f7c868401a190f1a15665c5e15461852/c5fe005dfd0e67fac52a6ba06e9d5694.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【一部リモート】人気の渋谷エリア／動画配信システム開発(Typescript/Node.js)",
+      "salary_max": "7500000",
+      "company": ""
+    },
+    {
+      "salary_min": "7000000",
+      "locations": "東京都渋谷区神泉町 - 東京都渋谷区道玄坂",
+      "salary_type": "Y",
+      "date": "Sun, 04 Sep 2022 07:40:18 GMT",
+      "description": "クエンドシステムのカスタマイズ開発作業を担当して頂きます。  新規立ち上げサイト、または既存サービス拡大に向けて増員のため募集します。   ■具体的な業務■  ・HTML/CSS/JavaScript/node.js/<b>Typescript</b>による、フロントサイドのSPA/SSRWEBサイト開発  ・詳細...設計/製造/単体テスト。プロジェクトによっては保守・運用までを含む  ・スキルとプロジェクトによって基本設計、技術担当として顧客MTG同席の可能性あり   ■開発環境・使用技術など■  ・JavaScript、<b>Typescript</b>、Node.js...",
+      "salary_currency_code": "JPY",
+      "salary": "7000000 - 7500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f1d41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c928ceb6b8caf0d44ecef1ad87d7c06c290a441148232028c2aba6cafdd56cc4f69780ead88de4e3c3f7c868401a190f1a15665c5e15461852/508a0366d8112e2b02e5b4e96107113c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【一部リモート】人気の渋谷エリア／動画配信システム開発(Typescript/Node.js)",
+      "salary_max": "7500000",
+      "company": ""
+    },
+    {
+      "salary_min": "7000000",
+      "locations": "東京都",
+      "salary_type": "Y",
+      "date": "Sun, 04 Sep 2022 07:27:59 GMT",
+      "description": "立ち上げサイト、または既存サービス拡大に向けて増員のため募集します。   ■具体的な業務■  ・HTML/CSS/JavaScript/node.js/<b>Typescript</b>による、フロントサイドのSPA/SSRWEBサイト開発  ・詳細設計/製造/単体...テスト。プロジェクトによっては保守・運用までを含む  ・スキルとプロジェクトによって基本設計、技術担当として顧客MTG同席の可能性あり   ■開発環境・使用技術など■  ・JavaScript、<b>Typescript</b>、Node.js、Express...",
+      "salary_currency_code": "JPY",
+      "salary": "7000000 - 7500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c4841c8b1fb89f9829385fe4885d2f686a1cb4881c888ceb689cee5c58da6e30085fed18beaf72291f4f695bd8e1dc991f58cef9854c6f5d884e3f545c7d0d68ce08b29d8b1b282f8cb07909cf28be0d1478da2c68cd5e20acca98ec9d8fe6cc2e8bf85ffc44e83d9b197e9d653ccbd8dc8a0f66d8bbbebc6f4cd86cbfa45c4c8f98af2950bd5968f81e4cac4f58a80e9f66f5f56124c5e/62ee6c50810b97c1acd6b9607f6c880c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【一部リモート】人気の渋谷エリア／動画配信システム開発(Typescript/Node.js)【派遣社員】【インターネット関連】【第二新卒・既卒者可】【学歴不問】【転勤なし】【年間休日120日以上】【土日祝日休み】【産休・育休取得実績】【急募求人】【東京都】",
+      "salary_max": "7500000",
+      "company": ""
+    },
+    {
+      "salary_min": "4000000",
+      "locations": "東京都新宿区",
+      "salary_type": "Y",
+      "date": "Sun, 04 Sep 2022 07:25:21 GMT",
+      "description": "ォーマンス検証・チューニング（SQLServer）  ・テスト自動化   言語：<b>TypeScript</b>、C#  FW：ASP.NET  ライブラリ：React、  ソースコード管理：Git、VisualStudioCode  サーバー：SQL Server...",
+      "salary_currency_code": "JPY",
+      "salary": "4000000 - 4500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b4f416479448bd2a69285ce6a283a658cb6ff8ff0c928cf81accbc1c26cc4f7b180ebe28de5d4c3f7d48af1922a0f1518535c5b/6207b10afd5fd6f8dec461967a158925.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【フルリモート】ITソリューション運営企業！／パッケージ開発（TypeScript）",
+      "salary_max": "4500000",
+      "company": ""
+    },
+    {
+      "salary_min": "4000000",
+      "locations": "東京都",
+      "salary_type": "Y",
+      "date": "Sun, 04 Sep 2022 07:13:56 GMT",
+      "description": "ーニング（SQLServer）  ・テスト自動化   言語：<b>TypeScript</b>、C#  FW：ASP.NET  ライブラリ：React、  ソースコード管理：Git、VisualStudioCode  サーバー：SQL Server  ［勤務地（住所）］  新宿...］  【勤務曜日】月・火・水・木・金  9:00～18:00（休憩：1時間）  ［応募資格］  ・webアプリの開発経験(フロントエンド側)  ・<b>TypeScript</b>を使用した開発経験...",
+      "salary_currency_code": "JPY",
+      "salary": "4000000 - 4500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c4841c8b1fb89f9829385fe4885d2f686a1cb4881c888ceb689cee5c58da6e30085fed18beaf72291f4f695bd8e1dc991f58cef9854c6f5d884e3f545c7d0d68ce08b29d8b1b282f8cb07909cf28be0d1478da2c68cd5e20acca98ec9d8fe6cc2e8bf85ffc44e83d9b197e9d653ccbd8dc8a0f66d8bbbebc6f4cd86cbfa45c4c8f98af2950bd5968f81e4cac4f58a80e9f66f5f56124c5e/814b2bc78003c9eba00968b526c36e31.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【フルリモート】ITソリューション運営企業！／パッケージ開発（TypeScript）【派遣社員】【IT・通信系その他】【第二新卒・既卒者可】【学歴不問】【転勤なし】【年間休日120日以上】【土日祝日休み】【産休・育休取得実績】【急募求人】【東京都】",
+      "salary_max": "4500000",
+      "company": ""
+    },
+    {
+      "salary_min": "7000000",
+      "locations": "東京都",
+      "salary_type": "Y",
+      "date": "Sun, 04 Sep 2022 07:06:32 GMT",
+      "description": "立ち上げサイト、または既存サービス拡大に向けて増員のため募集します。   ■具体的な業務■  ・HTML/CSS/JavaScript/node.js/<b>Typescript</b>による、フロントサイドのSPA/SSRWEBサイト開発  ・詳細設計/製造/単体...テスト。プロジェクトによっては保守・運用までを含む  ・スキルとプロジェクトによって基本設計、技術担当として顧客MTG同席の可能性あり   ■開発環境・使用技術など■  ・JavaScript、<b>Typescript</b>、Node.js、Express...",
+      "salary_currency_code": "JPY",
+      "salary": "7000000 - 7500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c4841c8b1fb89f9829385fe4885d2f686a1cb4881c888ceb689cee5c58da6e30085fed18beaf72291f4f695bd8e1dc991f58cef9854c6f5d884e3f545c7d0d68ce08b29d8b1b282f8cb07909cf28be0d1478da2c68cd5e20acca98ec9d8fe6cc2e8bf85ffc44e83d9b197e9d653ccbd8dc8a0f66d8bbbebc6f4cd86cbfa45c4c8f98af2950bd5968f81e4cac4f58a80e9f66f5f56124c5e/64ecfdbce40e68abcc5621a9af2b2713.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【一部リモート】人気の渋谷エリア／動画配信システム開発(Typescript/Node.js)【派遣社員】【インターネット関連】【第二新卒・既卒者可】【学歴不問】【転勤なし】【年間休日120日以上】【土日祝日休み】【産休・育休取得実績】【急募求人】【東京都】",
+      "salary_max": "7500000",
+      "company": ""
+    },
+    {
+      "salary_min": "5180000",
+      "locations": "大阪市北区",
+      "salary_type": "Y",
+      "date": "Sun, 04 Sep 2022 03:58:44 GMT",
+      "description": "全国フルリモート可【Node.js/<b>Typescript</b>】HRTech/SaaSツール「採用係長」を開発するバックエンドエンジニアを募集！  最寄り駅：大阪メトロ堺筋線 扇町駅 徒歩7分 大阪メトロ谷町線・堺筋線 南森町駅 徒歩8分 大阪...いて毎週おこなっています。   ■ こんな人とお会いしたいです  [必須スキル]  Node.jsを使った実務経験（できれば<b>Typescript</b>+node.js）  とはいえ、Node.jsの実務経験者が少ないので、バックエンドの業務経験が3年以上あって、独学等でNode.js...",
+      "salary_currency_code": "JPY",
+      "salary": "5180000 - 7300000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-194841c4bbef88f79d54c3e1c082edd486a2cc8beaf8c9a99f2fcee7f88da4d9c3e1d882edce86a3ea8beacf0ac2aba6cafdd56c691b4406482b3d6586a3e38beadec9a98dceaecd8cedb997a3df4882eccf86a3c78bebcbc9a8b6ceafc66d8da5dcc3e0db82ecdf86a3ff8bebd10ac8be87cee7cd8da4c8c3e0e0605c505313475f/2e3d03f4c8abbf07cd1548b627629f2d.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【プログラマー】全国フルリモート可 Node.js Typescript バックエンドエンジニア 自社SaaSプロダクト開発",
+      "salary_max": "7300000",
+      "company": "株式会社ネットオン"
+    },
+    {
+      "salary_min": "700000",
+      "locations": "神奈川県横浜市鶴見区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:56:55 GMT",
+      "description": "株式会社ハイウェル    募集要項    Javascript・<b>Typescript</b>   【雇用形態】  業務委託   【給与】  月給 700,000円～900,000円  『精算』  140h-180h   【勤務地】  神奈...川県横浜市鶴見区フルリモート    募集情報    フリーランス｜Javascript・<b>Typescript</b>｜フロントエンドエンジニア募集   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "700000 - 900000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-484941ceaef18ced8d97a3df8be2c784e69397ead053c9a995ceaed78cec9f97a3e88be3cc652f4102093a1058424d590d87edc6c4f79380ead98de4eec3f6ca6b90a883deae9e87edd6c4f7ab80eac34e84e6b597ebc390a997deae8487ecddc4f699618be3c684e69397ead190a9a0deaf8f448cedb297a3c98be2d26586a3e18beadec9a88eceaeec6e5c1042145359/1b9e25a77499cf0b0078d2ee596dd8b1.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Javascript・Typescript／フロントエンドエンジニア",
+      "salary_max": "900000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "750000",
+      "locations": "神奈川県川崎市川崎区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:49:26 GMT",
+      "description": "株式会社ハイウェル    募集要項    React・<b>TypeScript</b>   【雇用形態】  業務委託   【給与】  月給 750,000円～950,000円  『精算』  140h-180h   【勤務地】  神奈...川県川崎市川崎区フルリモート    募集情報    フリーランス｜React・<b>TypeScript</b>｜食品系ECサイトのフロントエンド開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。  「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "750000 - 950000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-131941c48efb8afda654c9f5e386f7dd67c3f7fd8af080c8be91cee7c68da4c7c3e1d14187f1eec7edd26b9a89b41dc4bbef88f79d76c9c0f784fde667c3f7fd8af087c8be9ecee7e76f154316515f50/40d2db27df228aabc5a6fa4fecaeb4ac.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／React・TypeScript／食品系ECサイトのフロントエンド開発",
+      "salary_max": "950000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "400000",
+      "locations": "東京都大田区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:44:28 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>TypeScript</b>   【雇用形態】  業務委託   【給与】  月給 400,000円～600,000円  『精算』  ・140ｈ-200ｈ   【勤務地】  東京都大田区大森    募集...情報    【フリーランス】<b>TypeScript</b> ｜ Angular ｜ Azure ｜ 経験者歓迎！   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "400000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1841ceaef18ced8d97a3df8be2c784e69397ead071c9a8a8ceaece8ced9b75125b5d565d56/079052e4db10e49c840ea87c6a7048a2.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／TypeScript／Angular／Azure",
+      "salary_max": "600000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "650000",
+      "locations": "神奈川県横浜市鶴見区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:40:30 GMT",
+      "description": "株式会社ハイウェル    募集要項    Ruby on Rails・<b>TypeScript</b>   【雇用形態】  業務委託   【給与】  月給 650,000円～800,000円  『精算』  140h-180h   【勤務地】  神奈...川県横浜市鶴見区リモート併用    募集情報    フリーランス｜Ruby on Rails・<b>TypeScript</b>｜リモート教育プラットフォームのWEBアプリ開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっ...",
+      "salary_currency_code": "JPY",
+      "salary": "650000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4849417f5806164e481a00310908021467c6e1f181f1980bdeaf8f87ecf9c4f78a4381f7e580fc9a768bebd1c9a8aaceaece4f87b1ffc7fad2638de4f0c3f7c28af096c8be84cee7dc8da5cd008afeea89fedf222609001f592a0f1a1b505f5f/dd1cf02c4f3a6852031d33bb3ea87277.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Ruby on Rails・TypeScript／教育関連サービスのWEBアプリ開発",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "千葉県松戸市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:31:59 GMT",
+      "description": "株式会社ハイウェル    募集要項    Java・<b>Typescript</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  140h-180h   【勤務地】  千葉...県松戸市フルリモート    募集情報    フリーランス｜Java・<b>Typescript</b>｜Webサービス会社向けPKG製品開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b4e417a48064f87b1ffc7fad26387f1eec7edd249394b5d5c2fcee7fa8da4dec3e0d482edce86a3c78bebca0a7c584f2f87ecfbc4f78a80ebdd8de4ccc3f7db8af1930bd4bba683f6d4253e41150941390207214c5b5a431a/bdeac404fd9c240750b7dc459e66a0ea.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Java・Typescript／Webサービス会社向けPKG製品開発",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "650000",
+      "locations": "神奈川県横浜市中区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:31:38 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>TypeScript</b>・Vue.js   【雇用形態】  業務委託   【給与】  月給 650,000円～850,000円  『精算』  140h-180h   【勤務地】  神奈...川県横浜市中区フルリモート    募集情報    フリーランス｜<b>TypeScript</b>・Vue.js｜配送業向け位置管理システムの機能追加   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "650000 - 850000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-134d41ceafd38cec9e97a3e58be2ce47828ed58ff9f5287d48480d2e3c6ccef1ad8ae8e06c80cb8193f8ef71c9a8a8ceaece8ced9b97a3ca8be2dd84e799755a5e4519120b/801ab5b06c20b14250d56e284c1099db.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／TypeScript・Vue.js／配送業向け位置管理システムの機能追加",
+      "salary_max": "850000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "埼玉県和光市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:25:39 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Typescript</b>、Node.js   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  ・140ｈ-180ｈ   【勤務地】  埼玉...県和光市フルリモート    募集情報    【フリーランス】<b>Typescript</b>、Node.js ｜ 経験者歓迎！上位会社受託システムのサーバー   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-491f416342000a4e6d272280ebf18de4d92297ebfc90a981deae9187ecc7c4f79380ead86c84e79797ead090a9addeae8d668bd2bd9384dd69595d545012/969aed6fc0e7b8f4360e43c7d9a13772.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Typescript、Node.js／上位会社受託システムのサーバー",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "750000",
+      "locations": "千葉市美浜区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:25:22 GMT",
+      "description": "株式会社ハイウェル    募集要項    Javascript｜<b>Typescript</b>｜React   【雇用形態】  業務委託   【給与】  月給 750,000円～950,000円  『精算』140h-180h予定   【勤務...地】  千葉県千葉市美浜区フルリモート    募集情報    フリーランス ｜ Javascript｜<b>Typescript</b>｜React｜店舗業務支援開発プロジェクト   本求人はITフリーランスの皆様向けの業務委託(準委任)契約...",
+      "salary_currency_code": "JPY",
+      "salary": "750000 - 950000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1b41c897f387e6b054c9f5e386f7dd67c3f7fd8af080c8be91cee7c68da4c7c3e1d14187f1eec7edd26b394b5d5c7e4e16061e5354c9f5e386f7dd67c9e2e38eea9029deaeb887ecc4c4f79c80ebc88de4d6c3f6d168411d1d0f191a/f7fe620b2ecadaf7ca82c5ee0e78df7c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Javascript／Typescript／React／店舗業務支援開発プロジェクト",
+      "salary_max": "950000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "埼玉県和光市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:17:38 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Typescript</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  ・140ｈ-180ｈ   【勤務地】  埼玉...県和光市フルリモート    募集情報    【フリーランス】<b>Typescript</b> ｜ Node.js ｜ 経験者歓迎！ブロックチェーン技術のシス   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e1e416342000a4e6d272280ebf48de4cfc3f7d48af083c8be9ecee6d66cc1fea08bc9f26c84e68d97ebea90a8843fceaef18ced8d97a3df69595d545012/796b9fe2dc5cde288975821b229e1cf4.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Typescript／Node.js／ブロックチェーン技術",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "650000",
+      "locations": "千葉県船橋市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:09:59 GMT",
+      "description": "株式会社ハイウェル    募集要項    PHP・<b>TypeScript</b>   【雇用形態】  業務委託   【給与】  月給 650,000円～850,000円  『精算』  140h-180h   【勤務地】  千葉...県船橋市フルリモート    募集情報    フリーランス｜PHP・<b>TypeScript</b>｜中古車部品のECサイトシステム開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "650000 - 850000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-491c41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c9287b757d0d8df9e5c0ed9a618be2fb84e68a97ebd590a982deae9e87edd7079db6e88ff8d4658d9bfe4880f082ceaeac2f8df9e5c0ed9a4381e2c682f6a175505a41131f/9cdba88476beeee15572060655c22e80.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／PHP・TypeScript／中古車部品のECサイトシステム開発",
+      "salary_max": "850000",
+      "company": "株式会社ハイウェル"
+    }
+  ],
+  "min_salary": [
+    {
+      "salary_min": "1500",
+      "locations": "愛媛県松山市",
+      "salary_type": "H",
+      "date": "Fri, 19 Aug 2022 07:07:39 GMT",
+      "description": "トウェア会社でのお仕事です。 【WEBサービスの開発】 ・お客様からの意見等をAI分析して情報を抽出、提供するWEBサービス開発 使用ツール・スキル：<b>TypeScript</b>、Python 【スタッフサービスで働くメリット】 「プライベートを大切にしながら働きたい」 「本当...",
+      "salary_currency_code": "JPY",
+      "salary": "1500 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-191a417a48064f87b1ffc7fad2633e1e11481b06499abca0dab497663f17531c4f0d48360b056777110a6b9abca0dab49765575d134718/9cedfbe01cb7ae52d914775faeb9de40.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【WEB登録OK】【TypeScript・Python】WEBサービスの開発松山市",
+      "salary_max": "1500",
+      "company": "株式会社スタッフサービス エンジニアリング事業本部"
+    },
+    {
+      "salary_min": "200000",
+      "locations": "愛知県刈谷市",
+      "salary_type": "M",
+      "date": "Tue, 06 Sep 2022 07:24:38 GMT",
+      "description": "【仕事内容】＃<b>TypeScript</b> ＃javascript ＃フロントエンド開発 ＃リモート,■業務内容  物流向けの配送計画、実績管理及びリアルタイム監視を行う  システムのフロントエンド開発業務   ■業務詳細  対象...システムのフロントエンド機能追加、不具合修正を担当  ※担当範囲  詳細設計～単体・結合・機能検査  OS：Windows  言語：<b>TypeScript</b>/SCSS  ツール：Visual Studio Code/SourceTree  フレームワーク：Vue.js   【この...",
+      "salary_currency_code": "JPY",
+      "salary": "200000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1a4d41ceaef18ced8a97a3d08be2e6478284ca8dfad228cc9993c8f7ce4ecee2ab84f1db6c81d19e9de9ca53c3bdb6cab4de6d24460241300b13071711009dfee294b3913fcb99da86ef84751850595657/9fb3962dd266a6a4fd0f1895bf555b00.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "＃TypeScript ＃javascript ＃フロントエンド開発 ＃リモート【派遣社員】",
+      "salary_max": "200000",
+      "company": ""
+    },
+    {
+      "salary_min": "200000",
+      "locations": "愛知県刈谷市",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 07:15:25 GMT",
+      "description": "SE・PG 掲載期間：09/05（月）〜09/11（日）   株式会社デルタエンジニアリング 大阪営業所   ＃<b>TypeScript</b> ＃javascript ＃フロントエンド開発 ＃リモート   雇用形態  派遣   給与  月給...スキル  ・WebAPIを使用したWebアプリ(フロントエンド側)の開発経験(2年以上)  <b>typescript</b>またはjavascriptを用いた開発経験  ▼ヒューマンスキル  ・能動的にコミュニケーション(報告、相談)を取れる方   【尚良】  ▼開発...",
+      "salary_currency_code": "JPY",
+      "salary": "200000 - 400000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1a1d41674c120e3d440649131c4187f1eec7edd26b90a9bedeae8087ecddc4f7a86181f7e580fc9a762208054b785e5f44141b6cc4f7b580ebcc8de4d6c3f7e08af182c8be9ecee7e66f1f47115451/3df09745dd121c368a84a64d40737a65.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "＃TypeScript ＃javascript ＃フロントエンド開発 ＃リモート",
+      "salary_max": "400000",
+      "company": "株式会社デルタエンジニアリング"
+    },
+    {
+      "salary_min": "2650",
+      "locations": "東京都千代田区",
+      "salary_type": "H",
+      "date": "Sat, 03 Sep 2022 07:01:34 GMT",
+      "description": "中で改善や要望意見もいただきながら、効率よく開発をします。 【工程】 基本設計、詳細設計、実装、テスト 【環境】 Windows、Linux、React Native、<b>TypeScript</b>、Terraform、Slack、Google Workspace、PostgreSQL...エンジニア <b>TypeScript</b> React ※3年前後ブランクのある方も、まずはご応募いただき、ご相談ください 応募先： パーソルテクノロジースタッフ株式会社(IT) 新宿本社 東京都新宿区西新宿2-1-1 新宿三井ビル51F 派遣許認可番号:（派）13070483...",
+      "salary_currency_code": "JPY",
+      "salary": "2650 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c4d41ceafc68cedb097a3c94888f8ec82b9ce6a8cef82ce93a80d81e3d5c0eda2618dedd580fca25481fff8cdb2872fc8f8c78b89f1008afeea89fedf2291f4c19684ae1dceaece8ced8597a3df8be2e6665718415e5046/44b698aa6c2679813ea59eb16da0e872.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【在宅リモートワーク可TypeScript】医療関連アプリ開発",
+      "salary_max": "2650",
+      "company": "パーソルテクノロジースタッフ株式会社"
+    },
+    {
+      "salary_min": "3000",
+      "locations": "東京都千代田区",
+      "salary_type": "H",
+      "date": "Sat, 10 Sep 2022 07:20:06 GMT",
+      "description": "都千代田区 東京メトロ丸ノ内線 大手町駅 徒歩5分 仕事内容： グループ会社向け基幹システムをご担当いただきます。 【工程】 基本設計～開発、テスト、運用保守 【環境】 <b>TypeScript</b>、React 【体制】 10名程度 【出社頻度】 月1～5日... 休日： 日曜日、土曜日、祝日 週休2日制(土日祝休み) 対象となる方： 実務経験1年以上/ブランク相談可/開始時期についてはご相談ください。 【活かせる経験・スキル】 開発エンジニア <b>TypeScript</b> React ※3年前...",
+      "salary_currency_code": "JPY",
+      "salary": "3000 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e4841c8b1cc8ac0a254c9f5e386f7dd67c5e8c08cddaf0bdeae8787ecccc4f79c80ebe96c82f98891c6ec53c9a897ceaec68ced9b97a3eb8be2c184e69c97eac671cfb795c883e16d8da4e1c3e0c582edd486a3fc695b4b1f1d0418/f5133c73d8758b742d32a1e2331de8cb.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【在宅リモートワーク可TypeScript】フロントエンド開発",
+      "salary_max": "3000",
+      "company": "パーソルテクノロジースタッフ株式会社"
+    },
+    {
+      "salary_min": "3000",
+      "locations": "東京都千代田区",
+      "salary_type": "H",
+      "date": "Sat, 10 Sep 2022 01:57:51 GMT",
+      "description": "【職種】SE(ビジネスアプリケーション系)   グループ会社向け基幹システムをご担当いただきます。   【工程】  基本設計〜開発、テスト、運用保守   【環境】  <b>TypeScript</b>、React   【体制】  10名程度   【出社...ンク相談可/開始時期についてはご相談ください。【活かせる経験・スキル】■開発エンジニア  ■<b>TypeScript</b>  ■React  ※3年前後ブランクのある方も、まずはご応募いただき、ご相談ください...",
+      "salary_currency_code": "JPY",
+      "salary": "3000 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e4d41ceafc68cedb097a3c94888f8ec82b9ce6a8af188c8bebacee7c58da5c5c3e0d482ecd086a3d38beac00ac2aba6cafdd56cc4f7b580ebcc8de4d6c3f7e06b9abca0dab497663c2b264618565e585b/64eb6ac1a73eb870f658f72500ae58f2.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "SE(ビジネスアプリケーション系) [派]【リモートワーク可＊TypeScript】フロントエンド開発",
+      "salary_max": "3000",
+      "company": ""
+    },
+    {
+      "salary_min": "3000",
+      "locations": "東京都杉並区荻窪 - 東京都豊島区池袋",
+      "salary_type": "H",
+      "date": "Fri, 09 Sep 2022 07:21:16 GMT",
+      "description": "グラマー  内容 グループ会社向け基幹システムをご担当いただきます。  【工程】基本設計～開発、テスト、運用保守  【環境】<b>TypeScript</b>、React  【体制】10名程度  【出社頻度】月1～5日  E220957481  募集人数 1名...   必要な経験・スキル 実務経験 実務経験1年以上/ブランク相談可/開始時期についてはご相談ください。  【活かせる経験・スキル】■開発エンジニア  ■<b>TypeScript</b>  ■React  ※3年前後ブランクのある方も、まず...",
+      "salary_currency_code": "JPY",
+      "salary": "3000 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c1241ceaef18ced8a97a3d08be2e6658cb6ff8ff0c928c8beb8cee7c28da4c7c3e0e082eccf86a3c78beafa28c8be87cee7cd8da4c8c3e0e0638de4cfc3f7ca8af096c8bea5cee7c08da4c8c3e1c7605d575713415b6b401a190e151d/b26b453b99d12a3027ceb10a99b969ad.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【リモートワーク可＊TypeScript】フロントエンド開発",
+      "salary_max": "3000",
+      "company": ""
+    },
+    {
+      "salary_min": "3000",
+      "locations": "東京都千代田区",
+      "salary_type": "H",
+      "date": "Wed, 07 Sep 2022 22:54:53 GMT",
+      "description": "ープ会社向け基幹システムをご担当いただきます。   【工程】  基本設計～開発、テスト、運用保守   【環境】  <b>TypeScript</b>、React   【体制】  10名程度   【出社頻度】  月1～5日  活かせるスキル・資格 開発エンジニア  <b>TypeScript</b>  React  勤務...",
+      "salary_currency_code": "JPY",
+      "salary": "3000 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b1e41ceaef18ced8a97a3d08be2e6658cb6ff8ff0c928c8beb8cee7c28da4c7c3e0e082eccf86a3c78beafa28c8be87cee7cd8da4c8c3e0e0638de4cfc3f7ca8af096c8bea5cee7c08da4c8c3e1c7605c5f50164d5d/180c9390b7b9329be0935c7f318b822a.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【リモートワーク可＊TypeScript】フロントエンド開発",
+      "salary_max": "3000",
+      "company": "パーソルテクノロジースタッフ株式会社"
+    },
+    {
+      "salary_min": "400000",
+      "locations": "東京都大田区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:44:28 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>TypeScript</b>   【雇用形態】  業務委託   【給与】  月給 400,000円～600,000円  『精算』  ・140ｈ-200ｈ   【勤務地】  東京都大田区大森    募集...情報    【フリーランス】<b>TypeScript</b> ｜ Angular ｜ Azure ｜ 経験者歓迎！   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "400000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1841ceaef18ced8d97a3df8be2c784e69397ead071c9a8a8ceaece8ced9b75125b5d565d56/079052e4db10e49c840ea87c6a7048a2.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／TypeScript／Angular／Azure",
+      "salary_max": "600000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "4000000",
+      "locations": "東京都新宿区",
+      "salary_type": "Y",
+      "date": "Sun, 04 Sep 2022 07:25:21 GMT",
+      "description": "ォーマンス検証・チューニング（SQLServer）  ・テスト自動化   言語：<b>TypeScript</b>、C#  FW：ASP.NET  ライブラリ：React、  ソースコード管理：Git、VisualStudioCode  サーバー：SQL Server...",
+      "salary_currency_code": "JPY",
+      "salary": "4000000 - 4500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b4f416479448bd2a69285ce6a283a658cb6ff8ff0c928cf81accbc1c26cc4f7b180ebe28de5d4c3f7d48af1922a0f1518535c5b/6207b10afd5fd6f8dec461967a158925.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【フルリモート】ITソリューション運営企業！／パッケージ開発（TypeScript）",
+      "salary_max": "4500000",
+      "company": ""
+    },
+    {
+      "salary_min": "4000000",
+      "locations": "東京都",
+      "salary_type": "Y",
+      "date": "Sun, 04 Sep 2022 07:13:56 GMT",
+      "description": "ーニング（SQLServer）  ・テスト自動化   言語：<b>TypeScript</b>、C#  FW：ASP.NET  ライブラリ：React、  ソースコード管理：Git、VisualStudioCode  サーバー：SQL Server  ［勤務地（住所）］  新宿...］  【勤務曜日】月・火・水・木・金  9:00～18:00（休憩：1時間）  ［応募資格］  ・webアプリの開発経験(フロントエンド側)  ・<b>TypeScript</b>を使用した開発経験...",
+      "salary_currency_code": "JPY",
+      "salary": "4000000 - 4500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c4841c8b1fb89f9829385fe4885d2f686a1cb4881c888ceb689cee5c58da6e30085fed18beaf72291f4f695bd8e1dc991f58cef9854c6f5d884e3f545c7d0d68ce08b29d8b1b282f8cb07909cf28be0d1478da2c68cd5e20acca98ec9d8fe6cc2e8bf85ffc44e83d9b197e9d653ccbd8dc8a0f66d8bbbebc6f4cd86cbfa45c4c8f98af2950bd5968f81e4cac4f58a80e9f66f5f56124c5e/814b2bc78003c9eba00968b526c36e31.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【フルリモート】ITソリューション運営企業！／パッケージ開発（TypeScript）【派遣社員】【IT・通信系その他】【第二新卒・既卒者可】【学歴不問】【転勤なし】【年間休日120日以上】【土日祝日休み】【産休・育休取得実績】【急募求人】【東京都】",
+      "salary_max": "4500000",
+      "company": ""
+    },
+    {
+      "salary_min": "4500000",
+      "locations": "日本",
+      "salary_type": "Y",
+      "date": "Wed, 07 Sep 2022 22:01:27 GMT",
+      "description": "ラインでヒトとヒトのつながり（＝関係構築）をDXするWebサービスをつくりませんか？ 】  関係構築DXをするフロントエンドエンジニアの募集です！   ・バヅクリ（Web機能）の拡充   「バヅクリ」はNext.js(React)、<b>TypeScript</b>をベ...を行っていただきます。    #社会課題に挑む企業  #チャレンジできる環境  #ユニコーンを⽬指す企業  #DX推進   求められるスキルは   必須 ◆必須要件  ・チームのパフォーマンスを念頭に開発できる方  ・React/<b>TypeScript</b>でのWebサー...",
+      "salary_currency_code": "JPY",
+      "salary": "4500000 - 9490000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1a4941ceafcc8ced9497a2db8be2e584e782768ecef8cd84b42f67376e5614441250/28b2d9737fbeb395434b1347e1987e01.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【TypeScript,Next.js】関係構築をDXしたいエンジニア募集！",
+      "salary_max": "9490000",
+      "company": "バヅクリ株式会社"
+    },
+    {
+      "salary_min": "4500000",
+      "locations": "東京都",
+      "salary_type": "Y",
+      "date": "Wed, 07 Sep 2022 07:49:56 GMT",
+      "description": "チームで完走できるようなチーム構成をとっており、フロントからインフラまで携わります。  ■技術スタック：  ・言語…<b>TypeScript</b>、JavaScript、Ruby、Scala  ・フレームワーク…React、React Native、Redux、Gatsby.js、Node.js...休暇  ［応募資格］  学歴不問  ＜応募資格/応募条件＞  ■必須条件：  ・当社のVision／Mission／Valueに共感いただける方  ・コンポーネント指向フレームワーク・ライブラリを用いたSPA開発経験2年以上  ・<b>TypeScript</b>...",
+      "salary_currency_code": "JPY",
+      "salary": "4500000 - 7000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b1e41c8b1fb89f9829385fe4885d2f686a1cb4881c888ceb689cee5c58da6e30085c5c289c3dbc5e7c94995bc9bd8a0bf668af2b892b7c64885d2f686a1cb488dcba7ceb6b8caf0cc4ec1d98384ccdf8bf4c40091cdda95aa8c3fc8b1fb89f98254c4dff982efd845c4cce58cf8bfcca98e0d82c2cdc0d09e86fbc06c82f9bf92ffcc948fb61dc991f58cef9854c8d8ca84e5c386a1de8be8e40acd908ecac0d18bb4d52286f4fe88f0c00090d4f890ab941dcbbbd48ae3b554c6cecb86cad980b3d569514018130b/574bdf00b9ac63576bae3b5977d995ee.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【自社開発】【フロントエンドエンジニア】【 React / Redux / TypeScript】【エージェントサービス求人】【正社員】【不動産】【第二新卒・既卒者可】【学歴不問】【転勤なし】【フレックスタイム制】【年間休日120日以上】【土日祝日休み】【完全週休2日制】【女性活躍中】【東京都】",
+      "salary_max": "7000000",
+      "company": ""
+    },
+    {
+      "salary_min": "4500000",
+      "locations": "東京都渋谷区代官山町 - 東京都渋谷区恵比寿",
+      "salary_type": "Y",
+      "date": "Wed, 07 Sep 2022 07:43:33 GMT",
+      "description": "Web、インターネット、ゲーム系   掲載予定期間：2022/9/5(月)〜2022/11/27(日)   【自社開発】【フロントエンドエンジニア】【 React / Redux / <b>TypeScript</b>】   ◆◇人と...…<b>TypeScript</b>、JavaScript、Ruby、Scala  ・フレームワーク…React、React Native、Redux、Gatsby.js、Node.js、Tailwind、Ruby on Rails、Play Framework...",
+      "salary_currency_code": "JPY",
+      "salary": "4500000 - 7000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1d4f41c5aace88ca9954c9f5e386f7dd45c3f6c08af099c8bf95cee7e48da5d62280ead48de4d9c3f7fb8af1930bdeaf8587ecddc4f69880ebea8de5c7229cefc3948e951dc4bbef88f79d76c3e1dd82eddb86a3e78bebca0ac8beb8cee7c28da4c7c3e0e06387f1eec7edd24990a883deae9e87edd6c4f7ab80eac36f54551246505971191b0f1f1a56/565bf428bee46da55682402d5e6116a7.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【自社開発】【フロントエンドエンジニア】【 React / Redux / TypeScript】【転職支援サービス求人】",
+      "salary_max": "7000000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:55:35 GMT",
+      "description": " ～ 2022/12/31   言語   必須スキル・経験   ・HTML, CSS, <b>TypeScript</b>の経験  ・React.jsを使用したフロント開発経験(バージョン17系以上であれば尚歓迎)   歓迎するスキル・経験   ・React...リのフロントエンド開発をお任せする案件になります。原則ご出社頂き、ご対応頂く想定です。HTML/CSS, <b>TypeScript</b>のご経験とReactを仕様してのフロント開発経験をお持ちの方をお待ちしています。...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-191d417a48064f8da5d6c3e0ff82edcd45c9e2e38eea9029757960284f2d742700340d036c84e78297ebfe90a9811dc4bbef88f79d766837252d4e243673763f0c110a63696061655d5612431251/4021c14cc346a13a045d3701005d5106.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "HTML/CSS / TypeScript / React.js Webアプリ開発",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都千代田区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:52:06 GMT",
+      "description": "ース会社の社員様や他パートナー様に概要設計まで実施頂き、その内容を基に開発チームで各種開発を行っております。今回は特にバックエンド開発を中心に実施して頂きます。   ＜システム環境＞  言語：PHP/Vue.js/<b>TypeScript</b>  FW：Laravel  DB：MySQL  管理... ～ 2022/05/31   言語   必須スキル・経験   ・PHP(Laravel)/Vue.js/<b>Typescript</b>/Dockerで開発経験2年以上  ・SaaS開発経験  ・システム保守運用経験1年以上  ・AWS上の開発経験1年以...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c4d417d65344f87b1ffc7fad2633e2f350092c9e197919d3fc4bbef88f79d76702b386388f3cac6fbdc6841121e0b1418/d23893365ae46116ae1ae629f08b3fa9.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "PHP / TypeScript リユース会社様向け チャットボット開発支援案件",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都目黒区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:49:02 GMT",
+      "description": "   ・Node.jsのご経験  ・<b>TypeScript</b>のご経験   稼動日数   週5日   商談回数   1回   案件の詳細   商談1回   精算条件   140h-180h   支払サイト   月末締めの翌月末日払い   案件...担当のおすすめポイント   Node.jsの経験者を募集している案件になります。オンサイトでご対応頂く想定です。Node.jsと<b>TypeScript</b>のご経験のある方をお待ちしています。...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1b416342000a4e6d272284dded87cff6c8f4ed6b949fa7d485be662101431122293b605c5f50174659/66d5030fe5ad7665d5ac568c2b0354e2.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Node.js / TypeScript 経験者募集",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都台東区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:42:27 GMT",
+      "description": "発した経験半年以上 ※プロジェクトではVueを採用  ・<b>TypeScript</b>(もしくは静的型付け言語、実務ではなくプライベートでも可)  ・要件定義の経験半年以上  ・アジャイルの経験   歓迎するスキル・経験   ・Jest   稼動日数   週5日   商談...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-481b41ceafd38cec9e97a3e58be2ce47828ed58ff9f528cc938ccaf4e96cc4f69780ead88de4e3c3f7c86b255f4e3fcb84fb87ed9a75125b5d565d5e/b19302c2121b52aa99341c668df635a5.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "TypeScript / Vue 申込管理システムの機能追加",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:37:25 GMT",
+      "description": "の開発対象にはなりません。   ＜開発環境＞  フロントエンド：<b>TypeScript</b>, React  バックエンド：PHP(FW：Laravel)  データベース：Amazon Aurora(MySQL)  インフラ関連：AWS   ＜備考＞  フルリモート  希望...があれば出社可能   期間   即日 ～ 2022/12/31   言語   必須スキル・経験   ・<b>TypeScript</b>もしくはJavaScript(React)の開発経験3年以上  ・アジャイル開発プロジェクト参画経験  ・チー...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1a1241ca8df088c79154c9f5e386f7dd67c3f6df8af193c8beabcee7cf4ecee2ab84f1db6c80c5b493c1df53ccbf92cba2d06d8da5c3c3e1d182ede186a3d44880f4bbc3a3a02f8de8ffcfeaad438ec8f18ef382755a51461d190f/8bffc73a1dd530b7bc1d2cc2a88a498e.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "TypeScript / JavaScript 金融系研究機関における新規Webシステム開発支援",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都中央区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:24:47 GMT",
+      "description": "ト   ＜環境＞  言語：JavaScript/<b>TypeScript</b>(Node.js, Babel)  主要技術：React/Redux, React Native, Express, GraphQL  その他技術：Jest, ESLint...ィスカジュアル   期間   即日 ～ 2022/12/31   言語   必須スキル・経験   ・<b>TypeScript</b>の1人称での開発経験  ・JavaScriptの開発経験(詳細設計以降)   歓迎するスキル・経験   ・ReactNativeの開...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-131b41c8a1df88f7a554c8c0d588eec767c3f6ca8af0bdc8be870d87ece8c4f69980ebe96c8fc69d9de8c971cfa786cab4e66d8da4f2c3e1d182edef64124c5d5f4a1d/00514ad3bf4fc4bf631de26404e6198a.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "TypeScript / JavaScript 医療アプリの製造・テスト",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:09:01 GMT",
+      "description": "＞  基本リモート   期間   即日 ～ 2022/09/30   言語   必須スキル・経験   ・業務系Webシステムのバック・フロントエンドの開発経験5年程度(Java, Python, React, Vue, <b>TypeScript</b>等...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b1941c59fcd8acd9591b3c24889dcce8083c66a8ee7b5ceac90c9dbf287bece0080ead68de5dcc3f7ee8af08a29d59f8481ccdc0797a2d48be3d784e6a697ebc971c9a98aceafdd8ceda197a3c3482b0f11042290d7f49ab3911dc991fe88ca9975125b5d565d53/8d15f0301150ebd290e91c186d5085bb.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Java / Python / TypeScript など 生命保険会社向け販売員育成システム",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都千代田区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:05:15 GMT",
+      "description": "/Misoca  基幹システム：基幹システム/CRM/データレイク   ＜開発環境＞  クラウド(バックエンド)：C#(ASP.NET MVC) Java(Spring Boot) Python Go  クラウド(フロントエンド)：<b>TypeScript</b>...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-484f41c5aace88ca9954c9f5e386f7dd456a151e0871c2ac97ca89da4f87b1ffc7fad26387f1eec7edd249394b5d5c2f7d1d1b06481a008afeea89fedf223e091f120ac3ba87cac0d16f154c15555154/a18fbf0fb67048e5c548d88de6514d0e.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Java / Python / TypeScript 自社サービス開発要員募集",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都港区六本木",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:00:29 GMT",
+      "description": "は<b>TypeScript</b>の開発経験   歓迎するスキル・経験   ・CI/CDの導入もしくは改善の経験  ・その他AWSクラウドの経験  ・Node.jsでの開発経験   稼動日数   週5日   商談回数   1回   最寄駅   東京メトロ南北線 六本...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e1d41ceafd18ced9b97a3f08be3d76583b4db8ee6c728c8bf89cee7dc8da4e1c3e0c16324061341270b1b1a5a5f3f6c7a376e5d1746115b5b/a7c318fd7125bc55803f5bd9cc899365.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "AWS / JavaScript / TypeScript 既存サービスのインフラ基盤支援",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "5000000",
+      "locations": "東京都渋谷区",
+      "salary_type": "Y",
+      "date": "Wed, 07 Sep 2022 22:01:35 GMT",
+      "description": "える成長を実現 募集要項 ポジション エンジニア（チームリーダー） 提示年収 500万 〜 800万円 求めるスキル Bランク以上（※ランクについてはhttps://paiza.jp/guide/career#rank） 言語 <b>TypeScript</b>、PHP...のやりがい ・新設の重要ポジション候補！組織全体のマネジメントを担うキャリアパスも描ける ・フロントエンドではReact,<b>TypeScript</b>、バックエンドではAWSサーバレスやコンテナの特性を活かしたモダンアプリケーションの開発が得意 ・設立...",
+      "salary_currency_code": "JPY",
+      "salary": "5000000 - 8000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1a1341cabfd48acca454c9f5e386f7dd67c9e2e38eea900bdeaf8587ecddc4f69880ebea8de5c72297eac190a998deaf9587ece5c4f682438be2c484e68297ebd590a9a33fceafcc8ced9497a2db8be2e584e7827681fff8cdb2872c1f5c5a591447/c7982030456799aff05b5960ae8a0e51.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【フルリモート/エンジニアリーダー】Go,TypeScriptなどモダンな開発環境/最先端の組織を構築",
+      "salary_max": "8000000",
+      "company": "株式会社アイスリーデザイン"
+    },
+    {
+      "salary_min": "5180000",
+      "locations": "大阪市北区",
+      "salary_type": "Y",
+      "date": "Sun, 04 Sep 2022 03:58:44 GMT",
+      "description": "全国フルリモート可【Node.js/<b>Typescript</b>】HRTech/SaaSツール「採用係長」を開発するバックエンドエンジニアを募集！  最寄り駅：大阪メトロ堺筋線 扇町駅 徒歩7分 大阪メトロ谷町線・堺筋線 南森町駅 徒歩8分 大阪...いて毎週おこなっています。   ■ こんな人とお会いしたいです  [必須スキル]  Node.jsを使った実務経験（できれば<b>Typescript</b>+node.js）  とはいえ、Node.jsの実務経験者が少ないので、バックエンドの業務経験が3年以上あって、独学等でNode.js...",
+      "salary_currency_code": "JPY",
+      "salary": "5180000 - 7300000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-194841c4bbef88f79d54c3e1c082edd486a2cc8beaf8c9a99f2fcee7f88da4d9c3e1d882edce86a3ea8beacf0ac2aba6cafdd56c691b4406482b3d6586a3e38beadec9a98dceaecd8cedb997a3df4882eccf86a3c78bebcbc9a8b6ceafc66d8da5dcc3e0db82ecdf86a3ff8bebd10ac8be87cee7cd8da4c8c3e0e0605c505313475f/2e3d03f4c8abbf07cd1548b627629f2d.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【プログラマー】全国フルリモート可 Node.js Typescript バックエンドエンジニア 自社SaaSプロダクト開発",
+      "salary_max": "7300000",
+      "company": "株式会社ネットオン"
+    },
+    {
+      "salary_min": "540000",
+      "locations": "東京都港区六本木",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:51:59 GMT",
+      "description": "   ・JavaScript, <b>TypeScript</b>等を用いたWebフロントエンドの開発経験  ・Reactを用いたWebフロントエンドの開発経験  ・Web標準に則ったマークアップの実務経験  ・CSSを用いたレイアウトやUI実装の実務経験  ・ユニ...",
+      "salary_currency_code": "JPY",
+      "salary": "540000 - 640000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-491c41ceaef18ced8a97a3d08be2e66586a2dc8beac0c9a985ceaeef8cec8576c3e0fd82edca86a3c78beafbc9a995ceaed78cedae76c3e0fd82edca86a3c78beafbc9a995ceaed78cedae97a2cb8be2dd84e79897ebe290a8893f7f48050c1a2647105159595d/51bf614d6cf1309fda3b956843ed3cad.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "TypeScript / React フロントエンドエンジニア募集",
+      "salary_max": "640000",
+      "company": ""
+    },
+    {
+      "salary_min": "540000",
+      "locations": "東京都港区六本木",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:28:35 GMT",
+      "description": "   ・JavaScript実務経験1年以上  ・<b>TypeScript</b> (strict:true)実務経験1年以上  ・コーデック 配信方式 hls dash 等のキーワードの理解   歓迎するスキル・経験   ・Netflix等、何ら...",
+      "salary_currency_code": "JPY",
+      "salary": "540000 - 640000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b1b41c8a6f188fa9c54c9e6e585d1c667c5fffd8ee79129d997a682cac3253e411509320d150c50006a8cf8bfcca996c4e1e28a98d5215058535f5f56/13d721d249ce5b7a556350de2d9ef315.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "JavaScript / TypeScript 動画配信事業部のWebプレイヤーチーム",
+      "salary_max": "640000",
+      "company": ""
+    },
+    {
+      "salary_min": "550000",
+      "locations": "東京都新宿区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:05:22 GMT",
+      "description": "単価/月   55～65万円   勤務地   東京都,新宿区   案件概要   JavaScript, <b>Typescript</b>を用いて利用者画面、運用者画面、内部処理等の開発   ＜関連スキル＞  ・JavaScript..., <b>TypeScript</b>, Node.js, Angular.js, Nest.js  ・MySQL, DynamoDB, APISprout  ・AWS, Backlog, Slack, Gitlab, Swagger など   ＜備考＞  初回1週間...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 650000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f13417a48064f87b1ffc7fad26389f0e0c9edca499abca0dab4976688f9a29db9c148360b0567c9e2e38eea900b6a484f66250f511573001a081e1345c9e2e38eea902a0f1518535c5b/3e10c63dcc4162b0d053ef33b0facfcf.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "JavaScript / TypeScript 病院業界向け Web開発",
+      "salary_max": "650000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:57:04 GMT",
+      "description": "単価/月   60～70万円   勤務地   東京都,品川区   案件概要   <b>TypeScript</b>, Reactでのフロント開発、一部サーバーサイド開発をご担当いただく案件となります。   ＜業務の流れ＞  基本...   ・開発経験5年以上  ・JavaScript  ・アジャイル開発の経験   歓迎するスキル・経験   ・<b>TypeScript</b>  ・React.js  ・SPA開発経験  ・サーバーサイドの開発経験  ・スクラム開発の経験   稼動日数   週5...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c4841c5aace88ca9954c9f5e386f7dd67c8f3c28ed7940bdeaf9887edcac4f7a86181e1f483da815481fff8cdb2872fc4e4f58a98d5008ae8fb8ad8c4229dfee294b3913c1f1551585d13/88b38a256d468690ac5348380e224c3b.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "React / TypeScript 大手通信会社の自社サービスサイト開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:54:23 GMT",
+      "description": "ースまで一貫して対応  ・運用保守(作業依頼対応、障害対応など)も並行して実施   ＜カウンセリング台帳＞  ・iPad上で動作  ・サーバー上で動作するAPIはNode.js, <b>TypeScript</b>, DBはMySQL   ＜備考＞  フルリモート可能   期間...   即日 ～ 2022/06/30   言語   必須スキル・経験   ・Node上でのWebサーバー/DBサーバー構築経験  ・Node上での<b>TypeScript</b>開発経験1年以上  ・上記開発環境でのAPI/バッチ開発経験  ・要件定義～リリ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b48416342000a4e6d272285fcd88ad8cb223a070d1628616e2c1f5c5a591546/634f6c04fd06960dbd166a7957aa24e6.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Node.js / TypeScript APIの改修",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:54:23 GMT",
+      "description": "/07/31   言語   必須スキル・経験   ・開発経験5年程度  以下のいずれかひとつでも該当すること  ・<b>TypeScript</b>やJavaScriptなどでのSPA(Single Page Application)開発経験(Reactや...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-121a41ceafc68cedb097a3c94888f8ec82b9ce6a2a536929d4bba683f6d40797a2cb8be2dd84e79897ebe290a8893fc4bbef88f79d5463618be3cc84e6b797ebc390a89adeae9187edd9c4f78780ebd24e84e78897ebda90a893deaea687edcc264618565f525a/cbfa2d4d981cbe65ba25b8f432c24feb.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "C# /TypeScript/JavaScript アプリケーション開発エンジニア",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:53:42 GMT",
+      "description": "リケーションフロントエンド開発経験  ・JavaScriptまたは<b>TypeScript</b>による開発経験  ・Vue.jsを使用したSPAのフロントエンド開発経験  ・Yarn, Webpackなどを使用したビルド環境の構築経験  ・Web, HTTP知識を前提としたパフォーマンスへの造詣   歓迎...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-191f417b58014f247476c3e1c082edd486a2cc8beac00ac2aba6cafdd56cc4f7b580ebcc8de4d6c3f7e06b9abca0dab497668cec8f97a3d08be3d684e693755a51461d180e/13e00b120328f0275bf125ecca5ce6be.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Vue.js / TypeScript など 求人検索エンジンのフロントエンド開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都目黒区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:51:08 GMT",
+      "description": "る開発経験  ・JavaScriptおよび<b>TypeScript</b>を使用したフロントエンドの開発経験  ・APIとの通信の実装経験, Axiosなどのライブラリの利用経験  ・Pinia, Vuexなどの状態管理ライブラリの利用経験  ・Jestを利...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 650000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f4e41ceafd18ced9b97a3f08be3d74786a2dc8beac0c9a985ceaeef8cec8576c7c5e786cbee45c6e0c78ffc9e29deaf9887ecd2c4f7b380ead84e84e6b597ebc490a998deaea566250f511573001a081e1345c3f6c08af099c8bf95cee7e48da5d62284ceee89c2ec2146505c44181a/a563e90396240331d8fa8ef86c60d3d7.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "JavaScript / TypeScript フロントエンドエンジニア/福祉支援サービス",
+      "salary_max": "650000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:48:27 GMT",
+      "description": "ントエンドはSPAで構成されており、言語は<b>TypeScript</b>, フレームワークはReact.jsを利用しています。  開発はアジャイルスタイルでスプリントを回しながら開発を行っています。  スキルや経験により、基本設計・詳細設計・実装・テス...   ・JavaScriptによるWebフロントエンドの開発経験3年程度  ・MV*フレームワーク (Vue.js, Angular.js, React.js+αなど)を使用した開発経験1年程度  ・<b>TypeScript</b>を使用した経験   歓迎するスキル・経験...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-481e41686e448cec9297a2c78be2e6653745150b1d5360783fc4bbef88f79d7665208be3db84e78497ebe1716f683c1f1551585c15/2c5bed99ac091cc2acebb47fa295ac48.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "TypeScript / React.js ECサイトのフロンドエンド開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:46:08 GMT",
+      "description": "が整い次第リモート   ＜基本時間＞  9：00～17：30   ＜服装＞  ビジネスカジュアル   期間   即日 ～ 2023/01/31   言語   必須スキル・経験   以下の経験  ・React.js, React Hooks  ・<b>TypeScript</b>...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e48417a48064f8da5d6c3e0ff82edcd45c9e2e38eea9029deaf8f87ecf9c4f78a4381f7e580fc9a763f0c110ac2aba6cafdd56ccee2ab84f1db4e82eda692f6f971c3bdb6cab4de4f39421621515054595451/7009e28ecec77cc599d72503799c10e4.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "React.js / TypeScript 顧客満足度分析 Webアプリケーション開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都豊島区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:45:36 GMT",
+      "description": "時間＞  9：00～18：00   期間   即日 ～ 2022/07/31   言語   必須スキル・経験   ・Reactの開発経験  ・<b>TypeScript</b>の開発   歓迎するスキル・経験   ・Linuxでの開発経験・コミ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b1d41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c928c8be8ccee7d38da5dfc3e0d44187f1eec7edd26b969aa4d88e9f448cec9097a2da8be2e884e680768beae6c9a890ceaed78cedaf76c9f5e386f7dd64124c5d5e471b/8eaad119519901b63f3e72d527fcf1a9.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "React / TypeScript 小売・メーカー・卸向け基幹システムのフロント開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:40:12 GMT",
+      "description": "開発経験3年以上  ・JavaScriptもしくは<b>TypeScript</b>の開発経験  ・Gitでのチーム開発経験   歓迎するスキル・経験   ・Hibernateの利用経験  ・レビュー経験  ・AWS環境での開発経験  ・Jenkinsの利...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-494f41c4bbef88f79d546a021e006c2d0456153b0a01435b490dc4f2e489bece228afeea89fedf223e091f1228c8bebccee7ec8da5c5c3e0d482ecdf64124c5d5e4118/efd3c1a9c75dff2d0ec5aee547a49c58.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Java / JavaScript / TypeScript 為替BtoBパッケージ開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都豊島区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:32:46 GMT",
+      "description": "   即日 ～ 2022/09/30   言語   必須スキル・経験   ・Vue.js, <b>TypeScript</b>を用いた開発経験  ・HTML/CSS, JavaScriptの経験   歓迎するスキル・経験   ・Linux周りの知識、サー...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e1c41657929234e642773618be3d984e79997ebef90a98b1dc4bbef88f79d766a021e003d041749041c499abca0dab49766250f511573001a081e13456820252571c3bdb6cab4de6e5c1f41175759/71e623c1ba3c9893def2e554912dd559.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "HTML/CSS / JavaScript / TypeScript など プライシングシステム開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:21:46 GMT",
+      "description": "システム構築メンバーの一員として、設計・実装・テストの一連の工程を担当していただきます。  Node.js, <b>TypeScript</b>, Express等を使用したバックエンド開発を中心に実施いただきます。   ＜備考＞  火曜、木曜は出社  残りはリモート   期間   即日... ～ 2022/07/31   言語   必須スキル・経験   ・Node.js, <b>TypeScript</b>による開発のご経験  ・バックエンド開発のご経験  ・Gitを用いたチーム開発のご経験(プルリク)   歓迎するスキル・経験   ・AWSサー...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c4941ceafc68cedb097a3c94888f8ec82b9ce6a8af0bfc8be91cee7e64ec4f69580ebdd8de4f6c3f6d16b90a9bedeae9187ece7079db6e88ff8d4652b4f100d49397929d4bba683f6d4264618565f525d/33ed6031ab05c270809f4b8af54bebfd.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Node.js / TypeScript / Git フードデリバリサービスアプリ開発案件",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:17:22 GMT",
+      "description": "/ElastiCache for Redis/Auth0  Java：SpringBoot  JavaScript/<b>TypeScript</b>/Vue.js   ＜備考＞  基本リモートワーク可能   期間   即日 ～ 2022/12/31   言語   必須...スキル・経験   以下、フロントエンド/サーバーサイドいずれかのスキル、両方あれば尚可   フロントエンド  ・JavaScriptもしくは<b>TypeScript</b>  ・フレームワーク経験(Vue.js, React, Angularなど)   サー...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c4a417a48064f8da5d6c3e0ff82edcd45c9e2e38eea9029deaf8f87ecf9c4f78a4381f7e580fc9a542208054b29deaf8f87ecf9c4f78a4381f7e580fc9a763f0c110ac2aba6cafdd56ccee2ab84f1db4e2d045615695b4b1f1c0f1f/2dd17b5bd8884d08750eb0ae4b30ce88.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "JavaScript / TypeScript / Java Webアプリケーション開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都日野市 - 東京都八王子市",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:04:15 GMT",
+      "description": "での開発経験  ・<b>TypeScript</b>での開発経験   歓迎するスキル・経験   ・C#での開発経験  ・React Hookでの開発経験  ・React.jsでの開発経験1年以上  ・<b>TypeScript</b>での開発経験1年以上  ・パフ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-184a41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c90aceb196cafded6cc1f7a586c8d04e84e79797ead090a9addeae8d448ae29c93b9e16a84e2dc82b9f6488af19dc8bf94cee7e98da4d42280ead68de5dcc3f7ee8af08a0bd4bba683f6d42592a3e68dc1df4786a2c38bebcac9a8bbceaec46e5c1f4117535e635c5f50174459/525b823b479ee6bff5c64f33be89ccdf.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "React.js / TypeScript 医療系情報連携システム開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "神奈川県川崎市川崎区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:03:30 GMT",
+      "description": "単価/月   60～70万円   勤務地   川崎市,川崎区   案件概要   現在開発中の大手音楽レーベルの売上予測システム開発プロジェクトにおける、フロントエンド(React/<b>TypeScript</b>)開発者を募集します。弊社...はその他SPAによる業務システムフロントエンド開発の経験1年以上  ・<b>TypeScript</b>によるフロント開発経験  ・業務系Webシステムのフロントエンド開発経験1年以上  ・バックエンドサービスAPI連携についての技術理解があること  ・コミ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c4941ceaee38ced9b97a2dc4884e6e183bee46a8af19dc8bf94cee7e98da4d40080eac98de4d6c3f6d08af0a1c8bf8f2f87edd9c4f69980ebe78de4c5009dfee294b3913fc4b2d789cb9a54c3e0ef82eddb86a2cb6a80e5a1cca4970d87edc6c4f79380ead98de4eec3f6ca68411d1d0f1a1c/69ef58ac5b4bbfb8a87971f1891538de.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "React / TypeScript 大手音楽レーベルデータ分析システム開発エンジニア募集",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区六本木",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:03:20 GMT",
+      "description": "  ・<b>TypeScript</b>(strict:true) 1年程度  ・React.js or Next 2年程度  ・CSS in JS 1年程度  ・ESLint & Prettierを用いた開発経験 1年程度   歓迎するスキル・経験   ・コン...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f4d41c882da8ad1bb76720609021a66561046595140/8accd6e1ef5585eaa0cd7c02452bebb4.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "TypeScript / React ブラウザ向けレスポンシブ対応",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "千葉県松戸市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:31:59 GMT",
+      "description": "株式会社ハイウェル    募集要項    Java・<b>Typescript</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  140h-180h   【勤務地】  千葉...県松戸市フルリモート    募集情報    フリーランス｜Java・<b>Typescript</b>｜Webサービス会社向けPKG製品開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b4e417a48064f87b1ffc7fad26387f1eec7edd249394b5d5c2fcee7fa8da4dec3e0d482edce86a3c78bebca0a7c584f2f87ecfbc4f78a80ebdd8de4ccc3f7db8af1930bd4bba683f6d4253e41150941390207214c5b5a431a/bdeac404fd9c240750b7dc459e66a0ea.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Java・Typescript／Webサービス会社向けPKG製品開発",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "埼玉県和光市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:25:39 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Typescript</b>、Node.js   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  ・140ｈ-180ｈ   【勤務地】  埼玉...県和光市フルリモート    募集情報    【フリーランス】<b>Typescript</b>、Node.js ｜ 経験者歓迎！上位会社受託システムのサーバー   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-491f416342000a4e6d272280ebf18de4d92297ebfc90a981deae9187ecc7c4f79380ead86c84e79797ead090a9addeae8d668bd2bd9384dd69595d545012/969aed6fc0e7b8f4360e43c7d9a13772.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Typescript、Node.js／上位会社受託システムのサーバー",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "埼玉県和光市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:17:38 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Typescript</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  ・140ｈ-180ｈ   【勤務地】  埼玉...県和光市フルリモート    募集情報    【フリーランス】<b>Typescript</b> ｜ Node.js ｜ 経験者歓迎！ブロックチェーン技術のシス   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e1e416342000a4e6d272280ebf48de4cfc3f7d48af083c8be9ecee6d66cc1fea08bc9f26c84e68d97ebea90a8843fceaef18ced8d97a3df69595d545012/796b9fe2dc5cde288975821b229e1cf4.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Typescript／Node.js／ブロックチェーン技術",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "650000",
+      "locations": "神奈川県横浜市鶴見区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:40:30 GMT",
+      "description": "株式会社ハイウェル    募集要項    Ruby on Rails・<b>TypeScript</b>   【雇用形態】  業務委託   【給与】  月給 650,000円～800,000円  『精算』  140h-180h   【勤務地】  神奈...川県横浜市鶴見区リモート併用    募集情報    フリーランス｜Ruby on Rails・<b>TypeScript</b>｜リモート教育プラットフォームのWEBアプリ開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっ...",
+      "salary_currency_code": "JPY",
+      "salary": "650000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4849417f5806164e481a00310908021467c6e1f181f1980bdeaf8f87ecf9c4f78a4381f7e580fc9a768bebd1c9a8aaceaece4f87b1ffc7fad2638de4f0c3f7c28af096c8be84cee7dc8da5cd008afeea89fedf222609001f592a0f1a1b505f5f/dd1cf02c4f3a6852031d33bb3ea87277.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Ruby on Rails・TypeScript／教育関連サービスのWEBアプリ開発",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "650000",
+      "locations": "神奈川県横浜市中区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:31:38 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>TypeScript</b>・Vue.js   【雇用形態】  業務委託   【給与】  月給 650,000円～850,000円  『精算』  140h-180h   【勤務地】  神奈...川県横浜市中区フルリモート    募集情報    フリーランス｜<b>TypeScript</b>・Vue.js｜配送業向け位置管理システムの機能追加   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "650000 - 850000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-134d41ceafd38cec9e97a3e58be2ce47828ed58ff9f5287d48480d2e3c6ccef1ad8ae8e06c80cb8193f8ef71c9a8a8ceaece8ced9b97a3ca8be2dd84e799755a5e4519120b/801ab5b06c20b14250d56e284c1099db.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／TypeScript・Vue.js／配送業向け位置管理システムの機能追加",
+      "salary_max": "850000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "650000",
+      "locations": "千葉県船橋市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:09:59 GMT",
+      "description": "株式会社ハイウェル    募集要項    PHP・<b>TypeScript</b>   【雇用形態】  業務委託   【給与】  月給 650,000円～850,000円  『精算』  140h-180h   【勤務地】  千葉...県船橋市フルリモート    募集情報    フリーランス｜PHP・<b>TypeScript</b>｜中古車部品のECサイトシステム開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "650000 - 850000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-491c41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c9287b757d0d8df9e5c0ed9a618be2fb84e68a97ebd590a982deae9e87edd7079db6e88ff8d4658d9bfe4880f082ceaeac2f8df9e5c0ed9a4381e2c682f6a175505a41131f/9cdba88476beeee15572060655c22e80.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／PHP・TypeScript／中古車部品のECサイトシステム開発",
+      "salary_max": "850000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "700000",
+      "locations": "神奈川県横浜市鶴見区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:56:55 GMT",
+      "description": "株式会社ハイウェル    募集要項    Javascript・<b>Typescript</b>   【雇用形態】  業務委託   【給与】  月給 700,000円～900,000円  『精算』  140h-180h   【勤務地】  神奈...川県横浜市鶴見区フルリモート    募集情報    フリーランス｜Javascript・<b>Typescript</b>｜フロントエンドエンジニア募集   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "700000 - 900000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-484941ceaef18ced8d97a3df8be2c784e69397ead053c9a995ceaed78cec9f97a3e88be3cc652f4102093a1058424d590d87edc6c4f79380ead98de4eec3f6ca6b90a883deae9e87edd6c4f7ab80eac34e84e6b597ebc390a997deae8487ecddc4f699618be3c684e69397ead190a9a0deaf8f448cedb297a3c98be2d26586a3e18beadec9a88eceaeec6e5c1042145359/1b9e25a77499cf0b0078d2ee596dd8b1.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Javascript・Typescript／フロントエンドエンジニア",
+      "salary_max": "900000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "7000000",
+      "locations": "東京都渋谷区神泉町 - 東京都渋谷区道玄坂",
+      "salary_type": "Y",
+      "date": "Sun, 04 Sep 2022 07:53:26 GMT",
+      "description": "クエンドシステムのカスタマイズ開発作業を担当して頂きます。  新規立ち上げサイト、または既存サービス拡大に向けて増員のため募集します。   ■具体的な業務■  ・HTML/CSS/JavaScript/node.js/<b>Typescript</b>による、フロントサイドのSPA/SSRWEBサイト開発  ・詳細...設計/製造/単体テスト。プロジェクトによっては保守・運用までを含む  ・スキルとプロジェクトによって基本設計、技術担当として顧客MTG同席の可能性あり   ■開発環境・使用技術など■  ・JavaScript、<b>Typescript</b>、Node.js...",
+      "salary_currency_code": "JPY",
+      "salary": "7000000 - 7500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f1d41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c928ceb6b8caf0d44ecef1ad87d7c06c290a441148232028c2aba6cafdd56cc4f69780ead88de4e3c3f7c868401a190f1a15665c5e15461852/c5fe005dfd0e67fac52a6ba06e9d5694.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【一部リモート】人気の渋谷エリア／動画配信システム開発(Typescript/Node.js)",
+      "salary_max": "7500000",
+      "company": ""
+    },
+    {
+      "salary_min": "7000000",
+      "locations": "東京都渋谷区神泉町 - 東京都渋谷区道玄坂",
+      "salary_type": "Y",
+      "date": "Sun, 04 Sep 2022 07:40:18 GMT",
+      "description": "クエンドシステムのカスタマイズ開発作業を担当して頂きます。  新規立ち上げサイト、または既存サービス拡大に向けて増員のため募集します。   ■具体的な業務■  ・HTML/CSS/JavaScript/node.js/<b>Typescript</b>による、フロントサイドのSPA/SSRWEBサイト開発  ・詳細...設計/製造/単体テスト。プロジェクトによっては保守・運用までを含む  ・スキルとプロジェクトによって基本設計、技術担当として顧客MTG同席の可能性あり   ■開発環境・使用技術など■  ・JavaScript、<b>Typescript</b>、Node.js...",
+      "salary_currency_code": "JPY",
+      "salary": "7000000 - 7500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f1d41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c928ceb6b8caf0d44ecef1ad87d7c06c290a441148232028c2aba6cafdd56cc4f69780ead88de4e3c3f7c868401a190f1a15665c5e15461852/508a0366d8112e2b02e5b4e96107113c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【一部リモート】人気の渋谷エリア／動画配信システム開発(Typescript/Node.js)",
+      "salary_max": "7500000",
+      "company": ""
+    },
+    {
+      "salary_min": "7000000",
+      "locations": "東京都",
+      "salary_type": "Y",
+      "date": "Sun, 04 Sep 2022 07:27:59 GMT",
+      "description": "立ち上げサイト、または既存サービス拡大に向けて増員のため募集します。   ■具体的な業務■  ・HTML/CSS/JavaScript/node.js/<b>Typescript</b>による、フロントサイドのSPA/SSRWEBサイト開発  ・詳細設計/製造/単体...テスト。プロジェクトによっては保守・運用までを含む  ・スキルとプロジェクトによって基本設計、技術担当として顧客MTG同席の可能性あり   ■開発環境・使用技術など■  ・JavaScript、<b>Typescript</b>、Node.js、Express...",
+      "salary_currency_code": "JPY",
+      "salary": "7000000 - 7500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c4841c8b1fb89f9829385fe4885d2f686a1cb4881c888ceb689cee5c58da6e30085fed18beaf72291f4f695bd8e1dc991f58cef9854c6f5d884e3f545c7d0d68ce08b29d8b1b282f8cb07909cf28be0d1478da2c68cd5e20acca98ec9d8fe6cc2e8bf85ffc44e83d9b197e9d653ccbd8dc8a0f66d8bbbebc6f4cd86cbfa45c4c8f98af2950bd5968f81e4cac4f58a80e9f66f5f56124c5e/62ee6c50810b97c1acd6b9607f6c880c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【一部リモート】人気の渋谷エリア／動画配信システム開発(Typescript/Node.js)【派遣社員】【インターネット関連】【第二新卒・既卒者可】【学歴不問】【転勤なし】【年間休日120日以上】【土日祝日休み】【産休・育休取得実績】【急募求人】【東京都】",
+      "salary_max": "7500000",
+      "company": ""
+    },
+    {
+      "salary_min": "7000000",
+      "locations": "東京都",
+      "salary_type": "Y",
+      "date": "Sun, 04 Sep 2022 07:06:32 GMT",
+      "description": "立ち上げサイト、または既存サービス拡大に向けて増員のため募集します。   ■具体的な業務■  ・HTML/CSS/JavaScript/node.js/<b>Typescript</b>による、フロントサイドのSPA/SSRWEBサイト開発  ・詳細設計/製造/単体...テスト。プロジェクトによっては保守・運用までを含む  ・スキルとプロジェクトによって基本設計、技術担当として顧客MTG同席の可能性あり   ■開発環境・使用技術など■  ・JavaScript、<b>Typescript</b>、Node.js、Express...",
+      "salary_currency_code": "JPY",
+      "salary": "7000000 - 7500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c4841c8b1fb89f9829385fe4885d2f686a1cb4881c888ceb689cee5c58da6e30085fed18beaf72291f4f695bd8e1dc991f58cef9854c6f5d884e3f545c7d0d68ce08b29d8b1b282f8cb07909cf28be0d1478da2c68cd5e20acca98ec9d8fe6cc2e8bf85ffc44e83d9b197e9d653ccbd8dc8a0f66d8bbbebc6f4cd86cbfa45c4c8f98af2950bd5968f81e4cac4f58a80e9f66f5f56124c5e/64ecfdbce40e68abcc5621a9af2b2713.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【一部リモート】人気の渋谷エリア／動画配信システム開発(Typescript/Node.js)【派遣社員】【インターネット関連】【第二新卒・既卒者可】【学歴不問】【転勤なし】【年間休日120日以上】【土日祝日休み】【産休・育休取得実績】【急募求人】【東京都】",
+      "salary_max": "7500000",
+      "company": ""
+    },
+    {
+      "salary_min": "750000",
+      "locations": "神奈川県川崎市川崎区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:49:26 GMT",
+      "description": "株式会社ハイウェル    募集要項    React・<b>TypeScript</b>   【雇用形態】  業務委託   【給与】  月給 750,000円～950,000円  『精算』  140h-180h   【勤務地】  神奈...川県川崎市川崎区フルリモート    募集情報    フリーランス｜React・<b>TypeScript</b>｜食品系ECサイトのフロントエンド開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。  「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "750000 - 950000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-131941c48efb8afda654c9f5e386f7dd67c3f7fd8af080c8be91cee7c68da4c7c3e1d14187f1eec7edd26b9a89b41dc4bbef88f79d76c9c0f784fde667c3f7fd8af087c8be9ecee7e76f154316515f50/40d2db27df228aabc5a6fa4fecaeb4ac.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／React・TypeScript／食品系ECサイトのフロントエンド開発",
+      "salary_max": "950000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "750000",
+      "locations": "千葉市美浜区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:25:22 GMT",
+      "description": "株式会社ハイウェル    募集要項    Javascript｜<b>Typescript</b>｜React   【雇用形態】  業務委託   【給与】  月給 750,000円～950,000円  『精算』140h-180h予定   【勤務...地】  千葉県千葉市美浜区フルリモート    募集情報    フリーランス ｜ Javascript｜<b>Typescript</b>｜React｜店舗業務支援開発プロジェクト   本求人はITフリーランスの皆様向けの業務委託(準委任)契約...",
+      "salary_currency_code": "JPY",
+      "salary": "750000 - 950000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1b41c897f387e6b054c9f5e386f7dd67c3f7fd8af080c8be91cee7c68da4c7c3e1d14187f1eec7edd26b394b5d5c7e4e16061e5354c9f5e386f7dd67c9e2e38eea9029deaeb887ecc4c4f79c80ebc88de4d6c3f6d168411d1d0f191a/f7fe620b2ecadaf7ca82c5ee0e78df7c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Javascript／Typescript／React／店舗業務支援開発プロジェクト",
+      "salary_max": "950000",
+      "company": "株式会社ハイウェル"
+    }
+  ],
+  "wordcloud_json": "[{\"word\": \"b\", \"count\": 344}, {\"word\": \"経験\", \"count\": 222}, {\"word\": \"開発\", \"count\": 195}, {\"word\": \"TypeScript\", \"count\": 144}, {\"word\": \"js\", \"count\": 100}, {\"word\": \"React\", \"count\": 83}, {\"word\": \"スキル\", \"count\": 82}, {\"word\": \"言語\", \"count\": 63}, {\"word\": \"エンド\", \"count\": 59}, {\"word\": \"1\", \"count\": 55}, {\"word\": \"年\", \"count\": 50}, {\"word\": \"フロント\", \"count\": 50}, {\"word\": \"案件\", \"count\": 48}, {\"word\": \"業務\", \"count\": 46}, {\"word\": \"必須\", \"count\": 42}, {\"word\": \"リモート\", \"count\": 40}, {\"word\": \"Node\", \"count\": 39}, {\"word\": \"以上\", \"count\": 37}, {\"word\": \"募集\", \"count\": 37}, {\"word\": \"設計\", \"count\": 36}, {\"word\": \"環境\", \"count\": 34}, {\"word\": \"円\", \"count\": 34}, {\"word\": \"JavaScript\", \"count\": 33}, {\"word\": \"期間\", \"count\": 32}, {\"word\": \"即日\", \"count\": 29}, {\"word\": \"基本\", \"count\": 28}, {\"word\": \"歓迎\", \"count\": 28}, {\"word\": \"システム\", \"count\": 27}, {\"word\": \"勤務\", \"count\": 27}, {\"word\": \"Typescript\", \"count\": 27}, {\"word\": \"2022\", \"count\": 26}, {\"word\": \"委託\", \"count\": 25}, {\"word\": \"フリーランス\", \"count\": 25}, {\"word\": \"5\", \"count\": 24}, {\"word\": \"31\", \"count\": 24}, {\"word\": \"Web\", \"count\": 23}, {\"word\": \"00\", \"count\": 23}, {\"word\": \"担当\", \"count\": 21}, {\"word\": \"000\", \"count\": 21}, {\"word\": \"AWS\", \"count\": 21}, {\"word\": \"会社\", \"count\": 20}, {\"word\": \"月\", \"count\": 20}, {\"word\": \"チーム\", \"count\": 20}, {\"word\": \"バック\", \"count\": 20}, {\"word\": \"Vue\", \"count\": 19}, {\"word\": \"単価\", \"count\": 19}, {\"word\": \"地\", \"count\": 19}, {\"word\": \"技術\", \"count\": 18}, {\"word\": \"備考\", \"count\": 18}, {\"word\": \"サービス\", \"count\": 17}, {\"word\": \"使用\", \"count\": 17}, {\"word\": \"サイト\", \"count\": 17}, {\"word\": \"区\", \"count\": 16}, {\"word\": \"方\", \"count\": 16}, {\"word\": \"万\", \"count\": 16}, {\"word\": \"サーバー\", \"count\": 16}, {\"word\": \"形態\", \"count\": 16}, {\"word\": \"h\", \"count\": 16}, {\"word\": \"プロジェクト\", \"count\": 16}, {\"word\": \"テスト\", \"count\": 15}, {\"word\": \"10\", \"count\": 15}, {\"word\": \"3\", \"count\": 15}, {\"word\": \"週\", \"count\": 15}, {\"word\": \"求人\", \"count\": 15}, {\"word\": \"契約\", \"count\": 15}, {\"word\": \"東京\", \"count\": 14}, {\"word\": \"内容\", \"count\": 14}, {\"word\": \"運用\", \"count\": 14}, {\"word\": \"名\", \"count\": 14}, {\"word\": \"程度\", \"count\": 14}, {\"word\": \"2\", \"count\": 14}, {\"word\": \"エンジニア\", \"count\": 14}, {\"word\": \"実務\", \"count\": 13}, {\"word\": \"詳細\", \"count\": 13}, {\"word\": \"実装\", \"count\": 13}, {\"word\": \"フレームワーク\", \"count\": 13}, {\"word\": \"稼動\", \"count\": 13}, {\"word\": \"日数\", \"count\": 13}, {\"word\": \"株式\", \"count\": 12}, {\"word\": \"SPA\", \"count\": 12}, {\"word\": \"CSS\", \"count\": 12}, {\"word\": \"商談\", \"count\": 12}, {\"word\": \"時間\", \"count\": 12}, {\"word\": \"IT\", \"count\": 11}, {\"word\": \"情報\", \"count\": 11}, {\"word\": \"Ruby\", \"count\": 11}, {\"word\": \"サイド\", \"count\": 11}, {\"word\": \"雇用\", \"count\": 11}, {\"word\": \"給与\", \"count\": 11}, {\"word\": \"月給\", \"count\": 11}, {\"word\": \"構築\", \"count\": 11}, {\"word\": \"回\", \"count\": 11}, {\"word\": \"30\", \"count\": 11}, {\"word\": \"精算\", \"count\": 11}, {\"word\": \"140\", \"count\": 11}, {\"word\": \"要項\", \"count\": 11}, {\"word\": \"都\", \"count\": 10}, {\"word\": \"保守\", \"count\": 10}, {\"word\": \"相談\", \"count\": 10}, {\"word\": \"ポジション\", \"count\": 10}, {\"word\": \"Next\", \"count\": 10}, {\"word\": \"概要\", \"count\": 10}, {\"word\": \"利用\", \"count\": 10}, {\"word\": \"MySQL\", \"count\": 10}, {\"word\": \"180\", \"count\": 10}, {\"word\": \"ハイ\", \"count\": 10}, {\"word\": \"ウェル\", \"count\": 10}, {\"word\": \"皆\", \"count\": 10}, {\"word\": \"委任\", \"count\": 10}, {\"word\": \"工程\", \"count\": 9}, {\"word\": \"可\", \"count\": 9}, {\"word\": \"Linux\", \"count\": 9}, {\"word\": \"こと\", \"count\": 9}, {\"word\": \"2023\", \"count\": 9}, {\"word\": \"回数\", \"count\": 9}, {\"word\": \"他\", \"count\": 9}, {\"word\": \"C\", \"count\": 9}, {\"word\": \"市\", \"count\": 9}, {\"word\": \"県\", \"count\": 9}, {\"word\": \"駅\", \"count\": 8}, {\"word\": \"出社\", \"count\": 8}, {\"word\": \"Python\", \"count\": 8}, {\"word\": \"Redux\", \"count\": 8}, {\"word\": \"HTML\", \"count\": 8}, {\"word\": \"対応\", \"count\": 8}, {\"word\": \"服装\", \"count\": 8}, {\"word\": \"参画\", \"count\": 8}, {\"word\": \"作業\", \"count\": 8}, {\"word\": \"要件\", \"count\": 8}, {\"word\": \"19\", \"count\": 8}, {\"word\": \"Java\", \"count\": 8}, {\"word\": \"応募\", \"count\": 7}, {\"word\": \"機能\", \"count\": 7}, {\"word\": \"アプリケーション\", \"count\": 7}, {\"word\": \"必要\", \"count\": 7}, {\"word\": \"70\", \"count\": 7}, {\"word\": \"最寄\", \"count\": 7}, {\"word\": \"80\", \"count\": 7}, {\"word\": \"FW\", \"count\": 7}, {\"word\": \"DB\", \"count\": 7}, {\"word\": \"上記\", \"count\": 7}, {\"word\": \"定義\", \"count\": 7}, {\"word\": \"ライブラリ\", \"count\": 7}, {\"word\": \"あり\", \"count\": 7}, {\"word\": \"基幹\", \"count\": 6}, {\"word\": \"新宿\", \"count\": 6}, {\"word\": \"ツール\", \"count\": 6}, {\"word\": \"管理\", \"count\": 6}, {\"word\": \"単体\", \"count\": 6}, {\"word\": \"on\", \"count\": 6}, {\"word\": \"実施\", \"count\": 6}, {\"word\": \"11\", \"count\": 6}, {\"word\": \"アジャイル\", \"count\": 6}, {\"word\": \"03\", \"count\": 6}, {\"word\": \"Express\", \"count\": 6}, {\"word\": \"PHP\", \"count\": 6}, {\"word\": \"UI\", \"count\": 6}, {\"word\": \"Go\", \"count\": 6}, {\"word\": \"DX\", \"count\": 6}, {\"word\": \"ｈ\", \"count\": 6}, {\"word\": \"メトロ\", \"count\": 5}, {\"word\": \"体制\", \"count\": 5}, {\"word\": \"ブランク\", \"count\": 5}, {\"word\": \"Native\", \"count\": 5}, {\"word\": \"追加\", \"count\": 5}, {\"word\": \"自社\", \"count\": 5}, {\"word\": \"当社\", \"count\": 5}, {\"word\": \"インフラ\", \"count\": 5}, {\"word\": \"OK\", \"count\": 5}, {\"word\": \"リード\", \"count\": 5}, {\"word\": \"Rails\", \"count\": 5}, {\"word\": \"09\", \"count\": 5}, {\"word\": \"アプリ\", \"count\": 5}, {\"word\": \"側\", \"count\": 5}, {\"word\": \"60\", \"count\": 5}, {\"word\": \"一部\", \"count\": 5}, {\"word\": \"12\", \"count\": 5}, {\"word\": \"想定\", \"count\": 5}, {\"word\": \"サー\", \"count\": 5}, {\"word\": \"用\", \"count\": 5}, {\"word\": \"API\", \"count\": 5}, {\"word\": \"07\", \"count\": 5}, {\"word\": \"以降\", \"count\": 5}, {\"word\": \"Docker\", \"count\": 5}, {\"word\": \"Spring\", \"count\": 5}, {\"word\": \"Jest\", \"count\": 5}, {\"word\": \"既存\", \"count\": 5}, {\"word\": \"Angular\", \"count\": 5}, {\"word\": \"9\", \"count\": 5}, {\"word\": \"カジュアル\", \"count\": 5}, {\"word\": \"EC\", \"count\": 5}, {\"word\": \"ため\", \"count\": 5}, {\"word\": \"会議\", \"count\": 5}, {\"word\": \"Git\", \"count\": 5}, {\"word\": \"税抜\", \"count\": 5}, {\"word\": \"800\", \"count\": 5}, {\"word\": \"node\", \"count\": 5}, {\"word\": \"仕事\", \"count\": 4}, {\"word\": \"日\", \"count\": 4}, {\"word\": \"時期\", \"count\": 4}, {\"word\": \"改善\", \"count\": 4}, {\"word\": \"範囲\", \"count\": 4}, {\"word\": \"構成\", \"count\": 4}, {\"word\": \"Scala\", \"count\": 4}, {\"word\": \"企業\", \"count\": 4}, {\"word\": \"事業\", \"count\": 4}, {\"word\": \"プロダクト\", \"count\": 4}, {\"word\": \"大阪\", \"count\": 4}, {\"word\": \"コミュニケーション\", \"count\": 4}, {\"word\": \"私服\", \"count\": 4}, {\"word\": \"資格\", \"count\": 4}, {\"word\": \"スプリント\", \"count\": 4}, {\"word\": \"GraphQL\", \"count\": 4}, {\"word\": \"90\", \"count\": 4}, {\"word\": \"中古\", \"count\": 4}, {\"word\": \"部品\", \"count\": 4}, {\"word\": \"コード\", \"count\": 4}, {\"word\": \"レビュー\", \"count\": 4}, {\"word\": \"現在\", \"count\": 4}, {\"word\": \"データベース\", \"count\": 4}, {\"word\": \"オフィス\", \"count\": 4}, {\"word\": \"Nest\", \"count\": 4}, {\"word\": \"全体\", \"count\": 4}, {\"word\": \"ASP\", \"count\": 4}, {\"word\": \"NET\", \"count\": 4}, {\"word\": \"クラウド\", \"count\": 4}, {\"word\": \"画面\", \"count\": 4}, {\"word\": \"川崎\", \"count\": 4}, {\"word\": \"自動\", \"count\": 4}, {\"word\": \"拡大\", \"count\": 4}, {\"word\": \"増員\", \"count\": 4}, {\"word\": \"具体\", \"count\": 4}, {\"word\": \"SSRWEB\", \"count\": 4}, {\"word\": \"製造\", \"count\": 4}, {\"word\": \"顧客\", \"count\": 4}, {\"word\": \"MTG\", \"count\": 4}, {\"word\": \"同席\", \"count\": 4}, {\"word\": \"Javascript\", \"count\": 4}, {\"word\": \"神奈\", \"count\": 4}, {\"word\": \"川\", \"count\": 4}, {\"word\": \"600\", \"count\": 4}, {\"word\": \"千葉\", \"count\": 4}, {\"word\": \"線\", \"count\": 3}, {\"word\": \"徒歩\", \"count\": 3}, {\"word\": \"分\", \"count\": 3}, {\"word\": \"グループ\", \"count\": 3}, {\"word\": \"頻度\", \"count\": 3}, {\"word\": \"対象\", \"count\": 3}, {\"word\": \"開始\", \"count\": 3}, {\"word\": \"Slack\", \"count\": 3}, {\"word\": \"前後\", \"count\": 3}, {\"word\": \"WEB\", \"count\": 3}, {\"word\": \"客\", \"count\": 3}, {\"word\": \"プライベート\", \"count\": 3}, {\"word\": \"javascript\", \"count\": 3}, {\"word\": \"人\", \"count\": 3}, {\"word\": \"スタック\", \"count\": 3}, {\"word\": \"ビット\", \"count\": 3}, {\"word\": \"コイン\", \"count\": 3}, {\"word\": \"採用\", \"count\": 3}, {\"word\": \"テック\", \"count\": 3}, {\"word\": \"SQL\", \"count\": 3}, {\"word\": \"以下\", \"count\": 3}, {\"word\": \"ESLint\", \"count\": 3}, {\"word\": \"人称\", \"count\": 3}, {\"word\": \"Laravel\", \"count\": 3}, {\"word\": \"利\", \"count\": 3}, {\"word\": \"プログラミング\", \"count\": 3}, {\"word\": \"支援\", \"count\": 3}, {\"word\": \"08\", \"count\": 3}, {\"word\": \"条件\", \"count\": 3}, {\"word\": \"Material\", \"count\": 3}, {\"word\": \"18\", \"count\": 3}, {\"word\": \"渋谷\", \"count\": 3}, {\"word\": \"海外\", \"count\": 3}, {\"word\": \"型付け\", \"count\": 3}, {\"word\": \"Amazon\", \"count\": 3}, {\"word\": \"Aurora\", \"count\": 3}, {\"word\": \"関連\", \"count\": 3}, {\"word\": \"参加\", \"count\": 3}, {\"word\": \"PC\", \"count\": 3}, {\"word\": \"貸与\", \"count\": 3}, {\"word\": \"Mac\", \"count\": 3}, {\"word\": \"SQLServer\", \"count\": 3}, {\"word\": \"横浜\", \"count\": 3}, {\"word\": \"650\", \"count\": 3}, {\"word\": \"意見\", \"count\": 2}, {\"word\": \"効率\", \"count\": 2}, {\"word\": \"Windows\", \"count\": 2}, {\"word\": \"PostgreSQL\", \"count\": 2}, {\"word\": \"派遣\", \"count\": 2}, {\"word\": \"配送\", \"count\": 2}, {\"word\": \"修正\", \"count\": 2}, {\"word\": \"OS\", \"count\": 2}, {\"word\": \"Visual\", \"count\": 2}, {\"word\": \"Studio\", \"count\": 2}, {\"word\": \"Code\", \"count\": 2}, {\"word\": \"マッチング\", \"count\": 2}, {\"word\": \"実現\", \"count\": 2}, {\"word\": \"展開\", \"count\": 2}, {\"word\": \"PJ\", \"count\": 2}, {\"word\": \"完走\", \"count\": 2}, {\"word\": \"普及\", \"count\": 2}, {\"word\": \"取引\", \"count\": 2}, {\"word\": \"運営\", \"count\": 2}, {\"word\": \"領域\", \"count\": 2}, {\"word\": \"今回\", \"count\": 2}, {\"word\": \"下記\", \"count\": 2}, {\"word\": \"複数\", \"count\": 2}, {\"word\": \"オン\", \"count\": 2}, {\"word\": \"以外\", \"count\": 2}, {\"word\": \"イン\", \"count\": 2}, {\"word\": \"SE\", \"count\": 2}, {\"word\": \"掲載\", \"count\": 2}, {\"word\": \"05\", \"count\": 2}, {\"word\": \"ビジネス\", \"count\": 2}, {\"word\": \"人数\", \"count\": 2}, {\"word\": \"スクラム\", \"count\": 2}, {\"word\": \"17\", \"count\": 2}, {\"word\": \"リ\", \"count\": 2}, {\"word\": \"原則\", \"count\": 2}, {\"word\": \"アジャイルスタイル\", \"count\": 2}, {\"word\": \"テス\", \"count\": 2}, {\"word\": \"DynamoDB\", \"count\": 2}, {\"word\": \"動作\", \"count\": 2}, {\"word\": \"06\", \"count\": 2}, {\"word\": \"バッチ\", \"count\": 2}, {\"word\": \"知識\", \"count\": 2}, {\"word\": \"パフォーマンス\", \"count\": 2}, {\"word\": \"Babel\", \"count\": 2}, {\"word\": \"Prettier\", \"count\": 2}, {\"word\": \"現場\", \"count\": 2}, {\"word\": \"中心\", \"count\": 2}, {\"word\": \"SaaS\", \"count\": 2}, {\"word\": \"レイアウト\", \"count\": 2}, {\"word\": \"接続\", \"count\": 2}, {\"word\": \"SDK\", \"count\": 2}, {\"word\": \"週間\", \"count\": 2}, {\"word\": \"Storybook\", \"count\": 2}, {\"word\": \"Formik\", \"count\": 2}, {\"word\": \"MongoDB\", \"count\": 2}, {\"word\": \"Redis\", \"count\": 2}, {\"word\": \"コミ\", \"count\": 2}, {\"word\": \"上\", \"count\": 2}, {\"word\": \"webpack\", \"count\": 2}, {\"word\": \"半年\", \"count\": 2}, {\"word\": \"状況\", \"count\": 2}, {\"word\": \"strict\", \"count\": 2}, {\"word\": \"true\", \"count\": 2}, {\"word\": \"理解\", \"count\": 2}, {\"word\": \"メンバー\", \"count\": 2}, {\"word\": \"Type\", \"count\": 2}, {\"word\": \"Script\", \"count\": 2}, {\"word\": \"ワーク\", \"count\": 2}, {\"word\": \"初\", \"count\": 2}, {\"word\": \"社内\", \"count\": 2}, {\"word\": \"朝会\", \"count\": 2}, {\"word\": \"日次\", \"count\": 2}, {\"word\": \"週次\", \"count\": 2}, {\"word\": \"MVC\", \"count\": 2}, {\"word\": \"Boot\", \"count\": 2}, {\"word\": \"実践\", \"count\": 2}, {\"word\": \"リーダー\", \"count\": 2}, {\"word\": \"クライアント\", \"count\": 2}, {\"word\": \"リリース\", \"count\": 2}, {\"word\": \"GitHub\", \"count\": 2}, {\"word\": \"Backlog\", \"count\": 2}, {\"word\": \"全国\", \"count\": 2}, {\"word\": \"コメント\", \"count\": 2}, {\"word\": \"NFT\", \"count\": 2}, {\"word\": \"導入\", \"count\": 2}, {\"word\": \"パフ\", \"count\": 2}, {\"word\": \"大手\", \"count\": 2}, {\"word\": \"ランク\", \"count\": 2}, {\"word\": \"ヒト\", \"count\": 2}, {\"word\": \"関係\", \"count\": 2}, {\"word\": \"バヅクリ\", \"count\": 2}, {\"word\": \"目安\", \"count\": 2}, {\"word\": \"Gatsby\", \"count\": 2}, {\"word\": \"予定\", \"count\": 2}, {\"word\": \"投稿\", \"count\": 2}, {\"word\": \"クエンドシステム\", \"count\": 2}, {\"word\": \"カスタマイズ\", \"count\": 2}, {\"word\": \"ソース\", \"count\": 2}, {\"word\": \"VisualStudioCode\", \"count\": 2}, {\"word\": \"Server\", \"count\": 2}, {\"word\": \"堺\", \"count\": 2}, {\"word\": \"筋\", \"count\": 2}, {\"word\": \"鶴見\", \"count\": 2}, {\"word\": \"750\", \"count\": 2}, {\"word\": \"950\", \"count\": 2}, {\"word\": \"850\", \"count\": 2}, {\"word\": \"埼玉\", \"count\": 2}, {\"word\": \"和光\", \"count\": 2}, {\"word\": \"介護\", \"count\": 2}]",
+  "title": "TypeScript 「年収/採用企業」 フレームワークの転職評価 FlameValue",
+  "description": "TypeScriptはすごいです。",
+  "comments": [
+    "\nTypeScriptは大規模なアプリケーションの開発のために設計されている",
+    "\nTypeScriptはJavaScriptのスーパーセットであるため、既存のJavaScriptプログラムは、全て有効なTypeScriptプログラムとなる",
+    "\nTypeScriptは型定義ファイルをサポートしており、既存のJavaScriptライブラリに型情報を付与して利用できる"
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Commons-logo.svg",
+  "wikipedia_related": [
+    {
+      "name": "Java",
+      "wikipedia_name": "Java"
+    },
+    {
+      "name": "Ruby",
+      "wikipedia_name": "Ruby"
+    },
+    {
+      "name": "Scala",
+      "wikipedia_name": "Scala"
+    },
+    {
+      "name": "TypeScript",
+      "wikipedia_name": "TypeScript"
+    }
+  ]
+}

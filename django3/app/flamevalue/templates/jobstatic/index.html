@@ -1,0 +1,43 @@
+{% extends "jobstatic_template/template.html" %}
+
+
+{% block content %}
+<!-- page content -->
+<div role="main" class="main_contents">
+    <!-- top tiles -->
+    <div class="row" style="display: inline-block;">
+      {% include 'jobstatic_parts/top.html' %}
+    </div>
+    <!-- /top tiles -->
+  <!-- top tiles 
+  <div class="row" style="display: inline-block;">
+    {% include 'jobstatic_parts/top_num.html' %}
+  </div>
+  /top tiles -->
+
+  <div class="row">
+    {% include 'jobstatic_parts/scores.html' %}
+    {% include "jobstatic_parts/companys.html" %}
+  </div>
+
+  <div class="row">
+    {% include "jobstatic_parts/line_graph.html" %}
+  </div>
+  <div class="row">
+    {% include "jobstatic_parts/wordcloud.html" %}
+    {% include "jobstatic_parts/others.html" %}
+  </div>
+
+  <div class="row">
+
+    {% include "jobstatic_parts/jobs.html" %}
+    {% include 'jobstatic_parts/comments.html' %}
+  </div>
+
+
+
+</div>
+<!-- /page content -->
+
+
+{% endblock %}

@@ -1,0 +1,1952 @@
+{
+  "name": "Ruby",
+  "explain": "Ruby（ルビー）は、まつもとゆきひろ（通称: Matz）により開発されたオブジェクト指向スクリプト言語（スクリプト言語とはプログラミング言語の一分類）。\n日本で開発されたプログラミング言語としては初めて国際電気標準会議（IEC）で国際規格に認証された事例となった。",
+  "total_score": 3.27,
+  "stars": "★★★☆☆",
+  "icons": "...png",
+  "basic": {
+    "money": 564,
+    "overtime": 730,
+    "age": 30,
+    "size": 730,
+    "count": 20358
+  },
+  "score": {
+    "money": 4.0285714285714285,
+    "overtime": 3.65,
+    "age": 5.0,
+    "size": 3.65,
+    "count": 5
+  },
+  "score_100": {
+    "money": 80.57142857142857,
+    "overtime": 73.0,
+    "age": 100.0,
+    "size": 73.0,
+    "count": 100
+  },
+  "basic_graph": [
+    {
+      "2022-07-15": {
+        "money": 350,
+        "overtime": 600,
+        "age": 30,
+        "size": 600,
+        "count": 1
+      }
+    },
+    {
+      "2022-07-18": {
+        "money": 350,
+        "overtime": 600,
+        "age": 30,
+        "size": 600,
+        "count": 1
+      }
+    },
+    {
+      "2022-07-21": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-24": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-27": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-30": {
+        "money": 267,
+        "overtime": 267,
+        "age": 30,
+        "size": 267,
+        "count": 2
+      }
+    },
+    {
+      "2022-08-02": {
+        "money": 267,
+        "overtime": 267,
+        "age": 30,
+        "size": 267,
+        "count": 2
+      }
+    },
+    {
+      "2022-08-05": {
+        "money": 223,
+        "overtime": 223,
+        "age": 30,
+        "size": 223,
+        "count": 1
+      }
+    },
+    {
+      "2022-08-08": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-11": {
+        "money": 295,
+        "overtime": 295,
+        "age": 30,
+        "size": 295,
+        "count": 2
+      }
+    },
+    {
+      "2022-08-14": {
+        "money": 295,
+        "overtime": 295,
+        "age": 30,
+        "size": 295,
+        "count": 2
+      }
+    },
+    {
+      "2022-08-17": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-20": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-23": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-26": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-29": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-09-01": {
+        "money": 630,
+        "overtime": 768,
+        "age": 30,
+        "size": 768,
+        "count": 30
+      }
+    },
+    {
+      "2022-09-04": {
+        "money": 600,
+        "overtime": 780,
+        "age": 30,
+        "size": 780,
+        "count": 37
+      }
+    },
+    {
+      "2022-09-07": {
+        "money": 465,
+        "overtime": 768,
+        "age": 30,
+        "size": 768,
+        "count": 9
+      }
+    }
+  ],
+  "score_graph": [
+    {
+      "2022-07-15": {
+        "money": 2.5,
+        "overtime": 3.0,
+        "age": 5.0,
+        "size": 3.0,
+        "count": 0.0005
+      }
+    },
+    {
+      "2022-07-18": {
+        "money": 2.5,
+        "overtime": 3.0,
+        "age": 5.0,
+        "size": 3.0,
+        "count": 0.0005
+      }
+    },
+    {
+      "2022-07-21": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-24": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-27": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-30": {
+        "money": 1.9071428571428573,
+        "overtime": 1.335,
+        "age": 5.0,
+        "size": 1.335,
+        "count": 0.001
+      }
+    },
+    {
+      "2022-08-02": {
+        "money": 1.9071428571428573,
+        "overtime": 1.335,
+        "age": 5.0,
+        "size": 1.335,
+        "count": 0.001
+      }
+    },
+    {
+      "2022-08-05": {
+        "money": 1.5928571428571427,
+        "overtime": 1.115,
+        "age": 5.0,
+        "size": 1.115,
+        "count": 0.0005
+      }
+    },
+    {
+      "2022-08-08": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-11": {
+        "money": 2.107142857142857,
+        "overtime": 1.4749999999999999,
+        "age": 5.0,
+        "size": 1.4749999999999999,
+        "count": 0.001
+      }
+    },
+    {
+      "2022-08-14": {
+        "money": 2.107142857142857,
+        "overtime": 1.4749999999999999,
+        "age": 5.0,
+        "size": 1.4749999999999999,
+        "count": 0.001
+      }
+    },
+    {
+      "2022-08-17": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-20": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-23": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-26": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-29": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-09-01": {
+        "money": 4.5,
+        "overtime": 3.84,
+        "age": 5.0,
+        "size": 3.84,
+        "count": 0.015
+      }
+    },
+    {
+      "2022-09-04": {
+        "money": 4.285714285714286,
+        "overtime": 3.9000000000000004,
+        "age": 5.0,
+        "size": 3.9000000000000004,
+        "count": 0.018500000000000003
+      }
+    },
+    {
+      "2022-09-07": {
+        "money": 3.321428571428571,
+        "overtime": 3.84,
+        "age": 5.0,
+        "size": 3.84,
+        "count": 0.0045
+      }
+    }
+  ],
+  "score_graph_json": "[{\"date\": \"2022-07-15\", \"values\": {\"money\": 2.5, \"overtime\": 3.0, \"age\": 5.0, \"size\": 3.0, \"count\": 0.0005}}, {\"date\": \"2022-07-18\", \"values\": {\"money\": 2.5, \"overtime\": 3.0, \"age\": 5.0, \"size\": 3.0, \"count\": 0.0005}}, {\"date\": \"2022-07-21\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-24\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-27\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-30\", \"values\": {\"money\": 1.9071428571428573, \"overtime\": 1.335, \"age\": 5.0, \"size\": 1.335, \"count\": 0.001}}, {\"date\": \"2022-08-02\", \"values\": {\"money\": 1.9071428571428573, \"overtime\": 1.335, \"age\": 5.0, \"size\": 1.335, \"count\": 0.001}}, {\"date\": \"2022-08-05\", \"values\": {\"money\": 1.5928571428571427, \"overtime\": 1.115, \"age\": 5.0, \"size\": 1.115, \"count\": 0.0005}}, {\"date\": \"2022-08-08\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-11\", \"values\": {\"money\": 2.107142857142857, \"overtime\": 1.4749999999999999, \"age\": 5.0, \"size\": 1.4749999999999999, \"count\": 0.001}}, {\"date\": \"2022-08-14\", \"values\": {\"money\": 2.107142857142857, \"overtime\": 1.4749999999999999, \"age\": 5.0, \"size\": 1.4749999999999999, \"count\": 0.001}}, {\"date\": \"2022-08-17\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-20\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-23\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-26\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-29\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-09-01\", \"values\": {\"money\": 4.5, \"overtime\": 3.84, \"age\": 5.0, \"size\": 3.84, \"count\": 0.015}}, {\"date\": \"2022-09-04\", \"values\": {\"money\": 4.285714285714286, \"overtime\": 3.9000000000000004, \"age\": 5.0, \"size\": 3.9000000000000004, \"count\": 0.018500000000000003}}, {\"date\": \"2022-09-07\", \"values\": {\"money\": 3.321428571428571, \"overtime\": 3.84, \"age\": 5.0, \"size\": 3.84, \"count\": 0.0045}}]",
+  "money_sorted": [
+    {
+      "会社名": "パーソルテクノロジースタッフ株式会社",
+      "規模": 223,
+      "年収": 223,
+      "残業時間": 223,
+      "年齢": 30,
+      "日付": "2022-08-06"
+    },
+    {
+      "会社名": "",
+      "規模": 240,
+      "年収": 240,
+      "残業時間": 240,
+      "年齢": 30,
+      "日付": "2022-08-17"
+    },
+    {
+      "会社名": "株式会社スタッフサービス エンジニアリング事業本部",
+      "規模": 311,
+      "年収": 311,
+      "残業時間": 311,
+      "年齢": 30,
+      "日付": "2022-08-04"
+    },
+    {
+      "会社名": "株式会社アクティブプランニング",
+      "規模": 600,
+      "年収": 342,
+      "残業時間": 600,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 600,
+      "年収": 350,
+      "残業時間": 600,
+      "年齢": 30,
+      "日付": "2022-07-21"
+    },
+    {
+      "会社名": "株式会社しずおかオンライン",
+      "規模": 350,
+      "年収": 350,
+      "残業時間": 350,
+      "年齢": 30,
+      "日付": "2022-08-17"
+    },
+    {
+      "会社名": "",
+      "規模": 1000,
+      "年収": 400,
+      "残業時間": 1000,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "",
+      "規模": 1000,
+      "年収": 400,
+      "残業時間": 1000,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "",
+      "規模": 700,
+      "年収": 400,
+      "残業時間": 700,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "",
+      "規模": 650,
+      "年収": 400,
+      "残業時間": 650,
+      "年齢": 30,
+      "日付": "2022-09-09"
+    },
+    {
+      "会社名": "",
+      "規模": 650,
+      "年収": 400,
+      "残業時間": 650,
+      "年齢": 30,
+      "日付": "2022-09-08"
+    },
+    {
+      "会社名": "株式会社イー・エージェンシー",
+      "規模": 650,
+      "年収": 450,
+      "残業時間": 650,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "株式会社スタッフサービス エンジニアリング事業本部",
+      "規模": 461,
+      "年収": 461,
+      "残業時間": 461,
+      "年齢": 30,
+      "日付": "2022-09-08"
+    },
+    {
+      "会社名": "",
+      "規模": 660,
+      "年収": 480,
+      "残業時間": 660,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 624,
+      "年収": 480,
+      "残業時間": 624,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 720,
+      "年収": 480,
+      "残業時間": 720,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 800,
+      "年収": 500,
+      "残業時間": 800,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "",
+      "規模": 649,
+      "年収": 530,
+      "残業時間": 649,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "株式会社エス・エム・エス",
+      "規模": 810,
+      "年収": 560,
+      "残業時間": 810,
+      "年齢": 30,
+      "日付": "2022-05-19"
+    },
+    {
+      "会社名": "",
+      "規模": 816,
+      "年収": 576,
+      "残業時間": 816,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 720,
+      "年収": 600,
+      "残業時間": 720,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 720,
+      "年収": 600,
+      "残業時間": 720,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 720,
+      "年収": 600,
+      "残業時間": 720,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 768,
+      "年収": 648,
+      "残業時間": 768,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 648,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 780,
+      "年収": 660,
+      "残業時間": 780,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 720,
+      "年収": 660,
+      "残業時間": 720,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 1000,
+      "年収": 690,
+      "残業時間": 1000,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    }
+  ],
+  "jobs": [
+    {
+      "salary_min": "4150",
+      "locations": "東京都渋谷区",
+      "salary_type": "H",
+      "date": "Thu, 08 Sep 2022 07:20:35 GMT",
+      "description": "に直結したスキルアップ等、目的に応じて受講可能です。 休日： 日曜日、土曜日、祝日 完全週休2日制（土日祝休み） 対象となる方： 【こんなスキルや経験のある方を歓迎します！】 ・<b>Ruby</b>を利用した実務経験2年以上 ・サーバーサイドの経験をお持ちの方 【活か...",
+      "salary_currency_code": "JPY",
+      "salary": "4150 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c4f41ca89da8ae8a22765613a140c1e64124c5d5e4019/ce9efde24ed127033f18054670c97beb.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "時給4150円/ Ruby社内SE",
+      "salary_max": "4150",
+      "company": "株式会社スタッフサービス エンジニアリング事業本部"
+    },
+    {
+      "salary_min": "2010",
+      "locations": "東京都港区",
+      "salary_type": "H",
+      "date": "Sat, 06 Aug 2022 07:53:18 GMT",
+      "description": "務システムに関連する周辺システムの開発をお任せしていく予定です。 開発部分メインで、割合としては新規と改修半々です。 【環境】 OS：Linux（CentOS） 言語：<b>Ruby</b>（Rails） DB：MySQL（Amazon Aurora） クラウド：AWS 他：Elasticsearch...、ElastiCache、Redshift 休日： 日曜日、土曜日、祝日 週休2日制(土日祝休み) 対象となる方： 実務経験1年以上/ブランク相談可/開始時期についてはご相談ください。 【活かせる経験・スキル】 開発エンジニア <b>Ruby</b> <b>Ruby</b>...",
+      "salary_currency_code": "JPY",
+      "salary": "2010 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b4d41c8b1fb89f98254c7c6f5418adbf4c3f5d76b96b6b4dbba884488cbba54c4dff96389c3dbc5f2ed4990a89cdeaf9487ece8c4f7804381f7e580fc9a768df5ecccbc980dc9d8fe8da6cb2286f4fe88f0c0c7d1f5499796badeac92655d5612431251/14935393b64833ed9ed5165c93d5b8c0.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【Ruby】社内システム開発土日祝休み！ブランクOK！",
+      "salary_max": "2010",
+      "company": "パーソルテクノロジースタッフ株式会社"
+    },
+    {
+      "salary_min": "2800",
+      "locations": "東京都新宿区",
+      "salary_type": "H",
+      "date": "Thu, 04 Aug 2022 07:38:08 GMT",
+      "description": "谷駅 徒歩7分 仕事内容： 【社内システムの改修、運用】 ・アラームボックス開発、機能改修 ・社内ツールの改修 【担当工程】 実装、テスト、運用 【ツール、言語】 <b>Ruby</b>、<b>Ruby</b> on Rails、AWS 【在宅勤務】 あり。現在は週1出社...なスキルや経験のある方を歓迎します！】 ・<b>Ruby</b>での開発経験 【活かせる経験】 ・その他WEB系言語での開発経験 ※経験年数1年以上 応募先： 株式会社スタッフサービス エンジニアリング事業本部 東京中央オフィス／東京広域オフィス 東京都千代田区神田練塀町85番地 JEBL秋葉...",
+      "salary_currency_code": "JPY",
+      "salary": "2800 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-484e41c4bbef88f79d7672160a186f555d15435b5c/6692dedf89b328e7354c164ab21df5ab.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "時給2800円/ Ruby開発直雇チャンスも有",
+      "salary_max": "2800",
+      "company": "株式会社スタッフサービス エンジニアリング事業本部"
+    },
+    {
+      "salary_min": "200000",
+      "locations": "静岡市葵区",
+      "salary_type": "M",
+      "date": "Wed, 17 Aug 2022 07:56:38 GMT",
+      "description": "的な仕事内容】  2〜3名ずつのチームに分かれて業務を行っていただきます。  ■関わる案件  ・自社webサービス・アプリ  ・自治体、企業からの受託案件  静岡県や静岡市、銀行ほか  ■使用している言語・環境等…Web言語（PHP、<b>Ruby</b>...、Javascript）、アプリ言語（swift、java、kotlin）、フレームワーク（FuelPHP、<b>Ruby</b> on Rails、Vue.js）、データベース（MySQL）、インフラ（AWS、Vagrant、Chef）   【職場環境】  現在、シス...",
+      "salary_currency_code": "JPY",
+      "salary": "200000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b1d417d65344f3c521659432200180667c6d9cb8ed794ceae8c0d83cbd0c2e7816138293e472f4102096b97908fd4adb78cddd50792b4cc8fd4c865356824488fde89cc9993c8f7ce6f154316505052/2f8653980e34d454f88c35d4b6539f1c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "SE<PHP・Ruby・swift・java・kotlin・MySQL 等>【正社員】【交通費支給】【最寄り駅】静岡県静岡市葵区",
+      "salary_max": "200000",
+      "company": ""
+    },
+    {
+      "salary_min": "3500000",
+      "locations": "東京都港区",
+      "salary_type": "Y",
+      "date": "Thu, 21 Jul 2022 07:15:42 GMT",
+      "description": "Webエンジニア（<b>Ruby</b>, <b>Ruby</b> on Rails）/株式会社キャリアインデックス   ■主なサービスと特徴：同社の提供するサービスは、複数サイトの情報を一括で検索・閲覧・問合せできる「ポータル・オブ・ポータルズ」とい...しているツールについて】 AWS、GitHub、CircleCI Slack、Redmine、Confluence <b>Ruby</b>、<b>Ruby</b> on Rails、Chef、PHP Elasticsearch、Apache Solr、Redshift など   募集条件 雇用...",
+      "salary_currency_code": "JPY",
+      "salary": "3500000 - 6000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1d1f417f5806164e481a0031090802146777110a4990a883deae9e87edd6c4f7ab80eac36c3510420d488af182c8be9ecee6d78da4ffc3e1ca63390207222609001f592a0f1518535d5c/78464ba8ae1106c623336afa066655a4.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Webエンジニア（Ruby, Ruby on Rails）",
+      "salary_max": "6000000",
+      "company": ""
+    },
+    {
+      "salary_min": "5600000",
+      "locations": "東京都港区",
+      "salary_type": "Y",
+      "date": "Thu, 19 May 2022 07:43:46 GMT",
+      "description": "<b>Ruby</b>エンジニア(シニアライフ事業部)/株式会社エス・エム・エス   創業12年で東証一部に上場、33事業を展開。  拡大するシニア・ヘルスケア市場において、Webを中... , css/scssの実務経験1年以上  ・デザインフレームワークを利用した開発経験1年以上  ・顧客管理システムの開発経験  ・<b>Ruby</b> on Railsの実務経験1年以上   歓迎される経験・スキル・資格 ・B to C, B to B...",
+      "salary_currency_code": "JPY",
+      "salary": "5600000 - 8100000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1d1b41ceafd38cedac97a2c14882eccf86a3c78bebcbc9a8b6ceafc66d3c521659438be3c684e69397ead190a9a0deaf8f668cec9097a3e88be3cc4786a3dd8bebd7c9a8a82fcee6d88da4ffc3e1ca638de5cdc3f7db8af192c8bea6cee6cd6f154c15545a53/4d6a6dcb4cd8c82e396794036f74a3a4.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Rubyエンジニア(シニアライフ事業部)",
+      "salary_max": "8100000",
+      "company": "株式会社エス・エム・エス"
+    },
+    {
+      "salary_min": "3500000",
+      "locations": "静岡市葵区",
+      "salary_type": "Y",
+      "date": "Wed, 17 Aug 2022 07:51:14 GMT",
+      "description": "、<b>Ruby</b>、Javascript）、アプリ言語（swift、java、kotlin）、フレームワーク（FuelPHP、<b>Ruby</b> on Rails、Vue.js）、データベース（MySQL）、インフラ（AWS、Vagrant、Chef）   【職場...]  &lt;必須&gt;  ・webの開発経験が2年以上の方  ・PHPもしくは<b>Ruby</b>での開発経験  ※学生時代の経験も考慮します   [待遇]  ・社会保険完備  ・交通費規定支給  ・昇給年1回  ・賞与年2回  ・各種手当あり（残業、家族...",
+      "salary_currency_code": "JPY",
+      "salary": "3500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-181b417d65344f3c521659432200180667703c3849394b5d5c2f601d3c3f6b54702b38633c120759543821232878782c1f53595d1f47/dcacb8979fc69dd2fd83a4633b291668.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "SE<PHP・Ruby・swift・java・kotlin・MySQL 等",
+      "salary_max": "3500000",
+      "company": "株式会社しずおかオンライン"
+    },
+    {
+      "salary_min": "4000000",
+      "locations": "東京都渋谷区南平台町 - 東京都渋谷区道玄坂",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:19:23 GMT",
+      "description": " CI での徹底的な自動化  ・セミナー参加、書籍物品購入サポート  ・休憩スペースではマンガやゲームが楽しめます   ＜採用言語とフレームワーク＞  ・<b>Ruby</b>、JavaScript  ・<b>Ruby</b> on Rails、React、Redux...",
+      "salary_currency_code": "JPY",
+      "salary": "4000000 - 10000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-194e417f5806164e481a00310908021467c6d9cb8ed794ceae8c0d83cbd0c2e781618ecccd80c19e91fbc853c9a995ceaed78cec9f97a3e88be3cc65375516114990a883deae9e87edd6c4f7ab80eac36c81c88393ccd796b98a3c1e1d565d56157613535a535656/0843ab15b35b4442a36e33904a88283c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【正社員】Ruby on Railsエンジニア",
+      "salary_max": "10000000",
+      "company": ""
+    },
+    {
+      "salary_min": "4000000",
+      "locations": "東京都",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:19:23 GMT",
+      "description": " CI での徹底的な自動化  ・セミナー参加、書籍物品購入サポート  ・休憩スペースではマンガやゲームが楽しめます   ＜採用言語とフレームワーク＞  ・<b>Ruby</b>、JavaScript  ・<b>Ruby</b> on Rails、React、Redux...",
+      "salary_currency_code": "JPY",
+      "salary": "4000000 - 10000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1d4841c882ca4f8983cac5cded4188cac6c7d0d68ce08b296f584f1d4f0149547202010d1d6580afe28dd7e40ac38eaacbc4d34ec1e08f85e7d56c8fc6bc91e2c053cd8f83c883e14f8b88da2285e8c48becfa0092c5ca948e95d8be8c65575d154c16/4514eac292c911de61c0f968545bc7f2.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【正社員】Ruby on Railsエンジニア【正社員】【インターネット関連】【フレックスタイム制】【資格取得支援】【急募求人】【社宅・寮・住宅補助あり】【東京都】",
+      "salary_max": "10000000",
+      "company": ""
+    },
+    {
+      "salary_min": "5000000",
+      "locations": "東京都中央区銀座",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:19:23 GMT",
+      "description": "Web、インターネット、ゲーム系   掲載予定期間：2022/9/8(木)〜2022/11/30(水)   サーバーサイドエンジニア（<b>Ruby</b>）◆ウェビナーマーケティング支援プラットフォーム開発／フルリモート   【Web上で...1時間、レビュー会への参加  ※技術スタック…言語（<b>Ruby</b>、JavaScript）／フレームワーク（<b>Ruby</b> on Rails、Vue.js）／ミドルウェア・ツール（Docker）／クラウド（AWS、GCP、Microsoft Azure...",
+      "salary_currency_code": "JPY",
+      "salary": "5000000 - 8000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f4a41ceafd18ced9b97a3f08be3d74786a2dc8beac0c9a985ceaeef8cec8576c3e1dd82eddb86a3e4488af182c8be9ecee6d78da4ffc3e1ca6387f1eec7edd24990a883deae9e87edd6c4f7ab80eac36c84e79597ebd590a9bbdeae91448cec8f97a3d08be3d684e6ab97eacb71c9a8a3ceaed88cec9697a3e58be3cd84e69397ead953c9a988ceaed88cedb497a2da69525e55551145/a2163ddcb20b197e3400c8a5eb3a05b5.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "サーバーサイドエンジニア（Ruby）◆ウェビナーマーケティング支援プラットフォーム開発／フルリモート【転職支援サービス求人】",
+      "salary_max": "8000000",
+      "company": ""
+    },
+    {
+      "salary_min": "5300000",
+      "locations": "東京都千代田区霞が関 - 東京都千代田区永田町",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:19:23 GMT",
+      "description": "Web、インターネット、ゲーム系   掲載予定期間：2022/9/8(木)〜2022/11/30(水)   【バックエンドエンジニア／<b>Ruby</b>】※自社サービス／フルリモート可／グローバルに活躍するHR企業   【スイ...スに本社を置くグローバル企業／フリーランスエンジニア向けの仕事探しサイトの開発／<b>Ruby</b> on Railsでの開発スキルを伸ばせる】  「人財躍動化」による社会変革を目指すアデコの中の、Digital Innovation本部ではDX推進...",
+      "salary_currency_code": "JPY",
+      "salary": "5300000 - 6490000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1b41ceafd18ced9b97a3f08be3d74786a2dc8beac0c9a985ceaeef8cec8576c4dfe987cbca45c3f6c08af099c8bf95cee7e48da5d622311d03174786a2dc8beac0c9a985ceaeef8cec8576c3e1c082edd486a2cc8beaf8c9a99f0dcee7c58da4d6c3e0d482edef67c3f6c08af099c8bf95cee7e48da5d6008bd3c386e6d2214758584a13193f1e1d5556571f/2a251e147cad43fd5a5232f59a943398.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【バックエンドエンジニア／Ruby】※自社サービス／フルリモート可／グローバルに活躍するHR企業【転職支援サービス求人】",
+      "salary_max": "6490000",
+      "company": ""
+    },
+    {
+      "salary_min": "6900000",
+      "locations": "東京都千代田区霞が関 - 東京都千代田区永田町",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:19:23 GMT",
+      "description": "Web、インターネット、ゲーム系   掲載予定期間：2022/9/8(木)〜2022/11/30(水)   【バックエンドエンジニア／<b>Ruby</b>】※管理職／フルリモート可／グローバルに活躍するHR企業   【スイ...スに本社を置くグローバル企業／フリーランスエンジニア向けの仕事探しサイトの開発／<b>Ruby</b> on Railsでの開発スキルを伸ばせる】  「人財躍動化」による社会変革を目指すアデコの中の、Digital Innovation本部ではDX推進...",
+      "salary_currency_code": "JPY",
+      "salary": "6900000 - 10000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-134d41ceafd18ced9b97a3f08be3d74786a2dc8beac0c9a985ceaeef8cec8576c4dfe987cbca45c3f6c08af099c8bf95cee7e48da5d62284c6c089f7e3c8f5df499b9189d5ac9a663d1b450d0080eac98de4d6c3f6d08af0a1c8bf8f2f87edc6c4f79380ead98de4eec3f6ca4990a981deae8f87ecd2c4f7a8625b515f5e5c12765b5942131205/c9049eb616dc85b310297f0f6c06d1ae.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【バックエンドエンジニア／Ruby】※管理職／フルリモート可／グローバルに活躍するHR企業【転職支援サービス求人】",
+      "salary_max": "10000000",
+      "company": ""
+    },
+    {
+      "salary_min": "4000000",
+      "locations": "東京都中央区銀座",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:01:59 GMT",
+      "description": "Web、インターネット、ゲーム系   掲載予定期間：2022/9/8(木)〜2022/11/30(水)   自社配信サービスの開発エンジニア（<b>Ruby</b> on Rails） ※フルリモート勤務／IPO準備中   【Web上で...の顧客接点を持続させる新しい仕組み「ウェビナーマーケティング」を提供】  急成長中自社配信サービスの開発をお任せします。  ※開発環境…<b>Ruby</b> on Rails／websocket, WebRTC／AWS（EC2、RDS、S3、MediaLive...",
+      "salary_currency_code": "JPY",
+      "salary": "4000000 - 7000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f4a417f5806164e481a00310908021445c3f7fd8af081c8be87cee7cd8da4c8c3e0e0633c12075954070753784a54415e6687e98d9384dd4888f8ec82b9ce488af182c8be9ecee6d78da4ffc3e1ca638de5d0c3f7d48af0b9c8bf940d87edc6c4f79380ead98de4eec3f6ca6b9bad81da89934486f8ac93b9d969525e55551145/f79ca28cdc7baa4b43118be23897a365.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "自社配信サービスの開発エンジニア（Ruby on Rails） ※フルリモート勤務／IPO準備中【転職支援サービス求人】",
+      "salary_max": "7000000",
+      "company": ""
+    },
+    {
+      "salary_min": "4000000",
+      "locations": "東京都町田市",
+      "salary_type": "Y",
+      "date": "Fri, 09 Sep 2022 07:13:12 GMT",
+      "description": "ITエンジニア系（ソフトウェア、ネットワーク）   ☆全国の各地よりフルリモートにて就業いただけます☆   【職務詳細】  <b>Ruby</b> on Railsを中心としたWEB技術を用いて、コーディング、テスト、運用...",
+      "salary_currency_code": "JPY",
+      "salary": "4000000 - 6500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b4f416479448cec8f97a3d08be3d684e6ab97eacb71785e5f540d87edc6c4f79380ead98de4eec3f6ca6b90a883deae9e87edd6c4f7ab80eac34e84e68a97ebcb90a997deaea566263a2597a2cb8be2dd84e79897ebe290a8893c1f1551585c17/94ef7c009b22ebff632db216a363993a.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【リモート】ITエンジニア（Ruby）",
+      "salary_max": "6500000",
+      "company": ""
+    },
+    {
+      "salary_min": "4000000",
+      "locations": "東京都",
+      "salary_type": "Y",
+      "date": "Thu, 08 Sep 2022 07:59:21 GMT",
+      "description": "［仕事詳細］  ☆全国の各地よりフルリモートにて就業いただけます☆   【職務詳細】  <b>Ruby</b> on Railsを中心としたWEB技術を用いて、コーディング、テスト、運用を中心に行っていただきます。ゆくゆくは環境構築・設計、見積...（土日）、祝日、GW、年末年始休暇、慶弔休暇、年次有給休暇（14～20日）  ［応募資格］  【必須】  ・<b>Ruby</b>での開発経験2年以上   【尚可】  ・要件定義や基本設計・詳細設計の実務経験がある方  ・業務以外でも<b>Ruby</b>のス...",
+      "salary_currency_code": "JPY",
+      "salary": "4000000 - 6500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c4a41c8b1fb89f9829385fe4885d2f686a1cb4881c888ceb689cee5c58da6e30085c5c289c3dbc5e7c96b96b6b4dbba8883caf307909cf28be0d147808dd28ec4c7ce93b0c8b8eb4f888ad7c7c7d684fdc667c5e8f78fe48f0bd991bc87eed107928dc08fc5d082f6815480daf4cc8b81c8a2f28ad0b092b4cc8eeeda6580bceb8efed6cd8ea00dc9d8fe8da6cb0085c5c289c3dbc5e7c9499584a0db888081dfffc4f58a618dfdf181f285548cd5e2c9aa820dcbc9cc8983cac5f0c9418bcac3c6d9dc8dcba7cea8a22c5c5c5c1f42/550547d675f1cec15a00387a66957ed4.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【リモート】ITエンジニア（Ruby）【正社員】【ソフトウェア・情報処理】【学歴不問】【転勤なし】【フレックスタイム制】【年間休日120日以上】【土日祝日休み】【残業少なめ】【資格取得支援】【急募求人】【社宅・寮・住宅補助あり】【東京都】",
+      "salary_max": "6500000",
+      "company": ""
+    },
+    {
+      "salary_min": "4500000",
+      "locations": "東京都千代田区",
+      "salary_type": "Y",
+      "date": "Wed, 07 Sep 2022 22:59:25 GMT",
+      "description": " 〜 650万円 求めるスキル Bランク以上（※ランクについてはhttps://paiza.jp/guide/career#rank） 言語 <b>Ruby</b> フレームワーク <b>Ruby</b> on Rails、Node.js 開発手法 ウォーターフォール 開発...すべてのご経験をお持ちの方からのご応募をおまちしています！ ・Web開発（サーバサイドエンジニア） 実務５年以上 ・システム設計 実務１年以上 ・プログラムコーディング 実務３年以上 ・保守、追加開発 実務３年以上 ・<b>Ruby</b> 趣味or実務１年未満 ・Web系システム（一般ユーザーが利用するシステム）の開...",
+      "salary_currency_code": "JPY",
+      "salary": "4500000 - 6500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b4841ceafc68cedb097a3c94888f8ec82b9ce6a80e5a1cca4970d87edc6c4f79380ead98de4eec3f6ca6b9abca0dab4974488d19c9c88d06a82ecc586a3e38bead9c9a98cceaed88cec9097a3c48be2dd4786a2dc8beac0c9a985ceaeef8cec857672160a184e84e78897ebda90a893deaea687edcc264618565e585b/dd887f2454451d8bcab6b39c6a9dd40f.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【フルリモート】多言語自動翻訳ツール開発アプリケーションエンジニア／Ruby",
+      "salary_max": "6500000",
+      "company": "株式会社イー・エージェンシー"
+    },
+    {
+      "salary_min": "550000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:57:29 GMT",
+      "description": "単価/月   55～65万円   勤務地   東京都,港区   案件概要   Webマーケティング企業の自社プロダクトにて、<b>Ruby</b> on Railsを用いたバックエンド開発をご支援いただきます。  Googleマッ...程度キャッチアップのために出社   期間   即日 ～ 2022/12/31   言語   必須スキル・経験   ・<b>Ruby</b> on Railsを用いた開発経験2年以上  ・Gitを使用した経験   歓迎するスキル・経験   ・RSpecによるテストコードの作成経験  ・AWS...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 650000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b19417f5806164e481a0031090802146777110a4990a9b5deae9187eddfc4f7a680eac28de4d6c3f6d86b244f491dc4bbef88f79d76c9f5e386f7dd4577110a6b90a9b5deae9187eddfc4f7a680eac28de4d6c3f6d849244f493c1f1551585c15/3b32600926ce5fd0a9a097b39c2f708c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails / Git Webマーケティング企業向け開発支援",
+      "salary_max": "650000",
+      "company": ""
+    },
+    {
+      "salary_min": "550000",
+      "locations": "東京都港区浜松町",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:56:26 GMT",
+      "description": "トの一連工程の中に入っていただきます。   ＜備考＞  リモートあり   期間   即日 ～ 2022/06/30   言語   必須スキル・経験   ・LAMP環境中心にPHP, <b>Ruby</b>等サーバーサイド経験者もしくはクライアントSPA(Node.js, Vue.js)   稼動...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f48417d65344f87b1ffc7fad26386c4d8c5e7e9499abca0dab497663d1b450d003320316c8ef3ab93f1d3717a636d2c1e545d5f1041/39e4b0e9f0a611feabb065f8cb61f9fa.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "PHP / Ruby / SPA 音声認識ソリューション製品開発",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区六本木",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:53:01 GMT",
+      "description": "ドレビュー  ・トラブル対応・サービス運用  ・運用改善  ・ベンダーコントロール  ・チームビルディング   ＜開発環境＞  <b>Ruby</b> on Rails, Go, AWS, Docker, CircleCI, Jenkins, Elasticsearch...   ＜基本時間＞  10：00～19：00   期間   即日 ～ 0000/00/00   言語   必須スキル・経験   ・<b>Ruby</b> on Railsで業務において3年以上の開発経験  ・LinuxまたはUnix OS上でのCUIでの...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b1b417f5806164e481a00310908021467c9d7f78ce0ab0bd4bba683f6d42597a2c18be2f984e68a5481fff8cdb2872fc4f2e489bece0080eac98de4d6c3f6d08af0a1c8bf8f2f8dccf1079db6e88ff8d466561046595140/061d5106ec51cd8779b5fd39d441e589.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails 食品ロス削減のマーケットアプリ開発(フルスタックエンジニア)",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:52:57 GMT",
+      "description": "＞  原則リモート、月1回出社   ＜基本時間＞  10：00～19：00   期間   即日 ～ 2023/02/28   言語   必須スキル・経験   ・<b>Ruby</b> on Railsでの開発経験2年以上  ・Web系の開発経験4～6年以...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1f417f5806164e481a00310908021467c4ced28dc9a10bd8a79981e4f72591aad78deaf747819ace8cd3f828795c4441176d8a9dcec4d9e3605c5f5017475c/19ea299cc9e45eb11a09ee674a10667b.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails / RSpec 人事労務系プロダクトのエンハンス開発",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:51:38 GMT",
+      "description": "スキル・経験   ・スクリプト言語(PHP, Python, <b>Ruby</b>など)を使用した開発経験  ・Webシステム(サーバーAPI、管理画面など)の開発/運用経験  ・リモートサーバーまたはローカル開発環境のLinuxにsshログインし各種操作(ログ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1f41ceafd68ced9b97a3c34888f8ec82b9ce6a393b7a0bd4bba683f6d425245917000e00478cb6ff8ff0c928c8bf9fcee7d38da4d40080ebf18de4d92224111d1b45451d7f5806166f154c15545b52/dbd7374bde77fcc70e08da6347a87a90.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "PHP / Python / Ruby 某IPを用いたパズルバトルゲームのサーバーサイド開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都渋谷区恵比寿",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:50:10 GMT",
+      "description": "信頼性の高い<b>Ruby</b>コードの設計・構築・保守  ・ボトルネックやバグの特定、修正、改善  ・パフォーマンスの最適化  ・フロントエンドアプリケーションとのAPIの連携  ・コード品質の維持・組織化・自動化の支援   ＜備考＞  基本リモート   ＜基本...時間＞  10：00～19：00   期間   即日 ～ 2022/07/31   言語   必須スキル・経験   ・<b>Ruby</b> on Railsの実務経験2年以上  ・Vue.jsやNuxt.jsでのフロントエンド開発経験  ・バッ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f1a417f5806164e481a00310908021467c3f6ca8af0bdc8be870d8df9e5c0ed9a618be2ea84e69c97ebc253c3bdb6cab4de6d3c461d4c106a88f8ec82b9ce695a4318190a1f/460ee465ee94298c9533701d3cd9d3dc.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails など テレビCM効果可視化ツールのWebアプリ開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "400000",
+      "locations": "東京都千代田区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:44:31 GMT",
+      "description": "テム開発  ・SE：要件定義、設計  ・PG：実装、テスト  エンドユーザとの打ち合わせ参加   ＜開発環境＞  開発環境：AWS  開発言語：<b>Ruby</b>(<b>Ruby</b> on Rails)  DB：MySQL  管理ツール：Backlog  構成管理：Git  コミ...設計以降の経験   歓迎するスキル・経験   ・<b>Ruby</b>での開発経験   稼動日数   週5日   商談回数   1回   最寄駅   JR中央線 飯田橋駅   案件の詳細   即日参画OK / 商談1回 / リモート   リモート詳細   週4リモート＋週1...",
+      "salary_currency_code": "JPY",
+      "salary": "400000 - 550000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-494e41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c928c2aba6cafdd56cc4f69780ead88de4e3c3f7c86b9796aadb8880668cec9097a2da8be2e884e6809dfee294b3913c1f1551595712/3b36a3552e9588eb052806b64c463a83.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby 某有名企業の新基幹システム開発務",
+      "salary_max": "550000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:41:18 GMT",
+      "description": "  サーバーサイド：<b>Ruby</b>(<b>Ruby</b> on Rails)  フロントエンド：React/Redux, jQuery, Backbone.js  インフラ：AWS, Terraform, Chef  DB：PostgreSQL  その...リケーションの開発・運用経験3年以上  ・<b>Ruby</b> on RailsでのWebアプリケーションの開発・運用経験1年以上  ・Linuxの基礎知識、利用経験   歓迎するスキル・経験   ・切磋琢磨しながらスキルアップしたいと思っている方  ・Webサービス/スマ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e18417f5806164e481a0031090802146777110a4990a883deae9e87edd6c4f7ab80eac36c3000425481fff8cdb2872fc4f2e489bece0080eac98de4d6c3f6d08af0a1c8bf8f2f280600520c008afeea89fedf2146505c441819/f403e396c58be933a8911fc743c588bb.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails / Linux Web開発エンジニア",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:34:28 GMT",
+      "description": "管理システムと事業加地算定システムを今後統合予定)  ・フロントエンド、バックエンドはすべて<b>Ruby</b> on Railsに変更していく予定   ＜備考＞  基本常駐希望  要員様の希望に沿ってリモートの頻度(週1～5日)は相談可能   ＜基本時間＞  9：00～18：00   期間   即日... ～ 2022/12/31   言語   必須スキル・経験   ・<b>Ruby</b> on Rails5年以上(開発・実装のみでOK)  ・HTML/CSS, JavaScript経験   歓迎するスキル・経験   ・基本設計からの対応  ・GitHubの経...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-124e417f5806164e481a00310908021467721501050028c2aba6cafdd56c7501421a6a82edf086a3d9695b4b1f1c0f1f/8ea134e24b8bd47d300b1315d61dc977.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails 不動産SaaSソリューションの開発プロジェクト",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "400000",
+      "locations": "東京都港区六本木",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:33:40 GMT",
+      "description": "ートあり   ＜基本時間＞  10：00～19：00   ＜服装＞  自由   期間   即日 ～ 2022/09/30   言語   必須スキル・経験   ・<b>Ruby</b>, <b>Ruby</b> on Railsでのシステム開発経験3年以上  ・JavaScript...",
+      "salary_currency_code": "JPY",
+      "salary": "400000 - 520000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-194e41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c928c8bf82cee7c38da5ccc3e0eb82edef45c3f6df8af193c8beabcee7cf6c6d1556023b021c0e15545481fff8cdb2872fcee6c08da4d8c3e1d082ede486a3fc8bebd8c9a881ceaeed4f8a9ff9c6cecb638de4c9c3f6d068401a190c151e/20ceefbd2552f8ebf48a7b4c53d00045.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby / JavaScript クレジットカードの不正利用検知システムの開発",
+      "salary_max": "520000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都中央区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:33:36 GMT",
+      "description": "   必須スキル・経験   ・Web開発業務の開発経験3年以上  ・<b>Ruby</b> on Railsによる開発経験2年以上  ・Webアプリ/セキュリティに関する知識   歓迎するスキル・経験   ・MySQLによるDBの設計・構築・保守・運用...経験  ・<b>Ruby</b>以外の言語経験（PHP／Python／Perl／Javaなど）  ・AWS/GCP環境での開発経験  ・マネジメント業務経験   稼動日数   週5日,週4日   商談回数   1回   案件の詳細   即日参画OK / 商談1回...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f1a417f5806164e481a00310908021467721501050028c2aba6cafdd56c62372285fcce88e8d12146505c45131c/5600eca5bda9d7ae73dd10f490b3db8c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails ECプラットフォームの開発支援",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "540000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:32:19 GMT",
+      "description": "スキル・経験   ・<b>Ruby</b>での開発経験3年  ・要件定義～の経験  ・高負荷システムの設計・開発・運用経験   歓迎するスキル・経験   ・PMやリードエンジニアの経験(規模問わず)   稼動日数   週5日   商談回数   1回   最寄...",
+      "salary_currency_code": "JPY",
+      "salary": "540000 - 640000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e4e41ceafd38cec9e97a3e58be2ce65819cee8fcdcd2879484f54668ceda097a2c06a84e1f1809ce1695b4b1f1c0e1e/66a2d6cb43d99e8a99c12a6248b71fd9.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby 暗号資産取引会社向けトレーディングシステム",
+      "salary_max": "640000",
+      "company": ""
+    },
+    {
+      "salary_min": "400000",
+      "locations": "東京都中央区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:30:06 GMT",
+      "description": "程度の追加を行います。  チームメンバーは、全体で20名ほどの規模感です。   ＜備考＞  基本リモート  初日のみ端末セットアップなどで出社あり   期間   即日 ～ 2022/12/31   言語   必須スキル・経験   ・<b>Ruby</b> on Rails 2年以...",
+      "salary_currency_code": "JPY",
+      "salary": "400000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-491d417f5806164e481a00310908021467c9f3f981eda70bdb84b28df9cc2526410a04126c8ee2b19cf6e471c3acacc5b3e989c7b89db6c169535652531943/eefb6ba93f59eaad2feaab6a1a8e005b.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails / MySQL 金融機関向け資金繰りアプリ機能追加",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都新宿区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:29:17 GMT",
+      "description": "：00～19：00   ＜服装＞  私服   期間   即日 ～ 2023/01/31   言語   必須スキル・経験   ・サーバーサイド開発経験5年以上(<b>Ruby</b>, C#, PHPのいずれか)  ・DBの設計構築経験  ・テス...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e4941ceafd98ced9b97a2d48be2cd84e68b548bebc1c9a881ceaec44f87b1ffc7fad2638de5d8c3f7d48af19dc8be8ecee7c44ec4f69280ebdd8de4c52297eadb90a997deae8d4486f8ac93b9d96a224e2467703c38499abca0dab497655d5612431356/748dffda50e5b7a2cbf50f52dd5580b8.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby / C# / PHP ソーシャルゲームのサーバーサイド開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:28:27 GMT",
+      "description": "＞  詳細設計～開発～テスト   ＜備考＞  基本リモート   期間   即日 ～ 2022/07/31   言語   必須スキル・経験   ・<b>Ruby</b> on Rails経験(目安3年以上)  ・DB設計経験  ・クエリチューニング経験  ・100...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-484d417f5806164e481a00310908021467c3f6ca8af0bdc8be870d8df9e5c0ed9a613a00070b162297ebf990a9973fc4bbef88f79d75125b5d565d54/7dc8074940305c4c971ec11fc1a87232.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails アルバム共有アプリサーバーサイド 処理開発支援案件",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "480000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:27:19 GMT",
+      "description": "   言語   必須スキル・経験   ・<b>Ruby</b> on Railsでの開発経験  ・<b>Ruby</b> on Railsでの保守性や拡張性を意識した設計の業務経験  ・RSpecをゼロから書ける  ・モダンなフロントエンド言語(React...",
+      "salary_currency_code": "JPY",
+      "salary": "480000 - 680000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b1d417f5806164e481a00310908021467721501050028c2aba6cafdd56cc3c8a185cdcc6c83d9ba9cc0e1721813081a1e50/023b78ad6534a8da60f9309c6d608f9e.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails / RSpec など 会計等サービス企業における新規開発、エンハンス開発",
+      "salary_max": "680000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区 - 東京都目黒区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:26:59 GMT",
+      "description": "環境＞  言語：<b>Ruby</b>  FW：<b>Ruby</b> on Rails, Backbone.js  DB：MySQL  CI/CD：Jenkins, CircleCI  インフラ：AWS, GCP   ＜備考＞  リモート可能  状況に応じて出社あり   ＜基本...時間＞  10：00～19：00   期間   即日 ～ 2023/02/28   言語   必須スキル・経験   ・Web開発経験(<b>Ruby</b>, PHP, Pythonなど)3年以上  ・ミドルウェア(MySQL, nginx)の知識  ・AWSの基...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c4a417d541007014954c3e0ef82eddb86a2cb6a390a5e4352430d361a0c5e7665206a82ede086a3c88bebcc287b4459450b016f154c15545b556c555d15435a58/6bbb974bd54977ac95f351e68ac15aa3.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby / Python / AWS ECプラットフォームのデータ移行",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都千代田区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:26:30 GMT",
+      "description": "ームワークのアップデート、自動テストの整備を含めた開発環境の改善  ※ご希望次第で、フロントエンド開発やインフラ構築などにもチャレンジできる環境です   ＜開発環境＞  バックエンド：<b>Ruby</b>, <b>Ruby</b> on Rails, Rspec, Rust  フロ... ～ 2023/02/28   言語   必須スキル・経験   ・<b>Ruby</b>での開発経験  ・オブジェクト指向言語でのWebAPIの開発経験3年以上  ・MySQLのスキーマ設計経験  ・AWS, GCPなどパブリッククラウドを用いたインフラ設計・構築...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c4941ceaee38ced9b97a2dc4888f5e18d88fc6a8af19fc8be91cee7fc8da5cd0087d7fc8bc9ed2290d7f49684a33fceaee38ced9b97a2dc6a82ecd286a3c88beae0c9a9842c1f5c5a581e41/9ea77c68428c5ec55cdd9c7f12c4dc0d.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby / AWS / GCP 特殊データ集計サービスの保守・改善",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都豊島区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:23:03 GMT",
+      "description": "は面談時にご説明させて頂きます。   ＜工程＞  設計〜テスト   ＜備考＞  基本フルリモート   期間   即日 ～ 2022/12/31   言語   必須スキル・経験   ・Shopify開発経験、または<b>Ruby</b>/PHP開発経験3年以上+サー...経験、または<b>Ruby</b>/PHPでの開発経験が3年以上ある方をお待ちしています。...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e4d41ceafd18cec8397a3eb4888f5f68d92dc6a3b0648521d7d65346d87bce5c8d1c0633e2f352297eadc90a88fdeaea5655d5612431452/ccc0a70715b926c0062eac142b1875ca.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby / PHP / Shopify 雑貨通販ECサイト構築",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "540000",
+      "locations": "東京都新宿区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:22:37 GMT",
+      "description": "単価/月   54～70万円   勤務地   東京都,新宿区   案件概要   SaaS型プラットフォームサービスのプロダクトの運営業務  <b>Ruby</b>(8割)/Go(2割)言語を利用してアプリの新規機能の開発や、既存...機能のリファクタリング・拡張を行う  各メンバーにチケット配布し、2週間に1度のリリース実施   ＜環境＞  <b>Ruby</b>, Go, Rails, AWS, GCP, JIRA   ＜備考＞  現在はフルリモート   ＜基本時間＞  10：00～19：00   期間...",
+      "salary_currency_code": "JPY",
+      "salary": "540000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f1b41c4bbef88f79d76c3e1dd82eddb86a3e78bebca2879484f54663c0f46272280ebf48de5ccc3f7d46841121e0a1e18/e153e766c04104055cc7c51b4fc93d05.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby SaaS型プラットフォームサービス開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都千代田区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:20:50 GMT",
+      "description": "/06/30   言語   必須スキル・経験   ・<b>Ruby</b> on Rails 3年以上  ・テストコード(RSpec)実装経験  ・Gitによるバージョン管理とチーム開発経験   歓迎するスキル・経験   ・チームリーダーの経験  ・AWS...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c18417f5806164e481a00310908021467c3f6dd8af096c8bebecee6d64ec3cbbd86c6e96c350449181b6b9b9189d5ac9a6686f8ac93b9d969535652531941/dfd3599c26216df945a2c77a5cef41f5.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails / RSpec / Git 某転職サービス開発・保守",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:18:44 GMT",
+      "description": "ナ禍の状況次第では週2日程度の出社を想定   ＜基本時間＞  10：00～19：00   ＜服装＞  自由   期間   即日 ～ 2022/10/31   言語   必須スキル・経験   ・<b>Ruby</b> on Railsでの開発経験2年以上  ・<b>Ruby</b>...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e1e417f5806164e481a00310908021467c3f6df8af193c8beabcee7cf4ecee2ab84f1db6c84e79797ead090a9addeae8d4486e9b69cbeee6a88e9f68dbef94880e5a1cca4972f360e074b0721515054595451/9a1daf7c19282593ea701d57fa0ec138.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails 金融系システムの新規サービス、既存エンハンス開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "285000",
+      "locations": "大阪市中央区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:17:08 GMT",
+      "description": "リケーション開発経験（PHP、Java、<b>Ruby</b>など）  ・自社サービス/受託開発の開発・運用経験  ・システムの課題解決に対する推進力  ・新技術における高速なキャッチアップ力   【必要な経験年数】  2 年以上   ITエンジニア【システム開発・SE・イン...",
+      "salary_currency_code": "JPY",
+      "salary": "285000 - 500000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b4f417a48064f8da5d6c3e0ff82edcd45c9e2e38eea9029deaf8f87ecf9c4f78a4381f7e580fc9a542208054b296d657d443d1b450d002909170f653245164880e5a1cca4970d34273e2597a2c18be2f984e68a5481fff8cdb2872c1f53595d154d/aa2873441e90c1ef577d8685d53a81d0.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "SE 大阪·福岡 Webアプリケーション開発経験者(PHP Java Ruby)",
+      "salary_max": "500000",
+      "company": "株式会社アクティブプランニング"
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:15:37 GMT",
+      "description": " ～ 2023/03/31   言語   必須スキル・経験   ・<b>Ruby</b> on Railsの開発経験1年以上   稼動日数   週5日   商談回数   1回   案件の詳細   即日参画OK / 商談1回 / 長期案件（6ヶ月～） / リモ...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b1b417f5806164e481a00310908021467c3f6dc8af081c8beb82f360e074b072280ead48de5c1c3f7e06b215f49442c1f5c5a591546/842e480bbf8c11d6d22680040202a6d4.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails ゴルフ会員サイトのフルリニューアル",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:14:40 GMT",
+      "description": "者とコミュニケーションを取りながら進めて頂きます。   ＜備考＞  基本リモート  月1出社あり   ＜基本時間＞  10：00～19：00   ＜服装＞  自由   期間   即日 ～ 2022/12/31   言語   必須スキル・経験   ・<b>Ruby</b> on Rails経験者(3年以...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1912417f5806164e481a003109080214676537488af19fc8bf89cee7e76c7515490f1b6387f1eec7edd26b3669c8bf98cee6cb8da4fc21515054595451/81ff4ea3b050d1c9a3a1948f39d1cb76.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails ECサイト開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:14:01 GMT",
+      "description": "環境など＞  ・<b>Ruby</b> 2.7  ・<b>Ruby</b> on Rails 6  ・Elasticsearch  ・Amazon Aurora(MySQL互換)  ・Redis  ・Memcached  ・Slack(コミュニケーション)  ・esa(技術...資料の文書化)   ＜備考＞  フルリモート   ＜基本時間＞  10：00～19：00   期間   即日 ～ 2022/07/31   言語   必須スキル・経験   ・<b>Ruby</b>経験2～3年以上   歓迎するスキル・経験   ・ToC向け課金・決済...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f13417a48064f87b1ffc7fad26387f1eec7edd249244f493f7a48066d87b1ffc7fad2638de5d0c3f7d48af0b9c8bf942c56575b104714/d40d56d231c00ec7a2519c14773bd2e0.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby Webサービスの追加開発・改修・修正",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:13:12 GMT",
+      "description": "単価/月   60～70万円   勤務地   東京都,品川区   案件概要   自社開発ソーシャルゲームの開発・運用をお願いします。  既存機能の修正や新規機能の開発等をご担当頂きます。   ＜環境＞  <b>Ruby</b>, Redis..., Memcached, AWS   ＜備考＞  フルリモート   ＜服装＞  私服OK   期間   即日 ～ 2023/02/28   言語   必須スキル・経験   ・<b>Ruby</b>での開発経験   歓迎するスキル・経験   ・ゲーム開発のご経験   稼動...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f4941ceafd68ced9b97a3c34888f8ec82b9ce6a81f480cc99930d8df9e5c0ed9a613a140c1e45c3f6da8af096c8be8d2f87eddcc4f79c80ebc16c8ef3ab93f1d3721813081a1e50/4976199305b3f21f769635cdda6a54a0.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby 自社タイトルゲーム保守開発",
+      "salary_max": "700000",
+      "company": ""
+    }
+  ],
+  "min_salary": [
+    {
+      "salary_min": "200000",
+      "locations": "静岡市葵区",
+      "salary_type": "M",
+      "date": "Wed, 17 Aug 2022 07:56:38 GMT",
+      "description": "的な仕事内容】  2〜3名ずつのチームに分かれて業務を行っていただきます。  ■関わる案件  ・自社webサービス・アプリ  ・自治体、企業からの受託案件  静岡県や静岡市、銀行ほか  ■使用している言語・環境等…Web言語（PHP、<b>Ruby</b>...、Javascript）、アプリ言語（swift、java、kotlin）、フレームワーク（FuelPHP、<b>Ruby</b> on Rails、Vue.js）、データベース（MySQL）、インフラ（AWS、Vagrant、Chef）   【職場環境】  現在、シス...",
+      "salary_currency_code": "JPY",
+      "salary": "200000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b1d417d65344f3c521659432200180667c6d9cb8ed794ceae8c0d83cbd0c2e7816138293e472f4102096b97908fd4adb78cddd50792b4cc8fd4c865356824488fde89cc9993c8f7ce6f154316505052/2f8653980e34d454f88c35d4b6539f1c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "SE<PHP・Ruby・swift・java・kotlin・MySQL 等>【正社員】【交通費支給】【最寄り駅】静岡県静岡市葵区",
+      "salary_max": "200000",
+      "company": ""
+    },
+    {
+      "salary_min": "2010",
+      "locations": "東京都港区",
+      "salary_type": "H",
+      "date": "Sat, 06 Aug 2022 07:53:18 GMT",
+      "description": "務システムに関連する周辺システムの開発をお任せしていく予定です。 開発部分メインで、割合としては新規と改修半々です。 【環境】 OS：Linux（CentOS） 言語：<b>Ruby</b>（Rails） DB：MySQL（Amazon Aurora） クラウド：AWS 他：Elasticsearch...、ElastiCache、Redshift 休日： 日曜日、土曜日、祝日 週休2日制(土日祝休み) 対象となる方： 実務経験1年以上/ブランク相談可/開始時期についてはご相談ください。 【活かせる経験・スキル】 開発エンジニア <b>Ruby</b> <b>Ruby</b>...",
+      "salary_currency_code": "JPY",
+      "salary": "2010 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b4d41c8b1fb89f98254c7c6f5418adbf4c3f5d76b96b6b4dbba884488cbba54c4dff96389c3dbc5f2ed4990a89cdeaf9487ece8c4f7804381f7e580fc9a768df5ecccbc980dc9d8fe8da6cb2286f4fe88f0c0c7d1f5499796badeac92655d5612431251/14935393b64833ed9ed5165c93d5b8c0.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【Ruby】社内システム開発土日祝休み！ブランクOK！",
+      "salary_max": "2010",
+      "company": "パーソルテクノロジースタッフ株式会社"
+    },
+    {
+      "salary_min": "2800",
+      "locations": "東京都新宿区",
+      "salary_type": "H",
+      "date": "Thu, 04 Aug 2022 07:38:08 GMT",
+      "description": "谷駅 徒歩7分 仕事内容： 【社内システムの改修、運用】 ・アラームボックス開発、機能改修 ・社内ツールの改修 【担当工程】 実装、テスト、運用 【ツール、言語】 <b>Ruby</b>、<b>Ruby</b> on Rails、AWS 【在宅勤務】 あり。現在は週1出社...なスキルや経験のある方を歓迎します！】 ・<b>Ruby</b>での開発経験 【活かせる経験】 ・その他WEB系言語での開発経験 ※経験年数1年以上 応募先： 株式会社スタッフサービス エンジニアリング事業本部 東京中央オフィス／東京広域オフィス 東京都千代田区神田練塀町85番地 JEBL秋葉...",
+      "salary_currency_code": "JPY",
+      "salary": "2800 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-484e41c4bbef88f79d7672160a186f555d15435b5c/6692dedf89b328e7354c164ab21df5ab.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "時給2800円/ Ruby開発直雇チャンスも有",
+      "salary_max": "2800",
+      "company": "株式会社スタッフサービス エンジニアリング事業本部"
+    },
+    {
+      "salary_min": "285000",
+      "locations": "大阪市中央区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:17:08 GMT",
+      "description": "リケーション開発経験（PHP、Java、<b>Ruby</b>など）  ・自社サービス/受託開発の開発・運用経験  ・システムの課題解決に対する推進力  ・新技術における高速なキャッチアップ力   【必要な経験年数】  2 年以上   ITエンジニア【システム開発・SE・イン...",
+      "salary_currency_code": "JPY",
+      "salary": "285000 - 500000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b4f417a48064f8da5d6c3e0ff82edcd45c9e2e38eea9029deaf8f87ecf9c4f78a4381f7e580fc9a542208054b296d657d443d1b450d002909170f653245164880e5a1cca4970d34273e2597a2c18be2f984e68a5481fff8cdb2872c1f53595d154d/aa2873441e90c1ef577d8685d53a81d0.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "SE 大阪·福岡 Webアプリケーション開発経験者(PHP Java Ruby)",
+      "salary_max": "500000",
+      "company": "株式会社アクティブプランニング"
+    },
+    {
+      "salary_min": "3500000",
+      "locations": "東京都港区",
+      "salary_type": "Y",
+      "date": "Thu, 21 Jul 2022 07:15:42 GMT",
+      "description": "Webエンジニア（<b>Ruby</b>, <b>Ruby</b> on Rails）/株式会社キャリアインデックス   ■主なサービスと特徴：同社の提供するサービスは、複数サイトの情報を一括で検索・閲覧・問合せできる「ポータル・オブ・ポータルズ」とい...しているツールについて】 AWS、GitHub、CircleCI Slack、Redmine、Confluence <b>Ruby</b>、<b>Ruby</b> on Rails、Chef、PHP Elasticsearch、Apache Solr、Redshift など   募集条件 雇用...",
+      "salary_currency_code": "JPY",
+      "salary": "3500000 - 6000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1d1f417f5806164e481a0031090802146777110a4990a883deae9e87edd6c4f7ab80eac36c3510420d488af182c8be9ecee6d78da4ffc3e1ca63390207222609001f592a0f1518535d5c/78464ba8ae1106c623336afa066655a4.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Webエンジニア（Ruby, Ruby on Rails）",
+      "salary_max": "6000000",
+      "company": ""
+    },
+    {
+      "salary_min": "3500000",
+      "locations": "静岡市葵区",
+      "salary_type": "Y",
+      "date": "Wed, 17 Aug 2022 07:51:14 GMT",
+      "description": "、<b>Ruby</b>、Javascript）、アプリ言語（swift、java、kotlin）、フレームワーク（FuelPHP、<b>Ruby</b> on Rails、Vue.js）、データベース（MySQL）、インフラ（AWS、Vagrant、Chef）   【職場...]  &lt;必須&gt;  ・webの開発経験が2年以上の方  ・PHPもしくは<b>Ruby</b>での開発経験  ※学生時代の経験も考慮します   [待遇]  ・社会保険完備  ・交通費規定支給  ・昇給年1回  ・賞与年2回  ・各種手当あり（残業、家族...",
+      "salary_currency_code": "JPY",
+      "salary": "3500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-181b417d65344f3c521659432200180667703c3849394b5d5c2f601d3c3f6b54702b38633c120759543821232878782c1f53595d1f47/dcacb8979fc69dd2fd83a4633b291668.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "SE<PHP・Ruby・swift・java・kotlin・MySQL 等",
+      "salary_max": "3500000",
+      "company": "株式会社しずおかオンライン"
+    },
+    {
+      "salary_min": "400000",
+      "locations": "東京都千代田区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:44:31 GMT",
+      "description": "テム開発  ・SE：要件定義、設計  ・PG：実装、テスト  エンドユーザとの打ち合わせ参加   ＜開発環境＞  開発環境：AWS  開発言語：<b>Ruby</b>(<b>Ruby</b> on Rails)  DB：MySQL  管理ツール：Backlog  構成管理：Git  コミ...設計以降の経験   歓迎するスキル・経験   ・<b>Ruby</b>での開発経験   稼動日数   週5日   商談回数   1回   最寄駅   JR中央線 飯田橋駅   案件の詳細   即日参画OK / 商談1回 / リモート   リモート詳細   週4リモート＋週1...",
+      "salary_currency_code": "JPY",
+      "salary": "400000 - 550000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-494e41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c928c2aba6cafdd56cc4f69780ead88de4e3c3f7c86b9796aadb8880668cec9097a2da8be2e884e6809dfee294b3913c1f1551595712/3b36a3552e9588eb052806b64c463a83.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby 某有名企業の新基幹システム開発務",
+      "salary_max": "550000",
+      "company": ""
+    },
+    {
+      "salary_min": "400000",
+      "locations": "東京都港区六本木",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:33:40 GMT",
+      "description": "ートあり   ＜基本時間＞  10：00～19：00   ＜服装＞  自由   期間   即日 ～ 2022/09/30   言語   必須スキル・経験   ・<b>Ruby</b>, <b>Ruby</b> on Railsでのシステム開発経験3年以上  ・JavaScript...",
+      "salary_currency_code": "JPY",
+      "salary": "400000 - 520000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-194e41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c928c8bf82cee7c38da5ccc3e0eb82edef45c3f6df8af193c8beabcee7cf6c6d1556023b021c0e15545481fff8cdb2872fcee6c08da4d8c3e1d082ede486a3fc8bebd8c9a881ceaeed4f8a9ff9c6cecb638de4c9c3f6d068401a190c151e/20ceefbd2552f8ebf48a7b4c53d00045.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby / JavaScript クレジットカードの不正利用検知システムの開発",
+      "salary_max": "520000",
+      "company": ""
+    },
+    {
+      "salary_min": "400000",
+      "locations": "東京都中央区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:30:06 GMT",
+      "description": "程度の追加を行います。  チームメンバーは、全体で20名ほどの規模感です。   ＜備考＞  基本リモート  初日のみ端末セットアップなどで出社あり   期間   即日 ～ 2022/12/31   言語   必須スキル・経験   ・<b>Ruby</b> on Rails 2年以...",
+      "salary_currency_code": "JPY",
+      "salary": "400000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-491d417f5806164e481a00310908021467c9f3f981eda70bdb84b28df9cc2526410a04126c8ee2b19cf6e471c3acacc5b3e989c7b89db6c169535652531943/eefb6ba93f59eaad2feaab6a1a8e005b.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails / MySQL 金融機関向け資金繰りアプリ機能追加",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "4000000",
+      "locations": "東京都渋谷区南平台町 - 東京都渋谷区道玄坂",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:19:23 GMT",
+      "description": " CI での徹底的な自動化  ・セミナー参加、書籍物品購入サポート  ・休憩スペースではマンガやゲームが楽しめます   ＜採用言語とフレームワーク＞  ・<b>Ruby</b>、JavaScript  ・<b>Ruby</b> on Rails、React、Redux...",
+      "salary_currency_code": "JPY",
+      "salary": "4000000 - 10000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-194e417f5806164e481a00310908021467c6d9cb8ed794ceae8c0d83cbd0c2e781618ecccd80c19e91fbc853c9a995ceaed78cec9f97a3e88be3cc65375516114990a883deae9e87edd6c4f7ab80eac36c81c88393ccd796b98a3c1e1d565d56157613535a535656/0843ab15b35b4442a36e33904a88283c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【正社員】Ruby on Railsエンジニア",
+      "salary_max": "10000000",
+      "company": ""
+    },
+    {
+      "salary_min": "4000000",
+      "locations": "東京都",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:19:23 GMT",
+      "description": " CI での徹底的な自動化  ・セミナー参加、書籍物品購入サポート  ・休憩スペースではマンガやゲームが楽しめます   ＜採用言語とフレームワーク＞  ・<b>Ruby</b>、JavaScript  ・<b>Ruby</b> on Rails、React、Redux...",
+      "salary_currency_code": "JPY",
+      "salary": "4000000 - 10000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1d4841c882ca4f8983cac5cded4188cac6c7d0d68ce08b296f584f1d4f0149547202010d1d6580afe28dd7e40ac38eaacbc4d34ec1e08f85e7d56c8fc6bc91e2c053cd8f83c883e14f8b88da2285e8c48becfa0092c5ca948e95d8be8c65575d154c16/4514eac292c911de61c0f968545bc7f2.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【正社員】Ruby on Railsエンジニア【正社員】【インターネット関連】【フレックスタイム制】【資格取得支援】【急募求人】【社宅・寮・住宅補助あり】【東京都】",
+      "salary_max": "10000000",
+      "company": ""
+    },
+    {
+      "salary_min": "4000000",
+      "locations": "東京都中央区銀座",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:01:59 GMT",
+      "description": "Web、インターネット、ゲーム系   掲載予定期間：2022/9/8(木)〜2022/11/30(水)   自社配信サービスの開発エンジニア（<b>Ruby</b> on Rails） ※フルリモート勤務／IPO準備中   【Web上で...の顧客接点を持続させる新しい仕組み「ウェビナーマーケティング」を提供】  急成長中自社配信サービスの開発をお任せします。  ※開発環境…<b>Ruby</b> on Rails／websocket, WebRTC／AWS（EC2、RDS、S3、MediaLive...",
+      "salary_currency_code": "JPY",
+      "salary": "4000000 - 7000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f4a417f5806164e481a00310908021445c3f7fd8af081c8be87cee7cd8da4c8c3e0e0633c12075954070753784a54415e6687e98d9384dd4888f8ec82b9ce488af182c8be9ecee6d78da4ffc3e1ca638de5d0c3f7d48af0b9c8bf940d87edc6c4f79380ead98de4eec3f6ca6b9bad81da89934486f8ac93b9d969525e55551145/f79ca28cdc7baa4b43118be23897a365.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "自社配信サービスの開発エンジニア（Ruby on Rails） ※フルリモート勤務／IPO準備中【転職支援サービス求人】",
+      "salary_max": "7000000",
+      "company": ""
+    },
+    {
+      "salary_min": "4000000",
+      "locations": "東京都町田市",
+      "salary_type": "Y",
+      "date": "Fri, 09 Sep 2022 07:13:12 GMT",
+      "description": "ITエンジニア系（ソフトウェア、ネットワーク）   ☆全国の各地よりフルリモートにて就業いただけます☆   【職務詳細】  <b>Ruby</b> on Railsを中心としたWEB技術を用いて、コーディング、テスト、運用...",
+      "salary_currency_code": "JPY",
+      "salary": "4000000 - 6500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b4f416479448cec8f97a3d08be3d684e6ab97eacb71785e5f540d87edc6c4f79380ead98de4eec3f6ca6b90a883deae9e87edd6c4f7ab80eac34e84e68a97ebcb90a997deaea566263a2597a2cb8be2dd84e79897ebe290a8893c1f1551585c17/94ef7c009b22ebff632db216a363993a.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【リモート】ITエンジニア（Ruby）",
+      "salary_max": "6500000",
+      "company": ""
+    },
+    {
+      "salary_min": "4000000",
+      "locations": "東京都",
+      "salary_type": "Y",
+      "date": "Thu, 08 Sep 2022 07:59:21 GMT",
+      "description": "［仕事詳細］  ☆全国の各地よりフルリモートにて就業いただけます☆   【職務詳細】  <b>Ruby</b> on Railsを中心としたWEB技術を用いて、コーディング、テスト、運用を中心に行っていただきます。ゆくゆくは環境構築・設計、見積...（土日）、祝日、GW、年末年始休暇、慶弔休暇、年次有給休暇（14～20日）  ［応募資格］  【必須】  ・<b>Ruby</b>での開発経験2年以上   【尚可】  ・要件定義や基本設計・詳細設計の実務経験がある方  ・業務以外でも<b>Ruby</b>のス...",
+      "salary_currency_code": "JPY",
+      "salary": "4000000 - 6500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c4a41c8b1fb89f9829385fe4885d2f686a1cb4881c888ceb689cee5c58da6e30085c5c289c3dbc5e7c96b96b6b4dbba8883caf307909cf28be0d147808dd28ec4c7ce93b0c8b8eb4f888ad7c7c7d684fdc667c5e8f78fe48f0bd991bc87eed107928dc08fc5d082f6815480daf4cc8b81c8a2f28ad0b092b4cc8eeeda6580bceb8efed6cd8ea00dc9d8fe8da6cb0085c5c289c3dbc5e7c9499584a0db888081dfffc4f58a618dfdf181f285548cd5e2c9aa820dcbc9cc8983cac5f0c9418bcac3c6d9dc8dcba7cea8a22c5c5c5c1f42/550547d675f1cec15a00387a66957ed4.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【リモート】ITエンジニア（Ruby）【正社員】【ソフトウェア・情報処理】【学歴不問】【転勤なし】【フレックスタイム制】【年間休日120日以上】【土日祝日休み】【残業少なめ】【資格取得支援】【急募求人】【社宅・寮・住宅補助あり】【東京都】",
+      "salary_max": "6500000",
+      "company": ""
+    },
+    {
+      "salary_min": "4150",
+      "locations": "東京都渋谷区",
+      "salary_type": "H",
+      "date": "Thu, 08 Sep 2022 07:20:35 GMT",
+      "description": "に直結したスキルアップ等、目的に応じて受講可能です。 休日： 日曜日、土曜日、祝日 完全週休2日制（土日祝休み） 対象となる方： 【こんなスキルや経験のある方を歓迎します！】 ・<b>Ruby</b>を利用した実務経験2年以上 ・サーバーサイドの経験をお持ちの方 【活か...",
+      "salary_currency_code": "JPY",
+      "salary": "4150 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c4f41ca89da8ae8a22765613a140c1e64124c5d5e4019/ce9efde24ed127033f18054670c97beb.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "時給4150円/ Ruby社内SE",
+      "salary_max": "4150",
+      "company": "株式会社スタッフサービス エンジニアリング事業本部"
+    },
+    {
+      "salary_min": "4500000",
+      "locations": "東京都千代田区",
+      "salary_type": "Y",
+      "date": "Wed, 07 Sep 2022 22:59:25 GMT",
+      "description": " 〜 650万円 求めるスキル Bランク以上（※ランクについてはhttps://paiza.jp/guide/career#rank） 言語 <b>Ruby</b> フレームワーク <b>Ruby</b> on Rails、Node.js 開発手法 ウォーターフォール 開発...すべてのご経験をお持ちの方からのご応募をおまちしています！ ・Web開発（サーバサイドエンジニア） 実務５年以上 ・システム設計 実務１年以上 ・プログラムコーディング 実務３年以上 ・保守、追加開発 実務３年以上 ・<b>Ruby</b> 趣味or実務１年未満 ・Web系システム（一般ユーザーが利用するシステム）の開...",
+      "salary_currency_code": "JPY",
+      "salary": "4500000 - 6500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b4841ceafc68cedb097a3c94888f8ec82b9ce6a80e5a1cca4970d87edc6c4f79380ead98de4eec3f6ca6b9abca0dab4974488d19c9c88d06a82ecc586a3e38bead9c9a98cceaed88cec9097a3c48be2dd4786a2dc8beac0c9a985ceaeef8cec857672160a184e84e78897ebda90a893deaea687edcc264618565e585b/dd887f2454451d8bcab6b39c6a9dd40f.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【フルリモート】多言語自動翻訳ツール開発アプリケーションエンジニア／Ruby",
+      "salary_max": "6500000",
+      "company": "株式会社イー・エージェンシー"
+    },
+    {
+      "salary_min": "480000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:27:19 GMT",
+      "description": "   言語   必須スキル・経験   ・<b>Ruby</b> on Railsでの開発経験  ・<b>Ruby</b> on Railsでの保守性や拡張性を意識した設計の業務経験  ・RSpecをゼロから書ける  ・モダンなフロントエンド言語(React...",
+      "salary_currency_code": "JPY",
+      "salary": "480000 - 680000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b1d417f5806164e481a00310908021467721501050028c2aba6cafdd56cc3c8a185cdcc6c83d9ba9cc0e1721813081a1e50/023b78ad6534a8da60f9309c6d608f9e.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails / RSpec など 会計等サービス企業における新規開発、エンハンス開発",
+      "salary_max": "680000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:52:57 GMT",
+      "description": "＞  原則リモート、月1回出社   ＜基本時間＞  10：00～19：00   期間   即日 ～ 2023/02/28   言語   必須スキル・経験   ・<b>Ruby</b> on Railsでの開発経験2年以上  ・Web系の開発経験4～6年以...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1f417f5806164e481a00310908021467c4ced28dc9a10bd8a79981e4f72591aad78deaf747819ace8cd3f828795c4441176d8a9dcec4d9e3605c5f5017475c/19ea299cc9e45eb11a09ee674a10667b.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails / RSpec 人事労務系プロダクトのエンハンス開発",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都豊島区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:23:03 GMT",
+      "description": "は面談時にご説明させて頂きます。   ＜工程＞  設計〜テスト   ＜備考＞  基本フルリモート   期間   即日 ～ 2022/12/31   言語   必須スキル・経験   ・Shopify開発経験、または<b>Ruby</b>/PHP開発経験3年以上+サー...経験、または<b>Ruby</b>/PHPでの開発経験が3年以上ある方をお待ちしています。...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e4d41ceafd18cec8397a3eb4888f5f68d92dc6a3b0648521d7d65346d87bce5c8d1c0633e2f352297eadc90a88fdeaea5655d5612431452/ccc0a70715b926c0062eac142b1875ca.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby / PHP / Shopify 雑貨通販ECサイト構築",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:15:37 GMT",
+      "description": " ～ 2023/03/31   言語   必須スキル・経験   ・<b>Ruby</b> on Railsの開発経験1年以上   稼動日数   週5日   商談回数   1回   案件の詳細   即日参画OK / 商談1回 / 長期案件（6ヶ月～） / リモ...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b1b417f5806164e481a00310908021467c3f6dc8af081c8beb82f360e074b072280ead48de5c1c3f7e06b215f49442c1f5c5a591546/842e480bbf8c11d6d22680040202a6d4.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails ゴルフ会員サイトのフルリニューアル",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "5000000",
+      "locations": "東京都中央区銀座",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:19:23 GMT",
+      "description": "Web、インターネット、ゲーム系   掲載予定期間：2022/9/8(木)〜2022/11/30(水)   サーバーサイドエンジニア（<b>Ruby</b>）◆ウェビナーマーケティング支援プラットフォーム開発／フルリモート   【Web上で...1時間、レビュー会への参加  ※技術スタック…言語（<b>Ruby</b>、JavaScript）／フレームワーク（<b>Ruby</b> on Rails、Vue.js）／ミドルウェア・ツール（Docker）／クラウド（AWS、GCP、Microsoft Azure...",
+      "salary_currency_code": "JPY",
+      "salary": "5000000 - 8000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f4a41ceafd18ced9b97a3f08be3d74786a2dc8beac0c9a985ceaeef8cec8576c3e1dd82eddb86a3e4488af182c8be9ecee6d78da4ffc3e1ca6387f1eec7edd24990a883deae9e87edd6c4f7ab80eac36c84e79597ebd590a9bbdeae91448cec8f97a3d08be3d684e6ab97eacb71c9a8a3ceaed88cec9697a3e58be3cd84e69397ead953c9a988ceaed88cedb497a2da69525e55551145/a2163ddcb20b197e3400c8a5eb3a05b5.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "サーバーサイドエンジニア（Ruby）◆ウェビナーマーケティング支援プラットフォーム開発／フルリモート【転職支援サービス求人】",
+      "salary_max": "8000000",
+      "company": ""
+    },
+    {
+      "salary_min": "5300000",
+      "locations": "東京都千代田区霞が関 - 東京都千代田区永田町",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:19:23 GMT",
+      "description": "Web、インターネット、ゲーム系   掲載予定期間：2022/9/8(木)〜2022/11/30(水)   【バックエンドエンジニア／<b>Ruby</b>】※自社サービス／フルリモート可／グローバルに活躍するHR企業   【スイ...スに本社を置くグローバル企業／フリーランスエンジニア向けの仕事探しサイトの開発／<b>Ruby</b> on Railsでの開発スキルを伸ばせる】  「人財躍動化」による社会変革を目指すアデコの中の、Digital Innovation本部ではDX推進...",
+      "salary_currency_code": "JPY",
+      "salary": "5300000 - 6490000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1b41ceafd18ced9b97a3f08be3d74786a2dc8beac0c9a985ceaeef8cec8576c4dfe987cbca45c3f6c08af099c8bf95cee7e48da5d622311d03174786a2dc8beac0c9a985ceaeef8cec8576c3e1c082edd486a2cc8beaf8c9a99f0dcee7c58da4d6c3e0d482edef67c3f6c08af099c8bf95cee7e48da5d6008bd3c386e6d2214758584a13193f1e1d5556571f/2a251e147cad43fd5a5232f59a943398.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【バックエンドエンジニア／Ruby】※自社サービス／フルリモート可／グローバルに活躍するHR企業【転職支援サービス求人】",
+      "salary_max": "6490000",
+      "company": ""
+    },
+    {
+      "salary_min": "540000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:32:19 GMT",
+      "description": "スキル・経験   ・<b>Ruby</b>での開発経験3年  ・要件定義～の経験  ・高負荷システムの設計・開発・運用経験   歓迎するスキル・経験   ・PMやリードエンジニアの経験(規模問わず)   稼動日数   週5日   商談回数   1回   最寄...",
+      "salary_currency_code": "JPY",
+      "salary": "540000 - 640000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e4e41ceafd38cec9e97a3e58be2ce65819cee8fcdcd2879484f54668ceda097a2c06a84e1f1809ce1695b4b1f1c0e1e/66a2d6cb43d99e8a99c12a6248b71fd9.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby 暗号資産取引会社向けトレーディングシステム",
+      "salary_max": "640000",
+      "company": ""
+    },
+    {
+      "salary_min": "540000",
+      "locations": "東京都新宿区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:22:37 GMT",
+      "description": "単価/月   54～70万円   勤務地   東京都,新宿区   案件概要   SaaS型プラットフォームサービスのプロダクトの運営業務  <b>Ruby</b>(8割)/Go(2割)言語を利用してアプリの新規機能の開発や、既存...機能のリファクタリング・拡張を行う  各メンバーにチケット配布し、2週間に1度のリリース実施   ＜環境＞  <b>Ruby</b>, Go, Rails, AWS, GCP, JIRA   ＜備考＞  現在はフルリモート   ＜基本時間＞  10：00～19：00   期間...",
+      "salary_currency_code": "JPY",
+      "salary": "540000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f1b41c4bbef88f79d76c3e1dd82eddb86a3e78bebca2879484f54663c0f46272280ebf48de5ccc3f7d46841121e0a1e18/e153e766c04104055cc7c51b4fc93d05.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby SaaS型プラットフォームサービス開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "550000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:57:29 GMT",
+      "description": "単価/月   55～65万円   勤務地   東京都,港区   案件概要   Webマーケティング企業の自社プロダクトにて、<b>Ruby</b> on Railsを用いたバックエンド開発をご支援いただきます。  Googleマッ...程度キャッチアップのために出社   期間   即日 ～ 2022/12/31   言語   必須スキル・経験   ・<b>Ruby</b> on Railsを用いた開発経験2年以上  ・Gitを使用した経験   歓迎するスキル・経験   ・RSpecによるテストコードの作成経験  ・AWS...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 650000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b19417f5806164e481a0031090802146777110a4990a9b5deae9187eddfc4f7a680eac28de4d6c3f6d86b244f491dc4bbef88f79d76c9f5e386f7dd4577110a6b90a9b5deae9187eddfc4f7a680eac28de4d6c3f6d849244f493c1f1551585c15/3b32600926ce5fd0a9a097b39c2f708c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails / Git Webマーケティング企業向け開発支援",
+      "salary_max": "650000",
+      "company": ""
+    },
+    {
+      "salary_min": "550000",
+      "locations": "東京都港区浜松町",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:56:26 GMT",
+      "description": "トの一連工程の中に入っていただきます。   ＜備考＞  リモートあり   期間   即日 ～ 2022/06/30   言語   必須スキル・経験   ・LAMP環境中心にPHP, <b>Ruby</b>等サーバーサイド経験者もしくはクライアントSPA(Node.js, Vue.js)   稼動...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f48417d65344f87b1ffc7fad26386c4d8c5e7e9499abca0dab497663d1b450d003320316c8ef3ab93f1d3717a636d2c1e545d5f1041/39e4b0e9f0a611feabb065f8cb61f9fa.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "PHP / Ruby / SPA 音声認識ソリューション製品開発",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "5600000",
+      "locations": "東京都港区",
+      "salary_type": "Y",
+      "date": "Thu, 19 May 2022 07:43:46 GMT",
+      "description": "<b>Ruby</b>エンジニア(シニアライフ事業部)/株式会社エス・エム・エス   創業12年で東証一部に上場、33事業を展開。  拡大するシニア・ヘルスケア市場において、Webを中... , css/scssの実務経験1年以上  ・デザインフレームワークを利用した開発経験1年以上  ・顧客管理システムの開発経験  ・<b>Ruby</b> on Railsの実務経験1年以上   歓迎される経験・スキル・資格 ・B to C, B to B...",
+      "salary_currency_code": "JPY",
+      "salary": "5600000 - 8100000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1d1b41ceafd38cedac97a2c14882eccf86a3c78bebcbc9a8b6ceafc66d3c521659438be3c684e69397ead190a9a0deaf8f668cec9097a3e88be3cc4786a3dd8bebd7c9a8a82fcee6d88da4ffc3e1ca638de5cdc3f7db8af192c8bea6cee6cd6f154c15545a53/4d6a6dcb4cd8c82e396794036f74a3a4.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Rubyエンジニア(シニアライフ事業部)",
+      "salary_max": "8100000",
+      "company": "株式会社エス・エム・エス"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区六本木",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:53:01 GMT",
+      "description": "ドレビュー  ・トラブル対応・サービス運用  ・運用改善  ・ベンダーコントロール  ・チームビルディング   ＜開発環境＞  <b>Ruby</b> on Rails, Go, AWS, Docker, CircleCI, Jenkins, Elasticsearch...   ＜基本時間＞  10：00～19：00   期間   即日 ～ 0000/00/00   言語   必須スキル・経験   ・<b>Ruby</b> on Railsで業務において3年以上の開発経験  ・LinuxまたはUnix OS上でのCUIでの...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b1b417f5806164e481a00310908021467c9d7f78ce0ab0bd4bba683f6d42597a2c18be2f984e68a5481fff8cdb2872fc4f2e489bece0080eac98de4d6c3f6d08af0a1c8bf8f2f8dccf1079db6e88ff8d466561046595140/061d5106ec51cd8779b5fd39d441e589.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails 食品ロス削減のマーケットアプリ開発(フルスタックエンジニア)",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:51:38 GMT",
+      "description": "スキル・経験   ・スクリプト言語(PHP, Python, <b>Ruby</b>など)を使用した開発経験  ・Webシステム(サーバーAPI、管理画面など)の開発/運用経験  ・リモートサーバーまたはローカル開発環境のLinuxにsshログインし各種操作(ログ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1f41ceafd68ced9b97a3c34888f8ec82b9ce6a393b7a0bd4bba683f6d425245917000e00478cb6ff8ff0c928c8bf9fcee7d38da4d40080ebf18de4d92224111d1b45451d7f5806166f154c15545b52/dbd7374bde77fcc70e08da6347a87a90.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "PHP / Python / Ruby 某IPを用いたパズルバトルゲームのサーバーサイド開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都渋谷区恵比寿",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:50:10 GMT",
+      "description": "信頼性の高い<b>Ruby</b>コードの設計・構築・保守  ・ボトルネックやバグの特定、修正、改善  ・パフォーマンスの最適化  ・フロントエンドアプリケーションとのAPIの連携  ・コード品質の維持・組織化・自動化の支援   ＜備考＞  基本リモート   ＜基本...時間＞  10：00～19：00   期間   即日 ～ 2022/07/31   言語   必須スキル・経験   ・<b>Ruby</b> on Railsの実務経験2年以上  ・Vue.jsやNuxt.jsでのフロントエンド開発経験  ・バッ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f1a417f5806164e481a00310908021467c3f6ca8af0bdc8be870d8df9e5c0ed9a618be2ea84e69c97ebc253c3bdb6cab4de6d3c461d4c106a88f8ec82b9ce695a4318190a1f/460ee465ee94298c9533701d3cd9d3dc.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails など テレビCM効果可視化ツールのWebアプリ開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:41:18 GMT",
+      "description": "  サーバーサイド：<b>Ruby</b>(<b>Ruby</b> on Rails)  フロントエンド：React/Redux, jQuery, Backbone.js  インフラ：AWS, Terraform, Chef  DB：PostgreSQL  その...リケーションの開発・運用経験3年以上  ・<b>Ruby</b> on RailsでのWebアプリケーションの開発・運用経験1年以上  ・Linuxの基礎知識、利用経験   歓迎するスキル・経験   ・切磋琢磨しながらスキルアップしたいと思っている方  ・Webサービス/スマ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e18417f5806164e481a0031090802146777110a4990a883deae9e87edd6c4f7ab80eac36c3000425481fff8cdb2872fc4f2e489bece0080eac98de4d6c3f6d08af0a1c8bf8f2f280600520c008afeea89fedf2146505c441819/f403e396c58be933a8911fc743c588bb.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails / Linux Web開発エンジニア",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:34:28 GMT",
+      "description": "管理システムと事業加地算定システムを今後統合予定)  ・フロントエンド、バックエンドはすべて<b>Ruby</b> on Railsに変更していく予定   ＜備考＞  基本常駐希望  要員様の希望に沿ってリモートの頻度(週1～5日)は相談可能   ＜基本時間＞  9：00～18：00   期間   即日... ～ 2022/12/31   言語   必須スキル・経験   ・<b>Ruby</b> on Rails5年以上(開発・実装のみでOK)  ・HTML/CSS, JavaScript経験   歓迎するスキル・経験   ・基本設計からの対応  ・GitHubの経...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-124e417f5806164e481a00310908021467721501050028c2aba6cafdd56c7501421a6a82edf086a3d9695b4b1f1c0f1f/8ea134e24b8bd47d300b1315d61dc977.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails 不動産SaaSソリューションの開発プロジェクト",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都中央区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:33:36 GMT",
+      "description": "   必須スキル・経験   ・Web開発業務の開発経験3年以上  ・<b>Ruby</b> on Railsによる開発経験2年以上  ・Webアプリ/セキュリティに関する知識   歓迎するスキル・経験   ・MySQLによるDBの設計・構築・保守・運用...経験  ・<b>Ruby</b>以外の言語経験（PHP／Python／Perl／Javaなど）  ・AWS/GCP環境での開発経験  ・マネジメント業務経験   稼動日数   週5日,週4日   商談回数   1回   案件の詳細   即日参画OK / 商談1回...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f1a417f5806164e481a00310908021467721501050028c2aba6cafdd56c62372285fcce88e8d12146505c45131c/5600eca5bda9d7ae73dd10f490b3db8c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails ECプラットフォームの開発支援",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都新宿区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:29:17 GMT",
+      "description": "：00～19：00   ＜服装＞  私服   期間   即日 ～ 2023/01/31   言語   必須スキル・経験   ・サーバーサイド開発経験5年以上(<b>Ruby</b>, C#, PHPのいずれか)  ・DBの設計構築経験  ・テス...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e4941ceafd98ced9b97a2d48be2cd84e68b548bebc1c9a881ceaec44f87b1ffc7fad2638de5d8c3f7d48af19dc8be8ecee7c44ec4f69280ebdd8de4c52297eadb90a997deae8d4486f8ac93b9d96a224e2467703c38499abca0dab497655d5612431356/748dffda50e5b7a2cbf50f52dd5580b8.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby / C# / PHP ソーシャルゲームのサーバーサイド開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:28:27 GMT",
+      "description": "＞  詳細設計～開発～テスト   ＜備考＞  基本リモート   期間   即日 ～ 2022/07/31   言語   必須スキル・経験   ・<b>Ruby</b> on Rails経験(目安3年以上)  ・DB設計経験  ・クエリチューニング経験  ・100...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-484d417f5806164e481a00310908021467c3f6ca8af0bdc8be870d8df9e5c0ed9a613a00070b162297ebf990a9973fc4bbef88f79d75125b5d565d54/7dc8074940305c4c971ec11fc1a87232.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails アルバム共有アプリサーバーサイド 処理開発支援案件",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区 - 東京都目黒区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:26:59 GMT",
+      "description": "環境＞  言語：<b>Ruby</b>  FW：<b>Ruby</b> on Rails, Backbone.js  DB：MySQL  CI/CD：Jenkins, CircleCI  インフラ：AWS, GCP   ＜備考＞  リモート可能  状況に応じて出社あり   ＜基本...時間＞  10：00～19：00   期間   即日 ～ 2023/02/28   言語   必須スキル・経験   ・Web開発経験(<b>Ruby</b>, PHP, Pythonなど)3年以上  ・ミドルウェア(MySQL, nginx)の知識  ・AWSの基...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c4a417d541007014954c3e0ef82eddb86a2cb6a390a5e4352430d361a0c5e7665206a82ede086a3c88bebcc287b4459450b016f154c15545b556c555d15435a58/6bbb974bd54977ac95f351e68ac15aa3.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby / Python / AWS ECプラットフォームのデータ移行",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都千代田区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:26:30 GMT",
+      "description": "ームワークのアップデート、自動テストの整備を含めた開発環境の改善  ※ご希望次第で、フロントエンド開発やインフラ構築などにもチャレンジできる環境です   ＜開発環境＞  バックエンド：<b>Ruby</b>, <b>Ruby</b> on Rails, Rspec, Rust  フロ... ～ 2023/02/28   言語   必須スキル・経験   ・<b>Ruby</b>での開発経験  ・オブジェクト指向言語でのWebAPIの開発経験3年以上  ・MySQLのスキーマ設計経験  ・AWS, GCPなどパブリッククラウドを用いたインフラ設計・構築...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c4941ceaee38ced9b97a2dc4888f5e18d88fc6a8af19fc8be91cee7fc8da5cd0087d7fc8bc9ed2290d7f49684a33fceaee38ced9b97a2dc6a82ecd286a3c88beae0c9a9842c1f5c5a581e41/9ea77c68428c5ec55cdd9c7f12c4dc0d.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby / AWS / GCP 特殊データ集計サービスの保守・改善",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都千代田区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:20:50 GMT",
+      "description": "/06/30   言語   必須スキル・経験   ・<b>Ruby</b> on Rails 3年以上  ・テストコード(RSpec)実装経験  ・Gitによるバージョン管理とチーム開発経験   歓迎するスキル・経験   ・チームリーダーの経験  ・AWS...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c18417f5806164e481a00310908021467c3f6dd8af096c8bebecee6d64ec3cbbd86c6e96c350449181b6b9b9189d5ac9a6686f8ac93b9d969535652531941/dfd3599c26216df945a2c77a5cef41f5.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails / RSpec / Git 某転職サービス開発・保守",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:18:44 GMT",
+      "description": "ナ禍の状況次第では週2日程度の出社を想定   ＜基本時間＞  10：00～19：00   ＜服装＞  自由   期間   即日 ～ 2022/10/31   言語   必須スキル・経験   ・<b>Ruby</b> on Railsでの開発経験2年以上  ・<b>Ruby</b>...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e1e417f5806164e481a00310908021467c3f6df8af193c8beabcee7cf4ecee2ab84f1db6c84e79797ead090a9addeae8d4486e9b69cbeee6a88e9f68dbef94880e5a1cca4972f360e074b0721515054595451/9a1daf7c19282593ea701d57fa0ec138.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails 金融系システムの新規サービス、既存エンハンス開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:14:40 GMT",
+      "description": "者とコミュニケーションを取りながら進めて頂きます。   ＜備考＞  基本リモート  月1出社あり   ＜基本時間＞  10：00～19：00   ＜服装＞  自由   期間   即日 ～ 2022/12/31   言語   必須スキル・経験   ・<b>Ruby</b> on Rails経験者(3年以...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1912417f5806164e481a003109080214676537488af19fc8bf89cee7e76c7515490f1b6387f1eec7edd26b3669c8bf98cee6cb8da4fc21515054595451/81ff4ea3b050d1c9a3a1948f39d1cb76.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby on Rails ECサイト開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:14:01 GMT",
+      "description": "環境など＞  ・<b>Ruby</b> 2.7  ・<b>Ruby</b> on Rails 6  ・Elasticsearch  ・Amazon Aurora(MySQL互換)  ・Redis  ・Memcached  ・Slack(コミュニケーション)  ・esa(技術...資料の文書化)   ＜備考＞  フルリモート   ＜基本時間＞  10：00～19：00   期間   即日 ～ 2022/07/31   言語   必須スキル・経験   ・<b>Ruby</b>経験2～3年以上   歓迎するスキル・経験   ・ToC向け課金・決済...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f13417a48064f87b1ffc7fad26387f1eec7edd249244f493f7a48066d87b1ffc7fad2638de5d0c3f7d48af0b9c8bf942c56575b104714/d40d56d231c00ec7a2519c14773bd2e0.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby Webサービスの追加開発・改修・修正",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:13:12 GMT",
+      "description": "単価/月   60～70万円   勤務地   東京都,品川区   案件概要   自社開発ソーシャルゲームの開発・運用をお願いします。  既存機能の修正や新規機能の開発等をご担当頂きます。   ＜環境＞  <b>Ruby</b>, Redis..., Memcached, AWS   ＜備考＞  フルリモート   ＜服装＞  私服OK   期間   即日 ～ 2023/02/28   言語   必須スキル・経験   ・<b>Ruby</b>での開発経験   歓迎するスキル・経験   ・ゲーム開発のご経験   稼動...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f4941ceafd68ced9b97a3c34888f8ec82b9ce6a81f480cc99930d8df9e5c0ed9a613a140c1e45c3f6da8af096c8be8d2f87eddcc4f79c80ebc16c8ef3ab93f1d3721813081a1e50/4976199305b3f21f769635cdda6a54a0.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Ruby 自社タイトルゲーム保守開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "6900000",
+      "locations": "東京都千代田区霞が関 - 東京都千代田区永田町",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:19:23 GMT",
+      "description": "Web、インターネット、ゲーム系   掲載予定期間：2022/9/8(木)〜2022/11/30(水)   【バックエンドエンジニア／<b>Ruby</b>】※管理職／フルリモート可／グローバルに活躍するHR企業   【スイ...スに本社を置くグローバル企業／フリーランスエンジニア向けの仕事探しサイトの開発／<b>Ruby</b> on Railsでの開発スキルを伸ばせる】  「人財躍動化」による社会変革を目指すアデコの中の、Digital Innovation本部ではDX推進...",
+      "salary_currency_code": "JPY",
+      "salary": "6900000 - 10000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-134d41ceafd18ced9b97a3f08be3d74786a2dc8beac0c9a985ceaeef8cec8576c4dfe987cbca45c3f6c08af099c8bf95cee7e48da5d62284c6c089f7e3c8f5df499b9189d5ac9a663d1b450d0080eac98de4d6c3f6d08af0a1c8bf8f2f87edc6c4f79380ead98de4eec3f6ca4990a981deae8f87ecd2c4f7a8625b515f5e5c12765b5942131205/c9049eb616dc85b310297f0f6c06d1ae.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【バックエンドエンジニア／Ruby】※管理職／フルリモート可／グローバルに活躍するHR企業【転職支援サービス求人】",
+      "salary_max": "10000000",
+      "company": ""
+    }
+  ],
+  "wordcloud_json": "[{\"word\": \"b\", \"count\": 398}, {\"word\": \"経験\", \"count\": 213}, {\"word\": \"Ruby\", \"count\": 198}, {\"word\": \"開発\", \"count\": 168}, {\"word\": \"Rails\", \"count\": 97}, {\"word\": \"on\", \"count\": 91}, {\"word\": \"スキル\", \"count\": 86}, {\"word\": \"言語\", \"count\": 82}, {\"word\": \"年\", \"count\": 65}, {\"word\": \"リモート\", \"count\": 63}, {\"word\": \"以上\", \"count\": 54}, {\"word\": \"Web\", \"count\": 51}, {\"word\": \"必須\", \"count\": 49}, {\"word\": \"00\", \"count\": 43}, {\"word\": \"2\", \"count\": 40}, {\"word\": \"環境\", \"count\": 40}, {\"word\": \"期間\", \"count\": 37}, {\"word\": \"即日\", \"count\": 36}, {\"word\": \"設計\", \"count\": 33}, {\"word\": \"3\", \"count\": 33}, {\"word\": \"エンジニア\", \"count\": 32}, {\"word\": \"AWS\", \"count\": 32}, {\"word\": \"2022\", \"count\": 32}, {\"word\": \"運用\", \"count\": 31}, {\"word\": \"基本\", \"count\": 31}, {\"word\": \"エンド\", \"count\": 30}, {\"word\": \"案件\", \"count\": 30}, {\"word\": \"システム\", \"count\": 30}, {\"word\": \"サービス\", \"count\": 28}, {\"word\": \"1\", \"count\": 28}, {\"word\": \"歓迎\", \"count\": 25}, {\"word\": \"時間\", \"count\": 25}, {\"word\": \"js\", \"count\": 24}, {\"word\": \"PHP\", \"count\": 23}, {\"word\": \"詳細\", \"count\": 22}, {\"word\": \"31\", \"count\": 22}, {\"word\": \"方\", \"count\": 21}, {\"word\": \"サイド\", \"count\": 21}, {\"word\": \"休暇\", \"count\": 21}, {\"word\": \"研修\", \"count\": 21}, {\"word\": \"実務\", \"count\": 20}, {\"word\": \"業務\", \"count\": 20}, {\"word\": \"備考\", \"count\": 20}, {\"word\": \"サーバー\", \"count\": 19}, {\"word\": \"管理\", \"count\": 19}, {\"word\": \"5\", \"count\": 18}, {\"word\": \"MySQL\", \"count\": 17}, {\"word\": \"週\", \"count\": 17}, {\"word\": \"ワーク\", \"count\": 16}, {\"word\": \"応募\", \"count\": 16}, {\"word\": \"Python\", \"count\": 16}, {\"word\": \"仕事\", \"count\": 15}, {\"word\": \"内容\", \"count\": 15}, {\"word\": \"自社\", \"count\": 15}, {\"word\": \"勤務\", \"count\": 15}, {\"word\": \"JavaScript\", \"count\": 15}, {\"word\": \"顧客\", \"count\": 15}, {\"word\": \"30\", \"count\": 15}, {\"word\": \"10\", \"count\": 15}, {\"word\": \"バック\", \"count\": 14}, {\"word\": \"企業\", \"count\": 14}, {\"word\": \"テスト\", \"count\": 14}, {\"word\": \"アプリ\", \"count\": 14}, {\"word\": \"フレームワーク\", \"count\": 14}, {\"word\": \"回\", \"count\": 14}, {\"word\": \"構築\", \"count\": 14}, {\"word\": \"フロント\", \"count\": 14}, {\"word\": \"募集\", \"count\": 13}, {\"word\": \"サイト\", \"count\": 13}, {\"word\": \"DB\", \"count\": 13}, {\"word\": \"条件\", \"count\": 13}, {\"word\": \"ゲーム\", \"count\": 13}, {\"word\": \"資格\", \"count\": 13}, {\"word\": \"React\", \"count\": 13}, {\"word\": \"19\", \"count\": 13}, {\"word\": \"対応\", \"count\": 13}, {\"word\": \"万\", \"count\": 12}, {\"word\": \"保守\", \"count\": 12}, {\"word\": \"機能\", \"count\": 12}, {\"word\": \"先\", \"count\": 12}, {\"word\": \"ツール\", \"count\": 12}, {\"word\": \"東京\", \"count\": 12}, {\"word\": \"チーム\", \"count\": 12}, {\"word\": \"インフラ\", \"count\": 12}, {\"word\": \"GCP\", \"count\": 12}, {\"word\": \"月\", \"count\": 12}, {\"word\": \"ポジション\", \"count\": 11}, {\"word\": \"実装\", \"count\": 11}, {\"word\": \"あり\", \"count\": 11}, {\"word\": \"会社\", \"count\": 11}, {\"word\": \"Vue\", \"count\": 11}, {\"word\": \"GitHub\", \"count\": 11}, {\"word\": \"稼動\", \"count\": 11}, {\"word\": \"商談\", \"count\": 11}, {\"word\": \"事業\", \"count\": 10}, {\"word\": \"技術\", \"count\": 10}, {\"word\": \"残業\", \"count\": 10}, {\"word\": \"円\", \"count\": 10}, {\"word\": \"時\", \"count\": 10}, {\"word\": \"コード\", \"count\": 10}, {\"word\": \"アプリケーション\", \"count\": 10}, {\"word\": \"2023\", \"count\": 10}, {\"word\": \"中\", \"count\": 9}, {\"word\": \"16\", \"count\": 9}, {\"word\": \"勤怠\", \"count\": 9}, {\"word\": \"担当\", \"count\": 9}, {\"word\": \"出社\", \"count\": 9}, {\"word\": \"web\", \"count\": 9}, {\"word\": \"使用\", \"count\": 9}, {\"word\": \"要件\", \"count\": 9}, {\"word\": \"実施\", \"count\": 9}, {\"word\": \"9\", \"count\": 9}, {\"word\": \"利用\", \"count\": 8}, {\"word\": \"可\", \"count\": 8}, {\"word\": \"人財\", \"count\": 8}, {\"word\": \"躍動\", \"count\": 8}, {\"word\": \"追加\", \"count\": 8}, {\"word\": \"予定\", \"count\": 8}, {\"word\": \"Linux\", \"count\": 8}, {\"word\": \"駅\", \"count\": 8}, {\"word\": \"県\", \"count\": 8}, {\"word\": \"12\", \"count\": 8}, {\"word\": \"入社\", \"count\": 8}, {\"word\": \"週間\", \"count\": 8}, {\"word\": \"8\", \"count\": 8}, {\"word\": \"日数\", \"count\": 8}, {\"word\": \"単価\", \"count\": 8}, {\"word\": \"服装\", \"count\": 8}, {\"word\": \"日\", \"count\": 7}, {\"word\": \"社会\", \"count\": 7}, {\"word\": \"本部\", \"count\": 7}, {\"word\": \"ため\", \"count\": 7}, {\"word\": \"クラウド\", \"count\": 7}, {\"word\": \"他\", \"count\": 7}, {\"word\": \"都\", \"count\": 7}, {\"word\": \"区\", \"count\": 7}, {\"word\": \"名\", \"count\": 7}, {\"word\": \"Go\", \"count\": 7}, {\"word\": \"定義\", \"count\": 7}, {\"word\": \"福岡\", \"count\": 7}, {\"word\": \"後\", \"count\": 7}, {\"word\": \"自宅\", \"count\": 7}, {\"word\": \"宿泊\", \"count\": 7}, {\"word\": \"移動\", \"count\": 7}, {\"word\": \"負担\", \"count\": 7}, {\"word\": \"平均\", \"count\": 7}, {\"word\": \"レビュー\", \"count\": 7}, {\"word\": \"配信\", \"count\": 7}, {\"word\": \"地\", \"count\": 7}, {\"word\": \"回数\", \"count\": 7}, {\"word\": \"OK\", \"count\": 7}, {\"word\": \"想定\", \"count\": 7}, {\"word\": \"本社\", \"count\": 6}, {\"word\": \"仕事探し\", \"count\": 6}, {\"word\": \"変革\", \"count\": 6}, {\"word\": \"ア\", \"count\": 6}, {\"word\": \"デコ\", \"count\": 6}, {\"word\": \"Digital\", \"count\": 6}, {\"word\": \"推進\", \"count\": 6}, {\"word\": \"受託\", \"count\": 6}, {\"word\": \"11\", \"count\": 6}, {\"word\": \"フリーランス\", \"count\": 6}, {\"word\": \"有給\", \"count\": 6}, {\"word\": \"6\", \"count\": 6}, {\"word\": \"Redis\", \"count\": 6}, {\"word\": \"Java\", \"count\": 6}, {\"word\": \"18\", \"count\": 6}, {\"word\": \"概要\", \"count\": 6}, {\"word\": \"程度\", \"count\": 6}, {\"word\": \"アップ\", \"count\": 5}, {\"word\": \"祝日\", \"count\": 5}, {\"word\": \"派遣\", \"count\": 5}, {\"word\": \"背景\", \"count\": 5}, {\"word\": \"活躍\", \"count\": 5}, {\"word\": \"改修\", \"count\": 5}, {\"word\": \"現在\", \"count\": 5}, {\"word\": \"Chef\", \"count\": 5}, {\"word\": \"Slack\", \"count\": 5}, {\"word\": \"Perl\", \"count\": 5}, {\"word\": \"自動\", \"count\": 5}, {\"word\": \"参加\", \"count\": 5}, {\"word\": \"Redux\", \"count\": 5}, {\"word\": \"希望\", \"count\": 5}, {\"word\": \"インターネット\", \"count\": 5}, {\"word\": \"掲載\", \"count\": 5}, {\"word\": \"木\", \"count\": 5}, {\"word\": \"水\", \"count\": 5}, {\"word\": \"ウェビナーマーケティング\", \"count\": 5}, {\"word\": \"支援\", \"count\": 5}, {\"word\": \"プラットフォーム\", \"count\": 5}, {\"word\": \"スタック\", \"count\": 5}, {\"word\": \"Docker\", \"count\": 5}, {\"word\": \"接点\", \"count\": 5}, {\"word\": \"EC\", \"count\": 5}, {\"word\": \"サーバ\", \"count\": 5}, {\"word\": \"Git\", \"count\": 5}, {\"word\": \"07\", \"count\": 5}, {\"word\": \"改善\", \"count\": 5}, {\"word\": \"02\", \"count\": 5}, {\"word\": \"28\", \"count\": 5}, {\"word\": \"自由\", \"count\": 5}, {\"word\": \"70\", \"count\": 5}, {\"word\": \"週休\", \"count\": 4}, {\"word\": \"土日\", \"count\": 4}, {\"word\": \"HR\", \"count\": 4}, {\"word\": \"スイス\", \"count\": 4}, {\"word\": \"Innovation\", \"count\": 4}, {\"word\": \"DX\", \"count\": 4}, {\"word\": \"部\", \"count\": 4}, {\"word\": \"委託\", \"count\": 4}, {\"word\": \"物流\", \"count\": 4}, {\"word\": \"Amazon\", \"count\": 4}, {\"word\": \"Aurora\", \"count\": 4}, {\"word\": \"Elasticsearch\", \"count\": 4}, {\"word\": \"相談\", \"count\": 4}, {\"word\": \"工程\", \"count\": 4}, {\"word\": \"WEB\", \"count\": 4}, {\"word\": \"株式\", \"count\": 4}, {\"word\": \"求人\", \"count\": 4}, {\"word\": \"CircleCI\", \"count\": 4}, {\"word\": \"C\", \"count\": 4}, {\"word\": \"B\", \"count\": 4}, {\"word\": \"１\", \"count\": 4}, {\"word\": \"ミドルウェア\", \"count\": 4}, {\"word\": \"学歴\", \"count\": 4}, {\"word\": \"不問\", \"count\": 4}, {\"word\": \"持続\", \"count\": 4}, {\"word\": \"仕組み\", \"count\": 4}, {\"word\": \"成長\", \"count\": 4}, {\"word\": \"知識\", \"count\": 4}, {\"word\": \"jQuery\", \"count\": 4}, {\"word\": \"RSpec\", \"count\": 4}, {\"word\": \"修正\", \"count\": 4}, {\"word\": \"コミュニケーション\", \"count\": 4}, {\"word\": \"中心\", \"count\": 4}, {\"word\": \"コーディング\", \"count\": 4}, {\"word\": \"API\", \"count\": 4}, {\"word\": \"こと\", \"count\": 4}, {\"word\": \"最寄\", \"count\": 4}, {\"word\": \"参画\", \"count\": 4}, {\"word\": \"06\", \"count\": 4}, {\"word\": \"h\", \"count\": 4}, {\"word\": \"ポイント\", \"count\": 4}, {\"word\": \"4\", \"count\": 4}, {\"word\": \"TypeScript\", \"count\": 4}, {\"word\": \"SE\", \"count\": 4}, {\"word\": \"私服\", \"count\": 4}, {\"word\": \"Backbone\", \"count\": 4}, {\"word\": \"リリース\", \"count\": 4}, {\"word\": \"休日\", \"count\": 3}, {\"word\": \"対象\", \"count\": 3}, {\"word\": \"社員\", \"count\": 3}, {\"word\": \"一\", \"count\": 3}, {\"word\": \"100\", \"count\": 3}, {\"word\": \"スタッフ\", \"count\": 3}, {\"word\": \"人材\", \"count\": 3}, {\"word\": \"部門\", \"count\": 3}, {\"word\": \"OS\", \"count\": 3}, {\"word\": \"7\", \"count\": 3}, {\"word\": \"中央\", \"count\": 3}, {\"word\": \"全国\", \"count\": 3}, {\"word\": \"55\", \"count\": 3}, {\"word\": \"データベース\", \"count\": 3}, {\"word\": \"提供\", \"count\": 3}, {\"word\": \"オン\", \"count\": 3}, {\"word\": \"メンバー\", \"count\": 3}, {\"word\": \"CI\", \"count\": 3}, {\"word\": \"サポート\", \"count\": 3}, {\"word\": \"プロジェクト\", \"count\": 3}, {\"word\": \"出産\", \"count\": 3}, {\"word\": \"RubyonRails\", \"count\": 3}, {\"word\": \"Azure\", \"count\": 3}, {\"word\": \"プログラミング\", \"count\": 3}, {\"word\": \"急\", \"count\": 3}, {\"word\": \"websocket\", \"count\": 3}, {\"word\": \"WebRTC\", \"count\": 3}, {\"word\": \"ス\", \"count\": 3}, {\"word\": \"年末\", \"count\": 3}, {\"word\": \"年始\", \"count\": 3}, {\"word\": \"Jenkins\", \"count\": 3}, {\"word\": \"企画\", \"count\": 3}, {\"word\": \"IT\", \"count\": 3}, {\"word\": \"ソフトウェア\", \"count\": 3}, {\"word\": \"RDS\", \"count\": 3}, {\"word\": \"バージョン\", \"count\": 3}, {\"word\": \"以外\", \"count\": 3}, {\"word\": \"スポーツ\", \"count\": 3}, {\"word\": \"Node\", \"count\": 3}, {\"word\": \"一部\", \"count\": 3}, {\"word\": \"一定\", \"count\": 3}, {\"word\": \"プル\", \"count\": 3}, {\"word\": \"リクエスト\", \"count\": 3}, {\"word\": \"締め\", \"count\": 3}, {\"word\": \"翌月\", \"count\": 3}, {\"word\": \"末日\", \"count\": 3}, {\"word\": \"0000\", \"count\": 3}, {\"word\": \"スクリプト\", \"count\": 3}, {\"word\": \"課題\", \"count\": 3}, {\"word\": \"アジャイル\", \"count\": 3}, {\"word\": \"08\", \"count\": 3}, {\"word\": \"度\", \"count\": 3}, {\"word\": \"PG\", \"count\": 3}, {\"word\": \"01\", \"count\": 3}, {\"word\": \"Memcached\", \"count\": 3}, {\"word\": \"データ\", \"count\": 3}, {\"word\": \"次第\", \"count\": 3}, {\"word\": \"日曜\", \"count\": 2}, {\"word\": \"土曜\", \"count\": 2}, {\"word\": \"祝\", \"count\": 2}, {\"word\": \"休み\", \"count\": 2}, {\"word\": \"フリ\", \"count\": 2}, {\"word\": \"ーランスエンジニア\", \"count\": 2}, {\"word\": \"役割\", \"count\": 2}, {\"word\": \"Platform\", \"count\": 2}, {\"word\": \"職業\", \"count\": 2}, {\"word\": \"H\", \"count\": 2}, {\"word\": \"術\", \"count\": 2}, {\"word\": \"配送\", \"count\": 2}, {\"word\": \"ルート\", \"count\": 2}, {\"word\": \"もの\", \"count\": 2}, {\"word\": \"職\", \"count\": 2}, {\"word\": \"関連\", \"count\": 2}, {\"word\": \"メイン\", \"count\": 2}, {\"word\": \"ElastiCache\", \"count\": 2}, {\"word\": \"Redshift\", \"count\": 2}, {\"word\": \"社内\", \"count\": 2}, {\"word\": \"年数\", \"count\": 2}, {\"word\": \"オフィス\", \"count\": 2}, {\"word\": \"展開\", \"count\": 2}, {\"word\": \"％\", \"count\": 2}, {\"word\": \"静岡\", \"count\": 2}, {\"word\": \"Javascript\", \"count\": 2}, {\"word\": \"swift\", \"count\": 2}, {\"word\": \"java\", \"count\": 2}, {\"word\": \"kotlin\", \"count\": 2}, {\"word\": \"FuelPHP\", \"count\": 2}, {\"word\": \"Vagrant\", \"count\": 2}, {\"word\": \"職場\", \"count\": 2}, {\"word\": \"インデックス\", \"count\": 2}, {\"word\": \"特徴\", \"count\": 2}, {\"word\": \"Redmine\", \"count\": 2}, {\"word\": \"ライン\", \"count\": 2}, {\"word\": \"運営\", \"count\": 2}, {\"word\": \"15\", \"count\": 2}, {\"word\": \"シニア\", \"count\": 2}, {\"word\": \"エス\", \"count\": 2}, {\"word\": \"ヘルスケア\", \"count\": 2}, {\"word\": \"デザイン\", \"count\": 2}, {\"word\": \"to\", \"count\": 2}, {\"word\": \"各種\", \"count\": 2}, {\"word\": \"徹底\", \"count\": 2}, {\"word\": \"セミナー\", \"count\": 2}, {\"word\": \"書籍\", \"count\": 2}, {\"word\": \"物品\", \"count\": 2}, {\"word\": \"購入\", \"count\": 2}, {\"word\": \"休憩\", \"count\": 2}, {\"word\": \"スペース\", \"count\": 2}, {\"word\": \"マンガ\", \"count\": 2}, {\"word\": \"採用\", \"count\": 2}, {\"word\": \"以下\", \"count\": 2}, {\"word\": \"単体\", \"count\": 2}, {\"word\": \"結合\", \"count\": 2}, {\"word\": \"初日\", \"count\": 2}, {\"word\": \"育児\", \"count\": 2}, {\"word\": \"会\", \"count\": 2}, {\"word\": \"Microsoft\", \"count\": 2}, {\"word\": \"生理\", \"count\": 2}, {\"word\": \"結婚\", \"count\": 2}, {\"word\": \"忌引\", \"count\": 2}, {\"word\": \"配偶\", \"count\": 2}, {\"word\": \"転勤\", \"count\": 2}, {\"word\": \"マネジメント\", \"count\": 2}, {\"word\": \"スイ\", \"count\": 2}, {\"word\": \"慶弔\", \"count\": 2}, {\"word\": \"夏季\", \"count\": 2}, {\"word\": \"動画\", \"count\": 2}, {\"word\": \"課金\", \"count\": 2}, {\"word\": \"チケット\", \"count\": 2}, {\"word\": \"Backlog\", \"count\": 2}, {\"word\": \"ミド\", \"count\": 2}, {\"word\": \"nginx\", \"count\": 2}, {\"word\": \"MongoDB\", \"count\": 2}, {\"word\": \"用\", \"count\": 2}, {\"word\": \"ネットワーク\", \"count\": 2}, {\"word\": \"IPO\", \"count\": 2}, {\"word\": \"準備\", \"count\": 2}, {\"word\": \"S\", \"count\": 2}, {\"word\": \"MediaLive\", \"count\": 2}, {\"word\": \"SPA\", \"count\": 2}, {\"word\": \"障害\", \"count\": 2}, {\"word\": \"調査\", \"count\": 2}, {\"word\": \"esa\", \"count\": 2}, {\"word\": \"アプ\", \"count\": 2}, {\"word\": \"各地\", \"count\": 2}, {\"word\": \"就業\", \"count\": 2}, {\"word\": \"職務\", \"count\": 2}, {\"word\": \"世界\", \"count\": 2}, {\"word\": \"実現\", \"count\": 2}, {\"word\": \"2005\", \"count\": 2}, {\"word\": \"活動\", \"count\": 2}, {\"word\": \"コミ\", \"count\": 2}, {\"word\": \"ECS\", \"count\": 2}, {\"word\": \"etc\", \"count\": 2}, {\"word\": \"見積\", \"count\": 2}, {\"word\": \"14\", \"count\": 2}, {\"word\": \"20\", \"count\": 2}, {\"word\": \"渋谷\", \"count\": 2}, {\"word\": \"目安\", \"count\": 2}, {\"word\": \"JR\", \"count\": 2}, {\"word\": \"線\", \"count\": 2}, {\"word\": \"リモ\", \"count\": 2}, {\"word\": \"ランク\", \"count\": 2}, {\"word\": \"すべて\", \"count\": 2}, {\"word\": \"３\", \"count\": 2}, {\"word\": \"ユーザー\", \"count\": 2}, {\"word\": \"開\", \"count\": 2}, {\"word\": \"プロダクト\", \"count\": 2}, {\"word\": \"キャッチ\", \"count\": 2}, {\"word\": \"精算\", \"count\": 2}, {\"word\": \"140\", \"count\": 2}, {\"word\": \"180\", \"count\": 2}, {\"word\": \"支払\", \"count\": 2}, {\"word\": \"ログ\", \"count\": 2}, {\"word\": \"イン\", \"count\": 2}, {\"word\": \"Nuxt\", \"count\": 2}, {\"word\": \"Lambda\", \"count\": 2}, {\"word\": \"JIRA\", \"count\": 2}, {\"word\": \"意識\", \"count\": 2}, {\"word\": \"SQL\", \"count\": 2}, {\"word\": \"特定\", \"count\": 2}, {\"word\": \"税抜\", \"count\": 2}, {\"word\": \"90\", \"count\": 2}, {\"word\": \"形態\", \"count\": 2}, {\"word\": \"契約\", \"count\": 2}, {\"word\": \"作業\", \"count\": 2}, {\"word\": \"80\", \"count\": 2}, {\"word\": \"x\", \"count\": 2}, {\"word\": \"経\", \"count\": 2}, {\"word\": \"リケ\", \"count\": 2}, {\"word\": \"ション\", \"count\": 2}, {\"word\": \"HTML\", \"count\": 2}, {\"word\": \"CSS\", \"count\": 2}, {\"word\": \"SEO\", \"count\": 2}, {\"word\": \"分析\", \"count\": 2}, {\"word\": \"基盤\", \"count\": 2}, {\"word\": \"常駐\", \"count\": 2}, {\"word\": \"規模\", \"count\": 2}, {\"word\": \"分野\", \"count\": 2}, {\"word\": \"ヶ月\", \"count\": 2}, {\"word\": \"拡張\", \"count\": 2}, {\"word\": \"状況\", \"count\": 2}, {\"word\": \"整備\", \"count\": 2}, {\"word\": \"請求\", \"count\": 2}, {\"word\": \"サー\", \"count\": 2}, {\"word\": \"割\", \"count\": 2}, {\"word\": \"既存\", \"count\": 2}, {\"word\": \"必要\", \"count\": 2}, {\"word\": \"医療\", \"count\": 2}]",
+  "title": "Ruby 「年収/採用企業」 フレームワークの転職評価 FlameValue",
+  "description": "Rubyはすごいです。",
+  "comments": [],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Ambox_important.svg",
+  "wikipedia_related": [
+    {
+      "name": "Java",
+      "wikipedia_name": "Java"
+    },
+    {
+      "name": "Perl",
+      "wikipedia_name": "Perl"
+    },
+    {
+      "name": "Ruby",
+      "wikipedia_name": "Ruby"
+    },
+    {
+      "name": "TypeScript",
+      "wikipedia_name": "TypeScript"
+    }
+  ]
+}

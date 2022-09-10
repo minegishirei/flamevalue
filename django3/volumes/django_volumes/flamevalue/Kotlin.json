@@ -1,0 +1,2092 @@
+{
+  "name": "Kotlin",
+  "explain": "Kotlin（コトリン）は、ジェットブレインズのアンドリー・ブレスラフ、ドミトリー・ジェメロフが開発した、静的型付けのオブジェクト指向プログラミング言語である。",
+  "total_score": 3.54,
+  "stars": "★★★☆☆",
+  "icons": "...png",
+  "basic": {
+    "money": 631,
+    "overtime": 819,
+    "age": 30,
+    "size": 819,
+    "count": 9763
+  },
+  "score": {
+    "money": 4.507142857142857,
+    "overtime": 4.095,
+    "age": 5.0,
+    "size": 4.095,
+    "count": 4.8815
+  },
+  "score_100": {
+    "money": 90.14285714285715,
+    "overtime": 81.89999999999999,
+    "age": 100.0,
+    "size": 81.89999999999999,
+    "count": 97.63
+  },
+  "basic_graph": [
+    {
+      "2022-07-15": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-18": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-21": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-24": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-27": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-30": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-02": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-05": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-08": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-11": {
+        "money": 295,
+        "overtime": 295,
+        "age": 30,
+        "size": 295,
+        "count": 2
+      }
+    },
+    {
+      "2022-08-14": {
+        "money": 308,
+        "overtime": 308,
+        "age": 30,
+        "size": 308,
+        "count": 3
+      }
+    },
+    {
+      "2022-08-17": {
+        "money": 333,
+        "overtime": 333,
+        "age": 30,
+        "size": 333,
+        "count": 1
+      }
+    },
+    {
+      "2022-08-20": {
+        "money": 311,
+        "overtime": 311,
+        "age": 30,
+        "size": 311,
+        "count": 2
+      }
+    },
+    {
+      "2022-08-23": {
+        "money": 311,
+        "overtime": 311,
+        "age": 30,
+        "size": 311,
+        "count": 2
+      }
+    },
+    {
+      "2022-08-26": {
+        "money": 311,
+        "overtime": 311,
+        "age": 30,
+        "size": 311,
+        "count": 2
+      }
+    },
+    {
+      "2022-08-29": {
+        "money": 744,
+        "overtime": 994,
+        "age": 30,
+        "size": 994,
+        "count": 16
+      }
+    },
+    {
+      "2022-09-01": {
+        "money": 683,
+        "overtime": 880,
+        "age": 30,
+        "size": 880,
+        "count": 38
+      }
+    },
+    {
+      "2022-09-04": {
+        "money": 639,
+        "overtime": 798,
+        "age": 30,
+        "size": 798,
+        "count": 22
+      }
+    },
+    {
+      "2022-09-07": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    }
+  ],
+  "score_graph": [
+    {
+      "2022-07-15": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-18": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-21": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-24": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-27": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-30": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-02": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-05": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-08": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-11": {
+        "money": 2.107142857142857,
+        "overtime": 1.4749999999999999,
+        "age": 5.0,
+        "size": 1.4749999999999999,
+        "count": 0.001
+      }
+    },
+    {
+      "2022-08-14": {
+        "money": 2.2,
+        "overtime": 1.54,
+        "age": 5.0,
+        "size": 1.54,
+        "count": 0.0014999999999999998
+      }
+    },
+    {
+      "2022-08-17": {
+        "money": 2.3785714285714286,
+        "overtime": 1.665,
+        "age": 5.0,
+        "size": 1.665,
+        "count": 0.0005
+      }
+    },
+    {
+      "2022-08-20": {
+        "money": 2.2214285714285715,
+        "overtime": 1.555,
+        "age": 5.0,
+        "size": 1.555,
+        "count": 0.001
+      }
+    },
+    {
+      "2022-08-23": {
+        "money": 2.2214285714285715,
+        "overtime": 1.555,
+        "age": 5.0,
+        "size": 1.555,
+        "count": 0.001
+      }
+    },
+    {
+      "2022-08-26": {
+        "money": 2.2214285714285715,
+        "overtime": 1.555,
+        "age": 5.0,
+        "size": 1.555,
+        "count": 0.001
+      }
+    },
+    {
+      "2022-08-29": {
+        "money": 5,
+        "overtime": 4.97,
+        "age": 5.0,
+        "size": 4.97,
+        "count": 0.008
+      }
+    },
+    {
+      "2022-09-01": {
+        "money": 4.878571428571429,
+        "overtime": 4.4,
+        "age": 5.0,
+        "size": 4.4,
+        "count": 0.019
+      }
+    },
+    {
+      "2022-09-04": {
+        "money": 4.564285714285714,
+        "overtime": 3.99,
+        "age": 5.0,
+        "size": 3.99,
+        "count": 0.011000000000000001
+      }
+    },
+    {
+      "2022-09-07": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    }
+  ],
+  "score_graph_json": "[{\"date\": \"2022-07-15\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-18\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-21\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-24\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-27\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-30\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-02\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-05\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-08\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-11\", \"values\": {\"money\": 2.107142857142857, \"overtime\": 1.4749999999999999, \"age\": 5.0, \"size\": 1.4749999999999999, \"count\": 0.001}}, {\"date\": \"2022-08-14\", \"values\": {\"money\": 2.2, \"overtime\": 1.54, \"age\": 5.0, \"size\": 1.54, \"count\": 0.0014999999999999998}}, {\"date\": \"2022-08-17\", \"values\": {\"money\": 2.3785714285714286, \"overtime\": 1.665, \"age\": 5.0, \"size\": 1.665, \"count\": 0.0005}}, {\"date\": \"2022-08-20\", \"values\": {\"money\": 2.2214285714285715, \"overtime\": 1.555, \"age\": 5.0, \"size\": 1.555, \"count\": 0.001}}, {\"date\": \"2022-08-23\", \"values\": {\"money\": 2.2214285714285715, \"overtime\": 1.555, \"age\": 5.0, \"size\": 1.555, \"count\": 0.001}}, {\"date\": \"2022-08-26\", \"values\": {\"money\": 2.2214285714285715, \"overtime\": 1.555, \"age\": 5.0, \"size\": 1.555, \"count\": 0.001}}, {\"date\": \"2022-08-29\", \"values\": {\"money\": 5, \"overtime\": 4.97, \"age\": 5.0, \"size\": 4.97, \"count\": 0.008}}, {\"date\": \"2022-09-01\", \"values\": {\"money\": 4.878571428571429, \"overtime\": 4.4, \"age\": 5.0, \"size\": 4.4, \"count\": 0.019}}, {\"date\": \"2022-09-04\", \"values\": {\"money\": 4.564285714285714, \"overtime\": 3.99, \"age\": 5.0, \"size\": 3.99, \"count\": 0.011000000000000001}}, {\"date\": \"2022-09-07\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}]",
+  "money_sorted": [
+    {
+      "会社名": "",
+      "規模": 240,
+      "年収": 240,
+      "残業時間": 240,
+      "年齢": 30,
+      "日付": "2022-08-17"
+    },
+    {
+      "会社名": "パーソルテクノロジースタッフ株式会社",
+      "規模": 300,
+      "年収": 300,
+      "残業時間": 300,
+      "年齢": 30,
+      "日付": "2022-08-27"
+    },
+    {
+      "会社名": "株式会社 a-LINK",
+      "規模": 700,
+      "年収": 300,
+      "残業時間": 700,
+      "年齢": 30,
+      "日付": "2022-09-06"
+    },
+    {
+      "会社名": "パーソルテクノロジースタッフ株式会社",
+      "規模": 322,
+      "年収": 322,
+      "残業時間": 322,
+      "年齢": 30,
+      "日付": "2022-08-27"
+    },
+    {
+      "会社名": "BAMV合同会社",
+      "規模": 600,
+      "年収": 324,
+      "残業時間": 600,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "パーソルテクノロジースタッフ株式会社",
+      "規模": 333,
+      "年収": 333,
+      "残業時間": 333,
+      "年齢": 30,
+      "日付": "2022-08-20"
+    },
+    {
+      "会社名": "株式会社しずおかオンライン",
+      "規模": 350,
+      "年収": 350,
+      "残業時間": 350,
+      "年齢": 30,
+      "日付": "2022-08-17"
+    },
+    {
+      "会社名": "",
+      "規模": 720,
+      "年収": 480,
+      "残業時間": 720,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 720,
+      "年収": 480,
+      "残業時間": 720,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ソニックムーブ",
+      "規模": 800,
+      "年収": 500,
+      "残業時間": 800,
+      "年齢": 30,
+      "日付": "2022-05-19"
+    },
+    {
+      "会社名": "SBヒューマンキャピタル株式会社",
+      "規模": 800,
+      "年収": 500,
+      "残業時間": 800,
+      "年齢": 30,
+      "日付": "2022-05-19"
+    },
+    {
+      "会社名": "株式会社ワークポート",
+      "規模": 1100,
+      "年収": 500,
+      "残業時間": 1100,
+      "年齢": 30,
+      "日付": "2022-06-29"
+    },
+    {
+      "会社名": "",
+      "規模": 900,
+      "年収": 500,
+      "残業時間": 900,
+      "年齢": 30,
+      "日付": "2022-09-04"
+    },
+    {
+      "会社名": "グラビティ株式会社",
+      "規模": 600,
+      "年収": 550,
+      "残業時間": 600,
+      "年齢": 30,
+      "日付": "2022-09-06"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 600,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 950,
+      "年収": 600,
+      "残業時間": 950,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 648,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 768,
+      "年収": 648,
+      "残業時間": 768,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 780,
+      "年収": 660,
+      "残業時間": 780,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 780,
+      "年収": 660,
+      "残業時間": 780,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 792,
+      "年収": 672,
+      "残業時間": 792,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 780,
+      "年収": 720,
+      "残業時間": 780,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 960,
+      "年収": 720,
+      "残業時間": 960,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 1080,
+      "年収": 720,
+      "残業時間": 1080,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 960,
+      "年収": 720,
+      "残業時間": 960,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 1080,
+      "年収": 720,
+      "残業時間": 1080,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 1020,
+      "年収": 720,
+      "残業時間": 1020,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 960,
+      "年収": 720,
+      "残業時間": 960,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 960,
+      "年収": 720,
+      "残業時間": 960,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 960,
+      "年収": 720,
+      "残業時間": 960,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 960,
+      "年収": 720,
+      "残業時間": 960,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 1020,
+      "年収": 780,
+      "残業時間": 1020,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 1020,
+      "年収": 840,
+      "残業時間": 1020,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 1140,
+      "年収": 900,
+      "残業時間": 1140,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 1080,
+      "年収": 960,
+      "残業時間": 1080,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 1080,
+      "年収": 960,
+      "残業時間": 1080,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    }
+  ],
+  "jobs": [
+    {
+      "salary_min": "2900",
+      "locations": "東京都港区",
+      "salary_type": "H",
+      "date": "Sat, 27 Aug 2022 07:22:58 GMT",
+      "description": " Studio（Java、<b>Kotlin</b>）、Xcode（Swift） 【体制】 2名＋今回募集の方 【出社頻度】 月8～16日 休日： 日曜日、土曜日、祝日 週休2日制(土日祝休み) 対象となる方： 実務経験1年以上/ブランク相談可/開始...時期についてはご相談ください。 【活かせる経験・スキル】 開発エンジニア <b>Kotlin</b> Swift ※3年前後ブランクのある方も、まずはご応募いただき、ご相談ください 応募先： パーソルテクノロジースタッフ株式会社(IT) 新宿本社 東京都新宿区西新宿2-1-1 新宿...",
+      "salary_currency_code": "JPY",
+      "salary": "2900 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e1f41ceafdd8cedb997a3df8be2e684e6b597eac090a9981dceafc68cedb097a3c94888f8ec82b9ce6a8af193c8beb3cee7d38da4fcc3e0fd82ecce86a3c7488af188c8bebacee7c56cc4f68280ebf68de4cf009dfee294b3913fceafdd8cedb997a3df8be2e684e6b597eac090a9981dc4bbef88f79d76c3e1d182edf986a3c88beafbc9a8a8ceafcd8ced9454c3e1ca82edf086a3de81fff8cdb2872c1f5c5a591546/d1e762818fdb0a1b31096a6545f86256.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【リモートワーク可Kotlin等】スマートフォンアプリ開発",
+      "salary_max": "2900",
+      "company": "パーソルテクノロジースタッフ株式会社"
+    },
+    {
+      "salary_min": "2700",
+      "locations": "東京都港区",
+      "salary_type": "H",
+      "date": "Sat, 27 Aug 2022 07:20:37 GMT",
+      "description": "駅 徒歩10分 仕事内容： 客先常駐にて、<b>Kotlin</b>でのアプリケーション開発をお願いします。 【工程】 詳細設計、プログラミング、結合テスト 開発手法：ウォーターフォールモデル 【環境】 <b>Kotlin</b> 休日： 日曜日、土曜日、祝日 週休2日制...(土日祝休み) 対象となる方： 実務経験1年以上/ブランク相談可/開始時期についてはご相談ください。 【活かせる経験・スキル】 開発エンジニア 詳細設計 プログラミング <b>Kotlin</b> ※3年前後ブランクのある方も、まずはご応募いただき、ご相...",
+      "salary_currency_code": "JPY",
+      "salary": "2700 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f1b41c8b1fb89f98254c7c6f5418adbf4c3f5d76b96b6b4dbba88448bd2b697a1dc4882edcb86a2cc6a8cefb5cdaa880d83caf307909cf26a84f2f883b7d1488dcfbbc8bc922f81f3f1c1e38584cdfc4e83d9b197e9d6721813081a1f56/2ec190ee73e6f413ec55866f3abab44d.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【Kotlin】POSレジアプリケーション開発大手！土日祝休み！",
+      "salary_max": "2700",
+      "company": "パーソルテクノロジースタッフ株式会社"
+    },
+    {
+      "salary_min": "3000",
+      "locations": "東京都港区",
+      "salary_type": "H",
+      "date": "Sat, 20 Aug 2022 07:12:44 GMT",
+      "description": "】 <b>Kotlin</b>またはSwift 休日： 日曜日、土曜日、祝日 週休2日制(土日祝休み) 対象となる方： 実務経験1年以上/ブランク相談可/開始時期についてはご相談ください。 【活かせる経験・スキル】 開発エンジニア <b>Kotlin</b> Swift ※3年前...",
+      "salary_currency_code": "JPY",
+      "salary": "3000 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b4a41c4bbef88f79d76c3e1dd82ecc386a3fc6a8dc9a1cd98802f8deae3c3cb81618be2f384e69c97ead690a9803c1f1551585c15/ab59c38d7bb421b0e4fa9669bb992094.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【Kotlin等】配信事業者ポータルサイト開発大手！",
+      "salary_max": "3000",
+      "company": "パーソルテクノロジースタッフ株式会社"
+    },
+    {
+      "salary_min": "200000",
+      "locations": "静岡市葵区",
+      "salary_type": "M",
+      "date": "Wed, 17 Aug 2022 07:56:38 GMT",
+      "description": "、Javascript）、アプリ言語（swift、java、<b>kotlin</b>）、フレームワーク（FuelPHP、Ruby on Rails、Vue.js）、データベース（MySQL）、インフラ（AWS、Vagrant、Chef）   【職場環境】  現在、シス...",
+      "salary_currency_code": "JPY",
+      "salary": "200000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b1d417d65344f3c521659432200180667c6d9cb8ed794ceae8c0d83cbd0c2e7816138293e472f4102096b97908fd4adb78cddd50792b4cc8fd4c865356824488fde89cc9993c8f7ce6f154316505052/2f8653980e34d454f88c35d4b6539f1c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "SE<PHP・Ruby・swift・java・kotlin・MySQL 等>【正社員】【交通費支給】【最寄り駅】静岡県静岡市葵区",
+      "salary_max": "200000",
+      "company": ""
+    },
+    {
+      "salary_min": "5000000",
+      "locations": "東京都新宿区",
+      "salary_type": "Y",
+      "date": "Thu, 19 May 2022 07:21:53 GMT",
+      "description": "【Swift/<b>Kotlin</b>/Flutter】iOS・Androidエンジニア/株式会社ソニックムーブ   同社は「R&Dスタジオ」を標榜し、アドテク領域、マーケティング領域、ゲーム領域、アプ...をお任せします。  【現場の開発環境】 言語：Swift, <b>Kotlin</b> フレームワーク：SwiftUI, Alamofire, RxSwift, Combine,RxJava(RxKotlin), <b>Kotlin</b> Coroutine, Dagger, Okhttp...",
+      "salary_currency_code": "JPY",
+      "salary": "5000000 - 8000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e1e41ceafcc8ced9497a2db8be2e584e78254012620286a53495f0b060a071d6f306a32190e03545401262028c8bf85cee7dc8da5ccc3e0e382ecc567611a0c1b1c434f3c1f1551585d12/cfce7d2e7b29f47404b2adbf062eddb1.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【Swift/Kotlin/Flutter】iOS・Androidエンジニア",
+      "salary_max": "8000000",
+      "company": "株式会社ソニックムーブ"
+    },
+    {
+      "salary_min": "5000000",
+      "locations": "東京都港区",
+      "salary_type": "Y",
+      "date": "Thu, 19 May 2022 07:08:26 GMT",
+      "description": "ティブアプリはメインでFlutterを使っておりますが、Flutter未経験の方でもswiftや<b>kotlin</b>などでネイティブアプリの開発経験がある方で、Flutterに興味がある方を募集しています。  【具体的には】 カオナビ スマホアプリ開発 既存...リケーションの開発経験 <b>Kotlin</b>を用いたAndroidアプリケーションの開発経験   勤務地 東京都港区   勤務時間 ※詳細は転職エージェントへお問い合わせください。   給与 想定年収：500-800万円  ※詳細は転職エージェントへお問い合わせください。   諸手...",
+      "salary_currency_code": "JPY",
+      "salary": "5000000 - 8000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1a41ceafc68cedb097a3c94885d2fd8284ca6a8af188c8bebacee7c54ec4f68880ebd28de5ddc3f7e38af18829deaf8587ecddc4f69880ebea8de5c72290d4f3948e953fceaee98cec8397a3e58be3cd84e6b6755a51461d190f/cfc44a53e6036b2f6c29535367210dec.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "ネイティブアプリエンジニア(Flutter / swift / kotlin)◆株式会社カオナビ◆",
+      "salary_max": "8000000",
+      "company": "SBヒューマンキャピタル株式会社"
+    },
+    {
+      "salary_min": "3500000",
+      "locations": "静岡市葵区",
+      "salary_type": "Y",
+      "date": "Wed, 17 Aug 2022 07:51:14 GMT",
+      "description": "、Ruby、Javascript）、アプリ言語（swift、java、<b>kotlin</b>）、フレームワーク（FuelPHP、Ruby on Rails、Vue.js）、データベース（MySQL）、インフラ（AWS、Vagrant、Chef）   【職場...",
+      "salary_currency_code": "JPY",
+      "salary": "3500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-181b417d65344f3c521659432200180667703c3849394b5d5c2f601d3c3f6b54702b38633c120759543821232878782c1f53595d1f47/dcacb8979fc69dd2fd83a4633b291668.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "SE<PHP・Ruby・swift・java・kotlin・MySQL 等",
+      "salary_max": "3500000",
+      "company": "株式会社しずおかオンライン"
+    },
+    {
+      "salary_min": "5000000",
+      "locations": "大阪市中央区",
+      "salary_type": "Y",
+      "date": "Wed, 29 Jun 2022 07:37:08 GMT",
+      "description": "【募集職種】  Webエンジニア   【業界】  インターネット/Webサービス・ASP   【応募条件】  ▼必須スキル  <b>Kotlin</b>  【必須】  ・<b>Kotlin</b>もしくはJavaを用いたWebアプリケーションの開発・運用...領域の新規プロダクトを開発する立ち上げメンバーとして、同社発展の一躍を担っていただきます。   【職務詳細】  ・クラウドERP戦略における会計領域の新規プロダクトの開発  ・Serverside <b>Kotlin</b>チームの立ち上げ   【技術スタック】  ・サーバーサイド：<b>Kotlin</b>  ・フロ...",
+      "salary_currency_code": "JPY",
+      "salary": "5000000 - 11000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1d4841c991fe88ca9976c4d9d287f3f767c3f7c78af096c8bea42f83dbd7c3cfab618eeaeb82d8b3755a5e45191904/3d1ab731eb0620a87f968a2bd46c3441.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "人材紹介］株式会社マネーフォワード/【大阪】バックエンド担当（Kotlin)/403794434",
+      "salary_max": "11000000",
+      "company": "株式会社ワークポート"
+    },
+    {
+      "salary_min": "3240000",
+      "locations": "東京都千代田区外神田",
+      "salary_type": "Y",
+      "date": "Wed, 07 Sep 2022 22:57:16 GMT",
+      "description": "ンストリームあたりを回避してきたため古いシステムの保守案件を得るチャネルを持っておらず、上記の新規ビジネス領域の前線を、常に新しい方向へ転戦していくような立ち回りになっています。 【要素技術】 現在の社内の主な使用技術は ・<b>Kotlin</b>（SpringBoot） ・Golang ・Python（Flask） ・TypeScript...の部署を持つ為、最上流から対応可能と言う、異色のITベンダーとなっております。 募集要項 ポジション サーバーサイド<b>Kotlin</b>のシステムエンジニア 提示年収 324万 〜 600万円 求めるスキル Bランク以上（※ランクについてはhttps://paiza...",
+      "salary_currency_code": "JPY",
+      "salary": "3240000 - 6000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f1b41ceaef48ced9b76c4dff286cad967c3f6dd8af096c8bebd2f87eddbc4f79c80ebf18de4d9214758584a131d/ded79197de1de515dc1961e659aac805.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "サーバーサイドKotlin（SpringBoot）が主力になっちった会社の求人 2022.09.06",
+      "salary_max": "6000000",
+      "company": "BAMV合同会社"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都中央区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:54:20 GMT",
+      "description": "リモート   期間   即日 ～ 2022/06/30   言語   必須スキル・経験   ・<b>Kotlin</b>もしくはJavaの経験   稼動日数   週5日   商談回数   1回   案件の詳細   即日参画OK / 商談1回 / リモート / 原則...リモートでご対応頂く想定です。Javaもしくは<b>Kotlin</b>の経験のある方をお待ちしています。...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e4941ceafc68cedb097a3c94888f8ec82b9ce4823125c4a3fceafc68cedb097a3c94888f8ec82b9ce6a80e5a1cca4970d2e0e1846766a021e004e84e78297ebfe90a9813fceafc68cedb097a3c981f7e580fc9a542208054b2a0f1518525659/d80d5f729d4cd33ada9b4af84cfda09a.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Java / Kotlin ヘルスケアアプリ開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都中央区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:48:20 GMT",
+      "description": "リモートワーク   ＜基本時間＞  10：00～19：00   ＜服装＞  自由   期間   即日 ～ 2023/02/28   言語   必須スキル・経験   ・Android, <b>Kotlin</b>の開発経験1年以上(また...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-121e41ceafc68cedb097a3c94888f8ec82b9ce6a80e5a1cca4972f87ecfbc4f68180ebd28de5cac3f7c18af0bc29deaf8287ecc7c4f7b6618be3cc84e6b797ebc3721813081b1453/ff6c7e368616ecebf7422e6f67c0ff45.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin ファンクラブアプリ開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "540000",
+      "locations": "東京都新宿区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:38:59 GMT",
+      "description": "単価/月   54～70万円   勤務地   東京都,新宿区   案件概要   SaaS型プラットフォームサービスのプロダクトの運営業務  <b>Kotlin</b>を利用してアプリの新規機能の開発や、既存機能のリファクタリング・拡張を行う  各メ...ンバーにチケット配布し、2週間に1度のリリース実施   ＜環境＞  <b>Kotlin</b>, RxJava, Flutter, ReactNative, AWS, GCP, JIRA   ＜備考＞  現在はフルリモート   ＜基本時間＞  10：00～19：00   期間...",
+      "salary_currency_code": "JPY",
+      "salary": "540000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1a416c43001d014e10008afeea89fedf229dfee294b3913f6c43001d014e102280ead48de4d9c3f7fb8af19329764259080600264618565f525b/293ae637733f796db4162fb3c1fcdc95.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Android / Kotlin SaaS型プラットフォームサービス開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区白金台",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:37:36 GMT",
+      "description": "スキル・経験   ・<b>Kotlin</b>経験3～5年   歓迎するスキル・経験   ・サーバーサイドの開発経験  ・自社Webサービスや、受託開発経験のある方  ・業務用アプリの開発経験   稼動日数   週5日   商談回数   1回   最寄駅   東京...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-181f41ceafc68cedb097a3c94888f8ec82b9ce6a80e5a1cca4972f82cac3c2ffb9618be3cc84e6b797ebc371cfa385c88ed689c7b87513535a50585f/5c3024431c58bb0f94a3d07262b299af.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin 業務用の券売機アプリの開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都墨田区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:36:57 GMT",
+      "description": "単価/月   50～70万円   勤務地   東京都,墨田区   案件概要   ドライバー配達業務を支援するスマホ、Webアプリの開発を行います。   ＜開発言語＞  Android Java, <b>Kotlin</b>, Objective-C...ティブアプリケーション開発経験  ・Android Java, <b>Kotlin</b>, Objective-C, Swiftの経験1年以上   歓迎するスキル・経験   ・Linuxコマンド利用経験  ・Azure利用経験のある方   稼動日数   週5日   商談回数   1回   最寄...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1913416c43001d014e10002909170f478cb6ff8ff0c9286a53495f0b060a0797a2c18be2f984e68a5481fff8cdb2872fcee6cd8da4e3c3e0c24187f1eec7edd249394b5d5c2fcee6cd8da4e3c3e0c24187f1eec7edd26b32444f4f4244004f87b1ffc7fad2605c5f5017475f/bdbf2b962c03c5a504dd917fc7869732.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Android Java / Kotlin/ Swift など ドライバー支援アプリ開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "550000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:36:20 GMT",
+      "description": "：00～19：00   期間   即日 ～ 2022/09/30   言語   必須スキル・経験   ・Androidアプリの設計・開発経験  ・<b>Kotlin</b>を使用したAndroidアプリの開発経験もしくは<b>Kotlin</b>の言語知識  ・他の...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 650000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-191f41ceafcc8ced9497a2db8be2e584e78276290717584454492f2f001a4b1d4e625a595b505613/a3d150492462de9470c43e0e0734ce2c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin / GitHub Androidエンジニア",
+      "salary_max": "650000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都千代田区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:29:48 GMT",
+      "description": "ダクトマネージャーやデザイナー、QAエンジニアと連携したチーム開発  ・コードの品質の改善や、自動化による開発環境の改善  ・チームメンバーのコードレビュー  ・チームリーダーとしてメンバーの育成   ＜開発環境＞  言語：Java/<b>Kotlin</b>  バージョン管理：Git...いたチーム開発経験  ・<b>Kotlin</b>, Android Architecture Componentを使ったAndroidアプリの開発経験  ・ログ分析の知識/経験   稼動日数   週5日   商談回数   1回   最寄駅   JR山手線 秋葉原駅   案件...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1d4e41ceaec68cedb797a2c78be2c56586a3f28beaf0c9a9922fcee7ee8da4c8c3e0c8632508114c1d066b90a981deae9187ece7264618565e585b/f6d9b253aaf2005a348c60cd51b178e3.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin モバイルチームのテックリード募集",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区白金台",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:23:38 GMT",
+      "description": "ィスカジュアル   期間   即日 ～ 2022/11/30   言語   必須スキル・経験   ・<b>Kotlin</b>経験3～5年   歓迎するスキル・経験   ・サーバーサイドの開発経験  ・自社Webサービスや、受託開発経験のある方  ・業務...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-181f41ceafc68cedb097a3c94888f8ec82b9ce6a80e5a1cca4972f82cac3c2ffb9618be3cc84e6b797ebc371cfa385c88ed689c7b87513535a50585f/a838e9bce336a9a0bd25cca1d9b0b5bd.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin 業務用の券売機アプリの開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区六本木",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:20:14 GMT",
+      "description": "バーサイドアプリケーションの開発および保守運用経験  ・Java, <b>Kotlin</b>などのプログラミング言語を用いた開発業務経験・SQLの知識   歓迎するスキル・経験   ・AWS/GCPといったクラウドサービスに関する知識・運用経験(AWSでのサーバーレスアプリケーションの開発経験)  ・RDBMSや...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b1941ceafd38cec9e97a3e58be2ce47819fe98dc7fb0ac2bca6caf0c76cc3cbbd86c6e94e8ee4ab93fcc171c9a98aceafdd8ceda197a3c34888efec82b4dc6a8af19dc8bf94cee7e98da4d40087d7fc8bc9ed22230d0b53c3aab6cab9cc6e5d1746115b5b/b5c1be8f0ef91fd57d989557a0028f5c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Java / Kotlin Webサービス企業における基幹システムの運用保守",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "400000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:18:59 GMT",
+      "description": "があればプログラム開発に携わることも可能です。   ＜開発環境＞  テストフレームワーク：Gauge  言語：<b>Kotlin</b>, Java  RDB：MySQL, PostgreSQL  バージョン管理：Git, Mercurial  CI：Jenkins, GitHub Acrions  コミ...",
+      "salary_currency_code": "JPY",
+      "salary": "400000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f1e41ceaee28cec9e97a3eb4882eccf86a3c78bebcbc9a8b6ceafc66d24460241438be3c684e69397ead190a9a0deaf8f66250f51150080ebe78de5dcc3f7e06b90a883deae9e87edd6c4f7ab80eac36c2d045615695b4b1f1c0f1f/0f88933910fb5eddcd56364b4b354af8.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin / Java テストエンジニア募集",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:16:12 GMT",
+      "description": "単価/月   60～70万円   勤務地   東京都,港区   案件概要   レジアプリの新規・既存開発をご担当頂きます。   ＜環境＞  言語：Android Java/<b>Kotlin</b>  ツール：Slack, Zoom, Google...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e1841ceafc68cedb097a3c94888f8ec82b9ce4823125c4a3fceafc68cedb097a3c94888f8ec82b9ce6a80e5a1cca4970d2e0e1846766a021e004e84e78297ebfe90a9813fceaec88cec9f75125b5d565c55/937ffb8fd926fbae9d29aea78584c483.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Java / Kotlin レジアプリの新規・既存開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "550000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:16:06 GMT",
+      "description": "れると好ましい)  ・<b>Kotlin</b>, Java, C++などを使用しての開発経験  ・高い設計スキル(基本設計～詳細設計まで)  ・コミュニケーション能力の高い方(報告・連絡・相談が適切にできて、提案もできる方)   歓迎するスキル・経験   ・英語能力の高い方   稼動...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 650000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f1341c8a1df88f7a554c9f5e386f7dd45c6ddf78cea8229d8a19683f6ecc1ddbf86f1c94e8ef3ab93f1d371c3bdb6cab4de4f8da5c9c3e0fd82edef67c5f8d38eeaa80bdb84b281f6c62537002069535652521340/4dbfd2e75c6e2e7a39262d6eb08c61cf.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin / Java / C++ 医療機器ソフト開発",
+      "salary_max": "650000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:09:34 GMT",
+      "description": " ～ 2023/01/31   言語   必須スキル・経験   ・JavaまたはScalaまたは<b>Kotlin</b>での実務経験 ※現場の開発環境は<b>Kotlin</b>  ・Webアプリケーションの設計経験  ・コードレビューの経験  ・GraphQLの実...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 650000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-481d41c4bbef88f79d546a021e006c8ef3ab93f1d371604a4b4c2f370c0f4b1522280715020e0b2146505c441819/60abcfab1abf255e05a3c7b4bc690f62.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Java / Scala / Kotlin 自社APIプラットフォーム開発",
+      "salary_max": "650000",
+      "company": ""
+    },
+    {
+      "salary_min": "560000",
+      "locations": "東京都目黒区 - 東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:07:33 GMT",
+      "description": "リの機能追加や施策に向けた改修  ・アプリ開発で利用する内製SDK・ライブラリの改修  ・機能開発を支えるための保守・改善  ・アプリのパフォーマンス改善  ・ライブラリやSDKの更新・モダンな技術の取り込み  ・開発環境の整備   ＜開発環境＞  言語：<b>Kotlin</b>...",
+      "salary_currency_code": "JPY",
+      "salary": "560000 - 660000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f48416c43001d014e100080eac38de4f2c3f7c26b394b5d5c0dcee6cd8da4e3c3e0c26324061341548bebdbc9a88eceafdc8cedac97a2c16a200003174f1d0c49394b5d5c2fcee6cd8da4e3c3e0c2418de5cdc3f7db8af192c8bea6cee6cd6f154c15545a506c555d15435b5a/14dcfbf96a34d85c389aafc27c337831.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin / Java Androidアプリエンジニア募集",
+      "salary_max": "660000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都千代田区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:07:27 GMT",
+      "description": "用した動画再生まわりの開発経験   ＜iOSアプリエンジニア＞  ・iOSアプリにて動画再生まわりの開発経験  ・Swiftの経験   ＜Androidアプリエンジニア＞  ・Androidアプリにて動画再生まわりの開発経験  ・<b>Kotlin</b>の経験   歓迎するスキル・経験...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-134a41674c120e3d440649131c4187f1eec7edd26b9690a8d8bca76686f8ac93b9d96a84e5f282b4cf6a23125c4a6e4e5f0d1f1a264618565e585b/e6754b88eb2d3dffc91a40836d73342d.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "JavaScript / Swift / Kotlin 動画広告プラットフォームのSDK開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都中央区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:02:59 GMT",
+      "description": "(Docker), React(TypeScript), <b>Kotlin</b>, JIRA, Confluence   ＜備考＞  リモートワーク可能   期間   即日 ～ 2023/02/28   言語   必須スキル・経験   ・Reactもし...くは<b>Kotlin</b>(サーバーサイド)の経験3年以上  ・基本設計〜対応可能な方   歓迎するスキル・経験   ・金融系システム開発経験  ・アジャイル開発経験  ・Component開発  ・最新のアーキテクトの見識がある方   稼動日数   週5日...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-124f41ceafc68cedb097a3c94888f8ec82b9ce6a8dccb7c2a4970d81f9d8c1d18d618be3cc84e6b797ebc353cfbd8bcb88c96d87b1ffc7fad2418bf1d3c6d1c56b96bc9ddb8880448bd1ba9db9d969535652531943/97ee863ae437ea9b3b6206d2833d5a33.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "React / Kotlin 保険業界向け営業支援アプリケーション開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:02:04 GMT",
+      "description": "開発体制を拡充する中でメンバークラスで参画いただける方を求めています。  新規開発チームへのアサインを予定しています。   ＜環境＞  ・<b>Kotlin</b>  ・Typescript  ・Angular11  ・AWS  ・PostgreSQL  ・Mac(端末)   ＜備考＞  基本リモートワーク   期間   即日...するスキル・経験   ・<b>Kotlin</b>の開発経験  ・フロントエンドの開発経験  ・労務、給与計算、年末調整などの業務知見   稼動日数   週5日   商談回数   2回   案件の詳細   リモート   リモート詳細   基本リモートワーク   精算...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-121341ceafcc8ced9497a2db8be2e584e7825481fff8cdb2870d6705190f259db6e88ff8d44786a2dc8beac0c9a985ceaeef8cec8576c9f5e386f7dd456a151e0871604a4b4c0d87edc6c4f79380ead98de4eec3f6ca6b90a883deae9e87edd6c4f7ab80eac36f555d15435b5a/a02aa9e7411c036dadbba6bbf45f30d7.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin / Java / SpringBoot 新規プロダクト開発エンジニアの募集",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "540000",
+      "locations": "東京都港区六本木",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:00:34 GMT",
+      "description": "上  ・スマートフォン向けアプリ/SDKの開発経験  ・AndroidStudio(<b>Kotlin</b>またはJava)での開発経験1年以上  ・共にSDK, ライブラリ開発, アプリ内課金, Firebase, Push通知(FCM)等への理解   歓迎...",
+      "salary_currency_code": "JPY",
+      "salary": "540000 - 640000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-134a41c4bbef88f79d54c3e1c082edd486a2cc8beaf8c9a99f2fcee6c78da4c7c3e1d082edec86a2d66a80e5a1cca4972f8df9e5c0ed9a80eac98de4d6c3f6d08af0a1c8bf8f2f3718074100215058535f5f56/011ece57a812a46902b0ae8e5f8a96f8.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Swift / Kotlin SDK開発エンジニア募集",
+      "salary_max": "640000",
+      "company": ""
+    },
+    {
+      "salary_min": "6000000",
+      "locations": "東京都",
+      "salary_type": "Y",
+      "date": "Wed, 07 Sep 2022 07:44:25 GMT",
+      "description": "くはAndroid）  ・Swiftもしくは<b>Kotlin</b>での開発経験1年以上...",
+      "salary_currency_code": "JPY",
+      "salary": "6000000 - 9500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e4a41ceafcc8ced9497a2db8be2e584e782548ec4d0cd8f83c8bec54f869cd6c5e8cc82efcd86a1e36a8fde89cc9993c8f7ce4ec0d09e86fbc06c81c88393ccd796b98a1dceafcc8ced9497a2db8be2e584e782768ec4d0cd8f83c8bec54f869cd6c5e8cc82efcd86a1e36a8fc69dce99bb0d82c2cdc0d09e86fbc06f5f56124c5e/aff748e6d01d6aeec9c107564b6e2647.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "スマホアプリエンジニア【Swift/Kotlin】【正社員】【インターネット関連】【海外勤務】【転勤なし】【東京都】",
+      "salary_max": "9500000",
+      "company": ""
+    },
+    {
+      "salary_min": "5500000",
+      "locations": "神奈川県横浜市西区",
+      "salary_type": "Y",
+      "date": "Tue, 06 Sep 2022 22:24:52 GMT",
+      "description": "採用企業  勤務地 神奈川県, 横浜市西区  雇用形態 正社員  給与 550万円 ~ 600万円   ワークスタイル リモートワーク・在宅勤務 服装カジュアル 副業OK   募集要項   某大手グローバルメーカーが提供する<b>Kotlin</b>...：Android ■言語：<b>Kotlin</b>   ●アプリについて・・快適にゲームをプレイするアプリ。  例えば画面のタッチサンプリングレートをユーザー好みの物に変更したり、  ゲームプレイ中の通知を制限したり、プレ...",
+      "salary_currency_code": "JPY",
+      "salary": "5500000 - 6000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1c41ceafc68cedb097a3c94888f8ec82b9ce488af198c8be91cee7cf6cc4f69280ebdd8de4c5009dfee294b3913fceafc68cedb097a3c94888f8ec82b9ce6a8af198c8be91cee7cf4ec4f68280ebf68de4cf2297ebc890a997deaf8687ecd2079db6e88ff8d4665717425b5044/86ab0083af14130965cb72500a61fa00.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlinアプリ開発（大手グローバルメーカープロジェクト/リモート対応あり/上流から下流まで全工程経験/ゲーム）",
+      "salary_max": "6000000",
+      "company": "グラビティ株式会社"
+    },
+    {
+      "salary_min": "3000000",
+      "locations": "神奈川県横浜市港北区",
+      "salary_type": "Y",
+      "date": "Tue, 06 Sep 2022 22:00:29 GMT",
+      "description": "込みからアプリ開発まで。  ーセンシングに関係する新規付加価値システム、新規サービスシステムの 組み込みからアプリ開発まで。 * 開発は主にC#、C/C++、Java、Objective C、<b>Kotlin</b>等の言語を用い、Visual Studio、Xcode...",
+      "salary_currency_code": "JPY",
+      "salary": "3000000 - 7000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-491341624f0e0a0d531d560645224e8ef3ab93f1d371654957484e100618425463618eebee8fc4b35481fff8cdb2872f6e442c6ccee2ab84f1db4e2d045615695b441c18041e/518fe668585bc9bd8a06b647dc9518f2.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【横浜】開発技術者/AI・Cloud・IoT etc./C#、C/C++、Java、Objective C、Kotlin",
+      "salary_max": "7000000",
+      "company": "株式会社 a-LINK"
+    },
+    {
+      "salary_min": "5000000",
+      "locations": "東京都",
+      "salary_type": "Y",
+      "date": "Sun, 04 Sep 2022 07:48:00 GMT",
+      "description": "環境】  ・開発言語 <b>Kotlin</b>  ・開発環境 Android Studio CI/CD Bitrise  ・デザインツール Adobe XD  ・その他 GitHub Slack GitHub Actions   【魅力】  ・成熟...",
+      "salary_currency_code": "JPY",
+      "salary": "5000000 - 9000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e1341c8b1fb89f9829385fe4885d2f686a1cb4881c888ceb689cee5c58da6e30085c5c289c3dbc5e7c96b96b6b4dbba88448bd2b697a1dc4887c3c48284ca8dfad20acc98b0cbf3ca6cc2e8bf85ffc44e83d9b197e9d653cc869eca89da8afd8676c5fff787f9c28285e9488dcfbbc8bc920d82c2cdc0d09e86fbc06c82f9bf92ffcc948fb61dc991f58cef9854c8d8ca84e5c386a1de8be8e42b130e1f1552/29584dc2e940f65eef70540ccd3ccbb5.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Androidアプリ開発（Kotlin）エンジニア【正社員】【IT・通信系その他】【転勤なし】【土日祝日休み】【東京都】",
+      "salary_max": "9000000",
+      "company": ""
+    },
+    {
+      "salary_min": "750000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:57:14 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 750,000円～950,000円  『精算』  ・確認中   【勤務地】  東京都渋谷区渋谷    募集情報    【フリ...ーランス】<b>Kotlin</b> ｜ 経験者歓迎！ライブ配信アプリ開発業務   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フルリモートで就業したい」  「今は...",
+      "salary_currency_code": "JPY",
+      "salary": "750000 - 950000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-121b41ceafc68cedb097a3c94888f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde45c9e2e38eea9029deae8487edcac4f7b64381e4e383da817681fff8cdb2872fcee7fa8da4dec3e0d482edce86a3c78bebca2b1905181a575c/ba124ec330e54a22f36eefcb28b24235.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin／ライブ配信アプリ開発業務",
+      "salary_max": "950000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "千葉県船橋市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:56:55 GMT",
+      "description": "株式会社ハイウェル    募集要項    Swift・<b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  140h-180h   【勤務地】  千葉...県船橋市フルリモート    募集情報    フリーランス｜Swift・<b>Kotlin</b>｜飲食・サービス業界向けモバイルアプリエンジニア   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f4e41ceafd18ced9b97a3f08be3d74786a2dc8beac0c9a985ceaeef8cec8576c3e0fd82edcd86a3c88beadac9a88eceafdd4f8da5dcc3e0db82ecdf86a3ff8bebd128c29e9fc4c7f04ec4f69580ebdd8de4f6c3f6d16b90a989deaebd87edcac4f78b438be3cc84e6b797ebc371c9a995ceaed78cec9f97a3e88be3cc4786a3e18bead9c9a881ceaecd8ced9497a2da69595d555c14/fdcd7ef0a7b9a77c55f0c76f0e9c8f2f.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Swift・Kotlin／飲食・サービス業界向けモバイルアプリエンジニア",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:56:53 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～900,000円  『精算』  ・140ｈ-180ｈ   【勤務地】  東京都渋谷区渋谷    募集...情報    【フリーランス】<b>Kotlin</b> ｜ 経験者歓迎！音楽配信自社サービスのアプリ開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 900000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b1b41ceafc68cedb097a3c94888f8ec82b9ce6a80ec99cd98900d8deae3c3cb816180e6c480c19e5481fff8cdb2872fcee7fa8da4dec3e0d482edce86a3c78bebca0ac2aba6cafdd56cceeb9385cddc6f555d15435b5a/199e9ddeb8055bc2af0e0489e6e06420.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin／音楽配信自社サービスのアプリ開発",
+      "salary_max": "900000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:54:21 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  ・140ｈ-180ｈ   【勤務地】  東京都港区六本木    募集...情報    【フリーランス】<b>Kotlin</b> ｜ 経験者歓迎！某有名通販アプリ開発案件   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フルリモートで就業したい」  「今は...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f1d41ceafc68cedb097a3c94888f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde45c9e2e38eea9029d4adb78cddc7259db6e88ff8d46586a3e18bead9c9a881ceaecd8ced9497a2da69535652521246/0fa74459e50f8c16a58a35876df60c6d.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin／某有名通販アプリ開発",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "埼玉県さいたま市浦和区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:54:21 GMT",
+      "description": "株式会社ハイウェル    募集要項    Android:Java、<b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～900,000円  『精算』  ・確認中   【勤務地】  埼玉...県さいたま市浦和区フルリモート    募集情報    【フリーランス】Android:Java、<b>Kotlin</b> ｜ iOS:ObjectiveC、Swift   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 900000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-484d416c43001d014e10002909170f65244e101a061a4e0b54627e668cedb297a3c98be2d284e68997ebda90a8921d6c43001d014e10222909170f4786a3e18bead9c9a881ceaecd8ced9497a2da6a32190e0354540126202b190a1b1e525f/f7566ec6e6876b9c1a819476c6fd9a8d.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Android:Java、Kotlin／iOS:ObjectiveC、Swift",
+      "salary_max": "900000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:54:06 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～850,000円  『精算』  ・140ｈ-180ｈ   【勤務地】  東京都港区汐留    募集...情報    【フリーランス】<b>Kotlin</b> ｜ 経験者歓迎！配車アプリ開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フルリモートで就業したい」  「今は...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 850000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-181a41ceafc68cedb097a3c94888f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde45c9e2e38eea9029d596a74486f8ac93b9d96a88f8ec82b9ce4881c8a029d4a8a08cd4e4264618565f535c/b4fcd86477a6c824eded35a36ae62a66.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin／配車アプリ開発",
+      "salary_max": "850000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "800000",
+      "locations": "神奈川県川崎市川崎区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:52:11 GMT",
+      "description": "株式会社ハイウェル    募集要項    PHP・<b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 800,000円～900,000円  『精算』  140h-180h   【勤務地】  神奈...川県川崎市川崎区フルリモート    募集情報    フリーランス｜PHP・<b>Kotlin</b>｜某アルバイト求人サイトリファクタリング   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "800000 - 900000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1a1941ceaef48cec8397a3eb4882ecc586a3df8beae3c9a999ceaeec6d3e6f240080eac38de4cec3f7f88af18ec8bea52f87ecfbc4f78a80ebdd8de4ccc3f7db8af1930b6d657d663f267754c3e0f882ecc386a3fc6a8af19fc8bf89cee7e74ec4f68280ebca8de4f5c3f6cc8af0a22a0f1a1b56585f/262961c1f3b84cb4b2017a5e975ca21b.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／PHP・Kotlin／某アルバイト求人サイトリファクタリング",
+      "salary_max": "900000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "千葉県市川市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:51:58 GMT",
+      "description": "株式会社ハイウェル    募集要項    Java・<b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  140h-180h   【勤務地】  千葉...県市川市フルリモート    募集情報    フリーランス｜Java・<b>Kotlin</b>｜某薬局業務支援システム追加開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c4f41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c928c2aba6cafdd54e6d1556026a82ecd086a2cd8beaf5c9a89d0dcbc1c28baced2280ebf48de4cfc3f7d48af083c8be9ecee6d64ecee2ab84f1db6c84e79797ead090a9addeae8d44250f511521515f545a5f50/2c670319a1c436719576eb1be09bfabb.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Java・Kotlin／某薬局業務支援システム追加開発",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "神奈川県川崎市川崎区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:50:21 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>・Swift   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  140h-180h   【勤務地】  神奈...川県川崎市川崎区フルリモート    募集情報    フリーランス｜<b>Kotlin</b>・Swift｜某映像サービスのスマホアプリ開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。  「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e1941ceafdd8cedb997a3f84882ecc586a3e38bead90ac2aba6cafdd56cc4f68280ebf68de4cf009dfee294b3913fceafdd8cedb997a3f84882ecc586a3e38bead928c8beb8cee7c58da4c8c3e0c182edd486a2cd4880e5a1cca4972f87edd7c4f7be80ebfa4e8ef3ab93f1d372181c0b1f1a55/b3480ec95d73155cf30e2079165840fe.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin・Swift／某映像サービスのスマホアプリ開発",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "700000",
+      "locations": "神奈川県横浜市中区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:47:53 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 700,000円～850,000円  『精算』  140h-180h   【勤務地】  神奈川県横浜市中区リモート併用    募集...情報    フリーランス｜<b>Kotlin</b>｜暗号資産トレーディングのAndroidアプリ開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "700000 - 850000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-191c41ceafc68cedb097a3c94888f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde45c9e2e38eea9029d4bba683f6d42597a3f68be2c484e69c97ebc090a998deaf94668cec8597a3f48be2c4665717425b5045/828a6005afbe5c46621551e4fb7a9c6c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin／暗号資産トレーディングのAndroidアプリ開発",
+      "salary_max": "850000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:42:46 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  ・140ｈ-180ｈ   【勤務地】  東京都品川区五反田    募集...情報    【フリーランス】<b>Kotlin</b> ｜ 経験者歓迎！Androidアプリ開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フルリモートで就業したい」  「今は...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b4d416c43001d014e100080eac38de4f2c3f7c2499abca0dab497668cec8597a3f48be2c4478cb6ff8ff0c9286a53495f0b060a079db6e88ff8d465244e101a061a4e0bdeaf8f87ecf9c4f78a618be2fb84e68a97ebd590a982deae9e87edd7079db6e88ff8d4665718415f5a47/2726722259d221ca09ccd3b5f7c95f6f.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin／Androidアプリ開発",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "800000",
+      "locations": "東京都文京区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:41:45 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>(1.3.5)   【雇用形態】  業務委託   【給与】  月給 800,000円～900,000円  『精算』150h-200h   【勤務地】  東京都文京区御茶ノ水    募集...情報    【フリーランス】<b>Kotlin</b>(1.3.5) ｜ 経験者歓迎！銀行取引アプリケーション開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "800000 - 900000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-121a41ceafc68cedb097a3c94888f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde45c9e2e38eea9029deaf8f87ecf9c4f78a80ead08de4d9c3f6df8af08dc8be9e0d8df9e5c0ed9a6181ebee8fc4ac7681fff8cdb2872c1f5c5a581e40/4a8c56c8c98b726f7bf20fedefef132d.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin／銀行取引アプリケーション開発",
+      "salary_max": "900000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "400000",
+      "locations": "千葉市中央区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:41:43 GMT",
+      "description": "株式会社ハイウェル    募集要項    Swift｜<b>kotlin</b>   【雇用形態】  業務委託   【給与】  月給 400,000円～600,000円  『精算』140-180h   【勤務地】  千葉...県千葉市中央区フルリモート    募集情報    フリーランス ｜Swift/<b>kotlin</b>｜ 生命保険会社向けアプリ開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "400000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-191341ceafc68cedb097a3c94888f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde45c9e2e38eea9029deaf8f87ecf9c4f78a438cddf480c19e768cd6eec3b2870dc9d8f58983ca2284fcfe8bf6d8c4cbf580ea902a0f1a1b565b5d/4c70fa7f8f9332356c047ace098b5d16.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Swift／kotlin／生命保険会社向けアプリ開発",
+      "salary_max": "600000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "650000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:40:59 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 650,000円～850,000円  『精算』  ・160ｈ-200ｈ   【勤務地】  東京都渋谷区渋谷    募集...情報    【フリーランス】<b>Kotlin</b> ｜ 経験者歓迎！サービス系アプリケーション開発案件   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "650000 - 850000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e1d41ceafc68cedb097a3c94888f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde45c9e2e38eea9029deaf8f87ecf9c4f78a80ead08de4d9c3f6df8af08dc8be9e0d8df9e5c0ed9a6181f7e580fc9a768beae6c9a897ceaed88ced8e97a3d08be3d7665718415f5a40/906b6c60065dc6b67ab48d23ad78474a.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin／サービス系アプリケーション開発",
+      "salary_max": "850000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "千葉県松戸市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:40:49 GMT",
+      "description": "株式会社ハイウェル    募集要項    Java・<b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  140h-180h   【勤務地】  千葉...県松戸市フルリモート    募集情報    フリーランス｜Java・<b>Kotlin</b>｜某薬局業務支援システム追加開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1841ceafd38cec9e97a3e58be2ce478cb6ff8ff0c928c2aba6cafdd54e6d1556026a82ecd086a2cd8beaf5c9a89d0dcbc1c28baced2280ebf48de4cfc3f7d48af083c8be9ecee6d64ecee2ab84f1db6c84e79797ead090a9addeae8d44250f5115215b5b525e57/f409c4514560bd4693e5d2ac3cbdb921.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Java・Kotlin／某薬局業務支援システム追加開発",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    }
+  ],
+  "min_salary": [
+    {
+      "salary_min": "200000",
+      "locations": "静岡市葵区",
+      "salary_type": "M",
+      "date": "Wed, 17 Aug 2022 07:56:38 GMT",
+      "description": "、Javascript）、アプリ言語（swift、java、<b>kotlin</b>）、フレームワーク（FuelPHP、Ruby on Rails、Vue.js）、データベース（MySQL）、インフラ（AWS、Vagrant、Chef）   【職場環境】  現在、シス...",
+      "salary_currency_code": "JPY",
+      "salary": "200000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b1d417d65344f3c521659432200180667c6d9cb8ed794ceae8c0d83cbd0c2e7816138293e472f4102096b97908fd4adb78cddd50792b4cc8fd4c865356824488fde89cc9993c8f7ce6f154316505052/2f8653980e34d454f88c35d4b6539f1c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "SE<PHP・Ruby・swift・java・kotlin・MySQL 等>【正社員】【交通費支給】【最寄り駅】静岡県静岡市葵区",
+      "salary_max": "200000",
+      "company": ""
+    },
+    {
+      "salary_min": "2700",
+      "locations": "東京都港区",
+      "salary_type": "H",
+      "date": "Sat, 27 Aug 2022 07:20:37 GMT",
+      "description": "駅 徒歩10分 仕事内容： 客先常駐にて、<b>Kotlin</b>でのアプリケーション開発をお願いします。 【工程】 詳細設計、プログラミング、結合テスト 開発手法：ウォーターフォールモデル 【環境】 <b>Kotlin</b> 休日： 日曜日、土曜日、祝日 週休2日制...(土日祝休み) 対象となる方： 実務経験1年以上/ブランク相談可/開始時期についてはご相談ください。 【活かせる経験・スキル】 開発エンジニア 詳細設計 プログラミング <b>Kotlin</b> ※3年前後ブランクのある方も、まずはご応募いただき、ご相...",
+      "salary_currency_code": "JPY",
+      "salary": "2700 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f1b41c8b1fb89f98254c7c6f5418adbf4c3f5d76b96b6b4dbba88448bd2b697a1dc4882edcb86a2cc6a8cefb5cdaa880d83caf307909cf26a84f2f883b7d1488dcfbbc8bc922f81f3f1c1e38584cdfc4e83d9b197e9d6721813081a1f56/2ec190ee73e6f413ec55866f3abab44d.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【Kotlin】POSレジアプリケーション開発大手！土日祝休み！",
+      "salary_max": "2700",
+      "company": "パーソルテクノロジースタッフ株式会社"
+    },
+    {
+      "salary_min": "2900",
+      "locations": "東京都港区",
+      "salary_type": "H",
+      "date": "Sat, 27 Aug 2022 07:22:58 GMT",
+      "description": " Studio（Java、<b>Kotlin</b>）、Xcode（Swift） 【体制】 2名＋今回募集の方 【出社頻度】 月8～16日 休日： 日曜日、土曜日、祝日 週休2日制(土日祝休み) 対象となる方： 実務経験1年以上/ブランク相談可/開始...時期についてはご相談ください。 【活かせる経験・スキル】 開発エンジニア <b>Kotlin</b> Swift ※3年前後ブランクのある方も、まずはご応募いただき、ご相談ください 応募先： パーソルテクノロジースタッフ株式会社(IT) 新宿本社 東京都新宿区西新宿2-1-1 新宿...",
+      "salary_currency_code": "JPY",
+      "salary": "2900 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e1f41ceafdd8cedb997a3df8be2e684e6b597eac090a9981dceafc68cedb097a3c94888f8ec82b9ce6a8af193c8beb3cee7d38da4fcc3e0fd82ecce86a3c7488af188c8bebacee7c56cc4f68280ebf68de4cf009dfee294b3913fceafdd8cedb997a3df8be2e684e6b597eac090a9981dc4bbef88f79d76c3e1d182edf986a3c88beafbc9a8a8ceafcd8ced9454c3e1ca82edf086a3de81fff8cdb2872c1f5c5a591546/d1e762818fdb0a1b31096a6545f86256.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【リモートワーク可Kotlin等】スマートフォンアプリ開発",
+      "salary_max": "2900",
+      "company": "パーソルテクノロジースタッフ株式会社"
+    },
+    {
+      "salary_min": "3000",
+      "locations": "東京都港区",
+      "salary_type": "H",
+      "date": "Sat, 20 Aug 2022 07:12:44 GMT",
+      "description": "】 <b>Kotlin</b>またはSwift 休日： 日曜日、土曜日、祝日 週休2日制(土日祝休み) 対象となる方： 実務経験1年以上/ブランク相談可/開始時期についてはご相談ください。 【活かせる経験・スキル】 開発エンジニア <b>Kotlin</b> Swift ※3年前...",
+      "salary_currency_code": "JPY",
+      "salary": "3000 per hour",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b4a41c4bbef88f79d76c3e1dd82ecc386a3fc6a8dc9a1cd98802f8deae3c3cb81618be2f384e69c97ead690a9803c1f1551585c15/ab59c38d7bb421b0e4fa9669bb992094.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【Kotlin等】配信事業者ポータルサイト開発大手！",
+      "salary_max": "3000",
+      "company": "パーソルテクノロジースタッフ株式会社"
+    },
+    {
+      "salary_min": "3000000",
+      "locations": "神奈川県横浜市港北区",
+      "salary_type": "Y",
+      "date": "Tue, 06 Sep 2022 22:00:29 GMT",
+      "description": "込みからアプリ開発まで。  ーセンシングに関係する新規付加価値システム、新規サービスシステムの 組み込みからアプリ開発まで。 * 開発は主にC#、C/C++、Java、Objective C、<b>Kotlin</b>等の言語を用い、Visual Studio、Xcode...",
+      "salary_currency_code": "JPY",
+      "salary": "3000000 - 7000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-491341624f0e0a0d531d560645224e8ef3ab93f1d371654957484e100618425463618eebee8fc4b35481fff8cdb2872f6e442c6ccee2ab84f1db4e2d045615695b441c18041e/518fe668585bc9bd8a06b647dc9518f2.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【横浜】開発技術者/AI・Cloud・IoT etc./C#、C/C++、Java、Objective C、Kotlin",
+      "salary_max": "7000000",
+      "company": "株式会社 a-LINK"
+    },
+    {
+      "salary_min": "3240000",
+      "locations": "東京都千代田区外神田",
+      "salary_type": "Y",
+      "date": "Wed, 07 Sep 2022 22:57:16 GMT",
+      "description": "ンストリームあたりを回避してきたため古いシステムの保守案件を得るチャネルを持っておらず、上記の新規ビジネス領域の前線を、常に新しい方向へ転戦していくような立ち回りになっています。 【要素技術】 現在の社内の主な使用技術は ・<b>Kotlin</b>（SpringBoot） ・Golang ・Python（Flask） ・TypeScript...の部署を持つ為、最上流から対応可能と言う、異色のITベンダーとなっております。 募集要項 ポジション サーバーサイド<b>Kotlin</b>のシステムエンジニア 提示年収 324万 〜 600万円 求めるスキル Bランク以上（※ランクについてはhttps://paiza...",
+      "salary_currency_code": "JPY",
+      "salary": "3240000 - 6000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f1b41ceaef48ced9b76c4dff286cad967c3f6dd8af096c8bebd2f87eddbc4f79c80ebf18de4d9214758584a131d/ded79197de1de515dc1961e659aac805.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "サーバーサイドKotlin（SpringBoot）が主力になっちった会社の求人 2022.09.06",
+      "salary_max": "6000000",
+      "company": "BAMV合同会社"
+    },
+    {
+      "salary_min": "3500000",
+      "locations": "静岡市葵区",
+      "salary_type": "Y",
+      "date": "Wed, 17 Aug 2022 07:51:14 GMT",
+      "description": "、Ruby、Javascript）、アプリ言語（swift、java、<b>kotlin</b>）、フレームワーク（FuelPHP、Ruby on Rails、Vue.js）、データベース（MySQL）、インフラ（AWS、Vagrant、Chef）   【職場...",
+      "salary_currency_code": "JPY",
+      "salary": "3500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-181b417d65344f3c521659432200180667703c3849394b5d5c2f601d3c3f6b54702b38633c120759543821232878782c1f53595d1f47/dcacb8979fc69dd2fd83a4633b291668.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "SE<PHP・Ruby・swift・java・kotlin・MySQL 等",
+      "salary_max": "3500000",
+      "company": "株式会社しずおかオンライン"
+    },
+    {
+      "salary_min": "400000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:18:59 GMT",
+      "description": "があればプログラム開発に携わることも可能です。   ＜開発環境＞  テストフレームワーク：Gauge  言語：<b>Kotlin</b>, Java  RDB：MySQL, PostgreSQL  バージョン管理：Git, Mercurial  CI：Jenkins, GitHub Acrions  コミ...",
+      "salary_currency_code": "JPY",
+      "salary": "400000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f1e41ceaee28cec9e97a3eb4882eccf86a3c78bebcbc9a8b6ceafc66d24460241438be3c684e69397ead190a9a0deaf8f66250f51150080ebe78de5dcc3f7e06b90a883deae9e87edd6c4f7ab80eac36c2d045615695b4b1f1c0f1f/0f88933910fb5eddcd56364b4b354af8.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin / Java テストエンジニア募集",
+      "salary_max": "600000",
+      "company": ""
+    },
+    {
+      "salary_min": "400000",
+      "locations": "千葉市中央区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:41:43 GMT",
+      "description": "株式会社ハイウェル    募集要項    Swift｜<b>kotlin</b>   【雇用形態】  業務委託   【給与】  月給 400,000円～600,000円  『精算』140-180h   【勤務地】  千葉...県千葉市中央区フルリモート    募集情報    フリーランス ｜Swift/<b>kotlin</b>｜ 生命保険会社向けアプリ開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "400000 - 600000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-191341ceafc68cedb097a3c94888f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde45c9e2e38eea9029deaf8f87ecf9c4f78a438cddf480c19e768cd6eec3b2870dc9d8f58983ca2284fcfe8bf6d8c4cbf580ea902a0f1a1b565b5d/4c70fa7f8f9332356c047ace098b5d16.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Swift／kotlin／生命保険会社向けアプリ開発",
+      "salary_max": "600000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都墨田区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:36:57 GMT",
+      "description": "単価/月   50～70万円   勤務地   東京都,墨田区   案件概要   ドライバー配達業務を支援するスマホ、Webアプリの開発を行います。   ＜開発言語＞  Android Java, <b>Kotlin</b>, Objective-C...ティブアプリケーション開発経験  ・Android Java, <b>Kotlin</b>, Objective-C, Swiftの経験1年以上   歓迎するスキル・経験   ・Linuxコマンド利用経験  ・Azure利用経験のある方   稼動日数   週5日   商談回数   1回   最寄...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1913416c43001d014e10002909170f478cb6ff8ff0c9286a53495f0b060a0797a2c18be2f984e68a5481fff8cdb2872fcee6cd8da4e3c3e0c24187f1eec7edd249394b5d5c2fcee6cd8da4e3c3e0c24187f1eec7edd26b32444f4f4244004f87b1ffc7fad2605c5f5017475f/bdbf2b962c03c5a504dd917fc7869732.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Android Java / Kotlin/ Swift など ドライバー支援アプリ開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "5000000",
+      "locations": "東京都新宿区",
+      "salary_type": "Y",
+      "date": "Thu, 19 May 2022 07:21:53 GMT",
+      "description": "【Swift/<b>Kotlin</b>/Flutter】iOS・Androidエンジニア/株式会社ソニックムーブ   同社は「R&Dスタジオ」を標榜し、アドテク領域、マーケティング領域、ゲーム領域、アプ...をお任せします。  【現場の開発環境】 言語：Swift, <b>Kotlin</b> フレームワーク：SwiftUI, Alamofire, RxSwift, Combine,RxJava(RxKotlin), <b>Kotlin</b> Coroutine, Dagger, Okhttp...",
+      "salary_currency_code": "JPY",
+      "salary": "5000000 - 8000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e1e41ceafcc8ced9497a2db8be2e584e78254012620286a53495f0b060a071d6f306a32190e03545401262028c8bf85cee7dc8da5ccc3e0e382ecc567611a0c1b1c434f3c1f1551585d12/cfce7d2e7b29f47404b2adbf062eddb1.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【Swift/Kotlin/Flutter】iOS・Androidエンジニア",
+      "salary_max": "8000000",
+      "company": "株式会社ソニックムーブ"
+    },
+    {
+      "salary_min": "5000000",
+      "locations": "東京都港区",
+      "salary_type": "Y",
+      "date": "Thu, 19 May 2022 07:08:26 GMT",
+      "description": "ティブアプリはメインでFlutterを使っておりますが、Flutter未経験の方でもswiftや<b>kotlin</b>などでネイティブアプリの開発経験がある方で、Flutterに興味がある方を募集しています。  【具体的には】 カオナビ スマホアプリ開発 既存...リケーションの開発経験 <b>Kotlin</b>を用いたAndroidアプリケーションの開発経験   勤務地 東京都港区   勤務時間 ※詳細は転職エージェントへお問い合わせください。   給与 想定年収：500-800万円  ※詳細は転職エージェントへお問い合わせください。   諸手...",
+      "salary_currency_code": "JPY",
+      "salary": "5000000 - 8000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1a41ceafc68cedb097a3c94885d2fd8284ca6a8af188c8bebacee7c54ec4f68880ebd28de5ddc3f7e38af18829deaf8587ecddc4f69880ebea8de5c72290d4f3948e953fceaee98cec8397a3e58be3cd84e6b6755a51461d190f/cfc44a53e6036b2f6c29535367210dec.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "ネイティブアプリエンジニア(Flutter / swift / kotlin)◆株式会社カオナビ◆",
+      "salary_max": "8000000",
+      "company": "SBヒューマンキャピタル株式会社"
+    },
+    {
+      "salary_min": "5000000",
+      "locations": "大阪市中央区",
+      "salary_type": "Y",
+      "date": "Wed, 29 Jun 2022 07:37:08 GMT",
+      "description": "【募集職種】  Webエンジニア   【業界】  インターネット/Webサービス・ASP   【応募条件】  ▼必須スキル  <b>Kotlin</b>  【必須】  ・<b>Kotlin</b>もしくはJavaを用いたWebアプリケーションの開発・運用...領域の新規プロダクトを開発する立ち上げメンバーとして、同社発展の一躍を担っていただきます。   【職務詳細】  ・クラウドERP戦略における会計領域の新規プロダクトの開発  ・Serverside <b>Kotlin</b>チームの立ち上げ   【技術スタック】  ・サーバーサイド：<b>Kotlin</b>  ・フロ...",
+      "salary_currency_code": "JPY",
+      "salary": "5000000 - 11000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1d4841c991fe88ca9976c4d9d287f3f767c3f7c78af096c8bea42f83dbd7c3cfab618eeaeb82d8b3755a5e45191904/3d1ab731eb0620a87f968a2bd46c3441.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "人材紹介］株式会社マネーフォワード/【大阪】バックエンド担当（Kotlin)/403794434",
+      "salary_max": "11000000",
+      "company": "株式会社ワークポート"
+    },
+    {
+      "salary_min": "5000000",
+      "locations": "東京都",
+      "salary_type": "Y",
+      "date": "Sun, 04 Sep 2022 07:48:00 GMT",
+      "description": "環境】  ・開発言語 <b>Kotlin</b>  ・開発環境 Android Studio CI/CD Bitrise  ・デザインツール Adobe XD  ・その他 GitHub Slack GitHub Actions   【魅力】  ・成熟...",
+      "salary_currency_code": "JPY",
+      "salary": "5000000 - 9000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e1341c8b1fb89f9829385fe4885d2f686a1cb4881c888ceb689cee5c58da6e30085c5c289c3dbc5e7c96b96b6b4dbba88448bd2b697a1dc4887c3c48284ca8dfad20acc98b0cbf3ca6cc2e8bf85ffc44e83d9b197e9d653cc869eca89da8afd8676c5fff787f9c28285e9488dcfbbc8bc920d82c2cdc0d09e86fbc06c82f9bf92ffcc948fb61dc991f58cef9854c8d8ca84e5c386a1de8be8e42b130e1f1552/29584dc2e940f65eef70540ccd3ccbb5.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Androidアプリ開発（Kotlin）エンジニア【正社員】【IT・通信系その他】【転勤なし】【土日祝日休み】【東京都】",
+      "salary_max": "9000000",
+      "company": ""
+    },
+    {
+      "salary_min": "540000",
+      "locations": "東京都新宿区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:38:59 GMT",
+      "description": "単価/月   54～70万円   勤務地   東京都,新宿区   案件概要   SaaS型プラットフォームサービスのプロダクトの運営業務  <b>Kotlin</b>を利用してアプリの新規機能の開発や、既存機能のリファクタリング・拡張を行う  各メ...ンバーにチケット配布し、2週間に1度のリリース実施   ＜環境＞  <b>Kotlin</b>, RxJava, Flutter, ReactNative, AWS, GCP, JIRA   ＜備考＞  現在はフルリモート   ＜基本時間＞  10：00～19：00   期間...",
+      "salary_currency_code": "JPY",
+      "salary": "540000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1a416c43001d014e10008afeea89fedf229dfee294b3913f6c43001d014e102280ead48de4d9c3f7fb8af19329764259080600264618565f525b/293ae637733f796db4162fb3c1fcdc95.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Android / Kotlin SaaS型プラットフォームサービス開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "540000",
+      "locations": "東京都港区六本木",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:00:34 GMT",
+      "description": "上  ・スマートフォン向けアプリ/SDKの開発経験  ・AndroidStudio(<b>Kotlin</b>またはJava)での開発経験1年以上  ・共にSDK, ライブラリ開発, アプリ内課金, Firebase, Push通知(FCM)等への理解   歓迎...",
+      "salary_currency_code": "JPY",
+      "salary": "540000 - 640000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-134a41c4bbef88f79d54c3e1c082edd486a2cc8beaf8c9a99f2fcee6c78da4c7c3e1d082edec86a2d66a80e5a1cca4972f8df9e5c0ed9a80eac98de4d6c3f6d08af0a1c8bf8f2f3718074100215058535f5f56/011ece57a812a46902b0ae8e5f8a96f8.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Swift / Kotlin SDK開発エンジニア募集",
+      "salary_max": "640000",
+      "company": ""
+    },
+    {
+      "salary_min": "550000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:36:20 GMT",
+      "description": "：00～19：00   期間   即日 ～ 2022/09/30   言語   必須スキル・経験   ・Androidアプリの設計・開発経験  ・<b>Kotlin</b>を使用したAndroidアプリの開発経験もしくは<b>Kotlin</b>の言語知識  ・他の...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 650000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-191f41ceafcc8ced9497a2db8be2e584e78276290717584454492f2f001a4b1d4e625a595b505613/a3d150492462de9470c43e0e0734ce2c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin / GitHub Androidエンジニア",
+      "salary_max": "650000",
+      "company": ""
+    },
+    {
+      "salary_min": "550000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:16:06 GMT",
+      "description": "れると好ましい)  ・<b>Kotlin</b>, Java, C++などを使用しての開発経験  ・高い設計スキル(基本設計～詳細設計まで)  ・コミュニケーション能力の高い方(報告・連絡・相談が適切にできて、提案もできる方)   歓迎するスキル・経験   ・英語能力の高い方   稼動...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 650000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f1341c8a1df88f7a554c9f5e386f7dd45c6ddf78cea8229d8a19683f6ecc1ddbf86f1c94e8ef3ab93f1d371c3bdb6cab4de4f8da5c9c3e0fd82edef67c5f8d38eeaa80bdb84b281f6c62537002069535652521340/4dbfd2e75c6e2e7a39262d6eb08c61cf.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin / Java / C++ 医療機器ソフト開発",
+      "salary_max": "650000",
+      "company": ""
+    },
+    {
+      "salary_min": "5500000",
+      "locations": "神奈川県横浜市西区",
+      "salary_type": "Y",
+      "date": "Tue, 06 Sep 2022 22:24:52 GMT",
+      "description": "採用企業  勤務地 神奈川県, 横浜市西区  雇用形態 正社員  給与 550万円 ~ 600万円   ワークスタイル リモートワーク・在宅勤務 服装カジュアル 副業OK   募集要項   某大手グローバルメーカーが提供する<b>Kotlin</b>...：Android ■言語：<b>Kotlin</b>   ●アプリについて・・快適にゲームをプレイするアプリ。  例えば画面のタッチサンプリングレートをユーザー好みの物に変更したり、  ゲームプレイ中の通知を制限したり、プレ...",
+      "salary_currency_code": "JPY",
+      "salary": "5500000 - 6000000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1c41ceafc68cedb097a3c94888f8ec82b9ce488af198c8be91cee7cf6cc4f69280ebdd8de4c5009dfee294b3913fceafc68cedb097a3c94888f8ec82b9ce6a8af198c8be91cee7cf4ec4f68280ebf68de4cf2297ebc890a997deaf8687ecd2079db6e88ff8d4665717425b5044/86ab0083af14130965cb72500a61fa00.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlinアプリ開発（大手グローバルメーカープロジェクト/リモート対応あり/上流から下流まで全工程経験/ゲーム）",
+      "salary_max": "6000000",
+      "company": "グラビティ株式会社"
+    },
+    {
+      "salary_min": "560000",
+      "locations": "東京都目黒区 - 東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:07:33 GMT",
+      "description": "リの機能追加や施策に向けた改修  ・アプリ開発で利用する内製SDK・ライブラリの改修  ・機能開発を支えるための保守・改善  ・アプリのパフォーマンス改善  ・ライブラリやSDKの更新・モダンな技術の取り込み  ・開発環境の整備   ＜開発環境＞  言語：<b>Kotlin</b>...",
+      "salary_currency_code": "JPY",
+      "salary": "560000 - 660000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f48416c43001d014e100080eac38de4f2c3f7c26b394b5d5c0dcee6cd8da4e3c3e0c26324061341548bebdbc9a88eceafdc8cedac97a2c16a200003174f1d0c49394b5d5c2fcee6cd8da4e3c3e0c2418de5cdc3f7db8af192c8bea6cee6cd6f154c15545a506c555d15435b5a/14dcfbf96a34d85c389aafc27c337831.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin / Java Androidアプリエンジニア募集",
+      "salary_max": "660000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都中央区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:54:20 GMT",
+      "description": "リモート   期間   即日 ～ 2022/06/30   言語   必須スキル・経験   ・<b>Kotlin</b>もしくはJavaの経験   稼動日数   週5日   商談回数   1回   案件の詳細   即日参画OK / 商談1回 / リモート / 原則...リモートでご対応頂く想定です。Javaもしくは<b>Kotlin</b>の経験のある方をお待ちしています。...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e4941ceafc68cedb097a3c94888f8ec82b9ce4823125c4a3fceafc68cedb097a3c94888f8ec82b9ce6a80e5a1cca4970d2e0e1846766a021e004e84e78297ebfe90a9813fceafc68cedb097a3c981f7e580fc9a542208054b2a0f1518525659/d80d5f729d4cd33ada9b4af84cfda09a.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Java / Kotlin ヘルスケアアプリ開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都中央区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:48:20 GMT",
+      "description": "リモートワーク   ＜基本時間＞  10：00～19：00   ＜服装＞  自由   期間   即日 ～ 2023/02/28   言語   必須スキル・経験   ・Android, <b>Kotlin</b>の開発経験1年以上(また...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-121e41ceafc68cedb097a3c94888f8ec82b9ce6a80e5a1cca4972f87ecfbc4f68180ebd28de5cac3f7c18af0bc29deaf8287ecc7c4f7b6618be3cc84e6b797ebc3721813081b1453/ff6c7e368616ecebf7422e6f67c0ff45.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin ファンクラブアプリ開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区白金台",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:37:36 GMT",
+      "description": "スキル・経験   ・<b>Kotlin</b>経験3～5年   歓迎するスキル・経験   ・サーバーサイドの開発経験  ・自社Webサービスや、受託開発経験のある方  ・業務用アプリの開発経験   稼動日数   週5日   商談回数   1回   最寄駅   東京...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-181f41ceafc68cedb097a3c94888f8ec82b9ce6a80e5a1cca4972f82cac3c2ffb9618be3cc84e6b797ebc371cfa385c88ed689c7b87513535a50585f/5c3024431c58bb0f94a3d07262b299af.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin 業務用の券売機アプリの開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都千代田区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:29:48 GMT",
+      "description": "ダクトマネージャーやデザイナー、QAエンジニアと連携したチーム開発  ・コードの品質の改善や、自動化による開発環境の改善  ・チームメンバーのコードレビュー  ・チームリーダーとしてメンバーの育成   ＜開発環境＞  言語：Java/<b>Kotlin</b>  バージョン管理：Git...いたチーム開発経験  ・<b>Kotlin</b>, Android Architecture Componentを使ったAndroidアプリの開発経験  ・ログ分析の知識/経験   稼動日数   週5日   商談回数   1回   最寄駅   JR山手線 秋葉原駅   案件...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1d4e41ceaec68cedb797a2c78be2c56586a3f28beaf0c9a9922fcee7ee8da4c8c3e0c8632508114c1d066b90a981deae9187ece7264618565e585b/f6d9b253aaf2005a348c60cd51b178e3.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin モバイルチームのテックリード募集",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区白金台",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:23:38 GMT",
+      "description": "ィスカジュアル   期間   即日 ～ 2022/11/30   言語   必須スキル・経験   ・<b>Kotlin</b>経験3～5年   歓迎するスキル・経験   ・サーバーサイドの開発経験  ・自社Webサービスや、受託開発経験のある方  ・業務...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-181f41ceafc68cedb097a3c94888f8ec82b9ce6a80e5a1cca4972f82cac3c2ffb9618be3cc84e6b797ebc371cfa385c88ed689c7b87513535a50585f/a838e9bce336a9a0bd25cca1d9b0b5bd.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin 業務用の券売機アプリの開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区六本木",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:20:14 GMT",
+      "description": "バーサイドアプリケーションの開発および保守運用経験  ・Java, <b>Kotlin</b>などのプログラミング言語を用いた開発業務経験・SQLの知識   歓迎するスキル・経験   ・AWS/GCPといったクラウドサービスに関する知識・運用経験(AWSでのサーバーレスアプリケーションの開発経験)  ・RDBMSや...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b1941ceafd38cec9e97a3e58be2ce47819fe98dc7fb0ac2bca6caf0c76cc3cbbd86c6e94e8ee4ab93fcc171c9a98aceafdd8ceda197a3c34888efec82b4dc6a8af19dc8bf94cee7e98da4d40087d7fc8bc9ed22230d0b53c3aab6cab9cc6e5d1746115b5b/b5c1be8f0ef91fd57d989557a0028f5c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Java / Kotlin Webサービス企業における基幹システムの運用保守",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:16:12 GMT",
+      "description": "単価/月   60～70万円   勤務地   東京都,港区   案件概要   レジアプリの新規・既存開発をご担当頂きます。   ＜環境＞  言語：Android Java/<b>Kotlin</b>  ツール：Slack, Zoom, Google...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e1841ceafc68cedb097a3c94888f8ec82b9ce4823125c4a3fceafc68cedb097a3c94888f8ec82b9ce6a80e5a1cca4970d2e0e1846766a021e004e84e78297ebfe90a9813fceaec88cec9f75125b5d565c55/937ffb8fd926fbae9d29aea78584c483.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Java / Kotlin レジアプリの新規・既存開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:09:34 GMT",
+      "description": " ～ 2023/01/31   言語   必須スキル・経験   ・JavaまたはScalaまたは<b>Kotlin</b>での実務経験 ※現場の開発環境は<b>Kotlin</b>  ・Webアプリケーションの設計経験  ・コードレビューの経験  ・GraphQLの実...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 650000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-481d41c4bbef88f79d546a021e006c8ef3ab93f1d371604a4b4c2f370c0f4b1522280715020e0b2146505c441819/60abcfab1abf255e05a3c7b4bc690f62.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Java / Scala / Kotlin 自社APIプラットフォーム開発",
+      "salary_max": "650000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都千代田区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:07:27 GMT",
+      "description": "用した動画再生まわりの開発経験   ＜iOSアプリエンジニア＞  ・iOSアプリにて動画再生まわりの開発経験  ・Swiftの経験   ＜Androidアプリエンジニア＞  ・Androidアプリにて動画再生まわりの開発経験  ・<b>Kotlin</b>の経験   歓迎するスキル・経験...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-134a41674c120e3d440649131c4187f1eec7edd26b9690a8d8bca76686f8ac93b9d96a84e5f282b4cf6a23125c4a6e4e5f0d1f1a264618565e585b/e6754b88eb2d3dffc91a40836d73342d.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "JavaScript / Swift / Kotlin 動画広告プラットフォームのSDK開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都中央区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:02:59 GMT",
+      "description": "(Docker), React(TypeScript), <b>Kotlin</b>, JIRA, Confluence   ＜備考＞  リモートワーク可能   期間   即日 ～ 2023/02/28   言語   必須スキル・経験   ・Reactもし...くは<b>Kotlin</b>(サーバーサイド)の経験3年以上  ・基本設計〜対応可能な方   歓迎するスキル・経験   ・金融系システム開発経験  ・アジャイル開発経験  ・Component開発  ・最新のアーキテクトの見識がある方   稼動日数   週5日...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-124f41ceafc68cedb097a3c94888f8ec82b9ce6a8dccb7c2a4970d81f9d8c1d18d618be3cc84e6b797ebc353cfbd8bcb88c96d87b1ffc7fad2418bf1d3c6d1c56b96bc9ddb8880448bd1ba9db9d969535652531943/97ee863ae437ea9b3b6206d2833d5a33.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "React / Kotlin 保険業界向け営業支援アプリケーション開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:02:04 GMT",
+      "description": "開発体制を拡充する中でメンバークラスで参画いただける方を求めています。  新規開発チームへのアサインを予定しています。   ＜環境＞  ・<b>Kotlin</b>  ・Typescript  ・Angular11  ・AWS  ・PostgreSQL  ・Mac(端末)   ＜備考＞  基本リモートワーク   期間   即日...するスキル・経験   ・<b>Kotlin</b>の開発経験  ・フロントエンドの開発経験  ・労務、給与計算、年末調整などの業務知見   稼動日数   週5日   商談回数   2回   案件の詳細   リモート   リモート詳細   基本リモートワーク   精算...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-121341ceafcc8ced9497a2db8be2e584e7825481fff8cdb2870d6705190f259db6e88ff8d44786a2dc8beac0c9a985ceaeef8cec8576c9f5e386f7dd456a151e0871604a4b4c0d87edc6c4f79380ead98de4eec3f6ca6b90a883deae9e87edd6c4f7ab80eac36f555d15435b5a/a02aa9e7411c036dadbba6bbf45f30d7.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Kotlin / Java / SpringBoot 新規プロダクト開発エンジニアの募集",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "千葉県船橋市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:56:55 GMT",
+      "description": "株式会社ハイウェル    募集要項    Swift・<b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  140h-180h   【勤務地】  千葉...県船橋市フルリモート    募集情報    フリーランス｜Swift・<b>Kotlin</b>｜飲食・サービス業界向けモバイルアプリエンジニア   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1f4e41ceafd18ced9b97a3f08be3d74786a2dc8beac0c9a985ceaeef8cec8576c3e0fd82edcd86a3c88beadac9a88eceafdd4f8da5dcc3e0db82ecdf86a3ff8bebd128c29e9fc4c7f04ec4f69580ebdd8de4f6c3f6d16b90a989deaebd87edcac4f78b438be3cc84e6b797ebc371c9a995ceaed78cec9f97a3e88be3cc4786a3e18bead9c9a881ceaecd8ced9497a2da69595d555c14/fdcd7ef0a7b9a77c55f0c76f0e9c8f2f.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Swift・Kotlin／飲食・サービス業界向けモバイルアプリエンジニア",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:56:53 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～900,000円  『精算』  ・140ｈ-180ｈ   【勤務地】  東京都渋谷区渋谷    募集...情報    【フリーランス】<b>Kotlin</b> ｜ 経験者歓迎！音楽配信自社サービスのアプリ開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 900000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1b1b41ceafc68cedb097a3c94888f8ec82b9ce6a80ec99cd98900d8deae3c3cb816180e6c480c19e5481fff8cdb2872fcee7fa8da4dec3e0d482edce86a3c78bebca0ac2aba6cafdd56cceeb9385cddc6f555d15435b5a/199e9ddeb8055bc2af0e0489e6e06420.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin／音楽配信自社サービスのアプリ開発",
+      "salary_max": "900000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:54:21 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  ・140ｈ-180ｈ   【勤務地】  東京都港区六本木    募集...情報    【フリーランス】<b>Kotlin</b> ｜ 経験者歓迎！某有名通販アプリ開発案件   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フルリモートで就業したい」  「今は...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4f1d41ceafc68cedb097a3c94888f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde45c9e2e38eea9029d4adb78cddc7259db6e88ff8d46586a3e18bead9c9a881ceaecd8ced9497a2da69535652521246/0fa74459e50f8c16a58a35876df60c6d.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin／某有名通販アプリ開発",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "埼玉県さいたま市浦和区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:54:21 GMT",
+      "description": "株式会社ハイウェル    募集要項    Android:Java、<b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～900,000円  『精算』  ・確認中   【勤務地】  埼玉...県さいたま市浦和区フルリモート    募集情報    【フリーランス】Android:Java、<b>Kotlin</b> ｜ iOS:ObjectiveC、Swift   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっ...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 900000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-484d416c43001d014e10002909170f65244e101a061a4e0b54627e668cedb297a3c98be2d284e68997ebda90a8921d6c43001d014e10222909170f4786a3e18bead9c9a881ceaecd8ced9497a2da6a32190e0354540126202b190a1b1e525f/f7566ec6e6876b9c1a819476c6fd9a8d.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Android:Java、Kotlin／iOS:ObjectiveC、Swift",
+      "salary_max": "900000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:54:06 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～850,000円  『精算』  ・140ｈ-180ｈ   【勤務地】  東京都港区汐留    募集...情報    【フリーランス】<b>Kotlin</b> ｜ 経験者歓迎！配車アプリ開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フルリモートで就業したい」  「今は...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 850000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-181a41ceafc68cedb097a3c94888f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde45c9e2e38eea9029d596a74486f8ac93b9d96a88f8ec82b9ce4881c8a029d4a8a08cd4e4264618565f535c/b4fcd86477a6c824eded35a36ae62a66.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin／配車アプリ開発",
+      "salary_max": "850000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "千葉県市川市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:51:58 GMT",
+      "description": "株式会社ハイウェル    募集要項    Java・<b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  140h-180h   【勤務地】  千葉...県市川市フルリモート    募集情報    フリーランス｜Java・<b>Kotlin</b>｜某薬局業務支援システム追加開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4c4f41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c928c2aba6cafdd54e6d1556026a82ecd086a2cd8beaf5c9a89d0dcbc1c28baced2280ebf48de4cfc3f7d48af083c8be9ecee6d64ecee2ab84f1db6c84e79797ead090a9addeae8d44250f511521515f545a5f50/2c670319a1c436719576eb1be09bfabb.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Java・Kotlin／某薬局業務支援システム追加開発",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "神奈川県川崎市川崎区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:50:21 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>・Swift   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  140h-180h   【勤務地】  神奈...川県川崎市川崎区フルリモート    募集情報    フリーランス｜<b>Kotlin</b>・Swift｜某映像サービスのスマホアプリ開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。  「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4e1941ceafdd8cedb997a3f84882ecc586a3e38bead90ac2aba6cafdd56cc4f68280ebf68de4cf009dfee294b3913fceafdd8cedb997a3f84882ecc586a3e38bead928c8beb8cee7c58da4c8c3e0c182edd486a2cd4880e5a1cca4972f87edd7c4f7be80ebfa4e8ef3ab93f1d372181c0b1f1a55/b3480ec95d73155cf30e2079165840fe.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin・Swift／某映像サービスのスマホアプリ開発",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都品川区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:42:46 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  ・140ｈ-180ｈ   【勤務地】  東京都品川区五反田    募集...情報    【フリーランス】<b>Kotlin</b> ｜ 経験者歓迎！Androidアプリ開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フルリモートで就業したい」  「今は...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-4b4d416c43001d014e100080eac38de4f2c3f7c2499abca0dab497668cec8597a3f48be2c4478cb6ff8ff0c9286a53495f0b060a079db6e88ff8d465244e101a061a4e0bdeaf8f87ecf9c4f78a618be2fb84e68a97ebd590a982deae9e87edd7079db6e88ff8d4665718415f5a47/2726722259d221ca09ccd3b5f7c95f6f.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin／Androidアプリ開発",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "千葉県松戸市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:40:49 GMT",
+      "description": "株式会社ハイウェル    募集要項    Java・<b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  140h-180h   【勤務地】  千葉...県松戸市フルリモート    募集情報    フリーランス｜Java・<b>Kotlin</b>｜某薬局業務支援システム追加開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1c1841ceafd38cec9e97a3e58be2ce478cb6ff8ff0c928c2aba6cafdd54e6d1556026a82ecd086a2cd8beaf5c9a89d0dcbc1c28baced2280ebf48de4cfc3f7d48af083c8be9ecee6d64ecee2ab84f1db6c84e79797ead090a9addeae8d44250f5115215b5b525e57/f409c4514560bd4693e5d2ac3cbdb921.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Java・Kotlin／某薬局業務支援システム追加開発",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "6000000",
+      "locations": "東京都",
+      "salary_type": "Y",
+      "date": "Wed, 07 Sep 2022 07:44:25 GMT",
+      "description": "くはAndroid）  ・Swiftもしくは<b>Kotlin</b>での開発経験1年以上...",
+      "salary_currency_code": "JPY",
+      "salary": "6000000 - 9500000 per year",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e4a41ceafcc8ced9497a2db8be2e584e782548ec4d0cd8f83c8bec54f869cd6c5e8cc82efcd86a1e36a8fde89cc9993c8f7ce4ec0d09e86fbc06c81c88393ccd796b98a1dceafcc8ced9497a2db8be2e584e782768ec4d0cd8f83c8bec54f869cd6c5e8cc82efcd86a1e36a8fc69dce99bb0d82c2cdc0d09e86fbc06f5f56124c5e/aff748e6d01d6aeec9c107564b6e2647.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "スマホアプリエンジニア【Swift/Kotlin】【正社員】【インターネット関連】【海外勤務】【転勤なし】【東京都】",
+      "salary_max": "9500000",
+      "company": ""
+    },
+    {
+      "salary_min": "650000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:40:59 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 650,000円～850,000円  『精算』  ・160ｈ-200ｈ   【勤務地】  東京都渋谷区渋谷    募集...情報    【フリーランス】<b>Kotlin</b> ｜ 経験者歓迎！サービス系アプリケーション開発案件   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "650000 - 850000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1e1d41ceafc68cedb097a3c94888f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde45c9e2e38eea9029deaf8f87ecf9c4f78a80ead08de4d9c3f6df8af08dc8be9e0d8df9e5c0ed9a6181f7e580fc9a768beae6c9a897ceaed88ced8e97a3d08be3d7665718415f5a40/906b6c60065dc6b67ab48d23ad78474a.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin／サービス系アプリケーション開発",
+      "salary_max": "850000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "700000",
+      "locations": "神奈川県横浜市中区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:47:53 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 700,000円～850,000円  『精算』  140h-180h   【勤務地】  神奈川県横浜市中区リモート併用    募集...情報    フリーランス｜<b>Kotlin</b>｜暗号資産トレーディングのAndroidアプリ開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "700000 - 850000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-191c41ceafc68cedb097a3c94888f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde45c9e2e38eea9029d4bba683f6d42597a3f68be2c484e69c97ebc090a998deaf94668cec8597a3f48be2c4665717425b5045/828a6005afbe5c46621551e4fb7a9c6c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin／暗号資産トレーディングのAndroidアプリ開発",
+      "salary_max": "850000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "750000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:57:14 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 750,000円～950,000円  『精算』  ・確認中   【勤務地】  東京都渋谷区渋谷    募集情報    【フリ...ーランス】<b>Kotlin</b> ｜ 経験者歓迎！ライブ配信アプリ開発業務   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フルリモートで就業したい」  「今は...",
+      "salary_currency_code": "JPY",
+      "salary": "750000 - 950000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-121b41ceafc68cedb097a3c94888f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde45c9e2e38eea9029deae8487edcac4f7b64381e4e383da817681fff8cdb2872fcee7fa8da4dec3e0d482edce86a3c78bebca2b1905181a575c/ba124ec330e54a22f36eefcb28b24235.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin／ライブ配信アプリ開発業務",
+      "salary_max": "950000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "800000",
+      "locations": "神奈川県川崎市川崎区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:52:11 GMT",
+      "description": "株式会社ハイウェル    募集要項    PHP・<b>Kotlin</b>   【雇用形態】  業務委託   【給与】  月給 800,000円～900,000円  『精算』  140h-180h   【勤務地】  神奈...川県川崎市川崎区フルリモート    募集情報    フリーランス｜PHP・<b>Kotlin</b>｜某アルバイト求人サイトリファクタリング   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "800000 - 900000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-1a1941ceaef48cec8397a3eb4882ecc586a3df8beae3c9a999ceaeec6d3e6f240080eac38de4cec3f7f88af18ec8bea52f87ecfbc4f78a80ebdd8de4ccc3f7db8af1930b6d657d663f267754c3e0f882ecc386a3fc6a8af19fc8bf89cee7e74ec4f68280ebca8de4f5c3f6cc8af0a22a0f1a1b56585f/262961c1f3b84cb4b2017a5e975ca21b.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／PHP・Kotlin／某アルバイト求人サイトリファクタリング",
+      "salary_max": "900000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "800000",
+      "locations": "東京都文京区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:41:45 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Kotlin</b>(1.3.5)   【雇用形態】  業務委託   【給与】  月給 800,000円～900,000円  『精算』150h-200h   【勤務地】  東京都文京区御茶ノ水    募集...情報    【フリーランス】<b>Kotlin</b>(1.3.5) ｜ 経験者歓迎！銀行取引アプリケーション開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "800000 - 900000 per month",
+      "site": "",
+      "url": "http://jobviewtrack.com/ja-jp/job-121a41ceafc68cedb097a3c94888f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde45c9e2e38eea9029deaf8f87ecf9c4f78a80ead08de4d9c3f6df8af08dc8be9e0d8df9e5c0ed9a6181ebee8fc4ac7681fff8cdb2872c1f5c5a581e40/4a8c56c8c98b726f7bf20fedefef132d.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Kotlin／銀行取引アプリケーション開発",
+      "salary_max": "900000",
+      "company": "株式会社ハイウェル"
+    }
+  ],
+  "wordcloud_json": "[{\"word\": \"b\", \"count\": 332}, {\"word\": \"経験\", \"count\": 205}, {\"word\": \"開発\", \"count\": 201}, {\"word\": \"Kotlin\", \"count\": 161}, {\"word\": \"案件\", \"count\": 62}, {\"word\": \"スキル\", \"count\": 61}, {\"word\": \"業務\", \"count\": 58}, {\"word\": \"アプリ\", \"count\": 58}, {\"word\": \"言語\", \"count\": 56}, {\"word\": \"Android\", \"count\": 53}, {\"word\": \"円\", \"count\": 52}, {\"word\": \"募集\", \"count\": 50}, {\"word\": \"Java\", \"count\": 49}, {\"word\": \"歓迎\", \"count\": 43}, {\"word\": \"方\", \"count\": 40}, {\"word\": \"委託\", \"count\": 39}, {\"word\": \"000\", \"count\": 39}, {\"word\": \"リモート\", \"count\": 38}, {\"word\": \"フリーランス\", \"count\": 38}, {\"word\": \"Swift\", \"count\": 37}, {\"word\": \"勤務\", \"count\": 36}, {\"word\": \"環境\", \"count\": 35}, {\"word\": \"設計\", \"count\": 34}, {\"word\": \"必須\", \"count\": 30}, {\"word\": \"1\", \"count\": 29}, {\"word\": \"年\", \"count\": 29}, {\"word\": \"地\", \"count\": 29}, {\"word\": \"区\", \"count\": 28}, {\"word\": \"単価\", \"count\": 28}, {\"word\": \"以上\", \"count\": 26}, {\"word\": \"サービス\", \"count\": 26}, {\"word\": \"参画\", \"count\": 26}, {\"word\": \"東京\", \"count\": 24}, {\"word\": \"求人\", \"count\": 23}, {\"word\": \"即日\", \"count\": 23}, {\"word\": \"会社\", \"count\": 22}, {\"word\": \"IT\", \"count\": 22}, {\"word\": \"都\", \"count\": 21}, {\"word\": \"サーバー\", \"count\": 21}, {\"word\": \"00\", \"count\": 21}, {\"word\": \"給与\", \"count\": 21}, {\"word\": \"形態\", \"count\": 21}, {\"word\": \"期間\", \"count\": 21}, {\"word\": \"株式\", \"count\": 20}, {\"word\": \"サイド\", \"count\": 20}, {\"word\": \"雇用\", \"count\": 20}, {\"word\": \"要項\", \"count\": 20}, {\"word\": \"契約\", \"count\": 20}, {\"word\": \"精算\", \"count\": 19}, {\"word\": \"月給\", \"count\": 19}, {\"word\": \"情報\", \"count\": 19}, {\"word\": \"皆\", \"count\": 19}, {\"word\": \"委任\", \"count\": 19}, {\"word\": \"アプリケーション\", \"count\": 18}, {\"word\": \"ハイ\", \"count\": 18}, {\"word\": \"ウェル\", \"count\": 18}, {\"word\": \"2\", \"count\": 17}, {\"word\": \"時間\", \"count\": 17}, {\"word\": \"AWS\", \"count\": 17}, {\"word\": \"Web\", \"count\": 17}, {\"word\": \"5\", \"count\": 17}, {\"word\": \"システム\", \"count\": 17}, {\"word\": \"基本\", \"count\": 17}, {\"word\": \"エンジニア\", \"count\": 16}, {\"word\": \"万\", \"count\": 16}, {\"word\": \"3\", \"count\": 15}, {\"word\": \"iOS\", \"count\": 15}, {\"word\": \"チーム\", \"count\": 15}, {\"word\": \"日数\", \"count\": 15}, {\"word\": \"2022\", \"count\": 15}, {\"word\": \"h\", \"count\": 15}, {\"word\": \"詳細\", \"count\": 14}, {\"word\": \"機能\", \"count\": 14}, {\"word\": \"改善\", \"count\": 14}, {\"word\": \"ｈ\", \"count\": 14}, {\"word\": \"140\", \"count\": 13}, {\"word\": \"180\", \"count\": 13}, {\"word\": \"月\", \"count\": 12}, {\"word\": \"応募\", \"count\": 12}, {\"word\": \"内容\", \"count\": 12}, {\"word\": \"テスト\", \"count\": 12}, {\"word\": \"800\", \"count\": 12}, {\"word\": \"知識\", \"count\": 12}, {\"word\": \"600\", \"count\": 12}, {\"word\": \"31\", \"count\": 12}, {\"word\": \"フレームワーク\", \"count\": 11}, {\"word\": \"コード\", \"count\": 11}, {\"word\": \"要件\", \"count\": 11}, {\"word\": \"稼動\", \"count\": 11}, {\"word\": \"回\", \"count\": 11}, {\"word\": \"C\", \"count\": 11}, {\"word\": \"12\", \"count\": 10}, {\"word\": \"技術\", \"count\": 10}, {\"word\": \"概要\", \"count\": 10}, {\"word\": \"商談\", \"count\": 10}, {\"word\": \"渋谷\", \"count\": 10}, {\"word\": \"担当\", \"count\": 10}, {\"word\": \"Ruby\", \"count\": 9}, {\"word\": \"スマホアプリ\", \"count\": 9}, {\"word\": \"領域\", \"count\": 9}, {\"word\": \"運用\", \"count\": 9}, {\"word\": \"使用\", \"count\": 9}, {\"word\": \"定義\", \"count\": 9}, {\"word\": \"週\", \"count\": 9}, {\"word\": \"回数\", \"count\": 9}, {\"word\": \"API\", \"count\": 9}, {\"word\": \"備考\", \"count\": 9}, {\"word\": \"県\", \"count\": 9}, {\"word\": \"実務\", \"count\": 8}, {\"word\": \"相談\", \"count\": 8}, {\"word\": \"10\", \"count\": 8}, {\"word\": \"仕事\", \"count\": 8}, {\"word\": \"Flutter\", \"count\": 8}, {\"word\": \"Spring\", \"count\": 8}, {\"word\": \"利用\", \"count\": 8}, {\"word\": \"対応\", \"count\": 8}, {\"word\": \"30\", \"count\": 8}, {\"word\": \"19\", \"count\": 8}, {\"word\": \"連携\", \"count\": 8}, {\"word\": \"市\", \"count\": 8}, {\"word\": \"Studio\", \"count\": 7}, {\"word\": \"日\", \"count\": 7}, {\"word\": \"条件\", \"count\": 7}, {\"word\": \"予定\", \"count\": 7}, {\"word\": \"実施\", \"count\": 7}, {\"word\": \"可\", \"count\": 6}, {\"word\": \"駅\", \"count\": 6}, {\"word\": \"プログラミング\", \"count\": 6}, {\"word\": \"事業\", \"count\": 6}, {\"word\": \"レビュー\", \"count\": 6}, {\"word\": \"コミュニケーション\", \"count\": 6}, {\"word\": \"資格\", \"count\": 6}, {\"word\": \"想定\", \"count\": 6}, {\"word\": \"メンバー\", \"count\": 6}, {\"word\": \"ポジション\", \"count\": 6}, {\"word\": \"ため\", \"count\": 6}, {\"word\": \"CI\", \"count\": 6}, {\"word\": \"ライブラリ\", \"count\": 6}, {\"word\": \"保守\", \"count\": 6}, {\"word\": \"Git\", \"count\": 6}, {\"word\": \"用\", \"count\": 6}, {\"word\": \"追加\", \"count\": 6}, {\"word\": \"某\", \"count\": 6}, {\"word\": \"就業\", \"count\": 6}, {\"word\": \"休日\", \"count\": 5}, {\"word\": \"ブランク\", \"count\": 5}, {\"word\": \"企業\", \"count\": 5}, {\"word\": \"kotlin\", \"count\": 5}, {\"word\": \"js\", \"count\": 5}, {\"word\": \"MySQL\", \"count\": 5}, {\"word\": \"現在\", \"count\": 5}, {\"word\": \"プロジェクト\", \"count\": 5}, {\"word\": \"実装\", \"count\": 5}, {\"word\": \"Coroutine\", \"count\": 5}, {\"word\": \"港\", \"count\": 5}, {\"word\": \"クラウド\", \"count\": 5}, {\"word\": \"以下\", \"count\": 5}, {\"word\": \"リ\", \"count\": 5}, {\"word\": \"ツール\", \"count\": 5}, {\"word\": \"記事\", \"count\": 5}, {\"word\": \"他\", \"count\": 5}, {\"word\": \"作成\", \"count\": 5}, {\"word\": \"Boot\", \"count\": 5}, {\"word\": \"SQL\", \"count\": 5}, {\"word\": \"最寄\", \"count\": 5}, {\"word\": \"エンド\", \"count\": 5}, {\"word\": \"OK\", \"count\": 5}, {\"word\": \"アジャイル\", \"count\": 5}, {\"word\": \"2023\", \"count\": 5}, {\"word\": \"ワーク\", \"count\": 5}, {\"word\": \"70\", \"count\": 5}, {\"word\": \"GitHub\", \"count\": 5}, {\"word\": \"リリース\", \"count\": 5}, {\"word\": \"こと\", \"count\": 5}, {\"word\": \"データ\", \"count\": 5}, {\"word\": \"今\", \"count\": 5}, {\"word\": \"千葉\", \"count\": 5}, {\"word\": \"対象\", \"count\": 4}, {\"word\": \"時期\", \"count\": 4}, {\"word\": \"新宿\", \"count\": 4}, {\"word\": \"構築\", \"count\": 4}, {\"word\": \"価値\", \"count\": 4}, {\"word\": \"Objective\", \"count\": 4}, {\"word\": \"インフラ\", \"count\": 4}, {\"word\": \"運営\", \"count\": 4}, {\"word\": \"不問\", \"count\": 4}, {\"word\": \"ミッション\", \"count\": 4}, {\"word\": \"顧客\", \"count\": 4}, {\"word\": \"提供\", \"count\": 4}, {\"word\": \"ファクタリング\", \"count\": 4}, {\"word\": \"CD\", \"count\": 4}, {\"word\": \"バック\", \"count\": 4}, {\"word\": \"Scala\", \"count\": 4}, {\"word\": \"TypeScript\", \"count\": 4}, {\"word\": \"あり\", \"count\": 4}, {\"word\": \"長期\", \"count\": 4}, {\"word\": \"スクラム\", \"count\": 4}, {\"word\": \"GCP\", \"count\": 4}, {\"word\": \"動画\", \"count\": 4}, {\"word\": \"SDK\", \"count\": 4}, {\"word\": \"900\", \"count\": 4}, {\"word\": \"川崎\", \"count\": 4}, {\"word\": \"体制\", \"count\": 3}, {\"word\": \"名\", \"count\": 3}, {\"word\": \"出社\", \"count\": 3}, {\"word\": \"日曜\", \"count\": 3}, {\"word\": \"土曜\", \"count\": 3}, {\"word\": \"祝日\", \"count\": 3}, {\"word\": \"週休\", \"count\": 3}, {\"word\": \"土日\", \"count\": 3}, {\"word\": \"祝\", \"count\": 3}, {\"word\": \"休み\", \"count\": 3}, {\"word\": \"開始\", \"count\": 3}, {\"word\": \"分\", \"count\": 3}, {\"word\": \"工程\", \"count\": 3}, {\"word\": \"背景\", \"count\": 3}, {\"word\": \"リード\", \"count\": 3}, {\"word\": \"EC\", \"count\": 3}, {\"word\": \"年間\", \"count\": 3}, {\"word\": \"労働\", \"count\": 3}, {\"word\": \"60\", \"count\": 3}, {\"word\": \"swift\", \"count\": 3}, {\"word\": \"on\", \"count\": 3}, {\"word\": \"Rails\", \"count\": 3}, {\"word\": \"Vue\", \"count\": 3}, {\"word\": \"データベース\", \"count\": 3}, {\"word\": \"解決\", \"count\": 3}, {\"word\": \"モバイル\", \"count\": 3}, {\"word\": \"学歴\", \"count\": 3}, {\"word\": \"ゲーム\", \"count\": 3}, {\"word\": \"現場\", \"count\": 3}, {\"word\": \"Combine\", \"count\": 3}, {\"word\": \"RxJava\", \"count\": 3}, {\"word\": \"既存\", \"count\": 3}, {\"word\": \"ASP\", \"count\": 3}, {\"word\": \"プロダクト\", \"count\": 3}, {\"word\": \"問題\", \"count\": 3}, {\"word\": \"点\", \"count\": 3}, {\"word\": \"ダクト\", \"count\": 3}, {\"word\": \"品質\", \"count\": 3}, {\"word\": \"Bitrise\", \"count\": 3}, {\"word\": \"デザイン\", \"count\": 3}, {\"word\": \"Adobe\", \"count\": 3}, {\"word\": \"XD\", \"count\": 3}, {\"word\": \"受託\", \"count\": 3}, {\"word\": \"PostgreSQL\", \"count\": 3}, {\"word\": \"確認\", \"count\": 3}, {\"word\": \"75\", \"count\": 3}, {\"word\": \"Docker\", \"count\": 3}, {\"word\": \"SpringBoot\", \"count\": 3}, {\"word\": \"ビジネス\", \"count\": 3}, {\"word\": \"06\", \"count\": 3}, {\"word\": \"規模\", \"count\": 3}, {\"word\": \"以降\", \"count\": 3}, {\"word\": \"能力\", \"count\": 3}, {\"word\": \"服装\", \"count\": 3}, {\"word\": \"or\", \"count\": 3}, {\"word\": \"Jetpack\", \"count\": 3}, {\"word\": \"ユーザー\", \"count\": 3}, {\"word\": \"大手\", \"count\": 3}, {\"word\": \"アップ\", \"count\": 3}, {\"word\": \"SaaS\", \"count\": 3}, {\"word\": \"チケット\", \"count\": 3}, {\"word\": \"自社\", \"count\": 3}, {\"word\": \"支援\", \"count\": 3}, {\"word\": \"配信\", \"count\": 3}, {\"word\": \"レス\", \"count\": 3}, {\"word\": \"バージョン\", \"count\": 3}, {\"word\": \"管理\", \"count\": 3}, {\"word\": \"仕様\", \"count\": 3}, {\"word\": \"11\", \"count\": 3}, {\"word\": \"リモ\", \"count\": 3}, {\"word\": \"Slack\", \"count\": 3}, {\"word\": \"再生\", \"count\": 3}, {\"word\": \"面談\", \"count\": 3}, {\"word\": \"導入\", \"count\": 3}, {\"word\": \"フォン\", \"count\": 3}, {\"word\": \"登録\", \"count\": 3}, {\"word\": \"850\", \"count\": 3}, {\"word\": \"Xcode\", \"count\": 2}, {\"word\": \"前後\", \"count\": 2}, {\"word\": \"ウォーター\", \"count\": 2}, {\"word\": \"フォール\", \"count\": 2}, {\"word\": \"モデル\", \"count\": 2}, {\"word\": \"前\", \"count\": 2}, {\"word\": \"NOIN\", \"count\": 2}, {\"word\": \"テック\", \"count\": 2}, {\"word\": \"具体\", \"count\": 2}, {\"word\": \"企画\", \"count\": 2}, {\"word\": \"フェーズ\", \"count\": 2}, {\"word\": \"市場\", \"count\": 2}, {\"word\": \"スタートアップ\", \"count\": 2}, {\"word\": \"副業\", \"count\": 2}, {\"word\": \"Javascript\", \"count\": 2}, {\"word\": \"java\", \"count\": 2}, {\"word\": \"FuelPHP\", \"count\": 2}, {\"word\": \"Vagrant\", \"count\": 2}, {\"word\": \"Chef\", \"count\": 2}, {\"word\": \"職場\", \"count\": 2}, {\"word\": \"オフィス\", \"count\": 2}, {\"word\": \"課題\", \"count\": 2}, {\"word\": \"自身\", \"count\": 2}, {\"word\": \"セブ\", \"count\": 2}, {\"word\": \"拠点\", \"count\": 2}, {\"word\": \"社内\", \"count\": 2}, {\"word\": \"同社\", \"count\": 2}, {\"word\": \"SwiftUI\", \"count\": 2}, {\"word\": \"Alamofire\", \"count\": 2}, {\"word\": \"RxSwift\", \"count\": 2}, {\"word\": \"RxKotlin\", \"count\": 2}, {\"word\": \"Dagger\", \"count\": 2}, {\"word\": \"Okhttp\", \"count\": 2}, {\"word\": \"ネイティブ\", \"count\": 2}, {\"word\": \"転職\", \"count\": 2}, {\"word\": \"エージェント\", \"count\": 2}, {\"word\": \"年収\", \"count\": 2}, {\"word\": \"職種\", \"count\": 2}, {\"word\": \"会計\", \"count\": 2}, {\"word\": \"ドロス\", \"count\": 2}, {\"word\": \"社会\", \"count\": 2}, {\"word\": \"貢献\", \"count\": 2}, {\"word\": \"すべて\", \"count\": 2}, {\"word\": \"客\", \"count\": 2}, {\"word\": \"最高\", \"count\": 2}, {\"word\": \"体験\", \"count\": 2}, {\"word\": \"重点\", \"count\": 2}, {\"word\": \"UIUX\", \"count\": 2}, {\"word\": \"継続\", \"count\": 2}, {\"word\": \"向上\", \"count\": 2}, {\"word\": \"負債\", \"count\": 2}, {\"word\": \"返済\", \"count\": 2}, {\"word\": \"適用\", \"count\": 2}, {\"word\": \"MVP\", \"count\": 2}, {\"word\": \"Jenkins\", \"count\": 2}, {\"word\": \"サイト\", \"count\": 2}, {\"word\": \"程度\", \"count\": 2}, {\"word\": \"レベル\", \"count\": 2}, {\"word\": \"一般\", \"count\": 2}, {\"word\": \"関係\", \"count\": 2}, {\"word\": \"IDE\", \"count\": 2}, {\"word\": \"オブジェクト\", \"count\": 2}, {\"word\": \"指向\", \"count\": 2}, {\"word\": \"DB\", \"count\": 2}, {\"word\": \"JUnit\", \"count\": 2}, {\"word\": \"自動\", \"count\": 2}, {\"word\": \"上記\", \"count\": 2}, {\"word\": \"Python\", \"count\": 2}, {\"word\": \"上流\", \"count\": 2}, {\"word\": \"B\", \"count\": 2}, {\"word\": \"ランク\", \"count\": 2}, {\"word\": \"原則\", \"count\": 2}, {\"word\": \"稼働\", \"count\": 2}, {\"word\": \"ンバー\", \"count\": 2}, {\"word\": \"03\", \"count\": 2}, {\"word\": \"スマ\", \"count\": 2}, {\"word\": \"Commerce\", \"count\": 2}, {\"word\": \"Cloud\", \"count\": 2}, {\"word\": \"Heroku\", \"count\": 2}, {\"word\": \"JavaScript\", \"count\": 2}, {\"word\": \"Node\", \"count\": 2}, {\"word\": \"自由\", \"count\": 2}, {\"word\": \"02\", \"count\": 2}, {\"word\": \"28\", \"count\": 2}, {\"word\": \"理解\", \"count\": 2}, {\"word\": \"パフォーマンス\", \"count\": 2}, {\"word\": \"状況\", \"count\": 2}, {\"word\": \"80\", \"count\": 2}, {\"word\": \"品川\", \"count\": 2}, {\"word\": \"ドメイン\", \"count\": 2}, {\"word\": \"作業\", \"count\": 2}, {\"word\": \"目安\", \"count\": 2}, {\"word\": \"デバイス\", \"count\": 2}, {\"word\": \"90\", \"count\": 2}, {\"word\": \"提案\", \"count\": 2}, {\"word\": \"Architecture\", \"count\": 2}, {\"word\": \"検討\", \"count\": 2}, {\"word\": \"キャッチ\", \"count\": 2}, {\"word\": \"スパン\", \"count\": 2}, {\"word\": \"拡張\", \"count\": 2}, {\"word\": \"JIRA\", \"count\": 2}, {\"word\": \"50\", \"count\": 2}, {\"word\": \"Linux\", \"count\": 2}, {\"word\": \"09\", \"count\": 2}, {\"word\": \"65\", \"count\": 2}, {\"word\": \"9\", \"count\": 2}, {\"word\": \"18\", \"count\": 2}, {\"word\": \"RDBMS\", \"count\": 2}, {\"word\": \"金融\", \"count\": 2}, {\"word\": \"中心\", \"count\": 2}, {\"word\": \"内製\", \"count\": 2}, {\"word\": \"グロース\", \"count\": 2}, {\"word\": \"知見\", \"count\": 2}, {\"word\": \"アジ\", \"count\": 2}, {\"word\": \"リーダー\", \"count\": 2}, {\"word\": \"Component\", \"count\": 2}, {\"word\": \"初日\", \"count\": 2}, {\"word\": \"上\", \"count\": 2}, {\"word\": \"イン\", \"count\": 2}, {\"word\": \"改修\", \"count\": 2}, {\"word\": \"React\", \"count\": 2}, {\"word\": \"通知\", \"count\": 2}, {\"word\": \"比較\", \"count\": 2}, {\"word\": \"IoT\", \"count\": 2}, {\"word\": \"NET\", \"count\": 2}, {\"word\": \"WEB\", \"count\": 2}, {\"word\": \"電話\", \"count\": 2}, {\"word\": \"来社\", \"count\": 2}, {\"word\": \"神奈川\", \"count\": 2}, {\"word\": \"横浜\", \"count\": 2}, {\"word\": \"プレイ\", \"count\": 2}, {\"word\": \"入社\", \"count\": 2}, {\"word\": \"直後\", \"count\": 2}, {\"word\": \"付与\", \"count\": 2}, {\"word\": \"125\", \"count\": 2}, {\"word\": \"フリ\", \"count\": 2}, {\"word\": \"ランス\", \"count\": 2}, {\"word\": \"BtoB\", \"count\": 2}, {\"word\": \"特化\", \"count\": 2}, {\"word\": \"ノー\", \"count\": 2}, {\"word\": \"中央\", \"count\": 2}, {\"word\": \"PHP\", \"count\": 2}, {\"word\": \"神奈\", \"count\": 2}, {\"word\": \"川\", \"count\": 2}, {\"word\": \"薬局\", \"count\": 2}, {\"word\": \"200\", \"count\": 2}]",
+  "title": "Kotlin 「年収/採用企業」 フレームワークの転職評価 FlameValue",
+  "description": "Kotlinはすごいです。",
+  "comments": [],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Commons-logo.svg",
+  "wikipedia_related": [
+    {
+      "basic": {
+        "money": 443,
+        "overtime": 599,
+        "age": 30,
+        "size": 599,
+        "count": 39473
+      },
+      "name": "Python",
+      "stars": "★★☆☆☆",
+      "total_score": 2.84
+    },
+    {
+      "basic": {
+        "money": 564,
+        "overtime": 730,
+        "age": 30,
+        "size": 730,
+        "count": 20358
+      },
+      "name": "Ruby",
+      "stars": "★★★☆☆",
+      "total_score": 3.27
+    },
+    {
+      "basic": {
+        "money": 601,
+        "overtime": 881,
+        "age": 30,
+        "size": 881,
+        "count": 2464
+      },
+      "name": "Scala",
+      "stars": "★★★☆☆",
+      "total_score": 3.63
+    },
+    {
+      "basic": {
+        "money": 607,
+        "overtime": 745,
+        "age": 30,
+        "size": 745,
+        "count": 14555
+      },
+      "name": "TypeScript",
+      "stars": "★★★☆☆",
+      "total_score": 3.36
+    }
+  ]
+}

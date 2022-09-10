@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #'sslserver',
-    "jobstatic",
+    "flamevalue",
     'django_extensions',
     "short_tips",
     'django_hosts',    # ←追加する

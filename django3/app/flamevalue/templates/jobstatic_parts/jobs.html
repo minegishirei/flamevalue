@@ -1,0 +1,104 @@
+<div class="col-md-8 col-sm-12 ">
+    <div class="x_panel tile">
+        <div class="x_title">
+            <h2>求人票一覧</h2>
+            <ul class="nav navbar-right panel_toolbox">
+                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i
+                            class="fa fa-wrench"></i></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Settings 1</a>
+                        <a class="dropdown-item" href="#">Settings 2</a>
+                    </div>
+                </li>
+                <li><a class="close-link"><i class="fa fa-close"></i></a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <ul class="list-unstyled top_profiles scroll-view">
+
+
+            {% for job in jobs %}
+            <a href="{{ job.url }}">
+                <li class="media event">
+                    <a class="pull-left border-aero profile_thumb">
+                        <i class="fa fa-user aero"></i>
+                    </a>
+                    <div class="media-body">
+                        <a class="title" href="{{ job.url }}">{{ job.company }}</a>
+                        <p>給与 <strong>{{ job.salary }} </strong> </p>
+                        <p>{{ job.title }}</p>
+                        <p> <small>{{ job.date }}</small>
+                        </p>
+                    </div>
+                </li>
+            </a>
+            {% endfor %}
+
+            <!--
+                {'company': 'ヒューマンリソシア株式会社',
+           'date': 'Tue, 06 Sep 2022 22:59:05 GMT',
+           'description': '会話レベル  日本語レベル 日常会話レベル  最終学歴 大学卒： 学士号  現在のビザ '
+                          '日本での就労許可は必要ありません   スキル・資格   【Qualifications】  '
+                          '・Experience in <b>Python</b>  ・Knowledge...',
+           'locations': 'Japan',
+           'salary': '3000000 - 3500000 per year',
+           'salary_currency_code': 'JPY',
+           'salary_max': '3500000',
+           'salary_min': '3000000',
+           'salary_type': 'Y',
+           'site': '',
+           'title': 'AI /Data Scientist Using Python ★New Graduates WELCOME',
+           'url': 'http://jobviewtrack.com/en-gb/job-1b12417d5410070149766e061f632a06114175505a431818/a595677fc5a3514f50d537a56989df4a.html?affid=2fe9505824da669b63789f957def6e26'},
+          
+            -->
+            <li class="media event">
+                <a class="pull-left border-green profile_thumb" href="">
+                    <i class="fa fa-user green"></i>
+                </a>
+                <div class="media-body">
+                    <a class="title" href="#">Ms. Mary Jane</a>
+                    <p><strong>$2300. </strong> Agent Avarage Sales </p>
+                    <p> <small>12 Sales Today</small>
+                    </p>
+                </div>
+            </li>
+            <li class="media event">
+                <a class="pull-left border-blue profile_thumb">
+                    <i class="fa fa-user blue"></i>
+                </a>
+                <div class="media-body">
+                    <a class="title" href="#">Ms. Mary Jane</a>
+                    <p><strong>$2300. </strong> Agent Avarage Sales </p>
+                    <p> <small>12 Sales Today</small>
+                    </p>
+                </div>
+            </li>
+            <li class="media event">
+                <a class="pull-left border-aero profile_thumb">
+                    <i class="fa fa-user aero"></i>
+                </a>
+                <div class="media-body">
+                    <a class="title" href="#">Ms. Mary Jane</a>
+                    <p><strong>$2300. </strong> Agent Avarage Sales </p>
+                    <p> <small>12 Sales Today</small>
+                    </p>
+                </div>
+            </li>
+            <li class="media event">
+                <a class="pull-left border-green profile_thumb">
+                    <i class="fa fa-user green"></i>
+                </a>
+                <div class="media-body">
+                    <a class="title" href="#">Ms. Mary Jane</a>
+                    <p><strong>$2300. </strong> Agent Avarage Sales </p>
+                    <p> <small>12 Sales Today</small>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
