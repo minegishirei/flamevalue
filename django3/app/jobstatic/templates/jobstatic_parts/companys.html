@@ -19,58 +19,31 @@
             <div class="clearfix"></div>
         </div>
 
-        <a href="#">
-            <div class="mail_list">
-                <div class="left">
-                    <i class="fa fa-circle"></i> <i class="fa fa-edit"></i>
+        <div class="outside">
+            {% for job in jobs %}
+            {% if job.company %}
+            <a href="{{ job.url }}">
+                <div class="mail_list">
+                    <div class="left">
+                        <i class="fa fa-circle"></i> <i class="fa fa-edit"></i>
+                    </div>
+                    <div class="right">
+                        <h3>{{ job.company }}</h3>
+                        <p>
+                            {{ job.salary }}
+                        </p>
+                    </div>
                 </div>
-                <div class="right">
-                    <h3>株式会社パーソルキャリア ：800万円</h3>
-                    <p>
-                        300人
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="mail_list">
-                <div class="left">
-                    <i class="fa fa-circle"></i> <i class="fa fa-edit"></i>
-                </div>
-                <div class="right">
-                    <h3>株式会社クイック ：800万円</h3>
-                    <p>
-                        300人
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="mail_list">
-                <div class="left">
-                    <i class="fa fa-circle"></i> <i class="fa fa-edit"></i>
-                </div>
-                <div class="right">
-                    <h3>インテージテクノスフィア ：800万円</h3>
-                    <p>
-                        300人
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="mail_list">
-                <div class="left">
-                    <i class="fa fa-circle"></i> <i class="fa fa-edit"></i>
-                </div>
-                <div class="right">
-                    <h3>Yahoo株式会社 ：800万円</h3>
-                    <p>
-                        300人
-                    </p>
-                </div>
-            </div>
-        </a>
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <style>
+            .outside {
+                height: 360px;
+                overflow-y: scroll;
+            }
+        </style>
 
 
         <!--

@@ -17,19 +17,22 @@
 
   <div class="row">
     {% include 'jobstatic_parts/scores.html' %}
-    {% include 'jobstatic_parts/comments.html' %}
+    {% include "jobstatic_parts/companys.html" %}
   </div>
   <br />
 
   <div class="row">
     {% include "jobstatic_parts/line_graph.html" %}
-    {% include "jobstatic_parts/companys.html" %}
+    {% include "jobstatic_parts/others.html" %}
   </div>
 
   <div class="row">
+    {% include "jobstatic_parts/wordcloud.html" %}
+
     {% include "jobstatic_parts/jobs.html" %}
-    {% include "jobstatic_parts/others.html" %}
+    {% include 'jobstatic_parts/comments.html' %}
   </div>
+
 
 
 </div>
@@ -44,6 +47,7 @@
       background-color: #f8f9fa;
       padding-left: 15%;
       padding-right:  15%;
+      max-width: 1500px;
     }
   }
 </style>

@@ -5,7 +5,7 @@ import json
 import sys
 if '/God' not in sys.path:
     sys.path.append('/God')
-
+from .my_mecab import getMeishiList
 
 
 from functools import reduce
@@ -100,37 +100,24 @@ def scoring_cuury(score):
         return {key: score(key, value) for key, value in basic_dict.items()}
     return inside_cuury
 
-def score(key,value):
-    max_score = 5
-    # TODO:外に出してもいい
-    max_values = {
-        "money" : 700,
-        "overtime" : 1000,
-        "age" : 30,
-        "count" : 10000,
-        "size" : 1000
-    }
-    result =  (value/max_values[key])*max_score 
-    if result > max_score:
-        return max_score
-    else:
-        return result
+def score_currey(max_score, max_values):
+    def score(key,value):
+        result =  (value/max_values[key])*max_score 
+        if result > max_score:
+            return max_score
+        else:
+            return result
+    return score
 
-def score_100(key,value):
-    max_score = 100
-    # TODO:外に出してもいい
-    max_values = {
-        "money" : 700,
-        "overtime" : 1000,
-        "age" : 30,
-        "count" : 10000,
-        "size" : 1000
-    }
-    result =  (value/max_values[key])*max_score 
-    if result > max_score:
-        return max_score
-    else:
-        return result
+max_values = {
+    "money" : 700,
+    "overtime" : 1000,
+    "age" : 30,
+    "count" : 10000,
+    "size" : 1000
+}
+score       = score_currey(5, max_values)
+score_100   = score_currey(100, max_values)
 
 scoring = scoring_cuury(score)
 scoring_100 = scoring_cuury(score_100)
@@ -143,7 +130,7 @@ def TEST_scoring():
 
 def split_timetable(origin):
     sorted_origin = sorted(origin, key=lambda row:datetime.datetime.strptime(row["日付"], '%Y-%m-%d'))
-    date_list = [datetime.datetime.now() + datetime.timedelta(days=i) for i in range(0,-30,-3)]
+    date_list = [datetime.datetime.now() + datetime.timedelta(days=i) for i in range(-3,-33,-3)]
     return_timetable = [{ "date": i.strftime("%Y-%m-%d"), "origin":[]} for i in date_list]
     for i_job in sorted_origin:
         for i, i_date in enumerate(date_list):
@@ -196,28 +183,15 @@ def index(request, htmlname):
         "score_graph" : [ {row["date"]: scoring(basic(row["origin"]))} for row in split_timetable(origin) ],
         "score_graph_json" : json.dumps([ {"date": row["date"], "values" : scoring(basic(row["origin"]))} for row in split_timetable(origin) ]),
         "money_sorted" : sorted(origin, key=lambda row:row["年収"]),
-        "jobs" : clear_jnet(jobs)
-    })
-    data_param.update({
-        "comments" : [
-            "swiftはiosのアプリケーションを動かせるプログラミング言語だ。 androidではkotlinを扱うが、iosではswiftを使って記述する。。",
-            "国内のswift求人は上昇傾向ではあり、収入も他言語と比べて高い。",
-            "しかしながらswiftはバージョンアップの頻度が高く、全方互換性を保てない点がネックだ。"
-        ]
-    })
-    data_param.update({
-        "others" : [
-            {},
-            {},
-            {},
-        ]
+        "jobs" : clear_jnet(jobs),
+        "min_salary" : sorted( clear_jnet(jobs), key=lambda row:row["salary_min"]),
+        "wordcloud_json" : json.dumps( getMeishiList("。".join([row["description"] for row in jobs])), ensure_ascii=False )
     })
     html_param = {
         "title" : f"{name}の年収はいくら！？",
-        "description" : "~~~~~"
+        "description" : f"{name}はすごいです。"
     }
     wikipedia_param = get_wiki_explain(name)
-
     
     param = {}
     param.update(data_param)
@@ -235,7 +209,7 @@ def get_wiki_explain(name):
         "explain" : "。".join(page.summary.split("。")[:4]),
         "comments" : (page.summary.split("。")[4:7]),
         "image" : page.images[0]
-    } 
+    }
 
 """yahoo
 

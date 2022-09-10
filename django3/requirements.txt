@@ -17,3 +17,5 @@ googletrans
 goolabs
 wikipedia
 careerjet_api
+mecab-python3
+unidic-lite

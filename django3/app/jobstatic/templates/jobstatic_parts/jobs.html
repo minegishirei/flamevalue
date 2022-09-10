@@ -22,18 +22,20 @@
 
 
             {% for job in jobs %}
-            <li class="media event">
-                <a class="pull-left border-aero profile_thumb" href="{{ job.url }}">
-                    <i class="fa fa-user aero"></i>
-                </a>
-                <div class="media-body">
-                    <a class="title" href="{{ job.url }}" >{{ job.company }}</a>
-                    <p>給与 <strong>{{ job.salary }} </strong>  </p>
-                    <p>{{ job.title }}</p>
-                    <p> <small>{{ job.date }}</small>
-                    </p>
-                </div>
-            </li>
+            <a href="{{ job.url }}">
+                <li class="media event">
+                    <a class="pull-left border-aero profile_thumb">
+                        <i class="fa fa-user aero"></i>
+                    </a>
+                    <div class="media-body">
+                        <a class="title" href="{{ job.url }}">{{ job.company }}</a>
+                        <p>給与 <strong>{{ job.salary }} </strong> </p>
+                        <p>{{ job.title }}</p>
+                        <p> <small>{{ job.date }}</small>
+                        </p>
+                    </div>
+                </li>
+            </a>
             {% endfor %}
 
             <!--
