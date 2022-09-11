@@ -119,7 +119,7 @@ def score_currey(max_score, max_values):
 max_values = {
     "money" : 700,
     "overtime" : 1000,
-    "age" : 30,
+    "age" : 60,
     "count" : 10000,
     "size" : 1000
 }
@@ -174,16 +174,17 @@ def build_param(name):
     jobs = origin["jobs"]
     hits = origin["hits"]
     origin = row_converter(clear_jnet(jobs))
-    total_score = round( sum(scoring(basic(origin)).values())/len(scoring(basic(origin))), 2)
+    basic_info = basic(origin)
+    basic_info.update({
+        "count" : hits
+    })
+    total_score = round( sum(scoring(basic_info).values())/len(scoring(basic_info)), 2)
     total_score_int = int(round(total_score) )
     data_param = {
         "name" : name,
         "explain" : "Django（ジャンゴ）は、Pythonで実装されたWebアプリケーションフレームワーク"
     }
-    basic_info = basic(origin)
-    basic_info.update({
-        "count" : hits
-    })
+
     wordcount_list =  getMeishiList("。".join([row["description"] for row in jobs]))
     data_param.update({
         "total_score" :  total_score,
