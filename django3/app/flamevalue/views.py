@@ -175,7 +175,7 @@ def build_param(name):
     hits = origin["hits"]
     origin = row_converter(clear_jnet(jobs))
     total_score = round( sum(scoring(basic(origin)).values())/len(scoring(basic(origin))), 2)
-    total_score_int = int(total_score)
+    total_score_int = int(round(total_score) )
     data_param = {
         "name" : name,
         "explain" : "Django（ジャンゴ）は、Pythonで実装されたWebアプリケーションフレームワーク"
