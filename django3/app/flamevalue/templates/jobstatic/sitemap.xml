@@ -5,7 +5,7 @@
     </url>
     {% for page in pop_page_list %}
     <url>
-        <loc>https://flamevalue.short-tips.info/{{ page.name }}.json</loc>
+        <loc>https://flamevalue.short-tips.info/{{ page.name }}</loc>
     </url>
     {% endfor %}
 </urlset>
