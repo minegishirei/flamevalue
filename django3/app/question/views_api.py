@@ -60,7 +60,7 @@ FILE_FONT = '/app/question/NotoSansJP-Light.otf'
 
 def make_ogp(text):
     # テキストを必要に応じて折り返す
-    text = insert_return(text)
+    text = insert_return_v2(text)
     
     im = Image.open('/app/question/console2.png')
     # イメージデータを初期化
@@ -101,6 +101,10 @@ def insert_return(text, max_width=50):
     return new_string
 
 
+# 文字を折り返すメソッド
+# もっといい方法考えるべきだが、今回はざっくりと10文字ごとに折り返す
+def insert_return_v2(text, max_width=50):
+    return "\n".join(text.split("..."))
 
 # API
 def ogp(request):

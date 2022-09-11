@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% for page in pop_page_list %}
-<url>
-<loc>https://flamevalue.short-tips.info/{{ page.name }}.json</loc>
-</url>{% endfor %}
+    <url>
+        <loc>https://flamevalue.short-tips.info/</loc>
+    </url>
+    {% for page in pop_page_list %}
+    <url>
+        <loc>https://flamevalue.short-tips.info/{{ page.name }}.json</loc>
+    </url>
+    {% endfor %}
 </urlset>

@@ -1,0 +1,1601 @@
+{
+  "name": "Django",
+  "explain": "Django（ジャンゴ）は、Pythonで実装されたWebアプリケーションフレームワーク。MVCデザインパターンに緩やかに従う。もともとはアメリカ合衆国カンザス州ローレンスにあるWorld Companyのために、ニュース系のサイトを管理する目的で開発され、2005年7月にBSD Licenseで公式にリリースされた。フレームワークはジプシー・スウィングのギタリストであるジャンゴ・ラインハルトにちなんで命名された",
+  "total_score": 3.12,
+  "stars": "★★★☆☆",
+  "icons": "...png",
+  "basic": {
+    "money": 515,
+    "overtime": 691,
+    "age": 30,
+    "size": 691,
+    "count": 3007
+  },
+  "score": {
+    "money": 3.678571428571429,
+    "overtime": 3.4549999999999996,
+    "age": 5.0,
+    "size": 3.4549999999999996,
+    "count": 1.5035
+  },
+  "score_100": {
+    "money": 73.57142857142858,
+    "overtime": 69.1,
+    "age": 100.0,
+    "size": 69.1,
+    "count": 30.070000000000004
+  },
+  "basic_graph": [
+    {
+      "2022-07-15": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-18": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-21": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-24": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-27": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-07-30": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-02": {
+        "money": 712,
+        "overtime": 832,
+        "age": 30,
+        "size": 832,
+        "count": 3
+      }
+    },
+    {
+      "2022-08-05": {
+        "money": 684,
+        "overtime": 834,
+        "age": 30,
+        "size": 834,
+        "count": 4
+      }
+    },
+    {
+      "2022-08-08": {
+        "money": 672,
+        "overtime": 792,
+        "age": 30,
+        "size": 792,
+        "count": 3
+      }
+    },
+    {
+      "2022-08-11": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-14": {
+        "money": 660,
+        "overtime": 780,
+        "age": 30,
+        "size": 780,
+        "count": 1
+      }
+    },
+    {
+      "2022-08-17": {
+        "money": 660,
+        "overtime": 780,
+        "age": 30,
+        "size": 780,
+        "count": 1
+      }
+    },
+    {
+      "2022-08-20": {
+        "money": 106,
+        "overtime": 106,
+        "age": 30,
+        "size": 106,
+        "count": 1
+      }
+    },
+    {
+      "2022-08-23": {
+        "money": 106,
+        "overtime": 106,
+        "age": 30,
+        "size": 106,
+        "count": 1
+      }
+    },
+    {
+      "2022-08-26": {
+        "money": 0,
+        "overtime": 0,
+        "age": 0,
+        "count": 0,
+        "size": 0
+      }
+    },
+    {
+      "2022-08-29": {
+        "money": 660,
+        "overtime": 893,
+        "age": 30,
+        "size": 893,
+        "count": 9
+      }
+    },
+    {
+      "2022-09-01": {
+        "money": 633,
+        "overtime": 834,
+        "age": 30,
+        "size": 834,
+        "count": 12
+      }
+    },
+    {
+      "2022-09-04": {
+        "money": 391,
+        "overtime": 565,
+        "age": 30,
+        "size": 565,
+        "count": 16
+      }
+    },
+    {
+      "2022-09-07": {
+        "money": 354,
+        "overtime": 543,
+        "age": 30,
+        "size": 543,
+        "count": 13
+      }
+    }
+  ],
+  "score_graph": [
+    {
+      "2022-07-15": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-18": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-21": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-24": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-27": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-07-30": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-02": {
+        "money": 5,
+        "overtime": 4.16,
+        "age": 5.0,
+        "size": 4.16,
+        "count": 0.0014999999999999998
+      }
+    },
+    {
+      "2022-08-05": {
+        "money": 4.885714285714285,
+        "overtime": 4.17,
+        "age": 5.0,
+        "size": 4.17,
+        "count": 0.002
+      }
+    },
+    {
+      "2022-08-08": {
+        "money": 4.8,
+        "overtime": 3.96,
+        "age": 5.0,
+        "size": 3.96,
+        "count": 0.0014999999999999998
+      }
+    },
+    {
+      "2022-08-11": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-14": {
+        "money": 4.714285714285714,
+        "overtime": 3.9000000000000004,
+        "age": 5.0,
+        "size": 3.9000000000000004,
+        "count": 0.0005
+      }
+    },
+    {
+      "2022-08-17": {
+        "money": 4.714285714285714,
+        "overtime": 3.9000000000000004,
+        "age": 5.0,
+        "size": 3.9000000000000004,
+        "count": 0.0005
+      }
+    },
+    {
+      "2022-08-20": {
+        "money": 0.7571428571428572,
+        "overtime": 0.53,
+        "age": 5.0,
+        "size": 0.53,
+        "count": 0.0005
+      }
+    },
+    {
+      "2022-08-23": {
+        "money": 0.7571428571428572,
+        "overtime": 0.53,
+        "age": 5.0,
+        "size": 0.53,
+        "count": 0.0005
+      }
+    },
+    {
+      "2022-08-26": {
+        "money": 0.0,
+        "overtime": 0.0,
+        "age": 0.0,
+        "count": 0.0,
+        "size": 0.0
+      }
+    },
+    {
+      "2022-08-29": {
+        "money": 4.714285714285714,
+        "overtime": 4.465,
+        "age": 5.0,
+        "size": 4.465,
+        "count": 0.0045
+      }
+    },
+    {
+      "2022-09-01": {
+        "money": 4.521428571428571,
+        "overtime": 4.17,
+        "age": 5.0,
+        "size": 4.17,
+        "count": 0.005999999999999999
+      }
+    },
+    {
+      "2022-09-04": {
+        "money": 2.792857142857143,
+        "overtime": 2.8249999999999997,
+        "age": 5.0,
+        "size": 2.8249999999999997,
+        "count": 0.008
+      }
+    },
+    {
+      "2022-09-07": {
+        "money": 2.5285714285714285,
+        "overtime": 2.7150000000000003,
+        "age": 5.0,
+        "size": 2.7150000000000003,
+        "count": 0.0065
+      }
+    }
+  ],
+  "score_graph_json": "[{\"date\": \"2022-07-15\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-18\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-21\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-24\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-27\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-07-30\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-02\", \"values\": {\"money\": 5, \"overtime\": 4.16, \"age\": 5.0, \"size\": 4.16, \"count\": 0.0014999999999999998}}, {\"date\": \"2022-08-05\", \"values\": {\"money\": 4.885714285714285, \"overtime\": 4.17, \"age\": 5.0, \"size\": 4.17, \"count\": 0.002}}, {\"date\": \"2022-08-08\", \"values\": {\"money\": 4.8, \"overtime\": 3.96, \"age\": 5.0, \"size\": 3.96, \"count\": 0.0014999999999999998}}, {\"date\": \"2022-08-11\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-14\", \"values\": {\"money\": 4.714285714285714, \"overtime\": 3.9000000000000004, \"age\": 5.0, \"size\": 3.9000000000000004, \"count\": 0.0005}}, {\"date\": \"2022-08-17\", \"values\": {\"money\": 4.714285714285714, \"overtime\": 3.9000000000000004, \"age\": 5.0, \"size\": 3.9000000000000004, \"count\": 0.0005}}, {\"date\": \"2022-08-20\", \"values\": {\"money\": 0.7571428571428572, \"overtime\": 0.53, \"age\": 5.0, \"size\": 0.53, \"count\": 0.0005}}, {\"date\": \"2022-08-23\", \"values\": {\"money\": 0.7571428571428572, \"overtime\": 0.53, \"age\": 5.0, \"size\": 0.53, \"count\": 0.0005}}, {\"date\": \"2022-08-26\", \"values\": {\"money\": 0.0, \"overtime\": 0.0, \"age\": 0.0, \"count\": 0.0, \"size\": 0.0}}, {\"date\": \"2022-08-29\", \"values\": {\"money\": 4.714285714285714, \"overtime\": 4.465, \"age\": 5.0, \"size\": 4.465, \"count\": 0.0045}}, {\"date\": \"2022-09-01\", \"values\": {\"money\": 4.521428571428571, \"overtime\": 4.17, \"age\": 5.0, \"size\": 4.17, \"count\": 0.005999999999999999}}, {\"date\": \"2022-09-04\", \"values\": {\"money\": 2.792857142857143, \"overtime\": 2.8249999999999997, \"age\": 5.0, \"size\": 2.8249999999999997, \"count\": 0.008}}, {\"date\": \"2022-09-07\", \"values\": {\"money\": 2.5285714285714285, \"overtime\": 2.7150000000000003, \"age\": 5.0, \"size\": 2.7150000000000003, \"count\": 0.0065}}]",
+  "money_sorted": [
+    {
+      "会社名": "DJANGO BANQUET",
+      "規模": 106,
+      "年収": 106,
+      "残業時間": 106,
+      "年齢": 30,
+      "日付": "2022-08-26"
+    },
+    {
+      "会社名": "ダイアモンドヘッド株式会社",
+      "規模": 122,
+      "年収": 122,
+      "残業時間": 122,
+      "年齢": 30,
+      "日付": "2022-09-09"
+    },
+    {
+      "会社名": "株式会社アソウ・ヒューマニーセンター",
+      "規模": 200,
+      "年収": 200,
+      "残業時間": 200,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "",
+      "規模": 333,
+      "年収": 333,
+      "残業時間": 333,
+      "年齢": 30,
+      "日付": "2022-09-06"
+    },
+    {
+      "会社名": "",
+      "規模": 400,
+      "年収": 350,
+      "残業時間": 400,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "",
+      "規模": 400,
+      "年収": 350,
+      "残業時間": 400,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "株式会社リーディング・エッジ社",
+      "規模": 672,
+      "年収": 360,
+      "残業時間": 672,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "株式会社リーディング・エッジ社",
+      "規模": 672,
+      "年収": 360,
+      "残業時間": 672,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "株式会社リーディング・エッジ社",
+      "規模": 672,
+      "年収": 360,
+      "残業時間": 672,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "株式会社リーディング・エッジ社",
+      "規模": 672,
+      "年収": 360,
+      "残業時間": 672,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "株式会社リーディング・エッジ社",
+      "規模": 360,
+      "年収": 360,
+      "残業時間": 360,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "株式会社リーディング・エッジ社",
+      "規模": 672,
+      "年収": 360,
+      "残業時間": 672,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "株式会社リーディング・エッジ社",
+      "規模": 672,
+      "年収": 360,
+      "残業時間": 672,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "",
+      "規模": 700,
+      "年収": 504,
+      "残業時間": 700,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 780,
+      "年収": 540,
+      "残業時間": 780,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "",
+      "規模": 850,
+      "年収": 550,
+      "残業時間": 850,
+      "年齢": 30,
+      "日付": "2022-09-10"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 840,
+      "年収": 600,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 900,
+      "年収": 600,
+      "残業時間": 900,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "バリューアークコンサルティング株式会社",
+      "規模": 840,
+      "年収": 600,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-08-11"
+    },
+    {
+      "会社名": "リードプラス株式会社",
+      "規模": 800,
+      "年収": 600,
+      "残業時間": 800,
+      "年齢": 30,
+      "日付": "2022-09-06"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 900,
+      "年収": 660,
+      "残業時間": 900,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 900,
+      "年収": 660,
+      "残業時間": 900,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 840,
+      "年収": 660,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 900,
+      "年収": 660,
+      "残業時間": 900,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "バリューアークコンサルティング株式会社",
+      "規模": 780,
+      "年収": 660,
+      "残業時間": 780,
+      "年齢": 30,
+      "日付": "2022-08-19"
+    },
+    {
+      "会社名": "Cosmostork Co., Ltd.",
+      "規模": 720,
+      "年収": 660,
+      "残業時間": 720,
+      "年齢": 30,
+      "日付": "2022-08-09"
+    },
+    {
+      "会社名": "",
+      "規模": 840,
+      "年収": 720,
+      "残業時間": 840,
+      "年齢": 30,
+      "日付": "2022-09-07"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 960,
+      "年収": 720,
+      "残業時間": 960,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    },
+    {
+      "会社名": "バリューアークコンサルティング株式会社",
+      "規模": 960,
+      "年収": 720,
+      "残業時間": 960,
+      "年齢": 30,
+      "日付": "2022-08-08"
+    },
+    {
+      "会社名": "Cosmostork Co., Ltd.",
+      "規模": 816,
+      "年収": 756,
+      "残業時間": 816,
+      "年齢": 30,
+      "日付": "2022-08-09"
+    },
+    {
+      "会社名": "株式会社エーエスエル",
+      "規模": 800,
+      "年収": 800,
+      "残業時間": 800,
+      "年齢": 30,
+      "日付": "2022-07-01"
+    },
+    {
+      "会社名": "株式会社ハイウェル",
+      "規模": 1020,
+      "年収": 840,
+      "残業時間": 1020,
+      "年齢": 30,
+      "日付": "2022-09-03"
+    }
+  ],
+  "jobs": [
+    {
+      "salary_min": "1100",
+      "locations": "北海道札幌市",
+      "salary_type": "H",
+      "date": "Fri, 09 Sep 2022 22:04:07 GMT",
+      "description": "Pythonや<b>Django</b>を利用した開発に興味がある、自社サービス開発に興味がある、海外のITベンチャー企業が利用している技術群を実際に使ってみたいなど、実践的な経験を得たい方が参加しているインターンシップです。   ■ サマ...リー   Python/<b>Django</b>を用いたECサイトで流通する商品情報（写真含む）を管理するバックエンド開発を行うインターンシップです。管理画面の構築、AWSを利用したインフラ開発、API開発、データ連携、既存プログラムの改修・不具...",
+      "salary_currency_code": "JPY",
+      "salary": "1100 per hour",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1318417d541007014954c9f5e386f7dd67c3f7fd8af18bc8beaecee6d88da4d3c3e0db412b2467c3f6cc8af099c8bf92cee7d38da4c7002a3c633e1e11481b064937404a534a42668cedb297a2c28be2ed84e79797ebce90a9981dceafc08ced9497a2dc8be2d284e693755a51461d120e/0a3dea5b9736c8ce2da9b3250634e249.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Python/Djangoで開発する長期有償インターンシップ！IT×ファッション×EC！",
+      "salary_max": "1100",
+      "company": "ダイアモンドヘッド株式会社"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:32:37 GMT",
+      "description": " ～ 2022/12/31   言語   必須スキル・経験   ・Pythonでの開発経験3年以上  ・<b>Django</b>の使用経験1年以上   歓迎するスキル・経験   ・高データの負荷処理   稼動日数   週5日   商談回数   1回   最寄...締めの翌月末日払い   案件担当のおすすめポイント   サーバーサイド開発をご担当頂く案件になります。リモートでのご対応は応相談です。Pythonでの開発経験と<b>Django</b>の使用経験のある方をお待ちしています。...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4c4f417d541007014954c9f5e386f7dd67700d1c011c440b79474c0a080125909ad98cdbe5658cb6ff8ff0c9287b4459450b016f154c15545b52/e86745fba79500abe5de55ec9ddce0e5.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Python / Django 人事系サービス開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "3000",
+      "locations": "大阪市北区",
+      "salary_type": "H",
+      "date": "Tue, 06 Sep 2022 03:00:34 GMT",
+      "description": "【職種】SE(ビジネスアプリケーション系)   ◆超大手企業グループでのPython（<b>Django</b>）でのログ解析ツール開発業務  ログを可視化・解析するシステムの開発をご担当いただきます。棒グラフ、折れ...線グラフなどログを可視化するグラフの機能を開発します。  【担当工程】  ◆詳細設計、プログラミング、テスト  【技術環境】言語：Python（フレームワーク：<b>Django</b>）   ブランクがある方もお気軽にご相談下さい。   こちらのお仕事の他にも様々なエ...",
+      "salary_currency_code": "JPY",
+      "salary": "3000 per hour",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1d1941ceafc68cedb097a3c94888f8ec82b9ce6a390a5e4352430d8df9e5c0ed9a6181f7e580fc9a543b2c71c9a99fceaef38ced8d97a2d28be2d284e79797ebce90a9981dc4bbef88f79d76701a1c09010945641e090714452a0f1a1b575c59/0bcaf4d81fc91edbd6042dca9e4341cf.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "SE(ビジネスアプリケーション系) [派]【リモート！3000円】Python（Django）でのログ解析ツール開発",
+      "salary_max": "3000",
+      "company": ""
+    },
+    {
+      "salary_min": "700000",
+      "locations": "神奈川県横浜市西区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:54:48 GMT",
+      "description": "株式会社ハイウェル    募集要項    Python・<b>Django</b>   【雇用形態】  業務委託   【給与】  月給 700,000円～850,000円  『精算』  140h-180h   【勤務地】  神奈...川県横浜市西区フルリモート    募集情報    フリーランス｜Python・<b>Django</b>｜機械学習プラットフォームのバックエンド開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "700000 - 850000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1d48417d541007014954c9f5e386f7dd67c6ddf78fd19a0bd4bba683f6d42597a3f68be2c484e69c97ebc090a998deaf944486f8ac93b9d96a3117130d4f1a488fdab5cd9f9dc8c9c98998e62233111506080b003002081d4d443c1f1a525c5710/f861ba28b408fa19046e60b5a49902b8.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Python・Django／機械学習プラットフォームのバックエンド開発",
+      "salary_max": "850000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "500000",
+      "locations": "神奈川県川崎市川崎区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:48:01 GMT",
+      "description": "株式会社ハイウェル    募集要項    Python・<b>Django</b>   【雇用形態】  業務委託   【給与】  月給 500,000円～700,000円  『精算』  140h-180h   【勤務地】  神奈...川県川崎市川崎区フルリモート    募集情報    フリーランス｜Python・<b>Django</b>｜銀行向け社内Webシステム開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。  「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 700000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4c1c41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c9287b4459450b014ecee2ab84f1db6c84e6b597ebc390a997deae8487ecddc4f6994381f7e580fc9a7681e3f3c28ab10dcee6d88da5cdc3e0ee82edc767c3f6df8af193c8beabcee7cf87b1ffc7fad24187ede5c8d5e468411d1d0f1a1c/dab5e82ae12a5beb4a9c6ca8ee1bd1ab.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Python・Django／銀行向け社内Webシステム開発",
+      "salary_max": "700000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "550000",
+      "locations": "千葉県船橋市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:42:26 GMT",
+      "description": "株式会社ハイウェル    募集要項    Python・<b>Django</b>   【雇用形態】  業務委託   【給与】  月給 550,000円～750,000円  『精算』  140h-180h   【勤務地】  千葉...県船橋市フルリモート    募集情報    フリーランス｜Python・<b>Django</b>｜携帯電話基地局の監視業務効率化   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 750000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4b1d41cbbdde8ad68854c5fcd284f2d78091f46a8fe390ce8582c4ffd4868ec50086f7db8bfbd5c5c5e86b96b591d8b19d81deee0793bbc080c7f86583b0ce8dd1dc0acd9880c8eff66cc1e49a86d0ce87fcdec8ddd94996b591d8b19d65575d154d14/5b1e21a922fa42d568e9fc602dcb1430.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Python・Django／携帯電話基地局の監視業務効率化",
+      "salary_max": "750000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "450000",
+      "locations": "千葉県松戸市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:30:23 GMT",
+      "description": "株式会社ハイウェル    募集要項    Python・<b>Django</b>   【雇用形態】  業務委託   【給与】  月給 450,000円～650,000円  『精算』  140h-180h   【勤務地】  千葉...県松戸市フルリモート    募集情報    フリーランス｜Python・<b>Django</b>｜内製Webアプリの保守・運用   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "450000 - 650000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-491841c992f98ac0af54c9e2e386facf67700d1c011c440b79474c0a08012597a3f68be2c484e69c97ebc090a998deaf94668bd1ba918eeb6a88efec82b4dc695140191b0d/59f4afb0847467bb1839d998ea774cca.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Python・Django／内製Webアプリの保守・運用",
+      "salary_max": "650000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "神奈川県横浜市中区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:30:12 GMT",
+      "description": "株式会社ハイウェル    募集要項    Python・<b>Django</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  140h-180h   【勤務地】  神奈...川県横浜市中区フルリモート    募集情報    フリーランス｜Python・<b>Django</b>｜自社サービスリファクタリング   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4f1a417d5410070149546409090f090867c3f7fd8af080c8be91cee7c68da4c7c3e1d1633e1e11481b066b90a89edeae9187ecfdc4f699618be2fb84e68a97ebd572181c0b1e1452/864736575bbb89fa2e0a18eee4dc44fc.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Python・Django／自社サービスリファクタリング",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "500000",
+      "locations": "神奈川県川崎市川崎区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:16:34 GMT",
+      "description": "株式会社ハイウェル    募集要項    Python・<b>Django</b>   【雇用形態】  業務委託   【給与】  月給 500,000円～750,000円  『精算』  140h-180h   【勤務地】  神奈...川県川崎市川崎区フルリモート    募集情報    フリーランス｜Python・<b>Django</b>｜ゲーム予想サイトのシステム構築   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。  「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 750000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-131d417d5410070149546409090f090867c3f6da8af096c8be8d2f87ecfbc4f78a80ebdd8de4ccc3f7db8af19329deaf9a87edd7c4f7a680ebc16c371c541c070772181c0b1f1a55/26066863a34dabdbc1cf777dff6fb39b.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Python・Django／ゲーム予想サイトのシステム構築",
+      "salary_max": "750000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "550000",
+      "locations": "千葉県船橋市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:11:30 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Django</b>・MySQL   【雇用形態】  業務委託   【給与】  月給 550,000円～750,000円  『精算』  140h-180h   【勤務地】  千葉...県船橋市フルリモート    募集情報    フリーランス｜<b>Django</b>・MySQL｜Pythonを用いた大規模CtoCサービスの開発案件(Web版)   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっ...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 750000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-181e417d541007014954c9f5e386f7dd67c3f7fd8af080c8be91cee7c68da4c7c3e1d14187f1eec7edd26b23535f554243442b04461a470c6a88f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde6418475a5047/887a2e54aad9712da3cf1fc3dc0f270e.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Django・MySQL／Pythonを用いた大規模CtoCサービスの開発",
+      "salary_max": "750000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "550000",
+      "locations": "千葉市美浜区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:11:10 GMT",
+      "description": "株式会社ハイウェル    募集要項    Python/<b>Django</b>   【雇用形態】  業務委託   【給与】  月給 550,000円～700,000円  『精算』140h-180h   【勤務地】  千葉...県千葉市美浜区フルリモート    募集情報    フリーランス ｜Python/<b>Django</b>｜電子マネーサービス開発案件   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 700000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-484a417d541007014954c9f5e386f7dd67c3f7fd8af080c8be91cee7c68da4c7c3e1d14187f1eec7edd26b9ab190d880bd4486f8ac93b9d96a3117130d4f1a482d194b455a422f8df9e5c0ed9a625a5658555117/3e8dc635b45bbfc794bef84d40c1becb.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Python/Django／電子マネーサービス開発",
+      "salary_max": "700000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "550000",
+      "locations": "神奈川県横浜市中区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:09:28 GMT",
+      "description": "株式会社ハイウェル    募集要項    Python・<b>Django</b>   【雇用形態】  業務委託   【給与】  月給 550,000円～750,000円  『精算』  140h-180h   【勤務地】  神奈...川県横浜市中区フルリモート    募集情報    フリーランス｜Python・<b>Django</b>｜セキュリティ関連サービス開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 750000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1b4d417d541007014954c9f5e386f7dd67c3f7fd8af080c8be91cee7c68da4c7c3e1d14187f1eec7edd26b23535f554243442b04461a470c6a88f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde6412435e5a4a1c/3e3a2dd65fec324e9643cab777afbba0.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Python・Django／セキュリティ関連サービス開発",
+      "salary_max": "750000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "550000",
+      "locations": "東京都豊島区",
+      "salary_type": "M",
+      "date": "Fri, 19 Aug 2022 22:43:06 GMT",
+      "description": "内容】 ■概要：  社内向業務システムの再構築を行う  新規業務システムの開発（一般消費者向けはないが、取引先向けなど向けのシステム開発あり）   ■開発環境：  言語：Python、JavaScript  フレームワーク：<b>Django</b>、Vue.js...  ツール：Linux、PostgreSQL  Gitlab,Markdown,Pycharm、REST-API   ■必須スキル：  ・Python（<b>Django</b>）の経験2年以上、複数の業務プロジェクトを経験していること。  ・設計...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 650000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4f4941ca89da8ae8a254c3e1df82ecde86a3f28bead328c8bf98cee7d38da4e40085cfea89c8ec2297eade90a892deaeab87ecce079285ce8deaf76535590000061d0a6f574c4303006c770d540b070f4e84e68a97ebcb90a997deaea5655d5612431452/f555bc02cbd383e141390952221c1d93.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "〈Python,Django〉社内向業務システムの再構築案件(サーバーサイド)の求人・案件｜リモート併用",
+      "salary_max": "650000",
+      "company": "バリューアークコンサルティング株式会社"
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Thu, 11 Aug 2022 02:28:03 GMT",
+      "description": "【仕事内容】 作業：既存システムに対しての機能変更   工程：基本設計～システムテスト   スキル：Python、<b>Django</b>、JavaScript、HTML、WEB系言語の経験（等）  尚可）AWSを使用した開発経験   時間幅：150...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 700000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1b19417d5410070149546409090f090867c6e1f181f19829deaf9a87edd7c4f7a680ebc16c371c541c070771c9a894ceafc08ced9475125b5d565c55/1668f5e582dbef17623e769800086efa.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Python,Django,オンライン教育システム機能改修",
+      "salary_max": "700000",
+      "company": "バリューアークコンサルティング株式会社"
+    },
+    {
+      "salary_min": "630000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Tue, 09 Aug 2022 22:48:08 GMT",
+      "description": "内容】   ■マーケティングサポートツール開発業務  【担当工程】基本設計～テスト  ○ポイントサービス業向けMAツール（マーケティングオートメーション）の開発を対応いただきます。   【応募要件【必須】】   ■Python／<b>Django</b>での...",
+      "salary_currency_code": "JPY",
+      "salary": "630000 - 680000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4812417a48064f8da4eac3e0d482ecd686a3f28bebd0c9a88eceafd46d394216008afeea89fedf22230d0b53c9a988ceaef98ced9b97a3eb6a3117130d4f1a4880e5a1cca4972f87ecf0c4f79c80ead08de4e3c3f6cb8af099c8bf9d0d87eddbc4f79c80ebf28de5dc2146505c441918/d65219239efd2a1af7e957a155c8b676.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "即～長期【月給６３万円以上】＜Python／Django／WEBサービス開発経験＞マーケティングサポートツール開発業務支援",
+      "salary_max": "680000",
+      "company": "Cosmostork Co., Ltd."
+    },
+    {
+      "salary_min": "550000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Tue, 09 Aug 2022 22:18:57 GMT",
+      "description": "内容】   ■マーケティングサポートツール開発業務  【担当工程】基本設計～テスト  ○ポイントサービス業向けMAツール（マーケティングオートメーション）の開発を対応いただきます。   【応募要件【必須】】   ■Python／<b>Django</b>での...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 600000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1e48417a48064f8da4eac3e0d482ecd686a3f28bebd0c9a88eceafd46d8983cac5f0c9418bc2f4c7c0ec8ed794ceae8c2f330a0c079db6e88ff8d4658085e58fddf70acc9993c8f7ce6c701142438be3db84e6bd97ebd590a9a33c1f1551585d14/d842e8276b8162c69b12d60510daa897.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "即～長期【月給５５万円以上／契約社員】＜Python／Django／WEBサービス開発経験＞マーケティングサポートツール開発業務支援",
+      "salary_max": "600000",
+      "company": "Cosmostork Co., Ltd."
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Mon, 08 Aug 2022 06:29:40 GMT",
+      "description": "以外の開発言語についても学べます。   【スキル】  Pythonでの開発経験  <b>Django</b>の使用経験   【面談】  ２回   【雇用形態】 派遣社員   【給与】 月給 600,000円〜800,000円  60~80万円   【勤務...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4f1841ceafd38cec9e97a3e58be2ce478cb6ff8ff0c9287b4459450b014ecee2ab84f1db6c8fd78991cbdb53c9a98aceafdd8ceda197a3c36a3117130d4f1a482d194b455a422f8cddc7c2d792625a595b505712/5c2d88d1c993f99bd38483a75ed60d36.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Python，Django集客・販売促進システムの開発",
+      "salary_max": "800000",
+      "company": "バリューアークコンサルティング株式会社"
+    },
+    {
+      "salary_min": "8000000",
+      "locations": "東京都中央区勝どき",
+      "salary_type": "Y",
+      "date": "Fri, 01 Jul 2022 22:25:08 GMT",
+      "description": "Pythonエンジニア（システムエンジニア、SE）  大手または中堅SIerに常駐する作業形態が多数ですが、弊社ではPythonを利用した社内開発も行っております。   「上流工程を経験したい」「プレイングマネージャーとしてプロジェクトに参画したい」「主に開発に携わりたい」など、ご要望に添った案件へのアサインが可能です！  ◯アクセス：都営地下鉄大江戸線「勝どき駅」下車：徒歩0分（A1出口直結）  ◯勤務時間：平日9:00～18:00（実働8h、休憩1h）  ◯休日・休暇：年...",
+      "salary_currency_code": "JPY",
+      "salary": "8000000 per year",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-181c41ceaef38ced8a97a2d38be2c784e6be97ebd553cfb795c883e16d8bbbdcc5cded638de4f2c3f7c58af19ac8be84cee7f18da4c82280ebf68de4c82297ebfe90a986deaf9d87ecc726471051585157/bdd39428806076b553e275a7e04a5219.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "在宅ワークOKのPythonプログラマー（django）",
+      "salary_max": "8000000",
+      "company": "株式会社エーエスエル"
+    },
+    {
+      "salary_min": "960",
+      "locations": "埼玉県さいたま市大宮区",
+      "salary_type": "H",
+      "date": "Fri, 26 Aug 2022 22:44:21 GMT",
+      "description": "談）   【待遇】   交通費支給（上限800円／日）、昇給有、従業員割引有、まかない有   【応募方法】   電話連絡の上、面接時に履歴書（写真貼付）をご持参下さい。   【連絡先住所】   <b>DJANGO</b> BANQUET  埼玉...",
+      "salary_currency_code": "JPY",
+      "salary": "960 per hour",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-131d41c587db88fea154c3e1d182ecd886a3f78beae628c39792caf4e94ec4f68d80ebe28de4e4c3f7db6b90a886deaeae87ecefc4f793438be3d784e79f97ebea90a9be3fc587db88fea154c6edcd84c0c567c6facd8cdd880bdeaf9487edd1c4f7a380ebf46f555216475d51/4fcba5e4584122313a73b7170e13e891.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "キッチン調理・接客スタッフ",
+      "salary_max": "960",
+      "company": "DJANGO BANQUET"
+    },
+    {
+      "salary_min": "6000000",
+      "locations": "日本",
+      "salary_type": "Y",
+      "date": "Tue, 06 Sep 2022 22:55:15 GMT",
+      "description": " remote diverse team looking for Python/<b>Django</b> developer to help us create and maintain innovative software products... experience with web frameworks (<b>Django</b>/Flask) ~3 years   Experience with ORM frameworks (SQLAchemy / <b>Django</b> ORM) ~3 years...",
+      "salary_currency_code": "JPY",
+      "salary": "6000000 - 8000000 per year",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1c1b417d5410070149546409090f090867700d1c011c442979485b010301571152612c0b0f09024f75505a431818/4ccf30bf6cc2e7d752ece5a666261ae1.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Python / Django Developer",
+      "salary_max": "8000000",
+      "company": "リードプラス株式会社"
+    },
+    {
+      "salary_min": "5500000",
+      "locations": "東京都目黒区中目黒 - 東京都品川区上大崎",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:59:04 GMT",
+      "description": "要件定義  ◎社内調整  ◎ベンダーコントロール  ◎システム運用  ■技術スタック（社内システムの一例）：  言語：Java,Python  フレームワーク等： SprinbBoot,<b>Django</b>  環境：Linux/PostgresSQL/MySQL...",
+      "salary_currency_code": "JPY",
+      "salary": "5500000 - 8500000 per year",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-494941c5aace88ca9954c9f5e386f7dd67c8cfca81f29d29d4bba683f6d4259198e18dc1da6586a2c18beacfc9a8aeceafdd6e5d174611575f635d5757124c51/25b43f7cbe1bd03cfefca9fec84b923c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【目黒区・本社】自社サービス開発リーダー（DXプラットフォーム担当） ※東証プライム市場上場【転職支援サービス求人】",
+      "salary_max": "8500000",
+      "company": ""
+    },
+    {
+      "salary_min": "300000",
+      "locations": "大阪府池田市",
+      "salary_type": "M",
+      "date": "Sat, 10 Sep 2022 07:58:07 GMT",
+      "description": ",JavaScript,VB,VBA,C#,C++,Rudy,Python  ・フレームワーク  Spring Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB... Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB  Oracle,MySQL,SQL Server,PostgreSQL  ・OS  Windows,UNIX...",
+      "salary_currency_code": "JPY",
+      "salary": "300000 - 560000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4f4d41ceafd38cedac97a2c14882edf886a3fd8bead828c8bf9acee7e48da5d60080eac98de4d6c3f6d08af0a1c8bf8f2f8df9e5c0ed9a438be3d984e6ab97eacb71c3bdb6cab4de4f8da5dcc3e0db82ecdf86a3ff8bebd128c8bf85cee7dc8da5ccc3e0e382ecc545c3f7c28af088c8be91cee7e76f154315575854/772b37632d1867d3327cfabb5f474ab5.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "開発エンジニア/ミドル・シニア層大活躍中/ブランクOK/リモート案件あり・大阪府勤務案件もあり",
+      "salary_max": "560000",
+      "company": "株式会社リーディング・エッジ社"
+    },
+    {
+      "salary_min": "1800",
+      "locations": "東京都台東区",
+      "salary_type": "H",
+      "date": "Sat, 10 Sep 2022 07:57:40 GMT",
+      "description": " / React /  jQuery / <b>Django</b> / Flask / Rails  ※いずれかの実務経験をお持ちの方   ≪ 直接雇用後の条件 ≫  雇用形態：正社員  就業時間：フレックス制  休 日：完全週休2日制  月 収：22万円～  想定...",
+      "salary_currency_code": "JPY",
+      "salary": "1800 per hour",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1b18416479448cec8f97a3d08be3d684e6ab97eacb71637f1dc991e589cb8a76c9f5e386f7dd45c3f6c08af099c8bf95cee7e48da5d62287d4e088c2c80097eac190a998deaf9587ece5c4f6826121356f555d15435b50/7713e3e3c53e8f83b3f21affe29aa334.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "IT企業の開発エンジニア/85082502:K",
+      "salary_max": "1800",
+      "company": "株式会社アソウ・ヒューマニーセンター"
+    },
+    {
+      "salary_min": "3500000",
+      "locations": "神奈川県",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:56:59 GMT",
+      "description": "中からご経験・志向性を鑑みてプロジェクトを決定していきます。  【プロジェクト例】  ・大手通信系企業のWebアプリ開発 フロントバック両面  ┗基本設計・詳細設計・実装・テスト  ┗React/Python(<b>Django</b>)/Git/Linux...",
+      "salary_currency_code": "JPY",
+      "salary": "3500000 - 4000000 per year",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1d4841c8b1fb89f98254c4dff982efd845c6d9cb8ed794ceae8c0d83caf3c1e385618dfdf181f285548cd5e2c9aa820dcbc9cc8983cac5f0c9638bfbfac6e3cd8ed6b70bd991bc87eed107928dc08fc5d082f681768df5ecccbc980dcac1f288b0d10087d4f08de6da2291f4f695bd8e1dca88f94f8a9be5c3e2d760565457184c/75daaa8bdf76a60d6bb82e1ae960b641.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【首都圏】システム開発エンジニア/フロントエンドのReact研修あり(月2名入社まで)【正社員】【人材派遣・人材紹介】【土日祝日休み】【神奈川県】",
+      "salary_max": "4000000",
+      "company": ""
+    },
+    {
+      "salary_min": "300000",
+      "locations": "兵庫県芦屋市",
+      "salary_type": "M",
+      "date": "Sat, 10 Sep 2022 07:56:47 GMT",
+      "description": ",JavaScript,VB,VBA,C#,C++,Rudy,Python  ・フレームワーク  Spring Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB... Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB  Oracle,MySQL,SQL Server,PostgreSQL  ・OS  Windows,UNIX...",
+      "salary_currency_code": "JPY",
+      "salary": "300000 - 560000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-491841ceafd38cedac97a2c14882edf886a3fd8bead828c8bf9acee7e48da5d60080eac98de4d6c3f6d08af0a1c8bf8f2f8df9e5c0ed9a438be3d984e6ab97eacb71c3bdb6cab4de4f8da5dcc3e0db82ecdf86a3ff8bebd128c8bf85cee7dc8da5ccc3e0e382ecc545c3f7c28af088c8be91cee7e76f1f4715575b/1b1ba5bbc24dbab14f00a1b29ead88fa.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "開発エンジニア/リモート案件あり・兵庫県勤務案件もあり/ミドル・シニア層大活躍中/ブランクOK",
+      "salary_max": "560000",
+      "company": "株式会社リーディング・エッジ社"
+    },
+    {
+      "salary_min": "3500000",
+      "locations": "埼玉県",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:56:45 GMT",
+      "description": "中からご経験・志向性を鑑みてプロジェクトを決定していきます。  【プロジェクト例】  ・大手通信系企業のWebアプリ開発 フロントバック両面  ┗基本設計・詳細設計・実装・テスト  ┗React/Python(<b>Django</b>)/Git/Linux...",
+      "salary_currency_code": "JPY",
+      "salary": "3500000 - 4000000 per year",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-131941c8b1fb89f98254c4dff982efd845c6d9cb8ed794ceae8c0d83caf3c1e385618dfdf181f285548cd5e2c9aa820dcbc9cc8983cac5f0c9638bfbfac6e3cd8ed6b70bd991bc87eed107928dc08fc5d082f681768df5ecccbc980dcac1f288b0d10087d4f08de6da2291f4f695bd8e1dca88f94f8a9be5c3e2d7605654571841/3053ee5aee0b706f6f3273b557ea15bf.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【首都圏】システム開発エンジニア/フロントエンドのReact研修あり(月2名入社まで)【正社員】【人材派遣・人材紹介】【土日祝日休み】【埼玉県】",
+      "salary_max": "4000000",
+      "company": ""
+    },
+    {
+      "salary_min": "300000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Sat, 10 Sep 2022 07:56:43 GMT",
+      "description": ",JavaScript,VB,VBA,C#,C++,Rudy,Python  ・フレームワーク  Spring Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB... Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB  Oracle,MySQL,SQL Server,PostgreSQL  ・OS  Windows,UNIX...",
+      "salary_currency_code": "JPY",
+      "salary": "300000 - 560000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4f1341ceafd38cedac97a2c14882edf886a3fd8bead828c8bf9acee7e48da5d60080eac98de4d6c3f6d08af0a1c8bf8f2f8df9e5c0ed9a438be3d984e6ab97eacb71c3bdb6cab4de4f8da5dcc3e0db82ecdf86a3ff8bebd128c8bf85cee7dc8da5ccc3e0e382ecc545c3f7c28af088c8be91cee7e76f154c15545a53/cfa7a3bddcad18aa5e83d231709f9695.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "開発エンジニア/ミドル・シニア層大活躍中/ブランクOK/リモート案件あり・東京都勤務案件もあり",
+      "salary_max": "560000",
+      "company": "株式会社リーディング・エッジ社"
+    },
+    {
+      "salary_min": "300000",
+      "locations": "兵庫県伊丹市",
+      "salary_type": "M",
+      "date": "Sat, 10 Sep 2022 07:55:33 GMT",
+      "description": ",JavaScript,VB,VBA,C#,C++,Rudy,Python  ・フレームワーク  Spring Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB... Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB  Oracle,MySQL,SQL Server,PostgreSQL  ・OS  Windows,UNIX...",
+      "salary_currency_code": "JPY",
+      "salary": "300000 - 560000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-121b41ceafd38cedac97a2c14882edf886a3fd8bead828c8bf9acee7e48da5d60080eac98de4d6c3f6d08af0a1c8bf8f2f8df9e5c0ed9a438be3d984e6ab97eacb71c3bdb6cab4de4f8da5dcc3e0db82ecdf86a3ff8bebd128c8bf85cee7dc8da5ccc3e0e382ecc545c3f7c28af088c8be91cee7e76f1f47155750/3ebd1e46ef7b10fba942c350470462c8.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "開発エンジニア/リモート案件あり・兵庫県勤務案件もあり/ミドル・シニア層大活躍中/ブランクOK",
+      "salary_max": "560000",
+      "company": "株式会社リーディング・エッジ社"
+    },
+    {
+      "salary_min": "300000",
+      "locations": "兵庫県西宮市",
+      "salary_type": "M",
+      "date": "Sat, 10 Sep 2022 07:54:48 GMT",
+      "description": "、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB  Oracle,MySQL,SQL Server,PostgreSQL  ・OS  Windows,UNIX,Linux   ＜キャリアチェンジもOK！＞  当社...ームワーク  Spring Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB  Oracle,MySQL,SQL Server,PostgreSQL  ・OS...",
+      "salary_currency_code": "JPY",
+      "salary": "300000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-121f41ceafd38cedac97a2c14882edf886a3fd8bead828c8bf9acee7e48da5d60080eac98de4d6c3f6d08af0a1c8bf8f2f8df9e5c0ed9a438be3d984e6ab97eacb71c3bdb6cab4de4f8da5dcc3e0db82ecdf86a3ff8bebd128c8bf85cee7dc8da5ccc3e0e382ecc545c3f7c28af088c8be91cee7e76f154315505859/38680f782ba0d03a7a012499a948088a.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "開発エンジニア/ミドルシニア層大活躍中・リモート案件有/ブランクOK/月給30万円以上/賞与年2回",
+      "salary_max": "300000",
+      "company": "株式会社リーディング・エッジ社"
+    },
+    {
+      "salary_min": "5040000",
+      "locations": "東京都中央区銀座 - 東京都港区虎ノ門",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:53:40 GMT",
+      "description": "購入制度などを利用してスキルアップも目指せます。   ■開発環境：  GCP：AppEngine、CloudFunctions、CloudSQL、CloudStorage  BigQuery、Firebase、Python（<b>django</b>）、MySQL、JavaScript（Vue.js、ES6...",
+      "salary_currency_code": "JPY",
+      "salary": "5040000 - 7000000 per year",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1d1841ceafd18ced9b97a3f08be3d74786a2dc8beac0c9a985ceaeef8cec8576c3e1dd82eddb86a3e4488af182c8be9ecee6d78da4ffc3e1ca638de5d0c3f7d48af0bac8be910d87edc6c4f79380ead98de4eec3f6ca6b90a89edeae9187ecfdc4f699438be3db84e69c97ebf990a9973fceafcc8ced9497a2db8be2e584e782548bead9c9a89fceaed88cedaf7513535a515f566713445a584418/573cd7fc2a73932609bac79dad998dc2.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【フルリモート可】サーバーサイドエンジニア※新規SaaSプロダクト担当／残業20時間程度／副業可【転職支援サービス求人】",
+      "salary_max": "7000000",
+      "company": ""
+    },
+    {
+      "salary_min": "300000",
+      "locations": "兵庫県尼崎市",
+      "salary_type": "M",
+      "date": "Sat, 10 Sep 2022 07:53:33 GMT",
+      "description": ",JavaScript,VB,VBA,C#,C++,Rudy,Python  ・フレームワーク  Spring Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB... Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB  Oracle,MySQL,SQL Server,PostgreSQL  ・OS  Windows,UNIX...",
+      "salary_currency_code": "JPY",
+      "salary": "300000 - 560000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-481941ceafd38cedac97a2c14882edf886a3fd8bead828c8bf9acee7e48da5d60080eac98de4d6c3f6d08af0a1c8bf8f2f8df9e5c0ed9a438be3d984e6ab97eacb71c3bdb6cab4de4f8da5dcc3e0db82ecdf86a3ff8bebd128c8bf85cee7dc8da5ccc3e0e382ecc545c3f7c28af088c8be91cee7e76f1f4715575a/9f2fcb14ec370a9b1a5bc7ea9db47727.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "開発エンジニア/リモート案件あり・兵庫県勤務案件もあり/ミドル・シニア層大活躍中/ブランクOK",
+      "salary_max": "560000",
+      "company": "株式会社リーディング・エッジ社"
+    },
+    {
+      "salary_min": "300000",
+      "locations": "大阪市都島区",
+      "salary_type": "M",
+      "date": "Sat, 10 Sep 2022 07:53:29 GMT",
+      "description": "  Java,PHP,JavaScript,VB,VBA,C#,C++,Rudy,Python  ・フレームワーク  Spring Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS...ームワーク  Spring Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB  Oracle,MySQL,SQL Server,PostgreSQL  ・OS...",
+      "salary_currency_code": "JPY",
+      "salary": "300000 - 560000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-131b41ceafd38cedac97a2c14882edf886a3fd8bead828c8bf9acee7e48da5d60080eac98de4d6c3f6d08af0a1c8bf8f2f8df9e5c0ed9a438be3d984e6ab97eacb71c3bdb6cab4de4f8da5dcc3e0db82ecdf86a3ff8bebd128c8bf85cee7dc8da5ccc3e0e382ecc545c3f7c28af088c8be91cee7e76f154316505c51/d5e1a8d51764249a408a7bce83ef33d1.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "開発エンジニア/ミドル・シニア層大活躍中/ブランクOK/リモート案件あり・大阪府勤務案件もあり",
+      "salary_max": "560000",
+      "company": "株式会社リーディング・エッジ社"
+    }
+  ],
+  "min_salary": [
+    {
+      "salary_min": "1100",
+      "locations": "北海道札幌市",
+      "salary_type": "H",
+      "date": "Fri, 09 Sep 2022 22:04:07 GMT",
+      "description": "Pythonや<b>Django</b>を利用した開発に興味がある、自社サービス開発に興味がある、海外のITベンチャー企業が利用している技術群を実際に使ってみたいなど、実践的な経験を得たい方が参加しているインターンシップです。   ■ サマ...リー   Python/<b>Django</b>を用いたECサイトで流通する商品情報（写真含む）を管理するバックエンド開発を行うインターンシップです。管理画面の構築、AWSを利用したインフラ開発、API開発、データ連携、既存プログラムの改修・不具...",
+      "salary_currency_code": "JPY",
+      "salary": "1100 per hour",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1318417d541007014954c9f5e386f7dd67c3f7fd8af18bc8beaecee6d88da4d3c3e0db412b2467c3f6cc8af099c8bf92cee7d38da4c7002a3c633e1e11481b064937404a534a42668cedb297a2c28be2ed84e79797ebce90a9981dceafc08ced9497a2dc8be2d284e693755a51461d120e/0a3dea5b9736c8ce2da9b3250634e249.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Python/Djangoで開発する長期有償インターンシップ！IT×ファッション×EC！",
+      "salary_max": "1100",
+      "company": "ダイアモンドヘッド株式会社"
+    },
+    {
+      "salary_min": "1800",
+      "locations": "東京都台東区",
+      "salary_type": "H",
+      "date": "Sat, 10 Sep 2022 07:57:40 GMT",
+      "description": " / React /  jQuery / <b>Django</b> / Flask / Rails  ※いずれかの実務経験をお持ちの方   ≪ 直接雇用後の条件 ≫  雇用形態：正社員  就業時間：フレックス制  休 日：完全週休2日制  月 収：22万円～  想定...",
+      "salary_currency_code": "JPY",
+      "salary": "1800 per hour",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1b18416479448cec8f97a3d08be3d684e6ab97eacb71637f1dc991e589cb8a76c9f5e386f7dd45c3f6c08af099c8bf95cee7e48da5d62287d4e088c2c80097eac190a998deaf9587ece5c4f6826121356f555d15435b50/7713e3e3c53e8f83b3f21affe29aa334.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "IT企業の開発エンジニア/85082502:K",
+      "salary_max": "1800",
+      "company": "株式会社アソウ・ヒューマニーセンター"
+    },
+    {
+      "salary_min": "3000",
+      "locations": "大阪市北区",
+      "salary_type": "H",
+      "date": "Tue, 06 Sep 2022 03:00:34 GMT",
+      "description": "【職種】SE(ビジネスアプリケーション系)   ◆超大手企業グループでのPython（<b>Django</b>）でのログ解析ツール開発業務  ログを可視化・解析するシステムの開発をご担当いただきます。棒グラフ、折れ...線グラフなどログを可視化するグラフの機能を開発します。  【担当工程】  ◆詳細設計、プログラミング、テスト  【技術環境】言語：Python（フレームワーク：<b>Django</b>）   ブランクがある方もお気軽にご相談下さい。   こちらのお仕事の他にも様々なエ...",
+      "salary_currency_code": "JPY",
+      "salary": "3000 per hour",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1d1941ceafc68cedb097a3c94888f8ec82b9ce6a390a5e4352430d8df9e5c0ed9a6181f7e580fc9a543b2c71c9a99fceaef38ced8d97a2d28be2d284e79797ebce90a9981dc4bbef88f79d76701a1c09010945641e090714452a0f1a1b575c59/0bcaf4d81fc91edbd6042dca9e4341cf.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "SE(ビジネスアプリケーション系) [派]【リモート！3000円】Python（Django）でのログ解析ツール開発",
+      "salary_max": "3000",
+      "company": ""
+    },
+    {
+      "salary_min": "300000",
+      "locations": "大阪府池田市",
+      "salary_type": "M",
+      "date": "Sat, 10 Sep 2022 07:58:07 GMT",
+      "description": ",JavaScript,VB,VBA,C#,C++,Rudy,Python  ・フレームワーク  Spring Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB... Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB  Oracle,MySQL,SQL Server,PostgreSQL  ・OS  Windows,UNIX...",
+      "salary_currency_code": "JPY",
+      "salary": "300000 - 560000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4f4d41ceafd38cedac97a2c14882edf886a3fd8bead828c8bf9acee7e48da5d60080eac98de4d6c3f6d08af0a1c8bf8f2f8df9e5c0ed9a438be3d984e6ab97eacb71c3bdb6cab4de4f8da5dcc3e0db82ecdf86a3ff8bebd128c8bf85cee7dc8da5ccc3e0e382ecc545c3f7c28af088c8be91cee7e76f154315575854/772b37632d1867d3327cfabb5f474ab5.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "開発エンジニア/ミドル・シニア層大活躍中/ブランクOK/リモート案件あり・大阪府勤務案件もあり",
+      "salary_max": "560000",
+      "company": "株式会社リーディング・エッジ社"
+    },
+    {
+      "salary_min": "300000",
+      "locations": "兵庫県芦屋市",
+      "salary_type": "M",
+      "date": "Sat, 10 Sep 2022 07:56:47 GMT",
+      "description": ",JavaScript,VB,VBA,C#,C++,Rudy,Python  ・フレームワーク  Spring Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB... Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB  Oracle,MySQL,SQL Server,PostgreSQL  ・OS  Windows,UNIX...",
+      "salary_currency_code": "JPY",
+      "salary": "300000 - 560000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-491841ceafd38cedac97a2c14882edf886a3fd8bead828c8bf9acee7e48da5d60080eac98de4d6c3f6d08af0a1c8bf8f2f8df9e5c0ed9a438be3d984e6ab97eacb71c3bdb6cab4de4f8da5dcc3e0db82ecdf86a3ff8bebd128c8bf85cee7dc8da5ccc3e0e382ecc545c3f7c28af088c8be91cee7e76f1f4715575b/1b1ba5bbc24dbab14f00a1b29ead88fa.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "開発エンジニア/リモート案件あり・兵庫県勤務案件もあり/ミドル・シニア層大活躍中/ブランクOK",
+      "salary_max": "560000",
+      "company": "株式会社リーディング・エッジ社"
+    },
+    {
+      "salary_min": "300000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Sat, 10 Sep 2022 07:56:43 GMT",
+      "description": ",JavaScript,VB,VBA,C#,C++,Rudy,Python  ・フレームワーク  Spring Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB... Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB  Oracle,MySQL,SQL Server,PostgreSQL  ・OS  Windows,UNIX...",
+      "salary_currency_code": "JPY",
+      "salary": "300000 - 560000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4f1341ceafd38cedac97a2c14882edf886a3fd8bead828c8bf9acee7e48da5d60080eac98de4d6c3f6d08af0a1c8bf8f2f8df9e5c0ed9a438be3d984e6ab97eacb71c3bdb6cab4de4f8da5dcc3e0db82ecdf86a3ff8bebd128c8bf85cee7dc8da5ccc3e0e382ecc545c3f7c28af088c8be91cee7e76f154c15545a53/cfa7a3bddcad18aa5e83d231709f9695.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "開発エンジニア/ミドル・シニア層大活躍中/ブランクOK/リモート案件あり・東京都勤務案件もあり",
+      "salary_max": "560000",
+      "company": "株式会社リーディング・エッジ社"
+    },
+    {
+      "salary_min": "300000",
+      "locations": "兵庫県伊丹市",
+      "salary_type": "M",
+      "date": "Sat, 10 Sep 2022 07:55:33 GMT",
+      "description": ",JavaScript,VB,VBA,C#,C++,Rudy,Python  ・フレームワーク  Spring Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB... Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB  Oracle,MySQL,SQL Server,PostgreSQL  ・OS  Windows,UNIX...",
+      "salary_currency_code": "JPY",
+      "salary": "300000 - 560000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-121b41ceafd38cedac97a2c14882edf886a3fd8bead828c8bf9acee7e48da5d60080eac98de4d6c3f6d08af0a1c8bf8f2f8df9e5c0ed9a438be3d984e6ab97eacb71c3bdb6cab4de4f8da5dcc3e0db82ecdf86a3ff8bebd128c8bf85cee7dc8da5ccc3e0e382ecc545c3f7c28af088c8be91cee7e76f1f47155750/3ebd1e46ef7b10fba942c350470462c8.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "開発エンジニア/リモート案件あり・兵庫県勤務案件もあり/ミドル・シニア層大活躍中/ブランクOK",
+      "salary_max": "560000",
+      "company": "株式会社リーディング・エッジ社"
+    },
+    {
+      "salary_min": "300000",
+      "locations": "兵庫県西宮市",
+      "salary_type": "M",
+      "date": "Sat, 10 Sep 2022 07:54:48 GMT",
+      "description": "、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB  Oracle,MySQL,SQL Server,PostgreSQL  ・OS  Windows,UNIX,Linux   ＜キャリアチェンジもOK！＞  当社...ームワーク  Spring Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB  Oracle,MySQL,SQL Server,PostgreSQL  ・OS...",
+      "salary_currency_code": "JPY",
+      "salary": "300000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-121f41ceafd38cedac97a2c14882edf886a3fd8bead828c8bf9acee7e48da5d60080eac98de4d6c3f6d08af0a1c8bf8f2f8df9e5c0ed9a438be3d984e6ab97eacb71c3bdb6cab4de4f8da5dcc3e0db82ecdf86a3ff8bebd128c8bf85cee7dc8da5ccc3e0e382ecc545c3f7c28af088c8be91cee7e76f154315505859/38680f782ba0d03a7a012499a948088a.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "開発エンジニア/ミドルシニア層大活躍中・リモート案件有/ブランクOK/月給30万円以上/賞与年2回",
+      "salary_max": "300000",
+      "company": "株式会社リーディング・エッジ社"
+    },
+    {
+      "salary_min": "300000",
+      "locations": "兵庫県尼崎市",
+      "salary_type": "M",
+      "date": "Sat, 10 Sep 2022 07:53:33 GMT",
+      "description": ",JavaScript,VB,VBA,C#,C++,Rudy,Python  ・フレームワーク  Spring Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB... Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB  Oracle,MySQL,SQL Server,PostgreSQL  ・OS  Windows,UNIX...",
+      "salary_currency_code": "JPY",
+      "salary": "300000 - 560000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-481941ceafd38cedac97a2c14882edf886a3fd8bead828c8bf9acee7e48da5d60080eac98de4d6c3f6d08af0a1c8bf8f2f8df9e5c0ed9a438be3d984e6ab97eacb71c3bdb6cab4de4f8da5dcc3e0db82ecdf86a3ff8bebd128c8bf85cee7dc8da5ccc3e0e382ecc545c3f7c28af088c8be91cee7e76f1f4715575a/9f2fcb14ec370a9b1a5bc7ea9db47727.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "開発エンジニア/リモート案件あり・兵庫県勤務案件もあり/ミドル・シニア層大活躍中/ブランクOK",
+      "salary_max": "560000",
+      "company": "株式会社リーディング・エッジ社"
+    },
+    {
+      "salary_min": "300000",
+      "locations": "大阪市都島区",
+      "salary_type": "M",
+      "date": "Sat, 10 Sep 2022 07:53:29 GMT",
+      "description": "  Java,PHP,JavaScript,VB,VBA,C#,C++,Rudy,Python  ・フレームワーク  Spring Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS...ームワーク  Spring Framework、Laravel、React、Angular、<b>Django</b>  ・環境  オンプレミス、AWS、Azure、VMware  ・DB  Oracle,MySQL,SQL Server,PostgreSQL  ・OS...",
+      "salary_currency_code": "JPY",
+      "salary": "300000 - 560000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-131b41ceafd38cedac97a2c14882edf886a3fd8bead828c8bf9acee7e48da5d60080eac98de4d6c3f6d08af0a1c8bf8f2f8df9e5c0ed9a438be3d984e6ab97eacb71c3bdb6cab4de4f8da5dcc3e0db82ecdf86a3ff8bebd128c8bf85cee7dc8da5ccc3e0e382ecc545c3f7c28af088c8be91cee7e76f154316505c51/d5e1a8d51764249a408a7bce83ef33d1.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "開発エンジニア/ミドル・シニア層大活躍中/ブランクOK/リモート案件あり・大阪府勤務案件もあり",
+      "salary_max": "560000",
+      "company": "株式会社リーディング・エッジ社"
+    },
+    {
+      "salary_min": "3500000",
+      "locations": "神奈川県",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:56:59 GMT",
+      "description": "中からご経験・志向性を鑑みてプロジェクトを決定していきます。  【プロジェクト例】  ・大手通信系企業のWebアプリ開発 フロントバック両面  ┗基本設計・詳細設計・実装・テスト  ┗React/Python(<b>Django</b>)/Git/Linux...",
+      "salary_currency_code": "JPY",
+      "salary": "3500000 - 4000000 per year",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1d4841c8b1fb89f98254c4dff982efd845c6d9cb8ed794ceae8c0d83caf3c1e385618dfdf181f285548cd5e2c9aa820dcbc9cc8983cac5f0c9638bfbfac6e3cd8ed6b70bd991bc87eed107928dc08fc5d082f681768df5ecccbc980dcac1f288b0d10087d4f08de6da2291f4f695bd8e1dca88f94f8a9be5c3e2d760565457184c/75daaa8bdf76a60d6bb82e1ae960b641.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【首都圏】システム開発エンジニア/フロントエンドのReact研修あり(月2名入社まで)【正社員】【人材派遣・人材紹介】【土日祝日休み】【神奈川県】",
+      "salary_max": "4000000",
+      "company": ""
+    },
+    {
+      "salary_min": "3500000",
+      "locations": "埼玉県",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:56:45 GMT",
+      "description": "中からご経験・志向性を鑑みてプロジェクトを決定していきます。  【プロジェクト例】  ・大手通信系企業のWebアプリ開発 フロントバック両面  ┗基本設計・詳細設計・実装・テスト  ┗React/Python(<b>Django</b>)/Git/Linux...",
+      "salary_currency_code": "JPY",
+      "salary": "3500000 - 4000000 per year",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-131941c8b1fb89f98254c4dff982efd845c6d9cb8ed794ceae8c0d83caf3c1e385618dfdf181f285548cd5e2c9aa820dcbc9cc8983cac5f0c9638bfbfac6e3cd8ed6b70bd991bc87eed107928dc08fc5d082f681768df5ecccbc980dcac1f288b0d10087d4f08de6da2291f4f695bd8e1dca88f94f8a9be5c3e2d7605654571841/3053ee5aee0b706f6f3273b557ea15bf.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【首都圏】システム開発エンジニア/フロントエンドのReact研修あり(月2名入社まで)【正社員】【人材派遣・人材紹介】【土日祝日休み】【埼玉県】",
+      "salary_max": "4000000",
+      "company": ""
+    },
+    {
+      "salary_min": "450000",
+      "locations": "千葉県松戸市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:30:23 GMT",
+      "description": "株式会社ハイウェル    募集要項    Python・<b>Django</b>   【雇用形態】  業務委託   【給与】  月給 450,000円～650,000円  『精算』  140h-180h   【勤務地】  千葉...県松戸市フルリモート    募集情報    フリーランス｜Python・<b>Django</b>｜内製Webアプリの保守・運用   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "450000 - 650000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-491841c992f98ac0af54c9e2e386facf67700d1c011c440b79474c0a08012597a3f68be2c484e69c97ebc090a998deaf94668bd1ba918eeb6a88efec82b4dc695140191b0d/59f4afb0847467bb1839d998ea774cca.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Python・Django／内製Webアプリの保守・運用",
+      "salary_max": "650000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "500000",
+      "locations": "神奈川県川崎市川崎区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:48:01 GMT",
+      "description": "株式会社ハイウェル    募集要項    Python・<b>Django</b>   【雇用形態】  業務委託   【給与】  月給 500,000円～700,000円  『精算』  140h-180h   【勤務地】  神奈...川県川崎市川崎区フルリモート    募集情報    フリーランス｜Python・<b>Django</b>｜銀行向け社内Webシステム開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。  「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 700000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4c1c41ceafd38cec9e97a3e58be2ce478cb6ff8ff0c9287b4459450b014ecee2ab84f1db6c84e6b597ebc390a997deae8487ecddc4f6994381f7e580fc9a7681e3f3c28ab10dcee6d88da5cdc3e0ee82edc767c3f6df8af193c8beabcee7cf87b1ffc7fad24187ede5c8d5e468411d1d0f1a1c/dab5e82ae12a5beb4a9c6ca8ee1bd1ab.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Python・Django／銀行向け社内Webシステム開発",
+      "salary_max": "700000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "500000",
+      "locations": "神奈川県川崎市川崎区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:16:34 GMT",
+      "description": "株式会社ハイウェル    募集要項    Python・<b>Django</b>   【雇用形態】  業務委託   【給与】  月給 500,000円～750,000円  『精算』  140h-180h   【勤務地】  神奈...川県川崎市川崎区フルリモート    募集情報    フリーランス｜Python・<b>Django</b>｜ゲーム予想サイトのシステム構築   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。  「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 750000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-131d417d5410070149546409090f090867c3f6da8af096c8be8d2f87ecfbc4f78a80ebdd8de4ccc3f7db8af19329deaf9a87edd7c4f7a680ebc16c371c541c070772181c0b1f1a55/26066863a34dabdbc1cf777dff6fb39b.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Python・Django／ゲーム予想サイトのシステム構築",
+      "salary_max": "750000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "500000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Thu, 11 Aug 2022 02:28:03 GMT",
+      "description": "【仕事内容】 作業：既存システムに対しての機能変更   工程：基本設計～システムテスト   スキル：Python、<b>Django</b>、JavaScript、HTML、WEB系言語の経験（等）  尚可）AWSを使用した開発経験   時間幅：150...",
+      "salary_currency_code": "JPY",
+      "salary": "500000 - 700000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1b19417d5410070149546409090f090867c6e1f181f19829deaf9a87edd7c4f7a680ebc16c371c541c070771c9a894ceafc08ced9475125b5d565c55/1668f5e582dbef17623e769800086efa.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Python,Django,オンライン教育システム機能改修",
+      "salary_max": "700000",
+      "company": "バリューアークコンサルティング株式会社"
+    },
+    {
+      "salary_min": "5040000",
+      "locations": "東京都中央区銀座 - 東京都港区虎ノ門",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:53:40 GMT",
+      "description": "購入制度などを利用してスキルアップも目指せます。   ■開発環境：  GCP：AppEngine、CloudFunctions、CloudSQL、CloudStorage  BigQuery、Firebase、Python（<b>django</b>）、MySQL、JavaScript（Vue.js、ES6...",
+      "salary_currency_code": "JPY",
+      "salary": "5040000 - 7000000 per year",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1d1841ceafd18ced9b97a3f08be3d74786a2dc8beac0c9a985ceaeef8cec8576c3e1dd82eddb86a3e4488af182c8be9ecee6d78da4ffc3e1ca638de5d0c3f7d48af0bac8be910d87edc6c4f79380ead98de4eec3f6ca6b90a89edeae9187ecfdc4f699438be3db84e69c97ebf990a9973fceafcc8ced9497a2db8be2e584e782548bead9c9a89fceaed88cedaf7513535a515f566713445a584418/573cd7fc2a73932609bac79dad998dc2.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【フルリモート可】サーバーサイドエンジニア※新規SaaSプロダクト担当／残業20時間程度／副業可【転職支援サービス求人】",
+      "salary_max": "7000000",
+      "company": ""
+    },
+    {
+      "salary_min": "550000",
+      "locations": "千葉県船橋市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:42:26 GMT",
+      "description": "株式会社ハイウェル    募集要項    Python・<b>Django</b>   【雇用形態】  業務委託   【給与】  月給 550,000円～750,000円  『精算』  140h-180h   【勤務地】  千葉...県船橋市フルリモート    募集情報    フリーランス｜Python・<b>Django</b>｜携帯電話基地局の監視業務効率化   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 750000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4b1d41cbbdde8ad68854c5fcd284f2d78091f46a8fe390ce8582c4ffd4868ec50086f7db8bfbd5c5c5e86b96b591d8b19d81deee0793bbc080c7f86583b0ce8dd1dc0acd9880c8eff66cc1e49a86d0ce87fcdec8ddd94996b591d8b19d65575d154d14/5b1e21a922fa42d568e9fc602dcb1430.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Python・Django／携帯電話基地局の監視業務効率化",
+      "salary_max": "750000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "550000",
+      "locations": "千葉県船橋市",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:11:30 GMT",
+      "description": "株式会社ハイウェル    募集要項    <b>Django</b>・MySQL   【雇用形態】  業務委託   【給与】  月給 550,000円～750,000円  『精算』  140h-180h   【勤務地】  千葉...県船橋市フルリモート    募集情報    フリーランス｜<b>Django</b>・MySQL｜Pythonを用いた大規模CtoCサービスの開発案件(Web版)   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっ...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 750000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-181e417d541007014954c9f5e386f7dd67c3f7fd8af080c8be91cee7c68da4c7c3e1d14187f1eec7edd26b23535f554243442b04461a470c6a88f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde6418475a5047/887a2e54aad9712da3cf1fc3dc0f270e.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Django・MySQL／Pythonを用いた大規模CtoCサービスの開発",
+      "salary_max": "750000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "550000",
+      "locations": "千葉市美浜区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:11:10 GMT",
+      "description": "株式会社ハイウェル    募集要項    Python/<b>Django</b>   【雇用形態】  業務委託   【給与】  月給 550,000円～700,000円  『精算』140h-180h   【勤務地】  千葉...県千葉市美浜区フルリモート    募集情報    フリーランス ｜Python/<b>Django</b>｜電子マネーサービス開発案件   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 700000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-484a417d541007014954c9f5e386f7dd67c3f7fd8af080c8be91cee7c68da4c7c3e1d14187f1eec7edd26b9ab190d880bd4486f8ac93b9d96a3117130d4f1a482d194b455a422f8df9e5c0ed9a625a5658555117/3e8dc635b45bbfc794bef84d40c1becb.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Python/Django／電子マネーサービス開発",
+      "salary_max": "700000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "550000",
+      "locations": "神奈川県横浜市中区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:09:28 GMT",
+      "description": "株式会社ハイウェル    募集要項    Python・<b>Django</b>   【雇用形態】  業務委託   【給与】  月給 550,000円～750,000円  『精算』  140h-180h   【勤務地】  神奈...川県横浜市中区フルリモート    募集情報    フリーランス｜Python・<b>Django</b>｜セキュリティ関連サービス開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 750000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1b4d417d541007014954c9f5e386f7dd67c3f7fd8af080c8be91cee7c68da4c7c3e1d14187f1eec7edd26b23535f554243442b04461a470c6a88f8ec82b9ce6a8af0bfc8be87cee7d38da4ddc3e0db82ecde6412435e5a4a1c/3e3a2dd65fec324e9643cab777afbba0.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Python・Django／セキュリティ関連サービス開発",
+      "salary_max": "750000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "550000",
+      "locations": "東京都豊島区",
+      "salary_type": "M",
+      "date": "Fri, 19 Aug 2022 22:43:06 GMT",
+      "description": "内容】 ■概要：  社内向業務システムの再構築を行う  新規業務システムの開発（一般消費者向けはないが、取引先向けなど向けのシステム開発あり）   ■開発環境：  言語：Python、JavaScript  フレームワーク：<b>Django</b>、Vue.js...  ツール：Linux、PostgreSQL  Gitlab,Markdown,Pycharm、REST-API   ■必須スキル：  ・Python（<b>Django</b>）の経験2年以上、複数の業務プロジェクトを経験していること。  ・設計...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 650000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4f4941ca89da8ae8a254c3e1df82ecde86a3f28bead328c8bf98cee7d38da4e40085cfea89c8ec2297eade90a892deaeab87ecce079285ce8deaf76535590000061d0a6f574c4303006c770d540b070f4e84e68a97ebcb90a997deaea5655d5612431452/f555bc02cbd383e141390952221c1d93.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "〈Python,Django〉社内向業務システムの再構築案件(サーバーサイド)の求人・案件｜リモート併用",
+      "salary_max": "650000",
+      "company": "バリューアークコンサルティング株式会社"
+    },
+    {
+      "salary_min": "550000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Tue, 09 Aug 2022 22:18:57 GMT",
+      "description": "内容】   ■マーケティングサポートツール開発業務  【担当工程】基本設計～テスト  ○ポイントサービス業向けMAツール（マーケティングオートメーション）の開発を対応いただきます。   【応募要件【必須】】   ■Python／<b>Django</b>での...",
+      "salary_currency_code": "JPY",
+      "salary": "550000 - 600000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1e48417a48064f8da4eac3e0d482ecd686a3f28bebd0c9a88eceafd46d8983cac5f0c9418bc2f4c7c0ec8ed794ceae8c2f330a0c079db6e88ff8d4658085e58fddf70acc9993c8f7ce6c701142438be3db84e6bd97ebd590a9a33c1f1551585d14/d842e8276b8162c69b12d60510daa897.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "即～長期【月給５５万円以上／契約社員】＜Python／Django／WEBサービス開発経験＞マーケティングサポートツール開発業務支援",
+      "salary_max": "600000",
+      "company": "Cosmostork Co., Ltd."
+    },
+    {
+      "salary_min": "5500000",
+      "locations": "東京都目黒区中目黒 - 東京都品川区上大崎",
+      "salary_type": "Y",
+      "date": "Sat, 10 Sep 2022 07:59:04 GMT",
+      "description": "要件定義  ◎社内調整  ◎ベンダーコントロール  ◎システム運用  ■技術スタック（社内システムの一例）：  言語：Java,Python  フレームワーク等： SprinbBoot,<b>Django</b>  環境：Linux/PostgresSQL/MySQL...",
+      "salary_currency_code": "JPY",
+      "salary": "5500000 - 8500000 per year",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-494941c5aace88ca9954c9f5e386f7dd67c8cfca81f29d29d4bba683f6d4259198e18dc1da6586a2c18beacfc9a8aeceafdd6e5d174611575f635d5757124c51/25b43f7cbe1bd03cfefca9fec84b923c.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "【目黒区・本社】自社サービス開発リーダー（DXプラットフォーム担当） ※東証プライム市場上場【転職支援サービス求人】",
+      "salary_max": "8500000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Wed, 07 Sep 2022 22:32:37 GMT",
+      "description": " ～ 2022/12/31   言語   必須スキル・経験   ・Pythonでの開発経験3年以上  ・<b>Django</b>の使用経験1年以上   歓迎するスキル・経験   ・高データの負荷処理   稼動日数   週5日   商談回数   1回   最寄...締めの翌月末日払い   案件担当のおすすめポイント   サーバーサイド開発をご担当頂く案件になります。リモートでのご対応は応相談です。Pythonでの開発経験と<b>Django</b>の使用経験のある方をお待ちしています。...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 700000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4c4f417d541007014954c9f5e386f7dd67700d1c011c440b79474c0a080125909ad98cdbe5658cb6ff8ff0c9287b4459450b016f154c15545b52/e86745fba79500abe5de55ec9ddce0e5.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Python / Django 人事系サービス開発",
+      "salary_max": "700000",
+      "company": ""
+    },
+    {
+      "salary_min": "600000",
+      "locations": "神奈川県横浜市中区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:30:12 GMT",
+      "description": "株式会社ハイウェル    募集要項    Python・<b>Django</b>   【雇用形態】  業務委託   【給与】  月給 600,000円～800,000円  『精算』  140h-180h   【勤務地】  神奈...川県横浜市中区フルリモート    募集情報    フリーランス｜Python・<b>Django</b>｜自社サービスリファクタリング   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4f1a417d5410070149546409090f090867c3f7fd8af080c8be91cee7c68da4c7c3e1d1633e1e11481b066b90a89edeae9187ecfdc4f699618be2fb84e68a97ebd572181c0b1e1452/864736575bbb89fa2e0a18eee4dc44fc.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Python・Django／自社サービスリファクタリング",
+      "salary_max": "800000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "600000",
+      "locations": "東京都港区",
+      "salary_type": "M",
+      "date": "Mon, 08 Aug 2022 06:29:40 GMT",
+      "description": "以外の開発言語についても学べます。   【スキル】  Pythonでの開発経験  <b>Django</b>の使用経験   【面談】  ２回   【雇用形態】 派遣社員   【給与】 月給 600,000円〜800,000円  60~80万円   【勤務...",
+      "salary_currency_code": "JPY",
+      "salary": "600000 - 800000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4f1841ceafd38cec9e97a3e58be2ce478cb6ff8ff0c9287b4459450b014ecee2ab84f1db6c8fd78991cbdb53c9a98aceafdd8ceda197a3c36a3117130d4f1a482d194b455a422f8cddc7c2d792625a595b505712/5c2d88d1c993f99bd38483a75ed60d36.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Python，Django集客・販売促進システムの開発",
+      "salary_max": "800000",
+      "company": "バリューアークコンサルティング株式会社"
+    },
+    {
+      "salary_min": "6000000",
+      "locations": "日本",
+      "salary_type": "Y",
+      "date": "Tue, 06 Sep 2022 22:55:15 GMT",
+      "description": " remote diverse team looking for Python/<b>Django</b> developer to help us create and maintain innovative software products... experience with web frameworks (<b>Django</b>/Flask) ~3 years   Experience with ORM frameworks (SQLAchemy / <b>Django</b> ORM) ~3 years...",
+      "salary_currency_code": "JPY",
+      "salary": "6000000 - 8000000 per year",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1c1b417d5410070149546409090f090867700d1c011c442979485b010301571152612c0b0f09024f75505a431818/4ccf30bf6cc2e7d752ece5a666261ae1.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "Python / Django Developer",
+      "salary_max": "8000000",
+      "company": "リードプラス株式会社"
+    },
+    {
+      "salary_min": "630000",
+      "locations": "東京都渋谷区",
+      "salary_type": "M",
+      "date": "Tue, 09 Aug 2022 22:48:08 GMT",
+      "description": "内容】   ■マーケティングサポートツール開発業務  【担当工程】基本設計～テスト  ○ポイントサービス業向けMAツール（マーケティングオートメーション）の開発を対応いただきます。   【応募要件【必須】】   ■Python／<b>Django</b>での...",
+      "salary_currency_code": "JPY",
+      "salary": "630000 - 680000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-4812417a48064f8da4eac3e0d482ecd686a3f28bebd0c9a88eceafd46d394216008afeea89fedf22230d0b53c9a988ceaef98ced9b97a3eb6a3117130d4f1a4880e5a1cca4972f87ecf0c4f79c80ead08de4e3c3f6cb8af099c8bf9d0d87eddbc4f79c80ebf28de5dc2146505c441918/d65219239efd2a1af7e957a155c8b676.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "即～長期【月給６３万円以上】＜Python／Django／WEBサービス開発経験＞マーケティングサポートツール開発業務支援",
+      "salary_max": "680000",
+      "company": "Cosmostork Co., Ltd."
+    },
+    {
+      "salary_min": "700000",
+      "locations": "神奈川県横浜市西区",
+      "salary_type": "M",
+      "date": "Sat, 03 Sep 2022 22:54:48 GMT",
+      "description": "株式会社ハイウェル    募集要項    Python・<b>Django</b>   【雇用形態】  業務委託   【給与】  月給 700,000円～850,000円  『精算』  140h-180h   【勤務地】  神奈...川県横浜市西区フルリモート    募集情報    フリーランス｜Python・<b>Django</b>｜機械学習プラットフォームのバックエンド開発   本求人はITフリーランスの皆様向けの業務委託(準委任)契約の案件となっております。   「もっと単価の高い案件に参画したい」  「フル...",
+      "salary_currency_code": "JPY",
+      "salary": "700000 - 850000 per month",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-1d48417d541007014954c9f5e386f7dd67c6ddf78fd19a0bd4bba683f6d42597a3f68be2c484e69c97ebc090a998deaf944486f8ac93b9d96a3117130d4f1a488fdab5cd9f9dc8c9c98998e62233111506080b003002081d4d443c1f1a525c5710/f861ba28b408fa19046e60b5a49902b8.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "フリーランス／Python・Django／機械学習プラットフォームのバックエンド開発",
+      "salary_max": "850000",
+      "company": "株式会社ハイウェル"
+    },
+    {
+      "salary_min": "8000000",
+      "locations": "東京都中央区勝どき",
+      "salary_type": "Y",
+      "date": "Fri, 01 Jul 2022 22:25:08 GMT",
+      "description": "Pythonエンジニア（システムエンジニア、SE）  大手または中堅SIerに常駐する作業形態が多数ですが、弊社ではPythonを利用した社内開発も行っております。   「上流工程を経験したい」「プレイングマネージャーとしてプロジェクトに参画したい」「主に開発に携わりたい」など、ご要望に添った案件へのアサインが可能です！  ◯アクセス：都営地下鉄大江戸線「勝どき駅」下車：徒歩0分（A1出口直結）  ◯勤務時間：平日9:00～18:00（実働8h、休憩1h）  ◯休日・休暇：年...",
+      "salary_currency_code": "JPY",
+      "salary": "8000000 per year",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-181c41ceaef38ced8a97a2d38be2c784e6be97ebd553cfb795c883e16d8bbbdcc5cded638de4f2c3f7c58af19ac8be84cee7f18da4c82280ebf68de4c82297ebfe90a986deaf9d87ecc726471051585157/bdd39428806076b553e275a7e04a5219.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "在宅ワークOKのPythonプログラマー（django）",
+      "salary_max": "8000000",
+      "company": "株式会社エーエスエル"
+    },
+    {
+      "salary_min": "960",
+      "locations": "埼玉県さいたま市大宮区",
+      "salary_type": "H",
+      "date": "Fri, 26 Aug 2022 22:44:21 GMT",
+      "description": "談）   【待遇】   交通費支給（上限800円／日）、昇給有、従業員割引有、まかない有   【応募方法】   電話連絡の上、面接時に履歴書（写真貼付）をご持参下さい。   【連絡先住所】   <b>DJANGO</b> BANQUET  埼玉...",
+      "salary_currency_code": "JPY",
+      "salary": "960 per hour",
+      "site": "",
+      "url": "https://jobviewtrack.com/ja-jp/job-131d41c587db88fea154c3e1d182ecd886a3f78beae628c39792caf4e94ec4f68d80ebe28de4e4c3f7db6b90a886deaeae87ecefc4f793438be3d784e79f97ebea90a9be3fc587db88fea154c6edcd84c0c567c6facd8cdd880bdeaf9487edd1c4f7a380ebf46f555216475d51/4fcba5e4584122313a73b7170e13e891.html?affid=2fe9505824da669b63789f957def6e26",
+      "title": "キッチン調理・接客スタッフ",
+      "salary_max": "960",
+      "company": "DJANGO BANQUET"
+    }
+  ],
+  "wordcloud_json": "[{\"word\": \"b\", \"count\": 366}, {\"word\": \"開発\", \"count\": 223}, {\"word\": \"Django\", \"count\": 181}, {\"word\": \"勤務\", \"count\": 154}, {\"word\": \"環境\", \"count\": 128}, {\"word\": \"リモート\", \"count\": 114}, {\"word\": \"Python\", \"count\": 113}, {\"word\": \"技術\", \"count\": 104}, {\"word\": \"React\", \"count\": 73}, {\"word\": \"方\", \"count\": 61}, {\"word\": \"サービス\", \"count\": 60}, {\"word\": \"地\", \"count\": 58}, {\"word\": \"PostgreSQL\", \"count\": 57}, {\"word\": \"構築\", \"count\": 54}, {\"word\": \"経験\", \"count\": 54}, {\"word\": \"アジャイル\", \"count\": 51}, {\"word\": \"実装\", \"count\": 50}, {\"word\": \"ベース\", \"count\": 49}, {\"word\": \"最新\", \"count\": 49}, {\"word\": \"少数\", \"count\": 49}, {\"word\": \"ため\", \"count\": 49}, {\"word\": \"Redis\", \"count\": 49}, {\"word\": \"フェーズ\", \"count\": 49}, {\"word\": \"企画\", \"count\": 49}, {\"word\": \"ウド\", \"count\": 48}, {\"word\": \"入社\", \"count\": 48}, {\"word\": \"構想\", \"count\": 48}, {\"word\": \"数\", \"count\": 48}, {\"word\": \"段階\", \"count\": 48}, {\"word\": \"拡張\", \"count\": 48}, {\"word\": \"方針\", \"count\": 48}, {\"word\": \"サー\", \"count\": 48}, {\"word\": \"駅\", \"count\": 48}, {\"word\": \"Memcached\", \"count\": 47}, {\"word\": \"場所\", \"count\": 47}, {\"word\": \"最寄り\", \"count\": 47}, {\"word\": \"補足\", \"count\": 47}, {\"word\": \"原則\", \"count\": 47}, {\"word\": \"遠隔\", \"count\": 47}, {\"word\": \"業務\", \"count\": 38}, {\"word\": \"案件\", \"count\": 26}, {\"word\": \"円\", \"count\": 25}, {\"word\": \"フレームワーク\", \"count\": 25}, {\"word\": \"システム\", \"count\": 24}, {\"word\": \"募集\", \"count\": 22}, {\"word\": \"設計\", \"count\": 22}, {\"word\": \"h\", \"count\": 21}, {\"word\": \"000\", \"count\": 20}, {\"word\": \"委託\", \"count\": 18}, {\"word\": \"フリーランス\", \"count\": 18}, {\"word\": \"AWS\", \"count\": 17}, {\"word\": \"年\", \"count\": 16}, {\"word\": \"Web\", \"count\": 16}, {\"word\": \"担当\", \"count\": 16}, {\"word\": \"MySQL\", \"count\": 16}, {\"word\": \"Framework\", \"count\": 16}, {\"word\": \"言語\", \"count\": 15}, {\"word\": \"Laravel\", \"count\": 15}, {\"word\": \"オン\", \"count\": 14}, {\"word\": \"プレ\", \"count\": 14}, {\"word\": \"ミス\", \"count\": 14}, {\"word\": \"会社\", \"count\": 13}, {\"word\": \"スキル\", \"count\": 13}, {\"word\": \"テスト\", \"count\": 13}, {\"word\": \"Angular\", \"count\": 13}, {\"word\": \"Azure\", \"count\": 13}, {\"word\": \"VMware\", \"count\": 13}, {\"word\": \"DB\", \"count\": 13}, {\"word\": \"エンド\", \"count\": 12}, {\"word\": \"雇用\", \"count\": 12}, {\"word\": \"形態\", \"count\": 12}, {\"word\": \"C\", \"count\": 12}, {\"word\": \"バック\", \"count\": 11}, {\"word\": \"IT\", \"count\": 11}, {\"word\": \"情報\", \"count\": 11}, {\"word\": \"以上\", \"count\": 11}, {\"word\": \"工程\", \"count\": 11}, {\"word\": \"JavaScript\", \"count\": 11}, {\"word\": \"ツール\", \"count\": 11}, {\"word\": \"内容\", \"count\": 10}, {\"word\": \"単価\", \"count\": 10}, {\"word\": \"OS\", \"count\": 10}, {\"word\": \"180\", \"count\": 10}, {\"word\": \"株式\", \"count\": 10}, {\"word\": \"給与\", \"count\": 10}, {\"word\": \"月給\", \"count\": 10}, {\"word\": \"Spring\", \"count\": 10}, {\"word\": \"1\", \"count\": 9}, {\"word\": \"Linux\", \"count\": 9}, {\"word\": \"SQL\", \"count\": 9}, {\"word\": \"ログ\", \"count\": 9}, {\"word\": \"グラフ\", \"count\": 9}, {\"word\": \"ハイ\", \"count\": 9}, {\"word\": \"ウェル\", \"count\": 9}, {\"word\": \"要項\", \"count\": 9}, {\"word\": \"精算\", \"count\": 9}, {\"word\": \"140\", \"count\": 9}, {\"word\": \"県\", \"count\": 9}, {\"word\": \"求人\", \"count\": 9}, {\"word\": \"皆\", \"count\": 9}, {\"word\": \"委任\", \"count\": 9}, {\"word\": \"契約\", \"count\": 9}, {\"word\": \"参画\", \"count\": 9}, {\"word\": \"エンジニア\", \"count\": 8}, {\"word\": \"動産\", \"count\": 8}, {\"word\": \"2022\", \"count\": 8}, {\"word\": \"区\", \"count\": 8}, {\"word\": \"Vue\", \"count\": 8}, {\"word\": \"js\", \"count\": 8}, {\"word\": \"詳細\", \"count\": 8}, {\"word\": \"Oracle\", \"count\": 8}, {\"word\": \"Server\", \"count\": 8}, {\"word\": \"WEB\", \"count\": 7}, {\"word\": \"利用\", \"count\": 7}, {\"word\": \"製造\", \"count\": 7}, {\"word\": \"プロジェクト\", \"count\": 7}, {\"word\": \"基本\", \"count\": 7}, {\"word\": \"解析\", \"count\": 7}, {\"word\": \"市\", \"count\": 7}, {\"word\": \"必須\", \"count\": 6}, {\"word\": \"3\", \"count\": 6}, {\"word\": \"歓迎\", \"count\": 6}, {\"word\": \"対応\", \"count\": 6}, {\"word\": \"2\", \"count\": 6}, {\"word\": \"SE\", \"count\": 6}, {\"word\": \"可視\", \"count\": 6}, {\"word\": \"社内\", \"count\": 6}, {\"word\": \"VB\", \"count\": 6}, {\"word\": \"VBA\", \"count\": 6}, {\"word\": \"Rudy\", \"count\": 6}, {\"word\": \"Windows\", \"count\": 6}, {\"word\": \"UNIX\", \"count\": 6}, {\"word\": \"仕事\", \"count\": 5}, {\"word\": \"フレックス\", \"count\": 5}, {\"word\": \"可\", \"count\": 5}, {\"word\": \"自社\", \"count\": 5}, {\"word\": \"企業\", \"count\": 5}, {\"word\": \"月\", \"count\": 5}, {\"word\": \"プログラミング\", \"count\": 5}, {\"word\": \"フロント\", \"count\": 5}, {\"word\": \"あり\", \"count\": 5}, {\"word\": \"大手\", \"count\": 5}, {\"word\": \"神奈\", \"count\": 5}, {\"word\": \"川\", \"count\": 5}, {\"word\": \"千葉\", \"count\": 5}, {\"word\": \"応募\", \"count\": 5}, {\"word\": \"ビジネス\", \"count\": 4}, {\"word\": \"事業\", \"count\": 4}, {\"word\": \"休日\", \"count\": 4}, {\"word\": \"サイト\", \"count\": 4}, {\"word\": \"管理\", \"count\": 4}, {\"word\": \"万\", \"count\": 4}, {\"word\": \"TypeScript\", \"count\": 4}, {\"word\": \"使用\", \"count\": 4}, {\"word\": \"5\", \"count\": 4}, {\"word\": \"ポイント\", \"count\": 4}, {\"word\": \"ミドルウェア\", \"count\": 4}, {\"word\": \"アプリケーション\", \"count\": 4}, {\"word\": \"Flask\", \"count\": 4}, {\"word\": \"期間\", \"count\": 4}, {\"word\": \"機能\", \"count\": 4}, {\"word\": \"川崎\", \"count\": 4}, {\"word\": \"550\", \"count\": 4}, {\"word\": \"750\", \"count\": 4}, {\"word\": \"電話\", \"count\": 4}, {\"word\": \"運用\", \"count\": 4}, {\"word\": \"社員\", \"count\": 4}, {\"word\": \"マーケティング\", \"count\": 4}, {\"word\": \"Ruby\", \"count\": 4}, {\"word\": \"Rails\", \"count\": 4}, {\"word\": \"Go\", \"count\": 3}, {\"word\": \"年間\", \"count\": 3}, {\"word\": \"126\", \"count\": 3}, {\"word\": \"テック\", \"count\": 3}, {\"word\": \"採用\", \"count\": 3}, {\"word\": \"クラウド\", \"count\": 3}, {\"word\": \"API\", \"count\": 3}, {\"word\": \"既存\", \"count\": 3}, {\"word\": \"概要\", \"count\": 3}, {\"word\": \"GCP\", \"count\": 3}, {\"word\": \"備考\", \"count\": 3}, {\"word\": \"Git\", \"count\": 3}, {\"word\": \"上流\", \"count\": 3}, {\"word\": \"職種\", \"count\": 3}, {\"word\": \"グループ\", \"count\": 3}, {\"word\": \"棒\", \"count\": 3}, {\"word\": \"700\", \"count\": 3}, {\"word\": \"横浜\", \"count\": 3}, {\"word\": \"アプリ\", \"count\": 3}, {\"word\": \"保守\", \"count\": 3}, {\"word\": \"800\", \"count\": 3}, {\"word\": \"ゲーム\", \"count\": 3}, {\"word\": \"面談\", \"count\": 3}, {\"word\": \"登録\", \"count\": 3}, {\"word\": \"先\", \"count\": 3}, {\"word\": \"時間\", \"count\": 3}, {\"word\": \"要件\", \"count\": 3}, {\"word\": \"条件\", \"count\": 3}, {\"word\": \"日\", \"count\": 3}, {\"word\": \"例\", \"count\": 3}, {\"word\": \"on\", \"count\": 3}, {\"word\": \"背景\", \"count\": 2}, {\"word\": \"DX\", \"count\": 2}, {\"word\": \"推進\", \"count\": 2}, {\"word\": \"副業\", \"count\": 2}, {\"word\": \"主軸\", \"count\": 2}, {\"word\": \"年々\", \"count\": 2}, {\"word\": \"120\", \"count\": 2}, {\"word\": \"％\", \"count\": 2}, {\"word\": \"成長\", \"count\": 2}, {\"word\": \"上場\", \"count\": 2}, {\"word\": \"ローンチ\", \"count\": 2}, {\"word\": \"SFA\", \"count\": 2}, {\"word\": \"個人\", \"count\": 2}, {\"word\": \"ベンチャー\", \"count\": 2}, {\"word\": \"当社\", \"count\": 2}, {\"word\": \"興味\", \"count\": 2}, {\"word\": \"インターンシップ\", \"count\": 2}, {\"word\": \"写真\", \"count\": 2}, {\"word\": \"インフラ\", \"count\": 2}, {\"word\": \"データ\", \"count\": 2}, {\"word\": \"改修\", \"count\": 2}, {\"word\": \"90\", \"count\": 2}, {\"word\": \"東京\", \"count\": 2}, {\"word\": \"都\", \"count\": 2}, {\"word\": \"データベース\", \"count\": 2}, {\"word\": \"GitHub\", \"count\": 2}, {\"word\": \"31\", \"count\": 2}, {\"word\": \"負荷\", \"count\": 2}, {\"word\": \"回\", \"count\": 2}, {\"word\": \"締め\", \"count\": 2}, {\"word\": \"翌月\", \"count\": 2}, {\"word\": \"末日\", \"count\": 2}, {\"word\": \"相談\", \"count\": 2}, {\"word\": \"Postgres\", \"count\": 2}, {\"word\": \"Elasticsearch\", \"count\": 2}, {\"word\": \"Kafka\", \"count\": 2}, {\"word\": \"60\", \"count\": 2}, {\"word\": \"Docker\", \"count\": 2}, {\"word\": \"CI\", \"count\": 2}, {\"word\": \"CD\", \"count\": 2}, {\"word\": \"想定\", \"count\": 2}, {\"word\": \"折れ\", \"count\": 2}, {\"word\": \"線\", \"count\": 2}, {\"word\": \"交通\", \"count\": 2}, {\"word\": \"支給\", \"count\": 2}, {\"word\": \"500\", \"count\": 2}, {\"word\": \"船橋\", \"count\": 2}, {\"word\": \"600\", \"count\": 2}, {\"word\": \"市中\", \"count\": 2}, {\"word\": \"インターネット\", \"count\": 2}, {\"word\": \"掲載\", \"count\": 2}, {\"word\": \"予定\", \"count\": 2}, {\"word\": \"9\", \"count\": 2}, {\"word\": \"実施\", \"count\": 2}, {\"word\": \"来社\", \"count\": 2}, {\"word\": \"取引\", \"count\": 2}, {\"word\": \"Gitlab\", \"count\": 2}, {\"word\": \"Markdown\", \"count\": 2}, {\"word\": \"Pycharm\", \"count\": 2}, {\"word\": \"REST\", \"count\": 2}, {\"word\": \"複数\", \"count\": 2}, {\"word\": \"作業\", \"count\": 2}, {\"word\": \"サポート\", \"count\": 2}, {\"word\": \"MA\", \"count\": 2}, {\"word\": \"オートメーション\", \"count\": 2}, {\"word\": \"正\", \"count\": 2}, {\"word\": \"資格\", \"count\": 2}, {\"word\": \"アクセス\", \"count\": 2}, {\"word\": \"00\", \"count\": 2}, {\"word\": \"連絡\", \"count\": 2}, {\"word\": \"with\", \"count\": 2}, {\"word\": \"frameworks\", \"count\": 2}, {\"word\": \"years\", \"count\": 2}, {\"word\": \"ORM\", \"count\": 2}, {\"word\": \"Java\", \"count\": 2}, {\"word\": \"PHP\", \"count\": 2}, {\"word\": \"中\", \"count\": 2}, {\"word\": \"志向\", \"count\": 2}, {\"word\": \"決定\", \"count\": 2}, {\"word\": \"通信\", \"count\": 2}, {\"word\": \"両面\", \"count\": 2}, {\"word\": \"Dart\", \"count\": 2}, {\"word\": \"Echo\", \"count\": 2}, {\"word\": \"Lightning\", \"count\": 2}, {\"word\": \"Component\", \"count\": 2}, {\"word\": \"ームワーク\", \"count\": 2}]",
+  "title": "Django 「年収/採用企業」 フレームワークの転職評価 FlameValue",
+  "description": "Djangoの「年収/採用企業情報」。就職・転職前にDjangoの働く環境、年収・求人数などをリサーチ。就職・転職のための「Django」の価値分析チャート、求人情報、フレームワークランキングを掲載。",
+  "comments": [
+    "\nDjangoの第一の目的は、複雑なデータベース主体のウェブサイトの構築を簡単にすることであり、コンポーネントの再利用性と'pluggability'、素早い開発、Don't repeat yourselfの原則に力点を置いている",
+    "ファイルやデータのモデルにいたるまで、Pythonが一貫して用いられている",
+    "Djangoはまた、動的に生成され、データモデルの定義を通じて完全に構成することができる、データベース管理CRUDインターフェイスをオプションで提供する"
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Commons-logo.svg",
+  "wikipedia_related": [
+    {
+      "basic": {
+        "money": 443,
+        "overtime": 599,
+        "age": 30,
+        "size": 599,
+        "count": 39473
+      },
+      "score": {
+        "money": 3.1642857142857146,
+        "overtime": 2.995,
+        "age": 5.0,
+        "size": 2.995,
+        "count": 5
+      },
+      "name": "Python",
+      "stars": "★★☆☆☆",
+      "total_score": 2.84
+    },
+    {
+      "basic": {
+        "money": 564,
+        "overtime": 730,
+        "age": 30,
+        "size": 730,
+        "count": 20358
+      },
+      "score": {
+        "money": 4.0285714285714285,
+        "overtime": 3.65,
+        "age": 5.0,
+        "size": 3.65,
+        "count": 5
+      },
+      "name": "Ruby",
+      "stars": "★★★☆☆",
+      "total_score": 3.27
+    },
+    {
+      "basic": {
+        "money": 607,
+        "overtime": 745,
+        "age": 30,
+        "size": 745,
+        "count": 14555
+      },
+      "score": {
+        "money": 4.335714285714285,
+        "overtime": 3.725,
+        "age": 5.0,
+        "size": 3.725,
+        "count": 5
+      },
+      "name": "TypeScript",
+      "stars": "★★★☆☆",
+      "total_score": 3.36
+    }
+  ]
+}

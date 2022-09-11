@@ -215,7 +215,7 @@ def build_param(name):
     param.update(wikipedia_related)
     return param
 
-def index(request, htmlname):
+def page(request, htmlname):
     name = htmlname
     param = {}
     jsonIO = JsonIO()
@@ -224,13 +224,29 @@ def index(request, htmlname):
     else:
         param = build_param(name)
         jsonIO.write(param["name"],param)
+    return render(request, f"jobstatic/page.html", param)
+
+def index(request):
+    global FLAMEWORKDICT
+    if request.GET.get("reload"):
+        FLAMEWORKDICT = jsonDictionalyManager.generate_all_flameworkdict()
+    name = "フレームワーク"
+    param = {
+        "title" : "「年収/採用企業」FlameValue フレームワークの転職評価",
+        "description" : f"「年収/採用企業情報」。就職・転職前に{name}の働く環境、年収・求人数などをリサーチ。就職・転職のための「{name}」の価値分析チャート、求人情報、フレームワークランキングを掲載。",
+        "FLAMEWORKDICT" : sorted(FLAMEWORKDICT, key=lambda x: x["total_score"], reverse=True)
+    }
     return render(request, f"jobstatic/index.html", param)
 
 def sitemap(request):
     param = {
-        "pop_page_list" : jsonDictionalyManager.generate_all_flameworkdict()
+        "pop_page_list" : jsonDictionalyManager.generate_all_flameworkdict(),
     }
     return render(request, f"jobstatic/sitemap.xml", param)
 
 def robots(request):
     return render(request, f"robots.txt")
+
+def reverse_index(request):
+    return redirect("/")
+

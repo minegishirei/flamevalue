@@ -28,6 +28,7 @@ class JsonDictionalyManager():
             row = self.jsonIO.read(name)
             new_row = {
                 "basic" : row["basic"],
+                "score" : row["score"],
                 "name" : name,
                 "stars" : row["stars"],
                 "total_score" : row["total_score"]
