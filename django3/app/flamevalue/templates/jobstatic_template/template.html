@@ -16,7 +16,7 @@
   <meta name="twitter:creator" content="@se_maintain">
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ description }}">
-  <meta name="twitter:image" content="https://question.short-tips.info/api/ogp/?text={{ name }}...score {{ stars }} {{ total_score }}......平均下限年収 : {{ basic.money }}万円... 平均上限年収 : {{ basic.overtime }}万円... 総求人数 : {{ basic.count }} ...............{{ title }}">
+  <meta name="twitter:image" content="https://question.short-tips.info/api/ogp/?text={{ name }}...score {{ stars }} {{ total_score }} ......平均下限年収 : {{ basic.money }}万円... 平均上限年収 : {{ basic.overtime }}万円... 総求人数 : {{ basic.count }} ...............{{ title }}">
 
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
@@ -47,7 +47,6 @@
       background-color: #f8f9fa;
       padding-left: 15%;
       padding-right:  15%;
-      max-width: 1500px;
     }
   }
 </style>
@@ -205,7 +204,6 @@
 
 </html>
 
-{{ wikipedia_list }}
 
 <script>
   var theme = {
@@ -432,19 +430,19 @@
     money_list = []
     overtime_list = []
     count_list = []
-    age_list = []
+    remote_list = []
     for (k in json_data) {
       row = json_data[k]
       date_list.push(row.date)
       money_list.push(row.values.money)
       overtime_list.push(row.values.overtime)
       count_list.push(row.values.count)
-      age_list.push(row.values.age)
+      remote_list.push(row.values.remote)
     }
     console.log(date_list)
     console.log(money_list)
     console.log(count_list)
-    console.log(age_list)
+    console.log(remote_list)
 
     var echartLine = echarts.init(document.getElementById('echart_line'), theme);
 
@@ -459,7 +457,7 @@
       legend: {
         x: 220,
         y: 40,
-        data: ['最低年収', '最大年収', '求人数']
+        data: ['最低年収', '最大年収', '求人数', 'リモート率']
       },
       toolbox: {
         show: true,
@@ -529,6 +527,18 @@
           }
         },
         data: count_list.map( (row) => row*100)
+      }, {
+        name: 'リモート率',
+        type: 'line',
+        smooth: true,
+        itemStyle: {
+          normal: {
+            areaStyle: {
+              type: 'default'
+            }
+          }
+        },
+        data: remote_list.map( (row) => row == undefined ? 0 : row )
       }]
     });
 

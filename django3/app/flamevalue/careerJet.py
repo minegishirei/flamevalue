@@ -40,8 +40,12 @@ def row_c(row):
             "規模" : int(int(row["salary_max"])/ods),
             "年収" : int(int(row["salary_min"])/ods),
             "残業時間" : int(int(row["salary_max"])/ods),
+            "リモート率" : (100 if remotework_checker(row) else 0),
             "年齢": 30,
             "日付" : datetime.datetime.strptime(row["date"], '%a, %d %b %Y %H:%M:%S GMT').strftime("%Y-%m-%d")
         } 
     print(new_row)
     return new_row
+
+def remotework_checker(row):
+    return ("在宅" in row["description"]) or ("リモート" in row["description"]) or ("在宅" in row["title"]) or ("リモート" in row["title"])

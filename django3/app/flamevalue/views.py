@@ -23,51 +23,6 @@ jsonDictionalyManager = JsonDictionalyManager()
 FLAMEWORKDICT = jsonDictionalyManager.generate_all_flameworkdict()
 
 
-origin = [
-    {
-        "会社名":"yahoo株式会社",
-        "規模" : 400,
-        "年収": 800,
-        "残業時間": 30,
-        "年齢": 20,
-        "日付" : "2022-09-08"
-    },
-    {
-        "会社名":"パーソルキャリア",
-        "規模" : 300,
-        "年収": 500,
-        "残業時間": 0,
-        "年齢": 30,
-        "日付" : "2022-08-01"
-    },
-        {
-            
-        "会社名":"パナソニック",
-        "規模" : 400,
-        "年収": 350,
-        "残業時間": 60,
-        "年齢": 30,
-        "日付" : "2022-08-22"
-    },
-        {
-            
-        "会社名":"アクセンチュア",
-        "規模" : 400,
-        "年収": 300,
-        "残業時間": 70,
-        "年齢": 30,
-        "日付" : "2022-07-31"
-    },
-        {
-            
-        "会社名":"ニトリHD",
-        "規模" : 400,
-        "年収": 400,
-        "残業時間": 50,
-        "年齢": 45,
-        "日付" : "2022-07-30"
-    },
-]
 
 
 
@@ -94,6 +49,7 @@ def basic(origin):
         "overtime" : round(average_data(origin, "残業時間")),
         "age" : round(average_data(origin, "年齢")),
         "size" : round(average_data(origin, "規模")),
+        "remote" : round(average_data(origin, "リモート率")),
         "count" : len(origin)
     }
 def TEST_average_data():
@@ -121,7 +77,8 @@ max_values = {
     "overtime" : 1000,
     "age" : 60,
     "count" : 10000,
-    "size" : 1000
+    "size" : 1000,
+    "remote" : 70
 }
 score       = score_currey(5, max_values)
 score_100   = score_currey(100, max_values)
@@ -152,11 +109,11 @@ def TEST_split_timetable():
     pprint.pprint(timetable)
     assert timetable[1], "error : TEST_split_timetable"
 
-
+"""
 TEST_average_data()
 TEST_scoring()
 TEST_split_timetable()
-
+"""
 
 
 

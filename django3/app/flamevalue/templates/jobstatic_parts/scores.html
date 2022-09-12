@@ -43,7 +43,7 @@
                     type: 'radar',
                     //データの設定
                     data: {
-                        labels: ['最小年収', '最大年収', '求人数', '？？？？？', '？？？？？'],
+                        labels: ['最小年収', '最大年収', '求人数', 'リモート率', '？？？？？'],
                         datasets: [{
                             label: 'Django',
                             //グラフのデータ
@@ -51,7 +51,7 @@
                                 "{{ score.money }}", 
                                 "{{ score.overtime }}", 
                                 "{{ score.count }}",
-                                "{{ score.age }}",
+                                "{{ score.remote }}",
                                 "{{ score.size }}"
                             ],
                             // データライン
@@ -120,10 +120,10 @@
             </div>
             <div class="col-md-12 col-sm-12 ">
                 <div>
-                    <p>???? : {{ basic.age }}</p>
+                    <p>リモート率 : {{ basic.remote }}%</p>
                     <div class="">
                         <div class="progress progress_sm" style="width: 76%;">
-                            <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="{{ score_100.age }}"></div>
+                            <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="{{ score_100.remote }}"></div>
                         </div>
                     </div>
                 </div>
