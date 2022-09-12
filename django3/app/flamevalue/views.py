@@ -116,6 +116,16 @@ TEST_split_timetable()
 """
 
 
+def get_money_countlist(origin, column, steps = None):
+    origin = sorted(origin, key=lambda row:row[column])
+    steps = range(0, 1000, 100)
+    count_list = [0 for row in steps]
+    for row in origin:
+        for i, step in enumerate(steps):
+            if row[column] < step and step < row[column] + 100:
+                count_list[i] += 1
+    return count_list
+
 
 def get_wiki_explain(name):
     words = wikipedia.search(name)
@@ -156,7 +166,8 @@ def build_param(name):
         "money_sorted" : sorted(origin, key=lambda row:row["年収"]),
         "jobs" : clear_jnet(jobs),
         "min_salary" : sorted( clear_jnet(jobs), key=lambda row:row["salary_min"]),
-        "wordcloud_json" : json.dumps(wordcount_list, ensure_ascii=False )
+        "wordcloud_json" : json.dumps(wordcount_list, ensure_ascii=False ),
+        "money_countlist" : json.dumps( {'lower' : get_money_countlist(origin, "年収"), 'upper' : get_money_countlist(origin, "残業時間")} )
     })
     html_param = {
         "title" : f"{name} 「年収/採用企業」 フレームワークの転職評価 FlameValue",

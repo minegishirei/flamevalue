@@ -196,10 +196,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.8.5/bootstrap-progressbar.min.js" integrity="sha512-ShSScKTSdSD7IiMKfgTdqaEY8gOGm5cNfqMr6Wc5BZvMgc1UveS+UqpS0TNUtRD1CZ9KhmbGtzwUN7HJlXxY8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-  <!-- Custom Theme Scripts -->
-  <script async src="/static/jobstatic/build/js/custom.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.3.3/echarts.min.js" integrity="sha512-2L0h0GhoIHQEjti/1KwfjcbyaTHy+hPPhE1o5wTCmviYcPO/TD9oZvUxFQtWvBkCSTIpt+fjsx1CCx6ekb51gw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+  <!-- Custom Theme Scripts -->
+  <script src="/static/jobstatic/build/js/custom.js"></script>
 </body>
 
 </html>
@@ -543,5 +543,95 @@
     });
 
   }
+
+</script>
+
+
+
+
+<script>
+
+    //echart Bar
+
+    var money_list_dict = JSON.parse(`
+    {{ money_countlist | safe }}
+    `)
+
+    var upper_money_list = money_list_dict.upper
+    var lower_money_list = money_list_dict.lower
+
+    if ($('#mainb').length) {
+
+var echartBar = echarts.init(document.getElementById('mainb'), theme);
+
+echartBar.setOption({
+    title: {
+        text: '{{ name }}',
+        subtext: '単位：件/万円'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data: ['下限', '上限']
+    },
+    toolbox: {
+        show: false
+    },
+    calculable: false,
+    xAxis: [{
+        type: 'category',
+        data: ['0', '100', '200', '300', '400', '500', '600', '700', '800', '900']
+    }],
+    yAxis: [{
+        type: 'value'
+    }],
+    series: [{
+        name: '下限',
+        type: 'bar',
+        data: lower_money_list,
+        markPoint: {
+            data: [{
+                type: 'max',
+                name: '???'
+            }, {
+                type: 'min',
+                name: '???'
+            }]
+        },
+        markLine: {
+            data: [{
+                type: 'average',
+                name: '???'
+            }]
+        }
+    }, {
+        name: '上限',
+        type: 'bar',
+        data: upper_money_list,
+        markPoint: {
+            data: [{
+                name: 'sales',
+                value: 182.2,
+                xAxis: 7,
+                yAxis: 183,
+            }, {
+                name: 'purchases',
+                value: 2.3,
+                xAxis: 11,
+                yAxis: 3
+            }]
+        },
+        markLine: {
+            data: [{
+                type: 'average',
+                name: '???'
+            }]
+        }
+    }
+  ]
+});
+
+}
 
 </script>
