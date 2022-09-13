@@ -3,11 +3,11 @@
     <div class="x_panel">
         <section class="panel">
             <div class="x_title">
-                <h2>Project Description</h2>
+                <h2>プロジェクト一覧</h2>
                 <div class="clearfix"></div>
             </div>
             <div class="row">
-                {% for job in jobs|slice:"2:" %}
+                {% for job in jobs|slice:":3" %}
                 {% include 'jobstatic_parts/job_row.html' %}
                 {% endfor %}
             </div>
