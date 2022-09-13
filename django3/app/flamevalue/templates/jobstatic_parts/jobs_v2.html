@@ -21,7 +21,7 @@
                                 <h5>{{ job.company }}</h5>
                                 {% else %}
                                 <p class="title">募集事項</p>
-                                <h5>{{ job.title }}</h5>
+                                <h5>{{ job.title|slice:":20" }}</h5>
                                 {% endif %}
                             </div>
                             <br />
