@@ -1,13 +1,14 @@
 from .careerJet import clear_jnet,mock_getCareerJet, row_converter, getCareerJet
 from .wikipedia_list import get_wikipedia_list
 from .JsonIO import JsonDictionalyManager, JsonIO
+from .my_tools import del_dub_dict_list
 from django.shortcuts import render, redirect
 import json
 import sys
 if '/God' not in sys.path:
     sys.path.append('/God')
 from .my_mecab import getMeishiList
-
+from .my_Qiita import getQiitaInfo
 
 from functools import reduce
 from operator import add
@@ -167,7 +168,8 @@ def build_param(name):
         "jobs" : clear_jnet(jobs),
         "min_salary" : sorted( clear_jnet(jobs), key=lambda row:row["salary_min"]),
         "wordcloud_json" : json.dumps(wordcount_list, ensure_ascii=False ),
-        "money_countlist" : json.dumps( {'lower' : get_money_countlist(origin, "年収"), 'upper' : get_money_countlist(origin, "残業時間")} )
+        "money_countlist" : json.dumps( {'lower' : get_money_countlist(origin, "年収"), 'upper' : get_money_countlist(origin, "残業時間")} ),
+        "qiita_acounts" : sorted( del_dub_dict_list([ row["user"] for row in getQiitaInfo(name, 100) ]) , key=lambda x: x["items_count"], reverse=True )[:3]
     })
     html_param = {
         "title" : f"{name} 「年収/採用企業」 フレームワークの転職評価 FlameValue",
@@ -193,7 +195,7 @@ def page(request, htmlname):
     else:
         param = build_param(name)
         jsonIO.write(param["name"],param)
-    return render(request, f"jobstatic/page.html", param)
+    return render(request, f"jobstatic_pages/page.html", param)
 
 def index(request):
     global FLAMEWORKDICT
@@ -205,13 +207,13 @@ def index(request):
         "description" : f"「年収/採用企業情報」。就職・転職前に{name}の働く環境、年収・求人数などをリサーチ。就職・転職のための「{name}」の価値分析チャート、求人情報、フレームワークランキングを掲載。",
         "FLAMEWORKDICT" : sorted(FLAMEWORKDICT, key=lambda x: x["total_score"], reverse=True)
     }
-    return render(request, f"jobstatic/index.html", param)
+    return render(request, f"jobstatic_pages/index.html", param)
 
 def sitemap(request):
     param = {
         "pop_page_list" : jsonDictionalyManager.generate_all_flameworkdict(),
     }
-    return render(request, f"jobstatic/sitemap.xml", param)
+    return render(request, f"jobstatic_pages/sitemap.xml", param)
 
 def robots(request):
     return render(request, f"robots.txt")
