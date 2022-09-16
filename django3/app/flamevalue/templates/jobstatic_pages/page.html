@@ -3,7 +3,7 @@
 
 {% block content %}
 <!-- page content -->
-<div role="main" class="main_contents">
+<div role="main" class="main_contents" style="overflow-x:hidden;">
   <!-- top tiles -->
   <div class="row" style="display: inline-block;">
     {% include 'jobstatic_parts/top.html' %}
@@ -24,7 +24,7 @@
     {% include "jobstatic_parts/others.html" %}
   </div>
   <div class="row">
-    <div class="col-md-8 col-sm-9 ">
+    <div class="col-md-8 col-sm-8 ">
       {% include "jobstatic_parts/acounts.html" %}
       {% include "jobstatic_parts/comments_v2.html" %}
     </div>
