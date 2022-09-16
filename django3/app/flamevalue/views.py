@@ -137,6 +137,34 @@ def get_wiki_explain(name):
         "image" : page.images[0]
     }
 
+
+
+def get_qiita_comments(name, word):
+    def get_good_comment(name, markdown):
+        hit_word = re.findall(name+'.?' + word, markdown)[0]
+        text1 =  hit_word + "\n" + hit_word.join( markdown.split(hit_word)[1:] )
+        text2 = text1[:500]
+        new_tag = '#### '
+        text2 = re.sub('#+', new_tag, text2)
+        text3 = new_tag + "\n" + new_tag.join( text2.split(new_tag)[:1] )
+        return text3
+    feature_include_list = filter( lambda x: re.findall(name+'.?'+word, x["body"]),getQiitaInfo("title:"+name+word, 100) )
+    qiita_comments = []
+    for row in feature_include_list:
+        target_text = row["body"]
+        new_text = get_good_comment(name, target_text)
+        row.update({
+            "body" : new_text,
+            "origin_body" : row["body"],
+            "rendered_body" : ""
+        })
+        if len(new_text) > 100:
+            qiita_comments.append(row)
+    return qiita_comments
+
+
+
+import re
 def build_param(name):
     origin = getCareerJet(name.replace("(プログラミング言語)", ""))
     jobs = origin["jobs"]
@@ -154,6 +182,8 @@ def build_param(name):
     }
 
     wordcount_list =  getMeishiList("。".join([row["description"] for row in jobs]))
+    list_a = get_qiita_comments(name, "メリット")
+    list_a.extend( get_qiita_comments(name, "特徴") ) #.extend( 
     data_param.update({
         "total_score" :  total_score,
         "stars" : "★"*total_score_int + "☆"*(5-total_score_int),
@@ -169,7 +199,8 @@ def build_param(name):
         "min_salary" : sorted( clear_jnet(jobs), key=lambda row:row["salary_min"]),
         "wordcloud_json" : json.dumps(wordcount_list, ensure_ascii=False ),
         "money_countlist" : json.dumps( {'lower' : get_money_countlist(origin, "年収"), 'upper' : get_money_countlist(origin, "残業時間")} ),
-        "qiita_acounts" : sorted( del_dub_dict_list([ row["user"] for row in getQiitaInfo(name, 100) ]) , key=lambda x: x["items_count"], reverse=True )[:3]
+        "qiita_acounts" : sorted( del_dub_dict_list([ row["user"] for row in getQiitaInfo(name, 100) ]) , key=lambda x: x["items_count"], reverse=True )[:10],
+        "qiita_comments" : list_a
     })
     html_param = {
         "title" : f"{name} 「年収/採用企業」 フレームワークの転職評価 FlameValue",

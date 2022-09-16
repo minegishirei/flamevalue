@@ -4,11 +4,11 @@
 {% block content %}
 <!-- page content -->
 <div role="main" class="main_contents">
-    <!-- top tiles -->
-    <div class="row" style="display: inline-block;">
-      {% include 'jobstatic_parts/top.html' %}
-    </div>
-    <!-- /top tiles -->
+  <!-- top tiles -->
+  <div class="row" style="display: inline-block;">
+    {% include 'jobstatic_parts/top.html' %}
+  </div>
+  <!-- /top tiles -->
   <!-- top tiles 
   <div class="row" style="display: inline-block;">
     {% include 'jobstatic_parts/top_num.html' %}
@@ -20,15 +20,17 @@
     {% include "jobstatic_parts/companys.html" %}
   </div>
   <div class="row">
-    {% include "jobstatic_parts/acounts.html" %}
-  </div>
-  <div class="row">
     {% include "jobstatic_parts/money_list.html" %}
     {% include "jobstatic_parts/others.html" %}
   </div>
   <div class="row">
-    {% include "jobstatic_parts/jobs_top3.html" %}
+    <div class="col-md-8 col-sm-9 ">
+      {% include "jobstatic_parts/acounts.html" %}
+      {% include "jobstatic_parts/comments_v2.html" %}
+    </div>
+      {% include "jobstatic_parts/jobs_top3.html" %}
   </div>
+
   <div class="row">
     {% include "jobstatic_parts/line_graph.html" %}
   </div>

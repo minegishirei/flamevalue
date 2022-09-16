@@ -1,5 +1,5 @@
 <!-- start project-detail sidebar -->
-<div class="col-md-12 col-sm-3  ">
+<div class="col-md-4 col-sm-3  ">
     <div class="x_panel">
         <section class="panel">
             <div class="x_title">
@@ -8,7 +8,7 @@
             </div>
             <div class="row">
                 {% for job in jobs|slice:":3" %}
-                {% include 'jobstatic_parts/job_row.html' %}
+                {% include 'jobstatic_parts/job_row.html' with col_md_num='12' %}
                 {% endfor %}
             </div>
         </section>

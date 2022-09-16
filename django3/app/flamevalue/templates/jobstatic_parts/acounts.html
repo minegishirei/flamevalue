@@ -1,72 +1,42 @@
-<!-- start project-detail sidebar -->
-<div class="col-md-12 col-sm-3  ">
-    <div class="x_panel">
-        <div class="x_title">
-            <h2>Qiitaトップランカー</h2>
-            <ul class="nav navbar-right panel_toolbox">
-                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i
-                            class="fa fa-wrench"></i></a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Settings 1</a>
-                        <a class="dropdown-item" href="#">Settings 2</a>
-                    </div>
-                </li>
-                <li><a class="close-link"><i class="fa fa-close"></i></a>
-                </li>
-            </ul>
-            <div class="clearfix"></div>
-        </div>
-        <div class="x_content">
-
+<div class="x_panel">
+    <div class="x_title">
+        <h2>Qiitaトップランカー</h2>
+        <ul class="nav navbar-right panel_toolbox">
+            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i
+                        class="fa fa-wrench"></i></a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Settings 1</a>
+                    <a class="dropdown-item" href="#">Settings 2</a>
+                </div>
+            </li>
+            <li><a class="close-link"><i class="fa fa-close"></i></a>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+    <div class="x_content" style="height: 500px; overflow-y: scroll; overflow-x: hidden;">
+        {% for row in qiita_acounts %}
+        <article class="media event">
             <div class="row">
-            {% for row in qiita_acounts %}
-            {% include 'jobstatic_parts/acount_row.html' %}
-            {% endfor %}
+                <div class="col-md-1 col-sm-1  profile_details">
+                    <a class="pull-left" style="padding-right: 10px;" href="https://qiita.com/{{ row.id }}">
+                        <img src="{{ row.profile_image_url }}" width="42px" style="border-radius: 50%;">
+                    </a>
+                </div>
+                <div class="col-md-10 col-sm-10  profile_details">
+                    <div class="media-body">
+                        <a class="title" href="https://qiita.com/{{ row.id }}">{{ row.id }} - {{ row.name }}</a>
+                        <a class="title" href="https://qiita.com/{{ row.id }}">{{ row.stars }} {{ row.total_score }}</a>
+                        <p>記事投稿数 {{ row.items_count }}件 / 総求人数{{ row.basic.count }}件 </p>
+                        <p>{{row.description}}</p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </article>
+        <hr>
+        {% endfor %}
     </div>
 </div>
-
-
-<!--
-        <div class="col-md-4 col-sm-4  profile_details">
-            <div class="well profile_view">
-                <div class="col-sm-12">
-                    <h4 class="brief"><i>Digital Strategist</i></h4>
-                    <div class="left col-md-7 col-sm-7">
-                        <h2>Nicole Pearson</h2>
-                        <p><strong>About: </strong> Web Designer / UX / Graphic Artist / Coffee Lover </p>
-                        <ul class="list-unstyled">
-                            <li><i class="fa fa-building"></i> Address: </li>
-                            <li><i class="fa fa-phone"></i> Phone #: </li>
-                        </ul>
-                    </div>
-                    <div class="right col-md-5 col-sm-5 text-center">
-                        <img src="images/img.jpg" alt="" class="img-circle img-fluid">
-                    </div>
-                </div>
-                <div class=" profile-bottom text-center">
-                    <div class=" col-sm-6 emphasis">
-                        <p class="ratings">
-                            <a>4.0</a>
-                            <a href="#"><span class="fa fa-star"></span></a>
-                            <a href="#"><span class="fa fa-star"></span></a>
-                            <a href="#"><span class="fa fa-star"></span></a>
-                            <a href="#"><span class="fa fa-star"></span></a>
-                            <a href="#"><span class="fa fa-star-o"></span></a>
-                        </p>
-                    </div>
-                    <div class=" col-sm-6 emphasis">
-                        <button type="button" class="btn btn-success btn-sm"> <i class="fa fa-user">
-                            </i> <i class="fa fa-comments-o"></i> </button>
-                        <button type="button" class="btn btn-primary btn-sm">
-                            <i class="fa fa-user"> </i> View Profile
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        -->

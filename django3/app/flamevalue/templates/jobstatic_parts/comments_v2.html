@@ -1,0 +1,51 @@
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+
+
+{% for row in qiita_comments %}
+<div class="x_panel">
+    <div class="x_title">
+        <div class="profile_title">
+            <div class="col-md-6">
+                <h2>{{ row.title }}</h2>
+            </div>
+        </div>
+
+        <div class="" role="tabpanel" data-example-id="togglable-tabs">
+            <div id="myTabContent" class="tab-content">
+                <div role="tabpanel" class="tab-pane active " id="tab_content1" aria-labelledby="home-tab">
+                    <!-- start recent activity -->
+                    <ul class="messages">
+                        <li>
+                            <img src="{{ row.user.profile_image_url }}" class="avatar" alt="Avatar">
+                            <div class="message_date">
+                                <h3 class="date text-info">{{ row.likes_count }}</h3>
+                                <p class="month">Likes</p>
+                            </div>
+                            <div class="message_wrapper">
+                                <h6 class="heading">{{ row.user.name }}</h6>
+                                <div id="content_{{ row.id }}">{{ row.body }}</div>
+                                <script>
+                                    document.getElementById('content_{{ row.id }}').innerHTML = marked.parse(document.getElementById('content_{{ row.id }}').innerHTML);
+                                </script>
+                                <p class="url">
+                                    <span class="fs1 text-info" aria-hidden="true" data-icon=""></span>
+                                    <a href="#"><i class="fa fa-paperclip"></i> {{ row.created_at }} </a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+<style>
+    /*
+    .original_styles>h1 {
+        font-size: 2em;
+    }
+    */
+</style>

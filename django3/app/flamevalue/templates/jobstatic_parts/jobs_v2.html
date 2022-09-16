@@ -8,7 +8,7 @@
             </div>
             <div class="row">
                 {% for job in jobs|slice:"2:" %}
-                {% include 'jobstatic_parts/job_row.html' %}
+                {% include 'jobstatic_parts/job_row.html' with col_md_num='4' %}
                 {% endfor %}
             </div>
         </section>
