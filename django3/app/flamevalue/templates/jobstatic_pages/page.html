@@ -15,69 +15,61 @@
   </div>
 
 
-
   <div class="">
-    <div class="col-md-12 col-sm-6  ">
-      <div class="x_panel">
-
-        <div class="x_content">
-
-          <ul class="nav nav-tabs bar_tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                aria-selected="true">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                aria-selected="false">Profile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-                aria-selected="false">Contact</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-
-              <div>
-                <div class="row">
-                  {% include 'jobstatic_parts/scores.html' %}
-                  {% include "jobstatic_parts/companys.html" %}
-                </div>
-                <div class="row">
-                  {% include "jobstatic_parts/money_list.html" %}
-                  {% include "jobstatic_parts/others.html" %}
-                </div>
-                <div class="row">
-                  <div class="col-md-8 col-sm-8 ">
-                    {% include "jobstatic_parts/acounts.html" %}
-                    {% include "jobstatic_parts/comments_v2.html" %}
-                  </div>
-                  {% include "jobstatic_parts/jobs_top3.html" %}
-                </div>
-              </div>
-
-            </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-
+    <div class="x_panel">
+      <div class="x_content">
+        <ul class="nav nav-tabs bar_tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+              aria-selected="true">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+              aria-selected="false">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+              aria-selected="false">Contact</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div>
               <div class="row">
-                {% include "jobstatic_parts/line_graph.html" %}
+                {% include 'jobstatic_parts/scores.html' %}
+                {% include "jobstatic_parts/companys.html" %}
               </div>
               <div class="row">
-                {% include "jobstatic_parts/wordcloud.html" %}
-                {% include 'jobstatic_parts/comments.html' %}
+                {% include "jobstatic_parts/money_list.html" %}
+                {% include "jobstatic_parts/others.html" %}
               </div>
               <div class="row">
-                {% include "jobstatic_parts/jobs_v2.html" %}
+                <div class="col-md-8 col-sm-8 ">
+                  {% include "jobstatic_parts/acounts.html" %}
+                  {% include "jobstatic_parts/comments_v2.html" %}
+                </div>
+                {% include "jobstatic_parts/jobs_top3.html" %}
               </div>
-            
             </div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-              xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1
-              labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft
-              beer twee. Qui photo
-              booth letterpress, commodo enim craft beer mlkshk
+
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="row">
+              {% include "jobstatic_parts/line_graph.html" %}
             </div>
+            <div class="row">
+              {% include "jobstatic_parts/wordcloud.html" %}
+              {% include 'jobstatic_parts/comments.html' %}
+            </div>
+            <div class="row">
+              {% include "jobstatic_parts/jobs_v2.html" %}
+            </div>
+          </div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1
+            labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft
+            beer twee. Qui photo
+            booth letterpress, commodo enim craft beer mlkshk
           </div>
         </div>
       </div>
