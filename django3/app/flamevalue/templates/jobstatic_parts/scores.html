@@ -43,7 +43,7 @@
                     type: 'radar',
                     //データの設定
                     data: {
-                        labels: ['最小年収', '最大年収', '求人数', 'リモート率', '？？？？？'],
+                        labels: ['最小年収', '最大年収', '求人数', 'リモート率', 'Qiita Post'],
                         datasets: [{
                             label: 'Django',
                             //グラフのデータ
@@ -52,7 +52,7 @@
                                 "{{ score.overtime }}", 
                                 "{{ score.count }}",
                                 "{{ score.remote }}",
-                                "{{ score.size }}"
+                                "{{ score.qiita_score }}"
                             ],
                             // データライン
                             borderColor: '#1ABB9C',
@@ -128,7 +128,7 @@
                     </div>
                 </div>
                 <div>
-                    <p>???? : {{ basic.size }}</p>
+                    <p>フォロワー(Qiita) : {{ basic.qiita_score }}</p>
                     <div class="">
                         <div class="progress progress_sm" style="width: 76%;">
                             <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="{{ score_100.size }}"></div>

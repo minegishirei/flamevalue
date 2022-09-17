@@ -79,7 +79,8 @@ max_values = {
     "age" : 60,
     "count" : 10000,
     "size" : 1000,
-    "remote" : 70
+    "remote" : 70,
+    "qiita_score" : 8,
 }
 score       = score_currey(5, max_values)
 score_100   = score_currey(100, max_values)
@@ -171,8 +172,11 @@ def build_param(name):
     hits = origin["hits"]
     origin = row_converter(clear_jnet(jobs))
     basic_info = basic(origin)
+
+    qiita_info = getQiitaInfo(name, 100)
     basic_info.update({
-        "count" : hits
+        "count" : hits,
+        "qiita_score" : reduce(lambda a, b: a + int(b["user"]["followees_count"]), qiita_info, 0) / len(qiita_info)
     })
     total_score = round( sum(scoring(basic_info).values())/len(scoring(basic_info)), 2)
     total_score_int = int(round(total_score) )
@@ -182,8 +186,6 @@ def build_param(name):
     }
 
     wordcount_list =  getMeishiList("。".join([row["description"] for row in jobs]))
-    list_a = get_qiita_comments(name, "メリット")
-    list_a.extend( get_qiita_comments(name, "特徴") ) #.extend( 
     data_param.update({
         "total_score" :  total_score,
         "stars" : "★"*total_score_int + "☆"*(5-total_score_int),
@@ -199,13 +201,14 @@ def build_param(name):
         "min_salary" : sorted( clear_jnet(jobs), key=lambda row:row["salary_min"]),
         "wordcloud_json" : json.dumps(wordcount_list, ensure_ascii=False ),
         "money_countlist" : json.dumps( {'lower' : get_money_countlist(origin, "年収"), 'upper' : get_money_countlist(origin, "残業時間")} ),
-        "qiita_acounts" : sorted( del_dub_dict_list([ row["user"] for row in getQiitaInfo(name, 100) ]) , key=lambda x: x["items_count"], reverse=True )[:10],
-        "qiita_comments" : list_a
+        "qiita_acounts" : sorted( del_dub_dict_list([ row["user"] for row in getQiitaInfo(name, 100) ]) , key=lambda x: x["items_count"], reverse=True )[:5],
+        "qiita_comments" : get_qiita_comments(name, "メリット") + get_qiita_comments(name, "特徴")
     })
     html_param = {
         "title" : f"{name} 「年収/採用企業」 フレームワークの転職評価 FlameValue",
         "description" : f"{name}の「年収/採用企業情報」。就職・転職前に{name}の働く環境、年収・求人数などをリサーチ。就職・転職のための「{name}」の価値分析チャート、求人情報、フレームワークランキングを掲載。"
     }
+    
     wikipedia_param = get_wiki_explain(name)
     related_word = [ row_v2["word"] for row_v2 in wordcount_list]
     wikipedia_related = {"wikipedia_related": list(filter(lambda row : (row["name"] in related_word) , FLAMEWORKDICT) )}
