@@ -7,5 +7,11 @@
     <url>
         <loc>https://flamevalue.short-tips.info/{{ page.name }}</loc>
     </url>
+    <url>
+        <loc>https://flamevalue.short-tips.info/{{ page.name }}?active=jobs</loc>
+    </url>
+    <url>
+        <loc>https://flamevalue.short-tips.info/{{ page.name }}?active=comments</loc>
+    </url>
     {% endfor %}
 </urlset>

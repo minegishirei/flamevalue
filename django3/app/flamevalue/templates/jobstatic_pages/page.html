@@ -19,20 +19,68 @@
     <div class="x_panel">
       <div class="x_content">
         <ul class="nav nav-tabs bar_tabs" id="myTab" role="tablist">
+          {% if request.GET.active %}
           <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-              aria-selected="true">Home</a>
+            <a class="nav-link" id="home-tab" data-toggle="tab" href="./{{ name }}" role="tab" aria-controls="home"
+              aria-selected="true">トップ</a>
           </li>
+          {% else %}
           <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-              aria-selected="false">Profile</a>
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="./{{ name }}?" role="tab"
+              aria-controls="home" aria-selected="true">トップ</a>
           </li>
+          {% endif %}
+
+          {% if request.GET.active == "jobs" %}
           <li class="nav-item">
-            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-              aria-selected="false">Contact</a>
+            <a class="nav-link active" id="profile-tab" data-toggle="tab" href="./{{ name }}?active=jobs" role="tab"
+              aria-controls="profile" aria-selected="false">求人票</a>
           </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="./{{ name }}?active=jobs" role="tab"
+              aria-controls="profile" aria-selected="false">求人票</a>
+          </li>
+          {% endif %}
+
+
+          {% if request.GET.active == "comments" %}
+          <li class="nav-item">
+            <a class="nav-link active" id="contact-tab" data-toggle="tab" href="./{{ name }}?active=comments" role="tab"
+              aria-controls="contact" aria-selected="false">口コミ</a>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="./{{ name }}?active=comments" role="tab"
+              aria-controls="contact" aria-selected="false">口コミ</a>
+          </li>
+          {% endif %}
+
         </ul>
         <div class="tab-content" id="myTabContent">
+          {% if request.GET.active == "jobs" %}
+          <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="row">
+              {% include "jobstatic_parts/jobs_v2.html" %}
+            </div>
+            <div class="row">
+              {% include "jobstatic_parts/line_graph.html" %}
+            </div>
+            <div class="row">
+              {% include "jobstatic_parts/wordcloud.html" %}
+              {% include 'jobstatic_parts/comments.html' %}
+            </div>
+          </div>
+          {% elif request.GET.active == "comments" %}
+          <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="row">
+            <div class="col-md-12 col-sm-12 ">
+              {% include "jobstatic_parts/acounts.html" %}
+              {% include "jobstatic_parts/comments_v2.html" %}
+            </div>
+            </div>
+          </div>
+          {% else %}
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <div>
               <div class="row">
@@ -51,26 +99,8 @@
                 {% include "jobstatic_parts/jobs_top3.html" %}
               </div>
             </div>
-
           </div>
-          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <div class="row">
-              {% include "jobstatic_parts/line_graph.html" %}
-            </div>
-            <div class="row">
-              {% include "jobstatic_parts/wordcloud.html" %}
-              {% include 'jobstatic_parts/comments.html' %}
-            </div>
-            <div class="row">
-              {% include "jobstatic_parts/jobs_v2.html" %}
-            </div>
-          </div>
-          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-            xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1
-            labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft
-            beer twee. Qui photo
-            booth letterpress, commodo enim craft beer mlkshk
-          </div>
+          {% endif %}
         </div>
       </div>
     </div>
