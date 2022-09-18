@@ -9,6 +9,7 @@ if '/God' not in sys.path:
     sys.path.append('/God')
 from .my_mecab import getMeishiList
 from .my_Qiita import getQiitaInfo
+from .my_Qiita import getQiitaTags
 
 from functools import reduce
 from operator import add
@@ -80,7 +81,7 @@ max_values = {
     "count" : 10000,
     "size" : 1000,
     "remote" : 70,
-    "qiita_score" : 8,
+    "qiita_score" : 20000,
 }
 score       = score_currey(5, max_values)
 score_100   = score_currey(100, max_values)
@@ -176,7 +177,11 @@ def build_param(name):
     qiita_info = getQiitaInfo(name, 100)
     basic_info.update({
         "count" : hits,
-        "qiita_score" : reduce(lambda a, b: a + int(b["user"]["followees_count"]), qiita_info, 0) / len(qiita_info)
+        #"qiita_score" : reduce(lambda a, b: a + int(b["user"]["followees_count"]), qiita_info, 0) / len(qiita_info)
+    })
+    qiita_tags = getQiitaTags(name.replace("言語",""))
+    basic_info.update({
+        "qiita_score" : qiita_tags["followers_count"]
     })
     total_score = round( sum(scoring(basic_info).values())/len(scoring(basic_info)), 2)
     total_score_int = int(round(total_score) )
@@ -189,7 +194,6 @@ def build_param(name):
     data_param.update({
         "total_score" :  total_score,
         "stars" : "★"*total_score_int + "☆"*(5-total_score_int),
-        "icons" : "...png",
         "basic" : basic_info,
         "score" : scoring(basic_info),
         "score_100" : scoring_100(basic_info),
@@ -217,6 +221,9 @@ def build_param(name):
     param.update(data_param)
     param.update(html_param)
     param.update(wikipedia_param)
+    param.update({
+        "image" : qiita_tags["icon_url"]
+    })
     param.update(wikipedia_related)
     return param
 

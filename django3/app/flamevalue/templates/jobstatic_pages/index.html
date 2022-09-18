@@ -81,7 +81,7 @@
                 type: 'radar',
                 //データの設定
                 data: {
-                  labels: ['最小年収', '最大年収', '求人数', 'リモート率', '？？？？？'],
+                  labels: ['最小年収', '最大年収', '求人数', 'Qiita', 'リモート率' ],
                   datasets: [{
                     label: '{{ row.name }}',
                     //グラフのデータ
@@ -89,8 +89,8 @@
                       "{{ row.score.money }}",
                       "{{ row.score.overtime }}",
                       "{{ row.score.count }}",
-                      "{{ row.score.remote }}",
-                      "{{ row.score.size }}"
+                      "{{ row.score.qiita_score }}",
+                      "{{ row.score.remote }}"
                     ],
                     // データライン
                     borderColor: '#1ABB9C',
