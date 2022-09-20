@@ -22,7 +22,7 @@ title = "twitter network analytics"
 description = "twitter上でアカウント同士の人脈ネットワークを可視化するツールです。"
 img = "http://fanstatic.short-tips.info/static/fanstatic/sample.png"
 
-favicon = "/static/fanstatic/network.png"
+favicon = "https://raw.githubusercontent.com/kawadasatoshi/minegishirei/main/img/beaver.png"
 
 
 def index(request):

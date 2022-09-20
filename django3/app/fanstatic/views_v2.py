@@ -14,7 +14,7 @@ dt_now = datetime.datetime.now()
 repo = "twitter_json"
 filename = "access_ranking" + dt_now.strftime('%Y%m%d')
 
-favicon = "http://fanstatic.short-tips.info/static/dashboard/img2/static.png"
+favicon = "https://raw.githubusercontent.com/kawadasatoshi/minegishirei/main/img/beaver.png"
 img =     "http://fanstatic.short-tips.info/static/dashboard/img2/thumbnail2.png"
 site_explain = "あなたのアカウントを可能な限り分析します"
 ranking_list = []

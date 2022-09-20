@@ -15,7 +15,7 @@ all_ranking_static = "/static/engineer/data/"
 all_ranking_folder = "/app/static/engineer/data/"
 
 
-favicon = "/static/engineer/img/twitter_profile_image.png"
+favicon = "https://raw.githubusercontent.com/kawadasatoshi/minegishirei/main/img/beaver.png"
 img =     "http://techtweetrank.short-tips.info/static/engineer/img/twitter_profile_image.png"
 site_name = "ITトレンド"
 description = "厳選されたIT業界の最新の情報をお届けします。最新のITトレンド情報を入手しましょう。"
