@@ -167,7 +167,8 @@ def get_qiita_comments(name, word):
 
 
 import re
-def build_param(name):
+def build_param(name_original):
+    name = name_original.replace("(IT)", "").replace("言語", "")
     origin = getCareerJet(name.replace("(プログラミング言語)", ""))
     jobs = origin["jobs"]
     hits = origin["hits"]
@@ -206,14 +207,14 @@ def build_param(name):
         "wordcloud_json" : json.dumps(wordcount_list, ensure_ascii=False ),
         "money_countlist" : json.dumps( {'lower' : get_money_countlist(origin, "年収"), 'upper' : get_money_countlist(origin, "残業時間")} ),
         "qiita_acounts" : sorted( del_dub_dict_list([ row["user"] for row in getQiitaInfo(name, 100) ]) , key=lambda x: x["items_count"], reverse=True )[:5],
-        "qiita_comments" : get_qiita_comments(name, "メリット") + get_qiita_comments(name, "特徴")
+        "qiita_comments" : get_qiita_comments(name, "メリット") + get_qiita_comments(name, "特徴")+ get_qiita_comments(name, "とは")
     })
     html_param = {
         "title" : f"{name} 「年収/採用企業」 フレームワークの転職評価 FlameValue",
         "description" : f"{name}の「年収/採用企業情報」。就職・転職前に{name}の働く環境、年収・求人数などをリサーチ。就職・転職のための「{name}」の価値分析チャート、求人情報、フレームワークランキングを掲載。"
     }
     
-    wikipedia_param = get_wiki_explain(name)
+    wikipedia_param = get_wiki_explain(name_original)
     related_word = [ row_v2["word"] for row_v2 in wordcount_list]
     wikipedia_related = {"wikipedia_related": list(filter(lambda row : (row["name"] in related_word) , FLAMEWORKDICT) )}
     

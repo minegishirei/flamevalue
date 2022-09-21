@@ -61,9 +61,7 @@ def genPageDict(repo):
 
 clock = 0
 
-
 repo_page_dict = json.loads( Github.load("meta", "/blogs/hosts.json") )
-
 for key, value in repo_page_dict.items():
     repo_page_dict[key] = genPageDict(key)
 
@@ -165,7 +163,8 @@ def page(request, category, htmlname):
                 relation_list.append(category_dict)
     params.update({
         "relation_list" : relation_list,
-        "index_table" : tableIndex.index_table
+        "index_table" : tableIndex.index_table,
+        "favicon" : favicon,
     })
     if request.GET.get("raw"):
         return render(request,f"blog/raw.html", params)
