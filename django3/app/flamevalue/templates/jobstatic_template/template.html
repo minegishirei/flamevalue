@@ -38,11 +38,6 @@
   {% include "parts/analytics.html" %}
 </head>
 
-<script>
-  document.getElementsByTagName("img").forEach(function(element){
-    element.setAttribute('class', 'lazy');
-  })
-</script>
 
 <style>
   .main_contents {
@@ -214,6 +209,12 @@
 </body>
 
 </html>
+<script>
+  var links = document.getElementsByTagName("img");
+  for( var i = 0; i < links.length; i++  ){
+      links[i].setAttribute('class', 'lazy');
+  }
+</script>
 
 
 <script>
