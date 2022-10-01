@@ -61,6 +61,7 @@ SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
 MIDDLEWARE = [
+    'django.middleware.gzip.GZipMiddleware',#配信データをGzip圧縮する
     'django_hosts.middleware.HostsRequestMiddleware',#subdomain
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
