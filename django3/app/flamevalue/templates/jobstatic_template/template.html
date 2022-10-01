@@ -208,19 +208,19 @@
 
   <!-- Custom Theme Scripts -->
   <script src="/static/jobstatic/build/js/custom.js"></script>
-
+  <script>
+    var links = document.getElementsByTagName("img");
+    for( var i = 0; i < links.length; i++  ){
+        links[i].setAttribute('class', 'lazyload');
+    }
+  </script>
   <script>
     lazyload();
     </script>
 </body>
 
 </html>
-<script>
-  var links = document.getElementsByTagName("img");
-  for( var i = 0; i < links.length; i++  ){
-      links[i].setAttribute('class', 'lazyload');
-  }
-</script>
+
 
 
 <script>
