@@ -38,6 +38,12 @@
   {% include "parts/analytics.html" %}
 </head>
 
+<script>
+  document.getElementsByTagName("img").forEach(function(element){
+    element.setAttribute('class', 'lazy');
+  })
+</script>
+
 <style>
   .main_contents {
     background-color: #f8f9fa;
