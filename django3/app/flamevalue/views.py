@@ -258,7 +258,8 @@ def index(request):
     param = {
         "title" : "「年収/採用企業」FlameValue フレームワークの転職評価",
         "description" : f"「年収/採用企業情報」。就職・転職前に{name}の働く環境、年収・求人数などをリサーチ。就職・転職のための「{name}」の価値分析チャート、求人情報、フレームワークランキングを掲載。",
-        "FLAMEWORKDICT" : sorted(FLAMEWORKDICT, key=lambda x: x["total_score"], reverse=True)
+        "FLAMEWORKDICT" : sorted(FLAMEWORKDICT, key=lambda x: x["total_score"], reverse=True),
+        "img" : "https://github.com/kawadasatoshi/minegishirei/blob/main/flamevalue/flamevalue.png?raw=true"
     }
     return render(request, f"jobstatic_pages/index.html", param)
 
