@@ -240,7 +240,7 @@ def page(request, htmlname):
     GET_active = request.GET.get("active")
     if GET_active == "jobs":
         param.update({
-            "title" : f"{name} の「採用情報」  FlameValue",
+            "title" : f"{name} の「求人一覧」 FlameValue",
             "description" : f"{name}株式会社の採用情報です。FlameValueは{name}の採用情報・求人情報を掲載しています。"
         })
     elif GET_active == "comments":

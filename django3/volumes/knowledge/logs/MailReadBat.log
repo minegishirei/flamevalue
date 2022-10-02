@@ -1,6 +1,9 @@
-INFO  2022-09-23 11:09:38,270 AbstractBat(31) MailReadBat is start.
-INFO  2022-09-23 11:09:39,224 MailhookLogic(168) Mail hook config is undefined.
-INFO  2022-09-23 11:09:39,229 AbstractBat(43) Finished
-INFO  2022-09-23 11:09:51,936 AbstractBat(31) MailReadBat is start.
-INFO  2022-09-23 11:09:52,837 MailhookLogic(168) Mail hook config is undefined.
-INFO  2022-09-23 11:09:52,841 AbstractBat(43) Finished
+INFO  2022-10-02 03:57:37,623 AbstractBat(31) MailReadBat is start.
+INFO  2022-10-02 03:57:38,560 MailhookLogic(168) Mail hook config is undefined.
+INFO  2022-10-02 03:57:38,564 AbstractBat(43) Finished
+INFO  2022-10-02 03:57:54,330 AbstractBat(31) MailReadBat is start.
+INFO  2022-10-02 03:57:55,267 MailhookLogic(168) Mail hook config is undefined.
+INFO  2022-10-02 03:57:55,272 AbstractBat(43) Finished
+INFO  2022-10-02 03:58:07,666 AbstractBat(31) MailReadBat is start.
+INFO  2022-10-02 03:58:08,594 MailhookLogic(168) Mail hook config is undefined.
+INFO  2022-10-02 03:58:08,598 AbstractBat(43) Finished
