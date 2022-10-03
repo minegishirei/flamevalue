@@ -228,6 +228,19 @@ def build_param(name_original):
     param.update(wikipedia_related)
     return param
 
+
+import random
+def titleABTest():
+    return random.choice([
+        lambda name, description: {
+            "title" : f"【転職】「{name}の年収って実際どうなの？」 👈",
+            "description" : f"{description}"
+        },lambda name, description: {
+            "title" : f"【転職】{name}の年収は高い",
+            "description" : f"{description}"
+        }
+    ])
+
 def page(request, htmlname):
     name = htmlname
     param = {}
@@ -248,6 +261,11 @@ def page(request, htmlname):
             "title" : f"{name}の「すべてのクチコミ」 FlameValue",
             "description" : f"{name}ユーザーによる「すべての開発者クチコミ」のクチコミ・評価レビュー。{name}の採用を検討されている方が、{name}の「すべての開発者クチコミ」を把握するための参考情報として、{name}を使用した開発者から「すべての開発者クチコミ」に関するクチコミを収集し掲載しています。就職・採用活動での一段深めた開発者リサーチにご活用いただけます。"
         })
+    else:
+        try:
+            param.update(titleABTest()(name,param["qiita_comments"][0]["body"].replace("\n","")))
+        except:
+            param.update(titleABTest()(name,param["explain"].replace("\n","") ) ) 
     return render(request, f"jobstatic_pages/page.html", param)
 
 def index(request):
