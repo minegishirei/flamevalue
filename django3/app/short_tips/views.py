@@ -44,19 +44,22 @@ def grep_param(mk, taglist):
 def genPageDict(repo):
     category_list = Github.seach_page_list(repo, "/")
     page_dict = {}
-    for category in category_list:
-        category_dict = {}
-        for htmlname in Github.seach_page_list(repo, category):
-            mk = Github.load(repo, category + "/" +htmlname)
-            params =  grep_param(mk, ["title", "description", "img"])
-            if "escape" in params:
-                continue
-            params.update({
-                "category" : category,
-                "htmlname" : htmlname
-            })
-            category_dict[htmlname] = params
-        page_dict[category] = category_dict
+    for category in category_list[:1]:
+        try:
+            category_dict = {}
+            for htmlname in Github.seach_page_list(repo, category)[:1]:
+                mk = Github.load(repo, category + "/" +htmlname)
+                params =  grep_param(mk, ["title", "description", "img"])
+                if "escape" in params:
+                    continue
+                params.update({
+                    "category" : category,
+                    "htmlname" : htmlname
+                })
+                category_dict[htmlname] = params
+            page_dict[category] = category_dict
+        except:
+            pass
     return page_dict
 
 clock = 0

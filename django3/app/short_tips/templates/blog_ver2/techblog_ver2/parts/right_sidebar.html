@@ -30,10 +30,22 @@
 		</div>
 
 		<h4>
-			Relation
+			Relationa
 		</h4>
 		<hr>
-
+		<!-- begin post -->
+		<div class="col-md-11">
+			<div class="card">
+				<a href="/{{ page_dict.category }}/{{ page_dict.htmlname }}">
+				<img class="img-fluid img-thumb" src="{{ page_dict.img }}" alt="">
+				</a>
+				<div class="card-block">
+					<p class="card-title"><a href="/{{ page_dict.category }}/{{ page_dict.htmlname }}">
+					タイトル</a></p>
+				</div>
+			</div>
+		</div>
+		<!-- end post -->
 
 		{% for page_dict in relation_list %}
 		<!-- begin post -->
