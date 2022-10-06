@@ -106,8 +106,8 @@ def index(request):
             page_list.append(page)
     params = {
         "page_list" : page_list,
-        "title" : site_name,
-        "description" : site_explain,
+        "title" : repo + "ブログ",
+        "description" : "エンジニア/リクルーター/ブロガー 人材関連企業の社内SEの実態に基づき記述しました。",
         "favicon" : favicon,
         "img": img,
         "site_name" : site_name,
