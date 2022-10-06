@@ -42,12 +42,13 @@ def grep_param(mk, taglist):
 
 
 def genPageDict(repo):
+    max_pages = 1000
     category_list = Github.seach_page_list(repo, "/")
     page_dict = {}
-    for category in category_list[:1]:
+    for category in category_list[:max_pages]:
         try:
             category_dict = {}
-            for htmlname in Github.seach_page_list(repo, category)[:1]:
+            for htmlname in Github.seach_page_list(repo, category)[:max_pages]:
                 mk = Github.load(repo, category + "/" +htmlname)
                 params =  grep_param(mk, ["title", "description", "img"])
                 if "escape" in params:
