@@ -42,7 +42,7 @@ def grep_param(mk, taglist):
 
 
 def genPageDict(repo):
-    max_pages = 1000
+    max_pages = 1
     category_list = Github.seach_page_list(repo, "/")
     page_dict = {}
     for category in category_list[:max_pages]:
@@ -97,9 +97,7 @@ def index(request):
     global repo_page_dict
     repo = request.get_host().split(".")[0]
     if request.GET.get("reload"):
-        repo_page_dict = json.loads( Github.load("meta", "/blogs/hosts.json") )
-        for key, value in repo_page_dict.items():
-            repo_page_dict[key] = genPageDict(key)
+        repo_page_dict[key] = genPageDict(key)
     page_list = []
     for category, category_list in repo_page_dict[repo].items():
         for page in category_list.values():
@@ -126,29 +124,15 @@ def about(request):
     }
     return render(request,f"blog_ver2/techblog_ver2/page/about.html",params)
 
-extensions = [
-    'admonition',
-    'codehilite',
-    'legacy_attrs',
-    'legacy_em',
-    'nl2br',
-    'sane_lists',
-    'toc',
-    'wikilinks',
-    'meta',
-    'smarty',        
-]
+
 
 def page(request, category, htmlname):
     repo = request.get_host().split(".")[0]
     mk = Github.load(repo, category + "/" +htmlname)
     tableIndex = TableIndex(mk)
     mk = tableIndex.rebuild_mk()
-    md = markdown.Markdown(extensions = extensions)
-    htmltext = md.convert(mk)
     params = {
         "mk" : mk,
-        #"htmltext" : htmltext,
         "site_name" : site_name,
         "category" : category,
         "favicon" : favicon,
