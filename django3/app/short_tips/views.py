@@ -12,11 +12,6 @@ import datetime
 import markdown
 
 
-all_ranking_static = "/static/engineer/data/"
-all_ranking_folder = "/app/static/engineer/data/"
-
-
-
 favicon = "https://raw.githubusercontent.com/kawadasatoshi/minegishirei/main/img/beaver.png"
 img =     "https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/4/2019/10/How-much-does-a-foreign-engineer-make-in-Japan-in-2019.jpg"#"/static/techblog/img/feature.png"#"http://techtweetrank.short-tips.info/static/engineer/img/twitter_profile_image.png"
 site_explain = "社内SEの業務内容を可能な限りリアルに記しました。これから目指す人も、そうでないエンジニアも楽しめるように書きます！"
@@ -63,7 +58,6 @@ def genPageDict(repo):
             pass
     return page_dict
 
-clock = 0
 
 repo_page_dict = json.loads( Github.load("meta", "/blogs/hosts.json") )
 for key, value in repo_page_dict.items():
@@ -90,7 +84,6 @@ def sitemap(request):
         "host_name" : repo
     }
     return render(request,f"sitemap.xml", params)
-
 
 
 def index(request):
@@ -125,7 +118,6 @@ def about(request):
     return render(request,f"blog_ver2/techblog_ver2/page/about.html",params)
 
 
-
 def page(request, category, htmlname):
     repo = request.get_host().split(".")[0]
     mk = Github.load(repo, category + "/" +htmlname)
@@ -153,10 +145,44 @@ def page(request, category, htmlname):
         "relation_list" : relation_list,
         "index_table" : tableIndex.index_table,
         "favicon" : favicon,
+        "is_bite_page" : False
     })
+    if request.GET.get("bite_title"):
+        params = bite_page(request, params)
+        params.update({"is_bite_page": True})
     if request.GET.get("raw"):
         return render(request,f"blog/raw.html", params)
     return render(request,f"blog_ver2/techblog_ver2/page/page.html", params)
+
+
+def bite_page(request, params):
+    bite_title = request.GET.get("bite_title")
+    def grep_bite_page(bite_title, context):
+        bite_context = ""
+        paragraph_count = 0
+        is_in_paragraph = False
+        test = []
+        for row in context.split('\n'):
+            test.append(row)
+            test.append( (bite_title in row) )
+
+            test.append( (bite_title) )
+            if bite_title in row:
+                paragraph_count = row.count("#")
+                is_in_paragraph = True
+                bite_context = ( bite_context + row + '\n') 
+                continue
+
+            if is_in_paragraph:
+                if "#"*paragraph_count in row:
+                    break
+                bite_context = ( bite_context + row + '\n')
+        return bite_context
+    params.update({
+        "mk" : grep_bite_page(bite_title, params["mk"]),
+        "title" : bite_title
+    })
+    return params
 
 
 def category_page(request, category_name):
@@ -176,8 +202,6 @@ def category_page(request, category_name):
         "category_list" : repo_page_dict[repo]
     }
     return render(request,f"blog_ver2/techblog_ver2/page/category.html", params)
-
-
 
 
 class TableIndex():
@@ -205,5 +229,3 @@ class TableIndex():
             else:
                 new_mk += (row + "\n")
         return new_mk
-
-    
