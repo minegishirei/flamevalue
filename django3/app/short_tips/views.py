@@ -37,7 +37,7 @@ def grep_param(mk, taglist):
 
 
 def genPageDict(repo):
-    max_pages = 10000
+    max_pages = 1
     category_list = Github.seach_page_list(repo, "/")
     page_dict = {}
     for category in category_list[:max_pages]:
@@ -161,20 +161,14 @@ def bite_page(request, params):
         bite_context = ""
         paragraph_count = 0
         is_in_paragraph = False
-        test = []
         for row in context.split('\n'):
-            test.append(row)
-            test.append( (bite_title in row) )
-
-            test.append( (bite_title) )
             if bite_title in row:
                 paragraph_count = row.count("#")
                 is_in_paragraph = True
                 bite_context = ( bite_context + row + '\n') 
                 continue
-
             if is_in_paragraph:
-                if "#"*paragraph_count in row:
+                if ("#"*paragraph_count in row) and ("#"*(paragraph_count+1) not in row):
                     break
                 bite_context = ( bite_context + row + '\n')
         return bite_context
@@ -221,7 +215,7 @@ class TableIndex():
             
             if (not in_pre_flag) and row.startswith("##"):
                 h2_count += 1
-                self.index_table[h2_count] = row.replace("##", "")
+                self.index_table[h2_count] = row.replace("#", "")
                 new_mk += (f'<div id="{h2_count}">' + "\n")
                 new_mk += ("</div>\n\n")
                 new_mk += (row + "\n")
