@@ -163,19 +163,53 @@ function dragended(d) {
  * これはいい関数ですよ...
  * おいおいおい
  * 死ぬわあいつ
- * ## test
  * user - ユーザーオブジェクト
  * @param {*} description 
  */
-function change_title(description) {
-    description_element = document.getElementById("title_id");
-    description_element.innerHTML = `
-            <a id="twitter_link" target=”_blank”  href="./`+ description + `">`
-        + description +
-        `network</a>`
+class change_title {
+
+    /**
+     * これはいい関数ですよ...
+     * おいおいおい
+     * 死ぬわあいつ
+     * user - ユーザーオブジェクト
+     * @param {*} description 
+     */
+    change_title(params) {
+        description_element = document.getElementById("title_id");
+        description_element.innerHTML = `
+                <a id="twitter_link" target=”_blank”  href="./`+ description + `">`
+            + description +
+            `network</a>`
+    }
+
+
+    /**
+     * これはお試しの関数です。
+     * 
+     * 実際に作成される。
+     * @param {*} description 
+     */
+    test_function(description){
+        document.getElementsById("test").innerHTML = description
+    }
 
 }
 
+/**
+ * twitterのdescriptionを変更する関数です。
+ * 
+ * new_titleを引数にとって、description_idを変更します。
+ * 
+ * **これがむずかしい**
+ * 
+ * 以下サンプルコード
+ * ```js
+ * change_description("新しい世界へようこそ")
+ * ```
+ * 
+ * @param {*} new_title 
+ */
 function change_description(new_title) {
     title_element = document.getElementById("description_id");
     title_element.innerHTML = `
