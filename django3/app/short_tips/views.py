@@ -90,7 +90,7 @@ def index(request):
     global repo_page_dict
     repo = request.get_host().split(".")[0]
     if request.GET.get("reload"):
-        repo_page_dict[key] = genPageDict(key)
+        repo_page_dict[repo] = genPageDict(repo)
     page_list = []
     for category, category_list in repo_page_dict[repo].items():
         for page in category_list.values():
