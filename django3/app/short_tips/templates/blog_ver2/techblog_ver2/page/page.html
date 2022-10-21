@@ -2,12 +2,6 @@
 <html lang="ja">
 
 <head>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/vs2015.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-</head>
-
-<head>
     <meta charset="utf-8">
     <title>{{ title }}</title>
     <link rel="icon shortcut" href="{{ favicon }}" />
@@ -17,13 +11,9 @@
     <meta name="author" content="kawadasatoshi">
 
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
     <link rel="preload" href="/static/techblog_ver2/assets/css/bootstrap.min.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="/static/techblog_ver2/assets/css/bootstrap.min.css">
-    </noscript>
 
     <!-- Custom styles for this template -->
     <link href="/static/techblog_ver2/assets/css/mediumish.css" rel="stylesheet">
@@ -242,7 +232,7 @@
                                     </span>
                                     <span class="author-meta">
                                         <span class="post-name"><a href="/{{ page_dict.category }}">
-                                            {{ page_dict.category }}</a></span>
+                                                {{ page_dict.category }}</a></span>
                                     </span>
                                     <span class="post-read-more"><a href="/{{ page_dict.category }}"
                                             title="Read Story"><svg class="svgIcon-use" width="25" height="25"
@@ -262,22 +252,6 @@
             </div>
         </div>
     </div>
-    <!-- End Related Posts
-================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-
-
-
-
-    <!-- Begin AlertBar
-================================================== 
-<div class="alertbar">
-	<div class="container text-center">
-		<img src="assets/img/logo.png" alt=""> &nbsp; Never miss a <b>story</b> from us, get weekly updates in your inbox. <a href="#" class="btn subscribe">Get Updates</a>
-	</div>
-</div>
-End AlertBar
-================================================== -->
 
     <!-- Begin Footer
 ================================================== -->
@@ -301,6 +275,10 @@ End AlertBar
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/vs2015.min.css">
 
 </body>
 
