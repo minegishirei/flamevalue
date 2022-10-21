@@ -56,8 +56,8 @@
                     <!-- Begin Top Meta -->
                     <div class="row post-top-meta">
                         <div class="col-md-2">
-                            <a href="/{{ category }}"><img class="author-thumb"
-                                    src="https://raw.githubusercontent.com/kawadasatoshi/meta/main/icons/{{ category }}.png"
+                            <a href="/{{ category }}"><img class="author-thumb lazyload"
+                                    data-src="https://raw.githubusercontent.com/kawadasatoshi/meta/main/icons/{{ category }}.png"
                                     alt="{{ category }}"></a>
                         </div>
                         <div class="col-md-10">
@@ -216,7 +216,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <a href="/{{ page_dict.category }}/{{ page_dict.htmlname }}">
-                            <img class="img-fluid img-thumb" src="{{ page_dict.img }}" alt="{{ page_dict.title }}">
+                            <img class="img-fluid img-thumb lazyload" data-src="{{ page_dict.img }}" alt="{{ page_dict.title }}">
                         </a>
                         <div class="card-block">
                             <h2 class="card-title"><a href="/{{ page_dict.category }}/{{ page_dict.htmlname }}">
@@ -225,9 +225,9 @@
                                 <div class="wrapfooter">
                                     <span class="meta-footer-thumb">
                                         <a href="/{{ page_dict.category }}">
-                                            <img class="author-thumb"
-                                                src="https://raw.githubusercontent.com/kawadasatoshi/meta/main/icons/{{ page_dict.category }}.png"
-                                                alt="Sal">
+                                            <img class="author-thumb lazyload"
+                                                data-src="https://raw.githubusercontent.com/kawadasatoshi/meta/main/icons/{{ page_dict.category }}.png"
+                                                alt="{{ page_dict.title }}">
                                         </a>
                                     </span>
                                     <span class="author-meta">
@@ -275,11 +275,15 @@
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/vs2015.min.css">
-
+    <script>
+        lazyload();
+  </script>
 </body>
 
 </html>

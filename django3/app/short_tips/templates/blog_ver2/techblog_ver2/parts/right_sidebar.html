@@ -59,7 +59,7 @@
 				{% for page_dict in relation_list %}
 				<div class="card">
 					<a href="/{{ page_dict.category }}/{{ page_dict.htmlname }}">
-						<img class="img-fluid img-thumb" src="{{ page_dict.img }}" alt="{{ page_dict.title }}">
+						<img class="img-fluid img-thumb lazyload" data-src="{{ page_dict.img }}" alt="{{ page_dict.title }}">
 					</a>
 					<div class="card-block">
 						<p class="card-title"><a href="/{{ page_dict.category }}/{{ page_dict.htmlname }}">
