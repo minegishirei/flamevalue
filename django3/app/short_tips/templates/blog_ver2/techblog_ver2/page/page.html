@@ -19,10 +19,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-    <!--
-    <link href="/static/techblog_ver2/assets/css/bootstrap.min.css" rel="stylesheet">
-    -->
-
     <link rel="preload" href="/static/techblog_ver2/assets/css/bootstrap.min.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
@@ -49,8 +45,6 @@
 
 <body style="background-color: #f5f6f6;">
 
-    <!-- Begin Nav
-================================================== -->
     <nav class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
             data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
@@ -59,27 +53,22 @@
         </button>
         {% include 'blog_ver2/techblog_ver2/parts/header.html' %}
     </nav>
-    <!-- End Nav
-================================================== -->
 
-    <!-- Begin Article
-================================================== -->
     <div class="container" style="background-color: #f5f6f6;">
         <div class="row">
             <!-- Begin Fixed Left Share -->
-            {% include 'blog/techblog_ver2/parts/sns.html' %}
+            {% include 'blog_ver2/techblog_ver2/parts/sns.html' %}
             <!-- End Fixed Left Share -->
 
             <!-- Begin Post -->
             <div class="col-md-9 col-md-offset-2 col-xs-12" style="background-color: #ffff;">
                 <div class="mainheading">
-
                     <!-- Begin Top Meta -->
                     <div class="row post-top-meta">
                         <div class="col-md-2">
                             <a href="/{{ category }}"><img class="author-thumb"
                                     src="https://raw.githubusercontent.com/kawadasatoshi/meta/main/icons/{{ category }}.png"
-                                    alt="Sal"></a>
+                                    alt="{{ category }}"></a>
                         </div>
                         <div class="col-md-10">
                             <a class="link-dark" href="/{{ category }}">{{ category }}</a>
@@ -90,7 +79,6 @@
                         </div>
                     </div>
                     <!-- End Top Menta -->
-
                     <h1 class="posttitle">{{ title }}</h1>
 
                 </div>
@@ -238,7 +226,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <a href="/{{ page_dict.category }}/{{ page_dict.htmlname }}">
-                            <img class="img-fluid img-thumb" src="{{ page_dict.img }}" alt="">
+                            <img class="img-fluid img-thumb" src="{{ page_dict.img }}" alt="{{ page_dict.title }}">
                         </a>
                         <div class="card-block">
                             <h2 class="card-title"><a href="/{{ page_dict.category }}/{{ page_dict.htmlname }}">
@@ -277,12 +265,7 @@
     <!-- End Related Posts
 ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="/static/techblog_ver2/assets/js/mediumish.js"></script>
+
 
 
 

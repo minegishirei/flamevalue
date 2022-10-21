@@ -40,11 +40,6 @@
 		
 		<!-- begin post -->
 		<div class="card">
-			<!--
-			<a href="/{{ page.category }}/{{ page.htmlname }}">
-				<img class="img-fluid" src="{{ page.img }}" alt="">
-			</a>
-		-->
 			<div class="card-block">
 				<h2 class="card-title"><a href="/{{ page.category }}/{{ page.htmlname }}">{{ page.title }}</a></h2>
 				<h4 class="card-text">{{ page.description }}</h4>
@@ -53,7 +48,7 @@
 						
 						<span class="meta-footer-thumb">
 						<a href="/{{ page.category }}">
-                            <img class="author-thumb" src="https://raw.githubusercontent.com/kawadasatoshi/meta/main/icons/{{ page.category }}.png" alt="Sal">
+                            <img class="author-thumb" src="https://raw.githubusercontent.com/kawadasatoshi/meta/main/icons/{{ page.category }}.png" alt="{{ page.category }}">
                         </a>
 						</span>
 						
