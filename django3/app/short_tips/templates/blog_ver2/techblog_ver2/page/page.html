@@ -10,7 +10,10 @@
     <meta name="description" content="{{ description }}">
     <meta name="author" content="kawadasatoshi">
 
-
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/vs2015.min.css">
+    <script>hljs.initHighlightingOnLoad();</script>
 
     <link rel="preload" href="/static/techblog_ver2/assets/css/bootstrap.min.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
@@ -216,7 +219,8 @@
                 <div class="col-md-4">
                     <div class="card">
                         <a href="/{{ page_dict.category }}/{{ page_dict.htmlname }}">
-                            <img class="img-fluid img-thumb lazyload" data-src="{{ page_dict.img }}" alt="{{ page_dict.title }}">
+                            <img class="img-fluid img-thumb lazyload" data-src="{{ page_dict.img }}"
+                                alt="{{ page_dict.title }}">
                         </a>
                         <div class="card-block">
                             <h2 class="card-title"><a href="/{{ page_dict.category }}/{{ page_dict.htmlname }}">
@@ -275,15 +279,13 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/vs2015.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
     <script>
         lazyload();
-  </script>
+    </script>
+
+
+
 </body>
 
 </html>
