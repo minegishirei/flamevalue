@@ -274,28 +274,11 @@
     </style>
 
 
-    <script>
-        window.addEventListener('load', (event) => {
-            addScriptTag = addTag("script")
-            addScriptTag("https://cdn.jsdelivr.net/npm/marked/marked.min.js")
-            addScriptTag("//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js")
-            hljs.initHighlightingOnLoad();
-            addTag("link")("//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/vs2015.min.css")
-        });
-        
-        function addTag(tag){
-            // SCRIPTタグの生成
-            var el = document.createElement(tag);
-            return function (src){
-                // SCRIPTタグのSRC属性に読み込みたいファイルを指定
-                el.src = src;
-                // BODY要素の最後に追加
-                document.body.appendChild(el);
-                return el
-            }
-        }
 
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/vs2015.min.css">
 
 </body>
 
