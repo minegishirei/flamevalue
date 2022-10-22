@@ -1,5 +1,5 @@
 <div class="col-md-{{ col_md_num }} col-sm-4  ">
-    <a href="{{ job.url }}">
+    <a href="{{ job.url }}" target=”_blank”>
         <hr>
         <div class="panel-body">
             <!---
@@ -19,15 +19,15 @@
             <p class="title">詳細</p>
         </div>
             <ul class="list-unstyled project_files">
-                <li><a href="{{ job.url }}"><i class="fa fa-file-word-o"></i> {{ job.locations }}</a>
+                <li><a href="{{ job.url }}" target=”_blank”><i class="fa fa-file-word-o"></i> {{ job.locations }}</a>
                 </li>
-                <li><a href="{{ job.url }}"><i class="fa fa-file-pdf-o"></i> {{ job.salary }}</a>
+                <li><a href="{{ job.url }}" target=”_blank”><i class="fa fa-file-pdf-o"></i> {{ job.salary }}</a>
                 </li>
-                <li><a href="{{ job.url }}"><i class="fa fa-mail-forward"></i> {{ job.salary_min }}</a>
+                <li><a href="{{ job.url }}" target=”_blank”><i class="fa fa-mail-forward"></i> {{ job.salary_min }}</a>
                 </li>
-                <li><a href="{{ job.url }}"><i class="fa fa-picture-o"></i> {{ job.salary_max }}</a>
+                <li><a href="{{ job.url }}" target=”_blank”><i class="fa fa-picture-o"></i> {{ job.salary_max }}</a>
                 </li>
-                <li><a href="{{ job.url }}"><i class="fa fa-file-word-o"></i> {{ job.date }}</a>
+                <li><a href="{{ job.url }}" target=”_blank”><i class="fa fa-file-word-o"></i> {{ job.date }}</a>
                 </li>
             </ul>
 
@@ -50,8 +50,8 @@
             </div>
             <br />
             <div class="text-center mtop20">
-                <a href="{{ job.url }}" class="btn btn-sm btn-primary">応募する</a>
-                <a href="{{ job.url }}" class="btn btn-sm btn-warning">詳しくみる</a>
+                <a href="{{ job.url }}" class="btn btn-sm btn-primary" target=”_blank”>応募する</a>
+                <a href="{{ job.url }}" class="btn btn-sm btn-warning" target=”_blank”>詳しくみる</a>
             </div>
         </div>
     </a>

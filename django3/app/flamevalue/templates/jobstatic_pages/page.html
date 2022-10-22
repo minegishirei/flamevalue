@@ -7,17 +7,17 @@
 
 
 <!-- page content -->
-<div role="main" class="main_contents" style="overflow-x:hidden;">
-
-  <!-- top tiles -->
-  <div class="row" style="display: inline-block;">
-    {% include 'jobstatic_parts/top.html' %}
-  </div>
-
-
+<div role="main" class="main_contents">
   <div class="">
     <div class="x_panel">
       <div class="x_content">
+
+        <!-- top tiles -->
+        <div class="row" style="display: inline-block;">
+          {% include 'jobstatic_parts/top.html' %}
+        </div>
+
+
         <ul class="nav nav-tabs bar_tabs" id="myTab" role="tablist">
           {% if request.GET.active %}
           <li class="nav-item">
@@ -66,18 +66,20 @@
             <div class="row">
               {% include "jobstatic_parts/line_graph.html" %}
             </div>
+            <!--
             <div class="row">
               {% include "jobstatic_parts/wordcloud.html" %}
               {% include 'jobstatic_parts/comments.html' %}
             </div>
+            -->
           </div>
           {% elif request.GET.active == "comments" %}
           <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="row">
-            <div class="col-md-12 col-sm-12 ">
-              {% include "jobstatic_parts/acounts.html" %}
-              {% include "jobstatic_parts/comments_v2.html" %}
-            </div>
+              <div class="col-md-12 col-sm-12 ">
+                {% include "jobstatic_parts/acounts.html" %}
+                {% include "jobstatic_parts/comments_v2.html" %}
+              </div>
             </div>
           </div>
           {% else %}

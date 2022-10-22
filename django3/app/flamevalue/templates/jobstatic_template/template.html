@@ -53,8 +53,6 @@
 
   .main_contents {
     background-color: #f8f9fa;
-    padding-left: 4%;
-    padding-right: 4%;
   }
 
   @media screen and (min-width: 680px) {
@@ -86,8 +84,7 @@
             </div>
 
             <nav class="nav navbar-nav">
-              <ul class=" navbar-right">
-
+              <ul class=" navbar-right" id="js_hidden">
                 <li class="nav-item dropdown open only_mobile">
                   <a href="/" class="user-profile dropdown-toggle" aria-haspopup="true"
                     id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
@@ -118,10 +115,11 @@
                     <input type="submit" value="&#xf002" onclick="transition()">
                   </div>
                 </li>
+
                 <style>
                   @media screen and (max-width:767px){
                     .only_mobile {
-                      visibility: hidden;
+                      display: none;
                     }
                   }
                 </style>
@@ -193,29 +191,13 @@
 
 
 
-                <!--
-                <li class="nav-item dropdown open" style="padding-left: 15px;">
-                  <a href="/" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown"
-                    data-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-reorder" style="transform: scale(2.3); vertical-align: middle;"></i>
-                  </a>
-                </li>
-                <li class="nav-item dropdown open" style="padding-left: 0px;">
-                  <a href="/" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown"
-                    data-toggle="dropdown" aria-expanded="false">
-                    <n  style=" color: white;">年収ランキング </n>
-                  </a>
-                </li>
-
-                <li class="nav-item dropdown open" style="padding-left: 0px;">
-                  <a href="/" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown"
-                    data-toggle="dropdown" aria-expanded="false">
-                    <n  style=" color: white;">flamevalue </n>
-                  </a>
-                </li>
-                -->
 
               </ul>
+              <script>
+                if(window.innerWidth < 700){
+                  document.getElementById("js_hidden").innerHTML = ""
+                }
+              </script>
             </nav>
 
             <style>
