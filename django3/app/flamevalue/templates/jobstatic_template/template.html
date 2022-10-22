@@ -133,7 +133,7 @@
                     function popup_candidate_list(candidate_list) {
                       document.getElementById("candidate_list").innerHTML = (`<option value="${ candidate_list.join('"><option value="') }"</li>`)
                     }
-                    url = `https://${location.hostname}.localhost/api/candidate/?unfinished_title=rub`
+                    url = `https://${location.hostname}/api/candidate/?unfinished_title=rub`
                     fetch(url)
                       .then(response => response.json())
                       .then(function (json) {
