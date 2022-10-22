@@ -22,13 +22,13 @@
             {% for row in wikipedia_related %}
             <article class="media event">
                 <!--
-                                    <a class="pull-left date">
+                <a class="pull-left date">
                     <p class="month">Score</p>
                     <p class="day">4.5</p>
                 </a>
                 -->
                 <a class="pull-left" style="padding-right: 10px;">
-                    <img src="https://www.fullness.co.jp/wp-content/uploads/2017/04/djangologo.png" width="42px">
+                    <img src="{{ row.img }}" width="42px">
                 </a>
                 <div class="media-body">
                     <a class="title" href="./{{ row.name }}">{{ row.name }}</a><br>
