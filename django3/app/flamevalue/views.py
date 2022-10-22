@@ -2,7 +2,7 @@ from .careerJet import clear_jnet,mock_getCareerJet, row_converter, getCareerJet
 from .wikipedia_list import get_wikipedia_list
 from .JsonIO import JsonDictionalyManager, JsonIO
 from .my_tools import del_dub_dict_list
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponse
 import json
 import sys
 if '/God' not in sys.path:
@@ -18,7 +18,7 @@ import pprint
 import wikipedia
 # 言語を日本語に設定
 wikipedia.set_lang("jp")
-
+from .my_tools import calc_distance
 
             
 jsonDictionalyManager = JsonDictionalyManager()
@@ -247,9 +247,11 @@ def page(request, htmlname):
     jsonIO = JsonIO()
     if jsonIO.exists(name) and (not request.GET.get("reload") ):
         param = jsonIO.read(name)
-    else:
+    elif request.GET.get("reload"):
         param = build_param(name)
         jsonIO.write(param["name"],param)
+    else:
+        return redirect("/")
     GET_active = request.GET.get("active")
     if GET_active == "jobs":
         param.update({
@@ -293,3 +295,12 @@ def robots(request):
 def reverse_index(request):
     return redirect("/")
 
+
+def api_candidate(request):
+    unfinished_title = request.GET.get("unfinished_title")
+    sorted_flamework_list = list(map(lambda x: x["name"], sorted(FLAMEWORKDICT, key=lambda x: calc_distance(x["name"], unfinished_title))))
+    json_dict = {
+        "candidate" : sorted_flamework_list
+    }
+    json_str = json.dumps(json_dict, ensure_ascii=False, indent=2) 
+    return HttpResponse(json_str)

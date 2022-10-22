@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
-<head >
+<head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <!-- Meta, title, CSS, favicons, etc. -->
   <meta charset="utf-8">
@@ -18,17 +18,20 @@
   {% if img %}
   <meta name="twitter:image" content="{{ img }}">
   {% else %}
-  <meta name="twitter:image" content="https://question.short-tips.info/api/ogp/?text={{ name }}...score {{ stars }} {{ total_score }} ......平均下限年収 : {{ basic.money }}万円...平均上限年収 : {{ basic.overtime }}万円...総求人数 : {{ basic.count }}件...リモート率 : {{ basic.remote }}％...Qiitaタグ数 : {{ basic.qiita_score }}件 .........{{ title }}">
+  <meta name="twitter:image"
+    content="https://question.short-tips.info/api/ogp/?text={{ name }}...score {{ stars }} {{ total_score }} ......平均下限年収 : {{ basic.money }}万円...平均上限年収 : {{ basic.overtime }}万円...総求人数 : {{ basic.count }}件...リモート率 : {{ basic.remote }}％...Qiitaタグ数 : {{ basic.qiita_score }}件 .........{{ title }}">
   {% endif %}
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- Font Awesome -->
   <link href="/static/jobstatic/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <!-- NProgress -->
   <link href="/static/jobstatic/vendors/nprogress/nprogress.css" rel="stylesheet">
-
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  rel="stylesheet">
   <!-- bootstrap-progressbar -->
   <link href="/static/jobstatic/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
   <!-- JQVMap -->
@@ -47,16 +50,18 @@
   .main_contents {
     background-color: #f8f9fa;
   }
+
   .main_contents {
     background-color: #f8f9fa;
     padding-left: 4%;
-    padding-right:  4%;
+    padding-right: 4%;
   }
+
   @media screen and (min-width: 680px) {
     .main_contents {
       background-color: #f8f9fa;
       padding-left: 15%;
-      padding-right:  15%;
+      padding-right: 15%;
     }
   }
 </style>
@@ -73,13 +78,120 @@
                 <li class="nav-item dropdown open" style="padding-left: 0px;">
                   <a href="/" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown"
                     data-toggle="dropdown" aria-expanded="false">
-                    <img src="https://raw.githubusercontent.com/kawadasatoshi/minegishirei/main/img/beaver.png" alt=""><n  style=" color: white;">flamevalue</n>
+                    <img src="https://raw.githubusercontent.com/kawadasatoshi/minegishirei/main/img/beaver.png" alt="">
+                    <n style=" color: white;">flamevalue</n>
                   </a>
                 </li>
               </ul>
             </div>
+
             <nav class="nav navbar-nav">
               <ul class=" navbar-right">
+
+                <li class="nav-item dropdown open only_mobile">
+                  <a href="/" class="user-profile dropdown-toggle" aria-haspopup="true"
+                    id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                    <img src="/static/jobstatic/img/color.png" alt="">
+                    <n style=" color: white;">ホーム</n>
+                  </a>
+                </li>
+                <li class="nav-item dropdown open only_mobile">
+                  <a href="https://techblog.short-tips.info" class="user-profile dropdown-toggle" aria-haspopup="true"
+                    id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                    <img src="/static/jobstatic/img/color.png" alt="">
+                    <n style=" color: white;">開発者ブログ</n>
+                  </a>
+                </li>
+                <li class="nav-item dropdown open only_mobile">
+                  <a href="https://twitter.com/se_maintain" class="user-profile dropdown-toggle" aria-haspopup="true"
+                    id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                    <img src="/static/jobstatic/img/color.png" alt="">
+                    <n style=" color: white;">問い合わせ</n>
+                  </a>
+                </li>
+
+                <li class="nav-item dropdown open only_mobile">
+                  <div class="search_container" style="background-color: white;" onsubmit="transition()">
+                    <input type="text" size="40" placeholder="キーワード検索" id="query_text_box" list="candidate_list" autocomplete="off">
+                    <datalist id="candidate_list">
+                    </datalist>
+                    <input type="submit" value="&#xf002" onclick="transition()">
+                  </div>
+                </li>
+                <style>
+                  @media screen and (max-width:767px){
+                    .only_mobile {
+                      visibility: hidden;
+                    }
+                  }
+                </style>
+
+
+                <script>
+                  const query = document.getElementById("query_text_box")
+                  query.addEventListener('focus', function (event) {
+                    function popup_candidate_list(candidate_list) {
+                      document.getElementById("candidate_list").innerHTML = (`<option value="${ candidate_list.join('"><option value="') }"</li>`)
+                    }
+                    url = "https://flamevalue.localhost/api/candidate/?unfinished_title=rub"
+                    fetch(url)
+                      .then(response => response.json())
+                      .then(function (json) {
+                        console.log(json)
+                        popup_candidate_list(json.candidate)
+                      });
+                  });
+                  function transition(){
+                    query_text = document.getElementById("query_text_box").value
+                    location.href = ("/" + query_text)
+                  }
+
+                  document.getElementById("query_text_box").onkeydown = function(event){
+                    if (event.key === 'Enter') {
+                      query_text = document.getElementById("query_text_box").value
+                      location.href = ("/" + query_text)
+                    }
+                  }
+                </script>
+
+                <style>
+                  .search_container {
+                    box-sizing: border-box;
+                    position: relative;
+                    border: 1px solid #999;
+                    padding-left: 10px;
+                    border-radius: 5px;
+                    height: 2.1em;
+                    width: 60%;
+                    overflow: hidden;
+                  }
+
+                  .search_container input[type="text"] {
+                    border: none;
+                    height: 2.0em;
+                  }
+
+                  .search_container input[type="text"]:focus {
+                    outline: 0;
+                  }
+
+                  .search_container input[type="submit"] {
+                    cursor: pointer;
+                    font-family: FontAwesome;
+                    font-size: 1.3em;
+                    border: none;
+                    background: none;
+                    color: #3879D9;
+                    position: absolute;
+                    width: 2.5em;
+                    height: 2.5em;
+                    right: 0;
+                    top: -10px;
+                    outline: none;
+                  }
+                </style>
+
+
 
                 <!--
                 <li class="nav-item dropdown open" style="padding-left: 15px;">
@@ -136,15 +248,22 @@
 
 
   <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
 
-    <!-- NProgress -->
-    <script src="../vendors/nprogress/nprogress.js"></script>
+  <!-- NProgress -->
+  <script src="../vendors/nprogress/nprogress.js"></script>
   <!-- bootstrap-progressbar -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.8.5/bootstrap-progressbar.min.js" integrity="sha512-ShSScKTSdSD7IiMKfgTdqaEY8gOGm5cNfqMr6Wc5BZvMgc1UveS+UqpS0TNUtRD1CZ9KhmbGtzwUN7HJlXxY8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.3.3/echarts.min.js" integrity="sha512-2L0h0GhoIHQEjti/1KwfjcbyaTHy+hPPhE1o5wTCmviYcPO/TD9oZvUxFQtWvBkCSTIpt+fjsx1CCx6ekb51gw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.8.5/bootstrap-progressbar.min.js"
+    integrity="sha512-ShSScKTSdSD7IiMKfgTdqaEY8gOGm5cNfqMr6Wc5BZvMgc1UveS+UqpS0TNUtRD1CZ9KhmbGtzwUN7HJlXxY8Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.3.3/echarts.min.js"
+    integrity="sha512-2L0h0GhoIHQEjti/1KwfjcbyaTHy+hPPhE1o5wTCmviYcPO/TD9oZvUxFQtWvBkCSTIpt+fjsx1CCx6ekb51gw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Custom Theme Scripts -->
   <script src="/static/jobstatic/build/js/custom.js"></script>
@@ -476,7 +595,7 @@
             }
           }
         },
-        data: count_list.map( (row) => row*100)
+        data: count_list.map((row) => row * 100)
       }, {
         name: 'リモート率',
         type: 'line',
@@ -488,7 +607,7 @@
             }
           }
         },
-        data: remote_list.map( (row) => row == undefined ? 0 : row )
+        data: remote_list.map((row) => row == undefined ? 0 : row)
       }]
     });
 
@@ -501,87 +620,87 @@
 
 <script>
 
-    //echart Bar
+  //echart Bar
 
-    var money_list_dict = JSON.parse(`
+  var money_list_dict = JSON.parse(`
     {{ money_countlist | safe }}
     `)
 
-    var upper_money_list = money_list_dict.upper
-    var lower_money_list = money_list_dict.lower
+  var upper_money_list = money_list_dict.upper
+  var lower_money_list = money_list_dict.lower
 
-    if ($('#mainb').length) {
+  if ($('#mainb').length) {
 
-var echartBar = echarts.init(document.getElementById('mainb'), theme);
+    var echartBar = echarts.init(document.getElementById('mainb'), theme);
 
-echartBar.setOption({
-    title: {
+    echartBar.setOption({
+      title: {
         text: '{{ name }}',
         subtext: '単位：件/万円'
-    },
-    tooltip: {
+      },
+      tooltip: {
         trigger: 'axis'
-    },
-    legend: {
+      },
+      legend: {
         data: ['下限', '上限']
-    },
-    toolbox: {
+      },
+      toolbox: {
         show: false
-    },
-    calculable: false,
-    xAxis: [{
+      },
+      calculable: false,
+      xAxis: [{
         type: 'category',
         data: ['0', '100', '200', '300', '400', '500', '600', '700', '800', '900']
-    }],
-    yAxis: [{
+      }],
+      yAxis: [{
         type: 'value'
-    }],
-    series: [{
+      }],
+      series: [{
         name: '下限',
         type: 'bar',
         data: lower_money_list,
         markPoint: {
-            data: [{
-                type: 'max',
-                name: '???'
-            }, {
-                type: 'min',
-                name: '???'
-            }]
+          data: [{
+            type: 'max',
+            name: '???'
+          }, {
+            type: 'min',
+            name: '???'
+          }]
         },
         markLine: {
-            data: [{
-                type: 'average',
-                name: '???'
-            }]
+          data: [{
+            type: 'average',
+            name: '???'
+          }]
         }
-    }, {
+      }, {
         name: '上限',
         type: 'bar',
         data: upper_money_list,
         markPoint: {
-            data: [{
-                name: 'sales',
-                value: 182.2,
-                xAxis: 7,
-                yAxis: 183,
-            }, {
-                name: 'purchases',
-                value: 2.3,
-                xAxis: 11,
-                yAxis: 3
-            }]
+          data: [{
+            name: 'sales',
+            value: 182.2,
+            xAxis: 7,
+            yAxis: 183,
+          }, {
+            name: 'purchases',
+            value: 2.3,
+            xAxis: 11,
+            yAxis: 3
+          }]
         },
         markLine: {
-            data: [{
-                type: 'average',
-                name: '???'
-            }]
+          data: [{
+            type: 'average',
+            name: '???'
+          }]
         }
-    }
-  ]
-});
+      }
+      ]
+    });
 
-}
+  }
 
 </script>

@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     "examengcloud",
     "fanstatic",
     "engineer_rank",
-    "techblog",
+    #"techblog",
     "oversea_it",
     "question",
     "oreilly",
