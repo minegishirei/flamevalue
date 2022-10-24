@@ -270,6 +270,13 @@ def page(request, htmlname):
             param.update(titleABTest()(name,param["explain"].replace("\n","") ) ) 
     return render(request, f"jobstatic_pages/page.html", param)
 
+def ranking(request):
+    params = {
+        "title" : "プログラミング言語ランキング " +datetime.datetime.now().strftime('%Y年%m月%d日') + " 最新版"
+        "ranking_list" : sorted(FLAMEWORKDICT, key=lambda x: x["basic"]["money"], reverse=True)
+    }
+    return render(request, f"jobstatic_pages/ranking.html", params)
+
 def index(request):
     global FLAMEWORKDICT
     if request.GET.get("reload"):

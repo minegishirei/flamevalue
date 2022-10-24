@@ -10,6 +10,7 @@ urlpatterns = [
     path("sitemap.xml", views.sitemap, name="sitemap"),
     path("robots.txt", views.robots, name="robots"),
     path("api/candidate/", views.api_candidate, name="candidate"),
+    path("ranking.html", views.ranking, name="ranking"),
     path("<htmlname>", views.page ,name="pop_page"),
 
 ]
