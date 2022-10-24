@@ -272,7 +272,8 @@ def page(request, htmlname):
 
 def ranking(request):
     params = {
-        "title" : "プログラミング言語ランキング " +datetime.datetime.now().strftime('%Y年%m月%d日') + " 最新版"
+        "title" : f"プログラミング言語 年収ランキング {datetime.datetime.now().strftime('%Y年%m月%d日')} 最新版",
+        "description" : f"{datetime.datetime.now().strftime('%Y年%m月%d日')}更新 Flamevalue プログラミング言語やフレームワークを年収ごとにランキング化。技術選定や学習するプログラミング言語選びにFlamevalue",
         "ranking_list" : sorted(FLAMEWORKDICT, key=lambda x: x["basic"]["money"], reverse=True)
     }
     return render(request, f"jobstatic_pages/ranking.html", params)
