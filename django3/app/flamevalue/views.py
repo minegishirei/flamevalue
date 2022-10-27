@@ -19,6 +19,7 @@ import wikipedia
 # 言語を日本語に設定
 wikipedia.set_lang("jp")
 from .my_tools import calc_distance
+from multiprocessing import Process
 
             
 jsonDictionalyManager = JsonDictionalyManager()
@@ -109,7 +110,6 @@ def split_timetable(origin):
     return return_timetable
 def TEST_split_timetable():
     timetable = split_timetable(origin)
-    pprint.pprint(timetable)
     assert timetable[1], "error : TEST_split_timetable"
 
 """
@@ -252,6 +252,8 @@ def page(request, htmlname):
         jsonIO.write(param["name"],param)
     else:
         return redirect("/")
+    p = Process(target = reload_subprocess, args=(name))
+    p.start()
     GET_active = request.GET.get("active")
     if GET_active == "jobs":
         param.update({
@@ -283,6 +285,9 @@ def index(request):
     global FLAMEWORKDICT
     if request.GET.get("reload"):
         FLAMEWORKDICT = jsonDictionalyManager.generate_all_flameworkdict()
+    if request.GET.get("refresh_all"):
+        p = Process(target=refresh_all)
+        p.start()
     name = "フレームワーク"
     param = {
         "title" : "「年収/採用企業」FlameValue フレームワークの転職評価",
@@ -313,3 +318,22 @@ def api_candidate(request):
     }
     json_str = json.dumps(json_dict, ensure_ascii=False, indent=2) 
     return HttpResponse(json_str)
+
+import time
+def refresh_all():
+    global FLAMEWORKDICT
+    jsonIO = JsonIO()
+    for row in FLAMEWORKDICT:
+        time.sleep(1)
+        name = row["name"]
+        try:
+            param = build_param(name)
+            jsonIO.write(param["name"],param)
+            print("【reflash】 : ", name)
+        except:
+            print("【reflash_missed!!!】 : ", name)
+
+
+def reload_subprocess(name):
+    param = build_param(name)
+    jsonIO.write(param["name"],param)

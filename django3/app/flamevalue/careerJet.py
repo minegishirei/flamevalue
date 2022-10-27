@@ -44,7 +44,6 @@ def row_c(row):
             "年齢": 30,
             "日付" : datetime.datetime.strptime(row["date"], '%a, %d %b %Y %H:%M:%S GMT').strftime("%Y-%m-%d")
         } 
-    print(new_row)
     return new_row
 
 def remotework_checker(row):
