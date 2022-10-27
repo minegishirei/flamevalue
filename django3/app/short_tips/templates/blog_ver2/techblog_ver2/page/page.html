@@ -9,9 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{ description }}">
     <meta name="author" content="kawadasatoshi">
-    <script>
-        document.getElementById('content').innerHTML = marked.parse(document.getElementById('content').innerHTML);
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
@@ -21,8 +18,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6548366793980519"
      crossorigin="anonymous"></script>
 
-    <link rel="preload" href="/static/techblog_ver2/assets/css/bootstrap.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
+    <link  href="/static/techblog_ver2/assets/css/bootstrap.min.css" rel='stylesheet'>
 
     <!-- Custom styles for this template -->
     <link href="/static/techblog_ver2/assets/css/mediumish.css" rel="stylesheet">
@@ -100,7 +96,10 @@
 
 
                 <div id="content">{{ mk|safe }}</div>
-
+                <script>
+                    document.getElementById('content').innerHTML = marked.parse(document.getElementById('content').innerHTML);
+                </script>
+            
 
 
 
