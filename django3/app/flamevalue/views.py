@@ -252,7 +252,7 @@ def page(request, htmlname):
         jsonIO.write(param["name"],param)
     else:
         return redirect("/")
-    p = Process(target = reload_subprocess, args=(name))
+    p = Process(target = reload_subprocess, args=(name,))
     p.start()
     GET_active = request.GET.get("active")
     if GET_active == "jobs":
