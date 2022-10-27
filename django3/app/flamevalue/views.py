@@ -252,8 +252,8 @@ def page(request, htmlname):
         jsonIO.write(param["name"],param)
     else:
         return redirect("/")
-    p = Process(target = reload_subprocess, args=(name))
-    p.start()
+    #p = Process(target = reload_subprocess, args=(name))
+    #p.start()
     GET_active = request.GET.get("active")
     if GET_active == "jobs":
         param.update({
@@ -335,5 +335,6 @@ def refresh_all():
 
 
 def reload_subprocess(name):
+    jsonIO = JsonIO()
     param = build_param(name)
     jsonIO.write(param["name"],param)
