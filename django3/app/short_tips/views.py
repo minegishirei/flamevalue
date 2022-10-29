@@ -92,6 +92,10 @@ def index(request):
     if request.GET.get("reload"):
         repo_page_dict[repo] = genPageDict(repo)
     page_list = []
+    if repo == "localhost":
+        return redirect("https://techblog.localhost")
+    if repo == "short-tips.info":
+        return redirect("https://techblog.short-tips.info")
     for category, category_list in repo_page_dict[repo].items():
         for page in category_list.values():
             page_list.append(page)
