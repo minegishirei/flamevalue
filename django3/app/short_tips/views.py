@@ -94,7 +94,7 @@ def index(request):
     page_list = []
     if repo == "localhost":
         return redirect("https://techblog.localhost")
-    if repo == "short-tips.info":
+    if repo == "short-tips":
         return redirect("https://techblog.short-tips.info")
     for category, category_list in repo_page_dict[repo].items():
         for page in category_list.values():
