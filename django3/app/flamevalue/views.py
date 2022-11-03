@@ -272,7 +272,6 @@ def page(request, htmlname):
             "description" : f"{name}ユーザーによる「すべての開発者クチコミ」のクチコミ・評価レビュー。{name}の採用を検討されている方が、{name}の「すべての開発者クチコミ」を把握するための参考情報として、{name}を使用した開発者から「すべての開発者クチコミ」に関するクチコミを収集し掲載しています。就職・採用活動での一段深めた開発者リサーチにご活用いただけます。"
         })
     else:
-
         """
         try:
             param.update(titleABTest()(name,param["qiita_comments"][0]["body"].replace("\n","")))
