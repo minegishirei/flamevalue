@@ -283,8 +283,7 @@ def ranking(request):
 
 def index(request):
     global FLAMEWORKDICT
-    if request.GET.get("reload"):
-        FLAMEWORKDICT = jsonDictionalyManager.generate_all_flameworkdict()
+    FLAMEWORKDICT = jsonDictionalyManager.generate_all_flameworkdict()
     if request.GET.get("refresh_all"):
         p = Process(target=refresh_all)
         p.start()

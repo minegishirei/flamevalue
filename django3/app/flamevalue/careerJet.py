@@ -5,16 +5,26 @@ import datetime
 
 def getCareerJet(q):
     cj  =  CareerjetAPIClient("ja_JP");
-    result_json = cj.search({
-                            'pagesize'    : 99,
-                            'contractperiod': 'f',
-                            'location'    : 'japan',
-                            'keywords'    : q,
-                            'affid'       : "2fe9505824da669b63789f957def6e26",
-                            'user_ip'     : '11.22.33.44',
-                            'url'         : 'http://www.example.com/jobsearch?q=python&l=london',
-                            'user_agent'  : 'Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0'
-                          })
+    def fetch(start_num = 1):
+        return cj.search({
+            'start_num'   : start_num,
+            'pagesize'    : 99,
+            'contractperiod': 'f',
+            'location'    : 'japan',
+            'keywords'    : q,
+            'affid'       : "2fe9505824da669b63789f957def6e26",
+            'user_ip'     : '11.22.33.44',
+            'url'         : 'http://www.example.com/jobsearch?q=python&l=london',
+            'user_agent'  : 'Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0'
+        })
+    def clear_jobs(jobs):
+        black_list = ["株式会社ハイウェル", "バリューアークコンサルティング株式会社"]
+        return list( filter(lambda row: row["company"] not in black_list,jobs) )
+    result_json = fetch()
+    result_json = {
+        "jobs"  : clear_jobs(result_json["jobs"]) + clear_jobs(fetch(200)["jobs"]) ,
+        "hits"  : result_json["hits"]
+    }
     return result_json
 
 
