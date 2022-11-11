@@ -91,14 +91,14 @@
 
             <nav class="nav navbar-nav">
               <ul class=" navbar-right" id="js_hidden">
-                <li class="nav-item dropdown open only_mobile">
+                <li class="nav-item dropdown open only_pc">
                   <a href="https://pm.short-tips.info/who/flamevalue.md" class="user-profile dropdown-toggle" aria-haspopup="true"
                     id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
                     <img src="/static/jobstatic/img/color.png" alt="">
                     <n style=" color: white;">Flamevalueとは?</n>
                   </a>
                 </li>
-                <li class="nav-item dropdown open only_mobile">
+                <li class="nav-item dropdown open only_pc">
                   <a href="https://twitter.com/se_maintain" class="user-profile dropdown-toggle" aria-haspopup="true"
                     id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
                     <img src="/static/jobstatic/img/color.png" alt="">
@@ -106,7 +106,7 @@
                   </a>
                 </li>
 
-                <li class="nav-item dropdown open only_mobile">
+                <li class="nav-item dropdown open only_pc">
                   <div class="search_container" style="background-color: white;" onsubmit="transition()">
                     <input type="text" size="40" placeholder="キーワード検索" id="query_text_box" list="candidate_list" autocomplete="off">
                     <datalist id="candidate_list">
@@ -115,7 +115,7 @@
                   </div>
                 </li>
 
-                <li class="nav-item dropdown open only_mobile">
+                <li class="nav-item dropdown open only_pc">
                   <a href="/ranking.html" class="user-profile dropdown-toggle" aria-haspopup="true"
                     id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
                     <n style=" color: white;">年収ランキング</n>
@@ -125,6 +125,11 @@
 
                 <style>
                   @media screen and (max-width:767px){
+                    .only_pc {
+                      display: none;
+                    }
+                  }
+                  @media screen and (min-width:767px){
                     .only_mobile {
                       display: none;
                     }
@@ -159,42 +164,7 @@
                   }
                 </script>
 
-                <style>
-                  .search_container {
-                    box-sizing: border-box;
-                    position: relative;
-                    border: 1px solid #999;
-                    padding-left: 10px;
-                    border-radius: 5px;
-                    height: 2.1em;
-                    width: 100%;
-                    overflow: hidden;
-                  }
 
-                  .search_container input[type="text"] {
-                    border: none;
-                    height: 2.0em;
-                  }
-
-                  .search_container input[type="text"]:focus {
-                    outline: 0;
-                  }
-
-                  .search_container input[type="submit"] {
-                    cursor: pointer;
-                    font-family: FontAwesome;
-                    font-size: 1.3em;
-                    border: none;
-                    background: none;
-                    color: #3879D9;
-                    position: absolute;
-                    width: 2.5em;
-                    height: 2.5em;
-                    right: 0;
-                    top: -10px;
-                    outline: none;
-                  }
-                </style>
               </ul>
               <script>
                 if(window.innerWidth < 700){
@@ -210,7 +180,57 @@
             </style>
 
           </div>
+
+          <li class="nav-item dropdown open only_mobile" style="padding: 10px;">
+            <div class="search_container" style="background-color: white;" onsubmit="transition()">
+              <input type="text" size="40" placeholder="キーワード検索" id="query_text_box" list="candidate_list" autocomplete="off">
+              <datalist id="candidate_list">
+              </datalist>
+              <input type="submit" value="&#xf002" onclick="transition()">
+            </div>
+          </li>
+  
+          <style>
+            .search_container {
+              box-sizing: border-box;
+              position: relative;
+              border: 1px solid #999;
+              padding-left: 10px;
+              border-radius: 5px;
+              height: 2.1em;
+              width: 100%;
+              overflow: hidden;
+            }
+  
+            .search_container input[type="text"] {
+              border: none;
+              height: 2.0em;
+            }
+  
+            .search_container input[type="text"]:focus {
+              outline: 0;
+            }
+  
+            .search_container input[type="submit"] {
+              cursor: pointer;
+              font-family: FontAwesome;
+              font-size: 1.3em;
+              border: none;
+              background: none;
+              color: #3879D9;
+              position: absolute;
+              width: 2.5em;
+              height: 2.5em;
+              right: 0;
+              top: -10px;
+              outline: none;
+            }
+          </style>
+
         </div>
+
+
+
       </div>
       <!-- /top navigation -->
 
