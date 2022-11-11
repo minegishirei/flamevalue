@@ -193,6 +193,7 @@ def build_param(name_original):
 
     wordcount_list =  getMeishiList("。".join([row["description"] for row in jobs]))
     data_param.update({
+        "date" : datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S'),
         "total_score" :  total_score,
         "stars" : "★"*total_score_int + "☆"*(5-total_score_int),
         "basic" : basic_info,

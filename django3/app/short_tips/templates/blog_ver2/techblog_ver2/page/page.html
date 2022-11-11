@@ -60,7 +60,7 @@
             <!-- Begin Post -->
             <div class="col-md-9 col-md-offset-2 col-xs-12" style="background-color: #ffff;">
                 <div class="mainheading">
-                    <!-- Begin Top Meta 
+                    <!-- Begin Top Meta -->
                     <div class="row post-top-meta">
                         <div class="col-md-2">
                             <a href="/{{ category }}"><img class="author-thumb lazyload"
@@ -75,7 +75,7 @@
                             <span class="post-date"></span>
                         </div>
                     </div>
-                     End Top Menta -->
+                    <!-- End Top Menta -->
                     <h1 class="posttitle">{{ title }}</h1>
 
 
@@ -83,7 +83,7 @@
 
                 {% if not is_bite_page %}
 
-                <ul class="tags">
+                <ul>
                     {% for key, value in index_table.items %}
                     <li style="padding-bottom: 0.3em;">
                         <a href="#{{ key }}">{{value}}</a>
