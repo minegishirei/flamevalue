@@ -137,32 +137,7 @@
                 </style>
 
 
-                <script>
-                  const query = document.getElementById("query_text_box")
-                  query.addEventListener('focus', function (event) {
-                    function popup_candidate_list(candidate_list) {
-                      document.getElementById("candidate_list").innerHTML = (`<option value="${ candidate_list.join('"><option value="') }"</li>`)
-                    }
-                    url = `https://${location.hostname}/api/candidate/?unfinished_title=rub`
-                    fetch(url)
-                      .then(response => response.json())
-                      .then(function (json) {
-                        console.log(json)
-                        popup_candidate_list(json.candidate)
-                      });
-                  });
-                  function transition(){
-                    query_text = document.getElementById("query_text_box").value
-                    location.href = ("/" + query_text)
-                  }
 
-                  document.getElementById("query_text_box").onkeydown = function(event){
-                    if (event.key === 'Enter') {
-                      query_text = document.getElementById("query_text_box").value
-                      location.href = ("/" + query_text)
-                    }
-                  }
-                </script>
 
 
               </ul>
@@ -181,15 +156,40 @@
 
           </div>
 
-          <li class="nav-item dropdown open only_mobile" style="padding: 10px;">
+          <div class="nav-item dropdown open only_mobile" style="padding: 10px;">
             <div class="search_container" style="background-color: white;" onsubmit="transition()">
               <input type="text" size="40" placeholder="キーワード検索" id="query_text_box" list="candidate_list" autocomplete="off">
               <datalist id="candidate_list">
               </datalist>
               <input type="submit" value="&#xf002" onclick="transition()">
             </div>
-          </li>
-  
+          </div>
+          <script>
+            const query = document.getElementById("query_text_box")
+            query.addEventListener('focus', function (event) {
+              function popup_candidate_list(candidate_list) {
+                document.getElementById("candidate_list").innerHTML = (`<option value="${ candidate_list.join('"><option value="') }"</li>`)
+              }
+              url = `https://${location.hostname}/api/candidate/?unfinished_title=rub`
+              fetch(url)
+                .then(response => response.json())
+                .then(function (json) {
+                  console.log(json)
+                  popup_candidate_list(json.candidate)
+                });
+            });
+            function transition(){
+              query_text = document.getElementById("query_text_box").value
+              location.href = ("/" + query_text)
+            }
+
+            document.getElementById("query_text_box").onkeydown = function(event){
+              if (event.key === 'Enter') {
+                query_text = document.getElementById("query_text_box").value
+                location.href = ("/" + query_text)
+              }
+            }
+          </script>
           <style>
             .search_container {
               box-sizing: border-box;
@@ -224,6 +224,9 @@
               right: 0;
               top: -10px;
               outline: none;
+            }
+            input::-webkit-calendar-picker-indicator {
+                display: none;
             }
           </style>
 
