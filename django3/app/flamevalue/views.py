@@ -318,6 +318,11 @@ def robots(request):
 def reverse_index(request):
     return redirect("/")
 
+def search(request):
+    param = {
+        
+    }
+    return render(request, f"jobstatic_pages/search.html", param)
 
 def api_candidate(request):
     unfinished_title = request.GET.get("unfinished_title")

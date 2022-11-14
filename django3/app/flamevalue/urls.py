@@ -11,6 +11,7 @@ urlpatterns = [
     path("robots.txt", views.robots, name="robots"),
     path("api/candidate/", views.api_candidate, name="candidate"),
     path("ranking.html", views.ranking, name="ranking"),
+    path("search.html", views.search, name="search"),
     path("<htmlname>", views.page ,name="pop_page"),
 
 ]

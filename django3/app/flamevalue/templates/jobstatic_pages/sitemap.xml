@@ -3,6 +3,12 @@
     <url>
         <loc>https://flamevalue.short-tips.info/</loc>
     </url>
+    <url>
+        <loc>https://flamevalue.short-tips.info/ranking.html</loc>
+    </url>
+    <url>
+        <loc>https://flamevalue.short-tips.info/search.html</loc>
+    </url>
     {% for page in pop_page_list %}
     <url>
         <loc>https://flamevalue.short-tips.info/{{ page.name }}</loc>
