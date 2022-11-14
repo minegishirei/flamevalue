@@ -40,8 +40,8 @@
                     <div role="tabpanel" class="tab-pane active " id="tab_content1" aria-labelledby="home-tab">
                         <!-- start recent activity -->
                         <ul class="messages">
-                            <h6 class="heading">{{ row.user.name }}</h6>
-                            <div id="content_{{ row.id }}" style="overflow-x: hidden;" class="img_width_100">{{ row.body }}</div>
+                            <h6 class="heading" style="word-wrap: break-word;">{{ row.user.name }}</h6>
+                            <div id="content_{{ row.id }}" style="overflow-x: hidden; word-break: break-all;" class="img_width_100">{{ row.body }}</div>
                             <script>
                                 document.getElementById('content_{{ row.id }}').innerHTML = marked.parse(document.getElementById('content_{{ row.id }}').innerHTML);
                             </script>
@@ -59,6 +59,7 @@
 {% endfor %}
 
 <style>
+    .longurl{}
     p img {
         max-width: 100%;
     }
