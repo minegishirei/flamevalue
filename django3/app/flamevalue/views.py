@@ -320,7 +320,7 @@ def reverse_index(request):
 
 def search(request):
     param = {
-        
+        "title" : "FlameValue各種リンク"
     }
     return render(request, f"jobstatic_pages/search.html", param)
 
