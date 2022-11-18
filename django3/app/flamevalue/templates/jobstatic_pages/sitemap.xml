@@ -7,6 +7,12 @@
         <loc>https://flamevalue.short-tips.info/ranking.html</loc>
     </url>
     <url>
+        <loc>https://flamevalue.short-tips.info/ranking.html?active=remote</loc>
+    </url>
+    <url>
+        <loc>https://flamevalue.short-tips.info/ranking.html?active=count</loc>
+    </url>
+    <url>
         <loc>https://flamevalue.short-tips.info/search.html</loc>
     </url>
     {% for page in pop_page_list %}
