@@ -273,12 +273,6 @@ def page(request, htmlname):
             "description" : f"{name}ユーザーによる「すべての開発者クチコミ」のクチコミ・評価レビュー。{name}の採用を検討されている方が、{name}の「すべての開発者クチコミ」を把握するための参考情報として、{name}を使用した開発者から「すべての開発者クチコミ」に関するクチコミを収集し掲載しています。就職・採用活動での一段深めた開発者リサーチにご活用いただけます。"
         })
     else:
-        """
-        try:
-            param.update(titleABTest()(name,param["qiita_comments"][0]["body"].replace("\n","")))
-        except:
-            param.update(titleABTest()(name,param["explain"].replace("\n","") ) ) 
-        """
         param.update(titleProduction()(name,param["explain"].replace("\n","") ))
     return render(request, f"jobstatic_pages/page.html", param)
 
@@ -288,14 +282,14 @@ def ranking(request):
         "description" : f"{datetime.datetime.now().strftime('%Y年%m月%d日')}更新 Flamevalue プログラミング言語やフレームワークを年収ごとにランキング化。技術選定や学習するプログラミング言語選びにFlamevalue",
         "img" : "https://github.com/kawadasatoshi/minegishirei/blob/main/flamevalue/flamevalue.png?raw=true"
     }
-    if request.GET.get("active") == "remote":
+    params.update({
+        "ranking_list" : sorted(FLAMEWORKDICT, key=lambda x: x["basic"]["money"], reverse=True),
+    })
+    if request.GET.get("active"):
         params.update({
-            "ranking_list" : sorted(FLAMEWORKDICT, key=lambda x: x["basic"]["remote"], reverse=True)
+            "ranking_list" : sorted(FLAMEWORKDICT, key=lambda x: x["basic"][request.GET.get("active")], reverse=True)
         })
-    else:
-        params.update({
-            "ranking_list" : sorted(FLAMEWORKDICT, key=lambda x: x["basic"]["money"], reverse=True),
-        })
+        
     return render(request, f"jobstatic_pages/ranking.html", params)
 
 def index(request):

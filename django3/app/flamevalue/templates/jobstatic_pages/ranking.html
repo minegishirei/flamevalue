@@ -38,22 +38,21 @@
           </li>
           {% endif %}
 
-          <!--
 
-          {% if request.GET.active == "comments" %}
+          {% if request.GET.active == "count" %}
           <li class="nav-item">
-            <a class="nav-link active" id="contact-tab" data-toggle="tab" href="./{{ name }}?active=comments" role="tab"
-              aria-controls="contact" aria-selected="false">口コミ</a>
+            <a class="nav-link active" id="contact-tab" data-toggle="tab" href="./ranking.html?active=count" role="tab"
+              aria-controls="contact" aria-selected="false">求人数</a>
           </li>
           {% else %}
           <li class="nav-item">
-            <a class="nav-link" id="contact-tab" data-toggle="tab" href="./{{ name }}?active=comments" role="tab"
-              aria-controls="contact" aria-selected="false">口コミ</a>
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="./ranking.html?active=count" role="tab"
+              aria-controls="contact" aria-selected="false">求人数</a>
           </li>
           {% endif %}
-        -->
 
         </ul>
+
         {% if request.GET.active == "remote" %}
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
           <div>
