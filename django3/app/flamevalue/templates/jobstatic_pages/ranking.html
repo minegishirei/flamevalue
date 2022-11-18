@@ -15,29 +15,30 @@
         <ul class="nav nav-tabs bar_tabs" id="myTab" role="tablist">
           {% if request.GET.active %}
           <li class="nav-item">
-            <a class="nav-link" id="home-tab" data-toggle="tab" href="./{{ name }}" role="tab" aria-controls="home"
+            <a class="nav-link" id="home-tab" data-toggle="tab" href="./ranking.html" role="tab" aria-controls="home"
               aria-selected="true">年収</a>
           </li>
           {% else %}
           <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="./{{ name }}?" role="tab"
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="./ranking.html" role="tab"
               aria-controls="home" aria-selected="true">年収</a>
           </li>
           {% endif %}
 
-          <!--
-          {% if request.GET.active == "jobs" %}
+
+          {% if request.GET.active == "remote" %}
           <li class="nav-item">
-            <a class="nav-link active" id="profile-tab" data-toggle="tab" href="./{{ name }}?active=jobs" role="tab"
-              aria-controls="profile" aria-selected="false">求人数</a>
+            <a class="nav-link active" id="profile-tab" data-toggle="tab" href="./ranking.html?active=remote" role="tab"
+              aria-controls="profile" aria-selected="false">リモート</a>
           </li>
           {% else %}
           <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="./{{ name }}?active=jobs" role="tab"
-              aria-controls="profile" aria-selected="false">求人数</a>
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="./ranking.html?active=remote" role="tab"
+              aria-controls="profile" aria-selected="false">リモート</a>
           </li>
           {% endif %}
 
+          <!--
 
           {% if request.GET.active == "comments" %}
           <li class="nav-item">
@@ -53,6 +54,15 @@
         -->
 
         </ul>
+        {% if request.GET.active == "remote" %}
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div>
+            <div class="row">
+              {% include 'jobstatic_parts/ranking.html' %}
+            </div>
+          </div>
+        </div>
+        {% else %}
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <div>
@@ -62,6 +72,7 @@
             </div>
           </div>
         </div>
+        {% endif %}
       </div>
     </div>
   </div>

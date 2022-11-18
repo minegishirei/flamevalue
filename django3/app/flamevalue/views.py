@@ -286,9 +286,16 @@ def ranking(request):
     params = {
         "title" : f"プログラミング言語 年収ランキング {datetime.datetime.now().strftime('%Y年%m月%d日')} 最新版",
         "description" : f"{datetime.datetime.now().strftime('%Y年%m月%d日')}更新 Flamevalue プログラミング言語やフレームワークを年収ごとにランキング化。技術選定や学習するプログラミング言語選びにFlamevalue",
-        "ranking_list" : sorted(FLAMEWORKDICT, key=lambda x: x["basic"]["money"], reverse=True),
         "img" : "https://github.com/kawadasatoshi/minegishirei/blob/main/flamevalue/flamevalue.png?raw=true"
     }
+    if request.GET.get("active") == "remote":
+        params.update({
+            "ranking_list" : sorted(FLAMEWORKDICT, key=lambda x: x["basic"]["remote"], reverse=True)
+        })
+    else:
+        params.update({
+            "ranking_list" : sorted(FLAMEWORKDICT, key=lambda x: x["basic"]["money"], reverse=True),
+        })
     return render(request, f"jobstatic_pages/ranking.html", params)
 
 def index(request):
