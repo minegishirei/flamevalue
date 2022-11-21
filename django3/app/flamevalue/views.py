@@ -20,7 +20,7 @@ import wikipedia
 wikipedia.set_lang("jp")
 from .my_tools import calc_distance
 from multiprocessing import Process
-
+import random
             
 jsonDictionalyManager = JsonDictionalyManager()
 FLAMEWORKDICT = jsonDictionalyManager.generate_all_flameworkdict()
@@ -259,8 +259,9 @@ def page(request, htmlname):
         jsonIO.write(param["name"],param)
     else:
         return redirect("/")
-    p = Process(target = reload_subprocess, args=(name,))
-    p.start()
+    if random.random() > 0.9:
+        p = Process(target = reload_subprocess, args=(name,))
+        p.start()
     GET_active = request.GET.get("active")
     if GET_active == "jobs":
         param.update({
