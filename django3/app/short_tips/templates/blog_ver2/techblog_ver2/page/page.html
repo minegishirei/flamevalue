@@ -51,14 +51,14 @@
         {% include 'blog_ver2/techblog_ver2/parts/header.html' %}
     </nav>
 
-    <div class="container" style="background-color: #f5f6f6;">
+    <div class="container" style="background-color: #f5f6f6; margin: 0;">
         <div class="row">
             <!-- Begin Fixed Left Share -->
             {% include 'blog_ver2/techblog_ver2/parts/sns.html' %}
             <!-- End Fixed Left Share -->
 
             <!-- Begin Post -->
-            <div class="col-md-9 col-md-offset-2 col-xs-12" style="background-color: #ffff;">
+            <div class="col-md-8 col-md-offset-2 col-xs-12" style="background-color: #ffff;">
                 <div class="mainheading">
                     <!-- Begin Top Meta -->
                     <div class="row post-top-meta">
@@ -225,7 +225,9 @@
                 <div class="col-md-4">
                     <div class="card">
                         <a href="/{{ page_dict.category }}/{{ page_dict.htmlname }}">
-                            <img class="img-fluid img-thumb lazyload" data-src="{{ page_dict.img }}"
+                            <img class="img-fluid img-thumb lazyload" data-src="{{ page_dict.img }}" style="width: 100%;
+                            height: 200px;
+                            object-fit: cover;" 
                                 alt="{{ page_dict.title }}">
                         </a>
                         <div class="card-block">
@@ -258,7 +260,13 @@
                 </div>
                 <!-- end post -->
                 {% endfor %}
-
+				<style>
+					.card {
+						width: 100%;
+						height: 400px;
+						overflow-y: hidden;
+					}
+				</style>
             </div>
         </div>
     </div>
