@@ -12,9 +12,9 @@ COPY God /God
 RUN apt-get update 
 
 # Install Node.js and npm
-RUN apt-get install -y nodejs npm
-RUN npm install --save-dev jsdoc
-RUN npm install -g jsdoc
+#RUN apt-get install -y nodejs npm
+#RUN npm install --save-dev jsdoc
+#RUN npm install -g jsdoc
 
 RUN apt-get install -y mecab \
   && apt-get install -y mecab-ipadic \
