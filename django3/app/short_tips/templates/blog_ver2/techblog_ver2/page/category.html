@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 {% include 'blog_ver2/techblog_ver2/parts/head.html' %}
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 <body>
 
 <!-- Begin Nav
@@ -37,9 +38,19 @@
 
 
 		{% for page in page_list %}
-		
 		<!-- begin post -->
 		<div class="card">
+			<a href="/{{ page.category }}/{{ page.htmlname }}">
+				{% if page.img %}
+				<img class="img-fluid lazyload card-img" data-src="{{ page.img }}" style="width: 100%;
+				height: 300px;
+				object-fit: cover;" alt="">
+				{% else %}
+				<img class="img-fluid lazyload card-img" data-src="https://raw.githubusercontent.com/kawadasatoshi/minegishirei/main/img/beaver.png" style="width: 100%;
+				height: 300px;
+				object-fit: cover;" alt="">
+				{% endif %}
+			</a>
 			<div class="card-block">
 				<h2 class="card-title"><a href="/{{ page.category }}/{{ page.htmlname }}">{{ page.title }}</a></h2>
 				<h4 class="card-text">{{ page.description }}</h4>
@@ -89,5 +100,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="/static/techblog_ver2/assets/js/bootstrap.min.js"></script>
 <script src="/static/techblog_ver2/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script>
+	lazyload();
+</script>
 </body>
 </html>
