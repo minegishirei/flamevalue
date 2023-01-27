@@ -138,7 +138,7 @@ def page(request, category, htmlname):
         "htmlname" : htmlname,
         "category_list" : repo_page_dict[repo]
     }
-    params.update(grep_param(mk, ["title", "description", "img", "category_script", "reirect"]))
+    params.update(grep_param(mk, ["title", "description", "img", "category_script", "redirect"]))
     if "redirect" in params:
         return redirect(params["redirect"])
     if category=="slides":
