@@ -253,6 +253,8 @@ def titleProduction():
 
 
 def page(request, htmlname):
+    if htmlname == "robots.txt":
+        return robots(request)
     name = htmlname
     param = {}
     jsonIO = JsonIO()
