@@ -15,9 +15,11 @@
                     <!-- blockquote -->
                     <blockquote>
                         <h2> {{ stars }} {{ total_score }}</h2>
+                        {% if admin_comment %}
                         <p id="admin_comment">
                             {{ admin_comment }}
                         </p>
+                        {% endif %}
                         <script>
                             document.getElementById('admin_comment').innerHTML = marked.parse(document.getElementById('admin_comment').innerHTML);
                         </script>
