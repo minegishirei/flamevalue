@@ -7,6 +7,7 @@ import json
 import sys
 if '/God' not in sys.path:
     sys.path.append('/God')
+from .my_Admin_Markdown import getAdminMarkdown
 from .my_mecab import getMeishiList
 from .my_Qiita import getQiitaInfo
 from .my_Qiita import getQiitaTags
@@ -174,7 +175,6 @@ def build_param(name_original):
     hits = origin["hits"]
     origin = row_converter(clear_jnet(jobs))
     basic_info = basic(origin)
-
     qiita_info = getQiitaInfo(name, 100)
     basic_info.update({
         "count" : hits,
@@ -208,7 +208,9 @@ def build_param(name_original):
         "wordcloud_json" : json.dumps(wordcount_list, ensure_ascii=False ),
         "money_countlist" : json.dumps( {'lower' : get_money_countlist(origin, "年収"), 'upper' : get_money_countlist(origin, "残業時間")} ),
         "qiita_acounts" : sorted( del_dub_dict_list([ row["user"] for row in getQiitaInfo(name, 100) ]) , key=lambda x: x["items_count"], reverse=True )[:5],
-        "qiita_comments" : get_qiita_comments(name, "メリット") + get_qiita_comments(name, "特徴")+ get_qiita_comments(name, "とは")
+        "qiita_comments" : get_qiita_comments(name, "メリット") + get_qiita_comments(name, "特徴")+ get_qiita_comments(name, "とは"),
+        # Administrator用のコメント
+        "admin_comment" : getAdminMarkdown(name)
     })
     html_param = {
         "title" : f"{name} 「年収/採用企業」 フレームワークの転職評価 FlameValue",
@@ -248,10 +250,13 @@ def titleProduction():
         "description" : f"{description}"
     })
 
+
+
 def page(request, htmlname):
     name = htmlname
     param = {}
     jsonIO = JsonIO()
+
     if jsonIO.exists(name) and (not request.GET.get("reload") ):
         param = jsonIO.read(name)
     elif request.GET.get("reload"):
@@ -259,9 +264,13 @@ def page(request, htmlname):
         jsonIO.write(param["name"],param)
     else:
         return redirect("/")
-    if random.random() > 0.9:
+
+    # 5割の確率でページを再構成する
+    if random.random() < 0.5:
         p = Process(target = reload_subprocess, args=(name,))
         p.start()
+    
+    # コメントや仕事タブを開いた時の処理
     GET_active = request.GET.get("active")
     if GET_active == "jobs":
         param.update({
@@ -276,6 +285,8 @@ def page(request, htmlname):
     else:
         param.update(titleProduction()(name,param["explain"].replace("\n","") ))
     return render(request, f"jobstatic_pages/page.html", param)
+
+
 
 def ranking(request):
     params = {
