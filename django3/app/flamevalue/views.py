@@ -28,8 +28,6 @@ FLAMEWORKDICT = jsonDictionalyManager.generate_all_flameworkdict()
 
 
 
-
-
 def grep(column):
     def no_name(row):
         return row[column]
@@ -291,6 +289,8 @@ def page(request, htmlname):
 
 
 def ranking(request):
+    if not LoginControl().is_session_login(request):
+        return redirect("/login.html")
     params = {
         "title" : f"プログラミング言語 年収ランキング {datetime.datetime.now().strftime('%Y年%m月%d日')} 最新版",
         "description" : f"{datetime.datetime.now().strftime('%Y年%m月%d日')}更新 Flamevalue プログラミング言語やフレームワークを年収ごとにランキング化。技術選定や学習するプログラミング言語選びにFlamevalue",
@@ -367,3 +367,97 @@ def reload_subprocess(name):
     jsonIO = JsonIO()
     param = build_param(name)
     jsonIO.write(param["name"],param)
+
+
+
+def login(request):
+    param = {}
+    if "create_acount" in request.POST:
+        loginControl = LoginControl()
+        if loginControl.is_already_created(request):
+            pass
+        else:
+            loginControl.create_acount(request)
+            loginControl.session_logout(request)
+            loginControl.save_to_session(request)
+            return redirect("/")
+    elif "login_acount" in request.POST:
+        loginControl = LoginControl()
+        if loginControl.certification(request):
+            loginControl.save_to_session(request)
+            return index(request)
+        else:
+            return render(request, f"jobstatic_pages/login.html", param)
+    elif "logout_acount" in request.POST:
+        loginControl = LoginControl()
+        loginControl.session_logout(request)
+        return redirect("/")
+    return render(request, f"jobstatic_pages/login.html", param)
+
+def useradmin(request):
+    param = {}
+    return render(request, f"jobstatic_pages/profile.html", param)
+
+
+class LoginControl():
+    def __init__(self):
+        self.userJsonDatabase = JsonIO("/app/flamevalue/user_database")
+
+    def create_acount(self, request):
+        """
+        create new acount to json
+        """
+        username = request.POST.get("username")
+        e_mail = request.POST.get("e-mail")
+        password = request.POST.get("password")
+        param = {
+            "username" : username,
+            "e_mail" : e_mail,
+            "password" : password
+        }
+        user_list = self.userJsonDatabase.read("user_database")
+        user_list.append(param)
+        self.userJsonDatabase.write("user_database", user_list)
+    
+    def is_already_created(self, request):
+        username = request.POST.get("username")
+        e_mail = request.POST.get("e-mail")
+        password = request.POST.get("password")
+        user_list = self.userJsonDatabase.read("user_database")
+        for row in user_list:
+            if row["username"] == username:
+                return True
+            if row["e_mail"] == e_mail:
+                return True
+        return False
+    
+    def certification(self, request):
+        username = request.POST.get("username")
+        e_mail = request.POST.get("e-mail")
+        password = request.POST.get("password")
+        user_list = self.userJsonDatabase.read("user_database")
+        for row in user_list:
+            if row["username"] == username and row["password"] == password:
+                return True
+        return False
+    
+    def save_to_session(self, request):
+        request.session["username"] = request.POST.get("username")
+        request.session["password"] = request.POST.get("password")
+        request.session["e_mail"] = request.POST.get("e-mail")
+        session = dict(request.session)
+    
+    def is_session_login(self, request):
+        username = request.session.get("username")
+        e_mail = request.session.get("e_mail")
+        password = request.session.get("password")
+        user_list = self.userJsonDatabase.read("user_database")
+        for row in user_list:
+            if row["username"] == username and row["password"] == password:
+                return True
+        return False
+    
+    def session_logout(self, request):
+        del request.session["username"]
+        del request.session["password"]
+        del request.session["e_mail"]
