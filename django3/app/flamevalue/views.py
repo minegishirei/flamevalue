@@ -54,11 +54,12 @@ def basic(origin):
         "remote" : round(average_data(origin, "リモート率")),
         "count" : len(origin)
     }
+
 def TEST_average_data():
     expect = 470
     actual = basic(origin)["money"]
     assert expect == actual , f"error : test_average_data expected : {expect}, actual: {actual}" 
-
+    
 
 def scoring_cuury(score):
     def inside_cuury(basic_dict):
