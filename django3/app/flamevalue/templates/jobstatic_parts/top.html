@@ -17,7 +17,7 @@
                         <h2> {{ stars }} {{ total_score }}</h2>
                         {% if admin_comment %}
                         <p id="admin_comment">
-                            {{ admin_comment }}
+                            {{ admin_comment | safe }}
                         </p>
                         {% endif %}
                         <script>
