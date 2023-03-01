@@ -37,7 +37,7 @@ def grep_param(mk, taglist):
 
 
 def genPageDict(repo):
-    max_pages = 100000
+    max_pages = 10000
     category_list = Github.seach_page_list(repo, "/")
     page_dict = {}
     for category in category_list[:max_pages]:

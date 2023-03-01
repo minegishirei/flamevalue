@@ -459,6 +459,9 @@ class LoginControl():
         return False
     
     def session_logout(self, request):
-        del request.session["username"]
-        del request.session["password"]
-        del request.session["e_mail"]
+        try:
+            del request.session["username"]
+            del request.session["password"]
+            del request.session["e_mail"]
+        except:
+            pass
