@@ -210,7 +210,8 @@ def build_param(name_original):
         "qiita_comments" : get_qiita_comments(name, "メリット") + get_qiita_comments(name, "特徴")+ get_qiita_comments(name, "とは"),
         # Administrator用のコメント
         "admin_comment" : getAdminMarkdown(name),
-        "goodness_count" : SQLiteControl().get_goodness_count(flamework_name = name)[0][0]
+        # 本当はここに書きたいが、Goodを押した後の時差の関係で後ほどupdate
+        #"goodness_count" : SQLiteControl().get_goodness_count(flamework_name = name)[0][0]
     })
     html_param = {
         "title" : f"{name} 「年収/採用企業」 フレームワークの転職評価 FlameValue",
@@ -268,7 +269,6 @@ def page(request, htmlname):
     else:
         return redirect("/")
     
-    # テスト
     # Goodを追加時の処理
     if request.GET.get("active-add-good"):
         if not LoginControl().is_session_login(request):
@@ -276,10 +276,12 @@ def page(request, htmlname):
         else:
             sqLiteControl = SQLiteControl()
             sqLiteControl.add_one_good(request.session["username"], htmlname)
-            sqLiteControl = SQLiteControl()
-            result = sqLiteControl.get_select_all()
-            username = request.session["username"]
-            param["goodness_count"] = (param["goodness_count"] + 1) if "goodness_count" in param else 1
+    
+    # Goodカウントを即時反映させるための処理
+    param.update({
+        "goodness_count" : SQLiteControl().get_goodness_count(flamework_name=htmlname)[0][0]
+    })
+    
     # 5割の確率でページを再構成する
     if random.random() < 0.5:
         p = Process(target = reload_subprocess, args=(name,))
