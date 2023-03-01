@@ -60,8 +60,8 @@ SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
 MIDDLEWARE = [
+    'django_hosts.middleware.HostsRequestMiddleware',# 先頭に追加
     'django.middleware.gzip.GZipMiddleware',#配信データをGzip圧縮する
-    'django_hosts.middleware.HostsRequestMiddleware',#subdomain
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -69,7 +69,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django_hosts.middleware.HostsResponseMiddleware'
+    'django_hosts.middleware.HostsResponseMiddleware',# 末尾に追加
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -150,9 +150,8 @@ STATICFILES_DIRS = (
 
 
 ROOT_URLCONF = 'mysite.urls'
-PARENT_HOST = 'example .com:8000' # ←追加(本来はポートなしで設定する)
 ROOT_HOSTCONF = 'domain_project.hosts' # ←追加(hosts設定は後ほど):プロジェクト名は変更してください
-DEFAULT_HOST = 'www' # ←追加(デフォルトとなるサブドメイン)
+DEFAULT_HOST = 'flamevalue' # ←追加(デフォルトとなるサブドメイン)
 
 
 SESSION_ENGINE = "django.contrib.sessions.backends.file" #ファイルで保存

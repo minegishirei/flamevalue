@@ -37,7 +37,7 @@ def grep_param(mk, taglist):
 
 
 def genPageDict(repo):
-    max_pages = 1
+    max_pages = 10000
     category_list = Github.seach_page_list(repo, "/")
     page_dict = {}
     for category in category_list[:max_pages]:
@@ -124,7 +124,10 @@ def about(request):
 
 def page(request, category, htmlname):
     repo = request.get_host().split(".")[0]
-    mk = Github.load(repo, category + "/" +htmlname)
+    try:
+        mk = Github.load(repo, category + "/" +htmlname)
+    except:
+        return redirect("/" + category + "/")
     tableIndex = TableIndex(mk)
     mk = tableIndex.rebuild_mk()
     params = {
@@ -135,7 +138,9 @@ def page(request, category, htmlname):
         "htmlname" : htmlname,
         "category_list" : repo_page_dict[repo]
     }
-    params.update(grep_param(mk, ["title", "description", "img", "category_script"]))
+    params.update(grep_param(mk, ["title", "description", "img", "category_script", "redirect"]))
+    if "redirect" in params:
+        return redirect(params["redirect"])
     if category=="slides":
         return render(request, "blog/non_base.html",params)
     relation_list = []
@@ -186,7 +191,10 @@ def bite_page(request, params):
 def category_page(request, category_name):
     repo = request.get_host().split(".")[0]
     page_list=[]
-    category_dict = repo_page_dict[repo][category_name]
+    try:
+        category_dict = repo_page_dict[repo][category_name]
+    except:
+        return redirect("/")
     for category in category_dict.values():
         page_list.append(category)
     params = {

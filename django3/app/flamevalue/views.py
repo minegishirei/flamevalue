@@ -7,6 +7,7 @@ import json
 import sys
 if '/God' not in sys.path:
     sys.path.append('/God')
+from .my_Admin_Markdown import getAdminMarkdown
 from .my_mecab import getMeishiList
 from .my_Qiita import getQiitaInfo
 from .my_Qiita import getQiitaTags
@@ -24,8 +25,6 @@ import random
             
 jsonDictionalyManager = JsonDictionalyManager()
 FLAMEWORKDICT = jsonDictionalyManager.generate_all_flameworkdict()
-
-
 
 
 
@@ -55,11 +54,12 @@ def basic(origin):
         "remote" : round(average_data(origin, "リモート率")),
         "count" : len(origin)
     }
+
 def TEST_average_data():
     expect = 470
     actual = basic(origin)["money"]
     assert expect == actual , f"error : test_average_data expected : {expect}, actual: {actual}" 
-
+    
 
 def scoring_cuury(score):
     def inside_cuury(basic_dict):
@@ -174,7 +174,6 @@ def build_param(name_original):
     hits = origin["hits"]
     origin = row_converter(clear_jnet(jobs))
     basic_info = basic(origin)
-
     qiita_info = getQiitaInfo(name, 100)
     basic_info.update({
         "count" : hits,
@@ -208,7 +207,9 @@ def build_param(name_original):
         "wordcloud_json" : json.dumps(wordcount_list, ensure_ascii=False ),
         "money_countlist" : json.dumps( {'lower' : get_money_countlist(origin, "年収"), 'upper' : get_money_countlist(origin, "残業時間")} ),
         "qiita_acounts" : sorted( del_dub_dict_list([ row["user"] for row in getQiitaInfo(name, 100) ]) , key=lambda x: x["items_count"], reverse=True )[:5],
-        "qiita_comments" : get_qiita_comments(name, "メリット") + get_qiita_comments(name, "特徴")+ get_qiita_comments(name, "とは")
+        "qiita_comments" : get_qiita_comments(name, "メリット") + get_qiita_comments(name, "特徴")+ get_qiita_comments(name, "とは"),
+        # Administrator用のコメント
+        "admin_comment" : getAdminMarkdown(name)
     })
     html_param = {
         "title" : f"{name} 「年収/採用企業」 フレームワークの転職評価 FlameValue",
@@ -248,10 +249,15 @@ def titleProduction():
         "description" : f"{description}"
     })
 
+
+
 def page(request, htmlname):
+    if htmlname == "robots.txt":
+        return robots(request)
     name = htmlname
     param = {}
     jsonIO = JsonIO()
+
     if jsonIO.exists(name) and (not request.GET.get("reload") ):
         param = jsonIO.read(name)
     elif request.GET.get("reload"):
@@ -259,9 +265,13 @@ def page(request, htmlname):
         jsonIO.write(param["name"],param)
     else:
         return redirect("/")
-    if random.random() > 0.9:
+
+    # 5割の確率でページを再構成する
+    if random.random() < 0.5:
         p = Process(target = reload_subprocess, args=(name,))
         p.start()
+    
+    # コメントや仕事タブを開いた時の処理
     GET_active = request.GET.get("active")
     if GET_active == "jobs":
         param.update({
@@ -277,7 +287,11 @@ def page(request, htmlname):
         param.update(titleProduction()(name,param["explain"].replace("\n","") ))
     return render(request, f"jobstatic_pages/page.html", param)
 
+
+
 def ranking(request):
+    if not LoginControl().is_session_login(request):
+        return redirect("/login.html")
     params = {
         "title" : f"プログラミング言語 年収ランキング {datetime.datetime.now().strftime('%Y年%m月%d日')} 最新版",
         "description" : f"{datetime.datetime.now().strftime('%Y年%m月%d日')}更新 Flamevalue プログラミング言語やフレームワークを年収ごとにランキング化。技術選定や学習するプログラミング言語選びにFlamevalue",
@@ -354,3 +368,100 @@ def reload_subprocess(name):
     jsonIO = JsonIO()
     param = build_param(name)
     jsonIO.write(param["name"],param)
+
+
+
+def login(request):
+    param = {}
+    if "create_acount" in request.POST:
+        loginControl = LoginControl()
+        if loginControl.is_already_created(request):
+            pass
+        else:
+            loginControl.create_acount(request)
+            loginControl.session_logout(request)
+            loginControl.save_to_session(request)
+            return redirect("/")
+    elif "login_acount" in request.POST:
+        loginControl = LoginControl()
+        if loginControl.certification(request):
+            loginControl.save_to_session(request)
+            return index(request)
+        else:
+            return render(request, f"jobstatic_pages/login.html", param)
+    elif "logout_acount" in request.POST:
+        loginControl = LoginControl()
+        loginControl.session_logout(request)
+        return redirect("/")
+    return render(request, f"jobstatic_pages/login.html", param)
+
+def useradmin(request):
+    param = {}
+    return render(request, f"jobstatic_pages/profile.html", param)
+
+
+class LoginControl():
+    def __init__(self):
+        self.userJsonDatabase = JsonIO("/user_database")
+
+    def create_acount(self, request):
+        """
+        create new acount to json
+        """
+        username = request.POST.get("username")
+        e_mail = request.POST.get("e-mail")
+        password = request.POST.get("password")
+        param = {
+            "username" : username,
+            "e_mail" : e_mail,
+            "password" : password
+        }
+        user_list = self.userJsonDatabase.read("user_database")
+        user_list.append(param)
+        self.userJsonDatabase.write("user_database", user_list)
+    
+    def is_already_created(self, request):
+        username = request.POST.get("username")
+        e_mail = request.POST.get("e-mail")
+        password = request.POST.get("password")
+        user_list = self.userJsonDatabase.read("user_database")
+        for row in user_list:
+            if row["username"] == username:
+                return True
+            if row["e_mail"] == e_mail:
+                return True
+        return False
+    
+    def certification(self, request):
+        username = request.POST.get("username")
+        e_mail = request.POST.get("e-mail")
+        password = request.POST.get("password")
+        user_list = self.userJsonDatabase.read("user_database")
+        for row in user_list:
+            if row["username"] == username and row["password"] == password:
+                return True
+        return False
+    
+    def save_to_session(self, request):
+        request.session["username"] = request.POST.get("username")
+        request.session["password"] = request.POST.get("password")
+        request.session["e_mail"] = request.POST.get("e-mail")
+        session = dict(request.session)
+    
+    def is_session_login(self, request):
+        username = request.session.get("username")
+        e_mail = request.session.get("e_mail")
+        password = request.session.get("password")
+        user_list = self.userJsonDatabase.read("user_database")
+        for row in user_list:
+            if row["username"] == username and row["password"] == password:
+                return True
+        return False
+    
+    def session_logout(self, request):
+        try:
+            del request.session["username"]
+            del request.session["password"]
+            del request.session["e_mail"]
+        except:
+            pass

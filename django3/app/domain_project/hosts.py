@@ -3,7 +3,7 @@ from django_hosts import patterns, host
 
 host_patterns = patterns(
     '',
-    host(r'www', settings.ROOT_URLCONF, name='www'),
+    host(r'flamevalue', "flamevalue.urls", name="flamevalue"),
     host(r'design', 'short_tips.urls', name='design'),
     host(r'shortcutkey', 'short_tips.urls', name='shortcutkey'),
     host(r'dialogue', 'short_tips.urls', name='dialogue'),
@@ -21,7 +21,7 @@ host_patterns = patterns(
     host(r"oreilly", "oreilly.urls", name="oreilly"),
     host(r'yourshogi', "yourshogi.urls", name="yourshogi"),
     host(r'd3js', "d3js.urls", name="d3js"),
-    host(r'flamevalue', "flamevalue.urls", name="flamevalue"),
-    host(r'.*', 'short_tips.urls', name='else')
+    host(r'.*', 'short_tips.urls', name='else'),
+
 )
 

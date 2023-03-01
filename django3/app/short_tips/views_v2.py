@@ -159,7 +159,9 @@ def page(request, category, htmlname):
         "favicon" : favicon,
         "htmlname" : htmlname
     }
-    params.update(grep_param(mk, ["title", "description", "img", "category_script"]))
+    params.update(grep_param(mk, ["title", "description", "img", "category_script", "redirect"]))
+    if "redirect" in params:
+        return redirect(params["redirect"])
     if category=="slides":
         return render(request, "blog/non_base.html",params)
     

@@ -10,9 +10,9 @@
   <link href="https://raw.githubusercontent.com/kawadasatoshi/minegishirei/main/img/beaver.png" rel="icon">
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6548366793980519"
-  crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
   <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
-  
+
   <!-- TWITTER -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@se_maintain">
@@ -34,8 +34,7 @@
   <link href="/static/jobstatic/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <!-- NProgress -->
   <link href="/static/jobstatic/vendors/nprogress/nprogress.css" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-  rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- bootstrap-progressbar -->
   <link href="/static/jobstatic/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
   <!-- JQVMap -->
@@ -92,8 +91,27 @@
             </div>
 
             <nav class="nav navbar-nav">
-              <ul class=" navbar-right" >
+              <ul class=" navbar-right">
 
+                {% if request.session.username %}
+                <li class="nav-item dropdown open only_mobile">
+                  <a href="useradmin.html" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown"
+                    data-toggle="dropdown" aria-expanded="false">
+                    <img src="/static/jobstatic/img/color.png" alt="">
+                    <n style=" color: white;">ユーザー({{ request.session.username }}さん)</n>
+                  </a>
+                </li>
+                {% else %}
+                <li class="nav-item dropdown open only_mobile">
+                  <a href="login.html" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown"
+                    data-toggle="dropdown" aria-expanded="false">
+                    <img src="/static/jobstatic/img/color.png" alt="">
+                    <n style=" color: white;">ログイン</n>
+                  </a>
+                </li>
+                {% endif %}
+
+                <!--
                 <li class="nav-item dropdown open only_mobile">
                   <a href="search.html" class="user-profile dropdown-toggle" aria-haspopup="true"
                     id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
@@ -101,48 +119,44 @@
                     <n style=" color: white;">各種リンク</n>
                   </a>
                 </li>
+              -->
 
                 <span id="js_hidden">
-                <li class="nav-item dropdown open only_pc">
-                  <a href="https://pm.short-tips.info/who/flamevalue.md" class="user-profile dropdown-toggle" aria-haspopup="true"
-                    id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                    <img src="/static/jobstatic/img/color.png" alt="">
-                    <n style=" color: white;">Flamevalueとは?</n>
-                  </a>
-                </li>
-                <li class="nav-item dropdown open only_pc">
-                  <a href="https://twitter.com/se_maintain" class="user-profile dropdown-toggle" aria-haspopup="true"
-                    id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                    <img src="/static/jobstatic/img/color.png" alt="">
-                    <n style=" color: white;">問い合わせ</n>
-                  </a>
-                </li>
+                  <li class="nav-item dropdown open only_pc">
+                    <a href="https://twitter.com/se_maintain" class="user-profile dropdown-toggle" aria-haspopup="true"
+                      id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                      <img src="/static/jobstatic/img/color.png" alt="">
+                      <n style=" color: white;">問い合わせ</n>
+                    </a>
+                  </li>
 
-                <li class="nav-item dropdown open only_pc">
-                  <div class="search_container" style="background-color: white;" onsubmit="transition()">
-                    <input type="text" size="40" placeholder="キーワード検索" id="query_text_box" list="candidate_list" autocomplete="off">
-                    <datalist id="candidate_list">
-                    </datalist>
-                    <input type="submit" value="&#xf002" onclick="transition()">
-                  </div>
-                </li>
+                  <li class="nav-item dropdown open only_pc">
+                    <div class="search_container" style="background-color: white;" onsubmit="transition()">
+                      <input type="text" size="40" placeholder="キーワード検索" id="query_text_box" list="candidate_list"
+                        autocomplete="off">
+                      <datalist id="candidate_list">
+                      </datalist>
+                      <input type="submit" value="&#xf002" onclick="transition()">
+                    </div>
+                  </li>
 
-                <li class="nav-item dropdown open only_pc">
-                  <a href="/ranking.html" class="user-profile dropdown-toggle" aria-haspopup="true"
-                    id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                    <n style=" color: white;">開発言語ランキング</n>
-                    <img src="/static/jobstatic/img/color.png" alt="">
-                  </a>
-                </li>
+                  <li class="nav-item dropdown open only_pc">
+                    <a href="/ranking.html" class="user-profile dropdown-toggle" aria-haspopup="true"
+                      id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                      <n style=" color: white;">開発言語ランキング</n>
+                      <img src="/static/jobstatic/img/color.png" alt="">
+                    </a>
+                  </li>
                 </span>
 
                 <style>
-                  @media screen and (max-width:767px){
+                  @media screen and (max-width:767px) {
                     .only_pc {
                       display: none;
                     }
                   }
-                  @media screen and (min-width:767px){
+
+                  @media screen and (min-width:767px) {
                     .only_mobile {
                       display: none;
                     }
@@ -155,7 +169,7 @@
 
               </ul>
               <script>
-                if(window.innerWidth < 700){
+                if (window.innerWidth < 700) {
                   document.getElementById("js_hidden").innerHTML = ""
                 }
               </script>
@@ -171,7 +185,8 @@
 
           <div class="nav-item dropdown open only_mobile" style="padding: 10px;">
             <div class="search_container" style="background-color: white;" onsubmit="transition()">
-              <input type="text" size="50" placeholder="キーワード検索" id="query_text_box" list="candidate_list" autocomplete="off">
+              <input type="text" size="50" placeholder="キーワード検索" id="query_text_box" list="candidate_list"
+                autocomplete="off">
               <datalist id="candidate_list">
               </datalist>
               <input type="submit" value="&#xf002" onclick="transition()">
@@ -181,7 +196,7 @@
             const query = document.getElementById("query_text_box")
             query.addEventListener('focus', function (event) {
               function popup_candidate_list(candidate_list) {
-                document.getElementById("candidate_list").innerHTML = (`<option value="${ candidate_list.join('"><option value="') }"</li>`)
+                document.getElementById("candidate_list").innerHTML = (`<option value="${candidate_list.join('"><option value="')}"</li>`)
               }
               url = `https://${location.hostname}/api/candidate/?unfinished_title=rub`
               fetch(url)
@@ -191,12 +206,12 @@
                   popup_candidate_list(json.candidate)
                 });
             });
-            function transition(){
+            function transition() {
               query_text = document.getElementById("query_text_box").value
               location.href = ("/" + query_text)
             }
 
-            document.getElementById("query_text_box").onkeydown = function(event){
+            document.getElementById("query_text_box").onkeydown = function (event) {
               if (event.key === 'Enter') {
                 query_text = document.getElementById("query_text_box").value
                 location.href = ("/" + query_text)
@@ -204,14 +219,16 @@
             }
           </script>
           <style>
-            select{
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
+            select {
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
             }
+
             input::-webkit-calendar-picker-indicator {
               display: none;
             }
+
             .search_container {
               box-sizing: border-box;
               position: relative;
@@ -222,16 +239,16 @@
               width: 100%;
               overflow: hidden;
             }
-  
+
             .search_container input[type="text"] {
               border: none;
               height: 2.5em;
             }
-  
+
             .search_container input[type="text"]:focus {
               outline: 0;
             }
-  
+
             .search_container input[type="submit"] {
               cursor: pointer;
               font-family: FontAwesome;
@@ -246,8 +263,9 @@
               top: -10px;
               outline: none;
             }
+
             input::-webkit-calendar-picker-indicator {
-                display: none;
+              display: none;
             }
           </style>
 
@@ -257,7 +275,6 @@
 
       </div>
       <!-- /top navigation -->
-
 
 
       {% block content %}

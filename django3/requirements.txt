@@ -2,16 +2,15 @@ Django==3.1   # Django3.1
 django-extensions
 Werkzeug
 pyOpenSSL
-mysqlclient   # pythonでMySQLに接続するためのドライバ
 beautifulsoup4
 redis
 oauth2client
 gspread
 django-hosts
 mysqlclient
-mysql-connector-python
+mysql-connector-python==8.0.29
 PyGithub
-google-ads
+#google-ads
 markdown
 googletrans
 goolabs
