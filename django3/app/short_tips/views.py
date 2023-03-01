@@ -45,7 +45,7 @@ def genPageDict(repo):
             category_dict = {}
             for htmlname in Github.seach_page_list(repo, category)[:max_pages]:
                 mk = Github.load(repo, category + "/" +htmlname)
-                params =  grep_param(mk, ["title", "description", "img"])
+                params =  grep_param(mk, ["title", "description", "img", "redirect"])
                 if "escape" in params:
                     continue
                 params.update({
