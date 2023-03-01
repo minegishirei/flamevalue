@@ -11,6 +11,11 @@ COPY God /God
 
 RUN apt-get update 
 
+RUN pip install --upgrade pip
+RUN pip install --upgrade setuptools
+RUN pip install -r requirements.txt
+RUN pip3 install Pillow
+
 # Install Node.js and npm
 #RUN apt-get install -y nodejs npm
 #RUN npm install --save-dev jsdoc
@@ -23,10 +28,6 @@ RUN apt-get install -y mecab \
   && apt-get install -y swig
 
 
-RUN pip install --upgrade pip
-RUN pip install --upgrade setuptools
-RUN pip install -r requirements.txt
-RUN pip3 install Pillow
 USER root
 
 

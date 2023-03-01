@@ -10,7 +10,7 @@ django-hosts
 mysqlclient
 mysql-connector-python==8.0.29
 PyGithub
-google-ads
+#google-ads
 markdown
 googletrans
 goolabs
