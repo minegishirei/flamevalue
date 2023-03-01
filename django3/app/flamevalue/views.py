@@ -256,18 +256,6 @@ def page(request, htmlname):
     if htmlname == "robots.txt":
         return robots(request)
     
-    # テスト
-    # Goodを追加時の処理
-    if request.GET.get("active-add-good"):
-        if not LoginControl().is_session_login(request):
-            return redirect("/login.html")
-        else:
-            sqLiteControl = SQLiteControl()
-            sqLiteControl.add_one_good(request.session["username"], htmlname)
-            sqLiteControl = SQLiteControl()
-            result = sqLiteControl.get_select_all()
-            username = request.session["username"]
-
     name = htmlname
     param = {}
     jsonIO = JsonIO()
@@ -279,7 +267,19 @@ def page(request, htmlname):
         jsonIO.write(param["name"],param)
     else:
         return redirect("/")
-
+    
+    # テスト
+    # Goodを追加時の処理
+    if request.GET.get("active-add-good"):
+        if not LoginControl().is_session_login(request):
+            return redirect("/login.html")
+        else:
+            sqLiteControl = SQLiteControl()
+            sqLiteControl.add_one_good(request.session["username"], htmlname)
+            sqLiteControl = SQLiteControl()
+            result = sqLiteControl.get_select_all()
+            username = request.session["username"]
+            param["goodness_count"] = (param["goodness_count"] + 1) if "goodness_count" in param else 1
     # 5割の確率でページを再構成する
     if random.random() < 0.5:
         p = Process(target = reload_subprocess, args=(name,))
