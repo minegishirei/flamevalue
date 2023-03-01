@@ -402,7 +402,7 @@ def useradmin(request):
 
 class LoginControl():
     def __init__(self):
-        self.userJsonDatabase = JsonIO("/app/flamevalue/user_database")
+        self.userJsonDatabase = JsonIO("/user_database")
 
     def create_acount(self, request):
         """

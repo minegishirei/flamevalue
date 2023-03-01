@@ -5,3 +5,4 @@ db
 db/mysql-data/*
 db/mysql-init/*
 volumes/django_volumes/*
+volumes/user_database/*

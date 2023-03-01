@@ -28,6 +28,7 @@ services:
       - ./app:/app
       - ./God:/God
       - ./volumes/django_volumes/flamevalue:/flamevalue
+      - ./volumes/django_volumes/user_database:/user_database
     command: ./cmd.sh
     container_name: djangoapp
     #command: python3 manage.py runserver 0.0.0.0:5000 
