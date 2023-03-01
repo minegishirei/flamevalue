@@ -7,9 +7,13 @@
                 <div class="col-md-8 col-lg-8 col-sm-7">
                     <!-- blockquote -->
                     <blockquote>
-                        <h1>{{ name }}</h1>
+                        <h1>{{ name }} <button type="button" class="btn btn-danger" onclick="window.location.href = '{{name}}?active-add-good=True' ">
+                            {% if goodness_count %}
+                            {% endif %}
+                                {{ goodness_count }}
+                            Good!
+                        </button> </h1>
                     </blockquote>
-
                 </div>
                 <div class="col-md-8 col-lg-8 col-sm-7">
                     <!-- blockquote -->
@@ -19,10 +23,10 @@
                         <p id="admin_comment">
                             {{ admin_comment | safe }}
                         </p>
-                        {% endif %}
                         <script>
                             document.getElementById('admin_comment').innerHTML = marked.parse(document.getElementById('admin_comment').innerHTML);
                         </script>
+                        {% endif %}
                         <p>
                             {{ explain }}
                         </p>

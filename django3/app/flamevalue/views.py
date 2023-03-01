@@ -209,7 +209,8 @@ def build_param(name_original):
         "qiita_acounts" : sorted( del_dub_dict_list([ row["user"] for row in getQiitaInfo(name, 100) ]) , key=lambda x: x["items_count"], reverse=True )[:5],
         "qiita_comments" : get_qiita_comments(name, "メリット") + get_qiita_comments(name, "特徴")+ get_qiita_comments(name, "とは"),
         # Administrator用のコメント
-        "admin_comment" : getAdminMarkdown(name)
+        "admin_comment" : getAdminMarkdown(name),
+        "goodness_count" : SQLiteControl().get_goodness_count(flamework_name = name)[0][0]
     })
     html_param = {
         "title" : f"{name} 「年収/採用企業」 フレームワークの転職評価 FlameValue",
@@ -254,6 +255,19 @@ def titleProduction():
 def page(request, htmlname):
     if htmlname == "robots.txt":
         return robots(request)
+    
+    # テスト
+    # Goodを追加時の処理
+    if request.GET.get("active-add-good"):
+        if not LoginControl().is_session_login(request):
+            return redirect("/login.html")
+        else:
+            sqLiteControl = SQLiteControl()
+            sqLiteControl.add_one_good(request.session["username"], htmlname)
+            sqLiteControl = SQLiteControl()
+            result = sqLiteControl.get_select_all()
+            username = request.session["username"]
+
     name = htmlname
     param = {}
     jsonIO = JsonIO()
@@ -371,6 +385,13 @@ def reload_subprocess(name):
 
 
 
+
+
+
+###############################
+########user controls #########
+###############################
+
 def login(request):
     param = {}
     if "create_acount" in request.POST:
@@ -465,3 +486,61 @@ class LoginControl():
             del request.session["e_mail"]
         except:
             pass
+
+
+
+###############################
+########user controls #########
+###############################
+import sqlite3
+class SQLiteControl():
+    def __init__(self, filepath='/sqlite/flamevalue.db'):
+        dbname = filepath
+        self.conn = sqlite3.connect(dbname)
+        # テーブル初期化
+        cur = self.conn.cursor()
+        cur.execute("""
+        CREATE TABLE IF NOT EXISTS GOODNESS_COUNT(
+            USERNAME STRING,
+            FLAMEWORK_NAME STRING,
+            PRIMARY KEY(USERNAME, FLAMEWORK_NAME)
+        )
+        """)
+ 
+    def add_one_good(self, username, flamework_name):
+        cur = self.conn.cursor()
+        sql = f'INSERT INTO GOODNESS_COUNT(USERNAME, FLAMEWORK_NAME) values("{username}", "{flamework_name}")'
+        try:
+            cur.execute(sql)
+        except sqlite3.Error:
+            pass
+        self.conn.commit()
+        self.conn.close()
+    
+    def get_goodness_count(self, flamework_name):
+        cur = self.conn.cursor()
+        cur.execute(f'SELECT count(*) good_count FROM GOODNESS_COUNT WHERE FLAMEWORK_NAME="{flamework_name}"')
+        result =  cur.fetchall()
+        self.conn.close()
+        return result
+   
+    def get_select_all(self):
+        cur = self.conn.cursor()
+        cur.execute(f'SELECT * FROM GOODNESS_COUNT')
+        result =  cur.fetchall()
+        self.conn.close()
+        return result
+
+    def end():
+        self.conn.close()
+
+
+
+
+
+
+
+
+
+
+

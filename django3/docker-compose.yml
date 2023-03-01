@@ -29,6 +29,7 @@ services:
       - ./God:/God
       - ./volumes/django_volumes/flamevalue:/flamevalue
       - ./volumes/django_volumes/user_database:/user_database
+      - ./volumes/django_volumes/sqlite:/sqlite
     command: ./cmd.sh
     container_name: djangoapp
     #command: python3 manage.py runserver 0.0.0.0:5000 
@@ -50,4 +51,7 @@ services:
       - ./db/mysql-init:/docker-entrypoint-initdb.d
       # 永続化するときにマウントするdir
       - ./db/mysql-data:/var/lib/mysql
+
+
+
 
