@@ -3,7 +3,6 @@ from . import views
 
 
 urlpatterns = [
-
     path('', views.index , name="index"), 
     path('login.html', views.login, name="login"),
     path('index.html', views.reverse_index , name="index"),
@@ -14,7 +13,6 @@ urlpatterns = [
     path("api/candidate/", views.api_candidate, name="candidate"),
     path("ranking.html", views.ranking, name="ranking"),
     path("search.html", views.search, name="search"),
-    path("<htmlname>", views.page ,name="pop_page"),
-
+    path("<htmlname>", views.page ,name="pop_page")
 ]
 

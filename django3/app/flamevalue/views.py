@@ -276,7 +276,6 @@ def page(request, htmlname):
         else:
             sqLiteControl = SQLiteControl()
             sqLiteControl.add_one_good(request.session["username"], htmlname)
-    
     # Goodカウントを即時反映させるための処理
     param.update({
         "goodness_count" : SQLiteControl().get_goodness_count(flamework_name=htmlname)[0][0]
@@ -322,6 +321,7 @@ def ranking(request):
         })
         
     return render(request, f"jobstatic_pages/ranking.html", params)
+
 
 def index(request):
     global FLAMEWORKDICT
@@ -398,13 +398,10 @@ def login(request):
     param = {}
     if "create_acount" in request.POST:
         loginControl = LoginControl()
-        if loginControl.is_already_created(request):
-            pass
-        else:
-            loginControl.create_acount(request)
-            loginControl.session_logout(request)
-            loginControl.save_to_session(request)
-            return redirect("/")
+        loginControl.create_acount(request)
+        loginControl.session_logout(request)
+        loginControl.save_to_session(request)
+        return redirect("/")
     elif "login_acount" in request.POST:
         loginControl = LoginControl()
         if loginControl.certification(request):
@@ -419,51 +416,69 @@ def login(request):
     return render(request, f"jobstatic_pages/login.html", param)
 
 def useradmin(request):
-    param = {}
+    param = {
+        "users" : SQLiteUserControl().get_users(),
+        "user_good_flameworks" : SQLiteUserControl().get_user_good_flameworks(request.session.get("username"))
+    }
     return render(request, f"jobstatic_pages/profile.html", param)
 
 
+import sqlite3
+def dict_factory(cursor, row):
+    d = {}
+    for idx, col in enumerate(cursor.description):
+        d[col[0]] = row[idx]
+    return d
+
 class LoginControl():
     def __init__(self):
-        self.userJsonDatabase = JsonIO("/user_database")
+        dbname = "/sqlite/flamevalue.db"
+        self.conn = sqlite3.connect(dbname)
+        # テーブル初期化
+        cur = self.conn.cursor()
+        cur.execute("""
+        CREATE TABLE IF NOT EXISTS FLAMEVALUE_USERS (
+            USERNAME STRING,
+            E_MAIL STRING,
+            PASSWORD STRING,
+            PRIMARY KEY (USERNAME)
+        )""")
 
     def create_acount(self, request):
-        """
-        create new acount to json
-        """
-        username = request.POST.get("username")
-        e_mail = request.POST.get("e-mail")
-        password = request.POST.get("password")
-        param = {
-            "username" : username,
-            "e_mail" : e_mail,
-            "password" : password
-        }
-        user_list = self.userJsonDatabase.read("user_database")
-        user_list.append(param)
-        self.userJsonDatabase.write("user_database", user_list)
-    
-    def is_already_created(self, request):
-        username = request.POST.get("username")
-        e_mail = request.POST.get("e-mail")
-        password = request.POST.get("password")
-        user_list = self.userJsonDatabase.read("user_database")
-        for row in user_list:
-            if row["username"] == username:
-                return True
-            if row["e_mail"] == e_mail:
-                return True
-        return False
+        cur = self.conn.cursor()
+        sql = f'INSERT INTO FLAMEVALUE_USERS(USERNAME, E_MAIL, PASSWORD) values("{request.POST.get("username")}", "{request.POST.get("e-mail")}", "{request.POST.get("password")}" )'
+        try:
+            cur.execute(sql)
+        except sqlite3.Error:
+            pass
+        self.conn.commit()
+        self.conn.close()
     
     def certification(self, request):
-        username = request.POST.get("username")
-        e_mail = request.POST.get("e-mail")
-        password = request.POST.get("password")
-        user_list = self.userJsonDatabase.read("user_database")
-        for row in user_list:
-            if row["username"] == username and row["password"] == password:
-                return True
-        return False
+        # After
+        cur = self.conn.cursor()
+        sql = f"""
+        select 
+            count(*)
+        from 
+            FLAMEVALUE_USERS users
+        where 1=1
+            and users.username = "{request.POST.get("username")}"
+            and users.password = "{request.POST.get("password")}"
+        """
+        result = 0
+        try:
+            cur.execute(sql)
+            fetch_result = cur.fetchall()
+            result = fetch_result[0][0]
+        except sqlite3.Error:
+            pass
+        self.conn.commit()
+        self.conn.close()
+        if result > 0:
+            return True
+        else:
+            return False
     
     def save_to_session(self, request):
         request.session["username"] = request.POST.get("username")
@@ -472,15 +487,31 @@ class LoginControl():
         session = dict(request.session)
     
     def is_session_login(self, request):
-        username = request.session.get("username")
-        e_mail = request.session.get("e_mail")
-        password = request.session.get("password")
-        user_list = self.userJsonDatabase.read("user_database")
-        for row in user_list:
-            if row["username"] == username and row["password"] == password:
-                return True
-        return False
-    
+        # After
+        cur = self.conn.cursor()
+        sql = f"""
+        select 
+            count(*)
+        from 
+            FLAMEVALUE_USERS users
+        where 1=1
+            and users.username = "{request.session.get("username")}"
+            and users.password = "{request.session.get("password")}"
+        """
+        result = 0
+        try:
+            cur.execute(sql)
+            fetch_result = cur.fetchall()
+            result = fetch_result[0][0]
+        except sqlite3.Error:
+            pass
+        self.conn.commit()
+        self.conn.close()
+        if result > 0:
+            return True
+        else:
+            return False
+        
     def session_logout(self, request):
         try:
             del request.session["username"]
@@ -490,11 +521,77 @@ class LoginControl():
             pass
 
 
+class SQLiteUserControl():
+    def __init__(self):
+        dbname = "/sqlite/flamevalue.db"
+        self.conn = sqlite3.connect(dbname)
+        # テーブル初期化
+        cur = self.conn.cursor()
+        cur.execute("""
+        CREATE TABLE IF NOT EXISTS FLAMEVALUE_USERS (
+            USERNAME STRING,
+            E_MAIL STRING,
+            PASSWORD STRING,
+            PRIMARY KEY (USERNAME)
+        )""")
+
+    def get_user_good_flameworks(self, username):
+        sql = f"""
+        select
+            goodness_counter.FLAMEWORK_NAME
+        from 
+            FLAMEVALUE_USERS users,
+            GOODNESS_COUNT goodness_counter
+        where 1=1
+            and users.username=goodness_counter.username
+            and users.username="{username}"
+        """
+        self.conn.row_factory = dict_factory
+        cur = self.conn.cursor()
+        result = {}
+        try:
+            cur.execute(sql)
+            fetch_result = cur.fetchall()
+            result = fetch_result
+        except sqlite3.Error:
+            pass
+        self.conn.commit()
+        self.conn.close()
+        return result
+
+    def get_users(self):
+        sql = f"""
+        select
+            users.username USERNAME,
+            group_concat(goodness_counter.FLAMEWORK_NAME) FLAMEWORK_NAMES
+        from 
+            FLAMEVALUE_USERS users,
+            GOODNESS_COUNT goodness_counter
+        where 1=1
+            and users.username=goodness_counter.username
+        group by
+            users.username
+        order by
+            users.username
+        """
+        self.conn.row_factory = dict_factory
+        cur = self.conn.cursor()
+        result = {}
+        try:
+            cur.execute(sql)
+            fetch_result1 = cur.fetchall()
+            result = list(map(lambda row: { **row, "FLAMEWORK_NAMES" : row["FLAMEWORK_NAMES"].split(",") } ,fetch_result1))
+        except sqlite3.Error:
+            pass
+        self.conn.commit()
+        self.conn.close()
+        return result
+
 
 ###############################
 ########user controls #########
 ###############################
-import sqlite3
+
 class SQLiteControl():
     def __init__(self, filepath='/sqlite/flamevalue.db'):
         dbname = filepath
