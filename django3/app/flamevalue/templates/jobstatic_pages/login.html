@@ -62,10 +62,10 @@
             {% csrf_token %}
             <h1>Login Form</h1>
             <div>
-              <input type="text" class="form-control" placeholder="Username" required="" name="username"/>
+              <input type="email" class="form-control" placeholder="メールアドレス" required="" name="e_mail"/>
             </div>
             <div>
-              <input type="password" class="form-control" placeholder="Password" required="" name="password"/>
+              <input type="password" class="form-control" placeholder="パスワード" required="" name="unhashed_password"/>
             </div>
             <div>
               <input type="hidden" name="login_acount">
@@ -86,17 +86,22 @@
         </section>
 
         <section class="login_content">
+          {% if error_message %}
+            <script>
+              window.alert("{{ error_message }}")
+            </script>
+          {% endif %}
           <form method="POST" action="">
             {% csrf_token %}
-            <h1>Create Account</h1>
+            <h1>アカウント作成</h1>
             <div>
-              <input type="text" class="form-control" placeholder="Username" required="" name="username"/>
+              <input type="email" class="form-control" placeholder="メールアドレス" required="true" name="e_mail"/>
             </div>
             <div>
-              <input type="email" class="form-control" placeholder="Email" required="" name="e-mail"/>
+              <input type="text" class="form-control" placeholder="ユーザー名" required="tru" name="username"/>
             </div>
             <div>
-              <input type="password" class="form-control" placeholder="Password" required="" name="password"/>
+              <input type="password" class="form-control" placeholder="パスワード" required="true" name="unhashed_password"/>
             </div>
             <div>
               <input type="hidden" class="form-control" required="" name="create_acount" id="create_acount"/>

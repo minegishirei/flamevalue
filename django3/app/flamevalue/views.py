@@ -11,6 +11,10 @@ from .my_Admin_Markdown import getAdminMarkdown
 from .my_mecab import getMeishiList
 from .my_Qiita import getQiitaInfo
 from .my_Qiita import getQiitaTags
+from .my_SQLite_FlamevalueControl import SQLiteFlamevalueControl
+from .my_SQLite_LoginControl import SQLiteLoginControl
+from .my_SQLite_UserInfoControl import UserInfoCollector
+from .my_SQLite_Profile import SQLiteProfileImage
 
 from functools import reduce
 from operator import add
@@ -168,7 +172,7 @@ def get_qiita_comments(name, word):
 
 import re
 def build_param(name_original):
-    name = name_original.replace("(IT)", "").replace("言語", "")
+    name = name_original
     origin = getCareerJet(name.replace("(プログラミング言語)", ""))
     jobs = origin["jobs"]
     hits = origin["hits"]
@@ -211,7 +215,7 @@ def build_param(name_original):
         # Administrator用のコメント
         "admin_comment" : getAdminMarkdown(name),
         # 本当はここに書きたいが、Goodを押した後の時差の関係で後ほどupdate
-        #"goodness_count" : SQLiteControl().get_goodness_count(flamework_name = name)[0][0]
+        #"goodness_count" : SQLiteFlamevalueControl().get_goodness_count(flamework_name = name)[0][0]
     })
     html_param = {
         "title" : f"{name} 「年収/採用企業」 フレームワークの転職評価 FlameValue",
@@ -271,14 +275,13 @@ def page(request, htmlname):
     
     # Goodを追加時の処理
     if request.GET.get("active-add-good"):
-        if not LoginControl().is_session_login(request):
+        if SQLiteLoginControl().certification_by_unhashed_password(request.session.get("e_mail") , request.session.get("hashed_password")):
             return redirect("/login.html")
         else:
-            sqLiteControl = SQLiteControl()
-            sqLiteControl.add_one_good(request.session["username"], htmlname)
+            SQLiteFlamevalueControl().add_one_good(request.session["e_mail"], htmlname)
     # Goodカウントを即時反映させるための処理
     param.update({
-        "goodness_count" : SQLiteControl().get_goodness_count(flamework_name=htmlname)[0][0]
+        "goodness_count" : SQLiteFlamevalueControl().get_goodness_count(flamework_name=htmlname)[0][0]
     })
     
     # 5割の確率でページを再構成する
@@ -305,7 +308,7 @@ def page(request, htmlname):
 
 
 def ranking(request):
-    if not LoginControl().is_session_login(request):
+    if SQLiteLoginControl().certification_by_unhashed_password(request.session.get("e_mail") , request.session.get("hashed_password")):
         return redirect("/login.html")
     params = {
         "title" : f"プログラミング言語 年収ランキング {datetime.datetime.now().strftime('%Y年%m月%d日')} 最新版",
@@ -386,260 +389,80 @@ def reload_subprocess(name):
     jsonIO.write(param["name"],param)
 
 
-
-
-
-
-###############################
-########user controls #########
-###############################
-
 def login(request):
     param = {}
     if "create_acount" in request.POST:
-        loginControl = LoginControl()
-        loginControl.create_acount(request)
-        loginControl.session_logout(request)
-        loginControl.save_to_session(request)
+        if SQLiteLoginControl().create_acount(request):
+            pass
+        else:
+            param = {
+                "error_message" : "アカウント作成に失敗しました。"
+            }
+            return render(request, f"jobstatic_pages/login.html", param)
+        SessionController(request).session_del()
+        # ログイン後 ハッシュ化されていないパスワードから
+        user_info = SQLiteLoginControl().fetch_user_info_by_unhashed_password( request.POST.get("e_mail"), request.POST.get("unhashed_password"))
+        # ハッシュ化されたパスワードをセッションに入れる
+        request.session["username"] = user_info["username"]
+        request.session["e_mail"] = user_info["e_mail"]
+        request.session["hashed_password"] = user_info["hashed_password"]
         return redirect("/")
     elif "login_acount" in request.POST:
-        loginControl = LoginControl()
-        if loginControl.certification(request):
-            loginControl.save_to_session(request)
+        if SQLiteLoginControl().certification(request.POST.get("e_mail") , request.POST.get("unhashed_password")):
+            # ハッシュ化されたパスワードをセッションに入れる
+            user_info = SQLiteLoginControl().fetch_user_info_by_unhashed_password( request.POST.get("e_mail"), request.POST.get("unhashed_password"))
+            request.session["username"] = user_info["username"]
+            request.session["e_mail"] = user_info["e_mail"]
+            request.session["hashed_password"] = user_info["hashed_password"]
             return index(request)
         else:
             return render(request, f"jobstatic_pages/login.html", param)
     elif "logout_acount" in request.POST:
-        loginControl = LoginControl()
-        loginControl.session_logout(request)
+        SessionController(request).session_del()
         return redirect("/")
     return render(request, f"jobstatic_pages/login.html", param)
 
+
+
 def useradmin(request):
-    param = {
-        "users" : SQLiteUserControl().get_users(),
-        "user_good_flameworks" : SQLiteUserControl().get_user_good_flameworks(request.session.get("username"))
-    }
+    param = {}
+    if "update_acount" in request.POST:
+        if SQLiteLoginControl().update_acount_password(request.POST.get("e_mail"), request.POST.get("unhashed_password")):
+            user_info = SQLiteLoginControl().fetch_user_info_by_unhashed_password( request.POST.get("e_mail"), request.POST.get("unhashed_password"))
+            request.session["username"] = user_info["username"]
+            request.session["e_mail"] = user_info["e_mail"]
+            request.session["hashed_password"] = user_info["hashed_password"]
+        if SQLiteProfileImage().replace(request.POST.get("e_mail"), request.POST.get("profile_image_url")):
+            request.session["profile_image_url"] = SQLiteProfileImage().fetch(request.POST.get("e_mail"))["profile_image_url"]
+        if SQLiteLoginControl().update_acount(request.POST.get("e_mail"), request.POST.get("username")):
+            pass
+        else:
+            param.update({
+                "message" : "アカウント情報アップデートに失敗しました。"
+            })
+    param.update({
+        "users" : UserInfoCollector().get_users(),
+        "user_good_flameworks" : UserInfoCollector().get_user_good_flameworks(request.session.get("e_mail"))
+    })
     return render(request, f"jobstatic_pages/profile.html", param)
 
 
-import sqlite3
-def dict_factory(cursor, row):
-    d = {}
-    for idx, col in enumerate(cursor.description):
-        d[col[0]] = row[idx]
-    return d
 
-class LoginControl():
-    def __init__(self):
-        dbname = "/sqlite/flamevalue.db"
-        self.conn = sqlite3.connect(dbname)
-        # テーブル初期化
-        cur = self.conn.cursor()
-        cur.execute("""
-        CREATE TABLE IF NOT EXISTS FLAMEVALUE_USERS (
-            USERNAME STRING,
-            E_MAIL STRING,
-            PASSWORD STRING,
-            PRIMARY KEY (USERNAME)
-        )""")
+class SessionController():
+    def __init__(self, request):
+        self.request = request
+        self.target_column = [
+            "profile_image_url",
+            "username",
+            "unhashed_password",
+            "hashed_password"
+            "e_mail"
+        ]
 
-    def create_acount(self, request):
-        cur = self.conn.cursor()
-        sql = f'INSERT INTO FLAMEVALUE_USERS(USERNAME, E_MAIL, PASSWORD) values("{request.POST.get("username")}", "{request.POST.get("e-mail")}", "{request.POST.get("password")}" )'
-        try:
-            cur.execute(sql)
-        except sqlite3.Error:
-            pass
-        self.conn.commit()
-        self.conn.close()
+    def session_del(self):
+        for column in self.target_column:
+            try:
+                del self.request.session[column]
+            except:
+                pass
     
-    def certification(self, request):
-        # After
-        cur = self.conn.cursor()
-        sql = f"""
-        select 
-            count(*)
-        from 
-            FLAMEVALUE_USERS users
-        where 1=1
-            and users.username = "{request.POST.get("username")}"
-            and users.password = "{request.POST.get("password")}"
-        """
-        result = 0
-        try:
-            cur.execute(sql)
-            fetch_result = cur.fetchall()
-            result = fetch_result[0][0]
-        except sqlite3.Error:
-            pass
-        self.conn.commit()
-        self.conn.close()
-        if result > 0:
-            return True
-        else:
-            return False
-    
-    def save_to_session(self, request):
-        request.session["username"] = request.POST.get("username")
-        request.session["password"] = request.POST.get("password")
-        request.session["e_mail"] = request.POST.get("e-mail")
-        session = dict(request.session)
-    
-    def is_session_login(self, request):
-        # After
-        cur = self.conn.cursor()
-        sql = f"""
-        select 
-            count(*)
-        from 
-            FLAMEVALUE_USERS users
-        where 1=1
-            and users.username = "{request.session.get("username")}"
-            and users.password = "{request.session.get("password")}"
-        """
-        result = 0
-        try:
-            cur.execute(sql)
-            fetch_result = cur.fetchall()
-            result = fetch_result[0][0]
-        except sqlite3.Error:
-            pass
-        self.conn.commit()
-        self.conn.close()
-        if result > 0:
-            return True
-        else:
-            return False
-        
-    def session_logout(self, request):
-        try:
-            del request.session["username"]
-            del request.session["password"]
-            del request.session["e_mail"]
-        except:
-            pass
-
-
-class SQLiteUserControl():
-    def __init__(self):
-        dbname = "/sqlite/flamevalue.db"
-        self.conn = sqlite3.connect(dbname)
-        # テーブル初期化
-        cur = self.conn.cursor()
-        cur.execute("""
-        CREATE TABLE IF NOT EXISTS FLAMEVALUE_USERS (
-            USERNAME STRING,
-            E_MAIL STRING,
-            PASSWORD STRING,
-            PRIMARY KEY (USERNAME)
-        )""")
-
-    def get_user_good_flameworks(self, username):
-        sql = f"""
-        select
-            goodness_counter.FLAMEWORK_NAME
-        from 
-            FLAMEVALUE_USERS users,
-            GOODNESS_COUNT goodness_counter
-        where 1=1
-            and users.username=goodness_counter.username
-            and users.username="{username}"
-        """
-        self.conn.row_factory = dict_factory
-        cur = self.conn.cursor()
-        result = {}
-        try:
-            cur.execute(sql)
-            fetch_result = cur.fetchall()
-            result = fetch_result
-        except sqlite3.Error:
-            pass
-        self.conn.commit()
-        self.conn.close()
-        return result
-
-    def get_users(self):
-        sql = f"""
-        select
-            users.username USERNAME,
-            group_concat(goodness_counter.FLAMEWORK_NAME) FLAMEWORK_NAMES
-        from 
-            FLAMEVALUE_USERS users,
-            GOODNESS_COUNT goodness_counter
-        where 1=1
-            and users.username=goodness_counter.username
-        group by
-            users.username
-        order by
-            users.username
-        """
-        self.conn.row_factory = dict_factory
-        cur = self.conn.cursor()
-        result = {}
-        try:
-            cur.execute(sql)
-            fetch_result1 = cur.fetchall()
-            result = list(map(lambda row: { **row, "FLAMEWORK_NAMES" : row["FLAMEWORK_NAMES"].split(",") } ,fetch_result1))
-        except sqlite3.Error:
-            pass
-        self.conn.commit()
-        self.conn.close()
-        return result
-
-
-###############################
-########user controls #########
-###############################
-
-class SQLiteControl():
-    def __init__(self, filepath='/sqlite/flamevalue.db'):
-        dbname = filepath
-        self.conn = sqlite3.connect(dbname)
-        # テーブル初期化
-        cur = self.conn.cursor()
-        cur.execute("""
-        CREATE TABLE IF NOT EXISTS GOODNESS_COUNT(
-            USERNAME STRING,
-            FLAMEWORK_NAME STRING,
-            PRIMARY KEY(USERNAME, FLAMEWORK_NAME)
-        )
-        """)
- 
-    def add_one_good(self, username, flamework_name):
-        cur = self.conn.cursor()
-        sql = f'INSERT INTO GOODNESS_COUNT(USERNAME, FLAMEWORK_NAME) values("{username}", "{flamework_name}")'
-        try:
-            cur.execute(sql)
-        except sqlite3.Error:
-            pass
-        self.conn.commit()
-        self.conn.close()
-    
-    def get_goodness_count(self, flamework_name):
-        cur = self.conn.cursor()
-        cur.execute(f'SELECT count(*) good_count FROM GOODNESS_COUNT WHERE FLAMEWORK_NAME="{flamework_name}"')
-        result =  cur.fetchall()
-        self.conn.close()
-        return result
-   
-    def get_select_all(self):
-        cur = self.conn.cursor()
-        cur.execute(f'SELECT * FROM GOODNESS_COUNT')
-        result =  cur.fetchall()
-        self.conn.close()
-        return result
-
-    def end():
-        self.conn.close()
-
-
-
-
-
-
-
-
-
-
-
