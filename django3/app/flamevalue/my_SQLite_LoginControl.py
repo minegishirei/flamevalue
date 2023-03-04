@@ -8,6 +8,7 @@ import hashlib
 ###############################
 
 class SQLiteLoginControl():
+    
     def __init__(self):
         def dict_factory(cursor, row):
             d = {}
@@ -26,9 +27,7 @@ class SQLiteLoginControl():
             PASSWORD STRING NOT NULL,
             PRIMARY KEY (E_MAIL)
         )""")
-        
-    def end(self):
-        self.conn.close()
+
 
         def build_hashing(secret_key):
             def hashing(target):
@@ -54,6 +53,9 @@ class SQLiteLoginControl():
         self.encrypt, self.decrypt = build_encrypt_decrypt("G0y6cfj3iqw84j3q8gp")
         """
         self.hashing = build_hashing("G0y6cfj3iqw84j3q8gp")
+
+    def end(self):
+        self.conn.close()
 
     def create_acount(self, request):
         cur = self.conn.cursor()

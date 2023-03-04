@@ -47,11 +47,6 @@ class SQLiteFlamevalueControl():
         self.conn.close()
         return result
 
-    def end():
-        self.conn.close()
-
-
-
 
 
 
