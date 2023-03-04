@@ -19,6 +19,9 @@ class SQLiteProfileImage():
             PRIMARY KEY(E_MAIL)
         )
         """)
+        
+    def end(self):
+        self.conn.close()
 
     def replace(self, e_mail, profile_image_url):
         cur = self.conn.cursor()

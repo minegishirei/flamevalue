@@ -26,6 +26,9 @@ class SQLiteLoginControl():
             PASSWORD STRING NOT NULL,
             PRIMARY KEY (E_MAIL)
         )""")
+        
+    def end(self):
+        self.conn.close()
 
         def build_hashing(secret_key):
             def hashing(target):

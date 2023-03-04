@@ -20,6 +20,9 @@ class SQLiteFlamevalueControl():
         )
         """)
  
+    def end(self):
+        self.conn.close()
+
     def add_one_good(self, e_mail, flamework_name):
         cur = self.conn.cursor()
         sql = f'INSERT INTO GOODNESS_COUNTER(E_MAIL, FLAMEWORK_NAME) values("{e_mail}", "{flamework_name}")'

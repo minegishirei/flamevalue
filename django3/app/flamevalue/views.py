@@ -16,6 +16,12 @@ from .my_SQLite_LoginControl import SQLiteLoginControl
 from .my_SQLite_UserInfoControl import UserInfoCollector
 from .my_SQLite_Profile import SQLiteProfileImage
 
+# .dbファイルの初期化
+SQLiteFlamevalueControl().end()
+SQLiteLoginControl().end()
+UserInfoCollector().end()
+SQLiteProfileImage().end()
+
 from functools import reduce
 from operator import add
 import datetime

@@ -21,7 +21,9 @@ class UserInfoCollector():
         cur = self.conn.cursor()
         cur.execute(f"ATTACH DATABASE '{self.dbfilename2}' as {self.dbname2};")
         cur.execute(f"ATTACH DATABASE '{self.dbfilename3}' as {self.dbname3};")
-
+    
+    def end(self):
+        self.conn.close()
 
     def get_user_good_flameworks(self, e_mail):
         cur = self.conn.cursor()
