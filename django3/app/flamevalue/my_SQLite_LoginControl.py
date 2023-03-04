@@ -1,8 +1,6 @@
 
 import sqlite3
 
-
-from Crypto.Cipher import AES
 import hashlib
 
 ###############################
