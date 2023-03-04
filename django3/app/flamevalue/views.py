@@ -275,7 +275,7 @@ def page(request, htmlname):
     
     # Goodを追加時の処理
     if request.GET.get("active-add-good"):
-        if SQLiteLoginControl().certification_by_unhashed_password(request.session.get("e_mail") , request.session.get("hashed_password")):
+        if not SQLiteLoginControl().certification_by_unhashed_password(request.session.get("e_mail") , request.session.get("hashed_password", "")):
             return redirect("/login.html")
         else:
             SQLiteFlamevalueControl().add_one_good(request.session["e_mail"], htmlname)
@@ -308,7 +308,7 @@ def page(request, htmlname):
 
 
 def ranking(request):
-    if SQLiteLoginControl().certification_by_unhashed_password(request.session.get("e_mail") , request.session.get("hashed_password")):
+    if not SQLiteLoginControl().certification_by_unhashed_password(request.session.get("e_mail") , request.session.get("hashed_password", "")):
         return redirect("/login.html")
     params = {
         "title" : f"プログラミング言語 年収ランキング {datetime.datetime.now().strftime('%Y年%m月%d日')} 最新版",
