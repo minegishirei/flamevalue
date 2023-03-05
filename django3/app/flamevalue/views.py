@@ -280,10 +280,12 @@ def page(request, htmlname):
     
     # Goodを追加時の処理
     if request.GET.get("active-add-good"):
-        if not SQLiteLoginControl().certification_by_unhashed_password(request.session.get("e_mail") , request.session.get("hashed_password", "")):
-            return redirect("/login.html")
-        else:
+        has_session_logininfo = (request.session.get("e_mail") and request.session.get("hashed_password") )
+        is_certification_ok = SQLiteLoginControl().certification_by_hashed_password(request.session.get("e_mail") , request.session.get("hashed_password", ""))
+        if (has_session_logininfo) and (is_certification_ok) :
             SQLiteFlamevalueControl().add_one_good(request.session["e_mail"], htmlname)
+        else:
+            return redirect("/login.html")
     # Goodカウントを即時反映させるための処理
     param.update({
         "goodness_count" : SQLiteFlamevalueControl().get_goodness_count(flamework_name=htmlname)[0][0]
@@ -313,7 +315,14 @@ def page(request, htmlname):
 
 
 def ranking(request):
-    if not SQLiteLoginControl().certification_by_unhashed_password(request.session.get("e_mail") , request.session.get("hashed_password", "")):
+    e_mail = request.session.get("e_mail")
+    hashed_password = request.session.get("hashed_password") 
+    username = request.session.get("username")
+    has_session_info = ("e_mail" in request.session) and ("hashed_password" in request.session)
+    is_certification_ok = SQLiteLoginControl().certification_by_hashed_password(request.session.get("e_mail") , request.session.get("hashed_password", ""))
+    if has_session_info and (is_certification_ok) :
+        pass
+    else:
         return redirect("/login.html")
     params = {
         "title" : f"プログラミング言語 年収ランキング {datetime.datetime.now().strftime('%Y年%m月%d日')} 最新版",
@@ -404,7 +413,7 @@ def login(request):
                 "error_message" : "アカウント作成に失敗しました。"
             }
             return render(request, f"jobstatic_pages/login.html", param)
-        SessionController(request).session_del()
+        request = SessionController().session_del(request)
         # ログイン後 ハッシュ化されていないパスワードから
         user_info = SQLiteLoginControl().fetch_user_info_by_unhashed_password( request.POST.get("e_mail"), request.POST.get("unhashed_password"))
         # ハッシュ化されたパスワードをセッションに入れる
@@ -423,7 +432,8 @@ def login(request):
         else:
             return render(request, f"jobstatic_pages/login.html", param)
     elif "logout_acount" in request.POST:
-        SessionController(request).session_del()
+        #request = SessionController().session_del(request)
+        request = get_deleted_all_session(request)
         return redirect("/")
     return render(request, f"jobstatic_pages/login.html", param)
 
@@ -454,20 +464,32 @@ def useradmin(request):
 
 
 class SessionController():
-    def __init__(self, request):
-        self.request = request
+    def __init__(self):
+        #self.request = request
         self.target_column = [
             "profile_image_url",
             "username",
+            "e_mail",
             "unhashed_password",
-            "hashed_password"
-            "e_mail"
+            "hashed_password",
         ]
 
-    def session_del(self):
+    def session_del(self, request):
         for column in self.target_column:
-            try:
-                del self.request.session[column]
-            except:
-                pass
-    
+            del request.session[column]
+
+        return request
+
+
+
+
+
+
+def get_deleted_all_session(request):
+    session_copy = {}
+    for key, value in request.session.items():
+        session_copy[key] = value
+    for key, value in session_copy.items():
+        del request.session[key]
+    return request
+
