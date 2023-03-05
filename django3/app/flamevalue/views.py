@@ -150,7 +150,6 @@ def get_wiki_explain(name):
     }
 
 
-
 def get_qiita_comments(name, word):
     def get_good_comment(name, markdown):
         hit_word = re.findall(name+'.?' + word, markdown)[0]
@@ -414,7 +413,7 @@ def login(request):
         request.session["hashed_password"] = user_info["hashed_password"]
         return redirect("/")
     elif "login_acount" in request.POST:
-        if SQLiteLoginControl().certification(request.POST.get("e_mail") , request.POST.get("unhashed_password")):
+        if SQLiteLoginControl().certification_by_unhashed_password(request.POST.get("e_mail") , request.POST.get("unhashed_password")):
             # ハッシュ化されたパスワードをセッションに入れる
             user_info = SQLiteLoginControl().fetch_user_info_by_unhashed_password( request.POST.get("e_mail"), request.POST.get("unhashed_password"))
             request.session["username"] = user_info["username"]
@@ -433,7 +432,7 @@ def login(request):
 def useradmin(request):
     param = {}
     if "update_acount" in request.POST:
-        if SQLiteLoginControl().update_acount_password(request.POST.get("e_mail"), request.POST.get("unhashed_password")):
+        if request.POST.get("unhashed_password") and SQLiteLoginControl().update_acount_password(request.POST.get("e_mail"), request.POST.get("unhashed_password")):
             user_info = SQLiteLoginControl().fetch_user_info_by_unhashed_password( request.POST.get("e_mail"), request.POST.get("unhashed_password"))
             request.session["username"] = user_info["username"]
             request.session["e_mail"] = user_info["e_mail"]

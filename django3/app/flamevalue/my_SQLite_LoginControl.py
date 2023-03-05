@@ -15,7 +15,7 @@ class SQLiteLoginControl():
             for idx, col in enumerate(cursor.description):
                 d[col[0]] = row[idx]
             return d
-        dbname = "/sqlite/v3_flamevalue_user.db"
+        dbname = "/sqlite/v6_flamevalue_user.db"
         self.conn = sqlite3.connect(dbname)
         self.conn.row_factory = dict_factory
         # テーブル初期化
@@ -115,8 +115,8 @@ class SQLiteLoginControl():
         else:
             return False
     
-    def certification(self, e_mail, unhashed_password):
-        user_info = self.fetch_user_info( e_mail, self.hashing(unhashed_password) )
+    def certification_by_hashed_password(self, e_mail, hashed_password):
+        user_info = self.fetch_user_info( e_mail, hashed_password )
         if len(user_info) > 0:
             return True
         else:
@@ -178,7 +178,7 @@ class SQLiteLoginControl():
                     "e_mail" : result["e_mail"],
                     "hashed_password" : result["hashed_password"]
                 })
-        except sqlite3.Error:
+        except:
             pass
         self.conn.close()
         return result

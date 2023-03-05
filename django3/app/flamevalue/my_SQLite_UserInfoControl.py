@@ -12,7 +12,7 @@ class UserInfoCollector():
             return d
         self.dbname1 = "/sqlite/goodness_counter.db"
         self.dbname2 = "flamevalue_user"
-        self.dbfilename2 = "/sqlite/v3_flamevalue_user.db"
+        self.dbfilename2 = "/sqlite/v6_flamevalue_user.db"
         self.dbname3 = "profile_image"
         self.dbfilename3 = "/sqlite/profile_image.db"
         self.conn = sqlite3.connect(self.dbname1)
