@@ -25,13 +25,13 @@
         {% endif %}
         <form id="demo-form" data-parsley-validate="" novalidate="" method="POST">
             {% csrf_token %}
-            <label for="fullname">ユーザー名 * :</label>
-            <input type="text" id="fullname" class="form-control" name="username" required="" value="{{ request.session.username }}">
-            <label for="email">メールアドレス (fixed) :</label>
-            <input type="text" id="email" class="form-control" name="e_mail" data-parsley-trigger="change" required="" value="{{ request.session.e_mail }}" readonly>
-            <label for="email">画像 :</label>
-            <input type="text" id="image" class="form-control" name="profile_image_url" required="" value="{{ request.session.profile_image_url }}">
-            <label for="email">パスワード * :</label>
+            <label for="username">ユーザー名 * :</label>
+            <input type="text" id="username" class="form-control" name="username" required="" value="{{ request.session.username }}">
+            <label for="e_mail">メールアドレス (fixed) :</label>
+            <input type="text" id="e_mail" class="form-control" name="e_mail" data-parsley-trigger="change" required="" value="{{ request.session.e_mail }}" readonly>
+            <label for="profile_image_url">画像 :</label>
+            <input type="text" id="profile_image_url" class="form-control" name="profile_image_url" required="" value="{{ request.session.profile_image_url }}">
+            <label for="password">パスワード * :</label>
             <input type="password" id="password" class="form-control" name="unhashed_password" required="" value="">
             <input type="hidden" class="form-control" name="update_acount" required="">
             <p>
