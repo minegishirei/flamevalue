@@ -413,7 +413,7 @@ def login(request):
                 "error_message" : "アカウント作成に失敗しました。"
             }
             return render(request, f"jobstatic_pages/login.html", param)
-        request = SessionController().session_del(request)
+        request = get_deleted_all_session(request)
         # ログイン後 ハッシュ化されていないパスワードから
         user_info = SQLiteLoginControl().fetch_user_info_by_unhashed_password( request.POST.get("e_mail"), request.POST.get("unhashed_password"))
         # ハッシュ化されたパスワードをセッションに入れる
@@ -432,7 +432,6 @@ def login(request):
         else:
             return render(request, f"jobstatic_pages/login.html", param)
     elif "logout_acount" in request.POST:
-        #request = SessionController().session_del(request)
         request = get_deleted_all_session(request)
         return redirect("/")
     return render(request, f"jobstatic_pages/login.html", param)
@@ -442,14 +441,15 @@ def login(request):
 def useradmin(request):
     param = {}
     if "update_acount" in request.POST:
+        message = ""
         if request.POST.get("unhashed_password") and SQLiteLoginControl().update_acount_password(request.POST.get("e_mail"), request.POST.get("unhashed_password")):
             user_info = SQLiteLoginControl().fetch_user_info_by_unhashed_password( request.POST.get("e_mail"), request.POST.get("unhashed_password"))
             request.session["username"] = user_info["username"]
             request.session["e_mail"] = user_info["e_mail"]
             request.session["hashed_password"] = user_info["hashed_password"]
-        if SQLiteProfileImage().replace(request.POST.get("e_mail"), request.POST.get("profile_image_url")):
+        if request.POST.get("profile_image_url") and SQLiteProfileImage().replace(request.POST.get("e_mail"), request.POST.get("profile_image_url")):
             request.session["profile_image_url"] = SQLiteProfileImage().fetch(request.POST.get("e_mail"))["profile_image_url"]
-        if SQLiteLoginControl().update_acount(request.POST.get("e_mail"), request.POST.get("username")):
+        if request.POST.get("e_mail") and SQLiteLoginControl().update_acount(request.POST.get("e_mail"), request.POST.get("username")):
             pass
         else:
             param.update({
@@ -462,29 +462,6 @@ def useradmin(request):
     return render(request, f"jobstatic_pages/profile.html", param)
 
 
-
-class SessionController():
-    def __init__(self):
-        #self.request = request
-        self.target_column = [
-            "profile_image_url",
-            "username",
-            "e_mail",
-            "unhashed_password",
-            "hashed_password",
-        ]
-
-    def session_del(self, request):
-        for column in self.target_column:
-            del request.session[column]
-
-        return request
-
-
-
-
-
-
 def get_deleted_all_session(request):
     session_copy = {}
     for key, value in request.session.items():
@@ -492,4 +469,12 @@ def get_deleted_all_session(request):
     for key, value in session_copy.items():
         del request.session[key]
     return request
+
+
+
+
+
+
+
+
 

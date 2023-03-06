@@ -7,12 +7,18 @@
                 <div class="col-md-8 col-lg-8 col-sm-7">
                     <!-- blockquote -->
                     <blockquote>
-                        <h1>{{ name }} <button type="button" class="btn btn-danger" onclick="window.location.href = '{{name}}?active-add-good=True' ">
-                            {% if goodness_count %}
-                            {% endif %}
+                        <h1>{{ name }}
+                            <button type="button" class="btn btn-danger"
+                                onclick="window.location.href = '{{name}}?active-add-good=True' ">
+                                好き！
                                 {{ goodness_count }}
-                            Good!
-                        </button> </h1>
+                            </button>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="window.location.href = '{{name}}?active-add-good=True' ">
+                                嫌い！
+                                {{ badness_count }}
+                            </button>
+                        </h1>
                     </blockquote>
                 </div>
                 <div class="col-md-8 col-lg-8 col-sm-7">
