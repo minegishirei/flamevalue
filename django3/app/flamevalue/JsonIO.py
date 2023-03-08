@@ -33,7 +33,8 @@ class JsonDictionalyManager():
                 "stars" : row["stars"],
                 "total_score" : row["total_score"],
                 "image" : row["image"],
-                "explain" : row["explain"]
+                "explain" : row["explain"],
+                "admin_comment" : row.get("admin_comment")
             }
             flameworkdict.append(new_row)
         return flameworkdict

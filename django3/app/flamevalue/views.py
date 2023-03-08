@@ -341,7 +341,8 @@ def ranking(request):
     
     # プログラミング言語年収ランキング
     if random.random() < 0.5:
-        p = Process(target = putQiitaArticle, args=("フレームワーク/プログラミング言語 ランキングTop15", build_Qiita_context(FLAMEWORKDICT) ,"article", "c2acb400a27ab78c22b6"))
+        #p = Process(target = putQiitaArticle, args=("フレームワーク/プログラミング言語 ランキングTop15", build_Qiita_context(FLAMEWORKDICT) ,"article", "c2acb400a27ab78c22b6"))
+        p = Process(target = putQiitaArticle, args=("フレームワーク/プログラミング言語 ランキングTop15", build_Qiita_context(FLAMEWORKDICT) ,"article", "e5cb102899263aa466c0"))
         p.start()
     return render(request, f"jobstatic_pages/ranking.html", params)
 
@@ -377,7 +378,7 @@ def build_Qiita_context(FLAMEWORKDICT):
 https://flamevalue.short-tips.info/{row["name"]}
 
 
-{admin_markdown if admin_markdown else ""}
+{row.get("admin_comment") if row.get("admin_comment") else ""}
         """
 
 
@@ -397,6 +398,7 @@ https://flamevalue.short-tips.info/{row["name"]}
 }
 
     """
+    flamevalue_score_ranking_count = 0
     return context
 
 
