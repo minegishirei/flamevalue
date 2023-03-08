@@ -25,6 +25,36 @@ class UserInfoCollector():
     def end(self):
         self.conn.close()
 
+    def fetch_user_fullinfo(self, e_mail):
+        cur = self.conn.cursor()
+        sql = f"""
+        select
+            users.username username,
+            users.password hashed_password,
+            users.e_mail e_mail,
+            group_concat(goodness_counter.FLAMEWORK_NAME) flamework_names,
+            user_profile_images.profile_image_url profile_image_url
+        from 
+            {self.dbname2}.FLAMEVALUE_USERS users,
+            GOODNESS_COUNTER goodness_counter,
+            {self.dbname3}.USER_PROFILE_IMAGES user_profile_images
+        where 1=1
+            and users.e_mail=goodness_counter.e_mail
+            and users.e_mail=user_profile_images.e_mail
+            and users.e_mail="{e_mail}"
+        group by
+            users.e_mail
+        order by
+            users.e_mail
+        """
+        result = {}
+        cur.execute(sql)
+        fetch_result = cur.fetchall()
+        result = fetch_result
+        self.conn.commit()
+        self.conn.close()
+        return result[0]
+    
     def get_user_good_flameworks(self, e_mail):
         cur = self.conn.cursor()
         sql = f"""

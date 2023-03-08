@@ -1,11 +1,5 @@
-
 import sqlite3
-
 import hashlib
-
-###############################
-########login controls #########
-###############################
 
 class SQLiteLoginControl():
     
@@ -27,35 +21,15 @@ class SQLiteLoginControl():
             PASSWORD STRING NOT NULL,
             PRIMARY KEY (E_MAIL)
         )""")
-
-
         def build_hashing(secret_key):
             def hashing(target):
                 return hashlib.sha256( (secret_key + target).encode() ).hexdigest()
                 #return cipher.encrypt_and_digest(target)
             return hashing
-        
-        """
-        def build_encrypt_decrypt(secret_key):
-            import hashlib
-            dat = 'python' 
-            # SHA256のハッシュ値
-            solt = 
-
-            cipher = AES.new(secret_key, AES.MODE_EAX)
-            def encrypt(target):
-                return hashlib.sha256(dat.encode()).hexdigest()
-                #return cipher.encrypt_and_digest(target)
-            def decrypt(cipher_data):
-                return AES.new(secret_key).decrypt(cipher_data)
-            return (encrypt, decrypt)
-        
-        self.encrypt, self.decrypt = build_encrypt_decrypt("G0y6cfj3iqw84j3q8gp")
-        """
         self.hashing = build_hashing("G0y6cfj3iqw84j3q8gp")
 
     def end(self):
-        self.conn.close()
+        self.conn.close() 
 
     def create_acount(self, request):
         cur = self.conn.cursor()
@@ -151,7 +125,6 @@ class SQLiteLoginControl():
             pass
         self.conn.close()
         return result
-    
 
     def fetch_user_info_by_unhashed_password(self, e_mail, unhashed_password):
         # After
@@ -182,5 +155,4 @@ class SQLiteLoginControl():
             pass
         self.conn.close()
         return result
-
 

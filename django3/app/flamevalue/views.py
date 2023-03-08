@@ -414,20 +414,16 @@ def login(request):
             }
             return render(request, f"jobstatic_pages/login.html", param)
         request = get_deleted_all_session(request)
-        # ログイン後 ハッシュ化されていないパスワードから
-        user_info = SQLiteLoginControl().fetch_user_info_by_unhashed_password( request.POST.get("e_mail"), request.POST.get("unhashed_password"))
+        # アカウント作成後 ハッシュ化されていないパスワードから
         # ハッシュ化されたパスワードをセッションに入れる
-        request.session["username"] = user_info["username"]
-        request.session["e_mail"] = user_info["e_mail"]
-        request.session["hashed_password"] = user_info["hashed_password"]
+        user_info = SQLiteLoginControl().fetch_user_info_by_unhashed_password( request.POST.get("e_mail"), request.POST.get("unhashed_password"))
+        request.session.update(user_info)
         return redirect("/")
     elif "login_acount" in request.POST:
         if SQLiteLoginControl().certification_by_unhashed_password(request.POST.get("e_mail") , request.POST.get("unhashed_password")):
             # ハッシュ化されたパスワードをセッションに入れる
-            user_info = SQLiteLoginControl().fetch_user_info_by_unhashed_password( request.POST.get("e_mail"), request.POST.get("unhashed_password"))
-            request.session["username"] = user_info["username"]
-            request.session["e_mail"] = user_info["e_mail"]
-            request.session["hashed_password"] = user_info["hashed_password"]
+            user_info = UserInfoCollector().fetch_user_fullinfo( request.POST.get("e_mail"))
+            request.session.update(user_info)
             return index(request)
         else:
             return render(request, f"jobstatic_pages/login.html", param)
@@ -437,24 +433,22 @@ def login(request):
     return render(request, f"jobstatic_pages/login.html", param)
 
 
-
 def useradmin(request):
     param = {}
     if "update_acount" in request.POST:
-        message = ""
+        message_list = []
         if request.POST.get("unhashed_password") and SQLiteLoginControl().update_acount_password(request.POST.get("e_mail"), request.POST.get("unhashed_password")):
             user_info = SQLiteLoginControl().fetch_user_info_by_unhashed_password( request.POST.get("e_mail"), request.POST.get("unhashed_password"))
-            request.session["username"] = user_info["username"]
-            request.session["e_mail"] = user_info["e_mail"]
-            request.session["hashed_password"] = user_info["hashed_password"]
+            request.session.update(user_info)
+            message_list.append("パスワード設定：完了")
         if request.POST.get("profile_image_url") and SQLiteProfileImage().replace(request.POST.get("e_mail"), request.POST.get("profile_image_url")):
             request.session["profile_image_url"] = SQLiteProfileImage().fetch(request.POST.get("e_mail"))["profile_image_url"]
+            message_list.append("プロフィールイメージ設定：完了")
         if request.POST.get("e_mail") and SQLiteLoginControl().update_acount(request.POST.get("e_mail"), request.POST.get("username")):
-            pass
-        else:
-            param.update({
-                "message" : "アカウント情報アップデートに失敗しました。"
-            })
+            message_list.append("メール、ユーザー名設定：完了")
+        param.update({
+            "message_list" : message_list
+        })
     param.update({
         "users" : UserInfoCollector().get_users(),
         "user_good_flameworks" : UserInfoCollector().get_user_good_flameworks(request.session.get("e_mail"))
