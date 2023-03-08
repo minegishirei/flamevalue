@@ -3,7 +3,7 @@ import json
 import pprint
 import time
 from .my_tools import calc_distance
-
+#from my_tools import calc_distance
 
 def getQiitaInfo(query, per_page):
     token = "5798518994eec676de3272cc9c15405cf3b697d5"
@@ -48,5 +48,53 @@ def getQiitaTags(tag_name):
             return row
     return list(sorted(all_qiita_tags, key=lambda x: calc_distance(x["id"], tag_name) ))[0]
 
+
+
+import requests
+import json
+import datetime
+import pytz
+
+BASE_URL = "https://qiita.com/api/v2/items"
+
+def putQiitaArticle(title, markdown, path="article", id=""):
+    token = "5a92018081a8bb606ec0cb199360a581548bd235"
+    headers = {"Authorization": f"Bearer {token}"}
+    item = {
+        "title": title,
+        "id": id,
+        "tags": [
+            {
+            "name": "flamevalue"
+            },
+            {
+            "name": "test"
+            }
+        ],
+        "private": False,
+        "coediting": False,
+        "tweet": False,
+        "body": markdown
+    }
+    print("【Qiita】 execute putQiitaArticle")
+    # idがなければ、新規で記事を投稿
+    if item["id"] == "":
+        res = requests.post(BASE_URL, headers=headers, json=item)
+        return res
+    else:
+        now = datetime.datetime.now(pytz.timezone('Asia/Tokyo'))
+        item["title"] += now.strftime("【%Y/%m/%d %H:%M更新】")
+        item_id = item["id"]
+        res = requests.patch(BASE_URL + f"/{item_id}", headers=headers, json=item)
+        return res
+
+
+
+
 if __name__ == "__main__":
-    print( getQiitaTags("Ruby on Rails")  )
+    res = putQiitaArticle("この記事はQiitaから投稿しています", "#test " ,"article", "c2acb400a27ab78c22b6").json()
+    print(res)
+
+
+
+

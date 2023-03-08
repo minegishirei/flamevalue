@@ -11,6 +11,7 @@ from .my_Admin_Markdown import getAdminMarkdown
 from .my_mecab import getMeishiList
 from .my_Qiita import getQiitaInfo
 from .my_Qiita import getQiitaTags
+from .my_Qiita import putQiitaArticle
 from .my_SQLite_FlamevalueControl import SQLiteFlamevalueControl
 from .my_SQLite_LoginControl import SQLiteLoginControl
 from .my_SQLite_UserInfoControl import UserInfoCollector
@@ -32,7 +33,8 @@ wikipedia.set_lang("jp")
 from .my_tools import calc_distance
 from multiprocessing import Process
 import random
-            
+import math            
+
 jsonDictionalyManager = JsonDictionalyManager()
 FLAMEWORKDICT = jsonDictionalyManager.generate_all_flameworkdict()
 
@@ -256,7 +258,7 @@ def titleABTest():
 
 def titleProduction():
     return (lambda name, description: {
-        "title" : f"【転職】{name}の年収は高い?低い? - Flamevalue",
+        "title" : f"{name}の転職評価 - Flamevalue",
         "description" : f"{description}"
     })
 
@@ -336,8 +338,67 @@ def ranking(request):
         params.update({
             "ranking_list" : sorted(FLAMEWORKDICT, key=lambda x: x["basic"][request.GET.get("active")], reverse=True)
         })
-        
+    
+    # プログラミング言語年収ランキング
+    if random.random() < 0.5:
+        p = Process(target = putQiitaArticle, args=("フレームワーク/プログラミング言語 ランキングTop15", build_Qiita_context(FLAMEWORKDICT) ,"article", "c2acb400a27ab78c22b6"))
+        p.start()
     return render(request, f"jobstatic_pages/ranking.html", params)
+
+
+flamevalue_score_ranking_count = 0
+
+def build_Qiita_context(FLAMEWORKDICT):
+    flamevalue_score_ranking_count= 0
+    def row_context(row):
+        def floor(value):
+            return math.floor(value * 100) / 100
+        global flamevalue_score_ranking_count
+        flamevalue_score_ranking_count += 1
+
+        #admin_markdown = getAdminMarkdown(row["name"])
+        admin_markdown = None
+
+        return f"""
+# 第{flamevalue_score_ranking_count}位 : {row["name"]} : {row["stars"]}
+
+スコア : **{row["total_score"]}**/5
+
+| 項目名            | ポイント(5点満点) | 実績 | 
+| :---------------- | ----------------- | ---- | 
+| 下限年収          |     {floor(row["score"]["money"])}   |       {row["basic"]["money"]}万円   | 
+| 上限年収          |     {floor(row["score"]["overtime"])}|       {row["basic"]["overtime"]}万円    | 
+| 求人数            |     {floor(row["score"]["count"])}   |       {row["basic"]["count"]}件  | 
+| リモート率        |     {floor(row["score"]["remote"])}  |       {row["basic"]["remote"]}%    | 
+| Qiitaフォロワー数 |     {floor(row["score"]["qiita_score"])}|   {row["basic"]["qiita_score"]}人   | 
+
+参考ページ
+
+https://flamevalue.short-tips.info/{row["name"]}
+
+
+{admin_markdown if admin_markdown else ""}
+        """
+
+
+    context = f"""
+## この記事の説明
+
+この記事は<a href="https://flamevalue.short-tips.info/"> フレームワークの転職評価 Flamevalue</a> のサイトから引用しております、
+プログラミング言語/フレームワークのランキングを表示するものです。
+
+プログラミング言語/フレームワークの評価を、次の5つの観点から点数化しております。
+転職やエンジニア採用の際の一つの参考までにご活用下さい。
+
+# ランキング
+
+{
+    "".join(map(lambda row:row_context(row),sorted(FLAMEWORKDICT, key=lambda x: x["total_score"], reverse=True)[:15]))
+}
+
+    """
+    return context
+
 
 
 def index(request):
@@ -353,6 +414,9 @@ def index(request):
         "FLAMEWORKDICT" : sorted(FLAMEWORKDICT, key=lambda x: x["total_score"], reverse=True),
         "img" : "https://github.com/kawadasatoshi/minegishirei/blob/main/flamevalue/flamevalue.png?raw=true"
     }
+
+
+        
     return render(request, f"jobstatic_pages/index.html", param)
 
 def sitemap(request):
