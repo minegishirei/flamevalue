@@ -339,17 +339,20 @@ def ranking(request):
             "ranking_list" : sorted(FLAMEWORKDICT, key=lambda x: x["basic"][request.GET.get("active")], reverse=True)
         })
     
+    # テストコード
+    putQiitaArticle("工事中...", build_Qiita_context(FLAMEWORKDICT) ,"article", "", False)
     # プログラミング言語年収ランキング
     if random.random() < 0.5:
-        p = Process(target = putQiitaArticle, args=("フレームワーク/プログラミング言語 ランキングTop15", build_Qiita_context(FLAMEWORKDICT) ,"article", "c2acb400a27ab78c22b6"))
-        #p = Process(target = putQiitaArticle, args=("工事中...", build_Qiita_context(FLAMEWORKDICT) ,"article", "193a73058882eaf64009", False))
-        p.start()
+        pass
+        #p = Process(target = putQiitaArticle, args=("フレームワーク/プログラミング言語 ランキングTop15", build_Qiita_context(FLAMEWORKDICT) ,"article", "c2acb400a27ab78c22b6"))
+        #p.start()
     return render(request, f"jobstatic_pages/ranking.html", params)
 
 
 flamevalue_score_ranking_count = 0
 
 def build_Qiita_context(FLAMEWORKDICT):
+    global flamevalue_score_ranking_count
     flamevalue_score_ranking_count= 0
     def row_context(row):
         def floor(value):
