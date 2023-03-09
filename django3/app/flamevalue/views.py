@@ -348,7 +348,7 @@ def ranking(request):
         putQiitaArticle(
             title = "フレームワーク/プログラミング言語 ランキングTop15", 
             markdown = build_Qiita_context(FLAMEWORKDICT) ,
-            tags = list(map(lambda row:{"name":row["name"]}, sorted(FLAMEWORKDICT, key=lambda x: x["stars"], reverse=True) ))[:10],
+            tags = list(map(lambda row:{"name":row["name"]}, sorted(FLAMEWORKDICT, key=lambda x: x["stars"], reverse=True) ))[:5],
             path = "article", 
             id = "c2acb400a27ab78c22b6",
             is_private = False
