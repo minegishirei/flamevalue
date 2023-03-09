@@ -342,7 +342,7 @@ def ranking(request):
     # プログラミング言語年収ランキング
     if random.random() < 0.5:
         p = Process(target = putQiitaArticle, args=("フレームワーク/プログラミング言語 ランキングTop15", build_Qiita_context(FLAMEWORKDICT) ,"article", "c2acb400a27ab78c22b6"))
-        #p = Process(target = putQiitaArticle, args=("フレームワーク/プログラミング言語 ランキングTop15", build_Qiita_context(FLAMEWORKDICT) ,"article", "e5cb102899263aa466c0"))
+        #p = Process(target = putQiitaArticle, args=("工事中...", build_Qiita_context(FLAMEWORKDICT) ,"article", "193a73058882eaf64009", False))
         p.start()
     return render(request, f"jobstatic_pages/ranking.html", params)
 
@@ -356,10 +356,7 @@ def build_Qiita_context(FLAMEWORKDICT):
             return math.floor(value * 100) / 100
         global flamevalue_score_ranking_count
         flamevalue_score_ranking_count += 1
-
-        #admin_markdown = getAdminMarkdown(row["name"])
         admin_markdown = None
-
         return f"""
 # 第{flamevalue_score_ranking_count}位 : {row["name"]} : {row["stars"]}
 
@@ -393,9 +390,7 @@ https://flamevalue.short-tips.info/{row["name"]}
 
 # ランキング
 
-{
-    "".join(map(lambda row:row_context(row),sorted(FLAMEWORKDICT, key=lambda x: x["total_score"], reverse=True)[:15]))
-}
+{"".join(map(lambda row:row_context(row),sorted(FLAMEWORKDICT, key=lambda x: x["total_score"], reverse=True)[:15]))}
 
     """
     flamevalue_score_ranking_count = 0

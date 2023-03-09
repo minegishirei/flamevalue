@@ -57,21 +57,18 @@ import pytz
 
 BASE_URL = "https://qiita.com/api/v2/items"
 
-def putQiitaArticle(title, markdown, path="article", id=""):
+def putQiitaArticle(title, markdown, path="article", id="", is_private=False):
     token = "5a92018081a8bb606ec0cb199360a581548bd235"
     headers = {"Authorization": f"Bearer {token}"}
     item = {
         "title": title,
         "id": id,
         "tags": [
-            {
-            "name": "flamevalue"
-            },
-            {
-            "name": "test"
-            }
+            #{
+            #"name": "flamevalue"
+            #}
         ],
-        "private": False,
+        "private": is_private,
         "coediting": False,
         "tweet": False,
         "body": markdown
