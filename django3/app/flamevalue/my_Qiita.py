@@ -58,8 +58,8 @@ import pytz
 BASE_URL = "https://qiita.com/api/v2/items"
 
 def putQiitaArticle(title = "フレームワーク/プログラミング言語 ランキングTop15", markdown = "test", tags = [{"name": "flamevalue"}], path="article", id="",  is_private=False):
-    token = "5a92018081a8bb606ec0cb199360a581548bd235"
-    #token = "3e081afb9ee5b72d69f63cb3d69e0889b491a627"
+    #token = "5a92018081a8bb606ec0cb199360a581548bd235"
+    token = "3e081afb9ee5b72d69f63cb3d69e0889b491a627"
     headers = {"Authorization": f"Bearer {token}"}
     item = {
         "title": title,
