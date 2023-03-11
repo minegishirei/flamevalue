@@ -341,24 +341,34 @@ def ranking(request):
     
     # テストコード
     #putQiitaArticle("工事中...",  ,"article", "", True)
-    print(build_Qiita_context(FLAMEWORKDICT))
+    print(build_Qiita_context(FLAMEWORKDICT, sort_function = (lambda x: x["basic"]["money"]) ))
 
     # プログラミング言語年収ランキング
     if random.random() < 0.5:
         putQiitaArticle(
-            title = "フレームワーク/プログラミング言語 ランキングTop15", 
+            title = "フレームワーク/プログラミング言語 下方年収ランキング", 
+            markdown = build_Qiita_context(FLAMEWORKDICT) ,
+            tags = list(map(lambda row:{"name":row["name"]}, sorted(FLAMEWORKDICT, key=lambda x: x["basic"]["money"], reverse=True) ))[:5],
+            path = "article", 
+            id = "",
+            is_private = False
+        )
+        """
+        putQiitaArticle(
+            title = "プログラミング言語 転職市場ランキングTop15", 
             markdown = build_Qiita_context(FLAMEWORKDICT) ,
             tags = list(map(lambda row:{"name":row["name"]}, sorted(FLAMEWORKDICT, key=lambda x: x["stars"], reverse=True) ))[:5],
             path = "article", 
             id = "c2acb400a27ab78c22b6",
             is_private = False
         )
+        """
     return render(request, f"jobstatic_pages/ranking.html", params)
 
 
 flamevalue_score_ranking_count = 0
 
-def build_Qiita_context(FLAMEWORKDICT):
+def build_Qiita_context(FLAMEWORKDICT, sort_function = ""):
     global flamevalue_score_ranking_count
     flamevalue_score_ranking_count= 0
     def row_context(row):
@@ -399,7 +409,7 @@ https://flamevalue.short-tips.info/{row["name"]}
 
 # ランキング
 
-{"".join(map(lambda row:row_context(row),sorted(FLAMEWORKDICT, key=lambda x: x["total_score"], reverse=True)[:15]))}
+{"".join(map(lambda row:row_context(row),sorted(FLAMEWORKDICT, key= sort_function, reverse=True)[:15]))}
 
     """
     flamevalue_score_ranking_count = 0
