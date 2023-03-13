@@ -353,9 +353,10 @@ def ranking(request):
             id = "011a797391f3e5c7c5d4",
             is_private = False
         )
+        
         putQiitaArticle(
             title = "プログラミング言語 転職市場ランキングTop15", 
-            markdown = build_Qiita_context(FLAMEWORKDICT) ,
+            markdown = build_Qiita_context(FLAMEWORKDICT, sort_function = (lambda x: x["stars"])) ,
             tags = list(map(lambda row:{"name":row["name"]}, sorted(FLAMEWORKDICT, key=lambda x: x["stars"], reverse=True) ))[:5],
             path = "article", 
             id = "c2acb400a27ab78c22b6",
