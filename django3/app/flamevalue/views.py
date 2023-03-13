@@ -385,9 +385,9 @@ def build_Qiita_context(FLAMEWORKDICT, sort_function = ""):
 | :---------------- | ------------------------------------ | ------------------------------------ | ------------------------------- | 
 | 下限年収          | { "★"*(int(floor(row["score"]["money"]))) + "☆"*(5-int(floor(row["score"]["money"])) ) }       | {floor(row["score"]["money"])}       | {row["basic"]["money"]}万円     | 
 | 上限年収          | { "★"*(int(floor(row["score"]["overtime"]))) + "☆"*(5-int(floor(row["score"]["overtime"])) ) }    | {floor(row["score"]["overtime"])}    | {row["basic"]["overtime"]}万円  | 
-| 求人数            | { "★"*(int(floor(row["score"]["overtime"]))) + "☆"*(5-int(floor(row["score"]["overtime"])) ) }        | {floor(row["score"]["count"])}       | {row["basic"]["count"]}件       | 
-| リモート率        | { "★"*(int(floor(row["score"]["overtime"]))) + "☆"*(5-int(floor(row["score"]["overtime"])) ) }       | {floor(row["score"]["remote"])}      | {row["basic"]["remote"]}%       | 
-| Qiitaフォロワー数 | { "★"*(int(floor(row["score"]["overtime"]))) + "☆"*(5-int(floor(row["score"]["overtime"])) ) }  | {floor(row["score"]["qiita_score"])} | {row["basic"]["qiita_score"]}人 | 
+| 求人数            | { "★"*(int(floor(row["score"]["count"]))) + "☆"*(5-int(floor(row["score"]["count"])) ) }        | {floor(row["score"]["count"])}       | {row["basic"]["count"]}件       | 
+| リモート率        | { "★"*(int(floor(row["score"]["remote"]))) + "☆"*(5-int(floor(row["score"]["remote"])) ) }       | {floor(row["score"]["remote"])}      | {row["basic"]["remote"]}%       | 
+| Qiitaフォロワー数 | { "★"*(int(floor(row["score"]["qiita_score"]))) + "☆"*(5-int(floor(row["score"]["qiita_score"])) ) }  | {floor(row["score"]["qiita_score"])} | {row["basic"]["qiita_score"]}人 | 
 
 参考ページ
 
