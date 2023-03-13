@@ -356,8 +356,8 @@ def ranking(request):
         
         putQiitaArticle(
             title = "転職市場ランキングTop15", 
-            markdown = build_Qiita_context(FLAMEWORKDICT, sort_function = (lambda x: x["stars"])) ,
-            tags = list(map(lambda row:{"name":row["name"]}, sorted(FLAMEWORKDICT, key=lambda x: x["stars"]) ))[:5],
+            markdown = build_Qiita_context(FLAMEWORKDICT, sort_function = (lambda x: x["total_score"])) ,
+            tags = list(map(lambda row:{"name":row["name"]}, sorted(FLAMEWORKDICT, key=lambda x: x["total_score"]) ))[:5],
             path = "article", 
             id = "c2acb400a27ab78c22b6",
             is_private = False
@@ -408,7 +408,7 @@ https://flamevalue.short-tips.info/{row["name"]}
 
 # ランキング
 
-{"".join(map(lambda row:row_context(row),sorted(FLAMEWORKDICT, key= sort_function, reversed=True)[:15]))}
+{"".join(map(lambda row:row_context(row),sorted(FLAMEWORKDICT, key= sort_function)[:15]))}
 
     """
     flamevalue_score_ranking_count = 0
