@@ -346,7 +346,7 @@ def ranking(request):
     # プログラミング言語年収ランキング
     if random.random() < 0.5:
         putQiitaArticle(
-            title = "フレームワーク/プログラミング言語 下方年収ランキング", 
+            title = "下方年収ランキング", 
             markdown = build_Qiita_context(FLAMEWORKDICT, sort_function = (lambda x: x["basic"]["money"])) ,
             tags = list(map(lambda row:{"name":row["name"]}, sorted(FLAMEWORKDICT, key=lambda x: x["basic"]["money"], reverse=True) ))[:5],
             path = "article", 
@@ -355,7 +355,7 @@ def ranking(request):
         )
         
         putQiitaArticle(
-            title = "プログラミング言語 転職市場ランキングTop15", 
+            title = "転職市場ランキングTop15", 
             markdown = build_Qiita_context(FLAMEWORKDICT, sort_function = (lambda x: x["stars"])) ,
             tags = list(map(lambda row:{"name":row["name"]}, sorted(FLAMEWORKDICT, key=lambda x: x["stars"], reverse=True) ))[:5],
             path = "article", 
