@@ -408,7 +408,7 @@ https://flamevalue.short-tips.info/{row["name"]}
 
 # ランキング
 
-{"".join(map(lambda row:row_context(row),sorted(FLAMEWORKDICT, key= sort_function)[:15]))}
+{"".join(map(lambda row:row_context(row),sorted(FLAMEWORKDICT, key= sort_function, reverse=True)[:15]))}
 
     """
     flamevalue_score_ranking_count = 0
