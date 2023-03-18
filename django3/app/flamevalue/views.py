@@ -428,10 +428,7 @@ def index(request):
         "description" : f"「年収/採用企業情報」。就職・転職前に{name}の働く環境、年収・求人数などをリサーチ。就職・転職のための「{name}」の価値分析チャート、求人情報、フレームワークランキングを掲載。",
         "FLAMEWORKDICT" : sorted(FLAMEWORKDICT, key=lambda x: x["total_score"], reverse=True),
         "img" : "https://github.com/kawadasatoshi/minegishirei/blob/main/flamevalue/flamevalue.png?raw=true"
-    }
-
-
-        
+    }        
     return render(request, f"jobstatic_pages/index.html", param)
 
 def sitemap(request):
@@ -512,6 +509,7 @@ def login(request):
     return render(request, f"jobstatic_pages/login.html", param)
 
 
+import statistics
 def useradmin(request):
     param = {}
     if "update_acount" in request.POST:
@@ -528,9 +526,21 @@ def useradmin(request):
         param.update({
             "message_list" : message_list
         })
+    user_good_flameworks = UserInfoCollector().get_user_good_flameworks(request.session.get("e_mail"))
+    user_good_flameworks_dict = list( filter(lambda row: row.get("name") in map(lambda user_good_flamework: user_good_flamework["FLAMEWORK_NAME"] ,user_good_flameworks), FLAMEWORKDICT))
+    
     param.update({
         "users" : UserInfoCollector().get_users(),
-        "user_good_flameworks" : UserInfoCollector().get_user_good_flameworks(request.session.get("e_mail"))
+        "user_good_flameworks" : user_good_flameworks,
+        "user_good_flameworks_dict" : user_good_flameworks_dict,
+        "average_money" : statistics.mean(map( lambda row : row["basic"]["money"], user_good_flameworks_dict) ),
+        "average_overtime" : statistics.mean(map( lambda row : row["basic"]["overtime"], user_good_flameworks_dict) ),
+        "average_count" : statistics.mean(map( lambda row : row["basic"]["count"], user_good_flameworks_dict) ),
+        "average_remote" : statistics.mean(map( lambda row : row["basic"]["remote"], user_good_flameworks_dict) ),
+        "average_score_overtime" : int( 20*statistics.mean(map( lambda row : row["score"]["overtime"], user_good_flameworks_dict)) ),
+        "average_score_money" : int( 20*statistics.mean(map( lambda row : row["score"]["money"], user_good_flameworks_dict)) ),
+        "average_score_count" : int( 20*statistics.mean(map( lambda row : row["score"]["count"], user_good_flameworks_dict)) ),
+        "average_score_remote" : int( 20*statistics.mean(map( lambda row : row["score"]["remote"], user_good_flameworks_dict)) ),
     })
     return render(request, f"jobstatic_pages/profile.html", param)
 
