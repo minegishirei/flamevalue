@@ -13,6 +13,7 @@ urlpatterns = [
     path("api/candidate/", views.api_candidate, name="candidate"),
     path("ranking.html", views.ranking, name="ranking"),
     path("search.html", views.search, name="search"),
+    path("compare.html", views.compare, name="compare"),
     path("<htmlname>", views.page ,name="pop_page")
 ]
 

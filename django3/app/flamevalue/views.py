@@ -7,6 +7,7 @@ import json
 import sys
 if '/God' not in sys.path:
     sys.path.append('/God')
+import Github
 from .my_Admin_Markdown import getAdminMarkdown
 from .my_mecab import getMeishiList
 from .my_Qiita import getQiitaInfo
@@ -37,7 +38,7 @@ import math
 
 jsonDictionalyManager = JsonDictionalyManager()
 FLAMEWORKDICT = jsonDictionalyManager.generate_all_flameworkdict()
-
+COMPARE_STAGE_LIST = set()
 
 
 def grep(column):
@@ -177,6 +178,7 @@ def get_qiita_comments(name, word):
 
 
 
+
 import re
 def build_param(name_original):
     name = name_original
@@ -228,12 +230,26 @@ def build_param(name_original):
         "title" : f"{name} 「年収/採用企業」 フレームワークの転職評価 FlameValue",
         "description" : f"{name}の「年収/採用企業情報」。就職・転職前に{name}の働く環境、年収・求人数などをリサーチ。就職・転職のための「{name}」の価値分析チャート、求人情報、フレームワークランキングを掲載。"
     }
-    
+
     wikipedia_param = get_wiki_explain(name_original+"(IT)")
     related_word = [ row_v2["word"] for row_v2 in wordcount_list]
     wikipedia_related = {"wikipedia_related": list(filter(lambda row : (row["name"] in related_word) , FLAMEWORKDICT) )}
-    
+
+    comments = []
+    try:
+        FLAMEVALUE_DATABASE_REPO = "flamevalue_database"
+        category = f"comments/{name}"
+        for htmlname in Github.seach_page_list(FLAMEVALUE_DATABASE_REPO, category):
+            row_json = Github.load(FLAMEVALUE_DATABASE_REPO, category + "/" +htmlname)
+            comments.append( json.loads(row_json) )
+    except:
+        pass
+
     param = {}
+    comments_param = {
+        "user_comments" : comments
+    }
+    param.update(comments_param)
     param.update(data_param)
     param.update(html_param)
     param.update(wikipedia_param)
@@ -258,7 +274,7 @@ def titleABTest():
 
 def titleProduction():
     return (lambda name, description: {
-        "title" : f"{name}の転職評価 - Flamevalue",
+        "title" : f"{name}は",
         "description" : f"{description}"
     })
 
@@ -294,7 +310,7 @@ def page(request, htmlname):
     })
     
     # 5割の確率でページを再構成する
-    if random.random() < 0.5:
+    if True: #random.random() < 0.5:
         p = Process(target = reload_subprocess, args=(name,))
         p.start()
     
@@ -302,18 +318,139 @@ def page(request, htmlname):
     GET_active = request.GET.get("active")
     if GET_active == "jobs":
         param.update({
-            "title" : f"{name} の「求人一覧」 FlameValue",
-            "description" : f"{name}株式会社の採用情報です。FlameValueは{name}の採用情報・求人情報を掲載しています。"
+            "title" : f"{name} 求人一覧",
+            "description" : f"{name}の採用情報です。FlameValueは{name}の採用情報・求人情報を掲載しています。"
         })
     elif GET_active == "comments":
         param.update({
-            "title" : f"{name}の「すべてのクチコミ」 FlameValue",
+            "title" : f"{name}の評価/評判",
             "description" : f"{name}ユーザーによる「すべての開発者クチコミ」のクチコミ・評価レビュー。{name}の採用を検討されている方が、{name}の「すべての開発者クチコミ」を把握するための参考情報として、{name}を使用した開発者から「すべての開発者クチコミ」に関するクチコミを収集し掲載しています。就職・採用活動での一段深めた開発者リサーチにご活用いただけます。"
         })
-    else:
+    elif GET_active == "post_comment":
+        if not judge_certification_ok(request):
+            return redirect("/login.html")
+        elif request.POST.get("active_post_comment"):
+            title               = request.POST.get("title", None)
+            markdown_message    = request.POST.get("markdown_message", None)
+            if title and markdown_message:
+                try:
+                    Github.upload("flamevalue_database", f"comments/{name}/0", "")
+                except:
+                    pass
+                Github.upload("flamevalue_database", f"comments/{name}/{title}.json", json.dumps({
+                    "username" : request.session.get("username"),
+                    "e_mail" : request.session.get("e_mail"),
+                    "title" : title,
+                    "markdown_message" : markdown_message,
+                },
+                ensure_ascii=False,
+                indent=4))
+        param.update({
+            "title" : f"{name}の口コミ投稿",
+            "description" : f"{name}ユーザーによる「すべての開発者クチコミ」のクチコミ・評価レビュー。{name}の採用を検討されている方が、{name}の「すべての開発者クチコミ」を把握するための参考情報として、{name}を使用した開発者から「すべての開発者クチコミ」に関するクチコミを収集し掲載しています。就職・採用活動での一段深めた開発者リサーチにご活用いただけます。"
+        })
+    else:        
         param.update(titleProduction()(name,param["explain"].replace("\n","") ))
+    
+    #url = https://github.com/kawadasatoshi/flamevalue_database/blob/main/comments/
     return render(request, f"jobstatic_pages/page.html", param)
 
+
+def compare(request):
+    color_candidate = [
+            '#26B99A', '#34495E',  '#3498DB', '#BDC3C7',
+            '#9B59B6', '#8abb6f', '#759c6a', '#bfd3b7'
+        ]
+    
+    candidate_list = request.GET.getlist("candidate")
+    jsonIO = JsonIO()
+    compare_result = list(map(lambda name: {
+        "param" : jsonIO.read(name),
+        "name" : name,
+        "color" : color_candidate.pop(0) #"#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)])
+    }, filter(lambda name_str: jsonIO.exists(name_str), candidate_list) ))
+
+    def create_one_series(row, key):
+        money_countlist = json.loads(row["money_countlist"])
+        return {
+            "name": row["name"],
+            "type": 'bar',
+            "data": money_countlist[key],
+            "markPoint": {
+                "data": [{
+                    "type": 'max',
+                    "name": '???'
+                }]
+            },
+            "markLine": {
+                "data": [{
+                    "type": 'average',
+                    "name": '???'
+                }]
+            }
+        }
+    COMPARE_STAGE_LIST.add(frozenset(candidate_list))
+    user_comments = sum( list(map(lambda row:row['param']['user_comments'] ,compare_result)), [])
+    admin_comment = user_comments[0]["markdown_message"] if len(user_comments) > 0 else ""
+    param = {
+        "compare_result" : compare_result,
+        "candidate_list" : candidate_list,
+        "wikipedia_related" : compare_result,
+        "jobs" :   sum( list(map(lambda row:row['param']['jobs'] ,compare_result)), []),
+        "user_comments" :   user_comments,
+        "admin_comment" :   admin_comment,
+        "title"  :f'徹底比較! { " vs ".join(candidate_list)}',
+        "name"   :f'徹底比較! { " vs ".join(candidate_list)}',
+        "money_list_lower_series" : json.dumps({
+            "title": {
+                "text": '下方年収',
+                "subtext": '単位：件/万円'
+            },
+            "tooltip": {
+                "trigger": 'axis'
+            },
+            "legend": {
+                "data": candidate_list
+            },
+            "toolbox": {
+                "show": False
+            },
+            "calculable": False,
+            "xAxis": [{
+                "type": 'category',
+                "data": ['0', '100', '200', '300', '400', '500', '600', '700', '800', '900']
+            }],
+            "yAxis": [{
+                "type": 'value'
+            }],
+            "series": list(map(lambda row : create_one_series(row["param"], "lower") ,compare_result))
+        }, ensure_ascii=False),
+        "money_list_upper_series" : json.dumps({
+            "title": {
+                "text": '上方年収',
+                "subtext": '単位：件/万円'
+            },
+            "tooltip": {
+                "trigger": 'axis'
+            },
+            "legend": {
+                "data": candidate_list
+            },
+            "toolbox": {
+                "show": False
+            },
+            "calculable": False,
+            "xAxis": [{
+                "type": 'category',
+                "data": ['0', '100', '200', '300', '400', '500', '600', '700', '800', '900']
+            }],
+            "yAxis": [{
+                "type": 'value'
+            }],
+            "series": list(map(lambda row : create_one_series(row["param"], "upper") ,compare_result))
+        }, ensure_ascii=False)
+    }
+    return render(request, f"jobstatic_pages/compare.html", param)
 
 
 def ranking(request):
@@ -422,13 +559,23 @@ def index(request):
     if request.GET.get("refresh_all"):
         p = Process(target=refresh_all)
         p.start()
+    compare_list = list( map( 
+        lambda candidate_list:{
+            "link" : "/compare.html?candidate=" + "&candidate=".join(candidate_list),
+            "title":" vs ".join(candidate_list),
+            "param":(list(filter(lambda param: param["name"] in candidate_list ,FLAMEWORKDICT)))
+        }, COMPARE_STAGE_LIST
+    ))
+    COMPARE_STAGE_LIST_tmp = COMPARE_STAGE_LIST
     name = "フレームワーク"
     param = {
         "title" : "「年収/採用企業」FlameValue フレームワークの転職評価",
+        "compare_list" : compare_list,
         "description" : f"「年収/採用企業情報」。就職・転職前に{name}の働く環境、年収・求人数などをリサーチ。就職・転職のための「{name}」の価値分析チャート、求人情報、フレームワークランキングを掲載。",
         "FLAMEWORKDICT" : sorted(FLAMEWORKDICT, key=lambda x: x["total_score"], reverse=True),
+        "compare_stage_list" : list(map(lambda row: list(row), COMPARE_STAGE_LIST)) ,
         "img" : "https://github.com/kawadasatoshi/minegishirei/blob/main/flamevalue/flamevalue.png?raw=true"
-    }        
+    }
     return render(request, f"jobstatic_pages/index.html", param)
 
 def sitemap(request):
@@ -556,6 +703,17 @@ def get_deleted_all_session(request):
 
 
 
+
+
+
+
+def judge_certification_ok(request):
+    e_mail = request.session.get("e_mail")
+    hashed_password = request.session.get("hashed_password") 
+    username = request.session.get("username")
+    has_session_info = ("e_mail" in request.session) and ("hashed_password" in request.session)
+    is_certification_ok = SQLiteLoginControl().certification_by_hashed_password(request.session.get("e_mail") , request.session.get("hashed_password", ""))
+    return has_session_info and (is_certification_ok)
 
 
 

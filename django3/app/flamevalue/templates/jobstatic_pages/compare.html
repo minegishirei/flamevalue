@@ -15,7 +15,7 @@
     
         <!-- top tiles -->
         <div class="row" style="display: inline-block;">
-          {% include 'jobstatic_parts/top.html' %}
+          {% include 'jobstatic_compare_parts/top.html' %}
         </div>
 
 
@@ -32,43 +32,15 @@
           </li>
           {% endif %}
 
-          {% if request.GET.active == "jobs" %}
-          <li class="nav-item">
-            <a class="nav-link active" id="profile-tab" data-toggle="tab" href="./{{ name }}?active=jobs" role="tab"
-              aria-controls="profile" aria-selected="false">求人票</a>
-          </li>
-          {% else %}
-          <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="./{{ name }}?active=jobs" role="tab"
-              aria-controls="profile" aria-selected="false">求人票</a>
-          </li>
-          {% endif %}
-
-
-          {% if request.GET.active == "comments" %}
-          <li class="nav-item">
-            <a class="nav-link active" id="contact-tab" data-toggle="tab" href="./{{ name }}?active=comments" role="tab"
-              aria-controls="contact" aria-selected="false">口コミ</a>
-          </li>
-          {% else %}
-          <li class="nav-item">
-            <a class="nav-link" id="contact-tab" data-toggle="tab" href="./{{ name }}?active=comments" role="tab"
-              aria-controls="contact" aria-selected="false">口コミ</a>
-          </li>
-          {% endif %}
-
-          {% if request.GET.active == "post_comment" %}
-          <li class="nav-item">
-            <a class="nav-link active" id="contact-tab" data-toggle="tab" href="./{{ name }}?active=post_comment" role="tab"
-              aria-controls="contact" aria-selected="false">投稿</a>
-          </li>
-          {% else %}
+          {% for name in candidate_list %}
           <li class="nav-item">
             <a class="nav-link" id="contact-tab" data-toggle="tab" href="./{{ name }}?active=post_comment" role="tab"
-              aria-controls="contact" aria-selected="false">投稿</a>
+              aria-controls="contact" aria-selected="false">{{ name }}コメント</a>
           </li>
-          {% endif %}
+          {% endfor %}
 
+
+          
         </ul>
         <div class="tab-content" id="myTabContent">
           {% if request.GET.active == "jobs" %}
@@ -102,15 +74,13 @@
             <div>
               <div class="row">
                 <div class="col-md-8 col-sm-12 ">
-                  {% include 'jobstatic_parts/scores.html' %}
-                  {% include "jobstatic_parts/money_list.html" %}
+                  {% include 'jobstatic_compare_parts/scores.html' %}
                   {% include "jobstatic_parts/user_comments.html" %}
-                  {% include "jobstatic_parts/acounts.html" %}
-                  {% include "jobstatic_parts/comments_v2.html" %}
-                  {% include "jobstatic_parts/ad.html" %}
+                  {% include "jobstatic_compare_parts/money_list_lower.html" %}
+                  {% include "jobstatic_compare_parts/money_list_upper.html" %}
                 </div>
                 <div class="col-md-4">
-                  {% include "jobstatic_parts/others.html" %}
+                  {% include "jobstatic_compare_parts/others.html" %}
                   {% include "jobstatic_parts/companys.html" %}
                   {% include "jobstatic_parts/jobs_top3.html" %}
                 </div>
@@ -142,7 +112,6 @@
 
 
 </div>
-<!-- /page content -->
 
 
 {% endblock %}

@@ -53,7 +53,6 @@ def seach_page_list(repo, folder = None):
             flag = True
     return file_list
 
-    #<a class="js-navigation-open link-gray-dark" title="2進数.json" href="/kawadasatoshi/six_dim_wikipedia/blob/main/2%E9%80%B2%E6%95%B0.json">2進数.json</a>
 
 def seach_page_list_v2(repo, folder = None):
     url = "https://github.com/kawadasatoshi/" + repo 
