@@ -390,7 +390,7 @@ def compare(request):
             }
         }
     COMPARE_STAGE_LIST.add(frozenset(candidate_list))
-    user_comments = sum( list(map(lambda row:row['param'].get('user_comments') ,compare_result)), [])
+    user_comments = sum( list(map(lambda row:row['param'].get('user_comments',[]) ,compare_result)), [])
     admin_comment = user_comments[0]["markdown_message"] if len(user_comments) > 0 else ""
     param = {
         "compare_result" : compare_result,
