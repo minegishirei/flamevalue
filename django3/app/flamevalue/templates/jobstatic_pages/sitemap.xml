@@ -26,4 +26,9 @@
         <loc>https://flamevalue.short-tips.info/{{ page.name }}?active=comments</loc>
     </url>
     {% endfor %}
+    {% for candidate_endpoint in candidate_endpoint_list %}
+    <url>
+        <loc>https://flamevalue.short-tips.info/{{ candidate_endpoint }}</loc>
+    </url>
+    {% endfor %}
 </urlset>

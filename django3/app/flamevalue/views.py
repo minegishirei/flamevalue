@@ -583,8 +583,11 @@ def index(request):
     return render(request, f"jobstatic_pages/index.html", param)
 
 def sitemap(request):
+    map(lambda row:"compare.html?candidate=" + "&candidate=".join(list(row)) ,COMPARE_STAGE_LIST)
+
     param = {
         "pop_page_list" : jsonDictionalyManager.generate_all_flameworkdict(),
+        "candidate_endpoint_list" :  map(lambda row:"compare.html?candidate=" + "&candidate=".join(list(row)) ,COMPARE_STAGE_LIST)
     }
     return render(request, f"jobstatic_pages/sitemap.xml", param)
 
