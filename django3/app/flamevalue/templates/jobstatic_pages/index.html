@@ -140,41 +140,17 @@
               </p>
             </div>
           </div>
-          {% for compare_stage in compare_list %}
-          <div class="col-md-12">
-            <a href="{{ compare_stage.link }}">
-              <div class="row x_title">
-                <div class="col-md-12">
-                  <h3>
-                    {{ compare_stage.title }}
-                    <!--
-                            <small>  ー {{ name }}</small>
-                        -->
-                  </h3>
-                </div>
-              </div>
-
-              <div class="col-md-12 col-sm-12 ">
-                  {% for row in compare_stage.param %}
-                  <div class="col-md-2 col-sm-12 ">
-                  {{ row.name }} :{{ row.stars }}
-                  </div>
-                  <div class="col-md-10 col-sm-12 ">
-                  {{ row.explain }}
-                  </div>
-                  <br>
-                  {% endfor %}
-
-              </div>
-            </a>
-          </div>
-          {% endfor %}
-          <div class="col-md-12">
-            {% include "jobstatic_parts/compare_candidates.html" %}
-          </div>
         </div>
       </div>
 
+      <div class="row">
+        <div class="col-md-6">
+          {% include "jobstatic_parts/compare_ables.html" %}
+        </div>
+        <div class="col-md-6">
+          {% include "jobstatic_parts/compare_candidates.html" %}
+        </div>
+      </div>
     </div>
     <br>
 

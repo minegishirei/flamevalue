@@ -393,7 +393,7 @@ def compare(request):
         }
     COMPARE_STAGE_LIST.add(frozenset(candidate_list))
     user_comments = sum( list(map(lambda row:row['param'].get('user_comments',[]) ,compare_result)), [])
-    admin_comment = user_comments[0]["markdown_message"] if len(user_comments) > 0 else ""
+    admin_comment = user_comments[0]["markdown_message"] if len(user_comments) > 0 else f"{'と'.join(candidate_list)}の違いについてまとめました。ツールの技術選定やプログラミング学習の際にどの言語を選択するかの参考にしてください。"
     param = {
         "compare_result" : compare_result,
         "candidate_list" : candidate_list,
@@ -401,7 +401,9 @@ def compare(request):
         "jobs" :   sum( list(map(lambda row:row['param']['jobs'] ,compare_result)), []),
         "user_comments" :   user_comments,
         "admin_comment" :   admin_comment,
-        "title"  :f'徹底比較! { " vs ".join(candidate_list)}',
+        "title"  :f'どっちがいい? { " vs ".join(candidate_list)}',
+        "description" : f"{'と'.join(candidate_list)}の違いについてまとめました。ツールの技術選定やプログラミング学習の際にどの言語を選択するかの参考にしてください。",
+        "img" : "https://github.com/kawadasatoshi/minegishirei/blob/main/flamevalue/flamevalue.png?raw=true",
         "name"   :f'徹底比較! { " vs ".join(candidate_list)}',
         "money_list_lower_series" : json.dumps({
             "title": {
