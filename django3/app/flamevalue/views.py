@@ -363,7 +363,7 @@ def compare(request):
         ]
     
     candidate_list = request.GET.getlist("candidate")
-    if len(candidate_list) < 0:
+    if len(candidate_list) <= 1:
         return redirect("/")
     jsonIO = JsonIO()
     compare_result = list(map(lambda name: {
