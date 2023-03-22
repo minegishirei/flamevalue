@@ -69,6 +69,18 @@
           </li>
           {% endif %}
 
+          {% if request.GET.active == "compare" %}
+          <li class="nav-item">
+            <a class="nav-link active" id="contact-tab" data-toggle="tab" href="./{{ name }}?active=compare" role="tab"
+              aria-controls="contact" aria-selected="false">比較する</a>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="./{{ name }}?active=compare" role="tab"
+              aria-controls="contact" aria-selected="false">比較する</a>
+          </li>
+          {% endif %}
+
         </ul>
         <div class="tab-content" id="myTabContent">
           {% if request.GET.active == "jobs" %}
@@ -93,6 +105,14 @@
             <div class="row">
               <div class="col-md-12 col-sm-12 ">
                 {% include "jobstatic_parts/post_comment.html" %}
+              </div>
+            </div>
+          </div>
+          {% elif request.GET.active == "compare" %}
+          <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 ">
+                {% include "jobstatic_parts/compare_candidates.html" %}
               </div>
             </div>
           </div>

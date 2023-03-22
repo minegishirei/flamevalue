@@ -48,8 +48,6 @@
             <div class="row">
               {% include "jobstatic_parts/jobs_v2.html" %}
             </div>
-            <!--
-            -->
           </div>
           {% elif request.GET.active == "comments" %}
           <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
@@ -64,7 +62,7 @@
           <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="row">
               <div class="col-md-12 col-sm-12 ">
-                {% include "jobstatic_parts/post_comment.html" %}
+                {% include "jobstatic_parts/compare_candidates.html" %}
               </div>
             </div>
           </div>
