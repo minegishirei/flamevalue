@@ -274,7 +274,7 @@ def titleABTest():
 
 def titleProduction():
     return (lambda name, description: {
-        "title" : f"{name}は",
+        "title" : f"{name}はオワコンなのか?",
         "description" : f"{description}"
     })
 
