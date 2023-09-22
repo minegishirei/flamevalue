@@ -13,3 +13,11 @@ RUN pip install --upgrade pip
 
 # install python lib 
 RUN pip install -r requirements.txt
+
+RUN apt-get update 
+RUN apt-get install -y mecab \
+  && apt-get install -y mecab-ipadic \
+  && apt-get install -y libmecab-dev \
+  && apt-get install -y mecab-ipadic-utf8 \
+  && apt-get install -y swig
+
