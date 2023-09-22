@@ -7,6 +7,7 @@ import pprint
 import wikipedia
 # 言語を日本語に設定
 wikipedia.set_lang("jp")
+from my_tools import del_dub_dict_list
 from my_tools import calc_distance
 from multiprocessing import Process
 import random
@@ -15,6 +16,7 @@ from my_mecab import getMeishiList
 from my_Qiita import getQiitaInfo
 from my_Qiita import getQiitaTags
 from my_Qiita import putQiitaArticle
+import json
 
 def grep(column):
     def no_name(row):
@@ -93,6 +95,53 @@ def TEST_split_timetable():
 
 
 
+def get_money_countlist(origin, column, steps = None):
+    origin = sorted(origin, key=lambda row:row[column])
+    steps = range(0, 1000, 100)
+    count_list = [0 for row in steps]
+    for row in origin:
+        for i, step in enumerate(steps):
+            if row[column] < step and step < row[column] + 100:
+                count_list[i] += 1
+    return count_list
+
+
+def get_wiki_explain(name):
+    words = wikipedia.search(name)
+    page = wikipedia.page(words[0], auto_suggest=False)
+    return {
+        "explain" : "。".join(page.summary.split("。")[:4]),
+        "comments" : (page.summary.split("。")[4:7]),
+        "image" : page.images[0]
+    }
+
+
+def get_qiita_comments(name, word):
+    def get_good_comment(name, markdown):
+        hit_word = re.findall(name+'.?' + word, markdown)[0]
+        text1 =  hit_word + "\n" + hit_word.join( markdown.split(hit_word)[1:] )
+        text2 = text1[:500]
+        new_tag = '#### '
+        text2 = re.sub('#+', new_tag, text2)
+        text3 = new_tag + "\n" + new_tag.join( text2.split(new_tag)[:1] )
+        return text3
+    feature_include_list = filter( lambda x: re.findall(name+'.?'+word, x["body"]),getQiitaInfo("title:"+name+word, 100) )
+    qiita_comments = []
+    for row in feature_include_list:
+        target_text = row["body"]
+        new_text = get_good_comment(name, target_text)
+        row.update({
+            "body" : new_text,
+            "origin_body" : row["body"],
+            "rendered_body" : ""
+        })
+        if len(new_text) > 100:
+            qiita_comments.append(row)
+    return qiita_comments
+
+
+
+
 import re
 def build_param(name_original):
     print("start")
@@ -142,39 +191,25 @@ def build_param(name_original):
         # 本当はここに書きたいが、Goodを押した後の時差の関係で後ほどupdate
         #"goodness_count" : SQLiteFlamevalueControl().get_goodness_count(flamework_name = name)[0][0]
     })
-    html_param = {
-        "title" : f"{name} 「年収/採用企業」 フレームワークの転職評価 FlameValue",
-        "description" : f"{name}の「年収/採用企業情報」。就職・転職前に{name}の働く環境、年収・求人数などをリサーチ。就職・転職のための「{name}」の価値分析チャート、求人情報、フレームワークランキングを掲載。"
-    }
     print(data_param)
 
-    wikipedia_param = get_wiki_explain(name_original+"(IT)")
     related_word = [ row_v2["word"] for row_v2 in wordcount_list]
-    wikipedia_related = {"wikipedia_related": list(filter(lambda row : (row["name"] in related_word) , FLAMEWORKDICT) )}
-
-    comments = []
-    try:
-        FLAMEVALUE_DATABASE_REPO = "flamevalue_database"
-        category = f"comments/{name}"
-        for htmlname in Github.seach_page_list(FLAMEVALUE_DATABASE_REPO, category):
-            row_json = Github.load(FLAMEVALUE_DATABASE_REPO, category + "/" +htmlname)
-            comments.append( json.loads(row_json) )
-    except:
-        pass
-
+    #wikipedia_related = {"wikipedia_related": list(filter(lambda row : (row["name"] in related_word) , FLAMEWORKDICT) )}
     param = {}
-    comments_param = {
-        "user_comments" : comments
-    }
-    param.update(comments_param)
     param.update(data_param)
-    param.update(html_param)
-    param.update(wikipedia_param)
+    param.update({
+        "title" : f"{name} 「年収/採用企業」 フレームワークの転職評価 FlameValue",
+        "description" : f"{name}の「年収/採用企業情報」。就職・転職前に{name}の働く環境、年収・求人数などをリサーチ。就職・転職のための「{name}」の価値分析チャート、求人情報、フレームワークランキングを掲載。"
+    })
+    param.update(get_wiki_explain(name_original+"(IT)"))
     param.update({
         "image" : qiita_tags["icon_url"]
     })
-    param.update(wikipedia_related)
+    #param.update(wikipedia_related)
     return param
 
 if __name__=="__main__":
-    build_param("Java")
+    lang_name = "Java"
+    with open( f'/static/flamevalue/{lang_name}.json', 'w') as f:
+        json.dump(build_param(lang_name), f, indent=4, ensure_ascii=False)
+
