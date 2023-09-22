@@ -4,10 +4,10 @@ services:
   react-app:
     build: ./code
     container_name: react-app
-    command: sh -c "cd my-app && npm run serve"
+    command: sh -c "cd vue-notus && npm run serve"
     volumes:
       - ./code/:/code
-      - ./volumes/static/:/code/static
+      - ./volumes/static/:/static
     ports:
       - '3000:3000'
       - '8080:8080'
@@ -29,3 +29,4 @@ services:
     volumes:
       - ./nginx/conf.d:/etc/nginx/conf.d
       - ./code/my-app/docs/:/usr/share/nginx/html/
+# npm run serve

@@ -79,7 +79,7 @@ scoring_100 = scoring_cuury(score_100)
 
 def split_timetable(origin):
     sorted_origin = sorted(origin, key=lambda row:datetime.datetime.strptime(row["日付"], '%Y-%m-%d'))
-    date_list = [datetime.datetime.now() + datetime.timedelta(days=i) for i in range(-3,-60,-3)]
+    date_list = [datetime.datetime.now() + datetime.timedelta(days=i) for i in range(-3,-30,-3)]
     return_timetable = [{ "date": i.strftime("%Y-%m-%d"), "origin":[]} for i in date_list]
     for i_job in sorted_origin:
         for i, i_date in enumerate(date_list):
