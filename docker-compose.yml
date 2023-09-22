@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+  react-app:
+    build: ./code
+    container_name: react-app
+    command: sh -c "cd my-app && npm run serve"
+    volumes:
+      - ./code/:/code
+      - ./volumes/static/:/code/static
+    ports:
+      - '3000:3000'
+      - '8080:8080'
+      - "19000:19000"
+      - "19001:19001"
+      - "19002:19002"
+      - "19006:19006"
+  batch:
+    build: ./batch
+    container_name: batch
+    command: sh #-c "cd /batch/code && python main.py"
+    volumes:
+      - ./batch/:/batch
+      - ./volumes/static/:/static
+  nginx:
+    build: ./nginx
+    ports:
+      - '80:80'
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./code/my-app/docs/:/usr/share/nginx/html/
