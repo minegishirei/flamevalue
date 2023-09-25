@@ -179,11 +179,11 @@ def build_param(name_original):
         "basic_graph" : [ {row["date"]: basic(row["origin"])} for row in split_timetable(origin) ],
         "score_graph" : [ {row["date"]: scoring(basic(row["origin"]))} for row in split_timetable(origin) ],
         "score_graph_json" : json.dumps([ {"date": row["date"], "values" : scoring(basic(row["origin"]))} for row in split_timetable(origin) ]),
-        "money_sorted" : sorted(origin, key=lambda row:row["年収"]),
+        "money_sorted" : sorted(origin, key=lambda row:row["年収"], reverse=True),
         "jobs" : clear_jnet(jobs),
         "min_salary" : sorted( clear_jnet(jobs), key=lambda row:row["salary_min"]),
-        "wordcloud_json" : json.dumps(wordcount_list, ensure_ascii=False ),
-        "money_countlist" : json.dumps( {'lower' : get_money_countlist(origin, "年収"), 'upper' : get_money_countlist(origin, "残業時間")} ),
+        "wordcloud_json" : wordcount_list,
+        "money_countlist" : {'lower' : get_money_countlist(origin, "年収"), 'upper' : get_money_countlist(origin, "残業時間")},
         "qiita_acounts" : sorted( del_dub_dict_list([ row["user"] for row in getQiitaInfo(name, 100) ]) , key=lambda x: x["items_count"], reverse=True )[:5],
         "qiita_comments" : get_qiita_comments(name, "メリット") + get_qiita_comments(name, "特徴")+ get_qiita_comments(name, "とは")
         # Administrator用のコメント
@@ -209,7 +209,7 @@ def build_param(name_original):
     return param
 
 if __name__=="__main__":
-    lang_name = "Java"
+    lang_name = "Python"
     with open( f'/static/flamevalue/{lang_name}.json', 'w') as f:
         json.dump(build_param(lang_name), f, indent=4, ensure_ascii=False)
 
