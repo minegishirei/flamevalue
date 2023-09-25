@@ -9,7 +9,7 @@
             Overview
           </h6>
           <h2 class="text-white text-xl font-semibold">
-            {{ title }}
+            Sales value
           </h2>
         </div>
       </div>
@@ -24,50 +24,37 @@
 </template>
 <script>
 import Chart from "chart.js";
-import LangInfo from '/static/flamevalue/Java.json';
-import labels from '/static/flamevalue_meta/labels.json';
-import labels_color from '/static/flamevalue_meta/labels_color.json';
-
 
 export default {
-  data () {
-    return LangInfo
-  },
   mounted: function () {
     this.$nextTick(function () {
       var config = {
         type: "line",
         data: {
-          labels: Object.values(LangInfo.basic_graph).map((row)=>(Object.keys(row))),
+          labels: [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+          ],
           datasets: [
             {
-              label: labels.money,
-              backgroundColor: labels_color.money,
-              borderColor: labels_color.money,
-              data: Object.values(LangInfo.basic_graph).map((row)=>(row[Object.keys(row)].money)),
+              label: new Date().getFullYear(),
+              backgroundColor: "#4c51bf",
+              borderColor: "#4c51bf",
+              data: [65, 78, 66, 44, 56, 67, 75],
               fill: false,
-            },    
-            {
-              label: labels.overtime,
-              fill: false,
-              backgroundColor: labels_color.overtime,
-              borderColor: labels_color.overtime,
-              data: Object.values(LangInfo.basic_graph).map((row)=>(row[Object.keys(row)].overtime)),
             },
             {
-              label: labels.remote,
+              label: new Date().getFullYear() - 1,
               fill: false,
-              backgroundColor: labels_color.remote,
-              borderColor: labels_color.remote,
-              data: Object.values(LangInfo.basic_graph).map((row)=>(row[Object.keys(row)].remote ? row[Object.keys(row)].remote : 0)),
+              backgroundColor: "#fff",
+              borderColor: "#fff",
+              data: [40, 68, 86, 74, 56, 60, 87],
             },
-            {
-              label: labels.count,
-              fill: false,
-              backgroundColor: labels_color.count,
-              borderColor: labels_color.count,
-              data: Object.values(LangInfo.basic_graph).map((row)=>(row[Object.keys(row)].count)),
-            }
           ],
         },
         options: {
@@ -75,7 +62,7 @@ export default {
           responsive: true,
           title: {
             display: false,
-            text: LangInfo.title,
+            text: "Sales Charts",
             fontColor: "white",
           },
           legend: {

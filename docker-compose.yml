@@ -4,7 +4,7 @@ services:
   react-app:
     build: ./code
     container_name: react-app
-    command: sh -c "cd vue-notus && npm run serve"
+    command: sh -c "cd /code/vue-notus && npm run serve"
     volumes:
       - ./code/:/code
       - ./volumes/static/:/static
@@ -18,7 +18,7 @@ services:
   batch:
     build: ./batch
     container_name: batch
-    command: sh -c "cd /batch/code && python main.py"
+    command: sh #-c "cd /batch/code && python main.py"
     volumes:
       - ./batch/:/batch
       - ./volumes/static/:/static

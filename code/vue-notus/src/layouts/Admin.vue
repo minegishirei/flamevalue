@@ -1,25 +1,16 @@
 <template>
   <div>
-    <div class="relative bg-blueGray-100">
-      <div class="bg-emerald-600 md:pt-32 pb-32 pt-12 mobile-size">
-        <admin-navbar />
-        <header-stats />
-      </div>
-      <div class="px-30 md:px-10 mx-auto w-full -m-24 mobile-size">
+    <sidebar />
+    <div class="relative md:ml-64 bg-blueGray-100">
+      <admin-navbar />
+      <header-stats />
+      <div class="px-4 md:px-10 mx-auto w-full -m-24">
         <router-view />
         <footer-admin />
       </div>
     </div>
   </div>
 </template>
-<style>
-@media(min-width:751px) {
-  .mobile-size {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-}
-</style>
 <script>
 import AdminNavbar from "@/components/Navbars/AdminNavbar.vue";
 import Sidebar from "@/components/Sidebar/Sidebar.vue";

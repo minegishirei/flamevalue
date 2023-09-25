@@ -9,7 +9,7 @@
             Performance
           </h6>
           <h2 class="text-blueGray-700 text-xl font-semibold">
-            年収レンジグラフ - {{ name }}
+            Total orders
           </h2>
         </div>
       </div>
@@ -23,36 +23,37 @@
 </template>
 <script>
 import Chart from "chart.js";
-import LangInfo from '/static/flamevalue/Java.json';
-import labels from '/static/flamevalue_meta/labels.json';
-import labels_color from '/static/flamevalue_meta/labels_color.json';
-
 export default {
-  data () {
-    return LangInfo
-  },
   mounted: function () {
     this.$nextTick(function () {
       let config = {
         type: "bar",
         data: {
-          labels: [...Array(LangInfo.money_countlist.lower.length)].map((_, i) => i*100),
+          labels: [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+          ],
           datasets: [
             {
-              label: labels.money,
-              backgroundColor: labels_color.money,
-              borderColor: labels_color.money,
-              data: LangInfo.money_countlist.lower,
+              label: new Date().getFullYear(),
+              backgroundColor: "#ed64a6",
+              borderColor: "#ed64a6",
+              data: [30, 78, 56, 34, 100, 45, 13],
               fill: false,
-              barThickness: 15,
+              barThickness: 8,
             },
             {
-              label: labels.overtime,
+              label: new Date().getFullYear() - 1,
               fill: false,
-              backgroundColor: labels_color.overtime,
-              borderColor: labels_color.overtime,
-              data: LangInfo.money_countlist.upper,
-              barThickness: 15,
+              backgroundColor: "#4c51bf",
+              borderColor: "#4c51bf",
+              data: [27, 68, 86, 74, 10, 4, 87],
+              barThickness: 8,
             },
           ],
         },
@@ -81,10 +82,10 @@ export default {
           scales: {
             xAxes: [
               {
-                display: true,
+                display: false,
                 scaleLabel: {
                   display: true,
-                  labelString: "年収",
+                  labelString: "Month",
                 },
                 gridLines: {
                   borderDash: [2],
@@ -100,8 +101,8 @@ export default {
               {
                 display: true,
                 scaleLabel: {
-                  display: true,
-                  labelString: "求人件数",
+                  display: false,
+                  labelString: "Value",
                 },
                 gridLines: {
                   borderDash: [2],
