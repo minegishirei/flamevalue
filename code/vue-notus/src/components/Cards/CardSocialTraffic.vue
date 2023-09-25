@@ -4,7 +4,7 @@
       <div class="flex flex-wrap items-center">
         <div class="relative w-full px-4 max-w-full flex-grow flex-1">
           <h3 class="font-semibold text-base text-blueGray-700">
-            Social traffic
+            求人一覧
           </h3>
         </div>
         <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
@@ -53,13 +53,12 @@ export default {
     return {
       lang_info: null
     }
-  }
-  /*
+  },
   mounted() {
     console.log(this.lang_info)
     fetch('http://localhost:8080/flamevalue/Java.json')
       .then(response => response.json())
-      .then(function (LangInfo){
+      .then(function (LangInfo) {
         console.log(LangInfo)
         this.lang_info = Object.assign(
           LangInfo,
@@ -77,7 +76,7 @@ export default {
               .sort((a, b) => b.year_salary - a.year_salary)
           })
       }.bind(this))
-  }*/
+  }
 }
 
 </script>
