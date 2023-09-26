@@ -7,7 +7,8 @@ services:
     command: sh -c "cd /code/vue-notus && npm run serve"
     volumes:
       - ./code/:/code
-      - ./volumes/static/:/static
+      - ./volumes/static/flamevalue:/code/vue-notus/public/flamevalue
+      - ./volumes/static/flamevaluedict:/code/vue-notus/public/flamevaluedict
     ports:
       - '3000:3000'
       - '8080:8080'
@@ -18,7 +19,7 @@ services:
   batch:
     build: ./batch
     container_name: batch
-    command: sh #-c "cd /batch/code && python main.py"
+    command: sh -c "cd /batch/code && python main.py"
     volumes:
       - ./batch/:/batch
       - ./volumes/static/:/static

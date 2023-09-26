@@ -27,16 +27,6 @@
                   {{ item["company"] }}
                   <br>
                   {{ item["year_salary"] }} 万円 / 年<br>
-                  <div class="flex items-center">
-                    <span class="mr-2">60%</span>
-                    <div class="relative w-full">
-                      <div class="overflow-hidden h-2 text-xs flex rounded bg-red-200">
-                        <div style="width: 60%;"
-                          class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </a>
               </th>
             </tr>
@@ -47,6 +37,7 @@
   </div>
 </template>
 <script>
+import get_lang_url from '../../store/store';
 
 export default {
   data() {
@@ -56,7 +47,7 @@ export default {
   },
   mounted() {
     console.log(this.lang_info)
-    fetch('http://localhost:8080/flamevalue/Java.json')
+    fetch(get_lang_url(this.$route.query.name))
       .then(response => response.json())
       .then(function (LangInfo) {
         console.log(LangInfo)

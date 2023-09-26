@@ -17,6 +17,9 @@ from my_Qiita import getQiitaInfo
 from my_Qiita import getQiitaTags
 from my_Qiita import putQiitaArticle
 import json
+from mytools.JsonIO import JsonIO
+import glob
+import os
 
 def grep(column):
     def no_name(row):
@@ -143,8 +146,7 @@ def get_qiita_comments(name, word):
 
 
 import re
-def build_param(name_original):
-    print("start")
+def build_param(name_original, FLAMEWORKDICT):
     name = name_original
     origin = getCareerJet(name.replace("(プログラミング言語)", ""))
     jobs = origin["jobs"]
@@ -166,8 +168,6 @@ def build_param(name_original):
         "name" : name,
         "explain" : "Django（ジャンゴ）は、Pythonで実装されたWebアプリケーションフレームワーク"
     }
-    print(data_param)
-
     wordcount_list =  getMeishiList("。".join([row["description"] for row in jobs]))
     data_param.update({
         "date" : datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S'),
@@ -186,30 +186,46 @@ def build_param(name_original):
         "money_countlist" : {'lower' : get_money_countlist(origin, "年収"), 'upper' : get_money_countlist(origin, "残業時間")},
         "qiita_acounts" : sorted( del_dub_dict_list([ row["user"] for row in getQiitaInfo(name, 100) ]) , key=lambda x: x["items_count"], reverse=True )[:5],
         "qiita_comments" : get_qiita_comments(name, "メリット") + get_qiita_comments(name, "特徴")+ get_qiita_comments(name, "とは")
-        # Administrator用のコメント
-        #"admin_comment" : getAdminMarkdown(name),
-        # 本当はここに書きたいが、Goodを押した後の時差の関係で後ほどupdate
-        #"goodness_count" : SQLiteFlamevalueControl().get_goodness_count(flamework_name = name)[0][0]
     })
-    print(data_param)
-
-    related_word = [ row_v2["word"] for row_v2 in wordcount_list]
-    #wikipedia_related = {"wikipedia_related": list(filter(lambda row : (row["name"] in related_word) , FLAMEWORKDICT) )}
     param = {}
     param.update(data_param)
+    param.update(get_wiki_explain(name_original+"(IT)"))
     param.update({
+        "image" : qiita_tags["icon_url"],
+        "wikipedia_related": list(filter(lambda row : (row["name"] in [ row_v2["word"] for row_v2 in wordcount_list]) , FLAMEWORKDICT) ),
         "title" : f"{name} 「年収/採用企業」 フレームワークの転職評価 FlameValue",
         "description" : f"{name}の「年収/採用企業情報」。就職・転職前に{name}の働く環境、年収・求人数などをリサーチ。就職・転職のための「{name}」の価値分析チャート、求人情報、フレームワークランキングを掲載。"
     })
-    param.update(get_wiki_explain(name_original+"(IT)"))
-    param.update({
-        "image" : qiita_tags["icon_url"]
-    })
-    #param.update(wikipedia_related)
     return param
 
+
+def GEN_FLAMEWORKDICT(folder):
+    directory = glob.glob(f"{folder}/*")
+    jsonIO = JsonIO(folder)
+    flameworkdict = []
+    for filename in os.listdir(path=f'{folder}'):
+        name = filename.replace(".json", "")
+        row = jsonIO.read(name)
+        new_row = {
+            "basic" : row["basic"],
+            "score" : row["score"],
+            "name" : name,
+            "stars" : row["stars"],
+            "total_score" : row["total_score"],
+            "image" : row["image"],
+            "explain" : row["explain"],
+            "admin_comment" : row.get("admin_comment")
+        }
+        flameworkdict.append(new_row)
+    return flameworkdict
+
 if __name__=="__main__":
-    lang_name = "Python"
-    with open( f'/static/flamevalue/{lang_name}.json', 'w') as f:
-        json.dump(build_param(lang_name), f, indent=4, ensure_ascii=False)
+    FLAMEWORKDICT = GEN_FLAMEWORKDICT("/static/flamevalue/")
+    with open( f'/static/flamevaluedict/flamevaluedict.json', 'w+') as f:
+        json.dump(FLAMEWORKDICT, f, indent=4, ensure_ascii=False)
+
+    lang_names = ["Python", "Java", "Scala", "Ruby", "PHP", "Javascript", "Typescript", "Rust", "Swift", "Kotlin"]
+    for lang_name in lang_names:
+        with open( f'/static/flamevalue/{lang_name}.json', 'w') as f:
+            json.dump(build_param(lang_name, FLAMEWORKDICT), f, indent=4, ensure_ascii=False)
 

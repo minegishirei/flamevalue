@@ -12,14 +12,7 @@
     </div>
   </div>
 </template>
-<style>
-@media(min-width:751px) {
-  .mobile-size {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-}
-</style>
+
 <script>
 import AdminNavbar from "@/components/Navbars/AdminNavbar.vue";
 //import Sidebar from "@/components/Sidebar/Sidebar.vue";

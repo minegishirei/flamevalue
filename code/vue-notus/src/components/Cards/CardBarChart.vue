@@ -6,7 +6,7 @@
           <h6 class="uppercase text-blueGray-400 mb-1 text-xs font-semibold">
             パフォーマンス
           </h6>
-          <h2 class="text-blueGray-700 text-xl font-semibold">
+          <h2 v-if="lang_info" class="text-blueGray-700 text-xl font-semibold">
             年収レンジグラフ - {{ lang_info.name }}
           </h2>
         </div>
@@ -21,9 +21,9 @@
 </template>
 <script>
 import Chart from "chart.js";
-import labels from '/static/flamevalue_meta/labels.json';
-import labels_color from '/static/flamevalue_meta/labels_color.json';
-
+import labels from '/code/vue-notus/public/flamevalue_meta/labels.json';
+import labels_color from '/code/vue-notus/public/flamevalue_meta/labels_color.json';
+import get_lang_url from '../../store/store';
 
 function curreyApplyCardBarChart(LangInfo) {
   return function () {
@@ -122,9 +122,10 @@ export default {
     }
   },
   mounted: function () {
-    fetch('http://localhost:8080/flamevalue/Java.json')
+    fetch(get_lang_url(this.$route.query.name))
       .then(response => response.json())
       .then(function(LangInfo){
+        this.lang_info = LangInfo;
         this.$nextTick(curreyApplyCardBarChart(LangInfo));
       }.bind(this))
   },
